@@ -91,9 +91,9 @@ Publish the current application using the `netcoreapp1.1` framework and the runt
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
 
-Publish the current application without the packages specified in the `manifest.csproj` target manifest:
+Publish the current application without the packages specified in the `manifest.xml` target manifest:
 
-`dotnet publish --manifest manifest.csproj`
+`dotnet publish --manifest manifest.xml`
 
 ## See also
 

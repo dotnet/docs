@@ -37,7 +37,7 @@ Prints out a short help for the command.
 
 `-m|--manifest <TARGET_MANIFEST>`
 
-The XML file, or a list of XML files, that contain the list of packages to be stored. The format of the files is compatible with the `csproj` format, so a project file referencing the desired packages can be used. If no manifest is specified, the command uses the project file for the current application.
+The XML file, or a list of XML files, that contain the list of packages to be stored. The format of the files is compatible with the `csproj` format, so a project file referencing the desired packages can be used. This parameter is mandatory.
 
 `--framework-version <FRAMEWORK_VERSION>`
 

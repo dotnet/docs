@@ -1,22 +1,16 @@
 ---
 title: "m_WriteList Field | Microsoft Docs"
-ms.custom: ""
 ms.date: "04/24/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ""
+ms.topic: "reference"
 apiname:
-  - "System.Net"
+  - "System.Net.Connection.m_WriteList"
 apilocation:
   - "System.dll"
 apitype: "Assembly"
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
-caps.latest.revision: 3
-author: "mairaw"
+author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---

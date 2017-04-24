@@ -1,22 +1,16 @@
 ---
 title: "s_ServicePointTable Field | Microsoft Docs"
-ms.custom: ""
 ms.date: "04/24/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ""
+ms.topic: "reference"
 apiname:
-  - "System.Net"
+  - "System.Net.ServicePointManager.s_ServicePointTable"
 apilocation:
   - "System.dll"
 apitype: "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
-caps.latest.revision: 3
-author: "mairaw"
+author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---

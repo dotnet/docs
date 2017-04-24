@@ -1,22 +1,16 @@
 ---
 title: "m_ConnectionGroupList Field | Microsoft Docs"
-ms.custom: ""
 ms.date: "04/24/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ""
+ms.topic: "reference"
 apiname:
-  - "System.Net"
+  - "System.Net.ServicePoint.m_ConnectionGroupList"
 apilocation:
   - "System.dll"
 apitype: "Assembly"
 ms.assetid: df8afb59-f0f6-4ddc-b3c1-839b9fc601d8
-caps.latest.revision: 3
-author: "mairaw"
+author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---

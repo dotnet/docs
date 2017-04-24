@@ -24,7 +24,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
   
  The examples in this topic use the following `using`/`Imports` statements:  
   
-[!code-csharp[DP LINQ to DataSetExamples#ImportsUsing](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP  LINQ  to  DataSet  Examples/CS/Program.cs#importsusing)]      
+[!code-csharp[DP LINQ to DataSetExamples#ImportsUsing](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#importsusing)]      
   
  For more information, see [How to: Create a LINQ to DataSet Project In Visual Studio](../../../../docs/framework/data/adonet/how-to-create-a-linq-to-dataset-project-in-vs.md).  
   
@@ -33,14 +33,14 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ### Example  
  This example uses the <xref:System.Linq.Enumerable.ElementAt%2A> method to retrieve the fifth address where `PostalCode` == "M4B 1V7".  
   
-[!code-csharp[DP LINQ to DataSetExamples#ElementAt](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP  LINQ  to  DataSet  Examples/CS/Program.cs#elementat)]   
+[!code-csharp[DP LINQ to DataSetExamples#ElementAt](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#elementat)]   
   
 ## First  
   
 ### Example  
  This example uses the <xref:System.Linq.Enumerable.First%2A> method to return the first contact whose first name is 'Brooke'.  
   
-[!code-csharp[DP LINQ to DataSetExamples#FirstSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP  LINQ  to  DataSet  Examples/CS/Program.cs#firstsimple)]    
+[!code-csharp[DP LINQ to DataSetExamples#FirstSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#firstsimple)]    
   
 ## See Also  
  [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)   

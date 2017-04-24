@@ -63,7 +63,8 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### Odbc  
  The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <xref:System.Data.Odbc.OdbcCommand> to select rows from the Products table, adding a <xref:System.Data.Odbc.OdbcParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.Odbc.OdbcConnection> is opened inside of a `using` block, which ensures that resources are closed and disposed when the code exits. The executes the command by using a <xref:System.Data.Odbc.OdbcDataReader>, and displays the results in the console window.  
   
-[!code-csharp[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/CS/source.cs#1)] [!code-vb[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/VB/source.vb#1)]   
+[!code-csharp[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/CS/source.cs#1)]   
+[!code-vb[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/VB/source.vb#1)]   
 
  [&#91;Top&#93;](#_TOP)  
   

@@ -16,7 +16,6 @@ ms.assetid: 09a0b221-ea21-45c4-bae8-5e4a339750c4
 
 *Reference cells* are storage locations that enable you to create mutable values with reference semantics.
 
-
 ## Syntax
 
 ```fsharp
@@ -52,8 +51,6 @@ let ref x = { contents = x }
 ```
 
 The following table shows the features that are available on the reference cell.
-
-
 
 |Operator, member, or field|Description|Type|Definition|
 |--------------------------|-----------|----|----------|
@@ -100,6 +97,45 @@ In the previous code, the reference cell `finished` is included in local state, 
 The following code examples demonstrate the use of reference cells in closures. In this case, the closure results from the partial application of function arguments.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2207.fs)]
+
+## Consuming C#7 and VB15 `ref` returns
+
+Starting with F# 4.1, you can consume `ref` returns generated in C#7 or VB15.  The result of such a call is a reference cell.
+
+The following C# method:
+
+```csharp
+namespace RefReturns
+{
+    public static class RefClass
+    {
+        public static ref int Find(int val, int[] vals)
+        {
+            for (int i = 0; i < vals.Length; i++)
+            {
+                if (vals[i] == val)
+                {
+                    return ref numbers[i]; // Returns the location, not the value
+                }
+            }
+
+            throw new IndexOutOfRangeException($"{nameof(number)} not found");
+        }
+    }
+}
+```
+
+Can be transparently called by F# with no special syntax:
+
+```fsharp
+open RefReturns
+
+let consumeRefReturn() =
+    let result = RefClass.Find(3, [| 1; 2; 3; 4; 5 |]) // 'result' is of type 'byref<int>'.
+    ()
+```
+
+There is currently no way to generate a `ref` return in F#.  Only consumption is supported at this time.
 
 ## See Also
 [F# Language Reference](index.md)

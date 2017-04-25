@@ -4,11 +4,12 @@ ms.date: "04/24/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-apiname:
+topic_type: "apiref"
+api_name:
   - "System.Net.ServicePoint.m_ConnectionGroupList"
-apilocation:
+api_location:
   - "System.dll"
-apitype: "Assembly"
+api_type: "Assembly"
 ms.assetid: df8afb59-f0f6-4ddc-b3c1-839b9fc601d8
 author: "guardrex"
 ms.author: "mairaw"

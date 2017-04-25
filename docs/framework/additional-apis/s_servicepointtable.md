@@ -4,11 +4,12 @@ ms.date: "04/24/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-apiname:
+topic_type: "apiref"
+api_name:
   - "System.Net.ServicePointManager.s_ServicePointTable"
-apilocation:
+api_location:
   - "System.dll"
-apitype: "Assembly"
+api_type: "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
 author: "guardrex"
 ms.author: "mairaw"

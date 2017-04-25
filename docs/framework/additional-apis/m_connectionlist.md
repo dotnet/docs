@@ -3,13 +3,13 @@ title: "m_ConnectionList Field | Microsoft Docs"
 ms.date: "04/24/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname:
+topic_type: "apiref"
+api_name:
   - "System.Net.ConnectionGroup.m_ConnectionList"
-apilocation:
+api_location:
   - "System.dll"
-apitype: "Assembly"
+api_type: "Assembly"
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
 author: "guardrex"
 ms.author: "mairaw"

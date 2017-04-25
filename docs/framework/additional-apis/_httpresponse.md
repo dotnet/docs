@@ -4,11 +4,12 @@ ms.date: "04/24/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-apiname:
+topic_type: "apiref"
+api_name:
   - "System.Net.HttpWebRequest._HttpResponse"
-apilocation:
+api_location:
   - "System.dll"
-apitype: "Assembly"
+api_type: "Assembly"
 ms.assetid: eab9b789-beb4-4c28-b2d8-78debc7ba129
 author: "guardrex"
 ms.author: "mairaw"

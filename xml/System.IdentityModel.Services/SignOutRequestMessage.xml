@@ -39,7 +39,7 @@
         <Parameter Name="baseUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">The base URL to which this message applies. Sets the  <see cref="" /> property.</param>
+        <param name="baseUrl">The base URL to which this message applies.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> class with the specified base URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

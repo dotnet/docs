@@ -24,7 +24,7 @@ What .NET Core is made of
 
 1. **The host** (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`) and its supporting policy libraries (installed in `host/fxr`). It's built from the code in the [`dotnet/core-setup`](https://github.com/dotnet/core-setup/) repository. There is typically only one host on a given machine, although that is not a strict requirement.
 2. **The framework** is made of a runtime and supporting managed libraries. A framework may be installed as part of an application, or as a shared framework in a central location that can be re-used by multiple applications. There may be any number of shared frameworks installed on a given machine. Shared frameworks live under `shared/Microsoft.NETCore.App/<version>`. The host will roll forward across patch versions, so if an application targets `Microsoft.NETCore.App` 1.0.0, and only 1.0.4 is present, it will be launched against 1.0.4.
-3. **The SDK** (also sometimes referred to as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. This includes MS Build and associated build tasks and targets, NuGet, new project templates, etc. It is possible to have multiple SDKs on a machine (in order, for example, to allow for building projects that explicitly require an older version), but the recommendation is to use the latest available tools whenever possible.
+3. **The SDK** (also sometimes referred to as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. This includes the CLI, MS Build and associated build tasks and targets, NuGet, new project templates, etc. It is possible to have multiple SDKs on a machine (in order, for example, to allow for building projects that explicitly require an older version), but the recommendation is to use the latest available tools whenever possible.
 
 Recommended package names
 -------------------------
@@ -65,3 +65,5 @@ When an `update` is performed, the behavior of each package is as follows:
 * `dotnet-sdk`: `update` rolls forward major, minor, and patch versions.
 * `dotnet-sdk-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-lts`: `update` rolls forward major, minor, and patch versions.
+
+Those are recommendations, and each distro is free to choose what versions to offer, and when. For example, a distro that values stability more than being up to date may choose to release only versions that snap with the LTS release train.

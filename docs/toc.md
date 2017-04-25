@@ -183,10 +183,10 @@
 
 ## [Tour of F#](fsharp/tour.md)
 
-## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)
+<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
 ### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 
-## [Tutorials](fsharp/tutorials/index.md)
+<!--## [Tutorials](fsharp/tutorials/index.md)-->
 ### [Getting Started](fsharp/tutorials/getting-started/index.md)
 #### [Getting Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
 #### [Getting Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
@@ -203,10 +203,10 @@
 #### [Creating a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
-### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)
+<!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 
-## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)
+<!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->
 ### [Visual F# Development Environment Features](fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
 ### [Configuring Projects](fsharp/using-fsharp-in-visual-studio/configuring-projects.md)
 ### [Targeting Older Versions of .NET](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
@@ -216,7 +216,7 @@
 ### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
 ### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
 ### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
-### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)
+<!--### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)-->
 ### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)

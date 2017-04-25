@@ -199,8 +199,6 @@ namespace ReceiveRawData
   
 ```  
   
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
-  
 ## Compiling the Code  
   
 -   When compiling the code reference System.ServiceModel.dll and System.ServiceModel.Web.dll  

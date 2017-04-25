@@ -1,7 +1,7 @@
 ---
 title: "Composite Data Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: "2017-04-25"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -51,6 +51,10 @@ In addition to the elementary data types [!INCLUDE[vbprvb](../../../../csharp/pr
 ## Structure Types  
  There is no single data type comprising all structures. Instead, each definition of a structure represents a unique data type, even if two structures define identical elements in the same order. However, if you create two or more instances of the same structure, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] considers them to be of the same data type.  
   
+## Tuples
+
+A tuple is a lightweight structure that contains two or more fields whose types are predefined. Tuples are supported starting with Visual Basic 2017. Tuples are most commonly used to return multiple values from a single method call without having to pass arguments by reference or packaging the returned fields in a more heavy-weight class or structure. See the [Tuples](tuples.md) topic for more information on tuples.
+
 ## Array Types  
  There is no single data type comprising all arrays. The data type of a particular instance of an array is determined by the following:  
   

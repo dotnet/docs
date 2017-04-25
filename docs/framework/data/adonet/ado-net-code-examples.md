@@ -116,8 +116,6 @@ Class LinqSample
 End Class  
 ```  
   
- In C#:  
-  
 ```csharp  
 using System;  
 using System.Linq;  
@@ -182,8 +180,6 @@ Class ObjectQuerySample
     End Sub  
 End Class  
 ```  
-  
- In C#:  
   
 ```csharp  
 using System;  
@@ -253,8 +249,6 @@ Class EntityClientSample
     End Sub  
 End Class  
 ```  
-  
- In C#:  
   
 ```csharp  
 using System;  
@@ -336,8 +330,6 @@ Class LinqSqlSample
     End Sub  
 End Class  
 ```  
-  
- In C#:  
   
 ```csharp  
 using System;  

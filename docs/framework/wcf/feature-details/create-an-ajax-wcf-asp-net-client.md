@@ -175,6 +175,4 @@ alert(result);
 </body>  
 </html>  
   
-```  
-  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->
+```     

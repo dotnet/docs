@@ -196,7 +196,7 @@ The previous four classes can be used to model arithmetic expressions. For examp
 
 [!code-csharp[ExpressionExample](../../../samples/snippets/csharp/tour/classes-and-objects/Program.cs#L40-L43)]
 
-The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes a `Dictionary` argument that contains variable names (as keys of the entries) and values (as values of the entries). The `Evaluate` method is an abstract method, and because abstract methods are implicitly virtual methods, non-abstract classes derived from `Expression` must override `Evaluate` and provide an actual implementation for the method.
+The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes a `Dictionary` argument that contains variable names (as keys of the entries) and values (as values of the entries). Because `Evaluate` is an abstract method, non-abstract classes derived from `Expression` must override `Evaluate`.
 
 A `Constant`'s implementation of `Evaluate` simply returns the stored constant. A `VariableReference`'s implementation looks up the variable name in the dictionary and returns the resulting value. An `Operation`'s implementation first evaluates the left and right operands (by recursively invoking their `Evaluate` methods) and then performs the given arithmetic operation.
 

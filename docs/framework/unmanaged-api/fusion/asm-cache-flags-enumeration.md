@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ASM_CACHE_FLAGS"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "ASM_CACHE_FLAGS"
 dev_langs: 

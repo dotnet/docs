@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetInprocInspectionInterface"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionInterface"
 dev_langs: 

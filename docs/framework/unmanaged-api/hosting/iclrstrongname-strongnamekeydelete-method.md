@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameKeyDelete"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyDelete"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineProperty"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineProperty"
 dev_langs: 

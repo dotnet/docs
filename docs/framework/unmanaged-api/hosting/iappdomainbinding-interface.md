@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAppDomainBinding"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "IAppDomainBinding"
 dev_langs: 

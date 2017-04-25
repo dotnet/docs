@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "COR_PUB_ENUMPROCESS"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "COR_PUB_ENUMPROCESS"
 dev_langs: 

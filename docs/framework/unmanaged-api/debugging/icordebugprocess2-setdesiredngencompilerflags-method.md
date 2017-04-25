@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess2.SetDesiredNGENCompilerFlags"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "ICorDebugProcess2::SetDesiredNGENCompilerFlags"
 dev_langs: 

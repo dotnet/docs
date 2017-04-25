@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedBinder.GetReaderFromStream"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder::GetReaderFromStream"
 dev_langs: 

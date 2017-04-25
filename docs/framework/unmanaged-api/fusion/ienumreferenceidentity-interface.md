@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IEnumReferenceIdentity"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: "COM"
 f1_keywords: 
   - "IEnumReferenceIdentity"
 dev_langs: 

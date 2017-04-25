@@ -559,7 +559,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetOrAdd">
-      <MemberSignature Language="C#" Value="public TValue GetOrAdd (TKey key, Func&lt;TKey,TValue&gt; valueFactory);" />
+      <MemberSignature Language="C#" Value="public TValue GetOrAdd(TKey key, Func&lt;TKey,TValue&gt; valueFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue GetOrAdd(!TKey key, class System.Func`2&lt;!TKey, !TValue&gt; valueFactory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})" />
       <MemberType>Method</MemberType>

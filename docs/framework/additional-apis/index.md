@@ -51,11 +51,13 @@ These APIs support the product infrastructure and are not intended/supported to 
 | [s_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md) |
 | [DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md) |
 | [DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md) |
-| [s_ServicePointTable](../../../docs/framework/additional-apis/s_servicepointtable.md) |
-| [_HttpResponse](../../../docs/framework/additional-apis/_httpresponse.md) |
-| [m_ConnectionGroupList](../../../docs/framework/additional-apis/m_connectiongrouplist.md) |
-| [m_ConnectionList](../../../docs/framework/additional-apis/m_connectionlist.md) |
-| [m_WriteList](../../../docs/framework/additional-apis/m_writelist.md) |
+| [s_ServicePointTable Field](../../../docs/framework/additional-apis/s_servicepointtable.md) |
+| [_HttpResponse Field](../../../docs/framework/additional-apis/_httpresponse.md) |
+| [m_ConnectionGroupList Field](../../../docs/framework/additional-apis/m_connectiongrouplist.md) |
+| [m_ConnectionList Field](../../../docs/framework/additional-apis/m_connectionlist.md) |
+| [m_WriteList Field](../../../docs/framework/additional-apis/m_writelist.md) |
+| [ConnectionGroup Class](../../../docs/framework/additional-apis/connectiongroup.md) |
+| [Connection Class](../../../docs/framework/additional-apis/connection.md) |
   
 ## See also
 

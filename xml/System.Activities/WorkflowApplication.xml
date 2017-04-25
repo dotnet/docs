@@ -43,7 +43,7 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
@@ -76,7 +76,7 @@ The following example hosts a workflow using <xref:System.Activities.WorkflowApp
 ```Output  
 Workflow aae3fb48-7229-4737-b969-d63e131b96b3 Completed.   
 The two dice are 1 and 5.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#130](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
@@ -134,7 +134,7 @@ The following example hosts a workflow using <xref:System.Activities.WorkflowApp
 Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Completed  
 500 / 36 = 13 Remainder 32  
 Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#120](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#120)]  
@@ -199,7 +199,7 @@ Workflow 3b76d562-516a-4a52-b17c-0f2ce531ad93 Idle.
 Workflow 3b76d562-516a-4a52-b17c-0f2ce531ad93 Aborted  
 Exception: System.Activities.WorkflowApplicationAbortedException  
 The workflow has been aborted.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
@@ -243,7 +243,7 @@ Workflow 607b042e-98db-4bbe-abe8-f4d750feec41 Idle.
 Workflow 607b042e-98db-4bbe-abe8-f4d750feec41 Aborted  
 Exception: System.Activities.WorkflowApplicationAbortedException  
 The reason for aborting the workflow.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
@@ -1384,7 +1384,7 @@ Starting the workflow.
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Idle.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Canceled  
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
@@ -1427,7 +1427,7 @@ Starting the workflow.
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Idle.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Canceled  
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
@@ -1936,7 +1936,7 @@ What is your name?
 BookmarkName: UserName - OwnerDisplayName: ReadLine  
 Steve  
 Hello, Steve  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
@@ -1977,7 +1977,7 @@ What is your name?
 BookmarkName: UserName - OwnerDisplayName: ReadLine  
 Steve  
 Hello, Steve  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
@@ -2938,7 +2938,7 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
@@ -2984,7 +2984,7 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
@@ -3048,7 +3048,7 @@ Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 Terminated.
 Exception: System.ApplicationException  
 Terminating the workflow.   
 Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#16](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#16)]  
@@ -3094,7 +3094,7 @@ Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 Terminated.
 Exception: System.Activities.WorkflowApplicationTerminatedException  
 Terminating the workflow.   
 Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#18](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#18)]  
@@ -3140,7 +3140,7 @@ Workflow de28efe5-9057-472b-8d95-899c249893c5 Terminated.
 Exception: System.ApplicationException  
 Terminating the workflow.   
 Workflow de28efe5-9057-472b-8d95-899c249893c5 unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#17](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#17)]  
@@ -3186,7 +3186,7 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c Terminated.
 Exception: System.Activities.WorkflowApplicationTerminatedException  
 Terminating the workflow.   
 Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.  
- 
+  
 ```  
  
 [!code-csharp[CFX_WorkflowApplicationExample#19](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#19)]  

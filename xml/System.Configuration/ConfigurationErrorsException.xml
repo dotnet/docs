@@ -31,14 +31,14 @@ The following example is a configuration excerpt used by the previous example.
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
- <configSections>  
-   <section name="CustomSection" type="Samples.AspNet.CustomSection,   
-     ConfigurationErrorsException, Version=1.0.0.0, Culture=neutral,   
-     PublicKeyToken=null" allowDefinition="Everywhere"   
-     allowExeDefinition="MachineToApplication"   
-     restartOnExternalChanges="true" />  
- </configSections>  
- <CustomSection fileName="default.txt" maxUsers="10" />  
+  <configSections>  
+    <section name="CustomSection" type="Samples.AspNet.CustomSection,   
+      ConfigurationErrorsException, Version=1.0.0.0, Culture=neutral,   
+      PublicKeyToken=null" allowDefinition="Everywhere"   
+      allowExeDefinition="MachineToApplication"   
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  <CustomSection fileName="default.txt" maxUsers="10" />  
 </configuration>  
 ```  
  

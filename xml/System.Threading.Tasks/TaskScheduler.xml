@@ -288,20 +288,20 @@ It is important to note that, when this method is called, all other threads in t
 ```  
 protected override IEnumerable<Task> GetScheduledTasks()  
 {  
-   bool lockTaken = false;  
-   try  
-   {  
-       Monitor.TryEnter(_syncObj, ref lockTaken);  
-       if (lockTaken)  
-       {  
-           return _tasks.ToArray();  
-       }  
-       else throw new NotSupportedException();  
-   }  
-   finally  
-   {  
-   if (lockTaken) Monitor.Exit(_syncObj);  
-   }}  
+    bool lockTaken = false;  
+    try  
+    {  
+        Monitor.TryEnter(_syncObj, ref lockTaken);  
+        if (lockTaken)  
+        {  
+            return _tasks.ToArray();  
+        }  
+        else throw new NotSupportedException();  
+    }  
+    finally  
+    {  
+    if (lockTaken) Monitor.Exit(_syncObj);  
+    }}  
 ```  
  
 Additionally, this method and the enumerable returned must not modify any globally visible state.  
@@ -623,11 +623,11 @@ To make it easier for developers to write asynchronous code based on tasks, the 
  
 ```xml  
 <configuration>   
-  <runtime>   
-     <ThrowUnobservedTaskExceptions enabled="true"/>   
-  </runtime>   
+   <runtime>   
+      <ThrowUnobservedTaskExceptions enabled="true"/>   
+   </runtime>   
 </configuration>  
- 
+  
 ```  
  
  ]]></format>

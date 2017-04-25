@@ -466,10 +466,10 @@ The following is an example of the <xref:System.Xml.Schema.XmlSchemaType.IsDeriv
 ```csharp  
 XmlSchemaType xsdInteger = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.Integer);  
 XmlSchemaType xsdPositiveInteger = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.PositiveInteger);  
- 
+  
 // true  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.None));  
- 
+  
 // false  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.Restriction));  
 ```  
@@ -477,10 +477,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
 ```vb  
 Dim xsdInteger As XmlSchemaType = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.Integer)  
 Dim xsdPositiveInteger As XmlSchemaType = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.PositiveInteger)  
- 
+  
 ' True  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.None))  
- 
+  
 ' False  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.Restriction))  
 ```  

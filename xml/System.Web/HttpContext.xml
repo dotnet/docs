@@ -371,24 +371,24 @@ The following code example uses the <xref:System.Web.HttpContext.Current%2A> pro
 ```csharp  
 protected void Page_Load(object sender, EventArgs e)  
 {  
-   HttpContext context = HttpContext.Current;  
-   Response.Write("<p>HttpContext.Current Example:</p>");  
- 
-   // Add three custom exceptions.  
-   context.AddError(new Exception("New Exception #1"));  
-   context.AddError(new Exception("New Exception #2"));  
-   context.AddError(new Exception("New Exception #3"));  
- 
-   // Capture all the new Exceptions in an array.  
-   Exception[] errs = context.AllErrors;  
- 
-   foreach (Exception ex in errs)  
-   {  
-       Response.Write("<p>" + Server.HtmlEncode(ex.ToString()) + "</p>");  
-   }  
- 
-   // Clear the exceptions so ASP.NET won't handle them.  
-   context.ClearError();  
+    HttpContext context = HttpContext.Current;  
+    Response.Write("<p>HttpContext.Current Example:</p>");  
+  
+    // Add three custom exceptions.  
+    context.AddError(new Exception("New Exception #1"));  
+    context.AddError(new Exception("New Exception #2"));  
+    context.AddError(new Exception("New Exception #3"));  
+  
+    // Capture all the new Exceptions in an array.  
+    Exception[] errs = context.AllErrors;  
+  
+    foreach (Exception ex in errs)  
+    {  
+        Response.Write("<p>" + Server.HtmlEncode(ex.ToString()) + "</p>");  
+    }  
+  
+    // Clear the exceptions so ASP.NET won't handle them.  
+    context.ClearError();  
 }  
 ```  
  
@@ -396,23 +396,23 @@ protected void Page_Load(object sender, EventArgs e)
 Protected Sub Page_Load(sender As Object, e As EventArgs)  
 Dim context As HttpContext = HttpContext.Current  
 Response.Write("<p>HttpContext.Current Example:</p>")  
- 
+  
 ' Add three custom exceptions.  
 context.AddError(New Exception("New Exception #1"))  
 context.AddError(New Exception("New Exception #2"))  
 context.AddError(New Exception("New Exception #3"))  
- 
+  
 ' Capture all the new Exceptions in an array.  
 Dim errs As Exception() = context.AllErrors  
- 
+  
 For Each ex As Exception In errs  
 Response.Write("<p>" & Server.HtmlEncode(ex.ToString()) & "</p>")  
 Next  
- 
+  
 ' Clear the exceptions so ASP.NET won't handle them.  
 context.ClearError()  
 End Sub  
- 
+  
 ```  
  
  ]]></format>
@@ -1335,44 +1335,44 @@ These examples require:
 string firstName = "Jeff";  
 string lastName = "Smith";  
 string city = "Seattle";  
- 
+  
 // Save to session state in a Web Forms page class.  
 Session["FirstName"] = firstName;  
 Session["LastName"] = lastName;  
 Session["City"] = city;  
- 
+  
 // Read from session state in a Web Forms page class.  
 firstName = (string)(Session["FirstName"]);  
 lastName = (string)(Session["LastName"]);  
 city = (string)(Session["City"]);  
- 
+  
 // Outside of Web Forms page class, use HttpContext.Current.  
 HttpContext context = HttpContext.Current;  
 context.Session["FirstName"] = firstName;  
 firstName = (string)(context.Session["FirstName"]);  
- 
+  
 ```  
  
 ```vb  
 Dim firstName As String = "Jeff"  
 Dim lastName As String = "Smith"  
 Dim city As String = "Seattle"  
- 
+  
 ' Save to session state in a Web Forms page class.  
 Session("FirstName") = firstName  
 Session("LastName") = lastName  
 Session("City") = city  
- 
+  
 ' Read from session state in a Web Forms page class.  
 firstName = DirectCast(Session("FirstName"), String)  
 lastName = DirectCast(Session("LastName"), String)  
 city = DirectCast(Session("City"), String)  
- 
+  
 ' Outside of Web Forms page class, use HttpContext.Current.  
 Dim context As HttpContext = HttpContext.Current  
 context.Session("FirstName") = firstName  
 firstName = DirectCast(context.Session("FirstName"), String)  
- 
+  
 ```  
  
  ]]></format>

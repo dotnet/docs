@@ -27,11 +27,11 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web.extensions>  
- <scripting>  
-   <webServices>  
-     <authenticationService enabled="true" requireSSL="false" />  
-   </webServices>  
- </scripting>  
+  <scripting>  
+    <webServices>  
+      <authenticationService enabled="true" requireSSL="false" />  
+    </webServices>  
+  </scripting>  
 </system.web.extensions>  
 ```  
  

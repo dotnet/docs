@@ -43,24 +43,24 @@ The following example shows how to search the ListPrice field of the Products ta
  
 ```  
 Public Shared Function FilterStandardPrice(ByVal query As _  
-       IQueryable(Of Product)) As IQueryable(Of Product)  
-       Return From p In query _  
-           Where p.ListPrice >= 400 _  
-           Select p  
-   End Function  
+        IQueryable(Of Product)) As IQueryable(Of Product)  
+        Return From p In query _  
+            Where p.ListPrice >= 400 _  
+            Select p  
+    End Function  
 ```  
  
 [C#]  
  
 ```  
 public static IQueryable<Product>   
-       FilterStandardPrice(IQueryable<Product> query)  
+        FilterStandardPrice(IQueryable<Product> query)  
 {  
-       return from p in query  
-                 where p.ListPrice >= 400  
-                 select p;  
- 
-   }  
+        return from p in query  
+                  where p.ListPrice >= 400  
+                  select p;  
+  
+    }  
 ```  
  
 The following example shows how to call the method in the page.  
@@ -68,26 +68,26 @@ The following example shows how to call the method in the page.
 ```  
 <html>  
 <head runat="server">  
- <title>Custom Filter</title>  
+  <title>Custom Filter</title>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <asp:LinqDataSource ID="LinqDataSource1" runat="server"   
-       ContextTypeName="AdventureworksDataContext" EntityTypeName=""   
-       TableName="Products">  
-   </asp:LinqDataSource>  
- 
-   <asp:QueryExtender ID="QueryExtender1" runat="server"   
-       TargetControlID="LinqDataSource1">  
-     <asp:MethodExpression MethodName="FilterStandardPrice" >  
-     </asp:MethodExpression>  
-   </asp:QueryExtender>  
- 
-   <asp:GridView ID="GridView1" runat="server"   
-       DataSourceID="LinqDataSource1"   
-       DataKeyNames="ProductID"   
-   </asp:GridView>  
- </form>  
+  <form id="form1" runat="server">  
+    <asp:LinqDataSource ID="LinqDataSource1" runat="server"   
+        ContextTypeName="AdventureworksDataContext" EntityTypeName=""   
+        TableName="Products">  
+    </asp:LinqDataSource>  
+  
+    <asp:QueryExtender ID="QueryExtender1" runat="server"   
+        TargetControlID="LinqDataSource1">  
+      <asp:MethodExpression MethodName="FilterStandardPrice" >  
+      </asp:MethodExpression>  
+    </asp:QueryExtender>  
+  
+    <asp:GridView ID="GridView1" runat="server"   
+        DataSourceID="LinqDataSource1"   
+        DataKeyNames="ProductID"   
+    </asp:GridView>  
+  </form>  
 </body>  
 </html>  
 ```  
@@ -197,10 +197,10 @@ The following example shows how to specify the `FilterStandardPrice` method in t
  
 ```  
 <asp:QueryExtender ID="QueryExtender1" runat="server"   
-   TargetControlID="LinqDataSource1">  
- <asp:MethodExpression MethodName="FilterStandardPrice">  
- </asp:MethodExpression>  
- </asp:QueryExtender>  
+    TargetControlID="LinqDataSource1">  
+  <asp:MethodExpression MethodName="FilterStandardPrice">  
+  </asp:MethodExpression>  
+  </asp:QueryExtender>  
 ```  
  
  ]]></format>

@@ -511,26 +511,26 @@ This is an extensibility point that derived behaviors can use to supply their ow
 To enable the helpEnabled attribute in a configuration file:  
  
 ```  
- 
+  
 <system.serviceModel>  
-   <behaviors>  
-       <endpointBehaviors>  
-           <behavior name="MyEndpointBehavior">  
-               <webHttp helpEnabled="true" />  
-           </behavior>  
-   </endpointBehaviors>  
+    <behaviors>  
+        <endpointBehaviors>  
+            <behavior name="MyEndpointBehavior">  
+                <webHttp helpEnabled="true" />  
+            </behavior>  
+    </endpointBehaviors>  
 </system.serviceModel>  
- 
+  
 ```  
  
 To programmatically enable the HelpEnabled property:  
  
 ```  
- 
+  
 WebHttpBehavior helpBehavior = new WebHttpBehavior();  
 helpBehavior.HelpEnabled = true;  
 host.Description.Endpoints[0].Behaviors.Add(helpBehavior);  
- 
+  
 ```  
  
  ]]></format>

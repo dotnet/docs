@@ -26,17 +26,17 @@ The following example is an excerpt of the configuration file you could use to e
  
 ```  
 <healthMonitoring   
- enabled="true" heartBeatInterval="0">  
- 
-   <rules>  
-    <add   
-      name="All Errors Default"  
-      eventName="All Errors"  
-      provider="EventLogProvider"  
-      profile="Default"  
-      minInterval="00:01:00" />  
-   </rules>  
- 
+  enabled="true" heartBeatInterval="0">  
+  
+    <rules>  
+     <add   
+       name="All Errors Default"  
+       eventName="All Errors"  
+       provider="EventLogProvider"  
+       profile="Default"  
+       minInterval="00:01:00" />  
+    </rules>  
+  
 </healthMonitoring>  
 ```  
  
@@ -54,24 +54,24 @@ Ensure that your custom event is raised at the proper time, that is, when the eq
  
 ```  
 <healthMonitoring   
- enabled="true" heartBeatInterval="0">  
- 
-   <eventMappings>  
-     <add    
-       name="SampleProcessInformation"   
-       type="SamplesAspNet.SampleWebProcessInformation, webprocessinformation, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>  
-   </eventMappings>  
- 
-   <rules>  
-     <add   
-       name="Custom Process Information"  
-       eventName="SampleProcessInformation"   
-       provider="EventLogProvider"  
-       profile="Default"/>  
-   </rules>  
- 
+  enabled="true" heartBeatInterval="0">  
+  
+    <eventMappings>  
+      <add    
+        name="SampleProcessInformation"   
+        type="SamplesAspNet.SampleWebProcessInformation, webprocessinformation, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>  
+    </eventMappings>  
+  
+    <rules>  
+      <add   
+        name="Custom Process Information"  
+        eventName="SampleProcessInformation"   
+        provider="EventLogProvider"  
+        profile="Default"/>  
+    </rules>  
+  
 </healthMonitoring>  
- 
+  
 ```  
  
 The following example shows how to implement a custom event that uses the <xref:System.Web.Management.WebProcessInformation> type.  

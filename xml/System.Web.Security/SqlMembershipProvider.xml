@@ -33,35 +33,35 @@ The following code example shows the Web.config file for an ASP.NET application 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-       name=".ASPXFORMSAUTH" />  
-   </authentication>  
-   <authorization>  
-     <deny users="?" />  
-   </authorization>  
-   <membership defaultProvider="SqlProvider"  
-     userIsOnlineTimeWindow="15">  
-     <providers>  
-       <add   
-         name="SqlProvider"   
-         type="System.Web.Security.SqlMembershipProvider"   
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication"  
-         enablePasswordRetrieval="false"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"  
-         requiresUniqueEmail="false"  
-         passwordFormat="Hashed"  
-         maxInvalidPasswordAttempts="5"  
-         passwordAttemptWindow="10" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+        name=".ASPXFORMSAUTH" />  
+    </authentication>  
+    <authorization>  
+      <deny users="?" />  
+    </authorization>  
+    <membership defaultProvider="SqlProvider"  
+      userIsOnlineTimeWindow="15">  
+      <providers>  
+        <add   
+          name="SqlProvider"   
+          type="System.Web.Security.SqlMembershipProvider"   
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"  
+          requiresUniqueEmail="false"  
+          passwordFormat="Hashed"  
+          maxInvalidPasswordAttempts="5"  
+          passwordAttemptWindow="10" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -124,16 +124,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="true"  
-     enablePasswordReset="false"  
-     requiresQuestionAndAnswer="true"  
-     passwordFormat="Encrypted"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="true"  
+      enablePasswordReset="false"  
+      requiresQuestionAndAnswer="true"  
+      passwordFormat="Encrypted"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  
@@ -509,16 +509,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="false"  
-     enablePasswordReset="true"  
-     requiresQuestionAndAnswer="true"  
-     passwordFormat="Hashed"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="false"  
+      enablePasswordReset="true"  
+      requiresQuestionAndAnswer="true"  
+      passwordFormat="Hashed"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  
@@ -557,16 +557,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="true"  
-     enablePasswordReset="false"  
-     requiresQuestionAndAnswer="false"  
-     passwordFormat="Encrypted"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="true"  
+      enablePasswordReset="false"  
+      requiresQuestionAndAnswer="false"  
+      passwordFormat="Encrypted"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1191,16 +1191,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider"   
- userIsOnlineTimeWindow="20">  
-   <providers>  
-     <add name="SqlProvider"  
-       type="System.Web.Security.SqlMembershipProvider"  
-       connectionStringName="SqlServices"  
-       requiresQuestionAndAnswer="true"  
-       maxInvalidPasswordAttempts="5"  
-       passwordAttemptWindow="30"  
-       applicationName="MyApplication" />  
-   </providers>  
+  userIsOnlineTimeWindow="20">  
+    <providers>  
+      <add name="SqlProvider"  
+        type="System.Web.Security.SqlMembershipProvider"  
+        connectionStringName="SqlServices"  
+        requiresQuestionAndAnswer="true"  
+        maxInvalidPasswordAttempts="5"  
+        passwordAttemptWindow="30"  
+        applicationName="MyApplication" />  
+    </providers>  
 </membership>  
 ```  
  
@@ -1240,16 +1240,16 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <membership defaultProvider="SqlProvider"  
- userIsOnlineTimeWindow = "20">  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     requiresQuestionAndAnswer="true"  
-     minRequiredNonalphanumericCharacters="1"  
-     />  
- </providers>  
+  userIsOnlineTimeWindow = "20">  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      requiresQuestionAndAnswer="true"  
+      minRequiredNonalphanumericCharacters="1"  
+      />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1287,16 +1287,16 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <membership defaultProvider="SqlProvider"  
- userIsOnlineTimeWindow = "20">  
-   <providers>  
-     <add  
-       name="SqlProvider"  
-       type="System.Web.Security.SqlMembershipProvider"  
-       connectionStringName="SqlServices"  
-       requiresQuestionAndAnswer="true"  
-       minRequiredPasswordLength="7"  
-       />  
-   </providers>  
+  userIsOnlineTimeWindow = "20">  
+    <providers>  
+      <add  
+        name="SqlProvider"  
+        type="System.Web.Security.SqlMembershipProvider"  
+        connectionStringName="SqlServices"  
+        requiresQuestionAndAnswer="true"  
+        minRequiredPasswordLength="7"  
+        />  
+    </providers>  
 </membership>  
 ```  
  
@@ -1338,16 +1338,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider"   
- userIsOnlineTimeWindow="20">  
-   <providers>  
-     <add name="SqlProvider"  
-       type="System.Web.Security.SqlMembershipProvider"  
-       connectionStringName="SqlServices"  
-       requiresQuestionAndAnswer="true"  
-       maxInvalidPasswordAttempts="5"  
-       passwordAttemptWindow="30"  
-       applicationName="MyApplication" />  
-   </providers>  
+  userIsOnlineTimeWindow="20">  
+    <providers>  
+      <add name="SqlProvider"  
+        type="System.Web.Security.SqlMembershipProvider"  
+        connectionStringName="SqlServices"  
+        requiresQuestionAndAnswer="true"  
+        maxInvalidPasswordAttempts="5"  
+        passwordAttemptWindow="30"  
+        applicationName="MyApplication" />  
+    </providers>  
 </membership>  
 ```  
  
@@ -1389,16 +1389,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="false"  
-     enablePasswordReset="true"  
-     requiresQuestionAndAnswer="true"  
-     passwordFormat="Hashed"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="false"  
+      enablePasswordReset="true"  
+      requiresQuestionAndAnswer="true"  
+      passwordFormat="Hashed"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1444,16 +1444,16 @@ If the password does not meet these criteria, the password is not accepted by th
  
 ```  
 <membership defaultProvider="SqlProvider"  
- userIsOnlineTimeWindow = "20">  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     requiresQuestionAndAnswer="true"  
-     passwordStrengthRegularExpression="@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})"  
-     />  
- </providers>  
+  userIsOnlineTimeWindow = "20">  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      requiresQuestionAndAnswer="true"  
+      passwordStrengthRegularExpression="@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})"  
+      />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1492,16 +1492,16 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="false"  
-     enablePasswordReset="true"  
-     requiresQuestionAndAnswer="true"  
-     passwordFormat="Hashed"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="false"  
+      enablePasswordReset="true"  
+      requiresQuestionAndAnswer="true"  
+      passwordFormat="Hashed"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1533,17 +1533,17 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     enablePasswordRetrieval="false"  
-     enablePasswordReset="true"  
-     requiresQuestionAndAnswer="true"  
-     passwordFormat="Hashed"  
-     requiresUniqueEmail="true"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      enablePasswordRetrieval="false"  
+      enablePasswordReset="true"  
+      requiresQuestionAndAnswer="true"  
+      passwordFormat="Hashed"  
+      requiresUniqueEmail="true"  
+      applicationName="MyApplication" />  
+  </providers>  
 </membership>  
 ```  
  

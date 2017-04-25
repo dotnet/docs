@@ -575,24 +575,24 @@ A search is performed for all authenticable principals under the container "DC=a
  
 ```  
 PrincipalContext ctx = new PrincipalContext(  
-                                     ContextType.ApplicationDirectory,   
-                                     "adamHost1.fabrikam.com:5000",   
-                                     "DC=adamApp1,DC=fabrikam,DC=com",   
-                                     "adamAdmin", "SecretPwd123");  
- 
+                                      ContextType.ApplicationDirectory,   
+                                      "adamHost1.fabrikam.com:5000",   
+                                      "DC=adamApp1,DC=fabrikam,DC=com",   
+                                      "adamAdmin", "SecretPwd123");  
+  
 PrincipalSearchResult<AuthenticablePrincipal> oldPrincipals =   
-                    AuthenticablePrincipal.FindByLogonTime(ctx,   
-                           (DateTime.Now - new TimeSpan(45, 0, 0, 0)),   
-                           MatchType.LessThan);  
- 
+                     AuthenticablePrincipal.FindByLogonTime(ctx,   
+                            (DateTime.Now - new TimeSpan(45, 0, 0, 0)),   
+                            MatchType.LessThan);  
+  
 foreach (Principal p in oldPrincipals)  
 {  
-   p.Delete();  
+    p.Delete();  
 }  
- 
+  
 oldPrincipals.Dispose();  
 ctx.Dispose();  
- 
+  
 ```  
  
  ]]></format>
@@ -1032,18 +1032,18 @@ A search is performed to find the user with name "John Smith" under the containe
  
 ```  
 PrincipalContext ctx = new PrincipalContext(ContextType.Domain,   
-                                        "fabrikam.com",   
-                                        "CN=Users,DC=fabrikam,DC=com",   
-                                        "administrator",   
-                                        "SecretPwd123");  
- 
+                                         "fabrikam.com",   
+                                         "CN=Users,DC=fabrikam,DC=com",   
+                                         "administrator",   
+                                         "SecretPwd123");  
+  
 UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, "John Smith");  
 if (usr != null)  
 {  
-   if (usr.IsAccountLockedOut())  
-       usr.UnlockAccount();  
- 
-   usr.Dispose();  
+    if (usr.IsAccountLockedOut())  
+        usr.UnlockAccount();  
+  
+    usr.Dispose();  
 }  
 ctx.Dispose();   
 ```  

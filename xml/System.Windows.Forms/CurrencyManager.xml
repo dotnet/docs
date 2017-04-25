@@ -384,11 +384,11 @@ How you use the <xref:System.Windows.Forms.CurrencyManager.List%2A> property dep
  
 ```csharp  
 private void PrintCurrentListName(DataGrid myDataGrid){   
-  CurrencyManager myCM = (CurrencyManager)   
-  BindingContext[myDataGrid.DataSource, myDataGrid.DataMember];   
-  IList myList = myCM.List;   
-  ITypedList thisList = (ITypedList) myList;   
-  Console.WriteLine(thisList.GetListName(null));   
+   CurrencyManager myCM = (CurrencyManager)   
+   BindingContext[myDataGrid.DataSource, myDataGrid.DataMember];   
+   IList myList = myCM.List;   
+   ITypedList thisList = (ITypedList) myList;   
+   Console.WriteLine(thisList.GetListName(null));   
 }  
 ```  
  

@@ -111,9 +111,9 @@ Changing this collection implicitly causes the <xref:System.Windows.Data.ObjectD
  
 ```  
 <object>  
- <object.ConstructorParameters>  
-   parameterValues  
- </object.ConstructorParameters>  
+  <object.ConstructorParameters>  
+    parameterValues  
+  </object.ConstructorParameters>  
 </object>  
 ```  
  
@@ -217,9 +217,9 @@ Changing this collection implicitly causes the <xref:System.Windows.Data.ObjectD
  
 ```  
 <object>  
- <object.MethodParameters>  
-   parameterValues  
- </object.MethodParameters>  
+  <object.MethodParameters>  
+    parameterValues  
+  </object.MethodParameters>  
 </object>  
 ```  
  

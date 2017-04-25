@@ -33,14 +33,14 @@ The following configuration file excerpt shows the configuration for the <xref:S
  
 ```  
 <healthMonitoring   
- enabled="true" heartbeatInterval="100">  
- <rules>  
-   <add name="Heart Beat Events"  
-     eventName="Heartbeats"  
-     provider="EventLogProvider"  
-     profile="Default"  
-     minInterval="00:01:00" />  
- </rules>  
+  enabled="true" heartbeatInterval="100">  
+  <rules>  
+    <add name="Heart Beat Events"  
+      eventName="Heartbeats"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00" />  
+  </rules>  
 </healthMonitoring>  
 ```  
  

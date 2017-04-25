@@ -1026,91 +1026,91 @@ This sample demonstrates the use of the <xref:System.IO.Log.IRecordSequence.Read
  
 ```csharp  
 using System;  
-using System.IO;  
-using System.IO.Log;  
- 
-class ReadRecordsSample  
-{  
-    static SequenceNumber AppendRecord(IRecordSequence sequence,  
-                                       string message,  
-                                       SequenceNumber user,  
-                                       SequenceNumber previous)  
-    {  
-        MemoryStream data = new MemoryStream();  
-        BinaryWriter writer = new BinaryWriter(data);  
-        writer.Write(message);  
- 
-        ArraySegment<byte>[] segments;  
-        segments = new ArraySegment<byte>[1];  
-        segments[0] = new ArraySegment(data.GetBuffer(),  
-                                       0,  
-                                       Data.Length);  
- 
-        return sequence.Append(segments,  
-                               user,  
-                               previous,  
-                               WriteFlags.None);  
-    }  
- 
-    public static void Main(string[] args)  
-    {  
-        IRecordSequence sequence;  
-        sequence = new FileIRecordSequence(args[0]);  
- 
-        SequenceNumber a, b, c, d;  
- 
-        a = AppendRecord(sequence,  
-                         "This is record A",  
-                         SequenceNumber.Invalid,  
-                         SequenceNumber.Invalid);  
-        Console.WriteLine("Record A has sequence number System.IO.Log", a);  
- 
-        b = AppendRecord(sequence,  
-                         "This is record B",  
-                         a,  
-                         a);  
-        Console.WriteLine("Record B has sequence number System.IO.Log", b);  
- 
-        c = AppendRecord(sequence,  
-                         "This is record C",  
-                         a,  
-                         a);  
-        Console.WriteLine("Record C has sequence number System.IO.Log", c);  
- 
-        d = AppendRecord(sequence,  
-                         "This is record D",  
-                         b,  
-                         c);  
-        Console.WriteLine("Record D has sequence number System.IO.Log", d);  
- 
-        foreach(LogRecord record in  
-                sequence.ReadLogRecords(a, ReadDirection.Forward))  
-        {  
-            BinaryReader reader = new BinaryReader(record.Data);  
-            Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
-                              record.SequenceNumber,  
-                              reader.ReadString());  
-        }  
- 
-        foreach(LogRecord record in  
-                sequence.ReadLogRecords(d, ReadDirection.User))  
-        {  
-            BinaryReader reader = new BinaryReader(record.Data);  
-            Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
-                              record.SequenceNumber,  
-                              reader.ReadString());  
-        }  
- 
-        foreach(LogRecord record in  
-                sequence.ReadLogRecords(d, ReadDirection.Previous))  
-        {  
-            BinaryReader reader = new BinaryReader(record.Data);  
-            Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
-                              record.SequenceNumber,  
-                              reader.ReadString());  
-        }  
-    }  
-      }  
+ using System.IO;  
+ using System.IO.Log;  
+  
+ class ReadRecordsSample  
+ {  
+     static SequenceNumber AppendRecord(IRecordSequence sequence,  
+                                        string message,  
+                                        SequenceNumber user,  
+                                        SequenceNumber previous)  
+     {  
+         MemoryStream data = new MemoryStream();  
+         BinaryWriter writer = new BinaryWriter(data);  
+         writer.Write(message);  
+  
+         ArraySegment<byte>[] segments;  
+         segments = new ArraySegment<byte>[1];  
+         segments[0] = new ArraySegment(data.GetBuffer(),  
+                                        0,  
+                                        Data.Length);  
+  
+         return sequence.Append(segments,  
+                                user,  
+                                previous,  
+                                WriteFlags.None);  
+     }  
+  
+     public static void Main(string[] args)  
+     {  
+         IRecordSequence sequence;  
+         sequence = new FileIRecordSequence(args[0]);  
+  
+         SequenceNumber a, b, c, d;  
+  
+         a = AppendRecord(sequence,  
+                          "This is record A",  
+                          SequenceNumber.Invalid,  
+                          SequenceNumber.Invalid);  
+         Console.WriteLine("Record A has sequence number System.IO.Log", a);  
+  
+         b = AppendRecord(sequence,  
+                          "This is record B",  
+                          a,  
+                          a);  
+         Console.WriteLine("Record B has sequence number System.IO.Log", b);  
+  
+         c = AppendRecord(sequence,  
+                          "This is record C",  
+                          a,  
+                          a);  
+         Console.WriteLine("Record C has sequence number System.IO.Log", c);  
+  
+         d = AppendRecord(sequence,  
+                          "This is record D",  
+                          b,  
+                          c);  
+         Console.WriteLine("Record D has sequence number System.IO.Log", d);  
+  
+         foreach(LogRecord record in  
+                 sequence.ReadLogRecords(a, ReadDirection.Forward))  
+         {  
+             BinaryReader reader = new BinaryReader(record.Data);  
+             Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
+                               record.SequenceNumber,  
+                               reader.ReadString());  
+         }  
+  
+         foreach(LogRecord record in  
+                 sequence.ReadLogRecords(d, ReadDirection.User))  
+         {  
+             BinaryReader reader = new BinaryReader(record.Data);  
+             Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
+                               record.SequenceNumber,  
+                               reader.ReadString());  
+         }  
+  
+         foreach(LogRecord record in  
+                 sequence.ReadLogRecords(d, ReadDirection.Previous))  
+         {  
+             BinaryReader reader = new BinaryReader(record.Data);  
+             Console.WriteLine("System.IO.Log: T:System.IO.Log.IRecordSequence",  
+                               record.SequenceNumber,  
+                               reader.ReadString());  
+         }  
+     }  
+       }  
 ```  
  
  ]]></format>

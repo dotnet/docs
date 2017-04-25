@@ -40,13 +40,13 @@ The following example is a configuration file excerpt that shows a `<healthMonit
  
 ```  
 <healthMonitoring>  
- <rules>  
-   <add   
-     name="Using Wmi"  
-     eventName="All Events"   
-     provider="WmiWebEventProvider"   
-     profile="Critical"/>  
- </rules>  
+  <rules>  
+    <add   
+      name="Using Wmi"  
+      eventName="All Events"   
+      provider="WmiWebEventProvider"   
+      profile="Critical"/>  
+  </rules>  
 </healthMonitoring>  
 ```  
  

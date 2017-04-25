@@ -547,24 +547,24 @@ For example, if a <xref:System.Data.DataColumn> is named "customerID," and its <
  
 ```  
 <Customers>  
-<customerID>ALFKI</customerID>  
+ <customerID>ALFKI</customerID>  
 ......  
-</Customers>  
-<Orders>  
-<OrderID>12345</OrderID>  
-<customerID>ALFKI</customerID>  
+ </Customers>  
+ <Orders>  
+ <OrderID>12345</OrderID>  
+ <customerID>ALFKI</customerID>  
 ......  
-</Orders>  
+ </Orders>  
 ```  
  
 However, if the same column is mapped to `MappingType.Attribute`, the following XML is produced:  
  
 ```  
 <Customers customerID="ALFKI"........more attributes.....>  
-<Order orderID="1234"....more attributes..../>  
-<Order orderID="1234"....more attributes..../>  
+ <Order orderID="1234"....more attributes..../>  
+ <Order orderID="1234"....more attributes..../>  
 ...... More orders for this customer  
-</Customers>  
+ </Customers>  
 ```  
  
 Use the <xref:System.Data.DataColumn.%23ctor%2A> constructor that contains the `type` argument to specificy how the <xref:System.Data.DataColumn> is mapped when its <xref:System.Data.DataSet> is transformed to an XML document.  

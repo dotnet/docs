@@ -196,15 +196,15 @@ For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML
  
 ```  
 <object>  
- <object.Resources>  
-   oneOrMoreResourceElements  
- </object.Resources>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
 </object>  
 - or -   
 <object>  
- <object.Resources>  
-   <ResourceDictionary Source="externalDictionarySource"/>  
- </object.Resources>  
+  <object.Resources>  
+    <ResourceDictionary Source="externalDictionarySource"/>  
+  </object.Resources>  
 </object>  
 ```  
  
@@ -450,8 +450,8 @@ The base implementation specifies that the templated parent must be a non-null <
  
 ```  
 <object>  
- <VisualTreeRootNode > VisualTreeNodeContents  
- </VisualTreeRootNode >  
+  <VisualTreeRootNode > VisualTreeNodeContents  
+  </VisualTreeRootNode >  
 </object>  
 ```  
  

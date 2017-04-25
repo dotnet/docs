@@ -78,22 +78,22 @@ This example defines an activity whose purpose is to send an email. The activity
 ```csharp  
 public class SendEmail : Activity  
 {  
-   public static readonly DependencyProperty SubjectProperty =  
-       DependencyProperty.Register("Subject", typeof(string), typeof(SendEmail));  
- 
-   public string Subject  
-   {  
-       get { return base.GetValue(SubjectProperty) as string; }  
-       set { base.SetValue(SubjectProperty, value); }  
-   }  
- 
-   // Define other properties...  
- 
-   protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
-   {  
-       // Logic to send the e-mail goes here...  
-       return ActivityExecutionStatus.Closed;  
-   }  
+    public static readonly DependencyProperty SubjectProperty =  
+        DependencyProperty.Register("Subject", typeof(string), typeof(SendEmail));  
+  
+    public string Subject  
+    {  
+        get { return base.GetValue(SubjectProperty) as string; }  
+        set { base.SetValue(SubjectProperty, value); }  
+    }  
+  
+    // Define other properties...  
+  
+    protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
+    {  
+        // Logic to send the e-mail goes here...  
+        return ActivityExecutionStatus.Closed;  
+    }  
 }  
 ```  
  

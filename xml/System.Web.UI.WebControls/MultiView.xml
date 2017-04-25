@@ -96,10 +96,10 @@ To allow users to navigate between <xref:System.Web.UI.WebControls.View> control
                 Visible="True|False"  
 >  
                         <ContentTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ContentTemplate>  
                         <CustomNavigationTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </CustomNavigationTemplate>  
             </asp:TemplatedWizardStep>  
             <asp:View  

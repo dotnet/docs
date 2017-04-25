@@ -38,16 +38,16 @@ The following example demonstrates how to use the ManagementCreate attribute.
 [ManagementEntity]  
 public class ProcessInstance  
 {  
-    [ManagementKey]  
-    public int Id;   
- 
-    [ManagementCreate]  
-    public ProcessInstance StartProcess(string cmdLine)  
-    {  
-       ProcessInstance newProcess = new ProcessInstance(cmdLine);  
-       newProcess.Start();  
-       return newProcess;  
-    }  
+     [ManagementKey]  
+     public int Id;   
+  
+     [ManagementCreate]  
+     public ProcessInstance StartProcess(string cmdLine)  
+     {  
+        ProcessInstance newProcess = new ProcessInstance(cmdLine);  
+        newProcess.Start();  
+        return newProcess;  
+     }  
 }  
 ```  
  

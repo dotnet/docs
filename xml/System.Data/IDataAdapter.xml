@@ -225,21 +225,21 @@ If the <xref:System.Data.IDataAdapter> encounters duplicate columns while popula
  
 ```  
 private static void GetParameters(String connectiongString) {  
-          using (SqlConnection conn = new SqlConnection(connectiongString)) {  
-             String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course] where [Year]=@Year and [Credits]>=@Credits";   
-             SqlParameter year = new SqlParameter("@Year", 2012);   
-             SqlParameter credits = new SqlParameter("@Credits", SqlDbType.Int, 4, "Credits");   
-             credits.Value = 4; SqlCommand command = new SqlCommand(queryString, conn);   
-             command.Parameters.Add(year);   
-             command.Parameters.Add(credits);   
-             IDbDataAdapter mySchool = new SqlDataAdapter(command);   
-             IDataParameter[] parameters = mySchool.GetFillParameters();  
-             Console.WriteLine("{0,-15}{1,-15}{2,-15}{3,-15}{4,-15}", "ParameterName", "SourceColumn", "Direction", "DbType", "Value");   
-             foreach (IDataParameter parameter in parameters) {   
-                Console.WriteLine("{0,-15}{1,-15}{2,-15}{3,-15}{4,-15}", parameter.ParameterName, parameter.SourceColumn, parameter.Direction, parameter.DbType, parameter.Value);   
-             }  
-          }  
-       }  
+           using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+              String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course] where [Year]=@Year and [Credits]>=@Credits";   
+              SqlParameter year = new SqlParameter("@Year", 2012);   
+              SqlParameter credits = new SqlParameter("@Credits", SqlDbType.Int, 4, "Credits");   
+              credits.Value = 4; SqlCommand command = new SqlCommand(queryString, conn);   
+              command.Parameters.Add(year);   
+              command.Parameters.Add(credits);   
+              IDbDataAdapter mySchool = new SqlDataAdapter(command);   
+              IDataParameter[] parameters = mySchool.GetFillParameters();  
+              Console.WriteLine("{0,-15}{1,-15}{2,-15}{3,-15}{4,-15}", "ParameterName", "SourceColumn", "Direction", "DbType", "Value");   
+              foreach (IDataParameter parameter in parameters) {   
+                 Console.WriteLine("{0,-15}{1,-15}{2,-15}{3,-15}{4,-15}", parameter.ParameterName, parameter.SourceColumn, parameter.Direction, parameter.DbType, parameter.Value);   
+              }  
+           }  
+        }  
 ```  
  
  ]]></format>

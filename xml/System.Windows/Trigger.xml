@@ -173,9 +173,9 @@ This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetT
  
 ```  
 <object>  
- <object.Setters>  
-   ZeroOrMoreSetters  
- </object.Setters>  
+  <object.Setters>  
+    ZeroOrMoreSetters  
+  </object.Setters>  
 </object>  
 ```  
  
@@ -393,9 +393,9 @@ Note that you must specify both the <xref:System.Windows.Trigger.Property%2A> an
  
 ```  
 <object>  
- <object.Value>  
-   Value  
- </object.Value>  
+  <object.Value>  
+    Value  
+  </object.Value>  
 </object>  
 ```  
  

@@ -39,21 +39,21 @@ The following code example shows a Web.config file that enables anonymous identi
  
 ```  
 <configuration>  
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <anonymousIdentification enabled="true" />  
- 
-   <profile enabled="true" defaultProvider="AspNetSqlProvider">  
-     <properties>  
-       <add name="ZipCode" allowAnonymous="true" />  
-       <add name="CityAndState" allowAnonymous="true" />  
-       <add name="StockSymbols" type="System.Collections.ArrayList" allowAnonymous="true" />  
-     </properties>  
-   </profile>  
-  </system.web>  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <anonymousIdentification enabled="true" />  
+  
+    <profile enabled="true" defaultProvider="AspNetSqlProvider">  
+      <properties>  
+        <add name="ZipCode" allowAnonymous="true" />  
+        <add name="CityAndState" allowAnonymous="true" />  
+        <add name="StockSymbols" type="System.Collections.ArrayList" allowAnonymous="true" />  
+      </properties>  
+    </profile>  
+   </system.web>  
 </configuration>  
 ```  
  

@@ -29,33 +29,33 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <sources>  
-     <source name="TraceTest" switchName="SourceSwitch"   
-       switchType="System.Diagnostics.SourceSwitch" >  
-       <listeners>  
-         <add name="console" />  
-         <remove name ="Default" />  
-       </listeners>  
-     </source>  
-   </sources>  
-   <switches>  
-     <!-- You can set the level at which tracing is to occur -->  
-     <add name="SourceSwitch" value="Warning" />  
-       <!-- You can turn tracing off -->  
-       <!--add name="SourceSwitch" value="Off" -->  
-   </switches>  
-   <sharedListeners>  
-     <add name="console"   
-       type="System.Diagnostics.ConsoleTraceListener"   
-       initializeData="false"/>  
-   </sharedListeners>  
-   <trace autoflush="true" indentsize="4">  
-     <listeners>  
-       <add name="console" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <sources>  
+      <source name="TraceTest" switchName="SourceSwitch"   
+        switchType="System.Diagnostics.SourceSwitch" >  
+        <listeners>  
+          <add name="console" />  
+          <remove name ="Default" />  
+        </listeners>  
+      </source>  
+    </sources>  
+    <switches>  
+      <!-- You can set the level at which tracing is to occur -->  
+      <add name="SourceSwitch" value="Warning" />  
+        <!-- You can turn tracing off -->  
+        <!--add name="SourceSwitch" value="Off" -->  
+    </switches>  
+    <sharedListeners>  
+      <add name="console"   
+        type="System.Diagnostics.ConsoleTraceListener"   
+        initializeData="false"/>  
+    </sharedListeners>  
+    <trace autoflush="true" indentsize="4">  
+      <listeners>  
+        <add name="console" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -84,9 +84,9 @@ The trace listeners use the values of the <xref:System.Diagnostics.Trace> class 
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="3" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="3" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -226,10 +226,10 @@ The following is a sample of a trace source element specifying the custom attrib
  
 ```  
 <sources>  
- <source name="TraceTest" switchName="TestSourceSwitch"   
-   switchType="Testing.MySourceSwitch, TraceSample"   
-   SecondTraceSourceAttribute="two">  
- </source>  
+  <source name="TraceTest" switchName="TestSourceSwitch"   
+    switchType="Testing.MySourceSwitch, TraceSample"   
+    SecondTraceSourceAttribute="two">  
+  </source>  
 </sources>  
 ```  
  
@@ -442,12 +442,12 @@ The following XML element shows referring to a trace source in the configuration
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <sources>  
-     <source name="TraceTest">  
-     </source>  
-   </sources>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <sources>  
+      <source name="TraceTest">  
+      </source>  
+    </sources>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

@@ -40,68 +40,68 @@ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see 
 The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
  
 ```csharp  
- 
-               XDocument srcTree = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       new XElement("Child1", "data1"),  
-       new XElement("Child2", "data2"),  
-       new XElement("Child3", "data3"),  
-       new XElement("Child2", "data4"),  
-       new XElement("Info5", "info5"),  
-       new XElement("Info6", "info6"),  
-       new XElement("Info7", "info7"),  
-       new XElement("Info8", "info8")  
-   )  
+  
+                XDocument srcTree = new XDocument(  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        new XElement("Child1", "data1"),  
+        new XElement("Child2", "data2"),  
+        new XElement("Child3", "data3"),  
+        new XElement("Child2", "data4"),  
+        new XElement("Info5", "info5"),  
+        new XElement("Info6", "info6"),  
+        new XElement("Info7", "info7"),  
+        new XElement("Info8", "info8")  
+    )  
 );  
- 
+  
 XDocument doc = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       from el in srcTree.Element("Root").Elements()  
-       where ((string)el).StartsWith("data")  
-       select el  
-   )  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        from el in srcTree.Element("Root").Elements()  
+        where ((string)el).StartsWith("data")  
+        select el  
+    )  
 );  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <Child1>data1</Child1>  
-           <Child2>data2</Child2>  
-           <Child3>data3</Child3>  
-           <Child2>data4</Child2>  
-           <Info5>info5</Info5>  
-           <Info6>info6</Info6>  
-           <Info7>info7</Info7>  
-           <Info8>info8</Info8>  
-       </Root>  
+  
+                Dim srcTree As XDocument = _   
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <Child1>data1</Child1>  
+            <Child2>data2</Child2>  
+            <Child3>data3</Child3>  
+            <Child2>data4</Child2>  
+            <Info5>info5</Info5>  
+            <Info6>info6</Info6>  
+            <Info7>info7</Info7>  
+            <Info8>info8</Info8>  
+        </Root>  
 Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <%= From el In srcTree.<Root>.Elements _  
-               Where CStr(el).StartsWith("data") _  
-               Select el %>  
-       </Root>  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <%= From el In srcTree.<Root>.Elements _  
+                Where CStr(el).StartsWith("data") _  
+                Select el %>  
+        </Root>  
 Console.WriteLine(doc)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!--This is a comment-->  
+  
+                <!--This is a comment-->  
 <Root>  
- <Child1>data1</Child1>  
- <Child2>data2</Child2>  
- <Child3>data3</Child3>  
- <Child2>data4</Child2>  
+  <Child1>data1</Child1>  
+  <Child2>data2</Child2>  
+  <Child3>data3</Child3>  
+  <Child2>data4</Child2>  
 </Root>  
 ```  
  
@@ -145,27 +145,27 @@ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see 
 The following example creates a new document, and then adds a comment and an element to it.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument();  
+  
+                XDocument doc = new XDocument();  
 doc.Add(new XComment("This is a comment"));  
 doc.Add(new XElement("Root", "content"));  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = New XDocument()  
+  
+                Dim doc As XDocument = New XDocument()  
 doc.Add(<!--This is a comment-->)  
 doc.Add(<Root>content</Root>)  
 Console.WriteLine(doc)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!--This is a comment-->  
+  
+                <!--This is a comment-->  
 <Root>content</Root>  
 ```  
  
@@ -218,68 +218,68 @@ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see 
 The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
  
 ```csharp  
- 
-               XDocument srcTree = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       new XElement("Child1", "data1"),  
-       new XElement("Child2", "data2"),  
-       new XElement("Child3", "data3"),  
-       new XElement("Child2", "data4"),  
-       new XElement("Info5", "info5"),  
-       new XElement("Info6", "info6"),  
-       new XElement("Info7", "info7"),  
-       new XElement("Info8", "info8")  
-   )  
+  
+                XDocument srcTree = new XDocument(  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        new XElement("Child1", "data1"),  
+        new XElement("Child2", "data2"),  
+        new XElement("Child3", "data3"),  
+        new XElement("Child2", "data4"),  
+        new XElement("Info5", "info5"),  
+        new XElement("Info6", "info6"),  
+        new XElement("Info7", "info7"),  
+        new XElement("Info8", "info8")  
+    )  
 );  
- 
+  
 XDocument doc = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       from el in srcTree.Element("Root").Elements()  
-       where ((string)el).StartsWith("data")  
-       select el  
-   )  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        from el in srcTree.Element("Root").Elements()  
+        where ((string)el).StartsWith("data")  
+        select el  
+    )  
 );  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XDocument = _  
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <Child1>data1</Child1>  
-           <Child2>data2</Child2>  
-           <Child3>data3</Child3>  
-           <Child2>data4</Child2>  
-           <Info5>info5</Info5>  
-           <Info6>info6</Info6>  
-           <Info7>info7</Info7>  
-           <Info8>info8</Info8>  
-       </Root>  
+  
+                Dim srcTree As XDocument = _  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <Child1>data1</Child1>  
+            <Child2>data2</Child2>  
+            <Child3>data3</Child3>  
+            <Child2>data4</Child2>  
+            <Info5>info5</Info5>  
+            <Info6>info6</Info6>  
+            <Info7>info7</Info7>  
+            <Info8>info8</Info8>  
+        </Root>  
 Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <%= From el In srcTree.<Root>.Elements _  
-               Where CStr(el).StartsWith("data") _  
-               Select el %>  
-       </Root>  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <%= From el In srcTree.<Root>.Elements _  
+                Where CStr(el).StartsWith("data") _  
+                Select el %>  
+        </Root>  
 Console.WriteLine(doc)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!--This is a comment-->  
+  
+                <!--This is a comment-->  
 <Root>  
- <Child1>data1</Child1>  
- <Child2>data2</Child2>  
- <Child3>data3</Child3>  
- <Child2>data4</Child2>  
+  <Child1>data1</Child1>  
+  <Child2>data2</Child2>  
+  <Child3>data3</Child3>  
+  <Child2>data4</Child2>  
 </Root>  
 ```  
  
@@ -371,57 +371,57 @@ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see 
 The following example uses this constructor to create a document.  
  
 ```csharp  
- 
-               XDocument srcTree = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       new XElement("Child1", "data1"),  
-       new XElement("Child2", "data2"),  
-       new XElement("Child3", "data3"),  
-       new XElement("Child2", "data4"),  
-       new XElement("Info5", "info5"),  
-       new XElement("Info6", "info6"),  
-       new XElement("Info7", "info7"),  
-       new XElement("Info8", "info8")  
-   )  
+  
+                XDocument srcTree = new XDocument(  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        new XElement("Child1", "data1"),  
+        new XElement("Child2", "data2"),  
+        new XElement("Child3", "data3"),  
+        new XElement("Child2", "data4"),  
+        new XElement("Info5", "info5"),  
+        new XElement("Info6", "info6"),  
+        new XElement("Info7", "info7"),  
+        new XElement("Info8", "info8")  
+    )  
 );  
- 
+  
 XDocument doc = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XComment("This is a new comment"),  
-   new XElement("Root",  
-       from el in srcTree.Element("Root").Elements()  
-       where ((string)el).StartsWith("data")  
-       select el  
-   )  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XComment("This is a new comment"),  
+    new XElement("Root",  
+        from el in srcTree.Element("Root").Elements()  
+        where ((string)el).StartsWith("data")  
+        select el  
+    )  
 );  
 doc.Save("Test.xml");  
 Console.WriteLine(File.ReadAllText("Test.xml"));  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <Child1>data1</Child1>  
-           <Child2>data2</Child2>  
-           <Child3>data3</Child3>  
-           <Child2>data4</Child2>  
-           <Info5>info5</Info5>  
-           <Info6>info6</Info6>  
-           <Info7>info7</Info7>  
-           <Info8>info8</Info8>  
-       </Root>  
+  
+                Dim srcTree As XDocument = _   
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <Child1>data1</Child1>  
+            <Child2>data2</Child2>  
+            <Child3>data3</Child3>  
+            <Child2>data4</Child2>  
+            <Info5>info5</Info5>  
+            <Info6>info6</Info6>  
+            <Info7>info7</Info7>  
+            <Info8>info8</Info8>  
+        </Root>  
 Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a new comment-->  
-       <Root>  
-           <%= From el In srcTree.<Root>.Elements _  
-               Where CStr(el).StartsWith("data") _  
-               Select el %>  
-       </Root>  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a new comment-->  
+        <Root>  
+            <%= From el In srcTree.<Root>.Elements _  
+                Where CStr(el).StartsWith("data") _  
+                Select el %>  
+        </Root>  
 doc.Save("Test.xml")  
 Console.WriteLine(File.ReadAllText("Test.xml"))  
 ```  
@@ -429,14 +429,14 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+  
+                <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <!--This is a new comment-->  
 <Root>  
- <Child1>data1</Child1>  
- <Child2>data2</Child2>  
- <Child3>data3</Child3>  
- <Child2>data4</Child2>  
+  <Child1>data1</Child1>  
+  <Child2>data2</Child2>  
+  <Child3>data3</Child3>  
+  <Child2>data4</Child2>  
 </Root>  
 ```  
  
@@ -481,30 +481,30 @@ Sometimes you have to create an XML declaration for a document. If you want to i
 The following example uses this property to retrieve the XML declaration of a document.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XComment("This is a comment"),  
-   new XElement("Root", "content")  
+  
+                XDocument doc = new XDocument(  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XComment("This is a comment"),  
+    new XElement("Root", "content")  
 );  
- 
+  
 Console.WriteLine(doc.Declaration);  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _  
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>content</Root>  
- 
+  
+                Dim doc As XDocument = _  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>content</Root>  
+  
 Console.WriteLine(doc.Declaration)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 ```  
  
@@ -557,61 +557,61 @@ The following example creates a document that contains an <xref:System.Xml.Linq.
 Visual Basic does not support document types within XML literals. However, it is possible to create a document that contains a document type by first creating the document using XML literals, and then creating and adding an <xref:System.Xml.Linq.XDocumentType> node in the appropriate place in the XML tree.  
  
 ```csharp  
- 
-               string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+  
+                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
- 
+  
 string target = "xml-stylesheet";  
 string data = "href='mystyle.css' title='Compact' type='text/css'";  
- 
+  
 XDocument doc = new XDocument(  
-   new XComment("This is a comment."),  
-   new XProcessingInstruction(target, data),  
-   new XDocumentType("Pubs", null, null, internalSubset),  
-   new XElement("Pubs",   
-       new XElement("Book",  
-           new XElement("Title", "Artifacts of Roman Civilization"),  
-           new XElement("Author", "Moreno, Jordao")  
-       ),  
-       new XElement("Book",  
-           new XElement("Title", "Midieval Tools and Implements"),  
-           new XElement("Author", "Gazit, Inbar")  
-       )  
-   ),  
-   new XComment("This is another comment.")  
+    new XComment("This is a comment."),  
+    new XProcessingInstruction(target, data),  
+    new XDocumentType("Pubs", null, null, internalSubset),  
+    new XElement("Pubs",   
+        new XElement("Book",  
+            new XElement("Title", "Artifacts of Roman Civilization"),  
+            new XElement("Author", "Moreno, Jordao")  
+        ),  
+        new XElement("Book",  
+            new XElement("Title", "Midieval Tools and Implements"),  
+            new XElement("Author", "Gazit, Inbar")  
+        )  
+    ),  
+    new XComment("This is another comment.")  
 );  
 doc.Declaration = new XDeclaration("1.0", "utf-8", "true");  
 Console.WriteLine(doc);  
- 
+  
 doc.Save("test.xml");  
 ```  
  
 ```vb  
- 
-               Dim internalSubset = _  
-       "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
-       "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
-       "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
-       "<!ELEMENT Author (#PCDATA)>"  
- 
+  
+                Dim internalSubset = _  
+        "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
+        "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
+        "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
+        "<!ELEMENT Author (#PCDATA)>"  
+  
 Dim doc As XDocument = _  
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-   <!--This is a comment.-->  
-   <?xml-stylesheet href='mystyle.css' title='Compact' type='text/css'?>  
-   <Pubs>  
-       <Book>  
-           <Title>Artifacts of Roman Civilization</Title>  
-           <Author>Moreno, Jordao</Author>  
-       </Book>  
-       <Book>  
-           <Title>Midieval Tools and Implements</Title>  
-           <Author>Gazit, Inbar</Author>  
-       </Book>  
-   </Pubs>  
-   <!--This is another comment.-->  
- 
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+    <!--This is a comment.-->  
+    <?xml-stylesheet href='mystyle.css' title='Compact' type='text/css'?>  
+    <Pubs>  
+        <Book>  
+            <Title>Artifacts of Roman Civilization</Title>  
+            <Author>Moreno, Jordao</Author>  
+        </Book>  
+        <Book>  
+            <Title>Midieval Tools and Implements</Title>  
+            <Author>Gazit, Inbar</Author>  
+        </Book>  
+    </Pubs>  
+    <!--This is another comment.-->  
+  
 doc.Nodes().Skip(1).First().AddAfterSelf(New XDocumentType("Pubs", Nothing, Nothing, internalSubset))  
 Console.WriteLine(doc)  
 ```  
@@ -619,22 +619,22 @@ Console.WriteLine(doc)
 This example produces the following output:  
  
 ```xml  
- 
-               <!--This is a comment.-->  
+  
+                <!--This is a comment.-->  
 <?xml-stylesheet href='mystyle.css' title='Compact' type='text/css'?>  
 <!DOCTYPE Pubs [<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>]>  
 <Pubs>  
- <Book>  
-   <Title>Artifacts of Roman Civilization</Title>  
-   <Author>Moreno, Jordao</Author>  
- </Book>  
- <Book>  
-   <Title>Midieval Tools and Implements</Title>  
-   <Author>Gazit, Inbar</Author>  
- </Book>  
+  <Book>  
+    <Title>Artifacts of Roman Civilization</Title>  
+    <Author>Moreno, Jordao</Author>  
+  </Book>  
+  <Book>  
+    <Title>Midieval Tools and Implements</Title>  
+    <Author>Gazit, Inbar</Author>  
+  </Book>  
 </Pubs>  
 <!--This is another comment.-->  
 ```  
@@ -731,24 +731,24 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates a document from a <xref:System.IO.StringReader>.  
  
 ```csharp  
- 
-               TextReader tr = new StringReader("<Root>Content</Root>");  
+  
+                TextReader tr = new StringReader("<Root>Content</Root>");  
 XDocument doc = XDocument.Load(tr);  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim tr As TextReader = New StringReader("<Root>Content</Root>")  
+  
+                Dim tr As TextReader = New StringReader("<Root>Content</Root>")  
 Dim doc As XDocument = XDocument.Load(tr)  
 Console.WriteLine(doc)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root>Content</Root>  
 ```  
  
@@ -805,53 +805,53 @@ This example uses the following XML document:
 [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
  
 ```csharp  
- 
-               XDocument doc = XDocument.Load("PurchaseOrder.xml");  
+  
+                XDocument doc = XDocument.Load("PurchaseOrder.xml");  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = XDocument.Load("PurchaseOrder.xml")  
+  
+                Dim doc As XDocument = XDocument.Load("PurchaseOrder.xml")  
 Console.WriteLine(doc)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">  
- <Address Type="Shipping">  
-   <Name>Ellen Adams</Name>  
-   <Street>123 Maple Street</Street>  
-   <City>Mill Valley</City>  
-   <State>CA</State>  
-   <Zip>10999</Zip>  
-   <Country>USA</Country>  
- </Address>  
- <Address Type="Billing">  
-   <Name>Tai Yee</Name>  
-   <Street>8 Oak Avenue</Street>  
-   <City>Old Town</City>  
-   <State>PA</State>  
-   <Zip>95819</Zip>  
-   <Country>USA</Country>  
- </Address>  
- <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
- <Items>  
-   <Item PartNumber="872-AA">  
-     <ProductName>Lawnmower</ProductName>  
-     <Quantity>1</Quantity>  
-     <USPrice>148.95</USPrice>  
-     <Comment>Confirm this is electric</Comment>  
-   </Item>  
-   <Item PartNumber="926-AA">  
-     <ProductName>Baby Monitor</ProductName>  
-     <Quantity>2</Quantity>  
-     <USPrice>39.98</USPrice>  
-     <ShipDate>1999-05-21</ShipDate>  
-   </Item>  
- </Items>  
+  
+                <PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">  
+  <Address Type="Shipping">  
+    <Name>Ellen Adams</Name>  
+    <Street>123 Maple Street</Street>  
+    <City>Mill Valley</City>  
+    <State>CA</State>  
+    <Zip>10999</Zip>  
+    <Country>USA</Country>  
+  </Address>  
+  <Address Type="Billing">  
+    <Name>Tai Yee</Name>  
+    <Street>8 Oak Avenue</Street>  
+    <City>Old Town</City>  
+    <State>PA</State>  
+    <Zip>95819</Zip>  
+    <Country>USA</Country>  
+  </Address>  
+  <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
+  <Items>  
+    <Item PartNumber="872-AA">  
+      <ProductName>Lawnmower</ProductName>  
+      <Quantity>1</Quantity>  
+      <USPrice>148.95</USPrice>  
+      <Comment>Confirm this is electric</Comment>  
+    </Item>  
+    <Item PartNumber="926-AA">  
+      <ProductName>Baby Monitor</ProductName>  
+      <Quantity>2</Quantity>  
+      <USPrice>39.98</USPrice>  
+      <ShipDate>1999-05-21</ShipDate>  
+    </Item>  
+  </Items>  
 </PurchaseOrder>  
 ```  
  
@@ -902,23 +902,23 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates a DOM document, creates an <xref:System.Xml.XmlNodeReader> from the DOM document, creates an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.XmlNodeReader>.  
  
 ```csharp  
- 
-               // Create a DOM document with some content.  
+  
+                // Create a DOM document with some content.  
 XmlDocument doc = new XmlDocument();  
 XmlElement child = doc.CreateElement("Child");  
 child.InnerText = "child contents";  
 XmlElement root = doc.CreateElement("Root");  
 root.AppendChild(child);  
 doc.AppendChild(root);  
- 
+  
 // create a reader and move to the content  
 using (XmlNodeReader nodeReader = new XmlNodeReader(doc)) {  
-   // the reader must be in the Interactive state in order to  
-   // create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent();  
- 
-   XDocument xRoot = XDocument.Load(nodeReader);  
-   Console.WriteLine(xRoot);  
+    // the reader must be in the Interactive state in order to  
+    // create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent();  
+  
+    XDocument xRoot = XDocument.Load(nodeReader);  
+    Console.WriteLine(xRoot);  
 }  
 ```  
  
@@ -930,25 +930,25 @@ child.InnerText = "child contents"
 Dim root As XmlElement = doc.CreateElement("Root")  
 root.AppendChild(child)  
 doc.AppendChild(root)  
- 
+  
 ' create a reader and move to the content  
 Using nodeReader = New XmlNodeReader(doc)  
-   ' the reader must be in the Interactive state in order to  
-   ' create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent()  
- 
-   Dim xRoot As XDocument = XDocument.Load(nodeReader)  
-   Console.WriteLine(xRoot)  
+    ' the reader must be in the Interactive state in order to  
+    ' create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent()  
+  
+    Dim xRoot As XDocument = XDocument.Load(nodeReader)  
+    Console.WriteLine(xRoot)  
 End Using  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child>child contents</Child>  
+  
+                <Root>  
+  <Child>child contents</Child>  
 </Root>  
 ```  
  
@@ -1062,66 +1062,66 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates a document from a <xref:System.IO.StringReader>.  
  
 ```csharp  
- 
-               TextReader sr;  
+  
+                TextReader sr;  
 int whiteSpaceNodes;  
- 
+  
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
 XDocument xmlTree1 = XDocument.Load(sr, LoadOptions.None);  
 sr.Close();  
 whiteSpaceNodes = xmlTree1  
-   .Element("Root")  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .Element("Root")  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes);  
- 
+  
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
 XDocument xmlTree2 = XDocument.Load(sr, LoadOptions.PreserveWhitespace);  
 sr.Close();  
 whiteSpaceNodes = xmlTree2  
-   .Element("Root")  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .Element("Root")  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes);  
 ```  
  
 ```vb  
- 
-               Dim sr As TextReader  
+  
+                Dim sr As TextReader  
 Dim whiteSpaceNodes As Integer  
- 
+  
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
 Dim xmlTree1 As XDocument = XDocument.Load(sr, LoadOptions.None)  
 sr.Close()  
 whiteSpaceNodes = xmlTree1 _  
-             .Element("Root") _  
-             .DescendantNodesAndSelf() _  
-             .OfType(Of XText)() _  
-             .Where(Function(ByVal tNode As XNode) tNode. _  
-                 ToString().Trim().Length = 0).Count()  
+              .Element("Root") _  
+              .DescendantNodesAndSelf() _  
+              .OfType(Of XText)() _  
+              .Where(Function(ByVal tNode As XNode) tNode. _  
+                  ToString().Trim().Length = 0).Count()  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes)  
- 
+  
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
 Dim xmlTree2 As XDocument = XDocument.Load(sr, LoadOptions.PreserveWhitespace)  
 sr.Close()  
 whiteSpaceNodes = xmlTree2 _  
-             .Element("Root") _  
-             .DescendantNodesAndSelf() _  
-             .OfType(Of XText)() _  
-             .Where(Function(ByVal tNode As XNode) tNode. _  
-                 ToString().Trim().Length = 0).Count()  
+              .Element("Root") _  
+              .DescendantNodesAndSelf() _  
+              .OfType(Of XText)() _  
+              .Where(Function(ByVal tNode As XNode) tNode. _  
+                  ToString().Trim().Length = 0).Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Count of white space nodes (not preserving whitespace): 0  
+  
+                Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
  
@@ -1190,29 +1190,29 @@ This example uses the following XML document:
 [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
  
 ```csharp  
- 
-               XDocument doc1 = XDocument.Load("PurchaseOrder.xml", LoadOptions.None);  
+  
+                XDocument doc1 = XDocument.Load("PurchaseOrder.xml", LoadOptions.None);  
 Console.WriteLine("nodes if not preserving whitespace: {0}", doc1.DescendantNodes().Count());  
- 
+  
 XDocument doc2 = XDocument.Load("PurchaseOrder.xml", LoadOptions.PreserveWhitespace);  
 Console.WriteLine("nodes if preserving whitespace: {0}", doc2.DescendantNodes().Count());  
 ```  
  
 ```vb  
- 
-               Dim doc1 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.None)  
+  
+                Dim doc1 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.None)  
 Console.WriteLine("nodes if not preserving whitespace: {0}", doc1.DescendantNodes().Count())  
- 
+  
 Dim doc2 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.PreserveWhitespace)  
 Console.WriteLine("nodes if preserving whitespace: {0}", doc2.DescendantNodes().Count())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               nodes if not preserving whitespace: 48  
+  
+                nodes if not preserving whitespace: 48  
 nodes if preserving whitespace: 82  
 ```  
  
@@ -1277,81 +1277,81 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
  
 ```csharp  
- 
-               string markup =  
+  
+                string markup =  
 @"<Root>  
-   <Child>  
-       <GrandChild/>  
-   </Child>  
+    <Child>  
+        <GrandChild/>  
+    </Child>  
 </Root>";  
- 
+  
 // Create a reader and move to the content.  
 using (XmlReader nodeReader = XmlReader.Create(new StringReader(markup)))  
 {  
-   // the reader must be in the Interactive state in order to  
-   // Create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent();  
- 
-   XDocument xRoot = XDocument.Load(nodeReader, LoadOptions.SetLineInfo);  
-   Console.WriteLine("{0}{1}{2}",  
-       "Element Name".PadRight(20),  
-       "Line".PadRight(5),  
-       "Position");  
-   Console.WriteLine("{0}{1}{2}",  
-       "------------".PadRight(20),  
-       "----".PadRight(5),  
-       "--------");  
-   foreach (XElement e in xRoot.Elements("Root").DescendantsAndSelf())  
-       Console.WriteLine("{0}{1}{2}",  
-           ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
-           ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
-           ((IXmlLineInfo)e).LinePosition);  
+    // the reader must be in the Interactive state in order to  
+    // Create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent();  
+  
+    XDocument xRoot = XDocument.Load(nodeReader, LoadOptions.SetLineInfo);  
+    Console.WriteLine("{0}{1}{2}",  
+        "Element Name".PadRight(20),  
+        "Line".PadRight(5),  
+        "Position");  
+    Console.WriteLine("{0}{1}{2}",  
+        "------------".PadRight(20),  
+        "----".PadRight(5),  
+        "--------");  
+    foreach (XElement e in xRoot.Elements("Root").DescendantsAndSelf())  
+        Console.WriteLine("{0}{1}{2}",  
+            ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+            ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
+            ((IXmlLineInfo)e).LinePosition);  
 }  
 ```  
  
 ```vb  
- 
-               Dim markup As String = _  
-   "<Root>" & Environment.NewLine & _  
-   "    <Child>" & Environment.NewLine & _  
-   "        <GrandChild/>" & Environment.NewLine & _  
-   "    </Child>" & Environment.NewLine & _  
-   "</Root>"  
- 
+  
+                Dim markup As String = _  
+    "<Root>" & Environment.NewLine & _  
+    "    <Child>" & Environment.NewLine & _  
+    "        <GrandChild/>" & Environment.NewLine & _  
+    "    </Child>" & Environment.NewLine & _  
+    "</Root>"  
+  
 ' Create a reader and move to the content.  
 Using nodeReader As XmlReader = XmlReader.Create(New StringReader(markup))  
- 
-   ' The reader must be in the Interactive state in order to  
-   ' create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent()  
- 
-   Dim xRoot As XDocument = XDocument.Load(nodeReader, LoadOptions.SetLineInfo)  
-   Console.WriteLine("{0}{1}{2}", _  
-       "Element Name".PadRight(20), _  
-       "Line".PadRight(5), _  
-       "Position")  
-   Console.WriteLine("{0}{1}{2}", _  
-       "------------".PadRight(20), _  
-       "----".PadRight(5), _  
-       "--------")  
-   For Each e As XElement In xRoot.Elements("Root").DescendantsAndSelf()  
-       Console.WriteLine("{0}{1}{2}", _  
-           ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString()).PadRight(20), _  
-           (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
-           (DirectCast(e, IXmlLineInfo)).LinePosition)  
-   Next  
+  
+    ' The reader must be in the Interactive state in order to  
+    ' create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent()  
+  
+    Dim xRoot As XDocument = XDocument.Load(nodeReader, LoadOptions.SetLineInfo)  
+    Console.WriteLine("{0}{1}{2}", _  
+        "Element Name".PadRight(20), _  
+        "Line".PadRight(5), _  
+        "Position")  
+    Console.WriteLine("{0}{1}{2}", _  
+        "------------".PadRight(20), _  
+        "----".PadRight(5), _  
+        "--------")  
+    For Each e As XElement In xRoot.Elements("Root").DescendantsAndSelf()  
+        Console.WriteLine("{0}{1}{2}", _  
+            ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString()).PadRight(20), _  
+            (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
+            (DirectCast(e, IXmlLineInfo)).LinePosition)  
+    Next  
 End Using  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Element Name        Line Position  
+  
+                Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
- Child             2    6  
-   GrandChild      3    10  
+  Child             2    6  
+    GrandChild      3    10  
 ```  
  
  ]]></format>
@@ -1395,28 +1395,28 @@ Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <x
 The following example shows the use of this property.  
  
 ```csharp  
- 
-               // Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
+  
+                // Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
 XDocument xmlTree = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XElement("Root", "content")  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XElement("Root", "content")  
 );  
 Console.WriteLine(xmlTree.NodeType);  
 ```  
  
 ```vb  
- 
-               ' Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
+  
+                ' Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
 Dim xmlTree As XDocument = _  
-   <?xml version='1.0' encoding='utf-8' standalone='yes'?>  
-       <Root>content</Root>  
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>  
+        <Root>content</Root>  
 Console.WriteLine("{0}", xmlTree.NodeType)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Document  
 ```  
  
@@ -1469,38 +1469,38 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XDocument>.  
  
 ```csharp  
- 
-               string str =  
+  
+                string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
-   <Child>Content</Child>  
+    <Child>Content</Child>  
 </Root>";  
 XDocument doc = XDocument.Parse(str);  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim str As String = _  
-   "<?xml version= '1.0'?>" & _  
-   "<!-- comment at the root level -->" & _  
-   "<Root>" & _  
-   "  <Child>Content</Child>" & _  
-   "</Root>"  
- 
+  
+                Dim str As String = _  
+    "<?xml version= '1.0'?>" & _  
+    "<!-- comment at the root level -->" & _  
+    "<Root>" & _  
+    "  <Child>Content</Child>" & _  
+    "</Root>"  
+  
 Dim doc As XDocument = XDocument.Parse(str)  
 Console.WriteLine(doc)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!-- comment at the root level -->  
+  
+                <!-- comment at the root level -->  
 <Root>  
- <Child>Content</Child>  
+  <Child>Content</Child>  
 </Root>  
 ```  
  
@@ -1565,12 +1565,12 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example parses a string into an <xref:System.Xml.Linq.XDocument>.  
  
 ```csharp  
- 
-               string str =  
+  
+                string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
-   <Child>Content</Child>  
+    <Child>Content</Child>  
 </Root>";  
 XDocument doc1 = XDocument.Parse(str, LoadOptions.PreserveWhitespace);  
 Console.WriteLine("nodes when preserving whitespace: {0}", doc1.DescendantNodes().Count());  
@@ -1579,26 +1579,26 @@ Console.WriteLine("nodes when not preserving whitespace: {0}", doc2.DescendantNo
 ```  
  
 ```vb  
- 
-               Dim str As String = _  
+  
+                Dim str As String = _  
 "<?xml version= '1.0'?>" & Environment.NewLine & _  
 "<!-- comment at the root level -->" & Environment.NewLine & _  
 "<Root>" & Environment.NewLine & _  
 "    <Child>Content</Child>"  & Environment.NewLine & _  
 "</Root>"  
- 
+  
 Dim doc1 As XDocument = XDocument.Parse(str, LoadOptions.PreserveWhitespace)  
 Console.WriteLine("nodes when preserving whitespace: {0}", doc1.DescendantNodes().Count())  
 Dim doc2 As XDocument = XDocument.Parse(str, LoadOptions.None)  
 Console.WriteLine("nodes when not preserving whitespace: {0}", doc2.DescendantNodes().Count())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               nodes when preserving whitespace: 8  
+  
+                nodes when preserving whitespace: 8  
 nodes when not preserving whitespace: 4  
 ```  
  
@@ -1643,49 +1643,49 @@ This property is useful when you want to compose [!INCLUDE[sqltecxlinq](~/includ
 The following example uses this property to get the root element of a document.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XComment("This is a comment."),  
-   new XElement("Pubs",   
-       new XElement("Book",  
-           new XElement("Title", "Artifacts of Roman Civilization"),  
-           new XElement("Author", "Moreno, Jordao")  
-       ),  
-       new XElement("Book",  
-           new XElement("Title", "Midieval Tools and Implements"),  
-           new XElement("Author", "Gazit, Inbar")  
-       )  
-   ),  
-   new XComment("This is another comment.")  
+  
+                XDocument doc = new XDocument(  
+    new XComment("This is a comment."),  
+    new XElement("Pubs",   
+        new XElement("Book",  
+            new XElement("Title", "Artifacts of Roman Civilization"),  
+            new XElement("Author", "Moreno, Jordao")  
+        ),  
+        new XElement("Book",  
+            new XElement("Title", "Midieval Tools and Implements"),  
+            new XElement("Author", "Gazit, Inbar")  
+        )  
+    ),  
+    new XComment("This is another comment.")  
 );  
 Console.WriteLine(doc.Root.Name.ToString());  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _  
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-   <!--This is a comment.-->  
-   <Pubs>  
-       <Book>  
-           <Title>Artifacts of Roman Civilization</Title>  
-           <Author>Moreno, Jordao</Author>  
-       </Book>  
-       <Book>  
-           <Title>Midieval Tools and Implements</Title>  
-           <Author>Gazit, Inbar</Author>  
-       </Book>  
-       <!--This is another comment.-->  
-   </Pubs>  
- 
+  
+                Dim doc As XDocument = _  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+    <!--This is a comment.-->  
+    <Pubs>  
+        <Book>  
+            <Title>Artifacts of Roman Civilization</Title>  
+            <Author>Moreno, Jordao</Author>  
+        </Book>  
+        <Book>  
+            <Title>Midieval Tools and Implements</Title>  
+            <Author>Gazit, Inbar</Author>  
+        </Book>  
+        <!--This is another comment.-->  
+    </Pubs>  
+  
 Console.WriteLine(doc.Root.Name.ToString())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Pubs  
 ```  
  
@@ -1777,13 +1777,13 @@ If you want to control white space, use the overload of <xref:System.Xml.Linq.XD
 The following example creates an <xref:System.Xml.Linq.XDocument>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
- 
+  
+                StringBuilder sb = new StringBuilder();  
+  
 XDocument doc = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child", "content")  
-   )  
+    new XElement("Root",  
+        new XElement("Child", "content")  
+    )  
 );  
 TextWriter tr = new StringWriter(sb);  
 doc.Save(tr);  
@@ -1791,26 +1791,26 @@ Console.WriteLine(sb.ToString());
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
- 
+  
+                Dim sb As StringBuilder = New StringBuilder()  
+  
 Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8"?>  
-       <Root><Child>content</Child></Root>  
- 
+    <?xml version="1.0" encoding="utf-8"?>  
+        <Root><Child>content</Child></Root>  
+  
 Dim tr As TextWriter = New StringWriter(sb)  
 doc.Save(tr)  
 Console.WriteLine(sb.ToString())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-16"?>  
+  
+                <?xml version="1.0" encoding="utf-16"?>  
 <Root>  
- <Child>content</Child>  
+  <Child>content</Child>  
 </Root>  
 ```  
  
@@ -1855,34 +1855,34 @@ If you want to control white space, use the overload of <xref:System.Xml.Linq.XD
 The following example creates an <xref:System.Xml.Linq.XDocument>, saves the document to a file, and then prints the file to the console.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child", "content")  
-   )  
+  
+                XDocument doc = new XDocument(  
+    new XElement("Root",  
+        new XElement("Child", "content")  
+    )  
 );  
 doc.Save("Root.xml");  
 Console.WriteLine(File.ReadAllText("Root.xml"));  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8"?>  
-       <Root><Child>content</Child></Root>  
- 
+  
+                Dim doc As XDocument = _   
+    <?xml version="1.0" encoding="utf-8"?>  
+        <Root><Child>content</Child></Root>  
+  
 doc.Save("Root.xml")  
 Console.WriteLine(File.ReadAllText("Root.xml"))  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-8"?>  
+  
+                <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
- <Child>content</Child>  
+  <Child>content</Child>  
 </Root>  
 ```  
  
@@ -1925,47 +1925,47 @@ This example produces the following output:
 The following example shows how to save an <xref:System.Xml.Linq.XDocument> to an <xref:System.Xml.XmlWriter>.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
+  
+                StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
- 
+  
 using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
-   XDocument doc = new XDocument(  
-       new XElement("Child",  
-           new XElement("GrandChild", "some content")  
-       )  
-   );  
-   doc.Save(xw);  
+    XDocument doc = new XDocument(  
+        new XElement("Child",  
+            new XElement("GrandChild", "some content")  
+        )  
+    );  
+    doc.Save(xw);  
 }  
- 
+  
 Console.WriteLine(sb.ToString());  
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
- 
+  
 Using xw = XmlWriter.Create(sb, xws)  
-   Dim doc As XDocument = New XDocument(<Child><GrandChild>some content</GrandChild></Child>)  
-   doc.Save(xw)  
- 
+    Dim doc As XDocument = New XDocument(<Child><GrandChild>some content</GrandChild></Child>)  
+    doc.Save(xw)  
+  
 End Using  
- 
+  
 Console.WriteLine(sb.ToString())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Child>  
- <GrandChild>some content</GrandChild>  
+  
+                <Child>  
+  <GrandChild>some content</GrandChild>  
 </Child>  
 ```  
  
@@ -2063,54 +2063,54 @@ For more information, see [Preserving White Space while Loading or Parsing XML](
 The following example shows two uses of this method. The first use serializes the <xref:System.Xml.Linq.XDocument> with formatting. The second preserves white space. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child", "content")  
-   )  
+  
+                XDocument doc = new XDocument(  
+    new XElement("Root",  
+        new XElement("Child", "content")  
+    )  
 );  
 StringBuilder sb1 = new StringBuilder();  
 using (StringWriter sr1 = new StringWriter(sb1)) {  
-   doc.Save(sr1, SaveOptions.None);  
-   Console.WriteLine(sb1.ToString());  
+    doc.Save(sr1, SaveOptions.None);  
+    Console.WriteLine(sb1.ToString());  
 }  
- 
+  
 StringBuilder sb2 = new StringBuilder();  
 using (StringWriter sr2 = new StringWriter(sb2)) {  
-   doc.Save(sr2, SaveOptions.DisableFormatting);  
-   Console.WriteLine(sb2.ToString());  
+    doc.Save(sr2, SaveOptions.DisableFormatting);  
+    Console.WriteLine(sb2.ToString());  
 }  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8"?>  
-       <Root><Child>content</Child></Root>  
- 
+  
+                Dim doc As XDocument = _   
+    <?xml version="1.0" encoding="utf-8"?>  
+        <Root><Child>content</Child></Root>  
+  
 Dim sb1 As StringBuilder = New StringBuilder()  
- 
+  
 Using sr1 = New StringWriter(sb1)  
-   doc.Save(sr1, SaveOptions.None)  
-   Console.WriteLine(sb1.ToString())  
+    doc.Save(sr1, SaveOptions.None)  
+    Console.WriteLine(sb1.ToString())  
 End Using  
- 
+  
 Dim sb2 As StringBuilder = New StringBuilder()  
- 
+  
 Using sr2 = New StringWriter(sb2)  
-   doc.Save(sr2, SaveOptions.DisableFormatting)  
-   Console.WriteLine(sb2.ToString())  
+    doc.Save(sr2, SaveOptions.DisableFormatting)  
+    Console.WriteLine(sb2.ToString())  
 End Using  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <?xml version="1.0" encoding="utf-16"?>  
+  
+                <?xml version="1.0" encoding="utf-16"?>  
 <Root>  
- <Child>content</Child>  
+  <Child>content</Child>  
 </Root>  
 <?xml version="1.0" encoding="utf-16"?><Root><Child>content</Child></Root>  
 ```  
@@ -2160,11 +2160,11 @@ For more information, see [Preserving White Space while Loading or Parsing XML](
 The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XDocument> with indenting.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child", "content")  
-   )  
+  
+                XDocument doc = new XDocument(  
+    new XElement("Root",  
+        new XElement("Child", "content")  
+    )  
 );  
 doc.Save("Root1.xml", SaveOptions.DisableFormatting);  
 Console.WriteLine(File.ReadAllText("Root1.xml"));  
@@ -2173,26 +2173,26 @@ Console.WriteLine(File.ReadAllText("Root2.xml"));
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8"?>  
-       <Root><Child>content</Child></Root>  
- 
+  
+                Dim doc As XDocument = _   
+    <?xml version="1.0" encoding="utf-8"?>  
+        <Root><Child>content</Child></Root>  
+  
 doc.Save("Root1.xml", SaveOptions.DisableFormatting)  
 Console.WriteLine(File.ReadAllText("Root1.xml"))  
 doc.Save("Root2.xml", SaveOptions.None)  
 Console.WriteLine(File.ReadAllText("Root2.xml"))  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <?xml version="1.0" encoding="utf-8"?><Root><Child>content</Child></Root>  
+  
+                <?xml version="1.0" encoding="utf-8"?><Root><Child>content</Child></Root>  
 <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
- <Child>content</Child>  
+  <Child>content</Child>  
 </Root>  
 ```  
  
@@ -2235,47 +2235,47 @@ This example produces the following output:
 The following example shows how to write an <xref:System.Xml.Linq.XDocument> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
+  
+                StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
- 
+  
 using (XmlWriter xw = XmlWriter.Create(sb, xws))  
 {  
-   XDocument doc = new XDocument(  
-       new XElement("Child",  
-           new XElement("GrandChild", "some content")  
-       )  
-   );  
-   doc.WriteTo(xw);  
+    XDocument doc = new XDocument(  
+        new XElement("Child",  
+            new XElement("GrandChild", "some content")  
+        )  
+    );  
+    doc.WriteTo(xw);  
 }  
- 
+  
 Console.WriteLine(sb.ToString());  
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
- 
+  
 Using xw = XmlWriter.Create(sb, xws)  
-   Dim doc As XDocument = New XDocument(<Child><GrandChild>some content</GrandChild></Child>)  
-   doc.WriteTo(xw)  
+    Dim doc As XDocument = New XDocument(<Child><GrandChild>some content</GrandChild></Child>)  
+    doc.WriteTo(xw)  
 End Using  
- 
+  
 Console.WriteLine(sb.ToString())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Child>  
- <GrandChild>some content</GrandChild>  
+  
+                <Child>  
+  <GrandChild>some content</GrandChild>  
 </Child>  
 ```  
  
@@ -2323,38 +2323,38 @@ This method parses a string and creates an XML tree.
 The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XDocument>.  
  
 ```csharp  
- 
-               string str =  
+  
+                string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
-   <Child>Content</Child>  
+    <Child>Content</Child>  
 </Root>";  
 XDocument doc = XDocument.Parse(str);  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim str As String = _  
-   "<?xml version= '1.0'?>" & _  
-   "<!-- comment at the root level -->" & _  
-   "<Root>" & _  
-   "  <Child>Content</Child>" & _  
-   "</Root>"  
- 
+  
+                Dim str As String = _  
+    "<?xml version= '1.0'?>" & _  
+    "<!-- comment at the root level -->" & _  
+    "<Root>" & _  
+    "  <Child>Content</Child>" & _  
+    "</Root>"  
+  
 Dim doc As XDocument = XDocument.Parse(str)  
 Console.WriteLine(doc)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!-- comment at the root level -->  
+  
+                <!-- comment at the root level -->  
 <Root>  
- <Child>Content</Child>  
+  <Child>Content</Child>  
 </Root>  
 ```  
  
@@ -2386,68 +2386,68 @@ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see 
 The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
  
 ```csharp  
- 
-               XDocument srcTree = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       new XElement("Child1", "data1"),  
-       new XElement("Child2", "data2"),  
-       new XElement("Child3", "data3"),  
-       new XElement("Child2", "data4"),  
-       new XElement("Info5", "info5"),  
-       new XElement("Info6", "info6"),  
-       new XElement("Info7", "info7"),  
-       new XElement("Info8", "info8")  
-   )  
+  
+                XDocument srcTree = new XDocument(  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        new XElement("Child1", "data1"),  
+        new XElement("Child2", "data2"),  
+        new XElement("Child3", "data3"),  
+        new XElement("Child2", "data4"),  
+        new XElement("Info5", "info5"),  
+        new XElement("Info6", "info6"),  
+        new XElement("Info7", "info7"),  
+        new XElement("Info8", "info8")  
+    )  
 );  
- 
+  
 XDocument doc = new XDocument(  
-   new XComment("This is a comment"),  
-   new XElement("Root",  
-       from el in srcTree.Element("Root").Elements()  
-       where ((string)el).StartsWith("data")  
-       select el  
-   )  
+    new XComment("This is a comment"),  
+    new XElement("Root",  
+        from el in srcTree.Element("Root").Elements()  
+        where ((string)el).StartsWith("data")  
+        select el  
+    )  
 );  
 Console.WriteLine(doc);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <Child1>data1</Child1>  
-           <Child2>data2</Child2>  
-           <Child3>data3</Child3>  
-           <Child2>data4</Child2>  
-           <Info5>info5</Info5>  
-           <Info6>info6</Info6>  
-           <Info7>info7</Info7>  
-           <Info8>info8</Info8>  
-       </Root>  
+  
+                Dim srcTree As XDocument = _   
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <Child1>data1</Child1>  
+            <Child2>data2</Child2>  
+            <Child3>data3</Child3>  
+            <Child2>data4</Child2>  
+            <Info5>info5</Info5>  
+            <Info6>info6</Info6>  
+            <Info7>info7</Info7>  
+            <Info8>info8</Info8>  
+        </Root>  
 Dim doc As XDocument = _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <!--This is a comment-->  
-       <Root>  
-           <%= From el In srcTree.<Root>.Elements _  
-               Where CStr(el).StartsWith("data") _  
-               Select el %>  
-       </Root>  
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <!--This is a comment-->  
+        <Root>  
+            <%= From el In srcTree.<Root>.Elements _  
+                Where CStr(el).StartsWith("data") _  
+                Select el %>  
+        </Root>  
 Console.WriteLine(doc)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <!--This is a comment-->  
+  
+                <!--This is a comment-->  
 <Root>  
- <Child1>data1</Child1>  
- <Child2>data2</Child2>  
- <Child3>data3</Child3>  
- <Child2>data4</Child2>  
+  <Child1>data1</Child1>  
+  <Child2>data2</Child2>  
+  <Child3>data3</Child3>  
+  <Child2>data4</Child2>  
 </Root>  
 ```  
  

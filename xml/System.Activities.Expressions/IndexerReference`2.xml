@@ -36,55 +36,55 @@ The following code example uses <xref:System.Activities.Expressions.IndexerRefer
 >  Instead of instantiating the <xref:System.Activities.Expressions.IndexerReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
  
 ```  
- 
+  
 // Define a class with a multi-dimensional indexer.  
 public class ObjectWithIndexer  
 {  
-   private int[,] array = new int[10,10];  
-   public int this[int i, int j]  
-   {  
-       get { return array[i,j]; }  
-       set { array[i,j] = value; }  
-   }  
+    private int[,] array = new int[10,10];  
+    public int this[int i, int j]  
+    {  
+        get { return array[i,j]; }  
+        set { array[i,j] = value; }  
+    }  
 }  
- 
+  
 public static void IndexerReferenceSample()  
 {  
-   // Create a variable of type ObjectWithIndexer to store the object item.  
-   var oivar = new Variable<ObjectWithIndexer>("oivar", new ObjectWithIndexer());  
- 
-   Activity myActivity = new Sequence  
-   {  
-       Variables = { oivar },  
-       Activities =   
-       {                      
-           // Create an Assign activity with a reference for the object at index [1,2].  
-           new Assign<int>  
-           {  
-               To = new IndexerReference<ObjectWithIndexer, int>  
-               {  
-                   Operand = oivar,  
-                   Indices =  
-                   {  
-                       new InArgument<int>(1),  
-                       new InArgument<int>(2)  
-                   }  
-               },  
-               // Assign an integer value to the object at index [1,2].  
-               Value = 4,  
-           },  
-           // Print the new item value to the console.  
-           new WriteLine()  
-           {  
-               Text = ExpressionServices.Convert<string>(ctx => oivar.Get(ctx)[1, 2].ToString()),  
-           }  
-       }  
-   };  
- 
-   // Invoke the Sequence activity.  
-   WorkflowInvoker.Invoke(myActivity);  
+    // Create a variable of type ObjectWithIndexer to store the object item.  
+    var oivar = new Variable<ObjectWithIndexer>("oivar", new ObjectWithIndexer());  
+  
+    Activity myActivity = new Sequence  
+    {  
+        Variables = { oivar },  
+        Activities =   
+        {                      
+            // Create an Assign activity with a reference for the object at index [1,2].  
+            new Assign<int>  
+            {  
+                To = new IndexerReference<ObjectWithIndexer, int>  
+                {  
+                    Operand = oivar,  
+                    Indices =  
+                    {  
+                        new InArgument<int>(1),  
+                        new InArgument<int>(2)  
+                    }  
+                },  
+                // Assign an integer value to the object at index [1,2].  
+                Value = 4,  
+            },  
+            // Print the new item value to the console.  
+            new WriteLine()  
+            {  
+                Text = ExpressionServices.Convert<string>(ctx => oivar.Get(ctx)[1, 2].ToString()),  
+            }  
+        }  
+    };  
+  
+    // Invoke the Sequence activity.  
+    WorkflowInvoker.Invoke(myActivity);  
 }  
- 
+  
 ```  
  
  ]]></format>

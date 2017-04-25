@@ -29,7 +29,7 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
 src.ExtendedDN = ExtendedDN.HexString;  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>

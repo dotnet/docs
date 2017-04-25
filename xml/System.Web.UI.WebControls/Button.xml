@@ -132,7 +132,7 @@ For more information about partial-page rendering and using <xref:System.Web.UI.
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CausesValidation="True|False"  
     CommandArgument="string"  
@@ -146,7 +146,7 @@ For more information about partial-page rendering and using <xref:System.Web.UI.
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -726,11 +726,11 @@ Set the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property to the U
  
 ```  
 Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load  
-       If Page.PreviousPage.IsValid Then  
-           ' Handle the post back  
-       Else  
-           Response.Write("Invalid")  
-       End If  
+        If Page.PreviousPage.IsValid Then  
+            ' Handle the post back  
+        Else  
+            Response.Write("Invalid")  
+        End If  
 End Sub  
 ```  
  

@@ -34,7 +34,7 @@ The following URI expands the `OrderLines` associated with each `Order` returned
  
 ```  
 http://host/service.svc/Orders?$expand=OrderLines  
- 
+  
 ```  
  
  ]]></format>

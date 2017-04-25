@@ -33,24 +33,24 @@ The following code example demonstrates how to use TypePresenter in a custom act
  
 ```xaml  
 <sap:ActivityDesigner x:Class="WorkflowConsoleApplication1.ActivityDesigner1"  
-   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-   xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
-   xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"  
-   xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
-   <sap:ActivityDesigner.Resources>  
-       <sapc:ModelToObjectValueConverter x:Key="modelItemConverter" />  
-   </sap:ActivityDesigner.Resources>  
-   <StackPanel>  
-       <sapv:TypePresenter  
-           Type="{Binding Path=ModelItem.Text, Mode=TwoWay, Converter={StaticResource modelItemConverter}}"  
-           Context="{Binding Context}"  
-           AllowNull="True"  
-           BrowseTypeDirectly="False"  
-           Label="Choose type"/>  
-   </StackPanel>  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"  
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+    <sap:ActivityDesigner.Resources>  
+        <sapc:ModelToObjectValueConverter x:Key="modelItemConverter" />  
+    </sap:ActivityDesigner.Resources>  
+    <StackPanel>  
+        <sapv:TypePresenter  
+            Type="{Binding Path=ModelItem.Text, Mode=TwoWay, Converter={StaticResource modelItemConverter}}"  
+            Context="{Binding Context}"  
+            AllowNull="True"  
+            BrowseTypeDirectly="False"  
+            Label="Choose type"/>  
+    </StackPanel>  
 </sap:ActivityDesigner>  
- 
+  
 ```  
  
  ]]></format>

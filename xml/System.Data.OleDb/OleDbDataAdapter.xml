@@ -378,38 +378,38 @@ The following example uses an <xref:System.Data.OleDb.OleDbDataAdapter> to fill 
  
 ```vb  
 Dim custDA As OleDbDataAdapter = New OleDbDataAdapter()  
-    Dim custDS As DataSet = New DataSet  
-    Dim custTable As DataTable = New DataTable("Customers")  
-    custTable.Columns.Add("CustomerID", Type.GetType("System.String"))  
-    custTable.Columns.Add("CompanyName", Type.GetType("System.String"))  
-    custDS.Tables.Add(custTable)  
-    'Use ADO objects from ADO library (msado15.dll) imported  
-    ' as.NET library ADODB.dll using TlbImp.exe  
-    Dim adoConn As ADODB.Connection = New ADODB.Connection()  
-    Dim adoRS As ADODB.Recordset = New ADODB.Recordset()  
-    adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1)  
-    adoRS.Open("SELECT CustomerID, CompanyName FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1)  
-    custDA.Fill(custTable, adoRS)  
-    adoRS.Close()  
-    adoConn.Close()  
+     Dim custDS As DataSet = New DataSet  
+     Dim custTable As DataTable = New DataTable("Customers")  
+     custTable.Columns.Add("CustomerID", Type.GetType("System.String"))  
+     custTable.Columns.Add("CompanyName", Type.GetType("System.String"))  
+     custDS.Tables.Add(custTable)  
+     'Use ADO objects from ADO library (msado15.dll) imported  
+     ' as.NET library ADODB.dll using TlbImp.exe  
+     Dim adoConn As ADODB.Connection = New ADODB.Connection()  
+     Dim adoRS As ADODB.Recordset = New ADODB.Recordset()  
+     adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1)  
+     adoRS.Open("SELECT CustomerID, CompanyName FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1)  
+     custDA.Fill(custTable, adoRS)  
+     adoRS.Close()  
+     adoConn.Close()  
 ```  
  
 ```csharp  
 OleDbDataAdapter custDA = new OleDbDataAdapter();  
-    DataSet custDS = new DataSet();  
-    DataTable custTable = new DataTable("Customers");  
-    custTable.Columns.Add("CustomerID", typeof(String));  
-    custTable.Columns.Add("CompanyName", typeof(String));  
-    custDS.Tables.Add(custTable);  
-    //Use ADO objects from ADO library (msado15.dll) imported  
-    //  as.NET library ADODB.dll using TlbImp.exe  
-    ADODB.Connection adoConn = new ADODB.Connection();  
-    ADODB.Recordset adoRS = new ADODB.Recordset();  
-    adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1);  
-    adoRS.Open("SELECT CustomerID, CompanyName FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1);  
-    custDA.Fill(custTable, adoRS);  
-    adoRS.Close();  
-    adoConn.Close();  
+     DataSet custDS = new DataSet();  
+     DataTable custTable = new DataTable("Customers");  
+     custTable.Columns.Add("CustomerID", typeof(String));  
+     custTable.Columns.Add("CompanyName", typeof(String));  
+     custDS.Tables.Add(custTable);  
+     //Use ADO objects from ADO library (msado15.dll) imported  
+     //  as.NET library ADODB.dll using TlbImp.exe  
+     ADODB.Connection adoConn = new ADODB.Connection();  
+     ADODB.Recordset adoRS = new ADODB.Recordset();  
+     adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1);  
+     adoRS.Open("SELECT CustomerID, CompanyName FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1);  
+     custDA.Fill(custTable, adoRS);  
+     adoRS.Close();  
+     adoConn.Close();  
 ```  
  
  ]]></format>
@@ -470,28 +470,28 @@ The following example uses an <xref:System.Data.OleDb.OleDbDataAdapter> to fill 
  
 ```vb  
 Dim custDA As OleDbDataAdapter = New OleDbDataAdapter()  
-    Dim custDS As DataSet = New DataSet  
-    'Use ADO objects from ADO library (msado15.dll) imported  
-    ' as.NET library ADODB.dll using TlbImp.exe  
-    Dim adoConn As ADODB.Connection = New ADODB.Connection()  
-    Dim adoRS As ADODB.Recordset = New ADODB.Recordset()  
-    adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1)  
-    adoRS.Open("SELECT * FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1)  
-    custDA.Fill(custDS, adoRS, "Customers")  
-    adoConn.Close()  
+     Dim custDS As DataSet = New DataSet  
+     'Use ADO objects from ADO library (msado15.dll) imported  
+     ' as.NET library ADODB.dll using TlbImp.exe  
+     Dim adoConn As ADODB.Connection = New ADODB.Connection()  
+     Dim adoRS As ADODB.Recordset = New ADODB.Recordset()  
+     adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1)  
+     adoRS.Open("SELECT * FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1)  
+     custDA.Fill(custDS, adoRS, "Customers")  
+     adoConn.Close()  
 ```  
  
 ```csharp  
 OleDbDataAdapter custDA = new OleDbDataAdapter();  
-    DataSet custDS = new DataSet();  
-    //Use ADO objects from ADO library (msado15.dll) imported  
-    // as.NET library ADODB.dll using TlbImp.exe  
-    ADODB.Connection adoConn = new ADODB.Connection();  
-    ADODB.Recordset adoRS = new ADODB.Recordset();  
-    adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1);  
-    adoRS.Open("SELECT * FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1);  
-    custDA.Fill(custDS, adoRS, "Customers");  
-    adoConn.Close();  
+     DataSet custDS = new DataSet();  
+     //Use ADO objects from ADO library (msado15.dll) imported  
+     // as.NET library ADODB.dll using TlbImp.exe  
+     ADODB.Connection adoConn = new ADODB.Connection();  
+     ADODB.Recordset adoRS = new ADODB.Recordset();  
+     adoConn.Open("Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;", "", "", -1);  
+     adoRS.Open("SELECT * FROM Customers", adoConn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly, 1);  
+     custDA.Fill(custDS, adoRS, "Customers");  
+     adoConn.Close();  
 ```  
  
  ]]></format>

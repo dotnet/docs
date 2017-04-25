@@ -43,7 +43,7 @@ The following example shows how to mark a method with the ManagementTask attribu
 [ManagementTask]  
 public void ResetCounters()  
 {  
-   counter.Reset();  
+    counter.Reset();  
 ```  
  
 }  

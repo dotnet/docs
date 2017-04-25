@@ -52,42 +52,42 @@ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.Srg
 ```csharp  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
- 
- String fileName = Path.GetTempFileName();  
- using (FileStream stream = new FileStream(fileName, FileMode.Create))   
- {   
- 
-   // Compile the grammar to a binary format.  
-   SrgsGrammarCompiler.Compile(document, stream);   
- }  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
+  
+  String fileName = Path.GetTempFileName();  
+  using (FileStream stream = new FileStream(fileName, FileMode.Create))   
+  {   
+  
+    // Compile the grammar to a binary format.  
+    SrgsGrammarCompiler.Compile(document, stream);   
+  }  
 }  
 ```  
  
@@ -118,19 +118,19 @@ The following example builds a grammar in a <xref:System.Speech.Recognition.Gram
  
 ```csharp  
 GrammarBuilder builder = null;  
- 
+  
 // Create new Choices objects and add countries, and create GrammarBuilder objects.  
 Choices choicesEurope = new Choices(new string[] { "England", "France", "Germany", "Italy" });  
 GrammarBuilder europe = new GrammarBuilder(choicesEurope);  
- 
+  
 Choices choicesSAmerica = new Choices(new string[] { "Argentina", "Brazil", "Uruguay" });  
 GrammarBuilder sAmerica = new GrammarBuilder(choicesSAmerica);  
- 
+  
 Choices worldCupWinnerChoices = new Choices(new GrammarBuilder[] {choicesEurope, choicesSAmerica});  
- 
+  
 // Create new GrammarBuilder from a Choices object.  
 builder = new GrammarBuilder(worldCupWinnerChoices);  
- 
+  
 // Create an SrgsDocument object from a GrammarBuilder object.  
 SrgsDocument document = new SrgsDocument(builder);  
 ```  
@@ -172,38 +172,38 @@ The following example creates two rules (`chooseCities` and `destCities`) for ch
 SrgsRule destCities = new SrgsRule("Destination");  
 SrgsOneOf toCities = new SrgsOneOf(new string[] { "New York", "Seattle", "Denver" });  
 destCities.Add(toCities);  
- 
+  
 // Create a list of origin cities and supporting phrases.  
 SrgsOneOf fromCities = new SrgsOneOf(new SrgsItem[] {   
- new SrgsItem("Dallas"), new SrgsItem("Miami"), new SrgsItem("Chicago") });  
+  new SrgsItem("Dallas"), new SrgsItem("Miami"), new SrgsItem("Chicago") });  
 SrgsItem intro = new SrgsItem("I want to fly from");  
 SrgsItem to = new SrgsItem("to");  
- 
+  
 // Create the root rule of the grammar, and assemble the components.  
 SrgsRule chooseCities = new SrgsRule("Trip");  
 chooseCities.Add(intro);  
 chooseCities.Add(fromCities);  
 chooseCities.Add(to);  
 chooseCities.Add(new SrgsRuleRef(destCities));  
- 
+  
 // Create the SrgsDocument and specify the root rule to add.  
 SrgsDocument bookFlight = new SrgsDocument(chooseCities);  
- 
+  
 // Add the rule for the destination cities to the document's rule collection.  
 bookFlight.Rules.Add(new SrgsRule[] { destCities });  
- 
+  
 // Display the contents of the Rules collection and the name of the root rule.  
 foreach (SrgsRule rule in bookFlight.Rules)  
 {  
- Console.WriteLine("Rule " + rule.Id + " is in the rules collection");  
+  Console.WriteLine("Rule " + rule.Id + " is in the rules collection");  
 }  
 Console.WriteLine("Root Rule " + bookFlight.Root.Id);  
- 
+  
 // Create a Grammar object and load it to the recognizer.  
 Grammar g = new Grammar(bookFlight);  
 g.Name = ("City Chooser");  
 recognizer.LoadGrammarAsync(g);  
- 
+  
 ```  
  
  ]]></format>
@@ -236,9 +236,9 @@ The following example creates a new <xref:System.Speech.Recognition.SrgsGrammar.
 ```csharp  
 string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
 SrgsDocument document = null;  
- 
+  
 if (File.Exists(srgsDocumentFile))  
-  document = new SrgsDocument(srgsDocumentFile);  
+   document = new SrgsDocument(srgsDocumentFile);  
 ```  
  
  ]]></format>
@@ -273,12 +273,12 @@ The following example creates a new instance of <xref:System.Speech.Recognition.
 ```csharp  
 string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
 SrgsDocument document = null;  
- 
+  
 if (File.Exists(srgsDocumentFile))  
 {  
- XmlReader reader = XmlReader.Create(srgsDocumentFile);  
- document = new SrgsDocument(reader);  
- reader.Close();  
+  XmlReader reader = XmlReader.Create(srgsDocumentFile);  
+  document = new SrgsDocument(reader);  
+  reader.Close();  
 }  
 ```  
  
@@ -526,9 +526,9 @@ The following example creates a rule named `winnerRule`, and then creates an <xr
 ```csharp  
 SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
 winnerRule.Scope = SrgsRuleScope.Public;  
- 
+  
 SrgsDocument document = new SrgsDocument();  
- 
+  
 document.Rules.Add(winnerRule);  
 document.Root = winnerRule;   
 ```  
@@ -566,34 +566,34 @@ The following example creates a grammar that recognizes the phrase "A nation tha
 ```csharp  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
 }  
 ```  
  
@@ -657,44 +657,44 @@ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.Srg
 ```csharp  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
- 
- // Create a string object with the path to the file to use.  
- string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
- 
- // Create an XmlWriter object and pass the file path.  
- XmlWriter writer = XmlWriter.Create(srgsDocumentFile);  
- 
- // Write the contents of the XmlWriter object to an SRGS-compatible XML file.  
- document.WriteSrgs(writer);  
- writer.Close();  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
+  
+  // Create a string object with the path to the file to use.  
+  string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
+  
+  // Create an XmlWriter object and pass the file path.  
+  XmlWriter writer = XmlWriter.Create(srgsDocumentFile);  
+  
+  // Write the contents of the XmlWriter object to an SRGS-compatible XML file.  
+  document.WriteSrgs(writer);  
+  writer.Close();  
 }  
 ```  
  

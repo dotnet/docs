@@ -36,137 +36,137 @@ To compile the example, you will need to include references to both System.Manag
 using System;  
 using System.Collections;  
 using System.Management.Instrumentation;  
- 
+  
 [assembly: WmiConfiguration("root/assoc", HostingModel = ManagementHostingModel.Decoupled)]  
- 
+  
 [System.ComponentModel.RunInstaller(true)]  
 public class TheInstaller : DefaultManagementInstaller  
 { }  
- 
+  
 namespace AssocExample  
 {  
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           InstrumentationManager.RegisterType(typeof(NumberPhonetic));  
-           InstrumentationManager.RegisterType(typeof(NumberLetter));  
-           InstrumentationManager.RegisterType(typeof(LetterPhonetic));  
- 
-           Console.WriteLine("Press enter to exit");  
-           Console.ReadLine();  
- 
-           InstrumentationManager.UnregisterType(typeof(NumberPhonetic));  
-           InstrumentationManager.UnregisterType(typeof(NumberLetter));  
-           InstrumentationManager.UnregisterType(typeof(LetterPhonetic));  
- 
-       }  
-   }  
- 
- [ManagementEntity]  
-   public class NumberPhonetic  
-   {  
-       [ManagementKey]  
-       public int Number;  
- 
-       [ManagementProbe]  
-       public string Name;  
- 
-       [ManagementBind]  
-       public NumberPhonetic(int Number)  
-       {  
-          this.Number = Number;  
-          if(Number == 1)  
-          {  
-             Name = "alpha";  
-          }  
-          else if(Number == 2)  
-          {  
-             Name = "bravo";  
-          }  
-          else  
-          {  
-             throw new InstanceNotFoundException();  
-          }  
-       }  
- 
-       [ManagementEnumerator]  
-       static public IEnumerable EnumerateInstances()  
-       {  
-           for (int i = 1; i < 3; i++)  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            InstrumentationManager.RegisterType(typeof(NumberPhonetic));  
+            InstrumentationManager.RegisterType(typeof(NumberLetter));  
+            InstrumentationManager.RegisterType(typeof(LetterPhonetic));  
+  
+            Console.WriteLine("Press enter to exit");  
+            Console.ReadLine();  
+  
+            InstrumentationManager.UnregisterType(typeof(NumberPhonetic));  
+            InstrumentationManager.UnregisterType(typeof(NumberLetter));  
+            InstrumentationManager.UnregisterType(typeof(LetterPhonetic));  
+  
+        }  
+    }  
+  
+  [ManagementEntity]  
+    public class NumberPhonetic  
+    {  
+        [ManagementKey]  
+        public int Number;  
+  
+        [ManagementProbe]  
+        public string Name;  
+  
+        [ManagementBind]  
+        public NumberPhonetic(int Number)  
+        {  
+           this.Number = Number;  
+           if(Number == 1)  
            {  
-               yield return new NumberPhonetic(i);  
+              Name = "alpha";  
            }  
-       }  
- 
-   }  
- 
-   [ManagementEntity]  
-   public class NumberLetter  
-   {  
-       [ManagementKey]  
-       public int Number;  
- 
-       [ManagementProbe]  
-       public string Letter;  
- 
-       [ManagementBind]  
-       public NumberLetter(int Number)  
-       {  
-          this.Number = Number;  
-          if(Number == 1)  
-          {  
-             Letter = "A";  
-          }  
-          else if(Number == 2)  
-          {  
-             Letter = "B";  
-          }  
-          else  
-          {  
-             throw new InstanceNotFoundException();  
-          }  
-       }  
- 
-       [ManagementEnumerator]  
-       static public IEnumerable EnumerateInstances()  
-       {  
-           for (int i = 1; i < 3; i++)  
+           else if(Number == 2)  
            {  
-               yield return new NumberLetter(i);  
+              Name = "bravo";  
            }  
-       }  
- 
-   }  
- 
-   [ManagementEntity]  
-   [ManagementQualifier("Association", Flavor = ManagementQualifierFlavors.DisableOverride)]  
-   public class LetterPhonetic  
-   {  
-       [ManagementReference(Type = "NumberLetter")]  
-       [ManagementKey]  
-       public string LetterNumber;  
- 
-       [ManagementReference(Type = "NumberPhonetic")]  
-       [ManagementKey]  
-       public string PhoneticNumber;  
- 
-       [ManagementEnumerator]  
-       static public IEnumerable EnumerateInstances()  
-       {  
-           ArrayList insts = new ArrayList();  
-           for (int i = 1; i < 3; i++)  
+           else  
            {  
-               LetterPhonetic inst = new LetterPhonetic();  
-               inst.LetterNumber = "Letter = " + i;  
-               inst.PhoneticNumber = "Phonetic = " + i;  
-               insts.Add(inst);  
+              throw new InstanceNotFoundException();  
            }  
-           return insts;  
-       }  
- 
-   }  
- 
+        }  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            for (int i = 1; i < 3; i++)  
+            {  
+                yield return new NumberPhonetic(i);  
+            }  
+        }  
+  
+    }  
+  
+    [ManagementEntity]  
+    public class NumberLetter  
+    {  
+        [ManagementKey]  
+        public int Number;  
+  
+        [ManagementProbe]  
+        public string Letter;  
+  
+        [ManagementBind]  
+        public NumberLetter(int Number)  
+        {  
+           this.Number = Number;  
+           if(Number == 1)  
+           {  
+              Letter = "A";  
+           }  
+           else if(Number == 2)  
+           {  
+              Letter = "B";  
+           }  
+           else  
+           {  
+              throw new InstanceNotFoundException();  
+           }  
+        }  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            for (int i = 1; i < 3; i++)  
+            {  
+                yield return new NumberLetter(i);  
+            }  
+        }  
+  
+    }  
+  
+    [ManagementEntity]  
+    [ManagementQualifier("Association", Flavor = ManagementQualifierFlavors.DisableOverride)]  
+    public class LetterPhonetic  
+    {  
+        [ManagementReference(Type = "NumberLetter")]  
+        [ManagementKey]  
+        public string LetterNumber;  
+  
+        [ManagementReference(Type = "NumberPhonetic")]  
+        [ManagementKey]  
+        public string PhoneticNumber;  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            ArrayList insts = new ArrayList();  
+            for (int i = 1; i < 3; i++)  
+            {  
+                LetterPhonetic inst = new LetterPhonetic();  
+                inst.LetterNumber = "Letter = " + i;  
+                inst.PhoneticNumber = "Phonetic = " + i;  
+                insts.Add(inst);  
+            }  
+            return insts;  
+        }  
+  
+    }  
+  
 }  
 ```  
  

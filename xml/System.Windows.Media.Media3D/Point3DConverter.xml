@@ -22,17 +22,17 @@ The following sample uses a <xref:System.Windows.Media.Media3D.Point3DConverter>
  
 ```csharp  
 ...  
- 
+  
 // Converts a String to a Point3D using a Point3DConverter  
 // Returns a Point3D.  
- 
+  
 Point3DConverter p3DConverter = new Point3DConverter();  
 Point3D point3DResult = new Point3D();  
 string string3 = "10,20,30";  
- 
+  
 point3DResult = (Point3D)p3DConverter.ConvertFromString(string3);  
 // point3DResult is equal to (10, 20, 30)  
- 
+  
 ...  
 ```  
  

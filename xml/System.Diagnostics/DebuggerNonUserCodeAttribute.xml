@@ -50,10 +50,10 @@ The following code example shows the use of this attribute in a Visual Basic pro
 ' Form overrides Dispose to clean up the component list.  
 <System.Diagnostics.DebuggerNonUserCode()> _  
 Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)  
-   If disposing AndAlso components IsNot Nothing Then  
-       components.Dispose()  
-   End If  
-   MyBase.Dispose(disposing)  
+    If disposing AndAlso components IsNot Nothing Then  
+        components.Dispose()  
+    End If  
+    MyBase.Dispose(disposing)  
 End Sub  
 ```  
  

@@ -33,53 +33,53 @@ A <xref:System.Activities.Presentation.Model.ModelItem> is a wrapper around the 
 The <xref:System.Activities.Presentation.Model.ModelItem> can be thought of as a thin proxy for an object at which it points. First define a simple `Animal` object.  
  
 ```  
- 
+  
 public class Animal  
 {  
-   // simple property  
-   public string Name { get; set; }  
-   // complex property   
-   public Location Residence { get; set; }   
-   // list   
-   public List<Animal> CloseRelatives { get; set; }  
-   // dictionary  
-   public Dictionary<string, object> Features { get; set; }   
+    // simple property  
+    public string Name { get; set; }  
+    // complex property   
+    public Location Residence { get; set; }   
+    // list   
+    public List<Animal> CloseRelatives { get; set; }  
+    // dictionary  
+    public Dictionary<string, object> Features { get; set; }   
 }  
- 
+  
 public class Location  
 {  
-   public string StreetAddress { get; set; }  
-   public string City { get; set; }  
-   public string State { get; set; }   
+    public string StreetAddress { get; set; }  
+    public string City { get; set; }  
+    public string State { get; set; }   
 }  
- 
+  
 ```  
  
 Secondly, create an instance of that `Animal` and a <xref:System.Activities.Presentation.Model.ModelItem> that is a proxy for it. The object can then be retrieved by calling <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A>. The following code also shows how to use other properties defined by <xref:System.Activities.Presentation.Model.ModelItem>.  
  
 ```  
- 
+  
 EditingContext ec = new EditingContext();  
 var companion1 = new Animal { Name = "Houdini the parakeet" };  
 var companion2 = new Animal { Name = "Groucho the fish" };  
 var animal = new Animal   
-  {  
-     Name = "Sasha the pug",  
-     Residence = new Location   
-     {  
-        StreetAddress = "123 Main Street",  
-        City = "AnyTown",  
-        State = "Washington"  
-     },  
-     Features = new Dictionary<string, object> {   
-        {"noise", "snort" },  
-        {"MeanTimeUntilNaps", TimeSpan.FromMinutes(15) }  
-     },  
-     CloseRelatives = new List<Animal> { companion1, companion2 }   
-  };  
+   {  
+      Name = "Sasha the pug",  
+      Residence = new Location   
+      {  
+         StreetAddress = "123 Main Street",  
+         City = "AnyTown",  
+         State = "Washington"  
+      },  
+      Features = new Dictionary<string, object> {   
+         {"noise", "snort" },  
+         {"MeanTimeUntilNaps", TimeSpan.FromMinutes(15) }  
+      },  
+      CloseRelatives = new List<Animal> { companion1, companion2 }   
+   };  
 ModelTreeManager mtm = new ModelTreeManager(ec);  mtm.Load(animal);  
 ModelItem mi = mtm.Root;  
- 
+  
 //Testing other properties of the class  
 ModelItem root = mtm.Root;  
 Assert.IsTrue(root.GetCurrentValue() == animal, "GetCurrentValue() returns same object");  
@@ -87,17 +87,17 @@ Assert.IsTrue(root.ItemType == typeof(Animal),"ItemType describes the item");
 Assert.IsTrue(root.Parent == null,"root parent is null");  
 Assert.IsTrue(root.Source == null, "root source is null");  
 Assert.IsTrue(((List<Animal>)root.Properties["CloseRelatives"].ComputedValue)[0] == companion1,   
-  "ComputedValue of prop == actual object");  
+   "ComputedValue of prop == actual object");  
 Assert.IsFalse(((List<Animal>)root.Properties["CloseRelatives"].ComputedValue)[0] == companion2,   
-  "ComputedValue of prop == actual object");  
+   "ComputedValue of prop == actual object");  
 Assert.AreEqual(root.Properties["Residence"].  
-  Value.  
-  Properties["StreetAddress"].  
-  Value.GetCurrentValue(), "123 Main Street", "get actual value back out");  
+   Value.  
+   Properties["StreetAddress"].  
+   Value.GetCurrentValue(), "123 Main Street", "get actual value back out");  
 Assert.AreEqual(root, root.Properties["Residence"].Parent, "property points to owner");  
 ModelItem location = root.Properties["Residence"].Value;  
 Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to the right place");  
- 
+  
 ```  
  
  ]]></format>

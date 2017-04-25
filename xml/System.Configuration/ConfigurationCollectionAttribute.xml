@@ -55,16 +55,16 @@ This example consists of three classes: `UrlsSection`, `UrlsCollection` and `Url
  
 ```  
 <configuration>  
-   <configSections>  
-       <section name="MyUrls" type="UrlsSection,   
-         ConfigurationCollectionAttribute, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-   </configSections>  
-   <MyUrls>  
-       <urls>  
-           <remove name="Contoso" />  
-           <add name="Contoso" url="http://www.contoso.com" port="0" />  
-       </urls>  
-   </MyUrls>  
+    <configSections>  
+        <section name="MyUrls" type="UrlsSection,   
+          ConfigurationCollectionAttribute, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </configSections>  
+    <MyUrls>  
+        <urls>  
+            <remove name="Contoso" />  
+            <add name="Contoso" url="http://www.contoso.com" port="0" />  
+        </urls>  
+    </MyUrls>  
 </configuration  
 ```  
  

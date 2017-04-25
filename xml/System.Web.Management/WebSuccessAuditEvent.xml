@@ -56,26 +56,26 @@ The following example is an excerpt of the configuration file that enables ASP.N
 <healthMonitoring   
 ..enabled="true"  
 ..heartBeatInterval="0">   
- <providers>  
-   <add name="EventLogProvider"   
-   type="System.Web.Management.EventLogWebEventProvider,  
-   System.Web,Version=2.0.3600.0,Culture=neutral,  
-   PublicKeyToken=b03f5f7f11d50a3a"/>  
- </providers>  
- <eventMappings>  
-   <add  name="SampleWebSuccessAuditEvent"   
-     type="SamplesAspNet.SampleWebSuccessAuditEvent,  
-     websuccessauditevent,Version=1.0.1663.31140,   
-     Culture=neutral,   
-     PublicKeyToken=0d1fa0f69d94de96,   
-     processorArchitecture=MSIL"/>  
- </eventMappings>  
- <rules>  
-   <add name="Custom Failure Audit Default"  
-     eventName=" SampleWebFailureAuditEvent "  
-     provider="EventLogProvider"  
-     profile="Default"/>    
- </rules>  
+  <providers>  
+    <add name="EventLogProvider"   
+    type="System.Web.Management.EventLogWebEventProvider,  
+    System.Web,Version=2.0.3600.0,Culture=neutral,  
+    PublicKeyToken=b03f5f7f11d50a3a"/>  
+  </providers>  
+  <eventMappings>  
+    <add  name="SampleWebSuccessAuditEvent"   
+      type="SamplesAspNet.SampleWebSuccessAuditEvent,  
+      websuccessauditevent,Version=1.0.1663.31140,   
+      Culture=neutral,   
+      PublicKeyToken=0d1fa0f69d94de96,   
+      processorArchitecture=MSIL"/>  
+  </eventMappings>  
+  <rules>  
+    <add name="Custom Failure Audit Default"  
+      eventName=" SampleWebFailureAuditEvent "  
+      provider="EventLogProvider"  
+      profile="Default"/>    
+  </rules>  
 </healthMonitoring>  
 ```  
  

@@ -25,9 +25,9 @@ The following syntax shows how to configure the attribute:
  
 ```  
 <trust   
- Level = "[Full|High|Medium|Low|Minimal]"  
- permissionSetName = "name of the permission set"  
- hostSecurityPolicyResolverType = "security policy resolution type"  
+  Level = "[Full|High|Medium|Low|Minimal]"  
+  permissionSetName = "name of the permission set"  
+  hostSecurityPolicyResolverType = "security policy resolution type"  
 />  
 ```  
  

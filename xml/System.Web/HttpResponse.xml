@@ -1827,12 +1827,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoute(  
- New With {.productid = "1", .category = "widgets"})  
+  New With {.productid = "1", .category = "widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoute(  
- new { productid = "1", category = "widgets" });  
+  new { productid = "1", category = "widgets" });  
 ```  
  
  ]]></format>
@@ -1923,12 +1923,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoute(  
- new RouteValueDictionary {productId="1", category="widgets"})  
+  new RouteValueDictionary {productId="1", category="widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoute(  
- (new RouteValueDictionary {productId="1", category="widgets"});  
+  (new RouteValueDictionary {productId="1", category="widgets"});  
 ```  
  
  ]]></format>
@@ -1974,12 +1974,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoute("Product",  
- New With {.productid = "1", .category = "widgets"})  
+  New With {.productid = "1", .category = "widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoute("Product",  
- new { productid = "1", category = "widgets" });  
+  new { productid = "1", category = "widgets" });  
 ```  
  
  ]]></format>
@@ -2025,12 +2025,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoute("Product",  
- new RouteValueDictionary {productId="1", category="widgets"})  
+  new RouteValueDictionary {productId="1", category="widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoute("Product",  
- (new RouteValueDictionary {productId="1", category="widgets"});  
+  (new RouteValueDictionary {productId="1", category="widgets"});  
 ```  
  
  ]]></format>
@@ -2074,12 +2074,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoutePermanent(  
- New With {.productid = "1", .category = "widgets"})  
+  New With {.productid = "1", .category = "widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoutePermanent(  
- new { productid = "1", category = "widgets" });  
+  new { productid = "1", category = "widgets" });  
 ```  
  
  ]]></format>
@@ -2170,12 +2170,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoutePermanent(  
- new RouteValueDictionary {productId="1", category="widgets"})  
+  new RouteValueDictionary {productId="1", category="widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoutePermanent(  
- new RouteValueDictionary {productId="1", category="widgets"});  
+  new RouteValueDictionary {productId="1", category="widgets"});  
 ```  
  
  ]]></format>
@@ -2221,12 +2221,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoutePermanent("Product",  
- New With {.productid = "1", .category = "widgets"})  
+  New With {.productid = "1", .category = "widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoutePermanent("Product",  
- new { productid = "1", category = "widgets" });  
+  new { productid = "1", category = "widgets" });  
 ```  
  
  ]]></format>
@@ -2272,12 +2272,12 @@ The following example shows how to call this method to redirect to a route that 
  
 ```vb  
 Response.RedirectToRoutePermanent("Product",  
- new RouteValueDictionary {productId="1", category="widgets"})  
+  new RouteValueDictionary {productId="1", category="widgets"})  
 ```  
  
 ```csharp  
 Response.RedirectToRoutePermanent("Product",  
- new RouteValueDictionary {productId="1", category="widgets"});  
+  new RouteValueDictionary {productId="1", category="widgets"});  
 ```  
  
  ]]></format>

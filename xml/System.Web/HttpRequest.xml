@@ -35,43 +35,43 @@ The first example shows how to retrieve a query string value when loading a page
 ```csharp  
 public partial class AddToCart : Page  
 {  
-   protected void Page_Load(object sender, EventArgs e)  
-   {  
-       string rawId = Request["ProductID"];  
-       int productId;  
-       if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out productId))  
-       {  
-           using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())  
-           {  
-               usersShoppingCart.AddToCart(productId);  
-           }  
-       }  
-       else  
-       {  
-           throw new Exception("Tried to call AddToCart.aspx without setting a ProductId.");  
-       }  
-       Response.Redirect("ShoppingCart.aspx");  
-   }  
+    protected void Page_Load(object sender, EventArgs e)  
+    {  
+        string rawId = Request["ProductID"];  
+        int productId;  
+        if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out productId))  
+        {  
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())  
+            {  
+                usersShoppingCart.AddToCart(productId);  
+            }  
+        }  
+        else  
+        {  
+            throw new Exception("Tried to call AddToCart.aspx without setting a ProductId.");  
+        }  
+        Response.Redirect("ShoppingCart.aspx");  
+    }  
 }  
 ```  
  
 ```vb  
 Public Class AddToCart  
-   Inherits Page  
- 
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load  
-       Dim rawId = Request("ProductID")  
-       Dim productId As Integer  
-       If Not String.IsNullOrEmpty(rawId) And Integer.TryParse(rawId, productId) Then  
-           Using usersShoppingCart As New ShoppingCartActions()  
-               usersShoppingCart.AddToCart(productId)  
-           End Using  
- 
-       Else  
-           Throw New Exception("Tried to call AddToCart.aspx without setting a ProductId.")  
-       End If  
-       Response.Redirect("ShoppingCart.aspx")  
-   End Sub  
+    Inherits Page  
+  
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load  
+        Dim rawId = Request("ProductID")  
+        Dim productId As Integer  
+        If Not String.IsNullOrEmpty(rawId) And Integer.TryParse(rawId, productId) Then  
+            Using usersShoppingCart As New ShoppingCartActions()  
+                usersShoppingCart.AddToCart(productId)  
+            End Using  
+  
+        Else  
+            Throw New Exception("Tried to call AddToCart.aspx without setting a ProductId.")  
+        End If  
+        Response.Redirect("ShoppingCart.aspx")  
+    End Sub  
 End Class  
 ```  
  
@@ -80,27 +80,27 @@ The next example shows how to check if the request is authenticated and retrieve
 ```csharp  
 public partial class RestrictedPage : Page  
 {  
-   protected void Page_Load(object sender, EventArgs e)  
-   {  
-       if (!Request.IsAuthenticated)  
-       {  
-           var rawUrl = Request.RawUrl;  
-           Response.Redirect("/Account/Login?ru=" + Server.HtmlEncode(rawUrl));  
-       }  
-   }  
+    protected void Page_Load(object sender, EventArgs e)  
+    {  
+        if (!Request.IsAuthenticated)  
+        {  
+            var rawUrl = Request.RawUrl;  
+            Response.Redirect("/Account/Login?ru=" + Server.HtmlEncode(rawUrl));  
+        }  
+    }  
 }  
 ```  
  
 ```vb  
 Public Class RestrictedPage  
-   Inherits Page  
- 
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load  
-       If Not Request.IsAuthenticated Then  
-           Dim rawUrl = Request.RawUrl  
-           Response.Redirect("/Account/Login?ru=" + Server.HtmlEncode(rawUrl))  
-       End If  
-   End Sub  
+    Inherits Page  
+  
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load  
+        If Not Request.IsAuthenticated Then  
+            Dim rawUrl = Request.RawUrl  
+            Response.Redirect("/Account/Login?ru=" + Server.HtmlEncode(rawUrl))  
+        End If  
+    End Sub  
 End Class  
 ```  
  
@@ -1506,7 +1506,7 @@ The first line of code looks for the key “fullname” only in the query string
 ```csharp  
 string fullname1 = Request.QueryString["fullname"];  
 string fullname2 = Request["fullname"];  
- 
+  
 ```  
  
 ```vb  

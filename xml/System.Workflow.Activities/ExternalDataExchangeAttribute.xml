@@ -37,7 +37,7 @@ While generic types are supported for interface method and event declarations, g
 ```  
 public interface IInterfaceName<TCommand>  
 {   
-   void MethodName(TCommand Request);  
+    void MethodName(TCommand Request);  
 }  
 ```  
  

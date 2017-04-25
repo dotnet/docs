@@ -30,10 +30,10 @@ The following code example demonstrates proper usage of the <xref:System.Workflo
  
 ```csharp  
 [RuleInvokeAttribute("UpdateAttributeValue")]  
- 
+  
 bool DoSomething()  
 {  
-   return attributevalue();  
+    return attributevalue();  
 }  
 ```  
  

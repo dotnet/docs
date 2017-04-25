@@ -26,9 +26,9 @@ To disable request validation for your application, you must modify or create a 
  
 ```  
 <configuration>   
- <system.web>   
-   <pages validateRequest="false" />   
- </system.web>   
+  <system.web>   
+    <pages validateRequest="false" />   
+  </system.web>   
 </configuration>   
 ```  
  

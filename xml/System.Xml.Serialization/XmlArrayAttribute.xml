@@ -224,8 +224,8 @@ The default setting, `XmlSchemaForm.None`, instructs the <xref:System.Xml.Serial
 ```  
 <schema elementFormDefault="qualified"   
 attributeFormDefault="unqualified"... >  
-  <element name="Name"/>  
-  <attribute name="Number"/>  
+   <element name="Name"/>  
+   <attribute name="Number"/>  
 </schema>  
 ```  
  

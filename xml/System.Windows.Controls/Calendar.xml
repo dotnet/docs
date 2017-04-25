@@ -134,9 +134,9 @@ To make all past dates not selectable, you can use the <xref:System.Windows.Cont
  
 ```  
 <object>  
- <object.BlackoutDates>  
-   oneOrMoreCalendarDateRanges  
- </object.BlackoutDates>  
+  <object.BlackoutDates>  
+    oneOrMoreCalendarDateRanges  
+  </object.BlackoutDates>  
 </object>  
 ```  
  
@@ -188,7 +188,7 @@ Calendar with dates that cannot be selected
  
 ```  
 <object CalendarButtonStyle="{resourceExtension styleResourceKey"/>  
- 
+  
 ```  
  
 <a name="xamlValues_CalendarButtonStyle"></a>   
@@ -253,7 +253,7 @@ The key that identifies the resource being requested. The key refers to an exist
  
 ```  
 <object CalendarDayButtonStyle="{resourceExtension styleResourceKey}"/>  
- 
+  
 ```  
  
 <a name="xamlValues_CalendarDayButtonStyle"></a>   
@@ -318,7 +318,7 @@ The key that identifies the resource being requested. The key refers to an exist
  
 ```  
 <object CalendarItemStyle="{resourceExtension styleResourceKey}"/>  
- 
+  
 ```  
  
 <a name="xamlValues_CalendarItemStyle"></a>   
@@ -1180,11 +1180,11 @@ Dates can be added to the collection either individually or in a range using the
  
 ```  
 <object>  
- <object.SelectedDates>  
-   oneOrMoreDateTimeObjects  
- </object.SelectedDates>  
+  <object.SelectedDates>  
+    oneOrMoreDateTimeObjects  
+  </object.SelectedDates>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_SelectedDates"></a>   

@@ -27,13 +27,13 @@ The following example shows how to declaratively specify values for properties o
  
 ```  
 <system.web.extensions>  
- <scripting>  
-   <webServices>  
-     <profileService enabled="true"   
-       readAccessProperties="FirstName,LastName"   
-       writeAccessProperties="FirstName,LastName" />  
-   </webServices>  
- </scripting>  
+  <scripting>  
+    <webServices>  
+      <profileService enabled="true"   
+        readAccessProperties="FirstName,LastName"   
+        writeAccessProperties="FirstName,LastName" />  
+    </webServices>  
+  </scripting>  
 </system.web.extensions>  
 ```  
  

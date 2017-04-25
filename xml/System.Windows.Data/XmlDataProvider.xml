@@ -438,21 +438,21 @@ This property is used by the parser to compile the literal content of the embedd
  
 ```  
 <XmlDataProvider>  
- <XmlDataProvider.XmlSerializer>  
-   <x:XData>  
-      <elementDataRoot>  
-         <elementData/>  
-      <elementDataRoot>  
-   </x:XData>  
- </XmlDataProvider.XmlSerializer>  
+  <XmlDataProvider.XmlSerializer>  
+    <x:XData>  
+       <elementDataRoot>  
+          <elementData/>  
+       <elementDataRoot>  
+    </x:XData>  
+  </XmlDataProvider.XmlSerializer>  
 </XmlDataProvider>  
 --or--  
 <XmlDataProvider>  
-   <x:XData>  
-      <elementDataRoot>  
-         <elementData/>  
-      <elementDataRoot>  
-   </x:XData>  
+    <x:XData>  
+       <elementDataRoot>  
+          <elementData/>  
+       <elementDataRoot>  
+    </x:XData>  
 </XmlDataProvider>  
 ```  
  

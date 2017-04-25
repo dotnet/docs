@@ -45,48 +45,48 @@ private const int WordBoundaryFlag = 1 << (int)TtsEventId.WordBoundary;
 private readonly char[] spaces = new char[] { ' ', '\t', '\r', '\n' };  
 internal struct UsVsUk  
 {  
- internal string UK;  
- internal string US;  
+  internal string UK;  
+  internal string US;  
 }  
- 
+  
 override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite site)  
 {  
- TextFragment [] newFrags=new TextFragment[frags.Length];  
- 
- for (int i=0;i<frags.Length;i++){  
-   newFrags[i].State=frags[i].State;  
-   //truncate  
-   newFrags[i].TextToSpeak = frags[i].TextToSpeak.Substring(frags[i].TextOffset,  
-                              frags[i].TextLength);  
-   newFrags[i].TextLength = newFrags[i].TextToSpeak.Length;  
-   newFrags[i].TextOffset = 0;  
-   if (newFrags[i].State.Action == TtsEngineAction.Speak) {  
-     //Us to UK conversion  
-     foreach (UsVsUk term in TransList) {  
-     newFrags[i].TextToSpeak.Replace(term.US, term.UK);  
-     }  
-     //Generate progress meter events if supported  
-     if ((site.EventInterest & WordBoundaryFlag) != 0) {  
-     string[] subs = newFrags[i].TextToSpeak.Split(spaces);  
- 
-     foreach (string s in subs) {  
-       int offset = newFrags[i].TextOffset;  
-       SpeechEventInfo spEvent = new SpeechEventInfo((Int16)TtsEventId.WordBoundary,   
-               (Int16)EventParameterType.Undefined,   
-                s.Length, new IntPtr(offset));  
-       offset += s.Length;  
-       if (s.Trim().Length > 0) {  
-         SpeechEventInfo[] events = new SpeechEventInfo[1];  
-         events[0] = spEvent;  
-         site.AddEvents(events, 1);  
-       }  
-     }  
-     }  
-   }  
- }  
- 
- _baseSynthesize.Speak(newFrags, wfx, site);  
- 
+  TextFragment [] newFrags=new TextFragment[frags.Length];  
+  
+  for (int i=0;i<frags.Length;i++){  
+    newFrags[i].State=frags[i].State;  
+    //truncate  
+    newFrags[i].TextToSpeak = frags[i].TextToSpeak.Substring(frags[i].TextOffset,  
+                               frags[i].TextLength);  
+    newFrags[i].TextLength = newFrags[i].TextToSpeak.Length;  
+    newFrags[i].TextOffset = 0;  
+    if (newFrags[i].State.Action == TtsEngineAction.Speak) {  
+      //Us to UK conversion  
+      foreach (UsVsUk term in TransList) {  
+      newFrags[i].TextToSpeak.Replace(term.US, term.UK);  
+      }  
+      //Generate progress meter events if supported  
+      if ((site.EventInterest & WordBoundaryFlag) != 0) {  
+      string[] subs = newFrags[i].TextToSpeak.Split(spaces);  
+  
+      foreach (string s in subs) {  
+        int offset = newFrags[i].TextOffset;  
+        SpeechEventInfo spEvent = new SpeechEventInfo((Int16)TtsEventId.WordBoundary,   
+                (Int16)EventParameterType.Undefined,   
+                 s.Length, new IntPtr(offset));  
+        offset += s.Length;  
+        if (s.Trim().Length > 0) {  
+          SpeechEventInfo[] events = new SpeechEventInfo[1];  
+          events[0] = spEvent;  
+          site.AddEvents(events, 1);  
+        }  
+      }  
+      }  
+    }  
+  }  
+  
+  _baseSynthesize.Speak(newFrags, wfx, site);  
+  
 }  
 ```  
  

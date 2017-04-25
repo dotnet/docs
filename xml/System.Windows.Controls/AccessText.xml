@@ -888,7 +888,7 @@ An access key is not created if you use the <xref:System.Windows.Controls.Access
 <object>_accessText</object>  
 - or -   
 <object><accessTextObject>_accessText</accessTextObject></object>  
- 
+  
 ```  
  
 <a name="xamlValues_Text"></a>   
@@ -998,9 +998,9 @@ This property exposes the default decoration for an access key (an underline in 
  
 ```  
 <object>  
- <object.TextDecorations>  
-   OneOrMoreTextDecorations  
- </object.TextDecorations>  
+  <object.TextDecorations>  
+    OneOrMoreTextDecorations  
+  </object.TextDecorations>  
 </object>  
 ```  
  
@@ -1068,11 +1068,11 @@ Because users expect access key identifiers to have a certain appearance in the 
  
 ```  
 <object>  
- <object.TextEffects>  
-   OneOrMoreTextEffects  
- </object.TextEffects>  
+  <object.TextEffects>  
+    OneOrMoreTextEffects  
+  </object.TextEffects>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_TextEffects"></a>   

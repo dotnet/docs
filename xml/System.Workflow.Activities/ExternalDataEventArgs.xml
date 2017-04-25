@@ -36,19 +36,19 @@ An event class that inherits from <xref:System.Workflow.Activities.ExternalDataE
 [Serializable]  
 public class TaskEventArgs : ExternalDataEventArgs  
 {  
-   private string orderName;  
- 
-   public TaskEventArgs(Guid instanceId, string id)  
-       :base(instanceId)  
-   {  
-       orderName = id;  
-   }  
- 
-   public string Id  
-   {  
-       get { return orderName; }  
-       set { orderName = value; }  
-   }  
+    private string orderName;  
+  
+    public TaskEventArgs(Guid instanceId, string id)  
+        :base(instanceId)  
+    {  
+        orderName = id;  
+    }  
+  
+    public string Id  
+    {  
+        get { return orderName; }  
+        set { orderName = value; }  
+    }  
 }  
 ```  
  

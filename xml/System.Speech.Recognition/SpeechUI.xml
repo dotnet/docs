@@ -26,35 +26,35 @@ The following example is a handler for the <xref:System.Speech.Recognition.Gramm
 If a password is not present, or not valid, <xref:System.Speech.Recognition.SpeechUI.SendTextFeedback%2A> sends error information to the Speech platform user interface.  
  
 ```  
- 
+  
 grammar.SpeechRecognized +=   
 delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
 {  
- SemanticValue semantics = eventArgs.Result.Semantics;  
- RecognitionResult result=eventArgs.Result;  
- 
- if (!semantics.ContainsKey("Password"))   
- {  
-   SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
- }  
- else   
- {  
-   RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
-                 result.Words[3],  
-                 result.Words[result.Words.Count - 1]);  
-   MemoryStream pwdMemoryStream = new MemoryStream();  
-   pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-   if (!IsValidPwd(pwdMemoryStream))   
-   {  
-     string badPwd = System.IO.Path.GetTempPath() +   
-             "BadPwd" + (new Random()).Next().ToString() + ".wav";  
-     FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
-     pwdAudio.WriteToWaveStream(waveStream);  
-     waveStream.Flush();  
-     waveStream.Close();  
-     SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
-   }  
- }  
+  SemanticValue semantics = eventArgs.Result.Semantics;  
+  RecognitionResult result=eventArgs.Result;  
+  
+  if (!semantics.ContainsKey("Password"))   
+  {  
+    SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+  }  
+  else   
+  {  
+    RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
+                  result.Words[3],  
+                  result.Words[result.Words.Count - 1]);  
+    MemoryStream pwdMemoryStream = new MemoryStream();  
+    pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+    if (!IsValidPwd(pwdMemoryStream))   
+    {  
+      string badPwd = System.IO.Path.GetTempPath() +   
+              "BadPwd" + (new Random()).Next().ToString() + ".wav";  
+      FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
+      pwdAudio.WriteToWaveStream(waveStream);  
+      waveStream.Flush();  
+      waveStream.Close();  
+      SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
+    }  
+  }  
 };  
 ```  
  
@@ -102,35 +102,35 @@ The following example is a handler for a <xref:System.Speech.Recognition.Grammar
 If a password is not present, or not valid, **SendTextFeedback** is used to send error information to the Speech platform user interface.  
  
 ```  
- 
+  
 grammar.SpeechRecognized +=  
 delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
 {  
- SemanticValue semantics = eventArgs.Result.Semantics;  
- RecognitionResult result=eventArgs.Result;  
- 
- if (!semantics.ContainsKey("Password"))   
- {  
-   SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
- }  
- else  
- {  
-   RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
-             result.Words[3],  
-             result.Words[result.Words.Count - 1]);  
-   MemoryStream pwdMemoryStream = new MemoryStream();  
-   pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-   if (!IsValidPwd(pwdMemoryStream))   
-   {  
-     string badPwd = System.IO.Path.GetTempPath() + "BadPwd" +   
-              (new Random()).Next().ToString() + ".wav";  
-     FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
-     pwdAudio.WriteToWaveStream(waveStream);  
-     waveStream.Flush();  
-     waveStream.Close();  
-     SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
-   }  
- }  
+  SemanticValue semantics = eventArgs.Result.Semantics;  
+  RecognitionResult result=eventArgs.Result;  
+  
+  if (!semantics.ContainsKey("Password"))   
+  {  
+    SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+  }  
+  else  
+  {  
+    RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
+              result.Words[3],  
+              result.Words[result.Words.Count - 1]);  
+    MemoryStream pwdMemoryStream = new MemoryStream();  
+    pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+    if (!IsValidPwd(pwdMemoryStream))   
+    {  
+      string badPwd = System.IO.Path.GetTempPath() + "BadPwd" +   
+               (new Random()).Next().ToString() + ".wav";  
+      FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
+      pwdAudio.WriteToWaveStream(waveStream);  
+      waveStream.Flush();  
+      waveStream.Close();  
+      SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
+    }  
+  }  
 };  
 ```  
  

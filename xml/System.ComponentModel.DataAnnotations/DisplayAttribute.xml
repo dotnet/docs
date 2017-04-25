@@ -128,32 +128,32 @@ The following example shows how to disable the filter for the Employee1 field.
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
-   public class EmployeeMD {  
-       [Display(Name = "Last Name", Order = -9,   
-           Prompt = "Enter Last Name", Description="Emp Last Name")]  
-       public object LastName { get; set; }  
- 
-       [Display(Name = "Manager", AutoGenerateFilter=false)]  
-       public object Employee1 { get; set; }  
-   }  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+            Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
- 
-   Public Class EmployeeMD  
- 
-       <Display(Name:="Last Name", Order:=-9, _  
-          Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
-       Public Property LastName As Object  
-       End Property  
- 
-       <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
-       Public Property Employee1 As Object  
-       End Property  
-   End Class  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  
@@ -198,32 +198,32 @@ The following example shows how to set the <xref:System.ComponentModel.DataAnnot
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
-   public class EmployeeMD {  
-       [Display(Name = "Last Name", Order = -9,   
-       Prompt = "Enter Last Name", Description="Emp Last Name")]  
-       public object LastName { get; set; }  
- 
-       [Display(Name = "Manager", AutoGenerateFilter=false)]  
-       public object Employee1 { get; set; }  
-   }  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
- 
-   Public Class EmployeeMD  
- 
-       <Display(Name:="Last Name", Order:=-9, _  
-          Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
-       Public Property LastName As Object  
-       End Property  
- 
-       <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
-       Public Property Employee1 As Object  
-       End Property  
-   End Class  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  
@@ -526,32 +526,32 @@ The following example shows how to set the name property.
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
-   public class EmployeeMD {  
-       [Display(Name = "Last Name", Order = -9,   
-       Prompt = "Enter Last Name", Description="Emp Last Name")]  
-       public object LastName { get; set; }  
- 
-       [Display(Name = "Manager", AutoGenerateFilter=false)]  
-       public object Employee1 { get; set; }  
-   }  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
- 
-   Public Class EmployeeMD  
- 
-       <Display(Name:="Last Name", Order:=-9, _  
-          Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
-       Public Property LastName As Object  
-       End Property  
- 
-       <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
-       Public Property Employee1 As Object  
-       End Property  
-   End Class  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  
@@ -593,32 +593,32 @@ The following example shows how to set the order weight of the LastName field to
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
-   public class EmployeeMD {  
-       [Display(Name = "Last Name", Order = -9,   
-       Prompt = "Enter Last Name", Description="Emp Last Name")]  
-       public object LastName { get; set; }  
- 
-       [Display(Name = "Manager", AutoGenerateFilter=false)]  
-       public object Employee1 { get; set; }  
-   }  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
- 
-   Public Class EmployeeMD  
- 
-       <Display(Name:="Last Name", Order:=-9, _  
-          Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
-       Public Property LastName As Object  
-       End Property  
- 
-       <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
-       Public Property Employee1 As Object  
-       End Property  
-   End Class  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  
@@ -660,32 +660,32 @@ The following example shows how to set the <xref:System.ComponentModel.DataAnnot
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
-   public class EmployeeMD {  
-       [Display(Name = "Last Name", Order = -9,   
-       Prompt = "Enter Last Name", Description="Emp Last Name")]  
-       public object LastName { get; set; }  
- 
-       [Display(Name = "Manager", AutoGenerateFilter=false)]  
-       public object Employee1 { get; set; }  
-   }  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
- 
-   Public Class EmployeeMD  
- 
-       <Display(Name:="Last Name", Order:=-9, _  
-          Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
-       Public Property LastName As Object  
-       End Property  
- 
-       <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
-       Public Property Employee1 As Object  
-       End Property  
-   End Class  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  

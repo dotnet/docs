@@ -2313,14 +2313,14 @@ The second argument specifies the object to which the command will be routed.  T
  
 ```csharp  
 RichTextBox rTB = new RichTextBox();  
- 
+  
 EditingCommands.ToggleInsert.Execute(null, rTB);  
- 
+  
 ```  
  
 ```vb  
 			Dim rTB As New RichTextBox()  
- 
+  
 			EditingCommands.ToggleInsert.Execute(Nothing, rTB)  
 ```  
  
@@ -2373,14 +2373,14 @@ The second argument specifies the object to which the command will be routed.  T
  
 ```csharp  
 RichTextBox rTB = new RichTextBox();  
- 
+  
 EditingCommands.ToggleInsert.Execute(null, rTB);  
- 
+  
 ```  
  
 ```vb  
 			Dim rTB As New RichTextBox()  
- 
+  
 			EditingCommands.ToggleInsert.Execute(Nothing, rTB)  
 ```  
  

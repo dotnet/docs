@@ -61,7 +61,7 @@ Note that the <xref:System.Runtime.InteropServices.SEHException> class does not 
  
 ```  
 Catch   
-    ' Handle catch here.  
+     ' Handle catch here.  
 End Try  
 ```  
  
@@ -70,7 +70,7 @@ End Try
 ```  
 catch  
 {  
-    // Handle catch here.  
+     // Handle catch here.  
 }  
 ```  
  
@@ -79,7 +79,7 @@ catch
 ```  
 catch(…)  
 {  
-    // Handle catch here.  
+     // Handle catch here.  
 }   
 ```  
  

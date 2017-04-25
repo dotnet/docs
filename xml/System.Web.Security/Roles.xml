@@ -24,34 +24,34 @@ To enable role management for your ASP.NET application, use the  element of the 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=localhost;Initial Catalog=aspnetdb;Integrated Security=SSPI;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-     name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
- <roleManager defaultProvider="SqlProvider"   
-   enabled="true"  
-   cacheRolesInCookie="true"  
-   cookieName=".ASPROLES"  
-   cookieTimeout="30"  
-   cookiePath="/"  
-   cookieRequireSSL="false"  
-   cookieSlidingExpiration="true"  
-   cookieProtection="All" >  
-   <providers>  
-     <add  
-       name="SqlProvider"  
-       type="System.Web.Security.SqlRoleProvider"  
-       connectionStringName="SqlServices"  
-       applicationName="SampleApplication" />  
-     </providers>  
-   </roleManager>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=localhost;Initial Catalog=aspnetdb;Integrated Security=SSPI;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+      name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+  <roleManager defaultProvider="SqlProvider"   
+    enabled="true"  
+    cacheRolesInCookie="true"  
+    cookieName=".ASPROLES"  
+    cookieTimeout="30"  
+    cookiePath="/"  
+    cookieRequireSSL="false"  
+    cookieSlidingExpiration="true"  
+    cookieProtection="All" >  
+    <providers>  
+      <add  
+        name="SqlProvider"  
+        type="System.Web.Security.SqlRoleProvider"  
+        connectionStringName="SqlServices"  
+        applicationName="SampleApplication" />  
+      </providers>  
+    </roleManager>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -59,9 +59,9 @@ You can specify authorization rules in the configuration file for your Web appli
  
 ```  
 <authorization>  
- <deny users="?" />  
- <allow roles="Administrators" />  
- <deny users="*" />  
+  <deny users="?" />  
+  <allow roles="Administrators" />  
+  <deny users="*" />  
 </authorization>  
 ```  
  
@@ -93,46 +93,46 @@ The following example shows the Web.config file for an application configured to
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=localhost;Initial Catalog=aspnetdb;Integrated Security=SSPI;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-     name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <authorization>  
-     <deny users="?" />  
-     <allow roles="Administrators" />  
-     <deny users="*" />  
-   </authorization>  
- 
-   <membership defaultProvider="AspNetSqlProvider" userIsOnlineTimeWindow="15">  
-   </membership>  
- 
-   <roleManager defaultProvider="SqlProvider"   
-     enabled="true"  
-     cacheRolesInCookie="true"  
-     cookieName=".ASPROLES"  
-     cookieTimeout="30"  
-     cookiePath="/"  
-     cookieRequireSSL="true"  
-     cookieSlidingExpiration="true"  
-     cookieProtection="All" >  
- 
-     <providers>  
-       <clear />  
-       <add  
-         name="SqlProvider"  
-         type="System.Web.Security.SqlRoleProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="SampleApplication" />  
-       </providers>  
- 
-   </roleManager>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=localhost;Initial Catalog=aspnetdb;Integrated Security=SSPI;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+      name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <authorization>  
+      <deny users="?" />  
+      <allow roles="Administrators" />  
+      <deny users="*" />  
+    </authorization>  
+  
+    <membership defaultProvider="AspNetSqlProvider" userIsOnlineTimeWindow="15">  
+    </membership>  
+  
+    <roleManager defaultProvider="SqlProvider"   
+      enabled="true"  
+      cacheRolesInCookie="true"  
+      cookieName=".ASPROLES"  
+      cookieTimeout="30"  
+      cookiePath="/"  
+      cookieRequireSSL="true"  
+      cookieSlidingExpiration="true"  
+      cookieProtection="All" >  
+  
+      <providers>  
+        <clear />  
+        <add  
+          name="SqlProvider"  
+          type="System.Web.Security.SqlRoleProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="SampleApplication" />  
+        </providers>  
+  
+    </roleManager>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -415,21 +415,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -471,21 +471,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
-  </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+   </providers>  
 </roleManager>  
 ```  
  
@@ -521,21 +521,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -571,21 +571,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/MyApplication"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/MyApplication"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -621,21 +621,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/MyApplication"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="Encrypted" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/MyApplication"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="Encrypted" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -672,21 +672,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/MyApplication"  
- cookieRequireSSL="true"  
- cookieSlidingExpiration="true"  
- cookieProtection="Encrypted" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/MyApplication"  
+  cookieRequireSSL="true"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="Encrypted" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -723,21 +723,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/MyApplication"  
- cookieRequireSSL="true"  
- cookieSlidingExpiration="false"  
- cookieProtection="Encrypted" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/MyApplication"  
+  cookieRequireSSL="true"  
+  cookieSlidingExpiration="false"  
+  cookieProtection="Encrypted" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -775,21 +775,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/MyApplication"  
- cookieRequireSSL="true"  
- cookieSlidingExpiration="true"  
- cookieProtection="Encrypted" >  
- <providers>  
- <add  
-   name="SqlProvider"  
-   type="System.Web.Security.SqlRoleProvider"  
-   connectionStringName="SqlServices"  
-   applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/MyApplication"  
+  cookieRequireSSL="true"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="Encrypted" >  
+  <providers>  
+  <add  
+    name="SqlProvider"  
+    type="System.Web.Security.SqlRoleProvider"  
+    connectionStringName="SqlServices"  
+    applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -1066,21 +1066,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  
@@ -1439,15 +1439,15 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager  
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All"   
- maxCachedResults="10" />  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All"   
+  maxCachedResults="10" />  
 ```  
  
  ]]></format>
@@ -1517,32 +1517,32 @@ The following example shows a  section that removes any existing providers (such
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <roleManager defaultProvider="SqlProvider"   
-     enabled="true"  
-     cacheRolesInCookie="true"  
-     cookieName=".ASPROLES"  
-     cookieTimeout="30"  
-     cookiePath="/"  
-     cookieRequireSSL="false"  
-     cookieSlidingExpiration="true"  
-     cookieProtection="Encrypted">  
- 
-     <providers>  
-       <clear/>  
-       <add  
-         name="SqlProvider"  
-         type="System.Web.Security.SqlRoleProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication" />  
-        </providers>  
- 
-   </roleManager>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <roleManager defaultProvider="SqlProvider"   
+      enabled="true"  
+      cacheRolesInCookie="true"  
+      cookieName=".ASPROLES"  
+      cookieTimeout="30"  
+      cookiePath="/"  
+      cookieRequireSSL="false"  
+      cookieSlidingExpiration="true"  
+      cookieProtection="Encrypted">  
+  
+      <providers>  
+        <clear/>  
+        <add  
+          name="SqlProvider"  
+          type="System.Web.Security.SqlRoleProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication" />  
+         </providers>  
+  
+    </roleManager>  
+  </system.web>  
 </configuration>  
 ```  
  

@@ -52,13 +52,13 @@ The following example extracts the claims associated to the authenticated user p
 ClaimsPrincipal principal = HttpContext.Current.User as ClaimsPrincipal;  
 if (null != principal)  
 {  
-  foreach (Claim claim in principal.Claims)  
-  {  
-     Response.Write("CLAIM TYPE: " + claim.Type + "; CLAIM VALUE: " + claim.Value + "</br>");  
-  }  
- 
+   foreach (Claim claim in principal.Claims)  
+   {  
+      Response.Write("CLAIM TYPE: " + claim.Type + "; CLAIM VALUE: " + claim.Value + "</br>");  
+   }  
+  
 }  
- 
+  
 ```  
  
  ]]></format>

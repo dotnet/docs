@@ -78,14 +78,14 @@ The `msxsl:script` element has the following requirements:
  
 ```  
 <msxsl:script implements-prefix='xy' language='C#'>  
- <![CDATA[  
- // Add code here.  
+  <![CDATA[  
+  // Add code here.  
   ]]]><![CDATA[]>  
 </msxsl:script>  
 ```  
-  
- Functions can be declared within the `msxsl:script` element. The following table shows the namespaces that are supported by default.  
-  
+ 
+Functions can be declared within the `msxsl:script` element. The following table shows the namespaces that are supported by default.  
+ 
 |Supported Namespaces|Description|  
 |--------------------------|-----------------|  
 |`System`|System classes.|  
@@ -94,9 +94,9 @@ The `msxsl:script` element has the following requirements:
 |`System.Xml`|Core XML classes.|  
 |`System.Xml.Xsl`|XSLT classes.|  
 |`System.Xml.XPath`|XML Path Language (XPath) classes.|  
-  
- The supplied arguments and return values defined by the script functions must be one of the World Wide Web Consortium (W3C) types listed below. The following table details the mapping between the W3C types, either XPath or XSLT, and the corresponding .NET Framework classes.  
-  
+ 
+The supplied arguments and return values defined by the script functions must be one of the World Wide Web Consortium (W3C) types listed below. The following table details the mapping between the W3C types, either XPath or XSLT, and the corresponding .NET Framework classes.  
+ 
 |W3C Type|Equivalent .NET class|  
 |--------------|---------------------------|  
 |String (XPath)|`System.String`|  
@@ -104,26 +104,26 @@ The `msxsl:script` element has the following requirements:
 |Number (XPath)|`System.Double`|  
 |Result Tree Fragment (XSLT)|`System.Xml.XPath.XPathNavigator`|  
 |Node Set (XPath)|`System.Xml.XPath.XPathNodeIterator`|  
-  
- If the script function utilizes one of the following numeric types: Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, or Decimal, these types are coerced to Double, which maps to the W3C XPath type number.  
-  
- An exception is thrown when a function is called that cannot convert the argument result to one of the required types.  
-  
+ 
+If the script function utilizes one of the following numeric types: Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, or Decimal, these types are coerced to Double, which maps to the W3C XPath type number.  
+ 
+An exception is thrown when a function is called that cannot convert the argument result to one of the required types.  
+ 
 > [!NOTE]
 >  `msxsl:script` and `msxsl:node-list` are the only functions from the `urn:schemas-microsoft-com:xslt` namespace that are supported by the <xref:System.Xml.Xsl.XslTransform> class.  
+ 
+<xref:System.Xml.Xsl.XslTransform> has the ability to utilize common language runtime (CLR) code as an extension mechanism. This is accomplished by passing an instance of a class to the <xref:System.Xml.Xsl.XslTransform> class and calling its public methods within an XSLT style sheet. Methods that are defined with the `params` keyword, which allows an unspecified number of parameters to be passed, do not work correctly in this scenario. See [params](~/docs/csharp/language-reference/keywords/params.md) for more details.  
+ 
+For more information see [XSLT Transformations with the XslTransform Class](~/docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md).  
+ 
   
- <xref:System.Xml.Xsl.XslTransform> has the ability to utilize common language runtime (CLR) code as an extension mechanism. This is accomplished by passing an instance of a class to the <xref:System.Xml.Xsl.XslTransform> class and calling its public methods within an XSLT style sheet. Methods that are defined with the `params` keyword, which allows an unspecified number of parameters to be passed, do not work correctly in this scenario. See [params](~/docs/csharp/language-reference/keywords/params.md) for more details.  
-  
- For more information see [XSLT Transformations with the XslTransform Class](~/docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example transforms the specified XML document and outputs the result to the console.  
-  
- [!code-csharp[Classic WebData XslTransform Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XslTransform Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XslTransform Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XslTransform Example/VB/source.vb#1)]  
-  
+The following example transforms the specified XML document and outputs the result to the console.  
+ 
+[!code-csharp[Classic WebData XslTransform Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XslTransform Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XslTransform Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XslTransform Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>
@@ -917,12 +917,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -930,10 +930,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1117,12 +1117,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1130,10 +1130,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1218,12 +1218,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1231,10 +1231,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1319,12 +1319,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1332,10 +1332,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1424,12 +1424,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1437,10 +1437,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />  
- <template match="/">  
- Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />  
+  <template match="/">  
+  Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1730,12 +1730,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1743,10 +1743,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1840,12 +1840,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1853,10 +1853,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />   
- <template match="/">  
-    Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />   
+  <template match="/">  
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  
@@ -1952,12 +1952,12 @@ Root node is book.
  
 ```  
 <library>  
- <book genre='novel' ISBN='1-861001-57-5'>  
-    <title>Pride And Prejudice</title>  
- </book>  
- <book genre='novel' ISBN='1-81920-21-2'>  
-    <title>Hook</title>  
- </book>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
+     <title>Pride And Prejudice</title>  
+  </book>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
+     <title>Hook</title>  
+  </book>  
 </library>  
 ```  
  
@@ -1965,10 +1965,10 @@ Root node is book.
  
 ```  
 <style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
- <output method="text" />  
- <template match="/">  
- Root node is  <value-of select="local-name(//*[position() = 1])" />   
- </template>  
+  <output method="text" />  
+  <template match="/">  
+  Root node is  <value-of select="local-name(//*[position() = 1])" />   
+  </template>  
 </style sheet>  
 ```  
  

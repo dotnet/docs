@@ -79,26 +79,26 @@ The following example shows the format for the XML advertisement file.
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>  
-     URL of image to display for Advertisement #1  
-   </ImageUrl>  
-   <NavigateUrl>  
-     URL of page to link to for Advertisement #1  
-   </NavigateUrl>  
-   <AlternateText>  
-     Text to show as a ToolTip for Advertisement #1  
-   </AlternateText>  
-   <Keyword>  
-     Keyword used to filter for Advertisement #1  
-   </Keyword>  
-   <Impressions>  
-      Relative importance of Advertisement #1  
-   </Impressions>  
-   <CustomInformation>  
-     Custom Data about Advertisement #1  
-   </CustomInformation>  
- </Ad>  
+  <Ad>  
+    <ImageUrl>  
+      URL of image to display for Advertisement #1  
+    </ImageUrl>  
+    <NavigateUrl>  
+      URL of page to link to for Advertisement #1  
+    </NavigateUrl>  
+    <AlternateText>  
+      Text to show as a ToolTip for Advertisement #1  
+    </AlternateText>  
+    <Keyword>  
+      Keyword used to filter for Advertisement #1  
+    </Keyword>  
+    <Impressions>  
+       Relative importance of Advertisement #1  
+    </Impressions>  
+    <CustomInformation>  
+      Custom Data about Advertisement #1  
+    </CustomInformation>  
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -113,7 +113,7 @@ The following example shows the format for the XML advertisement file.
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CssClass="string"  
     DataMember="string"  
@@ -159,24 +159,24 @@ The following code example demonstrates the file format for an XML file that con
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <height>60</height>  
-   <width>190</width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic1</Keyword>  
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <height>90</height>  
-   <width>90</width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic2</Keyword>  
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <height>60</height>  
+    <width>190</width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <height>90</height>  
+    <width>90</width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -259,26 +259,26 @@ The following code example demonstrates how to format the XML file that contains
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <Height>60</Height>  
-   <Width>190</Width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic1</Keyword>  
-   <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <Height>90</Height>  
-   <Width>90</Width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic2</Keyword>  
-   <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -368,26 +368,26 @@ The following code example shows the file format of the XML advertisement file.
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <Height>60</Height>  
-   <Width>190</Width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic1</Keyword>  
-   <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <Height>90</Height>  
-   <Width>90</Width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic2</Keyword>  
-   <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -433,30 +433,30 @@ The following is the sample XML data for the previous example.
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/ad1.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
-   <AlternateText>Visual Basic Developer Site</AlternateText>  
-   <Width>140</Width>  
-   <Height>100</Height>  
-   <!-- The following custom elements will be used by WAP-enabled  
-     devices. -->  
-   <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/ad2.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
-   <AlternateText>MSDN</AlternateText>  
-   <Width>150</Width>  
-   <Height>150</Height>  
-   <!-- The following custom elements will be used by WAP-enabled  
-     devices. -->  
-   <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -531,31 +531,31 @@ The following is the sample XML data for the previous example.
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/ad1.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
-   <AlternateText>Visual Basic Developer Site</AlternateText>  
-   <Width>140</Width>  
-   <Height>100</Height>  
-     <!-- The following custom elements will be used by WAP-enabled  
-       devices. -->  
-    <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- 
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/ad2.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
-   <AlternateText>MSDN</AlternateText>  
-   <Width>150</Width>  
-   <Height>150</Height>  
-   <!-- The following custom elements will be used by WAP-enabled  
-     devices. -->  
-   <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+      <!-- The following custom elements will be used by WAP-enabled  
+        devices. -->  
+     <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -612,26 +612,26 @@ The following code example demonstrates how to specify a keyword for each advert
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <Height>60</Height>  
-   <Width>190</Width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Business</Keyword>  
-   <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <Height>90</Height>  
-   <Width>90</Width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Games</Keyword>  
-   <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Business</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Games</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -677,30 +677,30 @@ The following is the sample XML data for the previous example.
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/ad1.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
-   <AlternateText>Visual Basic Developer Site</AlternateText>  
-   <Width>140</Width>  
-   <Height>100</Height>  
-   <!-- The following custom elements will be used by WAP-enabled  
-     devices. -->  
-    <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/ad2.gif</ImageUrl>  
-   <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
-   <AlternateText>MSDN</AlternateText>  
-   <Width>150</Width>  
-   <Height>150</Height>  
-   <!-- The following custom elements will be used by WAP-enabled  
-     devices. -->  
-   <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
-   <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
-   <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+     <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -746,26 +746,26 @@ The following code example demonstrates how to format the XML file that contains
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <Height>60</Height>  
-   <Width>190</Width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic1</Keyword>  
-   <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <Height>90</Height>  
-   <Width>90</Width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic2</Keyword>  
-   <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
 </Advertisements>  
 ```  
  
@@ -1017,26 +1017,26 @@ The following code example demonstrates the file format for an XML file that con
  
 ```  
 <Advertisements>  
- <Ad>  
-   <ImageUrl>~/Images/image1.jpg</ImageUrl>  
-   <Height>60</Height>  
-   <Width>190</Width>  
-   <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
-   <AlternateText>Microsoft Main Site</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic1</Keyword>  
-   <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
-   <ImageUrl>~/Images/image2.jpg</ImageUrl>  
-   <Height>90</Height>  
-   <Width>90</Width>  
-   <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
-   <AlternateText>Wingtip Toys</AlternateText>  
-   <Impressions>80</Impressions>  
-   <Keyword>Topic2</Keyword>  
-   <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
 </Advertisements>  
 ```  
  

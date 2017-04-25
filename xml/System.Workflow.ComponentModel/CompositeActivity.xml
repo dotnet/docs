@@ -52,22 +52,22 @@ This example shows a basic `CompositeActivity` that executes its first child act
 ```csharp  
 public class HasOneChildActivity : CompositeActivity  
 {  
-   protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
-   {  
-       Activity child = this.EnabledActivities[0];  
-       child.Closed += this.ChildClosed;  
-       executionContext.ExecuteActivity(child);  
- 
-       return ActivityExecutionStatus.Executing;  
-   }  
- 
-   void ChildClosed(object sender, ActivityExecutionStatusChangedEventArgs e)  
-   {  
-       e.Activity.Closed -= this.ChildClosed;  
-       ActivityExecutionContext executionContext = sender as ActivityExecutionContext;  
- 
-       executionContext.CloseActivity();  
-   }  
+    protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
+    {  
+        Activity child = this.EnabledActivities[0];  
+        child.Closed += this.ChildClosed;  
+        executionContext.ExecuteActivity(child);  
+  
+        return ActivityExecutionStatus.Executing;  
+    }  
+  
+    void ChildClosed(object sender, ActivityExecutionStatusChangedEventArgs e)  
+    {  
+        e.Activity.Closed -= this.ChildClosed;  
+        ActivityExecutionContext executionContext = sender as ActivityExecutionContext;  
+  
+        executionContext.CloseActivity();  
+    }  
 }  
 ```  
  

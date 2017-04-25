@@ -25,11 +25,11 @@ This example maintains the <xref:System.Data.Objects.ObjectContext> for future r
  
 ```  
 protected void EntityDataSource2_ContextDisposing(object sender,   
-   EntityDataSourceContextDisposingEventArgs e)  
+    EntityDataSourceContextDisposingEventArgs e)  
 {  
-   e.Cancel = true;  
+    e.Cancel = true;  
 }  
- 
+  
 ```  
  
  ]]></format>

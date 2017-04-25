@@ -83,9 +83,9 @@ The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:Syst
  
 ```  
 <object>  
- oneOrMoreBindings  
+  oneOrMoreBindings  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_Bindings"></a>   
@@ -213,9 +213,9 @@ A string used to set the <xref:System.Globalization.CultureInfo>. This string is
  
 ```  
 <object>  
- <object.ConverterParameter>  
-   converterParameter  
- </object.ConverterParameter>  
+  <object.ConverterParameter>  
+    converterParameter  
+  </object.ConverterParameter>  
 </object>  
 ```  
  
@@ -643,9 +643,9 @@ For more information about the validation process and how to provide visual feed
  
 ```  
 <object>  
- <object.ValidationRules>  
-   oneOrMoreValidationRules  
- </object.ValidationRules>  
+  <object.ValidationRules>  
+    oneOrMoreValidationRules  
+  </object.ValidationRules>  
 </object>  
 ```  
  

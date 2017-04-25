@@ -29,17 +29,17 @@ In the following example, if a send to the primary endpoint named “Destination
  
 ```xml  
 <filterTables>  
-    <filterTable name="filterTable1">  
-         <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
-    </filterTable>  
+     <filterTable name="filterTable1">  
+          <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
+     </filterTable>  
 </filterTables>  
 <backupLists>  
-    <backupList name="backupEndpointList">  
-         <add endpointName="backupServiceQueue" />  
-         <add endpointName="alternateServiceQueue" />  
-    </backupList>  
+     <backupList name="backupEndpointList">  
+          <add endpointName="backupServiceQueue" />  
+          <add endpointName="alternateServiceQueue" />  
+     </backupList>  
 </backupLists>  
- 
+  
 ```  
  
  ]]></format>

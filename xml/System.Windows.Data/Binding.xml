@@ -1196,11 +1196,11 @@ The binding engine checks each <xref:System.Windows.Controls.ValidationRule> ass
  
 ```  
 <object>  
- <object.ValidationRules>  
-   oneOrMoreValidationRules  
- </object.ValidationRules>  
+  <object.ValidationRules>  
+    oneOrMoreValidationRules  
+  </object.ValidationRules>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_ValidationRules"></a>   

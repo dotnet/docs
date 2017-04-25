@@ -40,7 +40,7 @@ To use a custom authentication Web service, you can add the service declarativel
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <AuthenticationService Path="MyAuthenticationService.asmx" />  
+  <AuthenticationService Path="MyAuthenticationService.asmx" />  
 </asp:ScriptManager>  
 ```  
  

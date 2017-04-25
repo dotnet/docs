@@ -45,40 +45,40 @@ using System;
 using System.IO;  
 using System.Speech.Synthesis;  
 using System.Speech.AudioFormat;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToWaveFile(@"C:\temp\test.wav",   
-         new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Mono));  
- 
-       // Create a SoundPlayer instance to play output audio file.  
-       System.Media.SoundPlayer m_SoundPlayer =   
-         new System.Media.SoundPlayer(@"C:\temp\test.wav");  
- 
-       // Build a prompt.  
-       PromptBuilder builder = new PromptBuilder();  
-       builder.AppendText("This is sample output to a WAVE file.");  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-       m_SoundPlayer.Play();  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\temp\test.wav",   
+          new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Mono));  
+  
+        // Create a SoundPlayer instance to play output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =   
+          new System.Media.SoundPlayer(@"C:\temp\test.wav");  
+  
+        // Build a prompt.  
+        PromptBuilder builder = new PromptBuilder();  
+        builder.AppendText("This is sample output to a WAVE file.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  

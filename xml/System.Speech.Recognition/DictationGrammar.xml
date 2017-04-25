@@ -29,39 +29,39 @@ By default, the <xref:System.Speech.Recognition.DictationGrammar> language model
 The following example creates three dictation grammars, adds them to a new <xref:System.Speech.Recognition.SpeechRecognitionEngine> object, and returns the new object. The first grammar is the default dictation grammar. The second grammar is the spelling dictation grammar. The third grammar is the default dictation grammar that includes a context phrase. The <xref:System.Speech.Recognition.DictationGrammar.SetDictationContext%2A> method is used to associate the context phrase with the dictation grammar after it is loaded to the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
  
 ```csharp  
- 
+  
 private SpeechRecognitionEngine LoadDictationGrammars()  
 {  
- 
- // Create a default dictation grammar.  
- DictationGrammar defaultDictationGrammar = new DictationGrammar();  
- defaultDictationGrammar.Name = "default dictation";  
- defaultDictationGrammar.Enabled = true;  
- 
- // Create the spelling dictation grammar.  
- DictationGrammar spellingDictationGrammar =  
-   new DictationGrammar("grammar:dictation#spelling");  
- spellingDictationGrammar.Name = "spelling dictation";  
- spellingDictationGrammar.Enabled = true;  
- 
- // Create the question dictation grammar.  
- DictationGrammar customDictationGrammar =  
-   new DictationGrammar("grammar:dictation");  
- customDictationGrammar.Name = "question dictation";  
- customDictationGrammar.Enabled = true;  
- 
- // Create a SpeechRecognitionEngine object and add the grammars to it.  
- SpeechRecognitionEngine recoEngine = new SpeechRecognitionEngine();  
- recoEngine.LoadGrammar(defaultDictationGrammar);  
- recoEngine.LoadGrammar(spellingDictationGrammar);  
- recoEngine.LoadGrammar(customDictationGrammar);  
- 
- // Add a context to customDictationGrammar.  
- customDictationGrammar.SetDictationContext("How do you", null);  
- 
- return recoEngine;  
+  
+  // Create a default dictation grammar.  
+  DictationGrammar defaultDictationGrammar = new DictationGrammar();  
+  defaultDictationGrammar.Name = "default dictation";  
+  defaultDictationGrammar.Enabled = true;  
+  
+  // Create the spelling dictation grammar.  
+  DictationGrammar spellingDictationGrammar =  
+    new DictationGrammar("grammar:dictation#spelling");  
+  spellingDictationGrammar.Name = "spelling dictation";  
+  spellingDictationGrammar.Enabled = true;  
+  
+  // Create the question dictation grammar.  
+  DictationGrammar customDictationGrammar =  
+    new DictationGrammar("grammar:dictation");  
+  customDictationGrammar.Name = "question dictation";  
+  customDictationGrammar.Enabled = true;  
+  
+  // Create a SpeechRecognitionEngine object and add the grammars to it.  
+  SpeechRecognitionEngine recoEngine = new SpeechRecognitionEngine();  
+  recoEngine.LoadGrammar(defaultDictationGrammar);  
+  recoEngine.LoadGrammar(spellingDictationGrammar);  
+  recoEngine.LoadGrammar(customDictationGrammar);  
+  
+  // Add a context to customDictationGrammar.  
+  customDictationGrammar.SetDictationContext("How do you", null);  
+  
+  return recoEngine;  
 }  
- 
+  
 ```  
  
  ]]></format>

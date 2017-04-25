@@ -41,7 +41,7 @@ The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Item%2A> property handles
  
 ```  
 Dim builder As _  
-New System.Data.Odbc.OdbcConnectionStringBuilder  
+ New System.Data.Odbc.OdbcConnectionStringBuilder  
 ' Take advantage of the Driver property.   
 builder.Driver = "SQL Server"  
 builder("Server") = "MyServer;NewValue=Bad"  
@@ -52,7 +52,7 @@ Console.WriteLine(builder.ConnectionString)
  
 ```  
 System.Data.Odbc.OdbcConnectionStringBuilder builder =   
- new System.Data.Odbc.OdbcConnectionStringBuilder();  
+  new System.Data.Odbc.OdbcConnectionStringBuilder();  
 // Take advantage of the Driver property.   
 builder.Driver = "SQL Server";  
 builder["Server"] = "MyServer;NewValue=Bad";  

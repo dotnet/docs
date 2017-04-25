@@ -423,20 +423,20 @@ When overriding the <xref:System.ServiceModel.ServiceHost.OnClosed%2A> method yo
 ```  
 protected override void OnClosed()  
 {  
-   try  
-   {  
-       if (FaultFlagService.faultFlag == ThrowDuring.OnClosed)  
-       {  
-           FaultFlagService.faultFlag = ThrowDuring.Never;  
-           throw new ServiceActivationException("Faulting the service because FaultFlagService.faultFlag = ThrowDuring.OnClosed");  
-       }  
-   }  
-   finally  
-   {  
-       base.OnClosed();  
-   }  
+    try  
+    {  
+        if (FaultFlagService.faultFlag == ThrowDuring.OnClosed)  
+        {  
+            FaultFlagService.faultFlag = ThrowDuring.Never;  
+            throw new ServiceActivationException("Faulting the service because FaultFlagService.faultFlag = ThrowDuring.OnClosed");  
+        }  
+    }  
+    finally  
+    {  
+        base.OnClosed();  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>

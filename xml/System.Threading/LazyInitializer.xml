@@ -43,11 +43,11 @@ Dim name = LazyInitializer.EnsureInitialized(_data, _dataInitialized, _dataLock)
  
 ```csharp  
 ExpensiveData _data = null;  
-                    bool _dataInitialized = false;  
-                    object _dataLock = new object();  
-                 //  ...  
- 
-                   ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _dataInitialized, ref _dataLock);  
+                     bool _dataInitialized = false;  
+                     object _dataLock = new object();  
+                  //  ...  
+  
+                    ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _dataInitialized, ref _dataLock);  
 ```  
  
  ]]></format>

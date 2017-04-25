@@ -976,9 +976,9 @@ Because static properties belong to the type, not individual objects, get static
  
 ```  
 PropertyInfo CurCultProp =   
-   (typeof(CultureInfo)).GetProperty("CurrentCulture");   
+    (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  
-   CurCultProp.GetValue(null,null));  
+    CurCultProp.GetValue(null,null));  
 ```  
  
 To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
@@ -1068,9 +1068,9 @@ Because static properties belong to the type, not individual objects, get static
  
 ```  
 PropertyInfo CurCultProp =   
-      (typeof(CultureInfo)).GetProperty("CurrentCulture");   
+       (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  
-      CurCultProp.GetValue(null,null));  
+       CurCultProp.GetValue(null,null));  
 ```  
  
 To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  

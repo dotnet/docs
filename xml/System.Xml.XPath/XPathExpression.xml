@@ -39,34 +39,34 @@ The following example shows how to use the XPath return type to determine how to
 The example takes the `contosoBooks.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -208,34 +208,34 @@ The following example shows how to sort the books document by price in descendin
 The example takes the `books.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -335,34 +335,34 @@ The following example shows how to use the XPath return type to determine how to
 The example takes the `contosoBooks.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -491,34 +491,34 @@ The following example shows how to use the XPath return type to determine how to
 The example takes the `contosoBooks.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -578,34 +578,34 @@ The following example shows how to use the XPath return type to determine how to
 The example takes the `contosoBooks.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -666,34 +666,34 @@ The following example shows how to use the XPath return type to determine how to
 The example takes the `contosoBooks.xml` file as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>

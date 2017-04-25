@@ -75,7 +75,7 @@ For information about how to configure this control so that it generates markup 
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CssClass="string"  
     DescriptionUrl="uri"  
@@ -87,7 +87,7 @@ For information about how to configure this control so that it generates markup 
     HotSpotMode="NotSet|Navigate|PostBack|Inactive"  
     ID="string"  
     ImageAlign="NotSet|Left|Right|Baseline|Top|Middle|Bottom|  
-       AbsBottom|AbsMiddle|TextTop"  
+        AbsBottom|AbsMiddle|TextTop"  
     ImageUrl="uri"  
     OnClick="Click event handler"  
     OnDataBinding="DataBinding event handler"  
@@ -345,15 +345,15 @@ To create an inactive area within an active hot spot, you must specify the inact
  
 ```  
 <asp:ImageMap ID="SaturnImage"   
-      ImageUrl="~/saturn.PNG"   
-      runat="server" OnClick="SaturnImage_Click">  
-   <asp:CircleHotSpot AlternateText="planet" HotSpotMode=PostBack  
-         PostBackValue="planet" Radius=40 X=100 Y=100 />  
- 
-   <asp:CircleHotSpot HotSpotMode=Inactive   
-         Radius=60 X=100 Y=100 />  
-   <asp:CircleHotSpot AlternateText="rings" HotSpotMode=PostBack  
-         PostBackValue="rings" Radius=80 X=100 Y=100 />  
+       ImageUrl="~/saturn.PNG"   
+       runat="server" OnClick="SaturnImage_Click">  
+    <asp:CircleHotSpot AlternateText="planet" HotSpotMode=PostBack  
+          PostBackValue="planet" Radius=40 X=100 Y=100 />  
+  
+    <asp:CircleHotSpot HotSpotMode=Inactive   
+          Radius=60 X=100 Y=100 />  
+    <asp:CircleHotSpot AlternateText="rings" HotSpotMode=PostBack  
+          PostBackValue="rings" Radius=80 X=100 Y=100 />  
 </asp:ImageMap>  
 ```  
  

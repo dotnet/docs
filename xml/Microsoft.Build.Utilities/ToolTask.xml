@@ -212,7 +212,7 @@ The ExecuteTool method passes these environment variables to the StartInfo of th
 using System;  
 using Microsoft.Build.Utilities;  
 using System.Collections.Specialized;  
- 
+  
 /// <summary>  
 /// CustomToolTask overrides the EnvironmentOverride property of ToolTask to add a directory  
 /// to the Path environment variable of the process being executed  
@@ -230,7 +230,7 @@ abstract class CustomToolTask : ToolTask
             }  
       }  
 }  
- 
+  
 ```  
  
  ]]></format>

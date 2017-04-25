@@ -43,7 +43,7 @@ The <xref:System.Data.OleDb.OleDbConnectionStringBuilder.Item%2A> property handl
  
 ```vb  
 Dim builder As _  
-   New System.Data.OleDb.OleDbConnectionStringBuilder  
+    New System.Data.OleDb.OleDbConnectionStringBuilder  
 builder("Provider") = "Microsoft.Jet.OLEDB.4.0"  
 builder("Data Source") = "C:\Sample.mdb"  
 builder("User Id") = "Admin;NewValue=Bad"  
@@ -51,7 +51,7 @@ builder("User Id") = "Admin;NewValue=Bad"
  
 ```csharp  
 System.Data.OleDb.OleDbConnectionStringBuilder builder =   
-   new System.Data.OleDb.OleDbConnectionStringBuilder();  
+    new System.Data.OleDb.OleDbConnectionStringBuilder();  
 builder["Provider"] = "Microsoft.Jet.OLEDB.4.0";  
 builder["Data Source"] = "C:\\Sample.mdb";  
 builder["User Id"] = "Admin;NewValue=Bad";  

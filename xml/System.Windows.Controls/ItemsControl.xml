@@ -546,11 +546,11 @@ The entry at index 0 describes the top-level groups, the entry at index 1 descri
  
 ```  
 <object>  
- <object.GroupStyle>  
-   OneOrMoreGroupStyleObjects  
- </object.GroupStyle>  
+  <object.GroupStyle>  
+    OneOrMoreGroupStyleObjects  
+  </object.GroupStyle>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_GroupStyle"></a>   
@@ -1213,7 +1213,7 @@ When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setti
  
 ```  
 <object>  
- OneOrMoreElements  
+  OneOrMoreElements  
 </object>  
 ```  
  

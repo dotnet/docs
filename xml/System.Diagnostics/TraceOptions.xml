@@ -35,15 +35,15 @@ The following example shows the use of the `traceOutputOptions` attribute to spe
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="consoleListener"  
-         type="System.Diagnostics.ConsoleTraceListener"   
-         traceOutputOptions="ProcessId, DateTime" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="consoleListener"  
+          type="System.Diagnostics.ConsoleTraceListener"   
+          traceOutputOptions="ProcessId, DateTime" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

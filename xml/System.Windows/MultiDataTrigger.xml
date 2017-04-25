@@ -92,9 +92,9 @@ For a <xref:System.Windows.MultiDataTrigger>, each condition in the collection m
  
 ```  
 <object>  
- <object.Conditions>  
-   zeroOrMoreConditions  
- </object.Conditions>  
+  <object.Conditions>  
+    zeroOrMoreConditions  
+  </object.Conditions>  
 </object>  
 ```  
  
@@ -151,7 +151,7 @@ Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiDataT
  
 ```  
 <object>  
-   zeroOrMoreSetters  
+    zeroOrMoreSetters  
 </object>  
 ```  
  

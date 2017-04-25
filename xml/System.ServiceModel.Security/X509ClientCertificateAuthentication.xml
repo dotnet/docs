@@ -30,9 +30,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication certificateValidationMode='ChainTrust' />  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication certificateValidationMode='ChainTrust' />  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -83,9 +83,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication certificateValidationMode='ChainTrust' />  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication certificateValidationMode='ChainTrust' />  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -128,9 +128,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication certificateValidationMode='Custom' customCertificateValidatorType='Samples.MyCertificateValidator, Samples' />  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication certificateValidationMode='Custom' customCertificateValidatorType='Samples.MyCertificateValidator, Samples' />  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -176,9 +176,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication includeWindowsGroups ='true'/>  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication includeWindowsGroups ='true'/>  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -220,9 +220,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication mapClientCertificateToWindowsAccount='true'/>  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication mapClientCertificateToWindowsAccount='true'/>  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -267,9 +267,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication certificateValidationMode='ChainTrust'   revocationMode = 'NoCheck'/>  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication certificateValidationMode='ChainTrust'   revocationMode = 'NoCheck'/>  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  
@@ -310,9 +310,9 @@ The property can also be set in a configuration file.
  
 ```  
 <serviceCredentials>  
- <clientCertificate>  
-    <authentication certificateValidationMode='ChainTrust'   trustedStoreLocation = 'LocalMachine'/>  
- </clientCertificate>  
+  <clientCertificate>  
+     <authentication certificateValidationMode='ChainTrust'   trustedStoreLocation = 'LocalMachine'/>  
+  </clientCertificate>  
 </serviceCredentials>  
 ```  
  

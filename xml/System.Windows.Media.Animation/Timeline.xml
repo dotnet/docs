@@ -800,10 +800,10 @@ The behavior of a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> str
  
 ```  
 ...  
- <Storyboard>  
-   <DoubleAnimation Duration="0:0:2" …/>  
-   <DoubleAnimation Duration="0:0:4" BeginTime="0:0:2" …/>  
- </Storyboard>   
+  <Storyboard>  
+    <DoubleAnimation Duration="0:0:2" …/>  
+    <DoubleAnimation Duration="0:0:4" BeginTime="0:0:2" …/>  
+  </Storyboard>   
 ...  
 ```  
  
@@ -813,9 +813,9 @@ Examples of \<*Type*>Animations include <xref:System.Windows.Media.Animation.Dou
  
 ```  
 ...  
- <!-- With no Duration specified, this animation will run for   
-      one second -->  
- <DoubleAnimation .../>  
+  <!-- With no Duration specified, this animation will run for   
+       one second -->  
+  <DoubleAnimation .../>  
 ...  
 ```  
  
@@ -825,17 +825,17 @@ Examples of \<*Type*>AnimationUsingKeyFrames include <xref:System.Windows.Media.
  
 ```  
 ...  
- <Storyboard>  
- 
-   <!-- This key frame animation will end at 4.5 seconds  
-        Because that is when its last KeyFrame KeyTime ends. -->  
-   <DoubleAnimationUsingKeyFrames ...>  
-     <LinearDoubleKeyFrame ... KeyTime="0:0:3" />  
-     <DiscreteDoubleKeyFrame ... KeyTime="0:0:3.5" />  
-     <DiscreteDoubleKeyFrame ... KeyTime="0:0:4" />  
-     <DiscreteDoubleKeyFrame ... KeyTime="0:0:4.5" />  
-   </DoubleAnimationUsingKeyFrames>  
- </Storyboard>   
+  <Storyboard>  
+  
+    <!-- This key frame animation will end at 4.5 seconds  
+         Because that is when its last KeyFrame KeyTime ends. -->  
+    <DoubleAnimationUsingKeyFrames ...>  
+      <LinearDoubleKeyFrame ... KeyTime="0:0:3" />  
+      <DiscreteDoubleKeyFrame ... KeyTime="0:0:3.5" />  
+      <DiscreteDoubleKeyFrame ... KeyTime="0:0:4" />  
+      <DiscreteDoubleKeyFrame ... KeyTime="0:0:4.5" />  
+    </DoubleAnimationUsingKeyFrames>  
+  </Storyboard>   
 ...  
 ```  
  

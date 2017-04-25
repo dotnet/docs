@@ -29,7 +29,7 @@ The following example shows how to define a <xref:System.Windows.Controls.Ribbon
 ```  
 xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"  
 <!-- ... -->  
-<ribbon:Ribbon x:Name="Ribbon">  
+ <ribbon:Ribbon x:Name="Ribbon">  
   <ribbon:Ribbon.Resources>  
     <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="3ControlSizeDef">  
       <ribbon:RibbonGroupSizeDefinition>  
@@ -45,7 +45,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
       <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />  
     </ribbon:RibbonGroupSizeDefinitionBaseCollection>  
   </ribbon:Ribbon.Resources>  
- 
+  
   <ribbon:RibbonTab Header="Home" >  
     <ribbon:RibbonGroup Header="Clipboard" Name="Clipboard" SmallImageSource="Images/Paste16.png"  
                         GroupSizeDefinitions="{StaticResource 3ControlSizeDef}">  
@@ -64,7 +64,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
     </ribbon:RibbonGroup>  
   </ribbon:RibbonTab>  
 </ribbon:Ribbon>  
- 
+  
 ```  
  
  ]]></format>

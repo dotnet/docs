@@ -107,19 +107,19 @@ The first example is a simple configuration file using default mappings for Acti
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -127,48 +127,48 @@ This example shows all of the attribute settings that are available for an insta
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership  
-     defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"  
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,  
-         System.Web, Version=1.0.3600, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         connectionStringName="ADService"  
-         connectionUsername="UserWithAppropriateRights"  
-         connectionPassword="PasswordForUser"  
-         connectionProtection="Secure"  
-         enablePasswordReset="true"  
-         enableSearchMethods="true"  
-         requiresQuestionAndAnswer="true"  
-         applicationName="/"  
-         description="Default AD connection"  
-         requiresUniqueEmail="false"  
-         clientSearchTimeout="30"  
-         serverSearchTimeout="30"  
-         timeoutUnit="Minutes"  
-         attributeMapPasswordQuestion="department"  
-         attributeMapPasswordAnswer="division"  
-         attributeMapFailedPasswordAnswerCount="singleIntAttribute"  
-        attributeMapFailedPasswordAnswerTime="singleLargeIntAttribute"  
-        attributeMapFailedPasswordAnswerLockoutTime="singleLargeIntAttribute"  
-         attributeMapEmail = "mail"  
-         attributeMapUsername = "userPrincipalName"  
-         maxInvalidPasswordAttempts = "5"  
-         passwordAttemptWindow = "10"  
-         passwordAnswerAttemptLockoutDuration = "30"  
-         minRequiredPasswordLength="7"  
-         minRequiredNonalphanumericCharacters="1"  
-         passwordStrengthRegularExpression="  
-         @\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})" />  
-       />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership  
+      defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"  
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,  
+          System.Web, Version=1.0.3600, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          connectionStringName="ADService"  
+          connectionUsername="UserWithAppropriateRights"  
+          connectionPassword="PasswordForUser"  
+          connectionProtection="Secure"  
+          enablePasswordReset="true"  
+          enableSearchMethods="true"  
+          requiresQuestionAndAnswer="true"  
+          applicationName="/"  
+          description="Default AD connection"  
+          requiresUniqueEmail="false"  
+          clientSearchTimeout="30"  
+          serverSearchTimeout="30"  
+          timeoutUnit="Minutes"  
+          attributeMapPasswordQuestion="department"  
+          attributeMapPasswordAnswer="division"  
+          attributeMapFailedPasswordAnswerCount="singleIntAttribute"  
+         attributeMapFailedPasswordAnswerTime="singleLargeIntAttribute"  
+         attributeMapFailedPasswordAnswerLockoutTime="singleLargeIntAttribute"  
+          attributeMapEmail = "mail"  
+          attributeMapUsername = "userPrincipalName"  
+          maxInvalidPasswordAttempts = "5"  
+          passwordAttemptWindow = "10"  
+          passwordAnswerAttemptLockoutDuration = "30"  
+          minRequiredPasswordLength="7"  
+          minRequiredNonalphanumericCharacters="1"  
+          passwordStrengthRegularExpression="  
+          @\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})" />  
+        />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -546,20 +546,20 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         connectionProtection="SignAndSeal" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          connectionProtection="SignAndSeal" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -668,28 +668,28 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         connectionUsername="UserWithResetPasswordRights"  
-         connectionPassword="PasswordForUser"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"  
-         attributeMapPasswordQuestion="PasswordQuestionADAttribute"  
-         attributeMapPasswordAnswer="PasswordAnswerADAttribute"  
-         attributeMapFailedPasswordAnswerCount="AnswerCountADAttribute"  
-         attributeMapFailedPasswordAnswerTime="AnswerTimeADAttribute"  
-         attributeMapFailedPasswordAnswerLockoutTime="LockOutTimeADAttribute" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          connectionUsername="UserWithResetPasswordRights"  
+          connectionPassword="PasswordForUser"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"  
+          attributeMapPasswordQuestion="PasswordQuestionADAttribute"  
+          attributeMapPasswordAnswer="PasswordAnswerADAttribute"  
+          attributeMapFailedPasswordAnswerCount="AnswerCountADAttribute"  
+          attributeMapFailedPasswordAnswerTime="AnswerTimeADAttribute"  
+          attributeMapFailedPasswordAnswerLockoutTime="LockOutTimeADAttribute" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -766,20 +766,20 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         enableSearchMethods="true" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          enableSearchMethods="true" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1449,22 +1449,22 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         maxInvalidPasswordAttempts="3"  
-         passwordAttemptWindow="10"  
-         passwordAnswerAttemptLockoutDuration="15" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          maxInvalidPasswordAttempts="3"  
+          passwordAttemptWindow="10"  
+          passwordAnswerAttemptLockoutDuration="15" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1505,20 +1505,20 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         minRequiredNonalphanumericCharacters = "1" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          minRequiredNonalphanumericCharacters = "1" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1557,21 +1557,21 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         minRequiredPasswordLength = "7" />  
- 
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          minRequiredPasswordLength = "7" />  
+  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1613,22 +1613,22 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         maxInvalidPasswordAttempts="3"  
-         passwordAttemptWindow="10"  
-         passwordAnswerAttemptLockoutDuration="15" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          maxInvalidPasswordAttempts="3"  
+          passwordAttemptWindow="10"  
+          passwordAnswerAttemptLockoutDuration="15" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1669,22 +1669,22 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         maxInvalidPasswordAttempts="3"  
-         passwordAttemptWindow="10"  
-       passwordAnswerAttemptLockoutDuration="15" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          maxInvalidPasswordAttempts="3"  
+          passwordAttemptWindow="10"  
+        passwordAnswerAttemptLockoutDuration="15" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1758,21 +1758,21 @@ If the password does not meet these criteria, the password is not accepted by th
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         passwordStrengthRegularExpression=  
-           "@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          passwordStrengthRegularExpression=  
+            "@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1822,28 +1822,28 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         connectionUsername="UserWithResetPasswordRights"  
-         connectionPassword="PasswordForUser"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"  
-         attributeMapPasswordQuestion="PasswordQuestionADAttribute"  
-         attributeMapPasswordAnswer="PasswordAnswerADAttribute"  
-         attributeMapFailedPasswordAnswerCount="AnswerCountADAttribute"  
-         attributeMapFailedPasswordAnswerTime="AnswerTimeADAttribute"  
-         attributeMapFailedPasswordAnswerLockoutTime="LockOutTimeADAttribute" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          connectionUsername="UserWithResetPasswordRights"  
+          connectionPassword="PasswordForUser"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"  
+          attributeMapPasswordQuestion="PasswordQuestionADAttribute"  
+          attributeMapPasswordAnswer="PasswordAnswerADAttribute"  
+          attributeMapFailedPasswordAnswerCount="AnswerCountADAttribute"  
+          attributeMapFailedPasswordAnswerTime="AnswerTimeADAttribute"  
+          attributeMapFailedPasswordAnswerLockoutTime="LockOutTimeADAttribute" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -1883,20 +1883,20 @@ The following code example shows a Web.config entry that configures an <xref:Sys
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="ADService" connectionString="LDAP://ldapServer/" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
-     <providers>  
-       <add name="AspNetActiveDirectoryMembershipProvider"   
-         type="System.Web.Security.ActiveDirectoryMembershipProvider,   
-         System.Web, Version=2.0.3600, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-         requiresUniqueEmail="true" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="ADService" connectionString="LDAP://ldapServer/" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">  
+      <providers>  
+        <add name="AspNetActiveDirectoryMembershipProvider"   
+          type="System.Web.Security.ActiveDirectoryMembershipProvider,   
+          System.Web, Version=2.0.3600, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+          requiresUniqueEmail="true" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  

@@ -130,13 +130,13 @@ The following exampledemonstrates how to use the <xref:System.Runtime.InteropSer
 byte* pointer = null;  
 RuntimeHelpers.PrepareConstrainedRegions();  
 try {  
-   MySafeBuffer.AcquirePointer(ref pointer);  
-   // Use pointer here, with your own bounds checking.  
-   }  
+    MySafeBuffer.AcquirePointer(ref pointer);  
+    // Use pointer here, with your own bounds checking.  
+    }  
 finally {  
-   if (pointer != null)  
-       MySafeBuffer.ReleasePointer();  
-   }  
+    if (pointer != null)  
+        MySafeBuffer.ReleasePointer();  
+    }  
 ```  
  
 If you cast `pointer` (which is a pointer to a byte) as a pointer to a different type (T*), you may have pointer alignment issues.  

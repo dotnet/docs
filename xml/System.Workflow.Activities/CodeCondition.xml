@@ -57,7 +57,7 @@ The following code example shows how to use the constructor to create a new inst
 private ConditionedActivityGroup BookingCAG;  
 private CodeActivity Car;  
 private CodeActivity Airline;  
- 
+  
 this.CanModifyActivities = true;  
 CodeCondition codecondition1 = new CodeCondition();  
 CodeCondition codecondition2 = new CodeCondition();  

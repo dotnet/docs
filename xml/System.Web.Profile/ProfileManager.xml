@@ -24,9 +24,9 @@ By default, the user profile is disabled for all ASP.NET applications. To enable
  
 ```  
 <configuration>  
- <system.web>  
-   <profile enabled="true" />  
- </system.web>  
+  <system.web>  
+    <profile enabled="true" />  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -36,21 +36,21 @@ A profile provider is used to store and retrieve properties in the user profile.
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString=  
-     "Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- <system.web>  
-   <profile defaultProvider="SqlProvider">  
-     <providers>  
-       <clear />  
-       <add name="SqlProvider"  
-         type="System.Web.Profile.SqlProfileProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication" />  
-     </providers>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString=  
+      "Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <profile defaultProvider="SqlProvider">  
+      <providers>  
+        <clear />  
+        <add name="SqlProvider"  
+          type="System.Web.Profile.SqlProfileProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication" />  
+      </providers>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -132,12 +132,12 @@ The following configuration file excerpt shows the  element in the  section of t
  
 ```  
 <profile enabled="true" defaultProvider="SqlProvider">  
- <providers>  
- <add name="SqlProvider"  
-   type="System.Web.Profile.SqlProfileProvider"  
-   connectionStringName="SqlServices"  
-   applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+  <add name="SqlProvider"  
+    type="System.Web.Profile.SqlProfileProvider"  
+    connectionStringName="SqlServices"  
+    applicationName="MyApplication" />  
+  </providers>  
 </profile>  
 ```  
  
@@ -176,14 +176,14 @@ The following configuration file excerpt shows the  element in the  section of t
  
 ```  
 <profile enabled="true"  
- automaticSaveEnabled="true"  
- defaultProvider="SqlProvider">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Profile.SqlProfileProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  automaticSaveEnabled="true"  
+  defaultProvider="SqlProvider">  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Profile.SqlProfileProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </profile>  
 ```  
  
@@ -427,12 +427,12 @@ The following code example shows the  element in the  section of the Web.config 
  
 ```  
 <profile enabled="true" defaultProvider="SqlProvider">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Profile.SqlProfileProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Profile.SqlProfileProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </profile>  
 ```  
  
@@ -1011,21 +1011,21 @@ The <xref:System.Web.Profile.ProfileManager.Providers%2A> property references al
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString=  
-     "Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- <system.web>  
-   <profile enabled="true" defaultProvider="SqlProvider">  
-     <providers>  
-       <clear />  
-       <add name="SqlProvider"  
-         type="System.Web.Profile.SqlProfileProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication" />  
-     </providers>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString=  
+      "Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <profile enabled="true" defaultProvider="SqlProvider">  
+      <providers>  
+        <clear />  
+        <add name="SqlProvider"  
+          type="System.Web.Profile.SqlProfileProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication" />  
+      </providers>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  

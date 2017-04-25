@@ -30,17 +30,17 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <pages>  
-   <tagMapping>  
-     <add  
-       tagType=  
-         "System.Web.UI.WebControls.WebParts.WebPartManager"  
-       mappedTagType=  
-         "Microsoft.Sharepoint.WebPartPartManager,   
-          MSPS.Web.dll, Version='2.0.0.0'"   
-     />  
-   </tagMapping>  
- </pages>  
+  <pages>  
+    <tagMapping>  
+      <add  
+        tagType=  
+          "System.Web.UI.WebControls.WebParts.WebPartManager"  
+        mappedTagType=  
+          "Microsoft.Sharepoint.WebPartPartManager,   
+           MSPS.Web.dll, Version='2.0.0.0'"   
+      />  
+    </tagMapping>  
+  </pages>  
 </system.web>  
 ```  
  

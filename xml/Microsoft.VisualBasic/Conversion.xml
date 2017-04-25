@@ -70,28 +70,28 @@ The following example uses the `CTypeDynamic` method to convert a dynamic object
  
 ```vb  
 Imports System.Dynamic  
- 
+  
 Module Module1  
-   Sub Main()  
-       Dim dyn As Object = New SampleDynamicObject  
-       Dim sampleString = CTypeDynamic(dyn, GetType(String))  
-       Console.WriteLine(sampleString)  
-   End Sub  
+    Sub Main()  
+        Dim dyn As Object = New SampleDynamicObject  
+        Dim sampleString = CTypeDynamic(dyn, GetType(String))  
+        Console.WriteLine(sampleString)  
+    End Sub  
 End Module  
- 
+  
 Class SampleDynamicObject  
-   Inherits DynamicObject  
- 
-   Public Overrides Function TryConvert(ByVal binder As ConvertBinder,  
-                                        ByRef result As Object) As Boolean  
- 
-       If binder.Type = GetType(String) Then  
-           result = "Sample String"  
-           Return True  
-       End If  
- 
-       Return False  
-   End Function  
+    Inherits DynamicObject  
+  
+    Public Overrides Function TryConvert(ByVal binder As ConvertBinder,  
+                                         ByRef result As Object) As Boolean  
+  
+        If binder.Type = GetType(String) Then  
+            result = "Sample String"  
+            Return True  
+        End If  
+  
+        Return False  
+    End Function  
 End Class  
 ```  
  
@@ -137,28 +137,28 @@ The following example uses the `CTypeDynamic` method to convert a dynamic object
  
 ```vb  
 Imports System.Dynamic  
- 
+  
 Module Module1  
-   Sub Main()  
-       Dim dyn As Object = New SampleDynamicObject  
-       Dim str = CTypeDynamic(Of String)(dyn)  
-       Console.WriteLine(str)  
-   End Sub  
+    Sub Main()  
+        Dim dyn As Object = New SampleDynamicObject  
+        Dim str = CTypeDynamic(Of String)(dyn)  
+        Console.WriteLine(str)  
+    End Sub  
 End Module  
- 
+  
 Class SampleDynamicObject  
-   Inherits DynamicObject  
- 
-   Public Overrides Function TryConvert(ByVal binder As ConvertBinder,  
-                                        ByRef result As Object) As Boolean  
- 
-       If binder.Type = GetType(String) Then  
-           result = "Sample String"  
-           Return True  
-       End If  
- 
-       Return False  
-   End Function  
+    Inherits DynamicObject  
+  
+    Public Overrides Function TryConvert(ByVal binder As ConvertBinder,  
+                                         ByRef result As Object) As Boolean  
+  
+        If binder.Type = GetType(String) Then  
+            result = "Sample String"  
+            Return True  
+        End If  
+  
+        Return False  
+    End Function  
 End Class  
 ```  
  
@@ -1938,14 +1938,14 @@ The `Val` function stops reading the string at the first character it cannot rec
 The following call returns the value 1615198.  
  
 ```  
- 
+  
 Val(" 1615 198th Street N.E.")   
 ```  
  
 The following call returns the decimal value -1.  
  
 ```  
- 
+  
 Val("&HFFFF")   
 ```  
  
@@ -2012,14 +2012,14 @@ The `Val` function stops reading the string at the first character it cannot rec
 The following call returns the value 1234123.  
  
 ```  
- 
+  
 Val(" 1234 123th Street N.E.")   
 ```  
  
 The following call returns the decimal value -1.  
  
 ```  
- 
+  
 Val("&HFFFF")   
 ```  
  
@@ -2086,14 +2086,14 @@ The `Val` function stops reading the string at the first character it cannot rec
 The following call returns the value 1234123.  
  
 ```  
- 
+  
 Val(" 1234 123th Street N.E.")   
 ```  
  
 The following call returns the decimal value -1.  
  
 ```  
- 
+  
 Val("&HFFFF")   
 ```  
  

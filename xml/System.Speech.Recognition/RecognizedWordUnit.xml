@@ -39,62 +39,62 @@ In addition to providing a measure of recognition certainty (<xref:System.Speech
 The following example shows a utility routine (`stringFromWordArray`) that generates strings. The strings contain lexical output (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized text (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), or phonetic characters from the International Phonetic Alphabet (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). Strings are formatted using <xref:System.Speech.Recognition.DisplayAttributes> objects obtained from the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. The <xref:System.Speech.Recognition.RecognizedWordUnit> objects are obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
  
 ```csharp  
- 
+  
 internal enum WordType   
 {  
- Text,  
- Normalized = Text,  
- Lexical,  
- Pronunciation  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
 }  
 ```  
  
 ```csharp  
 internal static string stringFromWordArray(ReadOnlyCollection<RecognizedWordUnit> words, WordType type)   
 {  
- string text = "";  
- foreach (RecognizedWordUnit word in words)   
- {  
-   string wordText = "";  
-   if (type == WordType.Text || type == WordType.Normalized)   
-   {  
-     wordText = word.Text;  
-   }   
-   else if (type == WordType.Lexical)   
-   {  
-     wordText = word.LexicalForm;  
-   }   
-   else if (type == WordType.Pronunciation)   
-   {  
-     wordText = word.Pronunciation;  
-   }   
-   else   
-   {  
-     throw new InvalidEnumArgumentException(String.Format("[0}: is not a valid input", type));  
-   }  
-   // Use display attribute  
- 
-   if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
-   {  
-     wordText += " ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
-   {  
-     wordText += "  ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimStart();  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
-   {  
-     wordText = wordText.TrimEnd();  
-   }  
- 
-   text += wordText;  
- 
- }  
- return text;  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(String.Format("[0}: is not a valid input", type));  
+    }  
+    // Use display attribute  
+  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
 }  
 ```  
  
@@ -157,49 +157,49 @@ The following example is a somewhat contrived test of emulation, where new words
 ```csharp  
 private void _emulateAndVerify_Click(object sender, EventArgs e)   
 {  
- char[] delimiterChars = { ' ', ',', '.', ':', ';', '\t' };  
- string text = _emulateTextBox.Text;  
- string[] words = text.Split(delimiterChars);  
- 
- RecognizedWordUnit[] InputWordUnits = new RecognizedWordUnit[words.Length];  
- for (int i = 0; i < words.Length; i++)   
- {  
-   InputWordUnits[i] = new RecognizedWordUnit(  
-       "",   
-       0,   
-       "",  
-       words[i].ToLower(),   
-       DisplayAttributes.OneTrailingSpace,   
-       new TimeSpan(),   
-       new TimeSpan());  
- }  
- 
- RecognitionResult rec = _recognizer.EmulateRecognize(  
-       InputWordUnits,   
-       System.Globalization.CompareOptions.IgnoreCase);  
- if (rec == null)   
- {  
-   MessageBox.Show(String.Format("Recognition emulation for {0} failed.\n", text));  
- }   
- else if (InputWordUnits.Length != rec.Words.Count)   
- {  
-   MessageBox.Show(  
-      String.Format("Length mismatch: Input was {0} words, Recognition has {1} words.\n}"));  
- }   
- else   
- {  
-   for (int i = 0; i < InputWordUnits.Length; i++)   
-   {  
- 
-     if (rec.Words[i].LexicalForm.ToLower() != InputWordUnits[i].LexicalForm.ToLower())   
-     {  
-       MessageBox.Show(  
-         String.Format("Input word {0} \"{1}\" not found. Recognition output is {2}",  
-         i, InputWordUnits[i].LexicalForm, rec.Words[i].LexicalForm));  
-       continue;  
-     }  
-   }  
- }  
+  char[] delimiterChars = { ' ', ',', '.', ':', ';', '\t' };  
+  string text = _emulateTextBox.Text;  
+  string[] words = text.Split(delimiterChars);  
+  
+  RecognizedWordUnit[] InputWordUnits = new RecognizedWordUnit[words.Length];  
+  for (int i = 0; i < words.Length; i++)   
+  {  
+    InputWordUnits[i] = new RecognizedWordUnit(  
+        "",   
+        0,   
+        "",  
+        words[i].ToLower(),   
+        DisplayAttributes.OneTrailingSpace,   
+        new TimeSpan(),   
+        new TimeSpan());  
+  }  
+  
+  RecognitionResult rec = _recognizer.EmulateRecognize(  
+        InputWordUnits,   
+        System.Globalization.CompareOptions.IgnoreCase);  
+  if (rec == null)   
+  {  
+    MessageBox.Show(String.Format("Recognition emulation for {0} failed.\n", text));  
+  }   
+  else if (InputWordUnits.Length != rec.Words.Count)   
+  {  
+    MessageBox.Show(  
+       String.Format("Length mismatch: Input was {0} words, Recognition has {1} words.\n}"));  
+  }   
+  else   
+  {  
+    for (int i = 0; i < InputWordUnits.Length; i++)   
+    {  
+  
+      if (rec.Words[i].LexicalForm.ToLower() != InputWordUnits[i].LexicalForm.ToLower())   
+      {  
+        MessageBox.Show(  
+          String.Format("Input word {0} \"{1}\" not found. Recognition output is {2}",  
+          i, InputWordUnits[i].LexicalForm, rec.Words[i].LexicalForm));  
+        continue;  
+      }  
+    }  
+  }  
 }  
 ```  
  
@@ -267,65 +267,65 @@ For more information about how to use this formatting information, see the <xref
 The following example shows a utility routine (`stringFromWordArray`) that generates a string that is formatted in one of three ways: lexically (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), or phonetically (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property on a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on a <xref:System.Speech.Recognition.RecognizedPhrase> object.  
  
 ```csharp  
- 
+  
 internal enum WordType   
 {  
- Text,  
- Normalized = Text,  
- Lexical,  
- Pronunciation  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
 }  
 ```  
  
 ```csharp  
 internal static string stringFromWordArray(  
-       ReadOnlyCollection<RecognizedWordUnit> words,   
-       WordType type)   
+        ReadOnlyCollection<RecognizedWordUnit> words,   
+        WordType type)   
 {  
- string text = "";  
- foreach (RecognizedWordUnit word in words)   
- {  
-   string wordText = "";  
-   if (type == WordType.Text || type == WordType.Normalized)   
-   {  
-     wordText = word.Text;  
-   }   
-   else if (type == WordType.Lexical)   
-   {  
-     wordText = word.LexicalForm;  
-   }  
-   else if (type == WordType.Pronunciation)   
-   {  
-      wordText = word.Pronunciation;  
-   }   
-   else   
-   {  
-     throw new InvalidEnumArgumentException(  
-        String.Format("[0}: is not a valid input", type));  
-   }  
- 
-   // Use display attribute  
-   if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
-   {  
-     wordText += " ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
-   {  
-     wordText += "  ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimStart();  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
-   {  
-     wordText = wordText.TrimEnd();  
-   }  
- 
-   text += wordText;  
- 
- }  
- return text;  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }  
+    else if (type == WordType.Pronunciation)   
+    {  
+       wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+         String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
 }  
 ```  
  
@@ -362,65 +362,65 @@ Speech normalization is the use of special constructs or symbols to express spee
 The following example shows a utility routine that generates text in one of three formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
  
 ```csharp  
- 
+  
 internal enum WordType   
 {  
- Text,  
- Normalized = Text,  
- Lexical,  
- Pronunciation  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
 }  
 ```  
  
 ```csharp  
 internal static string stringFromWordArray(  
-        ReadOnlyCollection<RecognizedWordUnit> words,   
-        WordType type)   
+         ReadOnlyCollection<RecognizedWordUnit> words,   
+         WordType type)   
 {  
- string text = "";  
- foreach (RecognizedWordUnit word in words)   
- {  
-   string wordText = "";  
-   if (type == WordType.Text || type == WordType.Normalized)   
-   {  
-     wordText = word.Text;  
-   }   
-   else if (type == WordType.Lexical)   
-   {  
-     wordText = word.LexicalForm;  
-   }   
-   else if (type == WordType.Pronunciation)   
-   {  
-     wordText = word.Pronunciation;  
-   }   
-   else   
-   {  
-     throw new InvalidEnumArgumentException(  
-         String.Format("[0}: is not a valid input", type));  
-   }  
- 
-   // Use display attribute  
-   if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
-   {  
-     wordText += " ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
-   {  
-     wordText += "  ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimStart();  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
-   {  
-   wordText = wordText.TrimEnd();  
-   }  
- 
-   text += wordText;  
- 
- }  
- return text;  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+          String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+    wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
 }  
 ```  
  
@@ -457,64 +457,64 @@ Many Windows-based Unicode fonts, such as Courier New, support the display of IP
 The following example shows a utility routine that generates a string with one of three possible formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
  
 ```csharp  
- 
+  
 internal enum WordType   
 {  
- Text,  
- Normalized = Text,  
- Lexical,  
- Pronunciation  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
 }  
 ```  
  
 ```csharp  
 internal static string stringFromWordArray(  
-         ReadOnlyCollection<RecognizedWordUnit> words,   
-         WordType type)   
+          ReadOnlyCollection<RecognizedWordUnit> words,   
+          WordType type)   
 {  
- string text = "";  
- foreach (RecognizedWordUnit word in words)   
- {  
-   string wordText = "";  
-   if (type == WordType.Text || type == WordType.Normalized)   
-   {  
-     wordText = word.Text;  
-   }   
-   else if (type == WordType.Lexical)   
-   {  
-     wordText = word.LexicalForm;  
-   }   
-   else if (type == WordType.Pronunciation)   
-   {  
-     wordText = word.Pronunciation;  
-   }   
-   else   
-   {  
-     throw new InvalidEnumArgumentException(  
-         String.Format("[0}: is not a valid input", type));  
-   }  
-   // Use display attribute  
- 
-   if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
-   {  
-     wordText += " ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
-   {  
-     wordText += "  ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimStart();  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimEnd();  
-   }  
- 
-   text += wordText;  
- }  
- return text;  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+          String.Format("[0}: is not a valid input", type));  
+    }  
+    // Use display attribute  
+  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  }  
+  return text;  
 }  
 ```  
  
@@ -551,65 +551,65 @@ Speech normalization is the use of special constructs or symbols to express spee
 The following example shows a utility routine that generates a string in one of three formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
  
 ```csharp  
- 
+  
 internal enum WordType   
 {  
- Text,  
- Normalized = Text,  
- Lexical,  
- Pronunciation  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
 }  
 ```  
  
 ```csharp  
 internal static string stringFromWordArray(  
-         ReadOnlyCollection<RecognizedWordUnit> words,   
-         WordType type)   
+          ReadOnlyCollection<RecognizedWordUnit> words,   
+          WordType type)   
 {  
- string text = "";  
- foreach (RecognizedWordUnit word in words)   
- {  
-   string wordText = "";  
-   if (type == WordType.Text || type == WordType.Normalized)   
-   {  
-     wordText = word.Text;  
-   }   
-   else if (type == WordType.Lexical)   
-   {  
-     wordText = word.LexicalForm;  
-   }   
-   else if (type == WordType.Pronunciation)   
-   {  
-     wordText = word.Pronunciation;  
-   }   
-   else   
-   {  
-     throw new InvalidEnumArgumentException(  
-          String.Format("[0}: is not a valid input", type));  
-   }  
- 
-   // Use display attribute  
-   if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
-   {  
-     wordText += " ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
-   {  
-     wordText += "  ";  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimStart();  
-   }  
-   if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-   {  
-     wordText = wordText.TrimEnd();  
-   }  
- 
-   text += wordText;  
- 
- }  
- return text;  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+           String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
 }  
 ```  
  

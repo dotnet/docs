@@ -38,18 +38,18 @@ In the `eventMappings` health-monitoring configuration element, you can optional
  
 ```  
 <healthMonitoring>  
- <eventMappings>   
-   <add name="Failure Audits" type=  
-     "System.Web.Management.WebFailureAuditEvent,System.Web, Version=2.0.3600.0,Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
- </eventMappings>  
- 
- <rules>  
-   <add name="Failure Audits Default"  
-     eventName="Failure Audits"  
-     provider="EventLogProvider"  
-     profile="Default"  
-     minInterval="00:01:00" />  
- </rules>  
+  <eventMappings>   
+    <add name="Failure Audits" type=  
+      "System.Web.Management.WebFailureAuditEvent,System.Web, Version=2.0.3600.0,Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+  </eventMappings>  
+  
+  <rules>  
+    <add name="Failure Audits Default"  
+      eventName="Failure Audits"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00" />  
+  </rules>  
 </healthMonitoring>  
 ```  
  

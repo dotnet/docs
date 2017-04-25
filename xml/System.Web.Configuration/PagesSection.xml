@@ -29,47 +29,47 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <pages buffer="true"   
-   enableSessionState="true"   
-   enableViewState="true"  
-   enableViewStateMac="true"   
-   autoEventWireup="true"   
-   validateRequest="true"  
-   asyncTimeout="45"  
-   maintainScrollPositionOnPostBack = "False"  
-   viewStateEncryptionMode = "Auto">  
-   <namespaces>  
-     <add namespace="System" />  
-     <add namespace="System.Collections" />  
-     <add namespace="System.Collections.Specialized" />  
-     <add namespace="System.ComponentModel" />  
-     <add namespace="System.Configuration" />  
-     <add namespace="System.Web" />  
-   </namespaces>  
-   <controls>  
-     <clear />  
-     <remove tagPrefix="MyTags" />  
-     <!—- Searches all linked assemblies for the namespace -->  
-     <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
-     <!-- Uses a specified assembly -->  
-     <add tagPrefix="MyTags2" namespace="MyNameSpace"   
-       assembly="MyAssembly"/>  
-     <!-- Uses the specified source for the user control -->  
-     <add tagprefix="MyTags3" tagname="MyCtrl"       
-       src="MyControl.ascx"/>  
-   </controls>  
-   <tagMapping>  
-     <clear />  
-     <add  
-       tagTypeName=  
-         "System.Web.UI.WebControls.WebParts.WebPartManager"  
-       mappedTagTypeName=  
-         "Microsoft.Sharepoint.WebPartPartManager,   
-         MSPS.Web.dll, Version='2.0.0.0'"   
-     />  
-     <remove tagTypeName="SomeOtherNS.Class, Assemblyname" />  
-   </tagMapping>  
- </pages>  
+  <pages buffer="true"   
+    enableSessionState="true"   
+    enableViewState="true"  
+    enableViewStateMac="true"   
+    autoEventWireup="true"   
+    validateRequest="true"  
+    asyncTimeout="45"  
+    maintainScrollPositionOnPostBack = "False"  
+    viewStateEncryptionMode = "Auto">  
+    <namespaces>  
+      <add namespace="System" />  
+      <add namespace="System.Collections" />  
+      <add namespace="System.Collections.Specialized" />  
+      <add namespace="System.ComponentModel" />  
+      <add namespace="System.Configuration" />  
+      <add namespace="System.Web" />  
+    </namespaces>  
+    <controls>  
+      <clear />  
+      <remove tagPrefix="MyTags" />  
+      <!—- Searches all linked assemblies for the namespace -->  
+      <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
+      <!-- Uses a specified assembly -->  
+      <add tagPrefix="MyTags2" namespace="MyNameSpace"   
+        assembly="MyAssembly"/>  
+      <!-- Uses the specified source for the user control -->  
+      <add tagprefix="MyTags3" tagname="MyCtrl"       
+        src="MyControl.ascx"/>  
+    </controls>  
+    <tagMapping>  
+      <clear />  
+      <add  
+        tagTypeName=  
+          "System.Web.UI.WebControls.WebParts.WebPartManager"  
+        mappedTagTypeName=  
+          "Microsoft.Sharepoint.WebPartPartManager,   
+          MSPS.Web.dll, Version='2.0.0.0'"   
+      />  
+      <remove tagTypeName="SomeOtherNS.Class, Assemblyname" />  
+    </tagMapping>  
+  </pages>  
 </system.web>  
 ```  
  
@@ -171,25 +171,25 @@ When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`,
  
 ```vb  
 Partial Class AutoEventWireupExample  
-   Inherits System.Web.UI.Page  
-   Protected Sub Page_Load(ByVal sender As Object, _  
-           ByVal e As System.EventArgs) Handles Me.Load  
-       Response.Write("Executing Page_Load")  
-   End Sub  
+    Inherits System.Web.UI.Page  
+    Protected Sub Page_Load(ByVal sender As Object, _  
+            ByVal e As System.EventArgs) Handles Me.Load  
+        Response.Write("Executing Page_Load")  
+    End Sub  
 End Class  
 ```  
  
 ```csharp  
 public partial class AutoEventWireupExample : System.Web.UI.Page  
 {   
-   protected void Page_Load(object sender, System.EventArgs e)  
-   {  
-       Response.Write("Executing Page_Load");  
-   }  
-   override protected void OnInit(EventArgs e)  
-   {  
-       this.Load += new System.EventHandler(this.Page_Load);  
-   }  
+    protected void Page_Load(object sender, System.EventArgs e)  
+    {  
+        Response.Write("Executing Page_Load");  
+    }  
+    override protected void OnInit(EventArgs e)  
+    {  
+        this.Load += new System.EventHandler(this.Page_Load);  
+    }  
 }  
 ```  
  

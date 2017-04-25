@@ -370,7 +370,7 @@ DirectorySearcher mySearcher = new DirectorySearcher(entry);
 src.Asynchronous = true;  
 //Use the FindAll method to get search results.  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>
@@ -433,7 +433,7 @@ src.PropertiesToLoad.Add("givenName");
 src.PropertiesToLoad.Add("telephoneNumber");  
 foreach(SearchResult res in src.FindAll())  
 {  
-   Console.WriteLine("…");  
+    Console.WriteLine("…");  
 }  
 ```  
  
@@ -553,7 +553,7 @@ DirectorySearcher mySearcher = new DirectorySearcher(entry);
 src.DerefAlias = DerefenceAlias.Always;  
 //Use the FindAll method to get search results.  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>
@@ -662,7 +662,7 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
 src.ExtendedDN = ExtendedDN.HexString;  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>
@@ -1030,7 +1030,7 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
 src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>
@@ -1222,7 +1222,7 @@ DirectorySearcher src = new DirectorySearcher("(isDeleted=true)");
 src.Tombstone = true;  
 //Use the FindAll method to get search results.  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>

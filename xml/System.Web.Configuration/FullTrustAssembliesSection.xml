@@ -27,8 +27,8 @@ The following example shows how to specify a full-trust assembly by using the `f
  
 ```  
 <fullTrustAssemblies>  
- <add assemblyName="MyAssembly" version="1.0.0.0"   
-   publicKey="hex_key_representation" />  
+  <add assemblyName="MyAssembly" version="1.0.0.0"   
+    publicKey="hex_key_representation" />  
 </fullTrustAssemblies>  
 ```  
  

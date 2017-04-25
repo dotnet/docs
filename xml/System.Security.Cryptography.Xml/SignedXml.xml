@@ -34,22 +34,22 @@ There is also a fourth kind of signature called an external detached signature w
 XMLDSIG creates a <`Signature`> element, which contains a digital signature of an XML document or other data that is addressable from a URI.  The <`Signature`> element can optionally contain information about where to find a key that will verify the signature and which cryptographic algorithm was used for signing. The basic structure is as follows:  
  
 ```xml  
- 
+  
 <Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">  
-   <SignedInfo>  
-     <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>  
-     <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>  
-     <Reference URI="">  
-       <Transforms>  
-         <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>  
-       </Transforms>  
-       <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>  
-       <DigestValue>Base64EncodedValue==</DigestValue>  
-     </Reference>  
-   </SignedInfo>  
-   <SignatureValue>AnotherBase64EncodedValue===</SignatureValue>  
- </Signature>  
- 
+    <SignedInfo>  
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>  
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>  
+      <Reference URI="">  
+        <Transforms>  
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>  
+        </Transforms>  
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>  
+        <DigestValue>Base64EncodedValue==</DigestValue>  
+      </Reference>  
+    </SignedInfo>  
+    <SignatureValue>AnotherBase64EncodedValue===</SignatureValue>  
+  </Signature>  
+  
 ```  
  
 The main parts of this structure are:  

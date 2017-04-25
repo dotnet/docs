@@ -134,7 +134,7 @@ The following table lists tasks that show how to use the <xref:System.Web.UI.Web
             </asp:ThenBy>  
         </asp:OrderByExpression>  
         <asp:PropertyExpression="string">  
-               <!-- child controls -->  
+                <!-- child controls -->  
         </asp:PropertyExpression  
         >  
         <asp:RangeExpression="integer"  
@@ -145,11 +145,11 @@ The following table lists tasks that show how to use the <xref:System.Web.UI.Web
         </asp:RangeExpression>  
         <asp:SearchExpression="string"  
             ComparisonType="CurrentCulture|CurrentCultureIgnoreCase|  
-               InavariantCulture|InvariantCultureIgnoreCase|  
-               Ordinal|OrdinalIgnoreCase"  
+                InavariantCulture|InvariantCultureIgnoreCase|  
+                Ordinal|OrdinalIgnoreCase"  
             DataField="string"  
             SearchType="Contains|EndsWith|StartsWith">  
-               <!--child controls-->  
+                <!--child controls-->  
         </asp:SearchExpression>  
 </asp:QueryExtender>  
 ```  
@@ -161,13 +161,13 @@ The following example shows how to use the <xref:System.Web.UI.WebControls.Query
  
 ```  
 <asp:LinqDataSource ID="dataSource" runat="server"   
-   TableName="Products">  
+    TableName="Products">  
 </asp:LinqDataSource>  
 <asp:QueryExtender TargetControlID="dataSource" runat="server">  
- <asp:SearchExpression DataFields="ProductName, Supplier.CompanyName"   
-       SearchType="StartsWith">  
-   <asp:ControlParameter ControlID="TextBoxSearch" />  
- </asp:SearchExpression>  
+  <asp:SearchExpression DataFields="ProductName, Supplier.CompanyName"   
+        SearchType="StartsWith">  
+    <asp:ControlParameter ControlID="TextBoxSearch" />  
+  </asp:SearchExpression>  
 </asp:QueryExtender>  
 ```  
  
@@ -175,14 +175,14 @@ The following example shows how to use the <xref:System.Web.UI.WebControls.Query
  
 ```  
 <asp:LinqDataSource ID="dataSource" runat="server"   
-   TableName="Products">  
+    TableName="Products">  
 </asp:LinqDataSource>  
 <asp:QueryExtender TargetControlID="dataSource" runat="server">  
- <asp:RangeExpression DataField="UnitPrice" MinType="Inclusive"   
-       MaxType="Inclusive">  
-   <asp:ControlParameter ControlID="TextBoxFrom" />  
-   <asp:ControlParameter ControlID="TexBoxTo" />  
- </asp:RangeExpression>  
+  <asp:RangeExpression DataField="UnitPrice" MinType="Inclusive"   
+        MaxType="Inclusive">  
+    <asp:ControlParameter ControlID="TextBoxFrom" />  
+    <asp:ControlParameter ControlID="TexBoxTo" />  
+  </asp:RangeExpression>  
 </asp:QueryExtender>  
 ```  
  

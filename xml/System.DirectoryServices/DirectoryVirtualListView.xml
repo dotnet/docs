@@ -25,9 +25,9 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.VirtualListView = new DirectoryVirtualListView(0,30);  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 ```  
  
 The following C# example shows how to retrieve the first 50 entries in a result set that start with the letters "Ha".  
@@ -39,9 +39,9 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.VirtualListView = new DirectoryVirtualListView(0,50, "Ha");  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 ```  
  
 The following C# example shows how to retrieve the first 100 entries at the 60% approximate target.  
@@ -54,19 +54,19 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.VirtualListView = new DirectoryVirtualListView(100);  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 // Second Call, the VLV context is still attached to the DirectorySearcher.  
 src.VirtualListView.TargetPercentage = 60;  
 src.VirtualListView.BeforeCount = 50;  
 src.VirtualListView.AfterCount = 50;  
- 
+  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 ```  
  
  ]]></format>

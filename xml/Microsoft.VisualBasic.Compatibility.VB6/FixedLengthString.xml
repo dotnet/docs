@@ -34,16 +34,16 @@ The following example demonstrates how to declare and use a `FixedLengthString`.
  
 ```  
 Private Sub DemoFixedLengthString()  
-   ' Declare a string that has a length of 7 characters and assign the  
-   ' initial string. The additional 5 positions will be padded with  
-   ' spaces.  
-   Dim fixedString As New FixedLengthString(7, "He")  
-   ' Display the string in a message box.  
-   MsgBox(fixedString.ToString)  
-   ' Assign a new value to the string.  
-   fixedString.Value = "Hello World"  
-   ' Display again. Note that only the first 7 characters are shown.  
-   MsgBox(fixedString.ToString)  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
 End Sub  
 ```  
  
@@ -83,13 +83,13 @@ The following example demonstrates how to declare and use a <xref:Microsoft.Visu
  
 ```  
 Private Sub DemoFixedLengthString()  
-   ' Declare a string that has a length of 7 characters.   
-   Dim fixedString As New FixedLengthString(7)  
-   ' Assign a value to the string.  
-   fixedString.Value = "Hello World"  
-   ' Display the string in a message box.  
-   ' Note that only the first 7 characters are shown.  
-   MsgBox(fixedString.ToString)  
+    ' Declare a string that has a length of 7 characters.   
+    Dim fixedString As New FixedLengthString(7)  
+    ' Assign a value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display the string in a message box.  
+    ' Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
 End Sub  
 ```  
  
@@ -131,16 +131,16 @@ The following example demonstrates how to declare and use a <xref:Microsoft.Visu
  
 ```  
 Private Sub DemoFixedLengthString()  
-   ' Declare a string that has a length of 7 characters and assign the  
-   ' initial string. The additional 5 positions will be padded with  
-   ' spaces.  
-   Dim fixedString As New FixedLengthString(7, "He")  
-   ' Display the string in a message box.  
-   MsgBox(fixedString.ToString)  
-   ' Assign a new value to the string.  
-   fixedString.Value = "Hello World"  
-   ' Display again. Note that only the first 7 characters are shown.  
-   MsgBox(fixedString.ToString)  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
 End Sub  
 ```  
  
@@ -227,16 +227,16 @@ The following example demonstrates how to declare and use a <xref:Microsoft.Visu
  
 ```  
 Private Sub DemoFixedLengthString()  
-   ' Declare a string that has a length of 7 characters and assign the  
-   ' initial string. The additional 5 positions will be padded with  
-   ' spaces.  
-   Dim fixedString As New FixedLengthString(7, "He")  
-   ' Display the string in a message box.  
-   MsgBox(fixedString.ToString)  
-   ' Assign a new value to the string.  
-   fixedString.Value = "Hello World"  
-   ' Display again. Note that only the first 7 characters are shown.  
-   MsgBox(fixedString.ToString)  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
 End Sub  
 ```  
  
@@ -274,16 +274,16 @@ The following example demonstrates how to declare and use a <xref:Microsoft.Visu
  
 ```  
 Private Sub DemoFixedLengthString()  
-   ' Declare a string that has a length of 7 characters and assign the  
-   ' initial string. The additional 5 positions will be padded with  
-   ' spaces.  
-   Dim fixedString As New FixedLengthString(7, "He")  
-   ' Display the string in a message box.  
-   MsgBox(fixedString.ToString)  
-   ' Assign a new value to the string.  
-   fixedString.Value = "Hello World"  
-   ' Display again. Note that only the first 7 characters are shown.  
-   MsgBox(fixedString.ToString)  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
 End Sub  
 ```  
  

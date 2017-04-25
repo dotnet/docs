@@ -43,13 +43,13 @@ To use this custom session-state module in an ASP.NET application, you can repla
  
 ```  
 <configuration>  
- <system.web>  
-   <httpModules>  
-     <remove name="Session" />  
-     <add name="Session"  
-     type="Samples.AspNet.SessionState.MySessionStateModule" />  
-   </httpModules>  
- </system.web>  
+  <system.web>  
+    <httpModules>  
+      <remove name="Session" />  
+      <add name="Session"  
+      type="Samples.AspNet.SessionState.MySessionStateModule" />  
+    </httpModules>  
+  </system.web>  
 </configuration>  
 ```  
  

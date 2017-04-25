@@ -25,16 +25,16 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <webParts>  
-   <transformers>  
-     <add name="RowToFieldTransformer"  
-       type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
-     <add name="RowToFilterTransformer"  
-       type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
-     <add name="RowToParametersTransformer"  
-       type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />  
-   </transformers>  
- </webParts>   
+  <webParts>  
+    <transformers>  
+      <add name="RowToFieldTransformer"  
+        type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
+      <add name="RowToFilterTransformer"  
+        type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
+      <add name="RowToParametersTransformer"  
+        type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />  
+    </transformers>  
+  </webParts>   
 </system.web>  
 ```  
  

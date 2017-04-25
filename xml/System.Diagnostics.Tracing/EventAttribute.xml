@@ -323,7 +323,7 @@ You can use standard .NET Framework substitution operators (for example, {1}) in
 ```  
 [Event(1, Message = "Application Falure: {0}", Level = EventLevel.Error, Keywords = Keywords.Diagnostic)]  
         public void Failure(string message) { WriteEvent(1, message); }  
- 
+  
 ```  
  
   

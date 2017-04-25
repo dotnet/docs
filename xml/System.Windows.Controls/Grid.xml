@@ -119,11 +119,11 @@ The following example demonstrates how to create a grid. In this case, the grid 
  
 ```  
 <object>  
- <object.ColumnDefinitions>  
-   OneOrMoreColumnDefinitions  
- </object.ColumnDefinitions>  
+  <object.ColumnDefinitions>  
+    OneOrMoreColumnDefinitions  
+  </object.ColumnDefinitions>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_ColumnDefinitions"></a>   
@@ -439,9 +439,9 @@ The visual tree must not be modified while this method is called.
  
 ```  
 <object>  
- <object.RowDefinitions>  
-   OneOrMoreRowDefinitions  
- </object.RowDefinitions>  
+  <object.RowDefinitions>  
+    OneOrMoreRowDefinitions  
+  </object.RowDefinitions>  
 </object>  
 ```  
  

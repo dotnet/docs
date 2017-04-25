@@ -1058,7 +1058,7 @@ To illustrate the difference between the entity handling modes consider the foll
  
 ```  
 <!DOCTYPE doc [<!ENTITY num "123">]>  
-   <doc> &#65; &num; </doc>  
+    <doc> &#65; &num; </doc>  
 ```  
  
 When `EntityHandling` is set to `ExpandEntities` the "doc" element node contains one text node with the expanded entity text:  
@@ -1727,9 +1727,9 @@ In the following XML, if the reader is positioned on the `href` attribute, the p
  
 ```  
 <root xmlns:a="urn:456">  
-<item>  
-<ref href="a:b"/>  
-</item>  
+ <item>  
+ <ref href="a:b"/>  
+ </item>  
 </root>  
 ```  
  
@@ -2740,7 +2740,7 @@ For example, using the following XML:
  
 ```  
 <thing>  
-some text  
+ some text  
 </thing>  
 <item>  
 </item>  
@@ -2751,11 +2751,11 @@ The reader is positioned on the `<item>` element at the end of the while loop.
 ```  
 if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)  
 {  
-while(0 != reader.ReadChars(buffer, 0, 1)  
-{  
-// Do something.  
-// Attribute values are not available at this point.  
-}  
+ while(0 != reader.ReadChars(buffer, 0, 1)  
+ {  
+ // Do something.  
+ // Attribute values are not available at this point.  
+ }  
 }  
 ```  
  
@@ -3233,10 +3233,10 @@ If the reader is positioned on a leaf node already (such as the `<x>` node or th
  
 ```  
 <a name="bob" age="123">  
- <x/>abc<y/>  
+  <x/>abc<y/>  
 </a>  
 <b>  
-...  
+ ...  
 </b>  
 ```  
  

@@ -181,7 +181,7 @@ The following C# code shows how serializers can use this information to guide se
 Padding p = new Padding();  
 p.Left = 5;  
 button1.Padding = p;  
- 
+  
 button1.Padding.Left = 5;  
 ```  
  

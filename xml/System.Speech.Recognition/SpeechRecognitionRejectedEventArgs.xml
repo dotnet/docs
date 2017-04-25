@@ -30,78 +30,78 @@ The following example recognizes phrases such as "Display the list of artists in
 ```  
 using System;  
 using System.Speech.Recognition;  
- 
+  
 namespace SampleRecognition  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
- 
-   // Initialize a shared speech recognition engine.  
-   {  
-     using (SpeechRecognizer recognizer =  
-        new SpeechRecognizer())  
-     {  
- 
-       // Create a grammar.  
-       //  Create lists of alternative choices.  
-       Choices listTypes = new Choices(new string[] { "albums", "artists" });  
-       Choices genres = new Choices(new string[] {   
-         "blues", "classical", "gospel", "jazz", "rock" });  
- 
-       //  Create a GrammarBuilder object and assemble the grammar components.  
-       GrammarBuilder mediaMenu = new GrammarBuilder("Display");  
-       mediaMenu.Append("the list of", 0, 1);  
-       mediaMenu.Append(listTypes);  
-       mediaMenu.Append("in the", 0, 1);  
-       mediaMenu.Append(genres);  
-       mediaMenu.Append("category", 0, 1);  
- 
-       //  Build a Grammar object from the GrammarBuilder.  
-       Grammar mediaMenuGrammar = new Grammar(mediaMenu);  
-       mediaMenuGrammar.Name = "Media Chooser";  
- 
-       // Attach event handlers.  
-       recognizer.LoadGrammarCompleted +=  
-         new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
-       recognizer.SpeechRecognized +=  
-         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
-       recognizer.SpeechRecognitionRejected +=   
-         new EventHandler<SpeechRecognitionRejectedEventArgs>(recognizer_SpeechRecognitionRejected);  
- 
-       // Load the grammar object to the recognizer.  
-       recognizer.LoadGrammarAsync(mediaMenuGrammar);  
- 
-       // Keep the console window open.  
-       Console.ReadLine();  
-     }  
-   }  
- 
-   // Handle the SpeechRecognitionRejected event.  
-   static void recognizer_SpeechRecognitionRejected(object sender, SpeechRecognitionRejectedEventArgs e)  
-   {  
-     Console.WriteLine("Speech input was rejected.");  
-     foreach (RecognizedPhrase phrase in e.Result.Alternates)  
-     {  
-       Console.WriteLine("  Rejected phrase: " + phrase.Text);  
-       Console.WriteLine("  Confidence score: " + phrase.Confidence);  
-     }  
-   }  
- 
-   // Handle the LoadGrammarCompleted event.  
-   static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
-   {  
-     Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
-   }  
- 
-   // Handle the SpeechRecognized event.  
-   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-   {  
-     Console.WriteLine("Speech recognized: " + e.Result.Text);  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize a shared speech recognition engine.  
+    {  
+      using (SpeechRecognizer recognizer =  
+         new SpeechRecognizer())  
+      {  
+  
+        // Create a grammar.  
+        //  Create lists of alternative choices.  
+        Choices listTypes = new Choices(new string[] { "albums", "artists" });  
+        Choices genres = new Choices(new string[] {   
+          "blues", "classical", "gospel", "jazz", "rock" });  
+  
+        //  Create a GrammarBuilder object and assemble the grammar components.  
+        GrammarBuilder mediaMenu = new GrammarBuilder("Display");  
+        mediaMenu.Append("the list of", 0, 1);  
+        mediaMenu.Append(listTypes);  
+        mediaMenu.Append("in the", 0, 1);  
+        mediaMenu.Append(genres);  
+        mediaMenu.Append("category", 0, 1);  
+  
+        //  Build a Grammar object from the GrammarBuilder.  
+        Grammar mediaMenuGrammar = new Grammar(mediaMenu);  
+        mediaMenuGrammar.Name = "Media Chooser";  
+  
+        // Attach event handlers.  
+        recognizer.LoadGrammarCompleted +=  
+          new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+        recognizer.SpeechRecognitionRejected +=   
+          new EventHandler<SpeechRecognitionRejectedEventArgs>(recognizer_SpeechRecognitionRejected);  
+  
+        // Load the grammar object to the recognizer.  
+        recognizer.LoadGrammarAsync(mediaMenuGrammar);  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognitionRejected event.  
+    static void recognizer_SpeechRecognitionRejected(object sender, SpeechRecognitionRejectedEventArgs e)  
+    {  
+      Console.WriteLine("Speech input was rejected.");  
+      foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+      {  
+        Console.WriteLine("  Rejected phrase: " + phrase.Text);  
+        Console.WriteLine("  Confidence score: " + phrase.Confidence);  
+      }  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.  
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Speech recognized: " + e.Result.Text);  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

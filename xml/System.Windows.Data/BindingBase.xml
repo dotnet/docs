@@ -157,9 +157,9 @@ The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=ful
  
 ```  
 <object>  
- <object.FallbackValue>  
-   fallbackValue  
-   </object.FallbackValue>  
+  <object.FallbackValue>  
+    fallbackValue  
+    </object.FallbackValue>  
 </object>  
 ```  
  
@@ -336,9 +336,9 @@ The following example uses the <xref:System.Windows.Data.BindingBase.StringForma
  
 ```  
 <object>  
- <object.TargetNullValue>  
-   nullValue  
-   </object.TargetNullValue>  
+  <object.TargetNullValue>  
+    nullValue  
+    </object.TargetNullValue>  
 </object>  
 ```  
  

@@ -123,78 +123,78 @@ The grammar in the following example contains slang words and also has an uncomm
 using System;  
 using System.Speech.Recognition;  
 using System.Speech.Recognition.SrgsGrammar;  
- 
+  
 namespace SampleRecognition  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
- 
-   // Initialize an instance of the in-process recognizer.  
-   {  
-     using (SpeechRecognitionEngine recognizer =  
-        new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
-     {  
- 
-       // Build the SrgsOneOf objects with alternative choices for the slang phrase.  
-       SrgsOneOf gimme = new SrgsOneOf(  
-         new string[] { "give me", "gimme", "hand me", "ha'me" });  
-       SrgsOneOf the = new SrgsOneOf(new string[] { "the", "duh" });  
- 
-       // Build the one-of element that contains the pronunciation.  
-       SrgsItem thing = new SrgsItem("thingamajig");  
-       SrgsItem whatcha = new SrgsItem();  
-       SrgsToken callit = new SrgsToken("whatchamacallit");  
-       callit.Pronunciation = "W AE T CH AE M AE K AA L IH T";  
-       whatcha.Add(callit);  
-       SrgsOneOf what = new SrgsOneOf(new SrgsItem[] {thing, whatcha});  
- 
-       // Create the rule from the SrgsOneOf objects.  
-       SrgsRule slangRule = new SrgsRule("slang", gimme, the, what);  
- 
-       // Build an SrgsDocument object from the rule and set the phonetic alphabet.  
-       SrgsDocument tokenPron = new SrgsDocument(slangRule);  
-       tokenPron.PhoneticAlphabet = SrgsPhoneticAlphabet.Ups;  
- 
-       // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
-       Grammar g_Slang = new Grammar(tokenPron);  
-       g_Slang.Name = ("Slang Pronunciation");  
-       recognizer.LoadGrammarAsync(g_Slang);  
- 
-       // Configure recognizer input.  
-       recognizer.SetInputToDefaultAudioDevice();  
- 
-       // Attach a handler for the SpeechRecognized event.  
-       recognizer.SpeechRecognized +=   
-         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
- 
-       // Start asynchronous recognition.  
-       recognizer.RecognizeAsync();  
-       Console.WriteLine("Starting asynchronous recognition...");  
- 
-       // Keep the console window open.  
-       Console.ReadLine();  
-     }  
-   }  
- 
-   // Handle the SpeechRecognized event.  
-   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-   {  
-     Console.WriteLine("Recognized phrase: " + e.Result.Text);  
-     Console.WriteLine("Confidence: " + e.Result.Confidence);  
-     Console.WriteLine("  Word summary: ");  
-     foreach (RecognizedWordUnit word in e.Result.Words)  
-     {  
-       Console.WriteLine(  
-         "    Lexical form ({1})" +  
-         " Pronunciation ({0})" +  
-         " Confidence ({2})",  
-         word.Pronunciation, word.LexicalForm, word.Confidence);  
-     }  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize an instance of the in-process recognizer.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
+      {  
+  
+        // Build the SrgsOneOf objects with alternative choices for the slang phrase.  
+        SrgsOneOf gimme = new SrgsOneOf(  
+          new string[] { "give me", "gimme", "hand me", "ha'me" });  
+        SrgsOneOf the = new SrgsOneOf(new string[] { "the", "duh" });  
+  
+        // Build the one-of element that contains the pronunciation.  
+        SrgsItem thing = new SrgsItem("thingamajig");  
+        SrgsItem whatcha = new SrgsItem();  
+        SrgsToken callit = new SrgsToken("whatchamacallit");  
+        callit.Pronunciation = "W AE T CH AE M AE K AA L IH T";  
+        whatcha.Add(callit);  
+        SrgsOneOf what = new SrgsOneOf(new SrgsItem[] {thing, whatcha});  
+  
+        // Create the rule from the SrgsOneOf objects.  
+        SrgsRule slangRule = new SrgsRule("slang", gimme, the, what);  
+  
+        // Build an SrgsDocument object from the rule and set the phonetic alphabet.  
+        SrgsDocument tokenPron = new SrgsDocument(slangRule);  
+        tokenPron.PhoneticAlphabet = SrgsPhoneticAlphabet.Ups;  
+  
+        // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
+        Grammar g_Slang = new Grammar(tokenPron);  
+        g_Slang.Name = ("Slang Pronunciation");  
+        recognizer.LoadGrammarAsync(g_Slang);  
+  
+        // Configure recognizer input.  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=   
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Start asynchronous recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting asynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Recognized phrase: " + e.Result.Text);  
+      Console.WriteLine("Confidence: " + e.Result.Confidence);  
+      Console.WriteLine("  Word summary: ");  
+      foreach (RecognizedWordUnit word in e.Result.Words)  
+      {  
+        Console.WriteLine(  
+          "    Lexical form ({1})" +  
+          " Pronunciation ({0})" +  
+          " Confidence ({2})",  
+          word.Pronunciation, word.LexicalForm, word.Confidence);  
+      }  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

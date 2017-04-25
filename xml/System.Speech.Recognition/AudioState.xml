@@ -23,28 +23,28 @@ You can obtain the audio input state of the speech recognition engine with the <
 The following example demonstrates an event handler that handles the changing audio state of a speech recognizer.  
  
 ```csharp  
- 
+  
 private SpeechRecognitionEngine sre;  
- 
+  
 // Initializes the speech recognition engine.  
 private void Initialize()  
 {  
- sre = new SpeechRecognitionEngine();  
- 
- // Add a handler for the AudioStateChanged event.  
- sre.AudioStateChanged += new EventHandler<AudioStateChangedEventArgs>(sre_AudioStateChanged);  
- 
- // Add other initialization code here.  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add a handler for the AudioStateChanged event.  
+  sre.AudioStateChanged += new EventHandler<AudioStateChangedEventArgs>(sre_AudioStateChanged);  
+  
+  // Add other initialization code here.  
 }  
- 
- // Handle the AudioStateChanged event.  
- void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)  
+  
+  // Handle the AudioStateChanged event.  
+  void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)  
 {  
- AudioState newState = e.AudioState;  
- 
- // Handle event here.  
+  AudioState newState = e.AudioState;  
+  
+  // Handle event here.  
 }  
- 
+  
 ```  
  
  ]]></format>

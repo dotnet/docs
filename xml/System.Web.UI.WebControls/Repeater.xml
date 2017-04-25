@@ -102,19 +102,19 @@ At a minimum, every <xref:System.Web.UI.WebControls.Repeater> control must defin
     Visible="True|False"  
 >  
         <AlternatingItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </AlternatingItemTemplate>  
         <FooterTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </FooterTemplate>  
         <HeaderTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </HeaderTemplate>  
         <ItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </ItemTemplate>  
         <SeparatorTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </SeparatorTemplate>  
 </asp:Repeater>  
 ```  

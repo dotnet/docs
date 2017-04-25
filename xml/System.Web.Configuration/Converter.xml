@@ -27,15 +27,15 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web.extensions>  
- <scripting>  
-   <webServices>  
-     <jsonSerialization>  
-       <converters>  
-         <add name="ConvertMe" type="Acme.SubAcme.ConvertMeTypeConverter" />  
-       </converters>  
-     </jsonSerialization>  
-   </webServices>  
- </scripting>  
+  <scripting>  
+    <webServices>  
+      <jsonSerialization>  
+        <converters>  
+          <add name="ConvertMe" type="Acme.SubAcme.ConvertMeTypeConverter" />  
+        </converters>  
+      </jsonSerialization>  
+    </webServices>  
+  </scripting>  
 </system.web.extensions>  
 ```  
  

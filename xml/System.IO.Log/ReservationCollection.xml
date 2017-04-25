@@ -50,30 +50,30 @@ Reservations can be performed in two ways as shown in the following examples. Yo
 ReservationCollection reservations = recordSequence.CreateReservationCollection();  
 long[] lengthOfUndoRecords = new long[] { 1000 };  
 recordSequence.ReserveAndAppend(recordData,  
-                                                    userSqn,  
-                                                    previousSqn,  
-                                                    RecordSequenceAppendOptions.None,  
-                                                    reservations,  
-                                                    lengthOfUndoRecords);  
+                                                     userSqn,  
+                                                     previousSqn,  
+                                                     RecordSequenceAppendOptions.None,  
+                                                     reservations,  
+                                                     lengthOfUndoRecords);  
 recordSequence.Append(undoRecordData,    // If necessary …  
-                                   userSqn,  
-                                   previousSqn,  
-                                   RecordSequenceAppendOptions.ForceFlush,  
-                                   reservations);  
- 
+                                    userSqn,  
+                                    previousSqn,  
+                                    RecordSequenceAppendOptions.ForceFlush,  
+                                    reservations);  
+  
 // Using the Manual Approach  
 ReservationCollection reservations = recordSequence.CreateReservationCollection();  
 reservations.Add(lengthOfUndoRecord);  
 try  
 {  
-  recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
+   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
 }  
 catch (Exception)  
 {  
-  reservations.Remove(lengthOfUndoRecord);  
-  throw;  
+   reservations.Remove(lengthOfUndoRecord);  
+   throw;  
 }  
- 
+  
 recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
 ```  
  
@@ -125,14 +125,14 @@ ReservationCollection reservations = recordSequence.CreateReservationCollection(
 reservations.Add(lengthOfUndoRecord);  
 try  
 {  
-  recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
+   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
 }  
 catch (Exception)  
 {  
-  reservations.Remove(lengthOfUndoRecord);  
-  throw;  
+   reservations.Remove(lengthOfUndoRecord);  
+   throw;  
 }  
- 
+  
 recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
 ```  
  
@@ -435,14 +435,14 @@ ReservationCollection reservations = recordSequence.CreateReservationCollection(
 reservations.Add(lengthOfUndoRecord);  
 try  
 {  
-  recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
+   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
 }  
 catch (Exception)  
 {  
-  reservations.Remove(lengthOfUndoRecord);  
-  throw;  
+   reservations.Remove(lengthOfUndoRecord);  
+   throw;  
 }  
- 
+  
 recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
 ```  
  

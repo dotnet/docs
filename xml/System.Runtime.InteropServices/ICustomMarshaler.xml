@@ -48,11 +48,11 @@ A managed compiler produces a managed interface from metadata, and the resulting
 You define the unmanaged type in Interface Definition Language (IDL) and compile it with the Microsoft Interface Definition Language (MIDL) compiler. You define the interface within a library statement and assign it an interface ID with the universal unique identifier (UUID) attribute, as the following example demonstrates.  
  
 ```  
-[uuid(9B2BAADA-0705-11D3-A0CD-00C04FA35826)]  
+ [uuid(9B2BAADA-0705-11D3-A0CD-00C04FA35826)]  
 library OldLib {  
-    [uuid(9B2BAADD-0705-11D3-A0CD-00C04FA35826)]  
-    interface IOld : IUnknown  
-        HRESULT OldMethod();  
+     [uuid(9B2BAADD-0705-11D3-A0CD-00C04FA35826)]  
+     interface IOld : IUnknown  
+         HRESULT OldMethod();  
 }  
 ```  
  
@@ -141,9 +141,9 @@ In the following example, the `IUserData` interface uses the `NewOldMarshaler` c
 ```  
 [uuid(9B2BAADA-0705-11D3-A0CD-00C04FA35826)]  
 library UserLib {  
-    [uuid(9B2BABCD-0705-11D3-A0CD-00C04FA35826)]  
-    interface IUserData : IUnknown  
-        HRESULT DoSomeStuff(IUnknown* pIOld);  
+     [uuid(9B2BABCD-0705-11D3-A0CD-00C04FA35826)]  
+     interface IUserData : IUnknown  
+         HRESULT DoSomeStuff(IUnknown* pIOld);  
 }  
 ```  
  

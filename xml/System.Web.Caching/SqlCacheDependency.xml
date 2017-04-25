@@ -31,21 +31,21 @@ The following example shows an ASP.NET Web.config file that enables table-based 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="Northwind" connectionString="Data Source=(local); Initial Catalog=northwind; Integrated Security=true"; providerName="System.Data.SqlClient" />  
- </connectionStrings>  
- <system.web>  
-   <caching>  
-     <sqlCacheDependency enabled = "true" pollTime = "60000" >  
-       <databases>  
-         <add name="northwind"   
-           connectionStringName="Northwind"  
-           pollTime="9000000"  
-           />  
-       </databases>  
-     </sqlCacheDependency>  
-   </caching>  
- </system.web>  
+  <connectionStrings>  
+    <add name="Northwind" connectionString="Data Source=(local); Initial Catalog=northwind; Integrated Security=true"; providerName="System.Data.SqlClient" />  
+  </connectionStrings>  
+  <system.web>  
+    <caching>  
+      <sqlCacheDependency enabled = "true" pollTime = "60000" >  
+        <databases>  
+          <add name="northwind"   
+            connectionStringName="Northwind"  
+            pollTime="9000000"  
+            />  
+        </databases>  
+      </sqlCacheDependency>  
+    </caching>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -123,21 +123,21 @@ The database name passed to the `database` parameter must be defined in the appl
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="Pubs" connectionString="Data Source=(local); Initial Catalog=pubs; Integrated Security=true"; providerName="System.Data.SqlClient" />  
- </connectionStrings>  
- <system.web>  
-   <caching>  
-     <sqlCacheDependency enabled = "true" pollTime = "60000" >  
-       <databases>  
-         <add name="pubs"   
-           connectionStringName="pubs"  
-           pollTime="9000000"  
-           />  
-       </databases>  
-     </sqlCacheDependency>  
-   </caching>  
- </system.web>  
+  <connectionStrings>  
+    <add name="Pubs" connectionString="Data Source=(local); Initial Catalog=pubs; Integrated Security=true"; providerName="System.Data.SqlClient" />  
+  </connectionStrings>  
+  <system.web>  
+    <caching>  
+      <sqlCacheDependency enabled = "true" pollTime = "60000" >  
+        <databases>  
+          <add name="pubs"   
+            connectionStringName="pubs"  
+            pollTime="9000000"  
+            />  
+        </databases>  
+      </sqlCacheDependency>  
+    </caching>  
+  </system.web>  
 </configuration>  
 ```  
  

@@ -133,7 +133,7 @@ For information about how to configure this control so that it generates markup 
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CancelButtonImageUrl="uri"  
     CancelButtonText="string"  
@@ -181,7 +181,7 @@ For information about how to configure this control so that it generates markup 
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -260,12 +260,12 @@ For information about how to configure this control so that it generates markup 
         <ErrorMessageStyle/>  
         <FinishCompleteButtonStyle/>  
         <FinishNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </FinishNavigationTemplate>  
         <FinishPreviousButtonStyle/>  
         <HeaderStyle/>  
         <HeaderTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </HeaderTemplate>  
         <HyperLinkStyle/>  
         <InstructionTextStyle/>  
@@ -291,14 +291,14 @@ For information about how to configure this control so that it generates markup 
         <SideBarButtonStyle/>  
         <SideBarStyle/>  
         <SideBarTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </SideBarTemplate>  
         <StartNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </StartNavigationTemplate>  
         <StartNextButtonStyle/>  
         <StepNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </StepNavigationTemplate>  
         <StepNextButtonStyle/>  
         <StepPreviousButtonStyle/>  
@@ -328,10 +328,10 @@ For information about how to configure this control so that it generates markup 
                     Visible="True|False"  
 >  
                         <ContentTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ContentTemplate>  
                         <CustomNavigationTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </CustomNavigationTemplate>  
                 </asp:TemplatedWizardStep>  
                 <asp:WizardStep  
@@ -2563,16 +2563,16 @@ The following code example sets properties of the <xref:System.Web.UI.WebControl
  
 ```  
 Your account was set up on our Web site with the following:  
- 
-   Username:   <%UserName%>  
- 
+  
+    Username:   <%UserName%>  
+  
 To reset your password, you must answer the following question:  
- 
-   Password Question: <%PasswordQuestion%>    
-   Password Answer:   <%PasswordAnswer%>    
- 
+  
+    Password Question: <%PasswordQuestion%>    
+    Password Answer:   <%PasswordAnswer%>    
+  
 Thank you for creating an account with our Web site.  
- 
+  
 ```  
  
 <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]  -->
@@ -3013,14 +3013,14 @@ The following code example defines a custom <xref:System.Web.UI.WebControls.Crea
  
 ```csharp  
 Your account was set up on our Web site with the following:  
- 
-   Username:   <%UserName%>  
- 
+  
+    Username:   <%UserName%>  
+  
 To reset your password, you must answer the following question:  
- 
-   Password Question: <%PasswordQuestion%>    
-   Password Answer:   <%PasswordAnswer%>    
- 
+  
+    Password Question: <%PasswordQuestion%>    
+    Password Answer:   <%PasswordAnswer%>    
+  
 Thank you for creating an account with our Web site.  
 ```  
  
@@ -3590,14 +3590,14 @@ The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWi
  
 ```csharp  
 Your account was set up on our Web site with the following:  
- 
-   Username:   <%UserName%>  
- 
+  
+    Username:   <%UserName%>  
+  
 To reset your password, you must answer the following question:  
- 
-   Password Question: <%PasswordQuestion%>    
-   Password Answer:   <%PasswordAnswer%>    
- 
+  
+    Password Question: <%PasswordQuestion%>    
+    Password Answer:   <%PasswordAnswer%>    
+  
 Thank you for creating an account with our Web site.  
 ```  
  

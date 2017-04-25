@@ -39,7 +39,7 @@ The following example shows how to configure ASP.NET to use the custom validator
  
 ```  
 <system.web>  
- <httpRuntime requestValidationType="CustomRequestValidation" />  
+  <httpRuntime requestValidationType="CustomRequestValidation" />  
 </system.web>  
 ```  
  

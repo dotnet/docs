@@ -1158,15 +1158,15 @@ The following example shows an event handler for the <xref:System.Web.UI.WebCont
  
 ```vb  
 Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceInsertEventArgs)  
-   If (e.Exception IsNot Nothing) Then  
-       For Each innerException As KeyValuePair(Of String, Exception) _  
-              In e.Exception.InnerExceptions  
-           Label1.Text &= innerException.Key & ": " & _  
-               innerException.Value.Message & "<br />"  
-       Next  
-       e.ExceptionHandled = True  
-   End If  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message & "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
 End Sub  
 ```  
  
@@ -1174,18 +1174,18 @@ End Sub
  
 ```  
 protected void LinqDataSource_Inserting(object sender,   
-       LinqDataSourceInsertEventArgs e)  
+        LinqDataSourceInsertEventArgs e)  
 {  
-   if (e.Exception != null)  
-   {  
-       foreach (KeyValuePair<string, Exception> innerException in   
-            e.Exception.InnerExceptions)  
-       {  
-       Label1.Text += innerException.Key + ": " +   
-           innerException.Value.Message + "<br />";  
-       }  
-       e.ExceptionHandled = true;  
-   }  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
 }  
 ```  
  
@@ -1194,18 +1194,18 @@ The previous example retrieves validation exceptions. An exception might be thro
 ```csharp  
 partial void  OnAgeChanging(int? value)  
 {  
-   if (value < 0)  
-   {  
-       throw new Exception("Age cannot be a negative number.");  
-   }  
+    if (value < 0)  
+    {  
+        throw new Exception("Age cannot be a negative number.");  
+    }  
 }  
 ```  
  
 ```vb  
 Private Sub OnAgeChanging(ByVal value As System.Nullable(Of Integer))  
-   If (value < 0) Then  
-       Throw New Exception("Age cannot be a negative number.")  
-   End If  
+    If (value < 0) Then  
+        Throw New Exception("Age cannot be a negative number.")  
+    End If  
 End Sub  
 ```  
  
@@ -1677,9 +1677,9 @@ The following example shows how to assign the <xref:System.Web.UI.WebControls.Li
  
 ```  
 Protected Sub LinqDataSource_Selecting(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceSelectEventArgs)  
-   Dim exampleContext As ExampleDataContext = New ExampleDataContext()  
-   e.Result = exampleContext.GetRegisteredCustomers()  
+        ByVal e As LinqDataSourceSelectEventArgs)  
+    Dim exampleContext As ExampleDataContext = New ExampleDataContext()  
+    e.Result = exampleContext.GetRegisteredCustomers()  
 End Sub  
 ```  
  
@@ -1687,10 +1687,10 @@ End Sub
  
 ```  
 protected void LinqDataSource_Selecting(object sender,   
-       LinqDataSourceSelectEventArgs e)  
+        LinqDataSourceSelectEventArgs e)  
 {  
-   ExampleDataContext exampleContext = new ExampleDataContext();  
-   e.Result = exampleContext.GetRegisteredCustomers();  
+    ExampleDataContext exampleContext = new ExampleDataContext();  
+    e.Result = exampleContext.GetRegisteredCustomers();  
 }  
 ```  
  
@@ -2049,15 +2049,15 @@ The following example shows an event handler for the <xref:System.Web.UI.WebCont
  
 ```vb  
 Protected Sub LinqDataSource_Updating(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceUpdateEventArgs)  
-   If (e.Exception IsNot Nothing) Then  
-       For Each innerException As KeyValuePair(Of String, Exception) _  
-              In e.Exception.InnerExceptions  
-           Label1.Text &= innerException.Key & ": " & _  
-               innerException.Value.Message & "<br />"  
-       Next  
-       e.ExceptionHandled = True  
-   End If  
+        ByVal e As LinqDataSourceUpdateEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message & "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
 End Sub  
 ```  
  
@@ -2065,18 +2065,18 @@ End Sub
  
 ```  
 protected void LinqDataSource_Updating(object sender,   
-       LinqDataSourceUpdateEventArgs e)  
+        LinqDataSourceUpdateEventArgs e)  
 {  
-   if (e.Exception != null)  
-   {  
-       foreach (KeyValuePair<string, Exception> innerException in   
-            e.Exception.InnerExceptions)  
-       {  
-       Label1.Text += innerException.Key + ": " +   
-           innerException.Value.Message + "<br />";  
-       }  
-       e.ExceptionHandled = true;  
-   }  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
 }  
 ```  
  
@@ -2085,18 +2085,18 @@ The previous example retrieves validation exceptions. An exception might be thro
 ```csharp  
 partial void  OnAgeChanging(int? value)  
 {  
-   if (value < 0)  
-   {  
-       throw new Exception("Age cannot be a negative number.");  
-   }  
+    if (value < 0)  
+    {  
+        throw new Exception("Age cannot be a negative number.");  
+    }  
 }  
 ```  
  
 ```vb  
 Private Sub OnAgeChanging(ByVal value As System.Nullable(Of Integer))  
-   If (value < 0) Then  
-       Throw New Exception("Age cannot be a negative number.")  
-   End If  
+    If (value < 0) Then  
+        Throw New Exception("Age cannot be a negative number.")  
+    End If  
 End Sub  
 ```  
  

@@ -233,9 +233,9 @@ If both the <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A>
  
 ```  
 <object>  
- <object.ContentTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.ContentTemplateSelector>  
+  <object.ContentTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.ContentTemplateSelector>  
 </object>  
 ```  
  

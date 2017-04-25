@@ -10485,10 +10485,10 @@ The languages propagate the type parameters of enclosing types in this fashion s
  
 ```  
 .class public Outer<T> {  
-   .class nested public Inner<U> {  
-       .class nested public Innermost {  
-       }  
-   }  
+    .class nested public Inner<U> {  
+        .class nested public Innermost {  
+        }  
+    }  
 }  
 ```  
  
@@ -10496,10 +10496,10 @@ In this example, it is not possible to define a field of type `T` or `U` in clas
  
 ```  
 .class public Outer<T> {  
-   .class nested public Inner<T, U> {  
-       .class nested public Innermost<T, U, V> {  
-       }  
-   }  
+    .class nested public Inner<T, U> {  
+        .class nested public Innermost<T, U, V> {  
+        }  
+    }  
 }  
 ```  
  

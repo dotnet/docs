@@ -34,7 +34,7 @@ To declaratively specify a set of preloaded properties, or a custom profile Web 
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <ProfileService LoadProperties="propertyA,propertyB" Path="MyProfileService.asmx" />  
+  <ProfileService LoadProperties="propertyA,propertyB" Path="MyProfileService.asmx" />  
 </asp:ScriptManager>  
 ```  
  

@@ -33,7 +33,7 @@ The following example shows how to use markup to display the value of the URL pa
  
 ```  
 <asp:Label ID="Label1" runat="server"  
-   text="<%$ RouteValue:searchterm %>">  
+    text="<%$ RouteValue:searchterm %>">  
 </asp:Label>  
 ```  
  

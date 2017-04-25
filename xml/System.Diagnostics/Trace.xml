@@ -45,9 +45,9 @@ To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="3" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="3" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -124,13 +124,13 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="4"/>  
-   </switches>  
-   <trace autoflush="false" indentsize="4"/>  
-   <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="4"/>  
+    </switches>  
+    <trace autoflush="false" indentsize="4"/>  
+    <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -198,13 +198,13 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="4"/>  
-   </switches>  
-   <trace autoflush="false" indentsize="4"/>  
-   <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="4"/>  
+    </switches>  
+    <trace autoflush="false" indentsize="4"/>  
+    <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -274,13 +274,13 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="4"/>  
-   </switches>  
-   <trace autoflush="false" indentsize="4"/>  
-   <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="4"/>  
+    </switches>  
+    <trace autoflush="false" indentsize="4"/>  
+    <assert assertuienabled="true" logfilename=".\TraceLog.txt"/>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -334,9 +334,9 @@ To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="3" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="3" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -648,8 +648,8 @@ This example produces the following output:
  
 ```  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
 ```  
  
@@ -699,12 +699,12 @@ The following example increments and decrements the indent level and emits traci
 This example produces the following output:  
  
 ```  
- 
+  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
- 
+  
 ```  
  
  ]]></format>
@@ -747,9 +747,9 @@ To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="3" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="3" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -1156,12 +1156,12 @@ The following example increments and decrements the indent level and emits traci
 This example produces the following output:  
  
 ```  
- 
+  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
- 
+  
 ```  
  
  ]]></format>
@@ -1203,9 +1203,9 @@ To set the <xref:System.Diagnostics.Trace.UseGlobalLock%2A> for <xref:System.Dia
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace useGlobalLock="false" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace useGlobalLock="false" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

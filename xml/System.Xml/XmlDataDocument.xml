@@ -174,12 +174,12 @@ The example uses the SQL Server 2000 Northwind database.
  
 ```  
 class MyXmlDataDocument : XmlDataDocument {  
-public override XmlElement CreateElement(string prefix, string localName, string nsURI) {  
-  //Ensure we are returning the base class implementation of element.  
-  XmlElement e = base.CreateElement(prefix, localName, nsURI);  
-  //Add additional code here.  
-  return e;    //Return the element created by XmlDataDocument.  
-}      
+ public override XmlElement CreateElement(string prefix, string localName, string nsURI) {  
+   //Ensure we are returning the base class implementation of element.  
+   XmlElement e = base.CreateElement(prefix, localName, nsURI);  
+   //Add additional code here.  
+   return e;    //Return the element created by XmlDataDocument.  
+ }      
 }  
 ```  
  
@@ -578,7 +578,7 @@ If the current node and its following siblings look similar to the following:
  
 ```  
 <!--comment--><?process  
-   instruction?><!--comment--></endtag>  
+    instruction?><!--comment--></endtag>  
 ```  
  
 `Load` will succeed; however, you will have an incomplete DOM tree, because there is no root-level element. You have to add a root-level element before you save the document; otherwise, the <xref:System.Xml.XmlDocument.Save%2A> method throws an exception.  

@@ -45,41 +45,41 @@ The text returned for this recognized phrase is printed as: "Hello, he said."
 The following example uses the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property of a list of <xref:System.Speech.Recognition.RecognizedWordUnit> objects to format the words as a phrase.  
  
 ```csharp  
- 
+  
 // Use the DisplayAttributes property to format speech as text.   
- 
+  
 static string GetDisplayText(List<RecognizedWordUnit> words)  
 {  
- StringBuilder sb = new StringBuilder();  
- 
- // Concatenate the word units together. Use the DisplayAttributes  
- // property of each word unit to add or remove white space around  
- // the word unit.  
- foreach (RecognizedWordUnit word in words)  
- {  
-   if ((word.DisplayAttributes  
-     & DisplayAttributes.ConsumeLeadingSpaces) != 0))  
-   {  
-     sb = new StringBuilder(sb.ToString().TrimEnd());  
-   }  
- 
-   sb.Append(word.Text);  
- 
-   if ((word.DisplayAttributes  
-     & DisplayAttributes.OneTrailingSpace) != 0)  
-   {  
-     sb.Append(" ");  
-   }  
-   else if ((word.DisplayAttributes  
-     & DisplayAttributes.TwoTrailingSpaces) != 0)  
-   {  
-     sb.Append("  ");  
-   }  
- }  
- 
- return sb.ToString();  
+  StringBuilder sb = new StringBuilder();  
+  
+  // Concatenate the word units together. Use the DisplayAttributes  
+  // property of each word unit to add or remove white space around  
+  // the word unit.  
+  foreach (RecognizedWordUnit word in words)  
+  {  
+    if ((word.DisplayAttributes  
+      & DisplayAttributes.ConsumeLeadingSpaces) != 0))  
+    {  
+      sb = new StringBuilder(sb.ToString().TrimEnd());  
+    }  
+  
+    sb.Append(word.Text);  
+  
+    if ((word.DisplayAttributes  
+      & DisplayAttributes.OneTrailingSpace) != 0)  
+    {  
+      sb.Append(" ");  
+    }  
+    else if ((word.DisplayAttributes  
+      & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      sb.Append("  ");  
+    }  
+  }  
+  
+  return sb.ToString();  
 }  
- 
+  
 ```  
  
  ]]></format>

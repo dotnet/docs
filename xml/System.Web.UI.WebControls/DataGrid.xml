@@ -111,7 +111,7 @@ For information about how to configure this control so that it generates markup 
     BackImageUrl="uri"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     Caption="string"  
     CaptionAlign="NotSet|Top|Bottom|Left|Right"  
@@ -131,7 +131,7 @@ For information about how to configure this control so that it generates markup 
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -248,16 +248,16 @@ For information about how to configure this control so that it generates markup 
                             <HeaderStyle />  
                             <ItemStyle />  
                         <EditItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </EditItemTemplate>  
                         <FooterTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </FooterTemplate>  
                         <HeaderTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </HeaderTemplate>  
                         <ItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ItemTemplate>  
                 </asp:TemplateColumn>  
         </Columns>  
@@ -269,7 +269,7 @@ For information about how to configure this control so that it generates markup 
             BackColor="color name|#dddddd"  
             BorderColor="color name|#dddddd"  
             BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-               Groove|Ridge|Inset|Outset"  
+                Groove|Ridge|Inset|Outset"  
             BorderWidth="size"  
             CssClass="string"  
             Font-Bold="True|False"  
@@ -277,7 +277,7 @@ For information about how to configure this control so that it generates markup 
             Font-Names="string"  
             Font-Overline="True|False"  
             Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-               Medium|Large|X-Large|XX-Large"  
+                Medium|Large|X-Large|XX-Large"  
             Font-Strikeout="True|False"  
             Font-Underline="True|False"  
             ForeColor="color name|#dddddd"  

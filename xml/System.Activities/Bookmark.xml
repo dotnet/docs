@@ -39,30 +39,30 @@ In the following example, a `ReadLine` activity is created. When executed, the `
 ```csharp  
 public sealed class ReadLine : NativeActivity<string>  
 {  
-   [RequiredArgument]  
-   public  InArgument<string> BookmarkName { get; set; }  
- 
-   protected override void Execute(NativeActivityContext context)  
-   {  
-       // Create a Bookmark and wait for it to be resumed.  
-       context.CreateBookmark(BookmarkName.Get(context),   
-           new BookmarkCallback(OnResumeBookmark));  
-   }  
- 
-   // NativeActivity derived activities that do asynchronous operations by calling   
-   // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext   
-   // must override the CanInduceIdle property and return true.  
-   protected override bool CanInduceIdle  
-   {  
-       get { return true; }  
-   }  
- 
-   public void OnResumeBookmark(NativeActivityContext context, Bookmark bookmark, object obj)  
-   {  
-       // When the Bookmark is resumed, assign its value to  
-       // the Result argument.  
-       Result.Set(context, (string)obj);  
-   }  
+    [RequiredArgument]  
+    public  InArgument<string> BookmarkName { get; set; }  
+  
+    protected override void Execute(NativeActivityContext context)  
+    {  
+        // Create a Bookmark and wait for it to be resumed.  
+        context.CreateBookmark(BookmarkName.Get(context),   
+            new BookmarkCallback(OnResumeBookmark));  
+    }  
+  
+    // NativeActivity derived activities that do asynchronous operations by calling   
+    // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext   
+    // must override the CanInduceIdle property and return true.  
+    protected override bool CanInduceIdle  
+    {  
+        get { return true; }  
+    }  
+  
+    public void OnResumeBookmark(NativeActivityContext context, Bookmark bookmark, object obj)  
+    {  
+        // When the Bookmark is resumed, assign its value to  
+        // the Result argument.  
+        Result.Set(context, (string)obj);  
+    }  
 }  
 ```  
  
@@ -71,56 +71,56 @@ In the following example, a workflow is created that uses the `ReadLine` activit
 ```csharp  
 Variable<string> name = new Variable<string>  
 {  
-   Name = "name"  
+    Name = "name"  
 };  
- 
+  
 Activity wf = new Sequence  
 {  
-   Variables =  
-   {  
-       name  
-   },  
-   Activities =  
-   {  
-       new WriteLine()  
-       {  
-           Text = "What is your name?"  
-       },  
-       new ReadLine()  
-       {  
-           BookmarkName = "UserName",  
-           Result = name  
-       },  
-       new WriteLine()  
-       {  
-           Text = new InArgument<string>((env) => "Hello, " + name.Get(env))  
-       }  
-   }  
+    Variables =  
+    {  
+        name  
+    },  
+    Activities =  
+    {  
+        new WriteLine()  
+        {  
+            Text = "What is your name?"  
+        },  
+        new ReadLine()  
+        {  
+            BookmarkName = "UserName",  
+            Result = name  
+        },  
+        new WriteLine()  
+        {  
+            Text = new InArgument<string>((env) => "Hello, " + name.Get(env))  
+        }  
+    }  
 };  
- 
+  
 AutoResetEvent syncEvent = new AutoResetEvent(false);  
- 
+  
 // Create the WorkflowApplication using the desired  
 // workflow definition.  
 WorkflowApplication wfApp = new WorkflowApplication(wf);  
- 
+  
 // Handle the desired lifecycle events.  
 wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)  
 {  
-   // Signal the host that the workflow is complete.  
-   syncEvent.Set();  
+    // Signal the host that the workflow is complete.  
+    syncEvent.Set();  
 };  
- 
+  
 // Start the workflow.  
 wfApp.Run();  
- 
+  
 // Collect the user's name and resume the bookmark.  
 // Bookmark resumption only occurs when the workflow  
 // is idle. If a call to ResumeBookmark is made and the workflow  
 // is not idle, ResumeBookmark blocks until the workflow becomes  
 // idle before resuming the bookmark.  
 wfApp.ResumeBookmark("UserName", Console.ReadLine());  
- 
+  
 // Wait for Completed to arrive and signal that  
 // the workflow is complete.  
 syncEvent.WaitOne();  

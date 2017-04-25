@@ -54,18 +54,18 @@ The following code example exposes the ProductID column of the Products table in
 ```vb  
 <MetadataType(GetType(ProductMetadata))>  
 Public Partial Class Product   
- 
+  
 End Class   
- 
+  
 Public Class ProductMetadata   
-   <ScaffoldColumn(True)>  
-   Public ProductID As Object   
- 
-   <ScaffoldColumn(False)>   
-   Public ThumbnailPhotoFileName As Object  
- 
+    <ScaffoldColumn(True)>  
+    Public ProductID As Object   
+  
+    <ScaffoldColumn(False)>   
+    Public ThumbnailPhotoFileName As Object  
+  
 End Class  
- 
+  
 ```  
  
 [C#]  
@@ -74,17 +74,17 @@ End Class
 [MetadataType(typeof(ProductMetadata))]  
 public partial class Product  
 {  
- 
+  
 }  
- 
+  
 public class ProductMetadata  
 {  
-   [ScaffoldColumn(true)]  
-   public object ProductID;  
- 
-   [ScaffoldColumn(false)]  
-   public object ThumbnailPhotoFileName;  
- 
+    [ScaffoldColumn(true)]  
+    public object ProductID;  
+  
+    [ScaffoldColumn(false)]  
+    public object ThumbnailPhotoFileName;  
+  
 }  
 ```  
  

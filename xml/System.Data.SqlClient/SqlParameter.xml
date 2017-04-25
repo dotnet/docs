@@ -623,8 +623,8 @@ The locale identifies conventions and language for a particular geographical reg
  
 ```  
 static void CreateSqlParameterLocaleId(){  
-  SqlParameter parameter = new SqlParameter("pName", SqlDbType.VarChar);  
-  parameter.LocaleId = 1033;   // English - United States  
+   SqlParameter parameter = new SqlParameter("pName", SqlDbType.VarChar);  
+   parameter.LocaleId = 1033;   // English - United States  
 }  
 ```  
  
@@ -1044,7 +1044,7 @@ The following example creates a <xref:System.Data.SqlClient.SqlParameter> and se
  
 ```  
 ((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
- (FieldName = @Original_FieldName))  
+  (FieldName = @Original_FieldName))  
 ```  
  
 If <xref:System.Data.SqlClient.SqlParameter.SourceColumnNullMapping%2A> for the field is false, <xref:System.Data.SqlClient.SqlCommandBuilder> generates the following WHERE clause:  

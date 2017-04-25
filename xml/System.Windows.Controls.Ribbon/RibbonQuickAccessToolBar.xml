@@ -34,12 +34,12 @@ You add a <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar> to a <x
  
 ```  
 <ribbon:Ribbon>  
- <ribbon:Ribbon.QuickAccessToolBar>  
-   <ribbon:RibbonQuickAccessToolBar />  
- </ribbon:Ribbon.QuickAccessToolBar>   
+  <ribbon:Ribbon.QuickAccessToolBar>  
+    <ribbon:RibbonQuickAccessToolBar />  
+  </ribbon:Ribbon.QuickAccessToolBar>   
 ...  
 </ribbon:Ribbon>  
- 
+  
 ```  
  
 The following list shows the typical placement of the <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar> in the hierarchy of ribbon elements.  

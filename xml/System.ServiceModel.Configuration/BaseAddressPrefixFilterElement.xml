@@ -33,12 +33,12 @@ You can use the following configuration file to specify a prefix filter at the a
  
 ```  
 <system.serviceModel>  
- <serviceHostingEnvironment>  
-    <baseAddressPrefixFilters>  
+  <serviceHostingEnvironment>  
+     <baseAddressPrefixFilters>  
         <add prefix=”net.tcp://test1.fabrikam.com:8000”/>  
         <add prefix=”http://test2.fabrikam.com:9000”/>  
     </baseAddressPrefixFilters>  
- </serviceHostingEnvironment>  
+  </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  
  

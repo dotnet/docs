@@ -36,20 +36,20 @@ The following example validates a given <xref:System.Globalization.CultureInfo> 
 If the <xref:System.Globalization.CultureInfo> and identifier string are valid, the example creates a new instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine> using the <xref:System.Speech.Recognition.RecognizerInfo> instance as an argument.  
  
 ```csharp  
- 
+  
 private SpeechRecognitionEngine SelectRecognizer(CultureInfo requiredCulture, string requiredId)   
 {  
- // Select based on a specific recognizer configuration  
- SpeechRecognitionEngine speechRecognitionEngine=null;  
- foreach (RecognizerInfo config in SpeechRecognitionEngine.InstalledRecognizers())   
- {  
-   if (config.Culture.Equals(requiredCulture) && config.Id== requiredId)   
-   {  
-     speechRecognitionEngine = new SpeechRecognitionEngine(config);  
-     break;  
-   }  
- }  
- return speechRecognitionEngine;  
+  // Select based on a specific recognizer configuration  
+  SpeechRecognitionEngine speechRecognitionEngine=null;  
+  foreach (RecognizerInfo config in SpeechRecognitionEngine.InstalledRecognizers())   
+  {  
+    if (config.Culture.Equals(requiredCulture) && config.Id== requiredId)   
+    {  
+      speechRecognitionEngine = new SpeechRecognitionEngine(config);  
+      break;  
+    }  
+  }  
+  return speechRecognitionEngine;  
 }  
 ```  
  
@@ -83,30 +83,30 @@ The key/value pairs contained in the <xref:System.Collections.Generic.IDictionar
 ```csharp  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                    "Name:                 {0 } \n" +  
-                    "Description:          {1} \n" +  
-                    "SupportedAudioFormats:\n" +  
-                    " {2} " +  
-                    "Culture:              {3} \n" +  
-                    "AdditionalInfo:       \n" +  
-                    " {4}\n",  
-                    info.Name.ToString(),  
-                    info.Description.ToString(),  
-                    AudioFormats,  
-                    info.Culture.ToString(),  
-                    AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                     "Name:                 {0 } \n" +  
+                     "Description:          {1} \n" +  
+                     "SupportedAudioFormats:\n" +  
+                     " {2} " +  
+                     "Culture:              {3} \n" +  
+                     "AdditionalInfo:       \n" +  
+                     " {4}\n",  
+                     info.Name.ToString(),  
+                     info.Description.ToString(),  
+                     AudioFormats,  
+                     info.Culture.ToString(),  
+                     AdditionalInfo));  
 }  
 ```  
  
@@ -143,30 +143,30 @@ The following example implements a button click that displays all the informatio
 ```csharp  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                    "Name:                 {0 }\n" +  
-                    "Description:          {1} \n" +  
-                    "SupportedAudioFormats:\n" +  
-                    "{2} " +  
-                    "Culture:              {3} \n" +  
-                    "AdditionalInfo:       \n" +  
-                    " {4}\n",  
-                    info.Name.ToString(),  
-                    info.Description.ToString(),  
-                    AudioFormats,  
-                    info.Culture.ToString(),  
-                    AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                     "Name:                 {0 }\n" +  
+                     "Description:          {1} \n" +  
+                     "SupportedAudioFormats:\n" +  
+                     "{2} " +  
+                     "Culture:              {3} \n" +  
+                     "AdditionalInfo:       \n" +  
+                     " {4}\n",  
+                     info.Name.ToString(),  
+                     info.Description.ToString(),  
+                     AudioFormats,  
+                     info.Culture.ToString(),  
+                     AdditionalInfo));  
 }  
 ```  
  
@@ -198,30 +198,30 @@ The following example below implements a button click that displays all the info
 ```csharp  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                    "Name:                 {0 }\n" +  
-                    "Description:          {1} \n" +  
-                    "SupportedAudioFormats:\n" +  
-                    "{2} " +  
-                    "Culture:              {3} \n" +  
-                    "AdditionalInfo:       \n" +  
-                    " {4}\n",  
-                    info.Name.ToString(),  
-                    info.Description.ToString(),  
-                    AudioFormats,  
-                    info.Culture.ToString(),  
-                    AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                     "Name:                 {0 }\n" +  
+                     "Description:          {1} \n" +  
+                     "SupportedAudioFormats:\n" +  
+                     "{2} " +  
+                     "Culture:              {3} \n" +  
+                     "AdditionalInfo:       \n" +  
+                     " {4}\n",  
+                     info.Name.ToString(),  
+                     info.Description.ToString(),  
+                     AudioFormats,  
+                     info.Culture.ToString(),  
+                     AdditionalInfo));  
 }  
 ```  
  
@@ -276,30 +276,30 @@ The following example implements a button click that displays all the informatio
 ```  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n",  fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                          "Name:                 {0 }\n" +  
-                          "Description:          {1} \n" +  
-                          "SupportedAudioFormats:\n" +  
-                          "{2} " +  
-                          "Culture:              {3} \n" +  
-                          "AdditionalInfo:       \n" +  
-                          " {4}\n",  
-                          info.Name.ToString(),  
-                          info.Description.ToString(),  
-                          AudioFormats,  
-                          info.Culture.ToString(),  
-                          AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n",  fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                           "Name:                 {0 }\n" +  
+                           "Description:          {1} \n" +  
+                           "SupportedAudioFormats:\n" +  
+                           "{2} " +  
+                           "Culture:              {3} \n" +  
+                           "AdditionalInfo:       \n" +  
+                           " {4}\n",  
+                           info.Name.ToString(),  
+                           info.Description.ToString(),  
+                           AudioFormats,  
+                           info.Culture.ToString(),  
+                           AdditionalInfo));  
 }  
 ```  
  
@@ -331,30 +331,30 @@ The following example implements a button click that displays all the informatio
 ```  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                          "Name:                 {0 }\n" +  
-                          "Description:          {1} \n" +  
-                          "SupportedAudioFormats:\n" +  
-                          "{2} " +  
-                          "Culture:              {3} \n" +  
-                          "AdditionalInfo:       \n" +  
-                          " {4}\n",  
-                          info.Name.ToString(),  
-                          info.Description.ToString(),  
-                          AudioFormats,  
-                          info.Culture.ToString(),  
-                          AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                           "Name:                 {0 }\n" +  
+                           "Description:          {1} \n" +  
+                           "SupportedAudioFormats:\n" +  
+                           "{2} " +  
+                           "Culture:              {3} \n" +  
+                           "AdditionalInfo:       \n" +  
+                           " {4}\n",  
+                           info.Name.ToString(),  
+                           info.Description.ToString(),  
+                           AudioFormats,  
+                           info.Culture.ToString(),  
+                           AdditionalInfo));  
 }  
 ```  
  
@@ -386,30 +386,30 @@ The following example implements a button click that displays all the informatio
 ```  
 private void recognizerInfoButton_Click(object sender, EventArgs e)   
 {  
- RecognizerInfo info = _recognizer.RecognizerInfo;  
- string AudioFormats = "";  
- foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
- {  
-   AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
- }  
- string AdditionalInfo = "";  
- foreach (string key in info.AdditionalInfo.Keys)   
- {  
-   AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
- }  
- MessageBox.Show(String.Format(  
-                          "Name:                 {0 }\n" +  
-                          "Description:          {1} \n" +  
-                          "SupportedAudioFormats:\n" +  
-                          "{2} " +  
-                          "Culture:              {3} \n" +  
-                          "AdditionalInfo:       \n" +  
-                          " {4}\n",  
-                          info.Name.ToString(),  
-                          info.Description.ToString(),  
-                          AudioFormats,  
-                          info.Culture.ToString(),  
-                          AdditionalInfo));  
+  RecognizerInfo info = _recognizer.RecognizerInfo;  
+  string AudioFormats = "";  
+  foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)   
+  {  
+    AudioFormats += String.Format("       {0}\n", fmt.EncodingFormat.ToString());  
+  }  
+  string AdditionalInfo = "";  
+  foreach (string key in info.AdditionalInfo.Keys)   
+  {  
+    AdditionalInfo += String.Format("      {0}: {1}\n", key, info.AdditionalInfo[key]);  
+  }  
+  MessageBox.Show(String.Format(  
+                           "Name:                 {0 }\n" +  
+                           "Description:          {1} \n" +  
+                           "SupportedAudioFormats:\n" +  
+                           "{2} " +  
+                           "Culture:              {3} \n" +  
+                           "AdditionalInfo:       \n" +  
+                           " {4}\n",  
+                           info.Name.ToString(),  
+                           info.Description.ToString(),  
+                           AudioFormats,  
+                           info.Culture.ToString(),  
+                           AdditionalInfo));  
 }  
 ```  
  

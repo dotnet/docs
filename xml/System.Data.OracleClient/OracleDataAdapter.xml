@@ -51,11 +51,11 @@ Create the following Oracle package on the Oracle server.
  
 ```  
 CREATE OR REPLACE PACKAGE CURSPKG AS   
-  TYPE T_CURSOR IS REF CURSOR;   
-  PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-     IO_CURSOR OUT T_CURSOR);   
-  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-     DEPTCURSOR OUT T_CURSOR);  
+   TYPE T_CURSOR IS REF CURSOR;   
+   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+      IO_CURSOR OUT T_CURSOR);   
+   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+      DEPTCURSOR OUT T_CURSOR);  
 END CURSPKG;  
 /  
 ```  
@@ -64,38 +64,38 @@ Create the following Oracle package body on the Oracle server.
  
 ```  
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
-   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-                              IO_CURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR T_CURSOR;   
-   BEGIN   
-       IF N_EMPNO <> 0 THEN   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO   
-                       AND EMP.EMPNO = N_EMPNO;   
-       ELSE   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO;   
-       END IF;   
-       IO_CURSOR := V_CURSOR;   
-   END OPEN_ONE_CURSOR;   
-   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-                               DEPTCURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR1 T_CURSOR;   
-       V_CURSOR2 T_CURSOR;   
-   BEGIN   
-       OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
-       OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
-       EMPCURSOR  := V_CURSOR1;   
-       DEPTCURSOR := V_CURSOR2;   
-   END OPEN_TWO_CURSORS;   
+    PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+                               IO_CURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR T_CURSOR;   
+    BEGIN   
+        IF N_EMPNO <> 0 THEN   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO   
+                        AND EMP.EMPNO = N_EMPNO;   
+        ELSE   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO;   
+        END IF;   
+        IO_CURSOR := V_CURSOR;   
+    END OPEN_ONE_CURSOR;   
+    PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+                                DEPTCURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR1 T_CURSOR;   
+        V_CURSOR2 T_CURSOR;   
+    BEGIN   
+        OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
+        OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
+        EMPCURSOR  := V_CURSOR1;   
+        DEPTCURSOR := V_CURSOR2;   
+    END OPEN_TWO_CURSORS;   
 END CURSPKG;  
-/  
+ /  
 ```  
  
 The following C# example demonstrates how you might obtain table and column information using the stored procedure.  
@@ -103,26 +103,26 @@ The following C# example demonstrates how you might obtain table and column info
 ```csharp  
 // GetConnectionString() returns a connection string for  
 // the data source.  
- 
+  
 string connString = GetConnectionString();  
 DataSet ds = new DataSet();  
 OracleConnection conn = new OracleConnection(connString);  
 OracleCommand cmd = conn.CreateCommand();  
- 
+  
 cmd.CommandText = "CURSPKG.OPEN_TWO_CURSORS";  
 cmd.CommandType = CommandType.StoredProcedure;  
 cmd.Parameters.Add("EMPCURSOR", OracleType.Cursor).Direction =   
-      ParameterDirection.Output;  
+       ParameterDirection.Output;  
 cmd.Parameters.Add("DEPTCURSOR", OracleType.Cursor).Direction =   
-      ParameterDirection.Output;  
- 
+       ParameterDirection.Output;  
+  
 OracleDataAdapter da = new OracleDataAdapter(cmd);  
 da.TableMappings.Add("Table", "Emp");  
 da.TableMappings.Add("Table1", "Dept");  
 da.Fill(ds);  
- 
+  
 ds.Relations.Add("EmpDept", ds.Tables["Dept"].Columns["Deptno"],   
-     ds.Tables["Emp"].Columns["Deptno"], false);  
+      ds.Tables["Emp"].Columns["Deptno"], false);  
 ```  
  
 The following Visual Basic example demonstrates how to use an <xref:System.Data.OracleClient.OracleDataAdapter> to fill a <xref:System.Data.DataSet> using an Oracle `REF CURSOR`. These examples use tables that are defined in the Oracle Scott/Tiger schema, and require the following PL/SQL package and package body. You must create these on your server to use the examples.  
@@ -131,11 +131,11 @@ Create the following Oracle package on the Oracle server.
  
 ```  
 CREATE OR REPLACE PACKAGE CURSPKG AS   
-  TYPE T_CURSOR IS REF CURSOR;   
-  PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-     IO_CURSOR OUT T_CURSOR);   
-  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-     DEPTCURSOR OUT T_CURSOR);  
+   TYPE T_CURSOR IS REF CURSOR;   
+   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+      IO_CURSOR OUT T_CURSOR);   
+   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+      DEPTCURSOR OUT T_CURSOR);  
 END CURSPKG;  
 /  
 ```  
@@ -144,66 +144,66 @@ Create the following Oracle package body on the Oracle server.
  
 ```  
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
-   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-                              IO_CURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR T_CURSOR;   
-   BEGIN   
-       IF N_EMPNO <> 0 THEN   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO   
-                       AND EMP.EMPNO = N_EMPNO;   
-       ELSE   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO;   
-       END IF;   
-       IO_CURSOR := V_CURSOR;   
-   END OPEN_ONE_CURSOR;   
-   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-                               DEPTCURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR1 T_CURSOR;   
-       V_CURSOR2 T_CURSOR;   
-   BEGIN   
-       OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
-       OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
-       EMPCURSOR  := V_CURSOR1;   
-       DEPTCURSOR := V_CURSOR2;   
-   END OPEN_TWO_CURSORS;   
+    PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+                               IO_CURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR T_CURSOR;   
+    BEGIN   
+        IF N_EMPNO <> 0 THEN   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO   
+                        AND EMP.EMPNO = N_EMPNO;   
+        ELSE   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO;   
+        END IF;   
+        IO_CURSOR := V_CURSOR;   
+    END OPEN_ONE_CURSOR;   
+    PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+                                DEPTCURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR1 T_CURSOR;   
+        V_CURSOR2 T_CURSOR;   
+    BEGIN   
+        OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
+        OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
+        EMPCURSOR  := V_CURSOR1;   
+        DEPTCURSOR := V_CURSOR2;   
+    END OPEN_TWO_CURSORS;   
 END CURSPKG;  
-/  
+ /  
 ```  
  
 This Visual Basic example executes a PL/SQL stored procedure that returns two `REF CURSOR` parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.  
  
 ```vb  
- 
+  
 ' GetConnectionString() returns a connection string for  
 ' the data source.  
- 
-   Dim connString As New String(GetConnectionString())  
-   Dim ds As New DataSet()  
-   Dim conn As New OracleConnection(connString)  
-   Dim cmd As OracleCommand = conn.CreateCommand()  
- 
-   cmd.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
-   cmd.CommandType = CommandType.StoredProcedure  
-   cmd.Parameters.Add("EMPCURSOR", OracleType.Cursor).Direction = _  
-      ParameterDirection.Output  
-   cmd.Parameters.Add("DEPTCURSOR", OracleType.Cursor).Direction = _  
-      ParameterDirection.Output  
- 
-   Dim da As New OracleDataAdapter(cmd)  
-   da.TableMappings.Add("Table", "Emp")  
-   da.TableMappings.Add("Table1", "Dept")  
-   da.Fill(ds)  
- 
-   ds.Relations.Add("EmpDept", ds.Tables("Dept").Columns("Deptno"), _  
-     ds.Tables("Emp").Columns("Deptno"), False)  
+  
+    Dim connString As New String(GetConnectionString())  
+    Dim ds As New DataSet()  
+    Dim conn As New OracleConnection(connString)  
+    Dim cmd As OracleCommand = conn.CreateCommand()  
+  
+    cmd.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
+    cmd.CommandType = CommandType.StoredProcedure  
+    cmd.Parameters.Add("EMPCURSOR", OracleType.Cursor).Direction = _  
+       ParameterDirection.Output  
+    cmd.Parameters.Add("DEPTCURSOR", OracleType.Cursor).Direction = _  
+       ParameterDirection.Output  
+  
+    Dim da As New OracleDataAdapter(cmd)  
+    da.TableMappings.Add("Table", "Emp")  
+    da.TableMappings.Add("Table1", "Dept")  
+    da.Fill(ds)  
+  
+    ds.Relations.Add("EmpDept", ds.Tables("Dept").Columns("Deptno"), _  
+      ds.Tables("Emp").Columns("Deptno"), False)  
 ```  
  
 After using the <xref:System.Data.OracleClient.OracleDataAdapter> to perform a `Fill` or `FillSchema` operation, the `DataColumn.ReadOnly` property always returns false, regardless of whether a column can be updated or not, because the Oracle server does not return this information.  
@@ -246,25 +246,25 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Sub CreateOracleDataAdapter()  
-   Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
-   Dim custDA As OracleDataAdapter = New OracleDataAdapter  
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
- 
-   custDA.SelectCommand = New OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection)  
-   custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
-   custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection)  
-   custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+    Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
+    Dim custDA As OracleDataAdapter = New OracleDataAdapter  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
+  
+    custDA.SelectCommand = New OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection)  
+    custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
+    custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection)  
+    custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
 End Sub  
 ```  
  
@@ -273,25 +273,25 @@ End Sub
 ```  
 public static void CreateOracleDataAdapter()   
 {  
-   OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
-   OracleDataAdapter custDA = new OracleDataAdapter();  
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
- 
-   custDA.SelectCommand = new OracleCommand("SELECT DeptNo, CompanyName FROM Dept", myOracleConnection);  
-   custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, CompanyName) " +  
-                                           "VALUES (:pDeptNo, :pCompanyName)", myOracleConnection);  
-   custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, CompanyName = :pCompanyName " +  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection);  
-   custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.InsertCommand.Parameters.Add("pCompanyName", OracleType.VarChar, 14, "CompanyName");  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.UpdateCommand.Parameters.Add("pCompanyName", OracleType.VarChar, 14, "CompanyName");  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+    OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
+    OracleDataAdapter custDA = new OracleDataAdapter();  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
+  
+    custDA.SelectCommand = new OracleCommand("SELECT DeptNo, CompanyName FROM Dept", myOracleConnection);  
+    custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, CompanyName) " +  
+                                            "VALUES (:pDeptNo, :pCompanyName)", myOracleConnection);  
+    custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, CompanyName = :pCompanyName " +  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection);  
+    custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.InsertCommand.Parameters.Add("pCompanyName", OracleType.VarChar, 14, "CompanyName");  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.UpdateCommand.Parameters.Add("pCompanyName", OracleType.VarChar, 14, "CompanyName");  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
 }  
 ```  
  
@@ -338,25 +338,25 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Sub CreateOracleDataAdapter()  
-   Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
-   Dim myOracleCommand As OracleCommand = New OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection)  
-   Dim custDA As OracleDataAdapter = New OracleDataAdapter(myOracleCommand)  
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
- 
-   custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
-   custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection)  
-   custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+    Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
+    Dim myOracleCommand As OracleCommand = New OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection)  
+    Dim custDA As OracleDataAdapter = New OracleDataAdapter(myOracleCommand)  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
+  
+    custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
+    custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection)  
+    custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
 End Sub  
 ```  
  
@@ -365,25 +365,25 @@ End Sub
 ```  
 public static void CreateOracleDataAdapter()   
 {  
-   OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
-   OracleCommand myOracleCommand = new OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection);  
-   OracleDataAdapter custDA = new OracleDataAdapter(myOracleCommand);  
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
- 
-   custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
-   custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection);  
-   custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+    OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
+    OracleCommand myOracleCommand = new OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection);  
+    OracleDataAdapter custDA = new OracleDataAdapter(myOracleCommand);  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
+  
+    custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
+    custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection);  
+    custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
 }  
 ```  
  
@@ -423,25 +423,25 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Sub CreateOracleDataAdapter()  
-   Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
-   Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
-   Dim custDA As OracleDataAdapter = New OracleDataAdapter(mySelectText, myOracleConnection)   
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
- 
-   custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
-   custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection)  
-   custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+    Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
+    Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
+    Dim custDA As OracleDataAdapter = New OracleDataAdapter(mySelectText, myOracleConnection)   
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey  
+  
+    custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
+    custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection)  
+    custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
 End Sub  
 ```  
  
@@ -450,27 +450,27 @@ End Sub
 ```  
 public static void CreateOracleDataAdapter()   
 {  
-   OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
- 
-   string mySelectText = "SELECT DeptNo, DName FROM Dept";  
- 
-   OracleDataAdapter custDA = new OracleDataAdapter(mySelectText, myOracleConnection );  
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
- 
-   custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
-   custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection);  
-   custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+    OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
+  
+    string mySelectText = "SELECT DeptNo, DName FROM Dept";  
+  
+    OracleDataAdapter custDA = new OracleDataAdapter(mySelectText, myOracleConnection );  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
+  
+    custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
+    custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection);  
+    custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
 }  
 ```  
  
@@ -505,27 +505,27 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Sub CreateOracleDataAdapter()  
-   Dim myConnectionText As String = "Data Source=Oracle8i;Integrated Security=yes"  
-   Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
-   Dim custDA As OracleDataAdapter = New OracleDataAdapter(mySelectText, myConnectionText )   
-   Dim myOracleConnection As OracleConnection = custDA.SelectCommand.Connection  
- 
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey     
- 
-   custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
-   custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection)  
-   custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+    Dim myConnectionText As String = "Data Source=Oracle8i;Integrated Security=yes"  
+    Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
+    Dim custDA As OracleDataAdapter = New OracleDataAdapter(mySelectText, myConnectionText )   
+    Dim myOracleConnection As OracleConnection = custDA.SelectCommand.Connection  
+  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey     
+  
+    custDA.InsertCommand = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection)  
+    custDA.UpdateCommand = New OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " & _  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection)  
+    custDA.DeleteCommand = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection)  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName")  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original  
 End Sub  
 ```  
  
@@ -534,29 +534,29 @@ End Sub
 ```  
 public static void CreateOracleDataAdapter()   
 {  
-   string myConnectionText = "Data Source=Oracle8i;Integrated Security=yes";  
- 
-   string mySelectText = "SELECT DeptNo, DName FROM Dept";  
- 
-   OracleDataAdapter custDA = new OracleDataAdapter(mySelectText, myConnectionText );  
-  OracleConnection myOracleConnection = custDA.SelectCommand.Connection;  
- 
-   custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
- 
-   custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
-                                           "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
-   custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
-                                           "WHERE DeptNo = :pDeptNo", myOracleConnection);  
-   custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
- 
-   custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
- 
-   custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
-   custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
-   custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
- 
-   custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+    string myConnectionText = "Data Source=Oracle8i;Integrated Security=yes";  
+  
+    string mySelectText = "SELECT DeptNo, DName FROM Dept";  
+  
+    OracleDataAdapter custDA = new OracleDataAdapter(mySelectText, myConnectionText );  
+   OracleConnection myOracleConnection = custDA.SelectCommand.Connection;  
+  
+    custDA.MissingSchemaAction = MissingSchemaAction.AddWithKey;  
+  
+    custDA.InsertCommand = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
+                                            "VALUES (:pDeptNo, :pDName)", myOracleConnection);  
+    custDA.UpdateCommand = new OracleCommand("UPDATE Dept SET DeptNo = :pDeptNo, DName = :pDName " +  
+                                            "WHERE DeptNo = :pDeptNo", myOracleConnection);  
+    custDA.DeleteCommand = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", myOracleConnection);  
+  
+    custDA.InsertCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.InsertCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+  
+    custDA.UpdateCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+    custDA.UpdateCommand.Parameters.Add("pDName", OracleType.VarChar, 14, "DName");  
+    custDA.UpdateCommand.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
+  
+    custDA.DeleteCommand.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo").SourceVersion = DataRowVersion.Original;  
 }  
 ```  
  
@@ -700,31 +700,31 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
- 
- Dim da As OracleDataAdapter = New OracleDataAdapter()  
- Dim cmd As OracleCommand  
- Dim parm As OracleParameter  
- 
- ' Create the SelectCommand.  
- 
- cmd = New OracleCommand("SELECT * FROM Dept " & _  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn)  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
- 
- da.SelectCommand = cmd  
- 
- ' Create the DeleteCommand.  
- 
- cmd = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", conn)  
- 
- parm = cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
- parm.SourceVersion = DataRowVersion.Original  
- 
- da.DeleteCommand = cmd  
- 
- Return da  
+  
+  Dim da As OracleDataAdapter = New OracleDataAdapter()  
+  Dim cmd As OracleCommand  
+  Dim parm As OracleParameter  
+  
+  ' Create the SelectCommand.  
+  
+  cmd = New OracleCommand("SELECT * FROM Dept " & _  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn)  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
+  
+  da.SelectCommand = cmd  
+  
+  ' Create the DeleteCommand.  
+  
+  cmd = New OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", conn)  
+  
+  parm = cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+  parm.SourceVersion = DataRowVersion.Original  
+  
+  da.DeleteCommand = cmd  
+  
+  Return da  
 End Function  
 ```  
  
@@ -733,30 +733,30 @@ End Function
 ```  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
- OracleDataAdapter da = new OracleDataAdapter();  
- OracleCommand cmd;  
- OracleParameter parm;  
- 
- // Create the SelectCommand.  
- 
- cmd = new OracleCommand("SELECT * FROM Dept " +  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn);  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
- 
- da.SelectCommand = cmd;  
- 
- // Create the DeleteCommand.  
- 
- cmd = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", conn);  
- 
- parm = cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
- parm.SourceVersion = DataRowVersion.Original;  
- 
- da.DeleteCommand = cmd;  
- 
- return da;  
+  OracleDataAdapter da = new OracleDataAdapter();  
+  OracleCommand cmd;  
+  OracleParameter parm;  
+  
+  // Create the SelectCommand.  
+  
+  cmd = new OracleCommand("SELECT * FROM Dept " +  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn);  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
+  
+  da.SelectCommand = cmd;  
+  
+  // Create the DeleteCommand.  
+  
+  cmd = new OracleCommand("DELETE FROM Dept WHERE DeptNo = :pDeptNo", conn);  
+  
+  parm = cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+  parm.SourceVersion = DataRowVersion.Original;  
+  
+  da.DeleteCommand = cmd;  
+  
+  return da;  
 }  
 ```  
  
@@ -896,31 +896,31 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
- 
- Dim da As OracleDataAdapter = New OracleDataAdapter()  
- Dim cmd As OracleCommand  
- 
- ' Create the SelectCommand.  
- 
- cmd = New OracleCommand("SELECT * FROM Dept " & _  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn)  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
- 
- da.SelectCommand = cmd  
- 
- ' Create the InsertCommand.  
- 
- cmd = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                      "VALUES (:pDeptNo, :pDName)", conn)  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
- 
- da.InsertCommand = cmd  
- 
- Return da  
+  
+  Dim da As OracleDataAdapter = New OracleDataAdapter()  
+  Dim cmd As OracleCommand  
+  
+  ' Create the SelectCommand.  
+  
+  cmd = New OracleCommand("SELECT * FROM Dept " & _  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn)  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
+  
+  da.SelectCommand = cmd  
+  
+  ' Create the InsertCommand.  
+  
+  cmd = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                       "VALUES (:pDeptNo, :pDName)", conn)  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
+  
+  da.InsertCommand = cmd  
+  
+  Return da  
 End Function  
 ```  
  
@@ -929,30 +929,30 @@ End Function
 ```  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
- OracleDataAdapter da = new OracleDataAdapter();  
- OracleCommand cmd;  
- 
- // Create the SelectCommand.  
- 
- cmd = new OracleCommand("SELECT * FROM Dept " +  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn);  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
- 
- da.SelectCommand = cmd;  
- 
- // Create the InsertCommand.  
- 
- cmd = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
-                      "VALUES (:pDeptNo, :pDName)", conn);  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
- 
- da.InsertCommand = cmd;  
- 
- return da;  
+  OracleDataAdapter da = new OracleDataAdapter();  
+  OracleCommand cmd;  
+  
+  // Create the SelectCommand.  
+  
+  cmd = new OracleCommand("SELECT * FROM Dept " +  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn);  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
+  
+  da.SelectCommand = cmd;  
+  
+  // Create the InsertCommand.  
+  
+  cmd = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
+                       "VALUES (:pDeptNo, :pDName)", conn);  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
+  
+  da.InsertCommand = cmd;  
+  
+  return da;  
 }  
 ```  
  
@@ -1118,31 +1118,31 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
- 
- Dim da As OracleDataAdapter = New OracleDataAdapter()  
- Dim cmd As OracleCommand  
- 
- ' Create the SelectCommand.  
- 
- cmd = New OracleCommand("SELECT * FROM Dept " & _  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn)  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
- 
- da.SelectCommand = cmd  
- 
- ' Create the InsertCommand.  
- 
- cmd = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
-                      "VALUES (pDeptNo, pDName)", conn)  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
- 
- da.InsertCommand = cmd  
- 
- Return da  
+  
+  Dim da As OracleDataAdapter = New OracleDataAdapter()  
+  Dim cmd As OracleCommand  
+  
+  ' Create the SelectCommand.  
+  
+  cmd = New OracleCommand("SELECT * FROM Dept " & _  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn)  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
+  
+  da.SelectCommand = cmd  
+  
+  ' Create the InsertCommand.  
+  
+  cmd = New OracleCommand("INSERT INTO Dept (DeptNo, DName) " & _  
+                       "VALUES (pDeptNo, pDName)", conn)  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
+  
+  da.InsertCommand = cmd  
+  
+  Return da  
 End Function  
 ```  
  
@@ -1151,30 +1151,30 @@ End Function
 ```  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
- OracleDataAdapter da = new OracleDataAdapter();  
- OracleCommand cmd;  
- 
- // Create the SelectCommand.  
- 
- cmd = new OracleCommand("SELECT * FROM Dept " +  
-                      "WHERE DName = :pDName AND Loc = :pLoc", conn);  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
- 
- da.SelectCommand = cmd;  
- 
- // Create the InsertCommand.  
- 
- cmd = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
-                      "VALUES (:pDeptNo, :pDName)", conn);  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
- 
- da.InsertCommand = cmd;  
- 
- return da;  
+  OracleDataAdapter da = new OracleDataAdapter();  
+  OracleCommand cmd;  
+  
+  // Create the SelectCommand.  
+  
+  cmd = new OracleCommand("SELECT * FROM Dept " +  
+                       "WHERE DName = :pDName AND Loc = :pLoc", conn);  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
+  
+  da.SelectCommand = cmd;  
+  
+  // Create the InsertCommand.  
+  
+  cmd = new OracleCommand("INSERT INTO Dept (DeptNo, DName) " +  
+                       "VALUES (:pDeptNo, :pDName)", conn);  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
+  
+  da.InsertCommand = cmd;  
+  
+  return da;  
 }  
 ```  
  
@@ -1437,35 +1437,35 @@ The following example creates an <xref:System.Data.OracleClient.OracleDataAdapte
  
 ```  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
- 
- Dim da As OracleDataAdapter = New OracleDataAdapter()  
- Dim cmd As OracleCommand  
- Dim parm As OracleParameter  
- 
- ' Create the SelectCommand.  
- 
- cmd = New OracleCommand("SELECT * FROM Dept " & _  
-                      "WHERE DName = pDName AND Loc = pLoc", conn)  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
- 
- da.SelectCommand = cmd  
- 
- ' Create the UpdateCommand.  
- 
- cmd = New OracleCommand("UPDATE Dept SET DeptNo = pDeptNo, DName = pDName " & _  
-                      "WHERE DeptNo = poldDeptNo", conn)  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
- 
- parm = cmd.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo")  
- parm.SourceVersion = DataRowVersion.Original  
- 
- da.UpdateCommand = cmd  
- 
- Return da  
+  
+  Dim da As OracleDataAdapter = New OracleDataAdapter()  
+  Dim cmd As OracleCommand  
+  Dim parm As OracleParameter  
+  
+  ' Create the SelectCommand.  
+  
+  cmd = New OracleCommand("SELECT * FROM Dept " & _  
+                       "WHERE DName = pDName AND Loc = pLoc", conn)  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14)  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13)  
+  
+  da.SelectCommand = cmd  
+  
+  ' Create the UpdateCommand.  
+  
+  cmd = New OracleCommand("UPDATE Dept SET DeptNo = pDeptNo, DName = pDName " & _  
+                       "WHERE DeptNo = poldDeptNo", conn)  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo")  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName")  
+  
+  parm = cmd.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo")  
+  parm.SourceVersion = DataRowVersion.Original  
+  
+  da.UpdateCommand = cmd  
+  
+  Return da  
 End Function  
 ```  
  
@@ -1474,34 +1474,34 @@ End Function
 ```  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
- OracleDataAdapter da = new OracleDataAdapter();  
- OracleCommand cmd;  
- OracleParameter parm;  
- 
- // Create the SelectCommand.  
- 
- cmd = new OracleCommand("SELECT * FROM Dept " +  
-                      "WHERE DName = pDName AND Loc = pLoc", conn);  
- 
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
- cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
- 
- da.SelectCommand = cmd;  
- 
- // Create the UpdateCommand.  
- 
- cmd = new OracleCommand("UPDATE Dept SET DeptNo = pDeptNo, DName = pDName " +  
-                      "WHERE DeptNo = poldDeptNo", conn);  
- 
- cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
- cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
- 
- parm = cmd.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo");  
- parm.SourceVersion = DataRowVersion.Original;  
- 
- da.UpdateCommand = cmd;  
- 
- return da;  
+  OracleDataAdapter da = new OracleDataAdapter();  
+  OracleCommand cmd;  
+  OracleParameter parm;  
+  
+  // Create the SelectCommand.  
+  
+  cmd = new OracleCommand("SELECT * FROM Dept " +  
+                       "WHERE DName = pDName AND Loc = pLoc", conn);  
+  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14);  
+  cmd.Parameters.Add("pLoc", OracleType.NVarChar, 13);  
+  
+  da.SelectCommand = cmd;  
+  
+  // Create the UpdateCommand.  
+  
+  cmd = new OracleCommand("UPDATE Dept SET DeptNo = pDeptNo, DName = pDName " +  
+                       "WHERE DeptNo = poldDeptNo", conn);  
+  
+  cmd.Parameters.Add("pDeptNo", OracleType.Number, 2, "DeptNo");  
+  cmd.Parameters.Add("pDName", OracleType.NVarChar, 14, "DName");  
+  
+  parm = cmd.Parameters.Add("poldDeptNo", OracleType.Number, 2, "DeptNo");  
+  parm.SourceVersion = DataRowVersion.Original;  
+  
+  da.UpdateCommand = cmd;  
+  
+  return da;  
 }  
 ```  
  

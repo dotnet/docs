@@ -582,13 +582,13 @@ The fourth part of the code example is an entry in the Web.config file that is r
  
 ```  
 <webParts>  
- <personalization>  
-   <authorization>  
-     <allow users="UserAccount"  
-            roles="admin"  
-            verbs="enterSharedScope"/>  
-   </authorization>            
- </personalization>  
+  <personalization>  
+    <authorization>  
+      <allow users="UserAccount"  
+             roles="admin"  
+             verbs="enterSharedScope"/>  
+    </authorization>            
+  </personalization>  
 </webParts>  
 ```  
  

@@ -33,19 +33,19 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <processModel   
- enable="True" timeout="Infinite"   
- idleTimeout="Infinite"   
- shutdownTimeout="00:00:05" requestLimit="Infinite"  
- requestQueueLimit="5000" restartQueueLimit="10"   
- memoryLimit="60" webGarden="False" cpuMask="0xffffffff"   
- userName="machine" password="AutoGenerate" logLevel="Errors"  
- clientConnectedCheck="00:00:05"   
- comAuthenticationLevel="Connect" comImpersonationLevel="Impersonate"  
- responseDeadlockInterval="00:03:00"   
- responseRestartDeadlockInterval="00:03:00" autoConfig="True"  
- maxWorkerThreads="20" maxIoThreads="20" minWorkerThreads="1"  
- minIoThreads="1" serverErrorMessageFile="" pingFrequency="Infinite"  
- pingTimeout="Infinite" asyncOption="20" maxAppDomains="2000"   
+  enable="True" timeout="Infinite"   
+  idleTimeout="Infinite"   
+  shutdownTimeout="00:00:05" requestLimit="Infinite"  
+  requestQueueLimit="5000" restartQueueLimit="10"   
+  memoryLimit="60" webGarden="False" cpuMask="0xffffffff"   
+  userName="machine" password="AutoGenerate" logLevel="Errors"  
+  clientConnectedCheck="00:00:05"   
+  comAuthenticationLevel="Connect" comImpersonationLevel="Impersonate"  
+  responseDeadlockInterval="00:03:00"   
+  responseRestartDeadlockInterval="00:03:00" autoConfig="True"  
+  maxWorkerThreads="20" maxIoThreads="20" minWorkerThreads="1"  
+  minIoThreads="1" serverErrorMessageFile="" pingFrequency="Infinite"  
+  pingTimeout="Infinite" asyncOption="20" maxAppDomains="2000"   
 />  
 ```  
  

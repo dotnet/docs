@@ -30,9 +30,9 @@ In the following SQL code example, the result shape depends on the input (`shape
 CREATE PROCEDURE VariableResultShapes(@shape int)  
 AS  
 if(@shape = 1)  
-   select CustomerID, ContactTitle, CompanyName from customers  
+    select CustomerID, ContactTitle, CompanyName from customers  
 else if(@shape = 2)  
-   select OrderID, ShipName from orders  
+    select OrderID, ShipName from orders  
 ```  
  
 [!code-csharp[DLinqSprox#4](~/samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/northwind-sprox.cs#4)]

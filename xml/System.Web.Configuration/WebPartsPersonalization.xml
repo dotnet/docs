@@ -27,23 +27,23 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <webParts>  
-   <personalization  
-     defaultProvider="AspNetSqlPersonalizationProvider">  
-       <!—- Providers may only be defined at the   
-           application level -->  
-     <providers>  
-        <add name="AspNetSqlPersonalizationProvider"  
+  <webParts>  
+    <personalization  
+      defaultProvider="AspNetSqlPersonalizationProvider">  
+        <!—- Providers may only be defined at the   
+            application level -->  
+      <providers>  
+         <add name="AspNetSqlPersonalizationProvider"  
 type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"  
-           connectionStringName="LocalSqlServer"  
-           applicationName="/" />        
-     </providers>  
-     <authorization>  
-       <deny users="*" verbs="enterSharedScope" />  
-       <allow users="*" verbs="modifyState" />  
-     </authorization>  
-   </personalization>  
- </webParts>   
+            connectionStringName="LocalSqlServer"  
+            applicationName="/" />        
+      </providers>  
+      <authorization>  
+        <deny users="*" verbs="enterSharedScope" />  
+        <allow users="*" verbs="modifyState" />  
+      </authorization>  
+    </personalization>  
+  </webParts>   
 </system.web>  
 ```  
  

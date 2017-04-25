@@ -70,31 +70,31 @@ The following XAML markup shows the main elements needed to customize a window u
  
 ```  
 <Style x:Key="StandardStyle" TargetType="{x:Type local:MainWindow}">  
-   <Setter Property="shell:WindowChrome.WindowChrome">  
-       <Setter.Value>  
-           <shell:WindowChrome />  
-       </Setter.Value>  
-   </Setter>  
-   <Setter Property="Template">  
-       <Setter.Value>  
-           <ControlTemplate TargetType="{x:Type local:MainWindow}">  
-               <Grid>  
-                   <Border Background="White"  
-                           Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
-                       <ContentPresenter Content="{TemplateBinding Content}" />  
-                   </Border>  
-                   <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"   
-                              VerticalAlignment="Top" HorizontalAlignment="Left"   
-                              Margin="36,8,0,0"/>  
-                   <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
-                          VerticalAlignment="Top" HorizontalAlignment="Left"  
-                          Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
-                          Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
-                          shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
-               </Grid>  
-           </ControlTemplate>  
-       </Setter.Value>  
-   </Setter>  
+    <Setter Property="shell:WindowChrome.WindowChrome">  
+        <Setter.Value>  
+            <shell:WindowChrome />  
+        </Setter.Value>  
+    </Setter>  
+    <Setter Property="Template">  
+        <Setter.Value>  
+            <ControlTemplate TargetType="{x:Type local:MainWindow}">  
+                <Grid>  
+                    <Border Background="White"  
+                            Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
+                        <ContentPresenter Content="{TemplateBinding Content}" />  
+                    </Border>  
+                    <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"   
+                               VerticalAlignment="Top" HorizontalAlignment="Left"   
+                               Margin="36,8,0,0"/>  
+                    <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
+                           VerticalAlignment="Top" HorizontalAlignment="Left"  
+                           Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
+                           Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
+                           shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
+                </Grid>  
+            </ControlTemplate>  
+        </Setter.Value>  
+    </Setter>  
 </Style>  
 ```  
  
@@ -102,9 +102,9 @@ The first setter attaches the WindowChrome to the window. It uses all default va
  
 ```  
 <Setter Property="shell:WindowChrome.WindowChrome">  
-   <Setter.Value>  
-       <shell:WindowChrome />  
-   </Setter.Value>  
+    <Setter.Value>  
+        <shell:WindowChrome />  
+    </Setter.Value>  
 </Setter>  
 ```  
  
@@ -112,8 +112,8 @@ The window template must specify a content presenter to display the contents of 
  
 ```  
 <Border Background="White"  
-   Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
-   <ContentPresenter Content="{TemplateBinding Content}" />  
+    Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
+    <ContentPresenter Content="{TemplateBinding Content}" />  
 </Border>  
 ```  
  
@@ -121,14 +121,14 @@ The application icon and title are not displayed by the WindowChrome class; they
  
 ```  
 <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
-      VerticalAlignment="Top" HorizontalAlignment="Left"  
-      Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
-      Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
-      shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
- 
+       VerticalAlignment="Top" HorizontalAlignment="Left"  
+       Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
+       Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
+       shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
+  
 <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"   
-          VerticalAlignment="Top" HorizontalAlignment="Left"   
-          Margin="36,8,0,0"/>  
+           VerticalAlignment="Top" HorizontalAlignment="Left"   
+           Margin="36,8,0,0"/>  
 ```  
  
  ]]></format>

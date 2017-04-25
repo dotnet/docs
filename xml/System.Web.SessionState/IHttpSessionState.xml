@@ -193,12 +193,12 @@ The following code example sets the `cookieless` attribute of the [sessionState 
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState  
-     mode="InProc"  
-     cookieless="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState  
+      mode="InProc"  
+      cookieless="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  

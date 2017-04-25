@@ -35,40 +35,40 @@ The following example shows how to replace the numeric value of an enumeration w
  
 ```csharp  
 public enum eReorderLvl {  
-       zero = 0,  
-       five = 5,  
-       ten=10,  
-       fifteen=15,  
-       twenty=20,  
-       twenty_five=25,  
-       thirty=30  
-   }  
-   [MetadataType(typeof(Product_MD))]  
-   public partial class Product {  
-       public class Product_MD {  
-           [EnumDataType(typeof(eReorderLvl))]  
-           public object ReorderLevel { get; set; }  
-       }  
-   }  
+        zero = 0,  
+        five = 5,  
+        ten=10,  
+        fifteen=15,  
+        twenty=20,  
+        twenty_five=25,  
+        thirty=30  
+    }  
+    [MetadataType(typeof(Product_MD))]  
+    public partial class Product {  
+        public class Product_MD {  
+            [EnumDataType(typeof(eReorderLvl))]  
+            public object ReorderLevel { get; set; }  
+        }  
+    }  
 ```  
  
 ```vb  
 Imports Public Enum eReorderLvl  
-   zero = 0  
-   five = 5  
-   ten = 10  
-   fifteen = 15  
-   twenty = 20  
-   twenty_five = 25  
-   thirty = 30  
+    zero = 0  
+    five = 5  
+    ten = 10  
+    fifteen = 15  
+    twenty = 20  
+    twenty_five = 25  
+    thirty = 30  
 End Enum  
 <MetadataType(GetType(Product_MD))>  _  
 Public Class Product  
-   Public Class Product_MD  
-       <EnumDataType(GetType(eReorderLvl))>  _  
-       Public Property ReorderLevel As Object  
-       End Property  
-   End Class  
+    Public Class Product_MD  
+        <EnumDataType(GetType(eReorderLvl))>  _  
+        Public Property ReorderLevel As Object  
+        End Property  
+    End Class  
 End Class  
 ```  
  

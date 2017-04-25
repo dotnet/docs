@@ -426,17 +426,17 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```vb  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.Direction = ParameterDirection.Output  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.Direction = ParameterDirection.Output  
 End Sub 'CreateOleDbParameter  
 ```  
  
 ```csharp  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.Direction = ParameterDirection.Output;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.Direction = ParameterDirection.Output;  
+ }  
 ```  
  
  ]]></format>
@@ -473,19 +473,19 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```vb  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.IsNullable = True  
-   parameter.Direction = ParameterDirection.Output  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.IsNullable = True  
+    parameter.Direction = ParameterDirection.Output  
 End Sub 'CreateOleDbParameter  
 ```  
  
 ```csharp  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.IsNullable = true;  
-   parameter.Direction = ParameterDirection.Output;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.IsNullable = true;  
+    parameter.Direction = ParameterDirection.Output;  
+ }  
 ```  
  
  ]]></format>
@@ -583,8 +583,8 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.Direction = ParameterDirection.Output  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.Direction = ParameterDirection.Output  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -592,10 +592,10 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.Direction = ParameterDirection.Output;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.Direction = ParameterDirection.Output;  
+ }  
 ```  
  
  ]]></format>
@@ -649,10 +649,10 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
-   parameter.Value = 3.1416  
-   parameter.Precision = 8  
-   parameter.Scale = 4  
+    Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
+    parameter.Value = 3.1416  
+    parameter.Precision = 8  
+    parameter.Scale = 4  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -660,12 +660,12 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
-   parameter.Value = 3.1416;  
-   parameter.Precision = 8;  
-   parameter.Scale = 4;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
+    parameter.Value = 3.1416;  
+    parameter.Precision = 8;  
+    parameter.Scale = 4;  
+ }  
 ```  
  
  ]]></format>
@@ -767,10 +767,10 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
-   parameter.Value = 3.1416  
-   parameter.Precision = 8  
-   parameter.Scale = 4  
+    Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
+    parameter.Value = 3.1416  
+    parameter.Precision = 8  
+    parameter.Scale = 4  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -778,12 +778,12 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
-   parameter.Value = 3.1416;  
-   parameter.Precision = 8;  
-   parameter.Scale = 4;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
+    parameter.Value = 3.1416;  
+    parameter.Precision = 8;  
+    parameter.Scale = 4;  
+ }  
 ```  
  
  ]]></format>
@@ -832,11 +832,11 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar)  
-   parameter.Direction = ParameterDirection.Output  
-   parameter.Size = myValue.Length  
-   parameter.Value = myValue  
+    Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar)  
+    parameter.Direction = ParameterDirection.Output  
+    parameter.Size = myValue.Length  
+    parameter.Value = myValue  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -844,13 +844,13 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   string myValue = "12 foot scarf - multiple colors, one previous owner";  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar);  
-   parameter.Direction = ParameterDirection.Output;  
-   parameter.Size = myValue.Length;  
-   parameter.Value = myValue;  
-}  
+ {  
+    string myValue = "12 foot scarf - multiple colors, one previous owner";  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar);  
+    parameter.Direction = ParameterDirection.Output;  
+    parameter.Size = myValue.Length;  
+    parameter.Value = myValue;  
+ }  
 ```  
  
  ]]></format>
@@ -889,8 +889,8 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.SourceColumn = "Description"  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.SourceColumn = "Description"  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -898,10 +898,10 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.SourceColumn = "Description";  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.SourceColumn = "Description";  
+ }  
 ```  
  
  ]]></format>
@@ -934,7 +934,7 @@ public void CreateOleDbParameter()
  
 ```  
 ((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
- (FieldName = @Original_FieldName))  
+  (FieldName = @Original_FieldName))  
 ```  
  
 If <xref:System.Data.OleDb.OleDbParameter.SourceColumnNullMapping%2A> for the field is false, <xref:System.Data.Common.DbCommandBuilder> generates the following WHERE clause:  
@@ -979,9 +979,9 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.SourceColumn = "Description"  
-   parameter.SourceVersion = DataRowVersion.Current  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.SourceColumn = "Description"  
+    parameter.SourceVersion = DataRowVersion.Current  
 End Sub  
 ```  
  
@@ -989,11 +989,11 @@ End Sub
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.SourceColumn = "Description";  
-   parameter.SourceVersion = DataRowVersion.Current;  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.SourceColumn = "Description";  
+    parameter.SourceVersion = DataRowVersion.Current;  
+ }  
 ```  
  
  ]]></format>
@@ -1092,8 +1092,8 @@ The following example creates an <xref:System.Data.OleDb.OleDbParameter> and set
  
 ```  
 Public Sub CreateOleDbParameter()  
-   Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-   parameter.Value = "garden hose"  
+    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
+    parameter.Value = "garden hose"  
 End Sub 'CreateOleDbParameter  
 ```  
  
@@ -1101,10 +1101,10 @@ End Sub 'CreateOleDbParameter
  
 ```  
 public void CreateOleDbParameter()   
-{  
-   OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-   parameter.Value = "garden hose";  
-}  
+ {  
+    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
+    parameter.Value = "garden hose";  
+ }  
 ```  
  
  ]]></format>

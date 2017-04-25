@@ -33,10 +33,10 @@ To register a customized handler for a particular file name extension, you must 
  
 ```  
 <system.web>  
- <httpHandlers>  
-   <add verb="*" path="*.abc"   
-       type="Contoso.Routing.CustomRoutingHandler" />  
- </httpHandlers>  
+  <httpHandlers>  
+    <add verb="*" path="*.abc"   
+        type="Contoso.Routing.CustomRoutingHandler" />  
+  </httpHandlers>  
 </system.web>  
 ```  
  
@@ -44,11 +44,11 @@ The following example shows how to register the same handler for an ASP.NET Web 
  
 ```  
 <system.webServer>  
- <handlers>  
-   <add verb="*" path="*.abc"  
-       type="Contoso.Routing.CustomRoutingHandler"   
-       resourceType="Unspecified" />  
- </handlers>  
+  <handlers>  
+    <add verb="*" path="*.abc"  
+        type="Contoso.Routing.CustomRoutingHandler"   
+        resourceType="Unspecified" />  
+  </handlers>  
 </system.webServer>  
 ```  
  

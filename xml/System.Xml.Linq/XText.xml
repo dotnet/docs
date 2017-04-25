@@ -75,21 +75,21 @@ You typically do not create text nodes by using the <xref:System.Xml.Linq.XText>
 The following example creates an element that contains a text node.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root", "Some text");  
+  
+                XElement root = new XElement("Root", "Some text");  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root>Some text</Root>  
+  
+                Dim root As XElement = <Root>Some text</Root>  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root>Some text</Root>  
 ```  
  
@@ -171,40 +171,40 @@ The following example creates an XML tree that contains a number of types of nod
 Note that `Child2` contains an <xref:System.Xml.Linq.XText> node, implicitly converted from the string content.  
  
 ```csharp  
- 
-               // Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
+  
+                // Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
 XDocument xmlTree = new XDocument(  
-   new XComment("a comment"),  
-   new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\""),  
-   new XElement("Root",  
-       new XAttribute("Att", "attContent"),  
-       new XElement("Child1",  
-           new XCData("CDATA content")  
-       ),  
-       new XElement("Child2", "Text content")  
-   )  
+    new XComment("a comment"),  
+    new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\""),  
+    new XElement("Root",  
+        new XAttribute("Att", "attContent"),  
+        new XElement("Child1",  
+            new XCData("CDATA content")  
+        ),  
+        new XElement("Child2", "Text content")  
+    )  
 );  
- 
+  
 foreach (XNode node in xmlTree.DescendantNodes())  
 {  
-   Console.WriteLine(node.NodeType);  
-   if (node.NodeType == XmlNodeType.Element)  
-   {  
-       foreach (XAttribute att in ((XElement)node).Attributes())  
-           Console.WriteLine(att.NodeType);  
-   }  
+    Console.WriteLine(node.NodeType);  
+    if (node.NodeType == XmlNodeType.Element)  
+    {  
+        foreach (XAttribute att in ((XElement)node).Attributes())  
+            Console.WriteLine(att.NodeType);  
+    }  
 }  
 ```  
  
 ```vb  
- 
-               ' Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
+  
+                ' Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
 Dim xmlTree As XDocument = _  
-   <?xml version='1.0'?>  
-   <!-- a comment -->  
-   <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
-   <Root Att="attContent">  
-       <Child1>  
+    <?xml version='1.0'?>  
+    <!-- a comment -->  
+    <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
+    <Root Att="attContent">  
+        <Child1>  
             <![CDATA[CDATA content]]]><![CDATA[]>  
         </Child1>  
         <Child2>Text content</Child2>  
@@ -220,9 +220,9 @@ For Each node As XNode In xmlTree.DescendantNodes
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Comment  
 ProcessingInstruction  
@@ -233,7 +233,7 @@ CDATA
 Element  
 Text  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,26 +275,26 @@ Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and 
 The following example shows getting and setting this property.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root", "Some text");  
+  
+                XElement root = new XElement("Root", "Some text");  
 XText txtNode = root.Nodes().OfType<XText>().First();  
 Console.WriteLine(txtNode.Value);  
 txtNode.Value = "New text";  
 Console.WriteLine(txtNode.Value);  
- 
+  
 root.Value = "Newer text";  
 txtNode = root.Nodes().OfType<XText>().First();  
 Console.WriteLine(txtNode.Value);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root>Some text</Root>  
+  
+                Dim root As XElement = <Root>Some text</Root>  
 Dim txtNode As XText = root.Nodes().OfType(Of XText).First()  
 Console.WriteLine(txtNode.Value)  
 txtNode.Value = "New text"  
 Console.WriteLine(txtNode.Value)  
- 
+  
 root.Value = "Newer text"  
 txtNode = root.Nodes().OfType(Of XText).First()  
 Console.WriteLine(txtNode.Value)  

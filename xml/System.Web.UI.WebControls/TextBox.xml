@@ -78,17 +78,17 @@ For a list of initial property values for an instance of <xref:System.Web.UI.Web
 <asp:TextBox  
     AccessKey="string"  
     AutoCompleteType="None|Disabled|Cellular|Company|Department|  
-       DisplayName|Email|FirstName|Gender|HomeCity|HomeCountryRegion|  
-       HomeFax|HomePhone|HomeState|HomeStreetAddress|HomeZipCode|  
-       Homepage|JobTitle|LastName|MiddleName|Notes|Office|Pager|  
-       BusinessCity|BusinessCountryRegion|BusinessFax|BusinessPhone|  
-       BusinessState|BusinessStreetAddress|BusinessUrl|  
-       BusinessZipCode|Search"  
+        DisplayName|Email|FirstName|Gender|HomeCity|HomeCountryRegion|  
+        HomeFax|HomePhone|HomeState|HomeStreetAddress|HomeZipCode|  
+        Homepage|JobTitle|LastName|MiddleName|Notes|Office|Pager|  
+        BusinessCity|BusinessCountryRegion|BusinessFax|BusinessPhone|  
+        BusinessState|BusinessStreetAddress|BusinessUrl|  
+        BusinessZipCode|Search"  
     AutoPostBack="True|False"  
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CausesValidation="True|False"  
     Columns="integer"  
@@ -101,7 +101,7 @@ For a list of initial property values for an instance of <xref:System.Web.UI.Web
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -143,101 +143,101 @@ The following code example demonstrates how to use the <xref:System.Web.UI.WebCo
  
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-     protected void AddButton_Click(Object sender, EventArgs e)  
-     {  
-        int Answer;  
-        Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
-        AnswerMessage.Text = Answer.ToString();  
-     }  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Page Language="vb" AutoEventWireup="false" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-       Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
-           Dim Answer As Integer  
-           Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
-           AnswerMessage.Text = Answer.ToString()  
-       End Sub  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
@@ -627,101 +627,101 @@ The following code example demonstrates how to use the <xref:System.Web.UI.WebCo
  
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-     protected void AddButton_Click(Object sender, EventArgs e)  
-     {  
-        int Answer;  
-        Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
-        AnswerMessage.Text = Answer.ToString();  
-     }  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Page Language="vb" AutoEventWireup="false" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-       Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
-           Dim Answer As Integer  
-           Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
-           AnswerMessage.Text = Answer.ToString()  
-       End Sub  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
@@ -1166,101 +1166,101 @@ The following code example demonstrates how to use the <xref:System.Web.UI.WebCo
  
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-     protected void AddButton_Click(Object sender, EventArgs e)  
-     {  
-        int Answer;  
-        Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
-        AnswerMessage.Text = Answer.ToString();  
-     }  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Page Language="vb" AutoEventWireup="false" %>  
- 
+  
 <!DOCTYPE html>  
 <html>   
- 
+  
 <head>  
-   <title>TextBox Example</title>  
-   <script runat="server">  
-       Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
-           Dim Answer As Integer  
-           Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
-           AnswerMessage.Text = Answer.ToString()  
-       End Sub  
-   </script>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
 </head>  
 <body>  
- <form id="form1" runat="server">  
-   <h3> TextBox Example </h3>  
-   <p>  
-       <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       +  
-       <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
-       =  
-       <asp:Label ID="AnswerMessage" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
-   </p>  
-   <p>  
-       <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
-            ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
-            runat="server"/>  
-       <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
-            Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
-            ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
-            runat="server"/>  
-   </p>  
- </form>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
 </body>  
 </html>  
 ```  
@@ -1300,20 +1300,20 @@ For more information about handling events, see [NIB: Consuming Events](http://m
 The following example shows how you can use this event to respond to changes in the <xref:System.Web.UI.WebControls.TextBox> control. The code displays the contents of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property of a TextBox control (called TextBox1) in a label (called Label1)  when the `Text` property is changed. User input in a Web Forms page can include potentially malicious client script. By default, the Web Forms page validates that user input does not include script or HTML elements. For more information, see [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b).  
  
 ```vb  
- 
+  
 Protected Sub TextBox1_TextChanged(ByVal sender As Object, _  
-       ByVal e As System.EventArgs) Handles TextBox1.TextChanged  
-  Label1.Text = Server.HtmlEncode(TextBox1.Text)  
+        ByVal e As System.EventArgs) Handles TextBox1.TextChanged  
+   Label1.Text = Server.HtmlEncode(TextBox1.Text)  
 End Sub  
- 
+  
 ```  
  
 ```csharp  
 protected void TextBox1_TextChanged(object sender, EventArgs e)  
 {  
-  Label1.Text = Server.HtmlEncode(TextBox1.Text);  
+   Label1.Text = Server.HtmlEncode(TextBox1.Text);  
 }  
- 
+  
 ```  
  
  ]]></format>

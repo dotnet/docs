@@ -50,10 +50,10 @@ A customized transformer must be specified in the `<transformers>` section of th
  
 ```  
 <webParts enableExport="true">  
-   <transformers>  
-      <add name="RowToStringTransformer"  
-         type="Samples.AspNet.VB.Controls.RowToStringTransformer" />  
-   </transformers>  
+    <transformers>  
+       <add name="RowToStringTransformer"  
+          type="Samples.AspNet.VB.Controls.RowToStringTransformer" />  
+    </transformers>  
 </webParts>  
 ```  
  
@@ -61,10 +61,10 @@ A customized transformer must be specified in the `<transformers>` section of th
  
 ```  
 <webParts enableExport="true">  
-   <transformers>  
-      <add name="RowToStringTransformer"  
-         type="Samples.AspNet.CS.Controls.RowToStringTransformer" />  
-   </transformers>  
+    <transformers>  
+       <add name="RowToStringTransformer"  
+          type="Samples.AspNet.CS.Controls.RowToStringTransformer" />  
+    </transformers>  
 </webParts>  
 ```  
  

@@ -1118,12 +1118,12 @@ The following code example shows how to adjust the existing font to make it bold
  
 ```csharp  
 listViewItem1.Font = new Font(listViewItem1.Font,   
-   listViewItem1.Font.Style | FontStyle.Bold);  
+    listViewItem1.Font.Style | FontStyle.Bold);  
 ```  
  
 ```vb  
 ListViewItem1.Font = New Font(ListViewItem1.Font, _   
-   ListViewItem1.Font.Style Or FontStyle.Bold)  
+    ListViewItem1.Font.Style Or FontStyle.Bold)  
 ```  
  
  ]]></format>

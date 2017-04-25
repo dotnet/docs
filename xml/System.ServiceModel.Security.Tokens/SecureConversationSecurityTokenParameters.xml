@@ -432,15 +432,15 @@ The following configuration exhibits this behavior.
  
 ```  
 <customBinding>  
- <binding name="Cancellation">  
-      <textMessageEncoding />  
-       <security   
-           requireSecurityContextCancellation="false">  
-             <secureConversationBootstrap   
-                requireSecurityContextCancellation="true" />  
-     </security>  
-   <httpTransport />  
- </binding>  
+  <binding name="Cancellation">  
+       <textMessageEncoding />  
+        <security   
+            requireSecurityContextCancellation="false">  
+              <secureConversationBootstrap   
+                 requireSecurityContextCancellation="true" />  
+      </security>  
+    <httpTransport />  
+  </binding>  
 </customBinding>  
 ```  
  

@@ -28,17 +28,17 @@ To configure an <xref:System.Diagnostics.XmlWriterTraceListener>, edit the confi
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="xmlListener"   
-         type="System.Diagnostics.XmlWriterTraceListener"   
-         initializeData="xmlOutput.xml"   
-         traceOutputOptions="ProcessId, DateTime" />  
-       <remove name="Default" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="xmlListener"   
+          type="System.Diagnostics.XmlWriterTraceListener"   
+          initializeData="xmlOutput.xml"   
+          traceOutputOptions="ProcessId, DateTime" />  
+        <remove name="Default" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -211,7 +211,7 @@ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A>
  
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
-   TraceOptions.Timestamp  
+    TraceOptions.Timestamp  
 ```  
  
  ]]></format>
@@ -246,7 +246,7 @@ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A>
  
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
-   TraceOptions.Timestamp.  
+    TraceOptions.Timestamp.  
 ```  
  
  ]]></format>
@@ -286,7 +286,7 @@ The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name
  
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =  
-   TraceOptions.Timestamp.  
+    TraceOptions.Timestamp.  
 ```  
  
  ]]></format>

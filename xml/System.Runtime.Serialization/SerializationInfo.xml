@@ -165,24 +165,24 @@ If two values are added with names that differ only by case, no exception will b
 ```csharp  
 void ISerializable.GetObject(SerializationInfo info, StreamingContext context)  
 {  
-  // This will not cause an exception to be thrown.  
-  info.AddValue("ABC", true);  
-  info.AddValue("abc", false);  
-  // However, this will cause the SerializationException to be thrown.  
-  info.AddValue("XYZ", true);  
-  info.AddValue("XYZ", false);  
+   // This will not cause an exception to be thrown.  
+   info.AddValue("ABC", true);  
+   info.AddValue("abc", false);  
+   // However, this will cause the SerializationException to be thrown.  
+   info.AddValue("XYZ", true);  
+   info.AddValue("XYZ", false);  
 }  
 ```  
  
 ```vb  
 Private Sub GetObjectData(ByVal info As SerializationInfo, _  
 ByVal context As StreamingContext)  
-  ' This will not cause an exception to be thrown.  
-  info.AddValue("ABC", "upper case")  
-  info.AddValue("abc", "lower case")  
-  ' However, this will cause the SerializationException to be thrown.  
-  info.AddValue("XYZ", "same case")  
-  info.AddValue("XYZ", "same case")  
+   ' This will not cause an exception to be thrown.  
+   info.AddValue("ABC", "upper case")  
+   info.AddValue("abc", "lower case")  
+   ' However, this will cause the SerializationException to be thrown.  
+   info.AddValue("XYZ", "same case")  
+   info.AddValue("XYZ", "same case")  
 End Sub  
 ```  
  

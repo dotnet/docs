@@ -53,36 +53,36 @@ The following example uses the <xref:System.Speech.Recognition.SrgsGrammar.SrgsO
 ```  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -117,34 +117,34 @@ public void WorldSoccerWinners ()
 The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. It creates a public rule named `WorldCupWinner`. It then creates two <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> objects using <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objects that contain arrays of new <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. To see the grammar that this example generates, see <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.%23ctor%2A>.  
  
 ```csharp  
-public void WorldSoccerWinners ()  
+ public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"), new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"), new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"), new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"), new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
 }  
 ```  
  
@@ -186,31 +186,31 @@ The following example creates a grammar that recognizes the phrase "A nation tha
 ```  
 public void WorldSoccerWinners ()  
 {  
-   // Create a grammar from an SRGSDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument srgsGrammar = new SrgsDocument ();  
- SrgsRule winnerRule = new SrgsRule ("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add (new SrgsItem ("A nation that has won the world cup is"));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf (new string[] {"England","France","Germany","Italy"});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf (new string[] {"Argentina","Brazil","Uruguay"});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the grammar and make winnerRule  
- // the root rule of the grammar.  
- srgsGrammar.Rules.Add (new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- srgsGrammar.Root = winnerRule;  
+    // Create a grammar from an SRGSDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument srgsGrammar = new SrgsDocument ();  
+  SrgsRule winnerRule = new SrgsRule ("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add (new SrgsItem ("A nation that has won the world cup is"));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf (new string[] {"England","France","Germany","Italy"});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf (new string[] {"Argentina","Brazil","Uruguay"});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the grammar and make winnerRule  
+  // the root rule of the grammar.  
+  srgsGrammar.Rules.Add (new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  srgsGrammar.Root = winnerRule;  
 }  
 ```  
  
@@ -249,35 +249,35 @@ The following example creates a grammar that recognizes the phrase "A nation tha
 ```  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany")});  
- oneOfEurope.Add(new SrgsItem("Italy"));  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany")});  
+  oneOfEurope.Add(new SrgsItem("Italy"));  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
 }  
 ```  
  

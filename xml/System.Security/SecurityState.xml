@@ -25,13 +25,13 @@ For example, if you want to access a Web camera in your library code, you would 
 WebcamSecurityState securityState = new WebcamSecurityState("Safe access to Webcam", WebcamSecurityOptions.SafeAccess);  
 try  
 {  
-  securityState.EnsureState();  
-  // Allocate memory.  
-  }  
+   securityState.EnsureState();  
+   // Allocate memory.  
+   }  
 catch (ApplicationException e)  
 {  
-   // Handle any exception that is thrown.  
-   System.Diagnostics.Debug.WriteLine(e.Message);  
+    // Handle any exception that is thrown.  
+    System.Diagnostics.Debug.WriteLine(e.Message);  
 }  
 ```  
  
@@ -41,28 +41,28 @@ To process the call the <xref:System.AppDomainManager> must be made aware of `We
 [SecurityCritical]  
 public override bool CheckSecuritySettings(System.Security.SecurityState securityState)  
 {  
-  switch (securityState.ToString())  
-  {  
-     case "WebcamSecurityState":  
-     {  
-         if ((securityState as WebcamSecurityState).Options == WebcamSecurityOptions.SafeAccess)  
-             return PromptUser((securityState as WebcamSecurityState).Description);  
-          return false;  
-     }  
-  }  
-     return false;  
+   switch (securityState.ToString())  
+   {  
+      case "WebcamSecurityState":  
+      {  
+          if ((securityState as WebcamSecurityState).Options == WebcamSecurityOptions.SafeAccess)  
+              return PromptUser((securityState as WebcamSecurityState).Description);  
+           return false;  
+      }  
+   }  
+      return false;  
 }  
 private bool PromptUser(string text)  
 {  
-  // Replace the OpenFileDialog with a custom user prompt.  
-  OpenFileDialog o = new OpenFileDialog();  
-  o.Title = text;  
-  if (o.ShowDialog() == DialogResult.OK)  
-     return true;  
-  else  
-     return false;  
+   // Replace the OpenFileDialog with a custom user prompt.  
+   OpenFileDialog o = new OpenFileDialog();  
+   o.Title = text;  
+   if (o.ShowDialog() == DialogResult.OK)  
+      return true;  
+   else  
+      return false;  
 }  
- 
+  
 ```  
  
   
@@ -73,27 +73,27 @@ The following example shows how to override the <xref:System.Security.SecuritySt
 ```  
 [SecurityCritical]  
 public enum WebcamSecurityOptions  
-   {  
-       SafeAccess,  
-       FullAccess  
-   }  
+    {  
+        SafeAccess,  
+        FullAccess  
+    }  
 [SecurityCritical]  
 public class WebcamSecurityState : SecurityState  
 {  
-   public WebcamSecurityState(string description, WebcamSecurityOptions options)  
-   {  
-       Options = options;  
-       Description = description;  
-   }  
-   public WebcamSecurityOptions Options { get; set; }  
-   public string Description { get; set; }  
-   public override void EnsureState()  
-   {  
-      if (!IsStateAvailable())  
-          throw new ApplicationException("WebcamSecurityState not available");  
-   }  
-}  
- 
+    public WebcamSecurityState(string description, WebcamSecurityOptions options)  
+    {  
+        Options = options;  
+        Description = description;  
+    }  
+    public WebcamSecurityOptions Options { get; set; }  
+    public string Description { get; set; }  
+    public override void EnsureState()  
+    {  
+       if (!IsStateAvailable())  
+           throw new ApplicationException("WebcamSecurityState not available");  
+    }  
+ }  
+  
 ```  
  
  ]]></format>
@@ -144,10 +144,10 @@ The implementation of this method should be similar to the following example.
 ```  
 public override void EnsureState()  
 {  
-   if (!IsStateAvailable())  
-         throw new ApplicationException("WebcamSecurityState not available");  
+    if (!IsStateAvailable())  
+          throw new ApplicationException("WebcamSecurityState not available");  
 }  
- 
+  
 ```  
  
  ]]></format>

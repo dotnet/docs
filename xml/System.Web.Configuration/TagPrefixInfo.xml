@@ -35,19 +35,19 @@ The same `tagPrefix` value can be used to map to multiple assemblies or namespac
 This example demonstrates how to specify values declaratively for several attributes of the `controls` section, which can also be accessed as members of the <xref:System.Web.Configuration.TagPrefixInfo> class.  
  
 ```  
- 
+  
 <system.web>  
- <pages>  
-   <controls>  
-     <!—- Searches all linked assemblies for the namespace -->  
-     <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
-     <!-- Uses a specified assembly -->  
-     <add tagPrefix="MyTags2" namespace="MyNameSpace"   
-       assembly="MyAssembly"/>  
-     <!-- Uses the specified source for the user control -->  
-     <add tagprefix="MyTags3" tagname="MyCtrl" src="MyControl.ascx"/>  
-   </controls>  
-  </pages>  
+  <pages>  
+    <controls>  
+      <!—- Searches all linked assemblies for the namespace -->  
+      <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
+      <!-- Uses a specified assembly -->  
+      <add tagPrefix="MyTags2" namespace="MyNameSpace"   
+        assembly="MyAssembly"/>  
+      <!-- Uses the specified source for the user control -->  
+      <add tagprefix="MyTags3" tagname="MyCtrl" src="MyControl.ascx"/>  
+    </controls>  
+   </pages>  
 </system.web>  
 ```  
  

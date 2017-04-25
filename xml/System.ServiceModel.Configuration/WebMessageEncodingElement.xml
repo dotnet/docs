@@ -30,36 +30,36 @@ using System.Text;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
+  
 class Program  
 {  
- static void Main(string[] args)  
- {  
-     WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
-     Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
- 
-     int maxReadPoolSize = webMEE.MaxReadPoolSize;  
-     Console.WriteLine("The MaxReadPoolSize is: {0}", maxReadPoolSize);  
-     maxReadPoolSize = 128;  
-     Console.WriteLine("The MaxReadPoolSize has been changed to: {0}", maxReadPoolSize);  
- 
-     int maxWritePoolSize = webMEE.MaxWritePoolSize;  
-     Console.WriteLine("The MaxWritePoolSize is: {0}", maxWritePoolSize);  
-     maxWritePoolSize = 48;  
-     Console.WriteLine("The MaxWritePoolSize has been changed to: {0}", maxWritePoolSize);  
- 
-     Encoding webMessageEncoding = webMEE.WriteEncoding;  
-     Console.WriteLine("The write encoding is: {0}", webMessageEncoding);  
-     webMessageEncoding = UnicodeEncoding.Unicode;  
-     Console.WriteLine("The write encoding has been changed to: {0}", webMessageEncoding);  
- 
-     XmlDictionaryReaderQuotasElement webMessageReaderQuotasElement = webMEE.ReaderQuotas;  
-     Console.WriteLine("The max depth of the reader Quotas is: {0}", webMessageReaderQuotasElement.MaxDepth);  
- 
-     Console.WriteLine("Press <ENTER> to terminate the program.");  
-     Console.ReadLine();  
-       }  
-   }  
+  static void Main(string[] args)  
+  {  
+      WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
+      Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
+  
+      int maxReadPoolSize = webMEE.MaxReadPoolSize;  
+      Console.WriteLine("The MaxReadPoolSize is: {0}", maxReadPoolSize);  
+      maxReadPoolSize = 128;  
+      Console.WriteLine("The MaxReadPoolSize has been changed to: {0}", maxReadPoolSize);  
+  
+      int maxWritePoolSize = webMEE.MaxWritePoolSize;  
+      Console.WriteLine("The MaxWritePoolSize is: {0}", maxWritePoolSize);  
+      maxWritePoolSize = 48;  
+      Console.WriteLine("The MaxWritePoolSize has been changed to: {0}", maxWritePoolSize);  
+  
+      Encoding webMessageEncoding = webMEE.WriteEncoding;  
+      Console.WriteLine("The write encoding is: {0}", webMessageEncoding);  
+      webMessageEncoding = UnicodeEncoding.Unicode;  
+      Console.WriteLine("The write encoding has been changed to: {0}", webMessageEncoding);  
+  
+      XmlDictionaryReaderQuotasElement webMessageReaderQuotasElement = webMEE.ReaderQuotas;  
+      Console.WriteLine("The max depth of the reader Quotas is: {0}", webMessageReaderQuotasElement.MaxDepth);  
+  
+      Console.WriteLine("Press <ENTER> to terminate the program.");  
+      Console.ReadLine();  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -85,10 +85,10 @@ class Program
  
 ```  
 static void Main(string[] args)  
-{  
-   WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
-   Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
- }  
+ {  
+    WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
+    Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
+  }  
 ```  
  
  ]]></format>
@@ -139,9 +139,9 @@ static void Main(string[] args)
 ```  
 static void Main(string[] args)  
 {  
-  WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
-  Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
-}  
+   WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
+   Console.WriteLine("The BE type is: {0}", webMEE.BindingElementType);  
+ }  
 ```  
  
  ]]></format>
@@ -224,11 +224,11 @@ Larger pool sizes make the system more tolerant to activity spikes at the cost o
 ```  
 static void Main(string[] args)  
 {  
-   WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
-   int maxReadPoolSize = webMEE.MaxReadPoolSize;  
-   Console.WriteLine("The MaxReadPoolSize is: {0}", maxReadPoolSize);  
-   maxReadPoolSize = 128;  
-   Console.WriteLine("The MaxReadPoolSize has been changed to: {0}", maxReadPoolSize);  
+    WebMessageEncodingElement webMEE = new WebMessageEncodingElement();  
+    int maxReadPoolSize = webMEE.MaxReadPoolSize;  
+    Console.WriteLine("The MaxReadPoolSize is: {0}", maxReadPoolSize);  
+    maxReadPoolSize = 128;  
+    Console.WriteLine("The MaxReadPoolSize has been changed to: {0}", maxReadPoolSize);  
 }  
 ```  
  
@@ -272,10 +272,10 @@ Larger pool sizes make the system more tolerant to activity spikes at the cost o
 ```  
 static void Main(string[] args)  
 {  
-  int maxWritePoolSize = webMEE.MaxWritePoolSize;  
-  Console.WriteLine("The MaxWritePoolSize is: {0}", maxWritePoolSize);  
-  maxWritePoolSize = 48;  
-  Console.WriteLine("The MaxWritePoolSize has been changed to: {0}", maxWritePoolSize);  
+   int maxWritePoolSize = webMEE.MaxWritePoolSize;  
+   Console.WriteLine("The MaxWritePoolSize is: {0}", maxWritePoolSize);  
+   maxWritePoolSize = 48;  
+   Console.WriteLine("The MaxWritePoolSize has been changed to: {0}", maxWritePoolSize);  
 }  
 ```  
  
@@ -389,13 +389,13 @@ using System.Text;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
+  
 static void Main()  
 {  
-   Encoding webMessageEncoding = webMEE.WriteEncoding;  
-   Console.WriteLine("The write encoding is: {0}",     webMessageEncoding);  
-   webMessageEncoding = UnicodeEncoding.Unicode;  
-   Console.WriteLine("The write encoding has been changed to: {0}", webMessageEncoding);  
+    Encoding webMessageEncoding = webMEE.WriteEncoding;  
+    Console.WriteLine("The write encoding is: {0}",     webMessageEncoding);  
+    webMessageEncoding = UnicodeEncoding.Unicode;  
+    Console.WriteLine("The write encoding has been changed to: {0}", webMessageEncoding);  
 }  
 ```  
  

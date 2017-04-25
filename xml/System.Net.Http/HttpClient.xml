@@ -55,15 +55,15 @@ The following methods are thread safe:
 ```csharp  
 public class GoodController : ApiController  
 {  
-   // OK  
-   private static readonly HttpClient HttpClient;  
- 
-   static GoodController()  
-   {  
-       HttpClient = new HttpClient();  
-   }  
+    // OK  
+    private static readonly HttpClient HttpClient;  
+  
+    static GoodController()  
+    {  
+        HttpClient = new HttpClient();  
+    }  
 }  
- 
+  
 ```  
  
   
@@ -1634,15 +1634,15 @@ The operation will not block.
 ```csharp  
 public class GoodController : ApiController  
 {  
-   // OK  
-   private static readonly HttpClient HttpClient;  
- 
-   static GoodController()  
-   {  
-       HttpClient = new HttpClient();  
-   }  
+    // OK  
+    private static readonly HttpClient HttpClient;  
+  
+    static GoodController()  
+    {  
+        HttpClient = new HttpClient();  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>

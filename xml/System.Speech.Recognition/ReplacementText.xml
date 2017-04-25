@@ -43,90 +43,90 @@ The example below displays information in a user interface about a <xref:System.
  
 ```csharp  
 internal static void DisplayBasicPhraseInfo(  
-       Label label,   
-       RecognizedPhrase result,   
-       SpeechRecognizer rec)   
+        Label label,   
+        RecognizedPhrase result,   
+        SpeechRecognizer rec)   
 {  
- if (result != null && label != null)   
- {  
-   // Blank  
-   if (rec != null)   
-   {   
-     // Clear  
-     label.Text += String.Format(  
-                            "  Recognizer currently at:   {0} mSec\n" +  
-                            "  Audio Device currently at: {1} mSec\n",  
-                            rec.RecognizerAudioPosition.TotalMilliseconds,  
-                            rec.AudioPosition.TotalMilliseconds);  
-   }  
- 
-   if (result != null)   
-   { // Clear  
-     RecognitionResult recResult = result as RecognitionResult;  
-     if (recResult != null)   
-     {  
-       RecognizedAudio resultAudio = recResult.Audio;  
-       if (resultAudio == null)   
-       {  
-         label.Text += String.Format("  Emulated input\n");  
-       }   
-       else   
-       {  
-         label.Text += String.Format(  
-                              "  Candidate Phrase at:       {0} mSec\n" +  
-                              "  Phrase Length:             {1} mSec\n" +  
-                              "  Input State Time:          {2}\n" +  
-                              "  Input Format:              {3}\n",  
-                              resultAudio.AudioPosition.TotalMilliseconds,  
-                              resultAudio.Duration.TotalMilliseconds,  
-                              resultAudio.StartTime.ToShortTimeString(),  
-                              resultAudio.Format.EncodingFormat.ToString());  
-       }  
-     }  
- 
-     label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
-     if (result.Grammar != null)   
-     {  
-       label.Text += String.Format(  
-                           "  Recognizing Grammar:       {0}\n" +  
-                           "  Recognizing Rule:          {1}\n",  
-                           ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
-                           ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
-     }  
- 
-     if  (result.ReplacementWordUnits.Count !=  0)    
-     {  
-       label.Text += String.Format("  Replacement text:\n");  
-       foreach (ReplacementText rep in result.ReplacementWordUnits)    
-       {  
-         string repText = rep.Text;  
-         // Add trailing spaces  
- 
-         if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
-         {  
-           repText += " ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
-         {  
-           repText += "  ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
-         {  
-           repText=repText.TrimStart();  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-         {  
-           repText = repText.TrimEnd();  
-         }  
-         label.Text += String.Format(  
-                          "      At index {0} for {1} words. Text: \"{2}\"\n",  
-                          rep.FirstWordIndex,  rep.CountOfWords, repText);  
- 
-       }  
-       label.Text += String.Format("\n\n");  
-     }  
-   }  
- }    
+  if (result != null && label != null)   
+  {  
+    // Blank  
+    if (rec != null)   
+    {   
+      // Clear  
+      label.Text += String.Format(  
+                             "  Recognizer currently at:   {0} mSec\n" +  
+                             "  Audio Device currently at: {1} mSec\n",  
+                             rec.RecognizerAudioPosition.TotalMilliseconds,  
+                             rec.AudioPosition.TotalMilliseconds);  
+    }  
+  
+    if (result != null)   
+    { // Clear  
+      RecognitionResult recResult = result as RecognitionResult;  
+      if (recResult != null)   
+      {  
+        RecognizedAudio resultAudio = recResult.Audio;  
+        if (resultAudio == null)   
+        {  
+          label.Text += String.Format("  Emulated input\n");  
+        }   
+        else   
+        {  
+          label.Text += String.Format(  
+                               "  Candidate Phrase at:       {0} mSec\n" +  
+                               "  Phrase Length:             {1} mSec\n" +  
+                               "  Input State Time:          {2}\n" +  
+                               "  Input Format:              {3}\n",  
+                               resultAudio.AudioPosition.TotalMilliseconds,  
+                               resultAudio.Duration.TotalMilliseconds,  
+                               resultAudio.StartTime.ToShortTimeString(),  
+                               resultAudio.Format.EncodingFormat.ToString());  
+        }  
+      }  
+  
+      label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
+      if (result.Grammar != null)   
+      {  
+        label.Text += String.Format(  
+                            "  Recognizing Grammar:       {0}\n" +  
+                            "  Recognizing Rule:          {1}\n",  
+                            ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
+                            ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
+      }  
+  
+      if  (result.ReplacementWordUnits.Count !=  0)    
+      {  
+        label.Text += String.Format("  Replacement text:\n");  
+        foreach (ReplacementText rep in result.ReplacementWordUnits)    
+        {  
+          string repText = rep.Text;  
+          // Add trailing spaces  
+  
+          if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
+          {  
+            repText += " ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
+          {  
+            repText += "  ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
+          {  
+            repText=repText.TrimStart();  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+          {  
+            repText = repText.TrimEnd();  
+          }  
+          label.Text += String.Format(  
+                           "      At index {0} for {1} words. Text: \"{2}\"\n",  
+                           rep.FirstWordIndex,  rep.CountOfWords, repText);  
+  
+        }  
+        label.Text += String.Format("\n\n");  
+      }  
+    }  
+  }    
 }  
 ```  
  
@@ -157,90 +157,90 @@ The example below displays information in a user interface about a <xref:System.
  
 ```csharp  
 internal static void DisplayBasicPhraseInfo(  
-       Label label,   
-       RecognizedPhrase result,   
-       SpeechRecognizer rec)   
+        Label label,   
+        RecognizedPhrase result,   
+        SpeechRecognizer rec)   
 {  
- if (result != null && label != null)   
- {  
-   // Blank  
-   if (rec != null)   
-   {   
-     // Clear  
-     label.Text += String.Format(  
-                            "  Recognizer currently at:   {0} mSec\n" +  
-                            "  Audio Device currently at: {1} mSec\n",  
-                            rec.RecognizerAudioPosition.TotalMilliseconds,  
-                            rec.AudioPosition.TotalMilliseconds);  
-   }  
- 
-   if (result != null)   
-   { // Clear  
-     RecognitionResult recResult = result as RecognitionResult;  
-     if (recResult != null)   
-     {  
-       RecognizedAudio resultAudio = recResult.Audio;  
-       if (resultAudio == null)   
-       {  
-         label.Text += String.Format("  Emulated input\n");  
-       }   
-       else   
-       {  
-         label.Text += String.Format(  
-                              "  Candidate Phrase at:       {0} mSec\n" +  
-                              "  Phrase Length:             {1} mSec\n" +  
-                              "  Input State Time:          {2}\n" +  
-                              "  Input Format:              {3}\n",  
-                              resultAudio.AudioPosition.TotalMilliseconds,  
-                              resultAudio.Duration.TotalMilliseconds,  
-                              resultAudio.StartTime.ToShortTimeString(),  
-                              resultAudio.Format.EncodingFormat.ToString());  
-       }  
-     }  
- 
-     label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
-     if (result.Grammar != null)   
-     {  
-       label.Text += String.Format(  
-                           "  Recognizing Grammar:       {0}\n" +  
-                           "  Recognizing Rule:          {1}\n",  
-                           ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
-                           ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
-     }  
- 
-     if  (result.ReplacementWordUnits.Count !=  0)    
-     {  
-       label.Text += String.Format("  Replacement text:\n");  
-       foreach (ReplacementText rep in result.ReplacementWordUnits)    
-       {  
-         string repText = rep.Text;  
-         // Add trailing spaces  
- 
-         if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
-         {  
-           repText += " ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
-         {  
-           repText += "  ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
-         {  
-           repText=repText.TrimStart();  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-         {  
-           repText = repText.TrimEnd();  
-         }  
-         label.Text += String.Format(  
-                          "      At index {0} for {1} words. Text: \"{2}\"\n",  
-                          rep.FirstWordIndex,  rep.CountOfWords, repText);  
- 
-       }  
-       label.Text += String.Format("\n\n");  
-     }  
-   }  
- }    
+  if (result != null && label != null)   
+  {  
+    // Blank  
+    if (rec != null)   
+    {   
+      // Clear  
+      label.Text += String.Format(  
+                             "  Recognizer currently at:   {0} mSec\n" +  
+                             "  Audio Device currently at: {1} mSec\n",  
+                             rec.RecognizerAudioPosition.TotalMilliseconds,  
+                             rec.AudioPosition.TotalMilliseconds);  
+    }  
+  
+    if (result != null)   
+    { // Clear  
+      RecognitionResult recResult = result as RecognitionResult;  
+      if (recResult != null)   
+      {  
+        RecognizedAudio resultAudio = recResult.Audio;  
+        if (resultAudio == null)   
+        {  
+          label.Text += String.Format("  Emulated input\n");  
+        }   
+        else   
+        {  
+          label.Text += String.Format(  
+                               "  Candidate Phrase at:       {0} mSec\n" +  
+                               "  Phrase Length:             {1} mSec\n" +  
+                               "  Input State Time:          {2}\n" +  
+                               "  Input Format:              {3}\n",  
+                               resultAudio.AudioPosition.TotalMilliseconds,  
+                               resultAudio.Duration.TotalMilliseconds,  
+                               resultAudio.StartTime.ToShortTimeString(),  
+                               resultAudio.Format.EncodingFormat.ToString());  
+        }  
+      }  
+  
+      label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
+      if (result.Grammar != null)   
+      {  
+        label.Text += String.Format(  
+                            "  Recognizing Grammar:       {0}\n" +  
+                            "  Recognizing Rule:          {1}\n",  
+                            ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
+                            ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
+      }  
+  
+      if  (result.ReplacementWordUnits.Count !=  0)    
+      {  
+        label.Text += String.Format("  Replacement text:\n");  
+        foreach (ReplacementText rep in result.ReplacementWordUnits)    
+        {  
+          string repText = rep.Text;  
+          // Add trailing spaces  
+  
+          if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
+          {  
+            repText += " ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
+          {  
+            repText += "  ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
+          {  
+            repText=repText.TrimStart();  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+          {  
+            repText = repText.TrimEnd();  
+          }  
+          label.Text += String.Format(  
+                           "      At index {0} for {1} words. Text: \"{2}\"\n",  
+                           rep.FirstWordIndex,  rep.CountOfWords, repText);  
+  
+        }  
+        label.Text += String.Format("\n\n");  
+      }  
+    }  
+  }    
 }  
 ```  
  
@@ -271,90 +271,90 @@ The example below displays information in a user interface about a <xref:System.
  
 ```csharp  
 internal static void DisplayBasicPhraseInfo(  
-       Label label,   
-       RecognizedPhrase result,   
-       SpeechRecognizer rec)   
+        Label label,   
+        RecognizedPhrase result,   
+        SpeechRecognizer rec)   
 {  
- if (result != null && label != null)   
- {  
-   // Blank  
-   if (rec != null)   
-   {   
-     // Clear  
-     label.Text += String.Format(  
-                            "  Recognizer currently at:   {0} mSec\n" +  
-                            "  Audio Device currently at: {1} mSec\n",  
-                            rec.RecognizerAudioPosition.TotalMilliseconds,  
-                            rec.AudioPosition.TotalMilliseconds);  
-   }  
- 
-   if (result != null)   
-   { // Clear  
-     RecognitionResult recResult = result as RecognitionResult;  
-     if (recResult != null)   
-     {  
-       RecognizedAudio resultAudio = recResult.Audio;  
-       if (resultAudio == null)   
-       {  
-         label.Text += String.Format("  Emulated input\n");  
-       }   
-       else   
-       {  
-         label.Text += String.Format(  
-                              "  Candidate Phrase at:       {0} mSec\n" +  
-                              "  Phrase Length:             {1} mSec\n" +  
-                              "  Input State Time:          {2}\n" +  
-                              "  Input Format:              {3}\n",  
-                              resultAudio.AudioPosition.TotalMilliseconds,  
-                              resultAudio.Duration.TotalMilliseconds,  
-                              resultAudio.StartTime.ToShortTimeString(),  
-                              resultAudio.Format.EncodingFormat.ToString());  
-       }  
-     }  
- 
-     label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
-     if (result.Grammar != null)   
-     {  
-       label.Text += String.Format(  
-                           "  Recognizing Grammar:       {0}\n" +  
-                           "  Recognizing Rule:          {1}\n",  
-                           ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
-                           ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
-     }  
- 
-     if  (result.ReplacementWordUnits.Count !=  0)    
-     {  
-       label.Text += String.Format("  Replacement text:\n");  
-       foreach (ReplacementText rep in result.ReplacementWordUnits)    
-       {  
-         string repText = rep.Text;  
-         // Add trailing spaces  
- 
-         if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
-         {  
-           repText += " ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
-         {  
-           repText += "  ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
-         {  
-           repText=repText.TrimStart();  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-         {  
-           repText = repText.TrimEnd();  
-         }  
-         label.Text += String.Format(  
-                          "      At index {0} for {1} words. Text: \"{2}\"\n",  
-                          rep.FirstWordIndex,  rep.CountOfWords, repText);  
- 
-       }  
-       label.Text += String.Format("\n\n");  
-     }  
-   }  
- }    
+  if (result != null && label != null)   
+  {  
+    // Blank  
+    if (rec != null)   
+    {   
+      // Clear  
+      label.Text += String.Format(  
+                             "  Recognizer currently at:   {0} mSec\n" +  
+                             "  Audio Device currently at: {1} mSec\n",  
+                             rec.RecognizerAudioPosition.TotalMilliseconds,  
+                             rec.AudioPosition.TotalMilliseconds);  
+    }  
+  
+    if (result != null)   
+    { // Clear  
+      RecognitionResult recResult = result as RecognitionResult;  
+      if (recResult != null)   
+      {  
+        RecognizedAudio resultAudio = recResult.Audio;  
+        if (resultAudio == null)   
+        {  
+          label.Text += String.Format("  Emulated input\n");  
+        }   
+        else   
+        {  
+          label.Text += String.Format(  
+                               "  Candidate Phrase at:       {0} mSec\n" +  
+                               "  Phrase Length:             {1} mSec\n" +  
+                               "  Input State Time:          {2}\n" +  
+                               "  Input Format:              {3}\n",  
+                               resultAudio.AudioPosition.TotalMilliseconds,  
+                               resultAudio.Duration.TotalMilliseconds,  
+                               resultAudio.StartTime.ToShortTimeString(),  
+                               resultAudio.Format.EncodingFormat.ToString());  
+        }  
+      }  
+  
+      label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
+      if (result.Grammar != null)   
+      {  
+        label.Text += String.Format(  
+                            "  Recognizing Grammar:       {0}\n" +  
+                            "  Recognizing Rule:          {1}\n",  
+                            ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
+                            ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
+      }  
+  
+      if  (result.ReplacementWordUnits.Count !=  0)    
+      {  
+        label.Text += String.Format("  Replacement text:\n");  
+        foreach (ReplacementText rep in result.ReplacementWordUnits)    
+        {  
+          string repText = rep.Text;  
+          // Add trailing spaces  
+  
+          if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
+          {  
+            repText += " ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
+          {  
+            repText += "  ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
+          {  
+            repText=repText.TrimStart();  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+          {  
+            repText = repText.TrimEnd();  
+          }  
+          label.Text += String.Format(  
+                           "      At index {0} for {1} words. Text: \"{2}\"\n",  
+                           rep.FirstWordIndex,  rep.CountOfWords, repText);  
+  
+        }  
+        label.Text += String.Format("\n\n");  
+      }  
+    }  
+  }    
 }  
 ```  
  
@@ -385,90 +385,90 @@ In the following example, information about a <xref:System.Speech.Recognition.Re
  
 ```csharp  
 internal static void DisplayBasicPhraseInfo(  
-       Label label,   
-       RecognizedPhrase result,   
-       SpeechRecognizer rec)   
+        Label label,   
+        RecognizedPhrase result,   
+        SpeechRecognizer rec)   
 {  
- if (result != null && label != null)   
- {  
-   // Blank  
-   if (rec != null)   
-   {   
-     // Clear  
-     label.Text += String.Format(  
-                            "  Recognizer currently at:   {0} mSec\n" +  
-                            "  Audio Device currently at: {1} mSec\n",  
-                            rec.RecognizerAudioPosition.TotalMilliseconds,  
-                            rec.AudioPosition.TotalMilliseconds);  
-   }  
- 
-   if (result != null)   
-   { // Clear  
-     RecognitionResult recResult = result as RecognitionResult;  
-     if (recResult != null)   
-     {  
-       RecognizedAudio resultAudio = recResult.Audio;  
-       if (resultAudio == null)   
-       {  
-         label.Text += String.Format("  Emulated input\n");  
-       }   
-       else   
-       {  
-         label.Text += String.Format(  
-                              "  Candidate Phrase at:       {0} mSec\n" +  
-                              "  Phrase Length:             {1} mSec\n" +  
-                              "  Input State Time:          {2}\n" +  
-                              "  Input Format:              {3}\n",  
-                              resultAudio.AudioPosition.TotalMilliseconds,  
-                              resultAudio.Duration.TotalMilliseconds,  
-                              resultAudio.StartTime.ToShortTimeString(),  
-                              resultAudio.Format.EncodingFormat.ToString());  
-       }  
-     }  
- 
-     label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
-     if (result.Grammar != null)   
-     {  
-       label.Text += String.Format(  
-                           "  Recognizing Grammar:       {0}\n" +  
-                           "  Recognizing Rule:          {1}\n",  
-                           ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
-                           ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
-     }  
- 
-     if  (result.ReplacementWordUnits.Count !=  0)    
-     {  
-       label.Text += String.Format("  Replacement text:\n");  
-       foreach (ReplacementText rep in result.ReplacementWordUnits)    
-       {  
-         string repText = rep.Text;  
-         // Add trailing spaces  
- 
-         if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
-         {  
-           repText += " ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
-         {  
-           repText += "  ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
-         {  
-           repText=repText.TrimStart();  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-         {  
-           repText = repText.TrimEnd();  
-         }  
-         label.Text += String.Format(  
-                          "      At index {0} for {1} words. Text: \"{2}\"\n",  
-                          rep.FirstWordIndex,  rep.CountOfWords, repText);  
- 
-       }  
-       label.Text += String.Format("\n\n");  
-     }  
-   }  
- }    
+  if (result != null && label != null)   
+  {  
+    // Blank  
+    if (rec != null)   
+    {   
+      // Clear  
+      label.Text += String.Format(  
+                             "  Recognizer currently at:   {0} mSec\n" +  
+                             "  Audio Device currently at: {1} mSec\n",  
+                             rec.RecognizerAudioPosition.TotalMilliseconds,  
+                             rec.AudioPosition.TotalMilliseconds);  
+    }  
+  
+    if (result != null)   
+    { // Clear  
+      RecognitionResult recResult = result as RecognitionResult;  
+      if (recResult != null)   
+      {  
+        RecognizedAudio resultAudio = recResult.Audio;  
+        if (resultAudio == null)   
+        {  
+          label.Text += String.Format("  Emulated input\n");  
+        }   
+        else   
+        {  
+          label.Text += String.Format(  
+                               "  Candidate Phrase at:       {0} mSec\n" +  
+                               "  Phrase Length:             {1} mSec\n" +  
+                               "  Input State Time:          {2}\n" +  
+                               "  Input Format:              {3}\n",  
+                               resultAudio.AudioPosition.TotalMilliseconds,  
+                               resultAudio.Duration.TotalMilliseconds,  
+                               resultAudio.StartTime.ToShortTimeString(),  
+                               resultAudio.Format.EncodingFormat.ToString());  
+        }  
+      }  
+  
+      label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
+      if (result.Grammar != null)   
+      {  
+        label.Text += String.Format(  
+                            "  Recognizing Grammar:       {0}\n" +  
+                            "  Recognizing Rule:          {1}\n",  
+                            ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
+                            ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
+      }  
+  
+      if  (result.ReplacementWordUnits.Count !=  0)    
+      {  
+        label.Text += String.Format("  Replacement text:\n");  
+        foreach (ReplacementText rep in result.ReplacementWordUnits)    
+        {  
+          string repText = rep.Text;  
+          // Add trailing spaces  
+  
+          if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
+          {  
+            repText += " ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
+          {  
+            repText += "  ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
+          {  
+            repText=repText.TrimStart();  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+          {  
+            repText = repText.TrimEnd();  
+          }  
+          label.Text += String.Format(  
+                           "      At index {0} for {1} words. Text: \"{2}\"\n",  
+                           rep.FirstWordIndex,  rep.CountOfWords, repText);  
+  
+        }  
+        label.Text += String.Format("\n\n");  
+      }  
+    }  
+  }    
 }  
 ```  
  
@@ -499,90 +499,90 @@ The example below displays information in a user interface about a <xref:System.
  
 ```csharp  
 internal static void DisplayBasicPhraseInfo(  
-       Label label,   
-       RecognizedPhrase result,   
-       SpeechRecognizer rec)   
+        Label label,   
+        RecognizedPhrase result,   
+        SpeechRecognizer rec)   
 {  
- if (result != null && label != null)   
- {  
-   // Blank  
-   if (rec != null)   
-   {   
-     // Clear  
-     label.Text += String.Format(  
-                            "  Recognizer currently at:   {0} mSec\n" +  
-                            "  Audio Device currently at: {1} mSec\n",  
-                            rec.RecognizerAudioPosition.TotalMilliseconds,  
-                            rec.AudioPosition.TotalMilliseconds);  
-   }  
- 
-   if (result != null)   
-   { // Clear  
-     RecognitionResult recResult = result as RecognitionResult;  
-     if (recResult != null)   
-     {  
-       RecognizedAudio resultAudio = recResult.Audio;  
-       if (resultAudio == null)   
-       {  
-         label.Text += String.Format("  Emulated input\n");  
-       }   
-       else   
-       {  
-         label.Text += String.Format(  
-                              "  Candidate Phrase at:       {0} mSec\n" +  
-                              "  Phrase Length:             {1} mSec\n" +  
-                              "  Input State Time:          {2}\n" +  
-                              "  Input Format:              {3}\n",  
-                              resultAudio.AudioPosition.TotalMilliseconds,  
-                              resultAudio.Duration.TotalMilliseconds,  
-                              resultAudio.StartTime.ToShortTimeString(),  
-                              resultAudio.Format.EncodingFormat.ToString());  
-       }  
-     }  
- 
-     label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
-     if (result.Grammar != null)   
-     {  
-       label.Text += String.Format(  
-                           "  Recognizing Grammar:       {0}\n" +  
-                           "  Recognizing Rule:          {1}\n",  
-                           ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
-                           ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
-     }  
- 
-     if  (result.ReplacementWordUnits.Count !=  0)    
-     {  
-       label.Text += String.Format("  Replacement text:\n");  
-       foreach (ReplacementText rep in result.ReplacementWordUnits)    
-       {  
-         string repText = rep.Text;  
-         // Add trailing spaces  
- 
-         if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
-         {  
-           repText += " ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
-         {  
-           repText += "  ";  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
-         {  
-           repText=repText.TrimStart();  
-         }  
-         if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
-         {  
-           repText = repText.TrimEnd();  
-         }  
-         label.Text += String.Format(  
-                          "      At index {0} for {1} words. Text: \"{2}\"\n",  
-                          rep.FirstWordIndex,  rep.CountOfWords, repText);  
- 
-       }  
-       label.Text += String.Format("\n\n");  
-     }  
-   }  
- }    
+  if (result != null && label != null)   
+  {  
+    // Blank  
+    if (rec != null)   
+    {   
+      // Clear  
+      label.Text += String.Format(  
+                             "  Recognizer currently at:   {0} mSec\n" +  
+                             "  Audio Device currently at: {1} mSec\n",  
+                             rec.RecognizerAudioPosition.TotalMilliseconds,  
+                             rec.AudioPosition.TotalMilliseconds);  
+    }  
+  
+    if (result != null)   
+    { // Clear  
+      RecognitionResult recResult = result as RecognitionResult;  
+      if (recResult != null)   
+      {  
+        RecognizedAudio resultAudio = recResult.Audio;  
+        if (resultAudio == null)   
+        {  
+          label.Text += String.Format("  Emulated input\n");  
+        }   
+        else   
+        {  
+          label.Text += String.Format(  
+                               "  Candidate Phrase at:       {0} mSec\n" +  
+                               "  Phrase Length:             {1} mSec\n" +  
+                               "  Input State Time:          {2}\n" +  
+                               "  Input Format:              {3}\n",  
+                               resultAudio.AudioPosition.TotalMilliseconds,  
+                               resultAudio.Duration.TotalMilliseconds,  
+                               resultAudio.StartTime.ToShortTimeString(),  
+                               resultAudio.Format.EncodingFormat.ToString());  
+        }  
+      }  
+  
+      label.Text += String.Format("  Confidence Level:          {0}\n", result.Confidence);  
+      if (result.Grammar != null)   
+      {  
+        label.Text += String.Format(  
+                            "  Recognizing Grammar:       {0}\n" +  
+                            "  Recognizing Rule:          {1}\n",  
+                            ((result.Grammar.Name != null) ? (result.Grammar.Name) : "None"),  
+                            ((result.Grammar.RuleName != null) ? (result.Grammar.RuleName) : "None"));  
+      }  
+  
+      if  (result.ReplacementWordUnits.Count !=  0)    
+      {  
+        label.Text += String.Format("  Replacement text:\n");  
+        foreach (ReplacementText rep in result.ReplacementWordUnits)    
+        {  
+          string repText = rep.Text;  
+          // Add trailing spaces  
+  
+          if ((rep.DisplayAttributes & DisplayAttributes.OneTrailingSpace) !=  0)    
+          {  
+            repText += " ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) !=  0)    
+          {  
+            repText += "  ";  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)    
+          {  
+            repText=repText.TrimStart();  
+          }  
+          if ((rep.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+          {  
+            repText = repText.TrimEnd();  
+          }  
+          label.Text += String.Format(  
+                           "      At index {0} for {1} words. Text: \"{2}\"\n",  
+                           rep.FirstWordIndex,  rep.CountOfWords, repText);  
+  
+        }  
+        label.Text += String.Format("\n\n");  
+      }  
+    }  
+  }    
 }  
 ```  
  

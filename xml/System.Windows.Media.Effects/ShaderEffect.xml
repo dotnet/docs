@@ -225,7 +225,7 @@ SamplerState  sampler : register(S0);
 float2 nextPixelUV;  
 nextPixelUV.u = ddxUvDdyUv.x + u;  
 nextPixelUV.v = ddxUvDdyUv.y + v;  
- 
+  
 tex2D(sampler, nextPixelUV);  
 ```  
  

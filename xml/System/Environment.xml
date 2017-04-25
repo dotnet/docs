@@ -259,7 +259,7 @@ The following is a simple app named Double.exe that doubles an integer value pas
 The example can then be invoked from a batch file such as the following, which makes its error codes accessible by using the `ERRORLEVEL` command.  
  
 ```  
- 
+  
 echo off  
 Double.exe %1  
 If errorlevel 1639 goto NoArg   
@@ -267,27 +267,27 @@ if errorlevel 534 goto Overflow
 if errorlevel 160 goto BadArg  
 if errorlevel 0 echo Completed Successfully   
 goto :EOF  
- 
+  
 :NoArg  
 echo Missing argument  
 goto :EOF  
- 
+  
 : Overflow  
 echo Arithmetic overflow  
 goto :EOF  
- 
+  
 :BadArg  
 echo Invalid argument  
 goto :EOF  
- 
+  
 ```  
  
 The following shows some sample output produced by invoking the batch file.  
  
 ```Output  
- 
+  
 >getdouble 123>echo offResult: 246Completed Successfully>getdouble 5912323109093>echo offArithmetic overflow>getdouble>echo offMissing argument>getdouble "a string">echo offInvalid argument  
- 
+  
 ```  
  
 Note that code for Double.exe is identical in function to the following example, except that the former defines an entry point named `Main` that has no return value, whereas this example defines an entry point named `Main` that returns an integer.  

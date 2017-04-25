@@ -29,7 +29,7 @@ By default, the visual designer of a tool such as Visual Studio, creates an empt
  
 ```  
 [ ToolboxData("<{0}:MyLabel runat= server Text=   
-      MyLabel><{0}:MyLabel>") ]public class MyLabel : Label {...}  
+       MyLabel><{0}:MyLabel>") ]public class MyLabel : Label {...}  
 ```  
  
 In the following code example, the previous code sets several properties specific to `MyLabel`. All occurrences of `{0}` are replaced, by the designer, with the tag prefix associated with the `MyLabel` class.  

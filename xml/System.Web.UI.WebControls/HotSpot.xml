@@ -232,14 +232,14 @@ To create an inactive area within an active hot spot, you must specify the inact
  
 ```  
 <asp:ImageMap ID="SaturnImage"   
- ImageUrl="~/saturn.PNG"   
- runat="server" OnClick="SaturnImage_Click">  
- <asp:CircleHotSpot AlternateText="planet" HotSpotMode=PostBack  
-   PostBackValue="planet" Radius=40 X=100 Y=100 />  
- <asp:CircleHotSpot HotSpotMode=Inactive   
-   Radius=60 X=100 Y=100 />  
- <asp:CircleHotSpot AlternateText="rings" HotSpotMode=PostBack  
-   PostBackValue="rings" Radius=80 X=100 Y=100 />  
+  ImageUrl="~/saturn.PNG"   
+  runat="server" OnClick="SaturnImage_Click">  
+  <asp:CircleHotSpot AlternateText="planet" HotSpotMode=PostBack  
+    PostBackValue="planet" Radius=40 X=100 Y=100 />  
+  <asp:CircleHotSpot HotSpotMode=Inactive   
+    Radius=60 X=100 Y=100 />  
+  <asp:CircleHotSpot AlternateText="rings" HotSpotMode=PostBack  
+    PostBackValue="rings" Radius=80 X=100 Y=100 />  
 </asp:ImageMap>  
 ```  
  

@@ -110,21 +110,21 @@ Permissions are defined in the Web.config file, as shown in the following exampl
  
 ```  
 <configuration>  
- <location path="categoriespage.aspx">  
-   <system.web>  
-     <authorization>  
-       <allow roles="admin"/>  
-       <deny users="*"/>  
-     </authorization>  
-   </system.web>  
- </location>  
- <location path="category">  
-   <system.web>  
-     <authorization>  
-       <allow users="*"/>  
-     </authorization>  
-   </system.web>  
- </location>  
+  <location path="categoriespage.aspx">  
+    <system.web>  
+      <authorization>  
+        <allow roles="admin"/>  
+        <deny users="*"/>  
+      </authorization>  
+    </system.web>  
+  </location>  
+  <location path="category">  
+    <system.web>  
+      <authorization>  
+        <allow users="*"/>  
+      </authorization>  
+    </system.web>  
+  </location>  
 </configuration>  
 ```  
  

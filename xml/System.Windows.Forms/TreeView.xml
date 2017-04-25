@@ -50,9 +50,9 @@ The state images displayed in the <xref:System.Windows.Forms.TreeView> are 16 x 
  
 ```  
 <appSettings>  
- <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
- 
+  
 ```  
  
 Tree nodes can be expanded to display the next level of child tree nodes. The user can expand the <xref:System.Windows.Forms.TreeNode> by clicking the plus-sign (+) button, if one is displayed next to the <xref:System.Windows.Forms.TreeNode>, or you can expand the <xref:System.Windows.Forms.TreeNode> by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A?displayProperty=fullName> method. To expand all the child tree node levels in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection, call the <xref:System.Windows.Forms.TreeNode.ExpandAll%2A> method. You can collapse the child <xref:System.Windows.Forms.TreeNode> level by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A?displayProperty=fullName> method, or the user can press the minus-sign (-) button, if one is displayed next to the <xref:System.Windows.Forms.TreeNode>. You can also call the <xref:System.Windows.Forms.TreeNode.Toggle%2A?displayProperty=fullName> method to alternate between the expanded and collapsed states.  
@@ -3348,9 +3348,9 @@ The state images displayed in the <xref:System.Windows.Forms.TreeView> are 16 x 
  
 ```  
 <appSettings>  
- <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
- 
+  
 ```  
  
 When the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A> property of a <xref:System.Windows.Forms.TreeView> is set to `true` and the <xref:System.Windows.Forms.TreeView.StateImageList%2A> property is set, each <xref:System.Windows.Forms.TreeNode> that is contained in the <xref:System.Windows.Forms.TreeView> displays the first and second images from the <xref:System.Windows.Forms.TreeView.StateImageList%2A> to indicate an unchecked or checked state, respectively. You should set the <xref:System.Windows.Forms.TreeView.StateImageList%2A> property before you add nodes to the <xref:System.Windows.Forms.TreeView> to prevent state images being shown at design time for nodes that do not have a state image set.  

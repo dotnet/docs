@@ -87,18 +87,18 @@ The code examples in all of the <xref:System.IdentityModel.Tokens.SecurityTokenH
  
 ```xml  
 <system.identityModel>  
- <identityConfiguration saveBootstrapContext="true">  
-   <issuerTokenResolver type="SimpleWebToken.CustomIssuerTokenResolver, SimpleWebToken">  
-     <AddAudienceKeyPair  symmetricKey="wAVkldQiFypTQ+kdNdGWCYCHRcee8XmXxOvgmak8vSY=" audience="http://localhost:19851/" />  
-   </issuerTokenResolver>  
-   <issuerNameRegistry type="RelyingParty.TrustedIssuerNameRegistry, RelyingParty"/>  
-   <audienceUris>  
-     <add value="http://localhost:19851/"/>  
-   </audienceUris>  
-   <securityTokenHandlers>  
-     <add type="SimpleWebToken.SimpleWebTokenHandler, SimpleWebToken" />  
-   </securityTokenHandlers>  
- </identityConfiguration>  
+  <identityConfiguration saveBootstrapContext="true">  
+    <issuerTokenResolver type="SimpleWebToken.CustomIssuerTokenResolver, SimpleWebToken">  
+      <AddAudienceKeyPair  symmetricKey="wAVkldQiFypTQ+kdNdGWCYCHRcee8XmXxOvgmak8vSY=" audience="http://localhost:19851/" />  
+    </issuerTokenResolver>  
+    <issuerNameRegistry type="RelyingParty.TrustedIssuerNameRegistry, RelyingParty"/>  
+    <audienceUris>  
+      <add value="http://localhost:19851/"/>  
+    </audienceUris>  
+    <securityTokenHandlers>  
+      <add type="SimpleWebToken.SimpleWebTokenHandler, SimpleWebToken" />  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

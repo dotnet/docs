@@ -307,7 +307,7 @@ The following code example creates a matrix and inverts it:
  
 ```csharp  
 Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);  
-myMatrix.Invert();  
+ myMatrix.Invert();  
 ```  
  
  ]]></format>

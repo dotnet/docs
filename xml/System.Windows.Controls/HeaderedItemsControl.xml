@@ -185,11 +185,11 @@ Because the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> proper
  
 ```  
 <object>  
- <object.Header>  
-   <UIElement />  
- </object.Header>  
+  <object.Header>  
+    <UIElement />  
+  </object.Header>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_Header"></a>   
@@ -402,9 +402,9 @@ If both the <xref:System.Windows.Controls.HeaderedItemsControl.HeaderTemplateSel
  
 ```  
 <object>  
- <object.HeaderTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.HeaderTemplateSelector>  
+  <object.HeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.HeaderTemplateSelector>  
 </object>  
 ```  
  

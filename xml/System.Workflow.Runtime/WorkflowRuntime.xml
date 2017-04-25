@@ -303,32 +303,32 @@ The following example demonstrates how to create a workflow given a XAML-based w
 ```  
 static void Main(string[] args)  
 {  
-   using (WorkflowRuntime workflowRuntime = new WorkflowRuntime())  
-   {  
-       AutoResetEvent waitHandle = new AutoResetEvent(false);  
-       workflowRuntime.WorkflowCompleted += delegate(object sender, WorkflowCompletedEventArgs e)  
-       {  
-           waitHandle.Set();  
-       };  
-       workflowRuntime.WorkflowTerminated += delegate(object sender, WorkflowTerminatedEventArgs e)  
-       {  
-           Console.WriteLine(e.Exception.Message);  
-           waitHandle.Set();  
-       };  
- 
-       TypeProvider typeProvider = new TypeProvider(null);  
-       // Add referenced assemblies, if needed  
-       // typeProvider.AddAssembly(...);  
-       workflowRuntime.AddService(typeProvider);  
- 
-       using (XmlReader reader = XmlReader.Create("Workflow1.xoml"))  
-       {  
-           WorkflowInstance instance = workflowRuntime.CreateWorkflow(reader);  
-           instance.Start();  
-       }  
- 
-       waitHandle.WaitOne();  
-   }  
+    using (WorkflowRuntime workflowRuntime = new WorkflowRuntime())  
+    {  
+        AutoResetEvent waitHandle = new AutoResetEvent(false);  
+        workflowRuntime.WorkflowCompleted += delegate(object sender, WorkflowCompletedEventArgs e)  
+        {  
+            waitHandle.Set();  
+        };  
+        workflowRuntime.WorkflowTerminated += delegate(object sender, WorkflowTerminatedEventArgs e)  
+        {  
+            Console.WriteLine(e.Exception.Message);  
+            waitHandle.Set();  
+        };  
+  
+        TypeProvider typeProvider = new TypeProvider(null);  
+        // Add referenced assemblies, if needed  
+        // typeProvider.AddAssembly(...);  
+        workflowRuntime.AddService(typeProvider);  
+  
+        using (XmlReader reader = XmlReader.Create("Workflow1.xoml"))  
+        {  
+            WorkflowInstance instance = workflowRuntime.CreateWorkflow(reader);  
+            instance.Start();  
+        }  
+  
+        waitHandle.WaitOne();  
+    }  
 }  
 ```  
  

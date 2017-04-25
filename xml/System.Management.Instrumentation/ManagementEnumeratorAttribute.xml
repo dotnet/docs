@@ -36,11 +36,11 @@ The following example shows how to use the Enumerator attribute to mark a method
 [ManagementEnumerator]  
 public static IEnumerable Enumerate()  
 {  
-  Process[] rgProcesses = Process.GetProcesses();  
-  for (int i = 0; i < rgProcesses.Length; i++)  
-  {  
-     yield return new ProcessProvider(rgProcesses[i]);  
-  }  
+   Process[] rgProcesses = Process.GetProcesses();  
+   for (int i = 0; i < rgProcesses.Length; i++)  
+   {  
+      yield return new ProcessProvider(rgProcesses[i]);  
+   }  
 }  
 ```  
  

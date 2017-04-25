@@ -181,10 +181,10 @@ The following example automatically generates the ORDER BY clause and uses the v
  
 ```  
 <asp:DropDownList AutoPostBack="true" ID="OrderByDropDownList" runat="server">  
-   <asp:ListItem Value="TotalDue"></asp:ListItem>  
-   <asp:ListItem Value="OrderDate"></asp:ListItem>  
+    <asp:ListItem Value="TotalDue"></asp:ListItem>  
+    <asp:ListItem Value="OrderDate"></asp:ListItem>  
 </asp:DropDownList>  
- 
+  
 <asp:EntityDataSource ID="EntityDataSourceWithAutoGenOrderBy" runat="server"   
 ConnectionString="name=AdventureWorksEntities"   
 DefaultContainerName="AdventureWorksEntities"   
@@ -192,8 +192,8 @@ EntitySetName="SalesOrderHeaders"
 Select="it.SalesOrderID, it.TotalDue, it.OrderDate"  
 AutoGenerateOrderByClause="True">  
 <OrderByParameters>  
-   <asp:ControlParameter  
-   ControlID="OrderByDropDownList"/>  
+    <asp:ControlParameter  
+    ControlID="OrderByDropDownList"/>  
 </OrderByParameters>  
 </asp:EntityDataSource>  
 ```  
@@ -208,8 +208,8 @@ EntitySetName="SalesOrderHeaders"
 Select="it.SalesOrderID, it.TotalDue, it.OrderDate"  
 AutoGenerateOrderByClause="True">  
 <OrderByParameters>  
-   <asp:Parameter  
-   DefaultValue="TotalDue"/>  
+    <asp:Parameter  
+    DefaultValue="TotalDue"/>  
 </OrderByParameters>  
 </asp:EntityDataSource>  
 ```  
@@ -254,15 +254,15 @@ In the following example the <xref:System.Web.UI.WebControls.EntityDataSource.Au
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeaderWithAutoParam" runat="server"   
-  ConnectionString="name=AdventureWorksEntities"   
-  DefaultContainerName="AdventureWorksEntities"   
-  EntitySetName="SalesOrderHeaders"   
-  Select="it.SalesOrderID, it.TotalDue"  
-   AutoGenerateWhereClause="True">  
-   <WhereParameters>  
-       <asp:ControlParameter ControlID="TotalDueList"   
-          Name="TotalDue" PropertyName="SelectedValue" DbType="Decimal" />  
-   </WhereParameters>  
+   ConnectionString="name=AdventureWorksEntities"   
+   DefaultContainerName="AdventureWorksEntities"   
+   EntitySetName="SalesOrderHeaders"   
+   Select="it.SalesOrderID, it.TotalDue"  
+    AutoGenerateWhereClause="True">  
+    <WhereParameters>  
+        <asp:ControlParameter ControlID="TotalDueList"   
+           Name="TotalDue" PropertyName="SelectedValue" DbType="Decimal" />  
+    </WhereParameters>  
 </asp:EntityDataSource>  
 ```  
  
@@ -271,15 +271,15 @@ By default, the <xref:System.Web.UI.WebControls.EntityDataSource.AutoGenerateWhe
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeaderWithOutAutoParam" runat="server"   
-  ConnectionString="name=AdventureWorksEntities"   
-  DefaultContainerName="AdventureWorksEntities"   
-  EntitySetName="SalesOrderHeaders"   
-  Where="it.TotalDue < @totalDueParam"   
-   Select="it.SalesOrderID, it.TotalDue">  
-   <WhereParameters>  
-       <asp:ControlParameter ControlID="TotalDueList"   
-          Name="totalDueParam" PropertyName="SelectedValue" DbType="Decimal" />  
-   </WhereParameters>  
+   ConnectionString="name=AdventureWorksEntities"   
+   DefaultContainerName="AdventureWorksEntities"   
+   EntitySetName="SalesOrderHeaders"   
+   Where="it.TotalDue < @totalDueParam"   
+    Select="it.SalesOrderID, it.TotalDue">  
+    <WhereParameters>  
+        <asp:ControlParameter ControlID="TotalDueList"   
+           Name="totalDueParam" PropertyName="SelectedValue" DbType="Decimal" />  
+    </WhereParameters>  
 </asp:EntityDataSource>  
 ```  
  
@@ -404,37 +404,37 @@ The following example supplies Entity SQL command text that returns a collection
  
 ```  
 <asp:EntityDataSource ID="ProductDataSource" runat="server"   
-   CommandText="SELECT value p FROM Products AS p  
-       WHERE p.ProductID  
-       BETWEEN @OrderIdMin AND @OrderIdMax"  
-   ConnectionString="name=AdventureWorksEntities"   
-   DefaultContainerName="AdventureWorksEntities" >  
-   <CommandParameters>  
-       <asp:ControlParameter Name="OrderIdMin"   
-           ControlID="ProductIdMin" Type="Int32"/>  
-       <asp:ControlParameter Name="OrderIdMax"   
-           ControlID="ProductIdMax" Type="Int32" />  
-   </CommandParameters>  
+    CommandText="SELECT value p FROM Products AS p  
+        WHERE p.ProductID  
+        BETWEEN @OrderIdMin AND @OrderIdMax"  
+    ConnectionString="name=AdventureWorksEntities"   
+    DefaultContainerName="AdventureWorksEntities" >  
+    <CommandParameters>  
+        <asp:ControlParameter Name="OrderIdMin"   
+            ControlID="ProductIdMin" Type="Int32"/>  
+        <asp:ControlParameter Name="OrderIdMax"   
+            ControlID="ProductIdMax" Type="Int32" />  
+    </CommandParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The following example returns a projected series of columns:  
  
 ```  
 <asp:EntityDataSource ID="ProductDataSource" runat="server"   
-   CommandText="SELECT p.ProductID, p.ProductName, p.UnitsOnOrder  
-        FROM Products AS p   
-        WHERE p.ProductID BETWEEN @OrderIDMin AND @OrderIDMax"   
-        ContextTypeName="AdventureWorksModel. AdventureWorksEntities">  
-   <CommandParameters>  
-       <asp:ControlParameter Name="OrderIDMin"   
-              ControlID="ProductIDMinTextBox" Type="Int32"/>  
-       <asp:ControlParameter Name="OrderIDMax"   
-              ControlID="ProductIDMaxTextBox" Type="Int32" />  
-   </CommandParameters>  
+    CommandText="SELECT p.ProductID, p.ProductName, p.UnitsOnOrder  
+         FROM Products AS p   
+         WHERE p.ProductID BETWEEN @OrderIDMin AND @OrderIDMax"   
+         ContextTypeName="AdventureWorksModel. AdventureWorksEntities">  
+    <CommandParameters>  
+        <asp:ControlParameter Name="OrderIDMin"   
+               ControlID="ProductIDMinTextBox" Type="Int32"/>  
+        <asp:ControlParameter Name="OrderIDMax"   
+               ControlID="ProductIDMaxTextBox" Type="Int32" />  
+    </CommandParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
  ]]></format>
@@ -475,37 +475,37 @@ The following example uses the supplied Entity SQL command to returns a collecti
  
 ```  
 <asp:EntityDataSource ID="ProductDataSource" runat="server"   
-   CommandText="SELECT value p FROM Products AS p  
-       WHERE p.ProductID  
-       BETWEEN @OrderIdMin AND @OrderIdMax"  
-   ConnectionString="name=AdventureWorksEntities"   
-   DefaultContainerName="AdventureWorksEntities" >  
-   <CommandParameters>  
-       <asp:ControlParameter Name="OrderIdMin"   
-           ControlID="ProductIdMin" Type="Int32"/>  
-       <asp:ControlParameter Name="OrderIdMax"   
-           ControlID="ProductIdMax" Type="Int32" />  
-   </CommandParameters>  
+    CommandText="SELECT value p FROM Products AS p  
+        WHERE p.ProductID  
+        BETWEEN @OrderIdMin AND @OrderIdMax"  
+    ConnectionString="name=AdventureWorksEntities"   
+    DefaultContainerName="AdventureWorksEntities" >  
+    <CommandParameters>  
+        <asp:ControlParameter Name="OrderIdMin"   
+            ControlID="ProductIdMin" Type="Int32"/>  
+        <asp:ControlParameter Name="OrderIdMax"   
+            ControlID="ProductIdMax" Type="Int32" />  
+    </CommandParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The following example returns a projected series of columns:  
  
 ```  
 <asp:EntityDataSource ID="ProductDataSource" runat="server"   
-   CommandText="SELECT p.ProductID, p.ProductName, p.UnitsOnOrder  
-         FROM Products AS p   
-         WHERE p.ProductID BETWEEN @OrderIDMin AND @OrderIDMax"   
-         ContextTypeName="AdventureWorksModel. AdventureWorksEntities">  
-   <CommandParameters>  
-       <asp:ControlParameter Name="OrderIDMin"   
-               ControlID="ProductIDMinTextBox" Type="Int32"/>  
-       <asp:ControlParameter Name="OrderIDMax"   
-               ControlID="ProductIDMaxTextBox" Type="Int32" />  
-   </CommandParameters>  
+    CommandText="SELECT p.ProductID, p.ProductName, p.UnitsOnOrder  
+          FROM Products AS p   
+          WHERE p.ProductID BETWEEN @OrderIDMin AND @OrderIDMax"   
+          ContextTypeName="AdventureWorksModel. AdventureWorksEntities">  
+    <CommandParameters>  
+        <asp:ControlParameter Name="OrderIDMin"   
+                ControlID="ProductIDMinTextBox" Type="Int32"/>  
+        <asp:ControlParameter Name="OrderIDMax"   
+                ControlID="ProductIDMaxTextBox" Type="Int32" />  
+    </CommandParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
  ]]></format>
@@ -602,16 +602,16 @@ The following example shows how to create an <xref:System.Data.Objects.ObjectCon
  
 ```csharp  
 public partial class _Default : System.Web.UI.Page  
-   {  
-       AdventureWorksModel.AdventureWorksEntities objCtx =  
-           new AdventureWorksModel.AdventureWorksEntities();  
- 
-       protected void EntityDataSource2_ContextCreating(object sender,   
-           EntityDataSourceContextCreatingEventArgs e)  
-       {  
-           e.Context = objCtx;  
-       }  
-   }  
+    {  
+        AdventureWorksModel.AdventureWorksEntities objCtx =  
+            new AdventureWorksModel.AdventureWorksEntities();  
+  
+        protected void EntityDataSource2_ContextCreating(object sender,   
+            EntityDataSourceContextCreatingEventArgs e)  
+        {  
+            e.Context = objCtx;  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -650,11 +650,11 @@ To keep an existing <xref:System.Data.Objects.ObjectContext> instance member for
  
 ```csharp  
 protected void EntityDataSource2_ContextDisposing(object sender,   
-   EntityDataSourceContextDisposingEventArgs e)  
+    EntityDataSourceContextDisposingEventArgs e)  
 {  
-   e.Cancel = true;  
+    e.Cancel = true;  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -1201,14 +1201,14 @@ The following XML markup defines a query path that returns `SalesOrderHeader` ob
  
 ```  
 <asp:EntityDataSource ID="ContactDataSource" runat="server"   
-   AutoGenerateWhereClause="True" ConnectionString="name=AdventureWorksEntities"   
-   DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
-   EnableInsert="True" EnableUpdate="True" EntitySetName="Contact"   
-   Include="SalesOrderHeader.SalesOrderDetail, SalesOrderHeader.Address">  
-   <WhereParameters>  
-       <asp:ControlParameter ControlID="customerId" Name="ContactID"   
-           PropertyName="Text" />  
-   </WhereParameters>  
+    AutoGenerateWhereClause="True" ConnectionString="name=AdventureWorksEntities"   
+    DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
+    EnableInsert="True" EnableUpdate="True" EntitySetName="Contact"   
+    Include="SalesOrderHeader.SalesOrderDetail, SalesOrderHeader.Address">  
+    <WhereParameters>  
+        <asp:ControlParameter ControlID="customerId" Name="ContactID"   
+            PropertyName="Text" />  
+    </WhereParameters>  
 </asp:EntityDataSource>  
 ```  
  
@@ -1216,12 +1216,12 @@ The previous XML example is the same as the following <xref:System.Data.Objects.
  
 ```  
 ObjectQuery<Contact> customers =  
-     context.Contact  
-      .Where("it.ContactID = @ContactID",  
-        new ObjectParameter("ContactID", customerId))  
-       .Include("SalesOrderHeader.SalesOrderDetail")  
-       .Include("SalesOrderHeader.Address");  
- 
+      context.Contact  
+       .Where("it.ContactID = @ContactID",  
+         new ObjectParameter("ContactID", customerId))  
+        .Include("SalesOrderHeader.SalesOrderDetail")  
+        .Include("SalesOrderHeader.Address");  
+  
 ```  
  
  ]]></format>
@@ -1426,28 +1426,28 @@ The XML markup in the following example, in an .aspx file, retrieves a value fro
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeader" runat="server"   
- ConnectionString="name=AdventureWorksEntities"   
- DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
- EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
- EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
-  Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
- <WhereParameters>  
-   <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
-     DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
- </WhereParameters>  
+  ConnectionString="name=AdventureWorksEntities"   
+  DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
+  EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
+  EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
+   Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
+  <WhereParameters>  
+    <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
+      DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
+  </WhereParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The previous XML example is equivalent to the following <xref:System.Data.Objects.ObjectQuery%601> named `onlineOrders`:  
  
 ```  
 ObjectQuery<SalesOrderHeader> onlineOrders =  
-     context.SalesOrderHeader  
-      .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
-        new ObjectParameter("ordercost", orderCost))  
-       .OrderBy("it.TotalDue DESC");  
- 
+      context.SalesOrderHeader  
+       .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
+         new ObjectParameter("ordercost", orderCost))  
+        .OrderBy("it.TotalDue DESC");  
+  
 ```  
  
  ]]></format>
@@ -1496,16 +1496,16 @@ The following example automatically generates the ORDER BY clause and uses the v
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeader" runat="server"   
-   ConnectionString="name=AdventureWorksEntities"  
-   DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
-   EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
-   Where="it.OnlineOrderFlag = true" AutoGenerateOrderByClause="True">  
-   <OrderByParameters>  
-       <asp:ControlParameter Name="OrderByParameter"   
-           ControlID="orderByDropDownList" Type="String" />  
-   </OrderByParameters>  
+    ConnectionString="name=AdventureWorksEntities"  
+    DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
+    EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
+    Where="it.OnlineOrderFlag = true" AutoGenerateOrderByClause="True">  
+    <OrderByParameters>  
+        <asp:ControlParameter Name="OrderByParameter"   
+            ControlID="orderByDropDownList" Type="String" />  
+    </OrderByParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
  ]]></format>
@@ -1598,23 +1598,23 @@ The following XML markup uses the <xref:System.Web.UI.WebControls.EntityDataSour
  
 ```  
 <asp:EntityDataSource ID="ProductDataSource" runat="server"   
-   ConnectionString="name=AdventureWorksEntities"   
-   DefaultContainerName="AdventureWorksEntities"   
-   EntitySetName="Product" OrderBy="it.[ProductID]"   
-   Select="it.[ProductID], it.[Name], it.[ListPrice],   
-   it.[Size], it.[Style], it.[Weight]">  
+    ConnectionString="name=AdventureWorksEntities"   
+    DefaultContainerName="AdventureWorksEntities"   
+    EntitySetName="Product" OrderBy="it.[ProductID]"   
+    Select="it.[ProductID], it.[Name], it.[ListPrice],   
+    it.[Size], it.[Style], it.[Weight]">  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The previous XML example is the same as the following <xref:System.Data.Objects.ObjectQuery%601> named `products`:  
  
 ```  
 ObjectQuery<Product> products = context.Product  
-   .Select(it.[ProductID], it.[Name], it.[ListPrice],   
-     it.[Size], it.[Style], it.[Weight])  
-   .OrderBy("it.[ProductID]");  
- 
+    .Select(it.[ProductID], it.[Name], it.[ListPrice],   
+      it.[Size], it.[Style], it.[Weight])  
+    .OrderBy("it.[ProductID]");  
+  
 ```  
  
  ]]></format>
@@ -1949,27 +1949,27 @@ The XML markup in the following example, in an .aspx file, retrieves a value fro
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeader" runat="server"   
- ConnectionString="name=AdventureWorksEntities"   
- DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
- EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
- EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
-  Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
- <WhereParameters>  
-   <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
-     DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
- </WhereParameters>  
+  ConnectionString="name=AdventureWorksEntities"   
+  DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
+  EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
+  EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
+   Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
+  <WhereParameters>  
+    <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
+      DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
+  </WhereParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The previous XML example is the same as the following <xref:System.Data.Objects.ObjectQuery%601> named `onlineOrders`:  
  
 ```  
 ObjectQuery<SalesOrderHeader> onlineOrders =  
-     context.SalesOrderHeader  
-      .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
-        new ObjectParameter("ordercost", orderCost))  
-       .OrderBy("it.TotalDue DESC");  
+      context.SalesOrderHeader  
+       .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
+         new ObjectParameter("ordercost", orderCost))  
+        .OrderBy("it.TotalDue DESC");  
 ```  
  
  ]]></format>
@@ -2020,28 +2020,28 @@ The XML markup in the following example, in an .aspx file, retrieves a value fro
  
 ```  
 <asp:EntityDataSource ID="SalesOrderHeader" runat="server"   
- ConnectionString="name=AdventureWorksEntities"   
- DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
- EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
- EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
-  Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
- <WhereParameters>  
-   <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
-     DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
- </WhereParameters>  
+  ConnectionString="name=AdventureWorksEntities"   
+  DefaultContainerName="AdventureWorksEntities" EnableDelete="True"   
+  EnableInsert="True" EnableUpdate="True" EntitySetName="SalesOrderHeader"   
+  EntityTypeFilter="" OrderBy="it.TotalDue DESC" Select=""   
+   Where="it.OnlineOrderFlag = TRUE AND it.TotalDue &gt; @ordercost">  
+  <WhereParameters>  
+    <asp:ControlParameter ControlID="costLimit" DbType="Int32"   
+      DefaultValue="2500" Name="ordercost" PropertyName="Text" />  
+  </WhereParameters>  
 </asp:EntityDataSource>  
- 
+  
 ```  
  
 The previous XML example is the same as the following <xref:System.Data.Objects.ObjectQuery%601> named `onlineOrders`:  
  
 ```  
 ObjectQuery<SalesOrderHeader> onlineOrders =  
-     context.SalesOrderHeader  
-      .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
-        new ObjectParameter("ordercost", orderCost))  
-       .OrderBy("it.TotalDue DESC");  
- 
+      context.SalesOrderHeader  
+       .Where("it.OnlineOrderFlag = TRUE AND it.TotalDue > @ordercost",  
+         new ObjectParameter("ordercost", orderCost))  
+        .OrderBy("it.TotalDue DESC");  
+  
 ```  
  
  ]]></format>

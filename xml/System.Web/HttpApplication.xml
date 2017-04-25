@@ -104,23 +104,23 @@ Before an event in a custom HTTP module can occur, you must modify the configura
  
 ```csharp  
 <configuration>  
- <system.web>  
-   <httpModules>  
-     <add type="Samples.AspNet.CS.CustomHTTPModule"  
-       name="CustomHttpModule" />  
-     </httpModules>  
- </system.web>  
+  <system.web>  
+    <httpModules>  
+      <add type="Samples.AspNet.CS.CustomHTTPModule"  
+        name="CustomHttpModule" />  
+      </httpModules>  
+  </system.web>  
 </configuration>  
 ```  
  
 ```vb  
 <configuration>  
- <system.web>  
-   <httpModules>  
-     <add type="Samples.AspNet.VB.CustomHTTPModule"  
-       name="CustomHttpModule" />  
-     </httpModules>  
- </system.web>  
+  <system.web>  
+    <httpModules>  
+      <add type="Samples.AspNet.VB.CustomHTTPModule"  
+        name="CustomHttpModule" />  
+      </httpModules>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -128,23 +128,23 @@ The following setting applies to IIS 7.0 Integrated mode.
  
 ```csharp  
 <configuration>  
- <system.webServer>  
-   <modules>  
-     <add type="Samples.AspNet.CS.CustomHTTPModule"  
-       name="CustomHttpModule" />  
-     </modules>  
- </system.webServer>  
+  <system.webServer>  
+    <modules>  
+      <add type="Samples.AspNet.CS.CustomHTTPModule"  
+        name="CustomHttpModule" />  
+      </modules>  
+  </system.webServer>  
 </configuration>  
 ```  
  
 ```vb  
 <configuration>  
- <system.webServer>  
-   <modules>  
-     <add type="Samples.AspNet.VB.CustomHTTPModule"  
-       name="CustomHttpModule" />  
-     <modules>  
- </system.webServer>  
+  <system.webServer>  
+    <modules>  
+      <add type="Samples.AspNet.VB.CustomHTTPModule"  
+        name="CustomHttpModule" />  
+      <modules>  
+  </system.webServer>  
 </configuration>  
 ```  
  
@@ -1494,7 +1494,7 @@ In addition, you can select different output-cache providers for individual cont
  
 ```  
 <%@ OutputCache Duration="60" VaryByParam="None"   
-   providerName="DiskCache" %>  
+    providerName="DiskCache" %>  
 ```  
  
 To specify a different output cache provider for an HTTP request, you override this method in the Global.asax file to programmatically specify which provider to use for a specific request. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
@@ -1508,22 +1508,22 @@ The following example shows how to programmatically specify the cache provider n
  
 ```  
 Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
-       As HttpContext) As String   
-   If context.Request.Path.EndsWith("Advanced.aspx") Then   
-       Return "DiskCache"   
-   Else   
-       Return MyBase.GetOutputCacheProviderName(context)   
-   End If   
+        As HttpContext) As String   
+    If context.Request.Path.EndsWith("Advanced.aspx") Then   
+        Return "DiskCache"   
+    Else   
+        Return MyBase.GetOutputCacheProviderName(context)   
+    End If   
 End Sub  
 ```  
  
 ```csharp  
 public override string GetOutputCacheProviderName(HttpContext context)  
 {  
-   if (context.Request.Path.EndsWith("Advanced.aspx"))  
-       return "DiskCache";  
-   else  
-       return base.GetOutputCacheProviderName(context);  
+    if (context.Request.Path.EndsWith("Advanced.aspx"))  
+        return "DiskCache";  
+    else  
+        return base.GetOutputCacheProviderName(context);  
 }  
 ```  
  

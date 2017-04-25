@@ -30,37 +30,37 @@ The following code example has two parts. The first is an excerpt of a configura
  
 ```  
 <healthMonitoring   
- enabled="true" heartBeatInterval="0">  
- 
- <providers>  
-   <!-- Define the custom provider that   
-        processes custom Web request events. -->  
-   <add name="SampleWebEventProvider"   
-     type="SamplesAspNet.SampleEventProvider,  
-     webeventprovider,Version=1.0.1573.18094,   
-     Culture=neutral, PublicKeyToken=b5a57a9a9d487cf4,   
-     processorArchitecture=MSIL"/>  
- </providers>  
- 
- <eventMappings>  
- 
-   <!--  Define the event source that issues custom events.   -->  
-   <add  name="SampleWebBaseErrorEvent"      
-     type="SamplesAspNet.SampleWebBaseErrorEvent,  
-     webbaseerrorevent,Version=1.0.1573.21549, Culture=neutral,     
-     PublicKeyToken=2a0b23915ac7352b, processorArchitecture=MSIL"/>  
- </eventMappings>  
- 
- <rules>  
-   <!-- Associate custom event with related   
-     custom provider -->  
-   <add   
-      name="Custom Web Base Errors"  
-      eventName="SampleWebBaseErrorEvent"   
-      provider="SampleWebEventProvider"   
-      profile="Custom"/>    
- </rules>  
- 
+  enabled="true" heartBeatInterval="0">  
+  
+  <providers>  
+    <!-- Define the custom provider that   
+         processes custom Web request events. -->  
+    <add name="SampleWebEventProvider"   
+      type="SamplesAspNet.SampleEventProvider,  
+      webeventprovider,Version=1.0.1573.18094,   
+      Culture=neutral, PublicKeyToken=b5a57a9a9d487cf4,   
+      processorArchitecture=MSIL"/>  
+  </providers>  
+  
+  <eventMappings>  
+  
+    <!--  Define the event source that issues custom events.   -->  
+    <add  name="SampleWebBaseErrorEvent"      
+      type="SamplesAspNet.SampleWebBaseErrorEvent,  
+      webbaseerrorevent,Version=1.0.1573.21549, Culture=neutral,     
+      PublicKeyToken=2a0b23915ac7352b, processorArchitecture=MSIL"/>  
+  </eventMappings>  
+  
+  <rules>  
+    <!-- Associate custom event with related   
+      custom provider -->  
+    <add   
+       name="Custom Web Base Errors"  
+       eventName="SampleWebBaseErrorEvent"   
+       provider="SampleWebEventProvider"   
+       profile="Custom"/>    
+  </rules>  
+  
 </healthMonitoring>  
 ```  
  

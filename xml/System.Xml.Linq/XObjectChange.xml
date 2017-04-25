@@ -37,20 +37,20 @@ You should be careful when modifying an XML tree within one of these events, bec
 The following example raises an event by adding an element to the tree.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root", "content");  
+  
+                XElement root = new XElement("Root", "content");  
 root.Changing += (sender, e) =>  
-   {  
-       Console.WriteLine("Changing event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changing: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changing event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changing: " + e.ObjectChange);  
+    };  
 root.Changed += (sender, e) =>  
-   {  
-       Console.WriteLine("Changed event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changed: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changed event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changed: " + e.ObjectChange);  
+    };  
 root.Add(new XElement("Child", "child content"));  
 ```  
  
@@ -58,32 +58,32 @@ This example produces the following output:
  
 ```  
 Changing event raised  
- Sender: System.Xml.Linq.XElement  
- Changing: Add  
+  Sender: System.Xml.Linq.XElement  
+  Changing: Add  
 Changed event raised  
- Sender: System.Xml.Linq.XElement  
- Changed: Add  
+  Sender: System.Xml.Linq.XElement  
+  Changed: Add  
 ```  
  
 The following example raises an event by removing an element from the tree.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XElement("Child", "content")  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child", "content")  
 );  
 root.Changing += (sender, e) =>  
-   {  
-       Console.WriteLine("Changing event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changing: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changing event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changing: " + e.ObjectChange);  
+    };  
 root.Changed += (sender, e) =>  
-   {  
-       Console.WriteLine("Changed event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changed: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changed event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changed: " + e.ObjectChange);  
+    };  
 root.Element("Child").Remove();  
 ```  
  
@@ -91,30 +91,30 @@ This example produces the following output:
  
 ```  
 Changing event raised  
- Sender: System.Xml.Linq.XElement  
- Changing: Remove  
+  Sender: System.Xml.Linq.XElement  
+  Changing: Remove  
 Changed event raised  
- Sender: System.Xml.Linq.XElement  
- Changed: Remove  
+  Sender: System.Xml.Linq.XElement  
+  Changed: Remove  
 ```  
  
 The following example raises an event by changing the name of an element.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root", "content");  
+  
+                XElement root = new XElement("Root", "content");  
 root.Changing += (sender, e) =>  
-   {  
-       Console.WriteLine("Changing event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changing: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changing event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changing: " + e.ObjectChange);  
+    };  
 root.Changed += (sender, e) =>  
-   {  
-       Console.WriteLine("Changed event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changed: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changed event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changed: " + e.ObjectChange);  
+    };  
 root.Name = "NewName";  
 ```  
  
@@ -122,32 +122,32 @@ This example produces the following output:
  
 ```  
 Changing event raised  
- Sender: System.Xml.Linq.XElement  
- Changing: Name  
+  Sender: System.Xml.Linq.XElement  
+  Changing: Name  
 Changed event raised  
- Sender: System.Xml.Linq.XElement  
- Changed: Name  
+  Sender: System.Xml.Linq.XElement  
+  Changed: Name  
 ```  
  
 The following example raises an event by setting the value of an attribute.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att", "att value")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att", "att value")  
 );  
 root.Changing += (sender, e) =>  
-   {  
-       Console.WriteLine("Changing event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changing: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changing event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changing: " + e.ObjectChange);  
+    };  
 root.Changed += (sender, e) =>  
-   {  
-       Console.WriteLine("Changed event raised");  
-       Console.WriteLine("  Sender: " + sender.GetType());  
-       Console.WriteLine("  Changed: " + e.ObjectChange);  
-   };  
+    {  
+        Console.WriteLine("Changed event raised");  
+        Console.WriteLine("  Sender: " + sender.GetType());  
+        Console.WriteLine("  Changed: " + e.ObjectChange);  
+    };  
 root.FirstAttribute.Value = "new contents";  
 ```  
  
@@ -155,11 +155,11 @@ This example produces the following output:
  
 ```  
 Changing event raised  
- Sender: System.Xml.Linq.XAttribute  
- Changing: Value  
+  Sender: System.Xml.Linq.XAttribute  
+  Changing: Value  
 Changed event raised  
- Sender: System.Xml.Linq.XAttribute  
- Changed: Value  
+  Sender: System.Xml.Linq.XAttribute  
+  Changed: Value  
 ```  
  
  ]]></format>

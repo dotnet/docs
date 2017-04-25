@@ -352,7 +352,7 @@ The following example copies an element to the Clipboard and pastes it to the <x
  
 ```  
 <object>  
- OneOrMoreUIElements  
+  OneOrMoreUIElements  
 </object>  
 ```  
  
@@ -2002,9 +2002,9 @@ The following example copies an element to the Clipboard and pastes it to the <x
  
 ```  
 <object>  
- <object.PreferredPasteFormats>  
-   InkCanvasClipboardFormats  
- </object.PreferredPasteFormats>  
+  <object.PreferredPasteFormats>  
+    InkCanvasClipboardFormats  
+  </object.PreferredPasteFormats>  
 </object>  
 ```  
  

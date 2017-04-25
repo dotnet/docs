@@ -362,9 +362,9 @@ The following code is sample XML data for the previous example.
  
 ```  
 <category name="news.microsoft.com">  
-   <group name="microsoft.public.dotnet.framework.aspnet"/>  
-   <group name="microsoft.public.dotnet.framework.aspnet.mobile"/>  
-   <group name="microsoft.public.dotnet.framework.aspnet.webservices"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet.mobile"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet.webservices"/>  
 </category>  
 ```  
  
@@ -489,16 +489,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -546,16 +546,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -717,9 +717,9 @@ The following code is sample XML data for the previous example.
  
 ```  
 <category name="news.microsoft.com">  
-   <group name="microsoft.public.dotnet.framework.aspnet"/>  
-   <group name="microsoft.public.dotnet.framework.aspnet.mobile"/>  
-   <group name="microsoft.public.dotnet.framework.aspnet.webservices"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet.mobile"/>  
+    <group name="microsoft.public.dotnet.framework.aspnet.webservices"/>  
 </category>  
 ```  
  
@@ -769,16 +769,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -826,16 +826,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -910,16 +910,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -1018,16 +1018,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -1514,16 +1514,16 @@ The following code is sample XML data for the previous example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1">  
-       </Section>  
-       <Section Heading="Section 2">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1">  
+        </Section>  
+        <Section Heading="Section 2">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  

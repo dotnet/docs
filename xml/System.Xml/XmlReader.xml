@@ -1860,27 +1860,27 @@ The following example displays all attributes on the root element.
 using System;  
 using System.IO;  
 using System.Xml;  
- 
+  
 public class Sample   
 {  
- public static void Main(){  
- 
-   // Create the reader.  
-   XmlReader reader = XmlReader.Create("book4.xml");  
- 
-   reader.MoveToContent();  
- 
-   // Display each of the attribute nodes, including default attributes.  
-   while (reader.MoveToNextAttribute()){  
-       if (reader.IsDefault)  
-         Console.Write("(default attribute) ");  
-       Console.WriteLine("{0} = {1}", reader.Name, reader.Value);    
-   }             
- 
-   //Close the reader.  
-   reader.Close();       
- 
- }  
+  public static void Main(){  
+  
+    // Create the reader.  
+    XmlReader reader = XmlReader.Create("book4.xml");  
+  
+    reader.MoveToContent();  
+  
+    // Display each of the attribute nodes, including default attributes.  
+    while (reader.MoveToNextAttribute()){  
+        if (reader.IsDefault)  
+          Console.Write("(default attribute) ");  
+        Console.WriteLine("{0} = {1}", reader.Name, reader.Value);    
+    }             
+  
+    //Close the reader.  
+    reader.Close();       
+  
+  }  
 } // End class  
 ```  
  
@@ -1891,8 +1891,8 @@ The example uses the following files as input.
 ```  
 <!DOCTYPE book SYSTEM 'book.dtd'>  
 <book ISBN = '1-861001-57-5'>  
- <title>Pride And Prejudice</title>  
- <price>19.95</price>  
+  <title>Pride And Prejudice</title>  
+  <price>19.95</price>  
 </book>  
 ```  
  
@@ -1901,8 +1901,8 @@ The example uses the following files as input.
 ```  
 <!ELEMENT book (title,price)>   
 <!ATTLIST book   
-  genre CDATA "novel"  
-  ISBN CDATA #REQUIRED>  
+   genre CDATA "novel"  
+   ISBN CDATA #REQUIRED>  
 <!ELEMENT title (#PCDATA)>  
 <!ELEMENT price (#PCDATA)>  
 ```  
@@ -2429,10 +2429,10 @@ In the following XML string, if the reader is positioned on the `href` attribute
  
 ```  
 <root xmlns:a="urn:456">  
- <item>  
- <ref href="a:b"/>  
- </item>  
-</root>  
+  <item>  
+  <ref href="a:b"/>  
+  </item>  
+ </root>  
 ```  
  
  ]]></format>
@@ -2626,22 +2626,22 @@ and
  
 ```  
 <?xml version="1.0"><!DOCTYPE price SYSTEM  
- "abc"><price>123.4</price>  
+  "abc"><price>123.4</price>  
 ```  
  
 and  
  
 ```  
 <?xml version="1.0"><!DOCTYPE price SYSTEM "abc"  
- [<!ENTTIY p  
- "123.4">]><price>&p;</price>  
+  [<!ENTTIY p  
+  "123.4">]><price>&p;</price>  
 ```  
  
 and  
  
 ```  
 <!-- some test comment --><?processing  
- instruction?><price>123.4</price>  
+  instruction?><price>123.4</price>  
 ```  
  
  ]]></format>
@@ -3197,7 +3197,7 @@ The sample uses the `items.xml` file.
 ```  
 <Item>Test with an entity: 123</Item><Item>Test with a child element <more> stuff</Item><Item>Test with a CDATA section <![CDATA[<456>]]]><![CDATA[]> def</Item><Item>Test with a char entity: A</Item><!-- Fourteen chars in this element.--><Item>1234567890ABCD</Item></Items>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred while parsing the XML.</exception>
@@ -5953,7 +5953,7 @@ This method returns all the content of the current node including the markup. Th
  
 ```  
 <node>  
-this <child id="123"/>  
+ this <child id="123"/>  
 </node>  
 ```  
  
@@ -6428,26 +6428,26 @@ Use the following XML data to run the examples in this topic:
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Books>  
- <Book>  
-   <Title>A Brief History of Time</Title>  
- </Book>  
- <Book>  
-   <Title>Principle Of Relativity</Title>  
- </Book>  
- <Book>  
-   <Title>Victory of Reason</Title>  
- </Book>  
- <Book>  
-   <Title>The Unicorn that did not Fail</Title>  
- </Book>  
- <Book>  
-   <Title>Rational Ontology</Title>  
- </Book>  
- <Book>  
-   <Title>The Meaning of Pizza</Title>  
- </Book>  
+  <Book>  
+    <Title>A Brief History of Time</Title>  
+  </Book>  
+  <Book>  
+    <Title>Principle Of Relativity</Title>  
+  </Book>  
+  <Book>  
+    <Title>Victory of Reason</Title>  
+  </Book>  
+  <Book>  
+    <Title>The Unicorn that did not Fail</Title>  
+  </Book>  
+  <Book>  
+    <Title>Rational Ontology</Title>  
+  </Book>  
+  <Book>  
+    <Title>The Meaning of Pizza</Title>  
+  </Book>  
 </Books>  
- 
+  
 ```  
  
  ]]></format>
@@ -6587,18 +6587,18 @@ This method is functionally equivalent executing the `following::name` XPath exp
 ```xml  
 <!--"sample.xml"-->  
 <?xmlversion="1.0">  
-  <items>  
-     <item xmls="urn:1"/>  
-  </items>  
+   <items>  
+      <item xmls="urn:1"/>  
+   </items>  
 </xml>  
- 
+  
 ```  
  
 ```csharp  
 XmlTextReader reader = newXmlTextReader("sample.xml");  
- 
+  
 reader.ReadToFollowing("item");  
- 
+  
 ```  
  
 This method can be called on all node types.  
@@ -6651,18 +6651,18 @@ This method is functionally equivalent executing the `following::name` XPath exp
 ```xml  
 <!--"sample.xml"-->  
 <?xmlversion="1.0">  
-  <items>  
-     <item xmls="urn:1"/>  
-  </items>  
+   <items>  
+      <item xmls="urn:1"/>  
+   </items>  
 </xml>  
- 
+  
 ```  
  
 ```csharp  
 XmlTextReader reader = newXmlTextReader("sample.xml");  
- 
+  
 reader.ReadToFollowing("item", "urn:1");  
- 
+  
 ```  
  
 This method can be called on all node types.  
@@ -7038,7 +7038,7 @@ If the reader is positioned on a leaf node already (such as the `<x>` node or th
  
 ```  
 <a name="bob" age="123">  
-<x/>abc<y/>  
+ <x/>abc<y/>  
 </a>  
 <b>  
 ...  

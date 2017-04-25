@@ -25,14 +25,14 @@ The following configuration-file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <webParts>  
-   <personalization>  
-     <authorization>  
-       <deny users="*" verbs="enterSharedScope" />  
-       <allow users="*" verbs="modifyState" />  
-     </authorization>  
-   </personalization>  
- </webParts>  
+  <webParts>  
+    <personalization>  
+      <authorization>  
+        <deny users="*" verbs="enterSharedScope" />  
+        <allow users="*" verbs="modifyState" />  
+      </authorization>  
+    </personalization>  
+  </webParts>  
 </system.web>  
 ```  
  

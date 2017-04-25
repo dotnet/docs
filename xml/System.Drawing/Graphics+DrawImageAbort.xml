@@ -38,33 +38,33 @@ A realistic implementation of this callback would involve the actual scrutiny of
  
 ```vb  
 Private Function DrawImageCallback(callBackData As IntPtr) As Boolean  
-    ' Test for call that passes callBackData parameter.  
-    If callBackData.Equals(IntPtr.Zero) Then  
-        ' If no callBackData passed, abort DrawImage method.  
-        Return True  
-    Else  
-        ' If callBackData passed, continue DrawImage method.  
-        Return False  
-    End If  
-End Function 'DrawImageCallback  
+     ' Test for call that passes callBackData parameter.  
+     If callBackData.Equals(IntPtr.Zero) Then  
+         ' If no callBackData passed, abort DrawImage method.  
+         Return True  
+     Else  
+         ' If callBackData passed, continue DrawImage method.  
+         Return False  
+     End If  
+ End Function 'DrawImageCallback  
 ```  
  
 ```csharp  
 // Define DrawImageAbort callback method.  
-private bool DrawImageCallback(IntPtr callbackdata)  
-{  
-   // Test for call that passes callBackData parameter.  
-   if(callbackdata==IntPtr.Zero)  
-   {  
-      // If no callbackdata passed, cancel DrawImage method.  
-      return true;  
-   }  
-   else  
-   {  
-      // If callbackdata passed, continue DrawImage method.  
-      return false;  
-   }  
-}  
+ private bool DrawImageCallback(IntPtr callbackdata)  
+ {  
+    // Test for call that passes callBackData parameter.  
+    if(callbackdata==IntPtr.Zero)  
+    {  
+       // If no callbackdata passed, cancel DrawImage method.  
+       return true;  
+    }  
+    else  
+    {  
+       // If callbackdata passed, continue DrawImage method.  
+       return false;  
+    }  
+ }  
 ```  
  
  ]]></format>

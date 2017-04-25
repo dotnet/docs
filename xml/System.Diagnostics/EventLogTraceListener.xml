@@ -22,15 +22,15 @@ The following example adds a <xref:System.Diagnostics.EventLogTraceListener> obj
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="myListener"  
-         type="System.Diagnostics.EventLogTraceListener"  
-         initializeData="TraceListenerLog" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="myListener"  
+          type="System.Diagnostics.EventLogTraceListener"  
+          initializeData="TraceListenerLog" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

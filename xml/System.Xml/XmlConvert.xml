@@ -38,7 +38,7 @@ You can use the <xref:System.Xml.XmlConvert.EncodeName%2A> method with the <xref
  
 ```  
 writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");  
- 
+  
 ```  
  
 The following <xref:System.Xml.XmlConvert> methods perform encoding and decoding.  
@@ -831,12 +831,12 @@ The example uses the transactions.xml file.
 ```  
 <?xml version="1.0"?>  
 <transactions>  
-  <transaction>  
-     <id>123456789</id>  
-     <amount>1.00</amount>  
-     <currency>USD</currency>  
-     <time>2007-08-03T22:05:13-07:00</time>  
-  </transaction>  
+   <transaction>  
+      <id>123456789</id>  
+      <amount>1.00</amount>  
+      <currency>USD</currency>  
+      <time>2007-08-03T22:05:13-07:00</time>  
+   </transaction>  
 </transactions>  
 ```  
  
@@ -901,12 +901,12 @@ The example uses the transactions.xml file.
 ```  
 <?xml version="1.0"?>  
 <transactions>  
-  <transaction>  
-     <id>123456789</id>  
-     <amount>1.00</amount>  
-     <currency>USD</currency>  
-     <time>2007-08-03T22:05:13-07:00</time>  
-  </transaction>  
+   <transaction>  
+      <id>123456789</id>  
+      <amount>1.00</amount>  
+      <currency>USD</currency>  
+      <time>2007-08-03T22:05:13-07:00</time>  
+   </transaction>  
 </transactions>  
 ```  
  
@@ -971,12 +971,12 @@ The example uses the transactions.xml file.
 ```  
 <?xml version="1.0"?>  
 <transactions>  
-  <transaction>  
-     <id>123456789</id>  
-     <amount>1.00</amount>  
-     <currency>USD</currency>  
-     <time>2007-08-03T22:05:13-07:00</time>  
-  </transaction>  
+   <transaction>  
+      <id>123456789</id>  
+      <amount>1.00</amount>  
+      <currency>USD</currency>  
+      <time>2007-08-03T22:05:13-07:00</time>  
+   </transaction>  
 </transactions>  
 ```  
  
@@ -2279,11 +2279,11 @@ This method can be used with the <xref:System.Xml.XmlWriter> class in the follow
  
 ```  
 try{  
- writer.WriteStartElement(XmlConvert.VerifyName("item"),"bar");  
+  writer.WriteStartElement(XmlConvert.VerifyName("item"),"bar");  
 }  
 catch(Exception e)  
 {  
- Console.WriteLine("error");  
+  Console.WriteLine("error");  
 }  
 ```  
  
@@ -2379,10 +2379,10 @@ This method ensures that the name token follows the proper syntax for a valid NM
  
 ```  
 try {  
- writer.WriteStartElement(XmlConvert.VerifyNMTOKEN("abc"),"book");  
+  writer.WriteStartElement(XmlConvert.VerifyNMTOKEN("abc"),"book");  
 }  
 catch(Exception e) {  
- Console.WriteLine("error");  
+  Console.WriteLine("error");  
 }  
 ```  
  
@@ -2472,10 +2472,10 @@ This method ensures that the name token follows the proper syntax for a valid to
  
 ```  
 try {  
- writer.WriteStartElement(XmlConvert.VerifyTOKEN("abc"),"book");  
+  writer.WriteStartElement(XmlConvert.VerifyTOKEN("abc"),"book");  
 }  
 catch(Exception e) {  
- Console.WriteLine("error");  
+  Console.WriteLine("error");  
 }  
 ```  
  

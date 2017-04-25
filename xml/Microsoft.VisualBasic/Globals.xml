@@ -30,12 +30,12 @@ The following example uses the `ScriptEngineMajorVersion` property and related p
  
 ```  
 Function getRuntimeInfo() As String  
-   Dim runtime As String = ScriptEngine & " Version "  
-   runtime &= CStr(ScriptEngineMajorVersion) & "."  
-   runtime &= CStr(ScriptEngineMinorVersion) & "."  
-   runtime &= CStr(ScriptEngineBuildVersion)  
-   ' Return the current runtime information.  
-   Return runtime  
+    Dim runtime As String = ScriptEngine & " Version "  
+    runtime &= CStr(ScriptEngineMajorVersion) & "."  
+    runtime &= CStr(ScriptEngineMinorVersion) & "."  
+    runtime &= CStr(ScriptEngineBuildVersion)  
+    ' Return the current runtime information.  
+    Return runtime  
 End Function  
 ```  
  

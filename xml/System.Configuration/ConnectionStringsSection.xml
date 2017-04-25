@@ -31,10 +31,10 @@ The following excerpt shows the configuration used by the previous example.
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
- <connectionStrings>  
-   <add name="ConnStr1" connectionString="LocalSqlServer: data source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=aspnetdb"  
-     providerName="System.Data.SqlClient" />  
- </connectionStrings>  
+  <connectionStrings>  
+    <add name="ConnStr1" connectionString="LocalSqlServer: data source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=aspnetdb"  
+      providerName="System.Data.SqlClient" />  
+  </connectionStrings>  
 </configuration>  
 ```  
  

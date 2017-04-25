@@ -28,7 +28,7 @@ DirectorySearcher src = new DirectorySearcher("…");
 src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
 src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;  
 SearchResultCollection res = src.FindAll();  
- 
+  
 ```  
  
  ]]></format>

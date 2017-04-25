@@ -213,9 +213,9 @@ The following C# sample shows one use of this method:
  
 ```  
 var customer = (from c in db.Customers  
-  where c.CustomerID == "ALFKI"  
-  select c).Single();  
- 
+   where c.CustomerID == "ALFKI"  
+   select c).Single();  
+  
 Order[] orderArray = new Order[customer.Orders.Count];  
 ```  
  
@@ -223,9 +223,9 @@ customer.Orders.CopyTo(orderArray,0);In Visual Basic:
  
 ```  
 Dim customer = (From c In db.Customers _   
-  Where c.CustomerID = "ALFKI" _   
-  Select c).[Single]()  
- 
+   Where c.CustomerID = "ALFKI" _   
+   Select c).[Single]()  
+  
 Dim orderArray As Order() = New Order(customer.Orders.Count - 1) {}  
 customer.Orders.CopyTo(orderArray, 0)  
 ```  

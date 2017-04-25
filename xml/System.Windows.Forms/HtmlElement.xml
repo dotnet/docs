@@ -281,15 +281,15 @@ Assume you have loaded the following HTML page into a hosted instance of the <xr
  
 ```  
 <HTML>  
- 
-   <BODY>  
- 
-       <DIV id="div1" style="position:absolute;top:100px;left:100px;border-      style:solid;border-width:1px;">  
-           Edit this text.  
-       </DIV>  
- 
-   </BODY>  
- 
+  
+    <BODY>  
+  
+        <DIV id="div1" style="position:absolute;top:100px;left:100px;border-      style:solid;border-width:1px;">  
+            Edit this text.  
+        </DIV>  
+  
+    </BODY>  
+  
 </HTML>  
 ```  
  
@@ -826,13 +826,13 @@ Save the following HTML code into a file, and load the file into a <xref:System.
  
 ```  
 <HTML>  
-   <BODY>  
-       <FORM name="form1">  
-           <INPUT type="text" size=20 name="text1">  
-           <INPUT type="text" size=20 name="text2">  
-           <INPUT type="text" size=20 name="text3">  
-       </FORM>  
-   </BODY>  
+    <BODY>  
+        <FORM name="form1">  
+            <INPUT type="text" size=20 name="text1">  
+            <INPUT type="text" size=20 name="text2">  
+            <INPUT type="text" size=20 name="text3">  
+        </FORM>  
+    </BODY>  
 </HTML>  
 ```  
  
@@ -1542,23 +1542,23 @@ The following code example shows how <xref:System.Windows.Forms.HtmlElement.Offs
  
 ```  
 <HTML>  
-   <BODY id="documentBody">  
- 
-       <DIV id="div1">  
-           <SPAN id="span1">Placeholder text 1.</SPAN>  
-       </DIV>  
- 
-       <DIV id="div2" style="position:relative;top:100px;left:100px;">  
-           <SPAN id="span2">Placeholder text 2.</SPAN>  
-       </DIV>  
- 
-       <DIV id="div3" style="position:absolute;top:200px;left:200px;">  
-           <DIV id="div4" style="position:relative;top:100px;left:100px;">  
-               <SPAN id="span3">Placeholder text 3.</SPAN>  
-           </DIV>  
-       </DIV>  
- 
-   </BODY>  
+    <BODY id="documentBody">  
+  
+        <DIV id="div1">  
+            <SPAN id="span1">Placeholder text 1.</SPAN>  
+        </DIV>  
+  
+        <DIV id="div2" style="position:relative;top:100px;left:100px;">  
+            <SPAN id="span2">Placeholder text 2.</SPAN>  
+        </DIV>  
+  
+        <DIV id="div3" style="position:absolute;top:200px;left:200px;">  
+            <DIV id="div4" style="position:relative;top:100px;left:100px;">  
+                <SPAN id="span3">Placeholder text 3.</SPAN>  
+            </DIV>  
+        </DIV>  
+  
+    </BODY>  
 </HTML>  
 ```  
  
@@ -1607,23 +1607,23 @@ The following code example shows how <xref:System.Windows.Forms.HtmlElement.Offs
  
 ```  
 <HTML>  
-   <BODY id="documentBody">  
- 
-       <DIV id="div1">  
-           <SPAN id="span1">Placeholder text 1.</SPAN>  
-       </DIV>  
- 
-       <DIV id="div2" style="position:relative;top:100px;left:100px;">  
-           <SPAN id="span2">Placeholder text 2.</SPAN>  
-       </DIV>  
- 
-       <DIV id="div3" style="position:absolute;top:200px;left:200px;">  
-           <DIV id="div4" style="position:relative;top:100px;left:100px;">  
-               <SPAN id="span3">Placeholder text 3.</SPAN>  
-           </DIV>  
-       </DIV>  
- 
-   </BODY>  
+    <BODY id="documentBody">  
+  
+        <DIV id="div1">  
+            <SPAN id="span1">Placeholder text 1.</SPAN>  
+        </DIV>  
+  
+        <DIV id="div2" style="position:relative;top:100px;left:100px;">  
+            <SPAN id="span2">Placeholder text 2.</SPAN>  
+        </DIV>  
+  
+        <DIV id="div3" style="position:absolute;top:200px;left:200px;">  
+            <DIV id="div4" style="position:relative;top:100px;left:100px;">  
+                <SPAN id="span3">Placeholder text 3.</SPAN>  
+            </DIV>  
+        </DIV>  
+  
+    </BODY>  
 </HTML>  
 ```  
  

@@ -189,12 +189,12 @@ Set this property to a zero-length string if you do not want the series to be pl
 ```vb  
 ' Create a new legend and associate three series with the legend.  
 Public Sub CreateSecondLegend()  
-   ' Attach the first series to a chart area.  
-   Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
- 
-   ' Attach the second series to a chart area.  
-   Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
- 
+    ' Attach the first series to a chart area.  
+    Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
+  
+    ' Attach the second series to a chart area.  
+    Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
+  
 End Sub 'CreateSecondLegend  
 ```  
  
@@ -202,12 +202,12 @@ End Sub 'CreateSecondLegend
 // Create a new legend and associate three series with the legend.  
 public void CreateSecondLegend()  
 {  
-    // Attach the first series to a chart area.  
-    Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
- 
-    // Attach the second series to a chart area.  
-    Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
- 
+     // Attach the first series to a chart area.  
+     Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
+  
+     // Attach the second series to a chart area.  
+     Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
+  
 }  
 ```  
  
@@ -692,8 +692,8 @@ To implement a shadow, set the <xref:System.Web.UI.DataVisualization.Charting.Se
 ```  
 ' Set series shadow color and offset  
 Public Sub SetSeriesShadow()  
-    Chart1.Series("Default"}.ShadowColor = Color.Blue  
-    Chart1.Series("Default"}.ShadowOffset = 2  
+     Chart1.Series("Default"}.ShadowColor = Color.Blue  
+     Chart1.Series("Default"}.ShadowOffset = 2  
 End Sub 'SetSeriesShadow  
 ```  
  
@@ -701,8 +701,8 @@ End Sub 'SetSeriesShadow
 // Set series shadow color and offset   
 public void SetSeriesShadow()  
 {      
-   Chart1.Series("Default"}.ShadowColor = Color.Blue;  
-   Chart1.Series["Default"].ShadowOffset = 2;  
+    Chart1.Series("Default"}.ShadowColor = Color.Blue;  
+    Chart1.Series["Default"].ShadowOffset = 2;  
 }  
 ```  
  
@@ -747,7 +747,7 @@ The following code example sets the visual attributes of a series.
 ```vb  
 ' Set series shadow offset  
 Public Sub SetSeriesShadowOffset()  
-   Chart1.Series("Default"}.ShadowOffset = 2  
+    Chart1.Series("Default"}.ShadowOffset = 2  
 End Sub 'SetSeriesVisualAttributes  
 ```  
  
@@ -755,7 +755,7 @@ End Sub 'SetSeriesVisualAttributes
 // Set series shadow offset   
 public void SetSeriesShadowOffset ()  
 {      
-   Chart1.Series["Default"].ShadowOffset = 2;  
+    Chart1.Series["Default"].ShadowOffset = 2;  
 }  
 ```  
  

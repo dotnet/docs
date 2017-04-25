@@ -4624,32 +4624,32 @@ In desktop apps, you can use the             [\<UseRandomizedStringHashAlgorithm
 When you run the example without supplying a configuration file, it displays output similar to the following. Note that the hash codes for the string are identical in the two application domains.  
  
 ```  
- 
+  
 String 'This is a string.' in domain 'PerDomain.exe': 941BCEAC  
 String 'This is a string.' in domain 'NewDomain': 941BCEAC  
- 
+  
 ```  
  
 However, if you add the following configuration file to the example's directory and then run the example, the hash codes for the same string will differ by application domain.  
  
 ```  
- 
+  
 <?xml version ="1.0"?>  
 <configuration>  
-  <runtime>  
-     <UseRandomizedStringHashAlgorithm enabled="1" />  
-  </runtime>  
+   <runtime>  
+      <UseRandomizedStringHashAlgorithm enabled="1" />  
+   </runtime>  
 </configuration>  
- 
+  
 ```  
  
 When the configuration file is present, the example displays the following output:  
  
 ```  
- 
+  
 String 'This is a string.' in domain 'PerDomain.exe': 5435776D  
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
- 
+  
 ```  
  
 > [!IMPORTANT]
@@ -7979,10 +7979,10 @@ You can also use a regular expression to extract substrings from a string based 
 For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they do not always serve as delimiters.  
  
 ```  
- 
+  
 [This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
 \n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
- 
+  
 ```  
  
 A regular expression can split this string easily, as the following example shows.  
@@ -10651,7 +10651,7 @@ Each overload of the <xref:System.String.Format%2A> method uses the [composite f
 A format item has this syntax:  
  
 ```  
- 
+  
 {  
 index[,alignment][ :formatString] }  
 ```  
@@ -10943,10 +10943,10 @@ You can also use a regular expression to extract substrings from a string based 
 For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they do not always serve as delimiters.  
  
 ```  
- 
+  
 [This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
 \n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
- 
+  
 ```  
  
 A regular expression can split this string easily, as the following example shows.  

@@ -393,7 +393,7 @@ The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following ite
  
 ```  
 <ItemGroup>  
-   <Compile Include="File.cs"/>  
+    <Compile Include="File.cs"/>  
 </ItemGroup>  
 ```  
  

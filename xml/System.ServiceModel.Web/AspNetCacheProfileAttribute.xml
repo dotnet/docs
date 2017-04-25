@@ -38,18 +38,18 @@ The following configuration snippet shows how the “CacheFor60Seconds” cache 
  
 ```xml  
 <configuration>  
-   <system.web>  
-     <compilation debug="true" targetFramework="4.0" />  
-     <caching>  
-       <outputCacheSettings>  
-         <outputCacheProfiles>  
-           <add name="CacheFor60Seconds" duration="60" varyByParam="format" varyByHeader="Accept" />  
-         </outputCacheProfiles>  
-       </outputCacheSettings>  
-     </caching>  
-   </system.web>  
+    <system.web>  
+      <compilation debug="true" targetFramework="4.0" />  
+      <caching>  
+        <outputCacheSettings>  
+          <outputCacheProfiles>  
+            <add name="CacheFor60Seconds" duration="60" varyByParam="format" varyByHeader="Accept" />  
+          </outputCacheProfiles>  
+        </outputCacheSettings>  
+      </caching>  
+    </system.web>  
 </configuration>  
- 
+  
 ```  
  
  ]]></format>

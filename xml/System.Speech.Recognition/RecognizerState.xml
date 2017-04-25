@@ -36,12 +36,12 @@ Information such as the description, the supported culture and audio formats, an
 In the example below, an application displays the state of a recognizer in its implementation of a handler for the <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event.  
  
 ```  
- 
+  
 _recognizer.StateChanged +=  
-   delegate(object sender, StateChangedEventArgs eventArgs) {  
-       _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
-   };  
- 
+    delegate(object sender, StateChangedEventArgs eventArgs) {  
+        _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
+    };  
+  
 ```  
  
  ]]></format>

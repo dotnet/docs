@@ -39,44 +39,44 @@ The wildcard is tagged with a semantic key, and the <xref:System.Speech.Recognit
 ```csharp  
 private void pwdGrammar()   
 {  
- GrammarBuilder pwdBuilder = new GrammarBuilder("My Password is");  
- GrammarBuilder wildcardBuilder = new GrammarBuilder();  
- wildcardBuilder.AppendWildcard();  
- SemanticResultKey wildcardKey= new SemanticResultKey("Password", wildcardBuilder);  
- pwdBuilder+=wildcardKey;  
- Grammar grammar = new Grammar(pwdBuilder);  
- grammar.Name = "Password input";  
- 
- grammar.SpeechRecognized += delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
- {  
-   SemanticValue semantics = eventArgs.Result.Semantics;  
-   RecognitionResult result=eventArgs.Result;  
- 
-   if (!semantics.ContainsKey("Password"))   
-   {  
-     SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
-   }  
-   else   
-   {  
-     RecognizedAudio pwdAudio = result.GetAudioForWordRange(result.Words[3], result.Words[result.Words.Count - 1]);  
-     MemoryStream pwdMemoryStream = new MemoryStream();  
-     pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-     if (!IsValidPwd(pwdMemoryStream))   
-     {  
-       string badPwd = System.IO.Path.GetTempPath() + "BadPwd" + (new Random()).Next().ToString() + ".wav";  
-       FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
-       pwdAudio.WriteToWaveStream(waveStream);  
-       waveStream.Flush();  
-       waveStream.Close();  
-       SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
- 
-     }  
-   }  
- };  
- grammar.Enabled = true;  
- _recognizer.LoadGrammar(grammar);  
- UpdateGrammarTree(_grammarTreeView, _recognizer);  
- 
+  GrammarBuilder pwdBuilder = new GrammarBuilder("My Password is");  
+  GrammarBuilder wildcardBuilder = new GrammarBuilder();  
+  wildcardBuilder.AppendWildcard();  
+  SemanticResultKey wildcardKey= new SemanticResultKey("Password", wildcardBuilder);  
+  pwdBuilder+=wildcardKey;  
+  Grammar grammar = new Grammar(pwdBuilder);  
+  grammar.Name = "Password input";  
+  
+  grammar.SpeechRecognized += delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+  {  
+    SemanticValue semantics = eventArgs.Result.Semantics;  
+    RecognitionResult result=eventArgs.Result;  
+  
+    if (!semantics.ContainsKey("Password"))   
+    {  
+      SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+    }  
+    else   
+    {  
+      RecognizedAudio pwdAudio = result.GetAudioForWordRange(result.Words[3], result.Words[result.Words.Count - 1]);  
+      MemoryStream pwdMemoryStream = new MemoryStream();  
+      pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+      if (!IsValidPwd(pwdMemoryStream))   
+      {  
+        string badPwd = System.IO.Path.GetTempPath() + "BadPwd" + (new Random()).Next().ToString() + ".wav";  
+        FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
+        pwdAudio.WriteToWaveStream(waveStream);  
+        waveStream.Flush();  
+        waveStream.Close();  
+        SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
+  
+      }  
+    }  
+  };  
+  grammar.Enabled = true;  
+  _recognizer.LoadGrammar(grammar);  
+  UpdateGrammarTree(_grammarTreeView, _recognizer);  
+  
 }  
 ```  
  
@@ -117,11 +117,11 @@ When performing a recognition operation, the <xref:System.Speech.Recognition.Gra
  
 ```csharp  
 SemanticResultKey stringTest=new SemanticResultKey(  
-   "stringTest", new GrammarBuilder[] {  
-   new GrammarBuilder("the"),  
-   new GrammarBuilder("quick"),  
-   new GrammarBuilder("brown"),  
-   new GrammarBuilder("fox")});  
+    "stringTest", new GrammarBuilder[] {  
+    new GrammarBuilder("the"),  
+    new GrammarBuilder("quick"),  
+    new GrammarBuilder("brown"),  
+    new GrammarBuilder("fox")});  
 ```  
  
 The `semanticResultKey` argument contains the tag used to access the <xref:System.Speech.Recognition.SemanticValue> which might be returned.  
@@ -146,47 +146,47 @@ The wildcard is tagged by a <xref:System.Speech.Recognition.SpeechRecognizer> wh
 ```csharp  
 private void pwdGrammar()   
 {  
- GrammarBuilder pwdBuilder = new GrammarBuilder("My Password is");  
- GrammarBuilder wildcardBuilder = new GrammarBuilder();  
- wildcardBuilder.AppendWildcard();  
- SemanticResultKey wildcardKey= new SemanticResultKey("Password", wildcardBuilder);  
- pwdBuilder+=wildcardKey;  
- Grammar grammar = new Grammar(pwdBuilder);  
- grammar.Name = "Password input";  
- 
- grammar.SpeechRecognized +=   
-   delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
-   {  
-     SemanticValue semantics = eventArgs.Result.Semantics;  
-     RecognitionResult result=eventArgs.Result;  
- 
-     if (!semantics.ContainsKey("Password"))   
-     {  
-       SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
-     }  
-     else   
-     {  
-       RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
-                 result.Words[3],  
-                 result.Words[result.Words.Count - 1]);  
-                 MemoryStream pwdMemoryStream = new MemoryStream();  
-                 pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-       if (!IsValidPwd(pwdMemoryStream))   
-       {  
-         string badPwd = System.IO.Path.GetTempPath() + "BadPwd" + (new Random()).Next().ToString() + ".wav";  
-         FileStream waveStream = new FileStream(badPwd, FileMode.Create);    
-         pwdAudio.WriteToWaveStream(waveStream);  
-         waveStream.Flush();  
-         waveStream.Close();  
-         SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);      
-       }  
-     }  
-   };  
- 
- grammar.Enabled = true;  
- _recognizer.LoadGrammar(grammar);  
- UpdateGrammarTree(_grammarTreeView, _recognizer);  
- 
+  GrammarBuilder pwdBuilder = new GrammarBuilder("My Password is");  
+  GrammarBuilder wildcardBuilder = new GrammarBuilder();  
+  wildcardBuilder.AppendWildcard();  
+  SemanticResultKey wildcardKey= new SemanticResultKey("Password", wildcardBuilder);  
+  pwdBuilder+=wildcardKey;  
+  Grammar grammar = new Grammar(pwdBuilder);  
+  grammar.Name = "Password input";  
+  
+  grammar.SpeechRecognized +=   
+    delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+    {  
+      SemanticValue semantics = eventArgs.Result.Semantics;  
+      RecognitionResult result=eventArgs.Result;  
+  
+      if (!semantics.ContainsKey("Password"))   
+      {  
+        SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+      }  
+      else   
+      {  
+        RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
+                  result.Words[3],  
+                  result.Words[result.Words.Count - 1]);  
+                  MemoryStream pwdMemoryStream = new MemoryStream();  
+                  pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+        if (!IsValidPwd(pwdMemoryStream))   
+        {  
+          string badPwd = System.IO.Path.GetTempPath() + "BadPwd" + (new Random()).Next().ToString() + ".wav";  
+          FileStream waveStream = new FileStream(badPwd, FileMode.Create);    
+          pwdAudio.WriteToWaveStream(waveStream);  
+          waveStream.Flush();  
+          waveStream.Close();  
+          SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);      
+        }  
+      }  
+    };  
+  
+  grammar.Enabled = true;  
+  _recognizer.LoadGrammar(grammar);  
+  UpdateGrammarTree(_grammarTreeView, _recognizer);  
+  
 }  
 ```  
  
@@ -225,11 +225,11 @@ When performing a recognition operation, the <xref:System.String> objects used i
  
 ```csharp  
 SemanticResultKey stringTest=new SemanticResultKey("stringTest",   
-                               new string[] {  
-                                              "the",  
-                                              "quick",  
-                                              "brown",  
-                                              "fox"});  
+                                new string[] {  
+                                               "the",  
+                                               "quick",  
+                                               "brown",  
+                                               "fox"});  
 ```  
  
 The `semanticResultKey` argument determines the key used to access the <xref:System.Speech.Recognition.SemanticValue> which might be returned.  
@@ -248,14 +248,14 @@ Because of the `SemanticResultValue("zero", 5)` appended to the <xref:System.Spe
 ```csharp  
 private void keyTest()   
 {  
- // Say "color red green blue zero"  
- GrammarBuilder gb = new GrammarBuilder("color") +  
-                       new SemanticResultKey("code",   
-                         (new string[] {"red", "green", "blue"})) +  
-                       new SemanticResultValue("zero", 5);  
- Grammar g = new Grammar(gb);  
- g.Name = "keyTest";  
- _recognizer.LoadGrammar(g);  
+  // Say "color red green blue zero"  
+  GrammarBuilder gb = new GrammarBuilder("color") +  
+                        new SemanticResultKey("code",   
+                          (new string[] {"red", "green", "blue"})) +  
+                        new SemanticResultValue("zero", 5);  
+  Grammar g = new Grammar(gb);  
+  g.Name = "keyTest";  
+  _recognizer.LoadGrammar(g);  
 }  
 ```  
  
@@ -295,38 +295,38 @@ A <xref:System.Speech.Recognition.Choices> object (`colorChoice`) containing the
 A <xref:System.Speech.Recognition.GrammarBuilder> is then obtained by calling <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> on a <xref:System.Speech.Recognition.SemanticResultKey> instance, which will be used to key the semantic choices in `colorChoice`.  
  
 ```csharp  
- 
+  
 private Grammar CreateGrammarBuilderRGBSemantics()   
 {  
- 
- // Create a set of choices, each a lookup from a color name to RGB.  
- // Choices constructors do not take SemanticResultValue parameters, so cast   
- // the SemanticResultValue to GrammarBuilder.  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
-   SemanticResultValue colorValue=new SemanticResultValue(colorName, Color.FromName(colorName).ToArgb());  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.  
-   colorChoice.Add(colorValue.ToGrammarBuilder());      
- }  
- SemanticResultKey choiceKey = new SemanticResultKey("rgb", colorChoice);  
- GrammarBuilder choiceBuilder = choiceKey.ToGrammarBuilder();  
- 
- // Create two intermediate grammars with introductory phrase and the color choice.  
- GrammarBuilder makeBackgroundBuilder = "Make background";  
- makeBackgroundBuilder.Append(choiceBuilder);  
- 
- GrammarBuilder configureBackgroundBuilder = new GrammarBuilder("Configure background as");  
- configureBackgroundBuilder.Append((new SemanticResultKey("rgb", colorChoice)).ToGrammarBuilder());  
- 
- // Create the Grammar object, which recognizes either intermediate grammar.  
- Grammar grammar = new Grammar(new Choices(new GrammarBuilder[] {makeBackgroundBuilder, configureBackgroundBuilder}));  
- grammar.Name = "Make Background /Configure background as";  
- 
- return grammar;  
+  
+  // Create a set of choices, each a lookup from a color name to RGB.  
+  // Choices constructors do not take SemanticResultValue parameters, so cast   
+  // the SemanticResultValue to GrammarBuilder.  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+    SemanticResultValue colorValue=new SemanticResultValue(colorName, Color.FromName(colorName).ToArgb());  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.  
+    colorChoice.Add(colorValue.ToGrammarBuilder());      
+  }  
+  SemanticResultKey choiceKey = new SemanticResultKey("rgb", colorChoice);  
+  GrammarBuilder choiceBuilder = choiceKey.ToGrammarBuilder();  
+  
+  // Create two intermediate grammars with introductory phrase and the color choice.  
+  GrammarBuilder makeBackgroundBuilder = "Make background";  
+  makeBackgroundBuilder.Append(choiceBuilder);  
+  
+  GrammarBuilder configureBackgroundBuilder = new GrammarBuilder("Configure background as");  
+  configureBackgroundBuilder.Append((new SemanticResultKey("rgb", colorChoice)).ToGrammarBuilder());  
+  
+  // Create the Grammar object, which recognizes either intermediate grammar.  
+  Grammar grammar = new Grammar(new Choices(new GrammarBuilder[] {makeBackgroundBuilder, configureBackgroundBuilder}));  
+  grammar.Name = "Make Background /Configure background as";  
+  
+  return grammar;  
 }  
- 
+  
 ```  
  
  ]]></format>

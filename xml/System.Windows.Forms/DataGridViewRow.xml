@@ -678,9 +678,9 @@ Starting with the .NET Framework 4.5.2, the error icon is resized according to t
  
 ```  
 <appSettings>  
- <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
- 
+  
 ```  
  
 If this row is associated with a <xref:System.Windows.Forms.DataGridView> control, setting this property will raise the <xref:System.Windows.Forms.DataGridView.RowErrorTextChanged> event.  

@@ -20,22 +20,22 @@ Implement and insert a custom operation selector to customize the selection of t
 ## Examples  
  
 ```csharp  
- 
+  
 public class QueryStringDispatcherBehavior : IDispatchOperationSelector  
 {  
 //Define the mapping from the Actions of the message to the operations.  
 NameValueCollection actionMap; { … }  
- 
+  
 //Implement the SelectOperation method.  
 public string SelectOperation( ref Message message )  
-       {  
-           Uri uri = new Uri(message.Headers.Action);  
-           string query = uri.Query;  
- 
-           string methodName = actionMap[message.Headers.Action.ToString()];  
- 
-           return methodName;  
-       }  
+        {  
+            Uri uri = new Uri(message.Headers.Action);  
+            string query = uri.Query;  
+  
+            string methodName = actionMap[message.Headers.Action.ToString()];  
+  
+            return methodName;  
+        }  
 }  
 ```  
  

@@ -26,20 +26,20 @@ This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinn
 ```  
 recordSequence.RetryAppend = true;  
 recordSequence.TailPinned += new EventHandler<TailPinnedEventArgs>(HandleTailPinned);  
- 
+  
 void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)  
 {  
-  // tailPinnedEventArgs.TargetSequenceNumber is the target   
-  // sequence number to free up space to.    
-  // However, this sequence number is not necessarily valid.  We have  
-  // to use this sequence number as a starting point for finding a  
-  // valid point within the log to advance toward. You need to  
-  // identify a record with a sequence number equal to, or greater  
-  // than TargetSequenceNumber; let's call this   
-  // realTargetSequenceNumber. Once found, move the base  
- 
-  recordSequence.AdvanceBaseSequenceNumber(realTargetSequenceNumber);  
- 
+   // tailPinnedEventArgs.TargetSequenceNumber is the target   
+   // sequence number to free up space to.    
+   // However, this sequence number is not necessarily valid.  We have  
+   // to use this sequence number as a starting point for finding a  
+   // valid point within the log to advance toward. You need to  
+   // identify a record with a sequence number equal to, or greater  
+   // than TargetSequenceNumber; let's call this   
+   // realTargetSequenceNumber. Once found, move the base  
+  
+   recordSequence.AdvanceBaseSequenceNumber(realTargetSequenceNumber);  
+  
 }  
 ```  
  

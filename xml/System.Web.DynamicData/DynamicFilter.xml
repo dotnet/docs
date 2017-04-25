@@ -189,7 +189,7 @@ The following example shows how to specify the column for table row filtering in
  
 ```  
 <asp:DynamicFilter ID="CategoryFilter" runat="server"   
-   DataField="ProductCategory" />  
+    DataField="ProductCategory" />  
 ```  
  
  ]]></format>
@@ -303,7 +303,7 @@ The following example shows how to specify the filter template in markup to use 
  
 ```  
 <asp:DynamicFilter ID="CategoryFilter" runat="server"   
-   FilterUIHint="ForeignKey" />  
+    FilterUIHint="ForeignKey" />  
 ```  
  
  ]]></format>

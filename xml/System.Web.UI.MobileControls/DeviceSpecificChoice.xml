@@ -185,14 +185,14 @@ The filter name must be the name of a method on the page, in the associated `.as
  
 ```  
 public bool methodName(System.Web.Mobile.MobileCapabilities   
-   capabilities, String optionalArgument)  
+    capabilities, String optionalArgument)  
 ```  
  
 For example, if the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property was set to `myChoiceMethod`, a method with the following signature must exist.  
  
 ```  
 public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities   
-   capabilities, String optionalArgument);  
+    capabilities, String optionalArgument);  
 ```  
  
 When evaluating the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  

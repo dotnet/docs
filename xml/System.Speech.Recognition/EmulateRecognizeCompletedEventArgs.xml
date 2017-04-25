@@ -30,30 +30,30 @@ If the speech recognition engine encounters an exception during the recognition 
 The following example adds an event handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event to a <xref:System.Speech.Recognition.SpeechRecognitionEngine>. The handler gets the recognized text from the <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result%2A> property.  
  
 ```csharp  
- 
+  
 private SpeechRecognitionEngine sre;  
- 
+  
 // Initialize the speech recognition engine.   
 private void Initialize()  
 {  
- sre = new SpeechRecognitionEngine();  
- 
- // Add a handler for the EmulateRecognizeCompleted event.  
- sre.EmulateRecognizeCompleted += new EventHandler<EmulateRecognizeCompletedEventArgs>(sre_EmulateRecognizeCompleted);  
- 
- // Add other initialization code here.  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add a handler for the EmulateRecognizeCompleted event.  
+  sre.EmulateRecognizeCompleted += new EventHandler<EmulateRecognizeCompletedEventArgs>(sre_EmulateRecognizeCompleted);  
+  
+  // Add other initialization code here.  
 }  
- 
+  
 // Handle the EmulateRecognizeCompleted event.   
 void sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- string phrase = e.Result.Text;  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  string phrase = e.Result.Text;  
+  
+  // Add event handler code here.  
 }  
- 
+  
 ```  
  
  ]]></format>

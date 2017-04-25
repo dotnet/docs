@@ -53,9 +53,9 @@ Another possible [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] u
  
 ```  
 <object>  
- <object.resourcesProperty>  
-   oneOrMoreResources  
- </object.resourcesProperty>  
+  <object.resourcesProperty>  
+    oneOrMoreResources  
+  </object.resourcesProperty>  
 </object>  
 ```  
  
@@ -502,11 +502,11 @@ Lookup behavior within the <xref:System.Windows.ResourceDictionary.MergedDiction
  
 ```  
 <object>  
- <object.MergedDictionaries>  
-   oneOrMoreResourceDictionaries  
- </object.MergedDictionaries>  
+  <object.MergedDictionaries>  
+    oneOrMoreResourceDictionaries  
+  </object.MergedDictionaries>  
 </object>  
- 
+  
 ```  
  
 <a name="xamlValues_MergedDictionaries"></a>   

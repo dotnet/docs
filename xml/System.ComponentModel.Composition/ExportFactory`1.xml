@@ -28,7 +28,7 @@ When you refer indirectly to a part by using a <xref:System.Lazy%601> object, th
 ```csharp  
 [Export]  
 public String myData = "Example Data.";  
- 
+  
 [Import]  
 public ExportFactory<String> theData { get; set; }  
 ```  
@@ -36,7 +36,7 @@ public ExportFactory<String> theData { get; set; }
 ```vb  
 <Export()>  
 Public myData As String = "Example Data."  
- 
+  
 <Import()>  
 Public Property theData As ExportFactory(Of String)  
 ```  

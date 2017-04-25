@@ -33,16 +33,16 @@ The following example is an excerpt of the configuration file used by the previo
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
- <configSections>  
- 
-   <section name="CustomSection"   
-     type="Samples.AspNet.Configuration.CustomSection, ConfigurationSectionCollection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" />  
- 
- </configSections>  
- 
- <CustomSection fileName="default.txt" maxUsers="1000"   
-   maxIdleTime="00:05:00" />  
- 
+  <configSections>  
+  
+    <section name="CustomSection"   
+      type="Samples.AspNet.Configuration.CustomSection, ConfigurationSectionCollection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" />  
+  
+  </configSections>  
+  
+  <CustomSection fileName="default.txt" maxUsers="1000"   
+    maxIdleTime="00:05:00" />  
+  
 </configuration>  
 ```  
  

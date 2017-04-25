@@ -809,8 +809,8 @@ For example:
  
 ```csharp  
 if (CanSelect && IsMnemonic(charCode, MyControl.Text) {  
-   // Perform action associated with mnemonic.  
-   }  
+    // Perform action associated with mnemonic.  
+    }  
 ```  
  
 This default implementation of the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method simply returns `false` to indicate that the control has no mnemonic.  

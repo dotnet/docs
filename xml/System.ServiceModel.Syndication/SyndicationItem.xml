@@ -532,7 +532,7 @@ The following XML shows how the <xref:System.ServiceModel.Syndication.Syndicatio
  
 ```  
 <content type="MyXMLType">  
-   <mg:MyElement xmlns:mg="http://migree/elements">This is some text</mg:MyElement>  
+    <mg:MyElement xmlns:mg="http://migree/elements">This is some text</mg:MyElement>  
 </content>  
 ```  
  
@@ -554,7 +554,7 @@ The following XML shows how the <xref:System.ServiceModel.Syndication.Syndicatio
  
 ```  
 <a10:content type="MyXMLType">  
-   <mg:MyElement xmlns:mg="http://migree/elements">This is some text</mg:MyElement>  
+    <mg:MyElement xmlns:mg="http://migree/elements">This is some text</mg:MyElement>  
 </a10:content>  
 ```  
  

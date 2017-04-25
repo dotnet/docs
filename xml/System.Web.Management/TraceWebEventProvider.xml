@@ -33,38 +33,38 @@ The following configuration file excerpt shows how to specify a provider of type
  
 ```  
 <healthMonitoring  
-   enabled="true"  
-   heartBeatInterval="0">  
-   <providers>  
-       <add name="TraceEventProvider"  
-           type="System.Web.Management.TraceWebEventProvider,   
-             System.Web"  
-           buffer="false"  
-           bufferMode=""  
-           maxEventLength="4096"  
-           maxSize="4096"  
-           maxMessagesPerNotification="1"  
-       />  
-   </providers>  
-   <eventMappings>  
-       <add name="Request Processing Events"  
-           type="System.Web.Management.WebRequestEvent, System.Web"   
-       />  
-   </eventMappings>  
-   <profiles>  
-       <add name="Trace"  
-           minInstances="1"  
-           maxLimit="Infinite"  
-           minInterval="00:00:00"  
-       />  
-   </profiles>  
-   <rules>  
-       <add name="Trace Request Processing"  
-           eventName="Request Processing Events"  
-           provider="TraceEventProvider"  
-           profile="Trace"  
-       />  
-  </rules>  
+    enabled="true"  
+    heartBeatInterval="0">  
+    <providers>  
+        <add name="TraceEventProvider"  
+            type="System.Web.Management.TraceWebEventProvider,   
+              System.Web"  
+            buffer="false"  
+            bufferMode=""  
+            maxEventLength="4096"  
+            maxSize="4096"  
+            maxMessagesPerNotification="1"  
+        />  
+    </providers>  
+    <eventMappings>  
+        <add name="Request Processing Events"  
+            type="System.Web.Management.WebRequestEvent, System.Web"   
+        />  
+    </eventMappings>  
+    <profiles>  
+        <add name="Trace"  
+            minInstances="1"  
+            maxLimit="Infinite"  
+            minInterval="00:00:00"  
+        />  
+    </profiles>  
+    <rules>  
+        <add name="Trace Request Processing"  
+            eventName="Request Processing Events"  
+            provider="TraceEventProvider"  
+            profile="Trace"  
+        />  
+   </rules>  
 </healthMonitoring>   
 ```  
  

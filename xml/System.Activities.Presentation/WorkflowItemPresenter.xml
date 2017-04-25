@@ -31,18 +31,18 @@ For an example of the <xref:System.Activities.Presentation.WorkflowItemPresenter
  
 ```xaml  
 <sap:ActivityDesigner x:Class="Microsoft.Documentation.SimpleIfDesigner"  
-   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-   xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
-   xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
-   <StackPanel>  
-       <StackPanel Orientation="Horizontal">  
-           <sap:WorkflowItemPresenter Margin="4" HintText="Drop Then Here" Item="{Binding Path=ModelItem.Then, Mode=TwoWay}" />  
-           <sap:WorkflowItemPresenter Margin="4" HintText="Drop Else Here" Item="{Binding Path=ModelItem.Else, Mode=TwoWay}" />  
-       </StackPanel>  
-   </StackPanel>  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+    <StackPanel>  
+        <StackPanel Orientation="Horizontal">  
+            <sap:WorkflowItemPresenter Margin="4" HintText="Drop Then Here" Item="{Binding Path=ModelItem.Then, Mode=TwoWay}" />  
+            <sap:WorkflowItemPresenter Margin="4" HintText="Drop Else Here" Item="{Binding Path=ModelItem.Else, Mode=TwoWay}" />  
+        </StackPanel>  
+    </StackPanel>  
 </sap:ActivityDesigner>  
- 
+  
 ```  
  
 <!-- TODO: review snippet reference  [!CODE [WorkflowItemPresenter#1](WorkflowItemPresenter#1)]  -->  

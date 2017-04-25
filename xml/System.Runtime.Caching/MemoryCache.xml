@@ -36,50 +36,50 @@ The following example declares a reference to the default memory cache instance.
  
 ```vb  
 Private Sub btnGet_Click(ByVal sender As Object, ByVal e As EventArgs)   
-   Dim cache As ObjectCache = MemoryCache.[Default]   
-   Dim fileContents As String = TryCast(cache("filecontents"), String)   
- 
-   If fileContents Is Nothing Then   
-       Dim policy As New CacheItemPolicy()   
-       Dim filePaths As New List(Of String)()   
-       filePaths.Add("c:\cache\example.txt")   
- 
-       policy.ChangeMonitors.Add(New HostFileChangeMonitor(filePaths))   
- 
-       ' Fetch the file contents.  
-       fileContents = File.ReadAllText("c:\cache\example.txt")   
- 
-       cache.[Set]("filecontents", fileContents, policy)   
-   End If   
- 
-   Label1.Text = fileContents  
+    Dim cache As ObjectCache = MemoryCache.[Default]   
+    Dim fileContents As String = TryCast(cache("filecontents"), String)   
+  
+    If fileContents Is Nothing Then   
+        Dim policy As New CacheItemPolicy()   
+        Dim filePaths As New List(Of String)()   
+        filePaths.Add("c:\cache\example.txt")   
+  
+        policy.ChangeMonitors.Add(New HostFileChangeMonitor(filePaths))   
+  
+        ' Fetch the file contents.  
+        fileContents = File.ReadAllText("c:\cache\example.txt")   
+  
+        cache.[Set]("filecontents", fileContents, policy)   
+    End If   
+  
+    Label1.Text = fileContents  
 End Sub  
 ```  
  
 ```csharp  
 private void btnGet_Click(object sender, EventArgs e)  
 {  
-   ObjectCache cache = MemoryCache.Default;  
-   string fileContents = cache["filecontents"] as string;  
- 
-   if (fileContents == null)  
-   {  
-       CacheItemPolicy policy = new CacheItemPolicy();  
- 
-       List<string> filePaths = new List<string>();  
-       filePaths.Add("c:\\cache\\example.txt");  
- 
-       policy.ChangeMonitors.Add(new   
-       HostFileChangeMonitor(filePaths));  
- 
-       // Fetch the file contents.  
-       fileContents =   
-           File.ReadAllText("c:\\cache\\example.txt");  
- 
-       cache.Set("filecontents", fileContents, policy);  
-   }  
- 
-   Label1.Text = fileContents;  
+    ObjectCache cache = MemoryCache.Default;  
+    string fileContents = cache["filecontents"] as string;  
+  
+    if (fileContents == null)  
+    {  
+        CacheItemPolicy policy = new CacheItemPolicy();  
+  
+        List<string> filePaths = new List<string>();  
+        filePaths.Add("c:\\cache\\example.txt");  
+  
+        policy.ChangeMonitors.Add(new   
+        HostFileChangeMonitor(filePaths));  
+  
+        // Fetch the file contents.  
+        fileContents =   
+            File.ReadAllText("c:\\cache\\example.txt");  
+  
+        cache.Set("filecontents", fileContents, policy);  
+    }  
+  
+    Label1.Text = fileContents;  
 }  
 ```  
  

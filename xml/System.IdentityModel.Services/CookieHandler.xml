@@ -33,7 +33,7 @@ The following example configures the SAM to use a custom cookie handler of type 
  
 ```xml  
 <cookieHandler mode="Custom">  
-   <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" />  
+    <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" />  
 </cookieHandler>  
 ```  
  

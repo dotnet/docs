@@ -25,15 +25,15 @@ The following example sets read-only access to all data deployed by the `Account
 ```  
 namespace AccountingServiceWebApp  
 {  
-   public class AccountingService :  
-               DataService<DataModel>  
-   {  
-       config.SetResourceContainerAccessRule("*",   
-                               ResourceContainerRights.AllRead);  
- 
-   }  
+    public class AccountingService :  
+                DataService<DataModel>  
+    {  
+        config.SetResourceContainerAccessRule("*",   
+                                ResourceContainerRights.AllRead);  
+  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>

@@ -151,7 +151,7 @@ If a <xref:System.Security.Cryptography.Xml.Transform> object represents an XPat
  
 ```  
 <XPath>   
- self::text()   
+  self::text()   
 </XPath>  
 ```  
  
@@ -159,9 +159,9 @@ This element corresponds to the transform-specific content of the `<Transform>` 
  
 ```  
 <Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">   
- <XPath>   
-   self::text()   
- </XPath>   
+  <XPath>   
+    self::text()   
+  </XPath>   
 </Transform>  
 ```  
  

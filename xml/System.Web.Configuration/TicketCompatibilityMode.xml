@@ -24,10 +24,10 @@ The following example configures the forms authentication ticket expiration date
  
 ```  
 <system.web>  
- <authentication mode="Forms">   
-   <forms ticketCompatilityMode="Framework40">  
-   </forms>  
- </authentication>  
+  <authentication mode="Forms">   
+    <forms ticketCompatilityMode="Framework40">  
+    </forms>  
+  </authentication>  
 </system.web>  
 ```  
  

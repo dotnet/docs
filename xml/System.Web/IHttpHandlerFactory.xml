@@ -63,12 +63,12 @@ The second part of the example shows a Web.config file excerpt. To use the above
  
 ```  
 <configuration>   
- <system.web>   
-   <httpHandlers>   
-     <add verb="*" path="abc.aspx" type="test.MyFactory,HandlerFactoryTest" />   
-     <add verb="*" path="xyz.aspx" type="test.MyFactory,HandlerFactoryTest" />   
-   </httpHandlers>   
- </system.web>  
+  <system.web>   
+    <httpHandlers>   
+      <add verb="*" path="abc.aspx" type="test.MyFactory,HandlerFactoryTest" />   
+      <add verb="*" path="xyz.aspx" type="test.MyFactory,HandlerFactoryTest" />   
+    </httpHandlers>   
+  </system.web>  
 </configuration>   
 ```  
  

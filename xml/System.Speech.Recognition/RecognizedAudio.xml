@@ -51,28 +51,28 @@ A recognition result can be produced by the following events and methods of the 
 The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- 
- Console.WriteLine("Grammar({0}): {1}",  
-   result.Grammar.Name, result.Text);  
- 
- if (e.Result.Audio != null)  
- {  
-   RecognizedAudio audio = e.Result.Audio;  
- 
-   Console.WriteLine("   start time: {0}", audio.StartTime);  
-   Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
-   Console.WriteLine("   position: {0}, duration: {1}",  
-     audio.AudioPosition, audio.Duration);  
- }  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  
+  Console.WriteLine("Grammar({0}): {1}",  
+    result.Grammar.Name, result.Text);  
+  
+  if (e.Result.Audio != null)  
+  {  
+    RecognizedAudio audio = e.Result.Audio;  
+  
+    Console.WriteLine("   start time: {0}", audio.StartTime);  
+    Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
+    Console.WriteLine("   position: {0}, duration: {1}",  
+      audio.AudioPosition, audio.Duration);  
+  }  
+  
+  // Add event handler code here.  
 }  
 ```  
  
@@ -109,28 +109,28 @@ The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets 
 The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- 
- Console.WriteLine("Grammar({0}): {1}",  
-   result.Grammar.Name, result.Text);  
- 
- if (e.Result.Audio != null)  
- {  
-   RecognizedAudio audio = e.Result.Audio;  
- 
-   Console.WriteLine("   start time: {0}", audio.StartTime);  
-   Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
-   Console.WriteLine("   position: {0}, duration: {1}",  
-     audio.AudioPosition, audio.Duration);  
- }  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  
+  Console.WriteLine("Grammar({0}): {1}",  
+    result.Grammar.Name, result.Text);  
+  
+  if (e.Result.Audio != null)  
+  {  
+    RecognizedAudio audio = e.Result.Audio;  
+  
+    Console.WriteLine("   start time: {0}", audio.StartTime);  
+    Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
+    Console.WriteLine("   position: {0}, duration: {1}",  
+      audio.AudioPosition, audio.Duration);  
+  }  
+  
+  // Add event handler code here.  
 }  
 ```  
  
@@ -160,28 +160,28 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
 The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- 
- Console.WriteLine("Grammar({0}): {1}",  
-   result.Grammar.Name, result.Text);  
- 
- if (e.Result.Audio != null)  
- {  
-   RecognizedAudio audio = e.Result.Audio;  
- 
-   Console.WriteLine("   start time: {0}", audio.StartTime);  
-   Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
-   Console.WriteLine("   position: {0}, duration: {1}",  
-     audio.AudioPosition, audio.Duration);  
- }  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  
+  Console.WriteLine("Grammar({0}): {1}",  
+    result.Grammar.Name, result.Text);  
+  
+  if (e.Result.Audio != null)  
+  {  
+    RecognizedAudio audio = e.Result.Audio;  
+  
+    Console.WriteLine("   start time: {0}", audio.StartTime);  
+    Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
+    Console.WriteLine("   position: {0}, duration: {1}",  
+      audio.AudioPosition, audio.Duration);  
+  }  
+  
+  // Add event handler code here.  
 }  
 ```  
  
@@ -211,28 +211,28 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
 The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- 
- Console.WriteLine("Grammar({0}): {1}",  
-   result.Grammar.Name, result.Text);  
- 
- if (e.Result.Audio != null)  
- {  
-   RecognizedAudio audio = e.Result.Audio;  
- 
-   Console.WriteLine("   start time: {0}", audio.StartTime);  
-   Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
-   Console.WriteLine("   position: {0}, duration: {1}",  
-     audio.AudioPosition, audio.Duration);  
- }  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  
+  Console.WriteLine("Grammar({0}): {1}",  
+    result.Grammar.Name, result.Text);  
+  
+  if (e.Result.Audio != null)  
+  {  
+    RecognizedAudio audio = e.Result.Audio;  
+  
+    Console.WriteLine("   start time: {0}", audio.StartTime);  
+    Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
+    Console.WriteLine("   position: {0}, duration: {1}",  
+      audio.AudioPosition, audio.Duration);  
+  }  
+  
+  // Add event handler code here.  
 }  
 ```  
  
@@ -270,75 +270,75 @@ The following example creates a speech recognition grammar for name input, adds 
 ```  
 private static void AddNameGrammar(SpeechRecognitionEngine recognizer)  
 {  
- GrammarBuilder builder = new GrammarBuilder();  
- builder.Append("My name is");  
- builder.AppendWildcard();  
- 
- Grammar nameGrammar = new Grammar(builder);  
- nameGrammar.Name = "Name Grammar";  
- nameGrammar.SpeechRecognized +=  
-   new EventHandler<SpeechRecognizedEventArgs>(  
-     NameSpeechRecognized);  
- 
- recognizer.LoadGrammar(nameGrammar);  
+  GrammarBuilder builder = new GrammarBuilder();  
+  builder.Append("My name is");  
+  builder.AppendWildcard();  
+  
+  Grammar nameGrammar = new Grammar(builder);  
+  nameGrammar.Name = "Name Grammar";  
+  nameGrammar.SpeechRecognized +=  
+    new EventHandler<SpeechRecognizedEventArgs>(  
+      NameSpeechRecognized);  
+  
+  recognizer.LoadGrammar(nameGrammar);  
 }  
- 
+  
 // Handle the SpeechRecognized event of the name grammar.  
 private static void NameSpeechRecognized(  
- object sender, SpeechRecognizedEventArgs e)  
+  object sender, SpeechRecognizedEventArgs e)  
 {  
- Console.WriteLine("Grammar ({0}) recognized speech: {1}",  
-   e.Result.Grammar.Name, e.Result.Text);  
- 
- try  
- {  
- 
-   // The name phrase starts after the first three words.  
-   if (e.Result.Words.Count < 4)  
-   {  
- 
-     // Add code to check for an alternate that contains the wildcard.  
-     return;  
-   }  
- 
-   RecognizedAudio audio = e.Result.Audio;  
-   TimeSpan start = e.Result.Words[3].AudioPosition;  
-   TimeSpan duration = audio.Duration - start;  
- 
-   // Add code to verify and persist the audio.  
-   string path = @"C:\temp\nameAudio.wav";  
-   using (Stream outputStream = new FileStream(path, FileMode.Create))  
-   {  
-     RecognizedAudio nameAudio = audio.GetRange(start, duration);  
-     nameAudio.WriteToWaveStream(outputStream);  
-     outputStream.Close();  
-   }  
- 
-   Thread testThread =  
-     new Thread(new ParameterizedThreadStart(TestAudio));  
-   testThread.Start(path);  
- }  
- catch (Exception ex)  
- {  
-   Console.WriteLine("Exception thrown while processing audio:");  
-   Console.WriteLine(ex.ToString());  
- }  
+  Console.WriteLine("Grammar ({0}) recognized speech: {1}",  
+    e.Result.Grammar.Name, e.Result.Text);  
+  
+  try  
+  {  
+  
+    // The name phrase starts after the first three words.  
+    if (e.Result.Words.Count < 4)  
+    {  
+  
+      // Add code to check for an alternate that contains the wildcard.  
+      return;  
+    }  
+  
+    RecognizedAudio audio = e.Result.Audio;  
+    TimeSpan start = e.Result.Words[3].AudioPosition;  
+    TimeSpan duration = audio.Duration - start;  
+  
+    // Add code to verify and persist the audio.  
+    string path = @"C:\temp\nameAudio.wav";  
+    using (Stream outputStream = new FileStream(path, FileMode.Create))  
+    {  
+      RecognizedAudio nameAudio = audio.GetRange(start, duration);  
+      nameAudio.WriteToWaveStream(outputStream);  
+      outputStream.Close();  
+    }  
+  
+    Thread testThread =  
+      new Thread(new ParameterizedThreadStart(TestAudio));  
+    testThread.Start(path);  
+  }  
+  catch (Exception ex)  
+  {  
+    Console.WriteLine("Exception thrown while processing audio:");  
+    Console.WriteLine(ex.ToString());  
+  }  
 }  
- 
+  
 // Use the speech synthesizer to play back the .wav file  
 // that was created in the SpeechRecognized event handler.  
- 
+  
 private static void TestAudio(object item)  
 {  
- string path = item as string;  
- if (path != null && File.Exists(path))  
- {  
-   SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
-   PromptBuilder builder = new PromptBuilder();  
-   builder.AppendText("Hello");  
-   builder.AppendAudio(path);  
-   synthesizer.Speak(builder);  
- }  
+  string path = item as string;  
+  if (path != null && File.Exists(path))  
+  {  
+    SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
+    PromptBuilder builder = new PromptBuilder();  
+    builder.AppendText("Hello");  
+    builder.AppendAudio(path);  
+    synthesizer.Speak(builder);  
+  }  
 }  
 ```  
  
@@ -378,28 +378,28 @@ The <xref:System.Speech.Recognition.RecognizedAudio.AudioPosition%2A> property g
 The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- 
- Console.WriteLine("Grammar({0}): {1}",  
-   result.Grammar.Name, result.Text);  
- 
- if (e.Result.Audio != null)  
- {  
-   RecognizedAudio audio = e.Result.Audio;  
- 
-   Console.WriteLine("   start time: {0}", audio.StartTime);  
-   Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
-   Console.WriteLine("   position: {0}, duration: {1}",  
-     audio.AudioPosition, audio.Duration);  
- }  
- 
- // Add event handler code here.  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  
+  Console.WriteLine("Grammar({0}): {1}",  
+    result.Grammar.Name, result.Text);  
+  
+  if (e.Result.Audio != null)  
+  {  
+    RecognizedAudio audio = e.Result.Audio;  
+  
+    Console.WriteLine("   start time: {0}", audio.StartTime);  
+    Console.WriteLine("   encoding format: {0}", audio.Format.EncodingFormat);  
+    Console.WriteLine("   position: {0}, duration: {1}",  
+      audio.AudioPosition, audio.Duration);  
+  }  
+  
+  // Add event handler code here.  
 }  
 ```  
  
@@ -471,75 +471,75 @@ The following example creates a speech recognition grammar for name input, adds 
 ```  
 private static void AddNameGrammar(SpeechRecognitionEngine recognizer)  
 {  
- GrammarBuilder builder = new GrammarBuilder();  
- builder.Append("My name is");  
- builder.AppendWildcard();  
- 
- Grammar nameGrammar = new Grammar(builder);  
- nameGrammar.Name = "Name Grammar";  
- nameGrammar.SpeechRecognized +=  
-   new EventHandler<SpeechRecognizedEventArgs>(  
-     NameSpeechRecognized);  
- 
- recognizer.LoadGrammar(nameGrammar);  
+  GrammarBuilder builder = new GrammarBuilder();  
+  builder.Append("My name is");  
+  builder.AppendWildcard();  
+  
+  Grammar nameGrammar = new Grammar(builder);  
+  nameGrammar.Name = "Name Grammar";  
+  nameGrammar.SpeechRecognized +=  
+    new EventHandler<SpeechRecognizedEventArgs>(  
+      NameSpeechRecognized);  
+  
+  recognizer.LoadGrammar(nameGrammar);  
 }  
- 
+  
 // Handle the SpeechRecognized event of the name grammar.  
 private static void NameSpeechRecognized(  
- object sender, SpeechRecognizedEventArgs e)  
+  object sender, SpeechRecognizedEventArgs e)  
 {  
- Console.WriteLine("Grammar ({0}) recognized speech: {1}",  
-   e.Result.Grammar.Name, e.Result.Text);  
- 
- try  
- {  
-   // The name phrase starts after the first three words.  
-   if (e.Result.Words.Count < 4)  
-   {  
- 
-     // Add code to check for an alternate that contains the   
+  Console.WriteLine("Grammar ({0}) recognized speech: {1}",  
+    e.Result.Grammar.Name, e.Result.Text);  
+  
+  try  
+  {  
+    // The name phrase starts after the first three words.  
+    if (e.Result.Words.Count < 4)  
+    {  
+  
+      // Add code to check for an alternate that contains the   
 wildcard.  
-     return;  
-   }  
- 
-   RecognizedAudio audio = e.Result.Audio;  
-   TimeSpan start = e.Result.Words[3].AudioPosition;  
-   TimeSpan duration = audio.Duration - start;  
- 
-   // Add code to verify and persist the audio.  
-   string path = @"C:\temp\nameAudio.wav";  
-   using (Stream outputStream = new FileStream(path, FileMode.Create))  
-   {  
-     RecognizedAudio nameAudio = audio.GetRange(start, duration);  
-     nameAudio.WriteToWaveStream(outputStream);  
-     outputStream.Close();  
-   }  
- 
-   Thread testThread =  
-     new Thread(new ParameterizedThreadStart(TestAudio));  
-   testThread.Start(path);  
- }  
- catch (Exception ex)  
- {  
-   Console.WriteLine("Exception thrown while processing audio:");  
-   Console.WriteLine(ex.ToString());  
- }  
+      return;  
+    }  
+  
+    RecognizedAudio audio = e.Result.Audio;  
+    TimeSpan start = e.Result.Words[3].AudioPosition;  
+    TimeSpan duration = audio.Duration - start;  
+  
+    // Add code to verify and persist the audio.  
+    string path = @"C:\temp\nameAudio.wav";  
+    using (Stream outputStream = new FileStream(path, FileMode.Create))  
+    {  
+      RecognizedAudio nameAudio = audio.GetRange(start, duration);  
+      nameAudio.WriteToWaveStream(outputStream);  
+      outputStream.Close();  
+    }  
+  
+    Thread testThread =  
+      new Thread(new ParameterizedThreadStart(TestAudio));  
+    testThread.Start(path);  
+  }  
+  catch (Exception ex)  
+  {  
+    Console.WriteLine("Exception thrown while processing audio:");  
+    Console.WriteLine(ex.ToString());  
+  }  
 }  
- 
+  
 // Use the speech synthesizer to play back the .wav file  
 // that was created in the SpeechRecognized event handler.  
- 
+  
 private static void TestAudio(object item)  
 {  
- string path = item as string;  
- if (path != null && File.Exists(path))  
- {  
-   SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
-   PromptBuilder builder = new PromptBuilder();  
-   builder.AppendText("Hello");  
-   builder.AppendAudio(path);  
-   synthesizer.Speak(builder);  
- }  
+  string path = item as string;  
+  if (path != null && File.Exists(path))  
+  {  
+    SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
+    PromptBuilder builder = new PromptBuilder();  
+    builder.AppendText("Hello");  
+    builder.AppendAudio(path);  
+    synthesizer.Speak(builder);  
+  }  
 }  
 ```  
  

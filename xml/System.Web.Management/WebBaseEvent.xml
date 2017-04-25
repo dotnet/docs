@@ -35,21 +35,21 @@ The following example is an excerpt of the configuration file that enables ASP.N
  
 ```  
 <healthMonitoring enabled="true" heartBeatInterval="0">  
- <eventMappings>  
-   <add  name="SampleWebBaseEvent"   
-     type="SamplesAspNet.SampleWebBaseEvent,   
-     webbaseevent, Version=1.0.1573.24438, Culture=neutral,   
-     PublicKeyToken=2f5f337ae5c9bdaa,   
-     processorArchitecture=MSIL" />  
- </eventMappings>  
- 
- <rules>  
-   <add   
-     name="CustomWebBaseEvent"  
-     eventName="SampleWebBaseEvent"   
-     provider="EventLogProvider"   
-     profile="Critical"/>      
- </rules>  
+  <eventMappings>  
+    <add  name="SampleWebBaseEvent"   
+      type="SamplesAspNet.SampleWebBaseEvent,   
+      webbaseevent, Version=1.0.1573.24438, Culture=neutral,   
+      PublicKeyToken=2f5f337ae5c9bdaa,   
+      processorArchitecture=MSIL" />  
+  </eventMappings>  
+  
+  <rules>  
+    <add   
+      name="CustomWebBaseEvent"  
+      eventName="SampleWebBaseEvent"   
+      provider="EventLogProvider"   
+      profile="Critical"/>      
+  </rules>  
 </healthMonitoring>  
 ```  
  

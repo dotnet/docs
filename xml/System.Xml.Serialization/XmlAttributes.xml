@@ -386,17 +386,17 @@ You can specify the default value of an XML element or XML attribute by applying
  
 ```  
 <?xml version="1.0"?>  
-<schema attributeFormDefault="qualified"   
-elementFormDefault="qualified" targetNamespace=""   
-xmlns="http://www.w3.org/2000/10/XMLSchema">  
-  <element name="Pets" nullable="true" type="Pets"/>  
-  <complexType name="Pets">  
-    <sequence>  
-      <element default="Dogs" name="Animal" nullable="true"   
-       type="string" minOccurs="0"/>  
-    </sequence>  
-  </complexType>  
-</schema>  
+ <schema attributeFormDefault="qualified"   
+ elementFormDefault="qualified" targetNamespace=""   
+ xmlns="http://www.w3.org/2000/10/XMLSchema">  
+   <element name="Pets" nullable="true" type="Pets"/>  
+   <complexType name="Pets">  
+     <sequence>  
+       <element default="Dogs" name="Animal" nullable="true"   
+        type="string" minOccurs="0"/>  
+     </sequence>  
+   </complexType>  
+ </schema>  
 ```  
  
 To override the default value, create an <xref:System.Object> and assign it to the <xref:System.Xml.Serialization.XmlAttributes.XmlDefaultValue%2A>.  

@@ -25,14 +25,14 @@ The following example shows how to set the `ignoreDeviceFilters` section in a co
  
 ```  
 <system.web>  
- 
- <pages>  
-   <ignoreDeviceFilters>  
-     <filter name="TagA"/>  
-     <filter name="TagB"/>  
-   </ignoreDeviceFilters>  
- </pages>  
- 
+  
+  <pages>  
+    <ignoreDeviceFilters>  
+      <filter name="TagA"/>  
+      <filter name="TagB"/>  
+    </ignoreDeviceFilters>  
+  </pages>  
+  
 </system.web>  
 ```  
  

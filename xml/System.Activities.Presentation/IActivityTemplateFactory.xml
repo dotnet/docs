@@ -20,21 +20,21 @@ Custom activity templates must implement the <xref:System.Activities.Presentatio
 ## Examples  
  
 ```  
- 
+  
 public sealed class MyDelayActivity : IActivityTemplateFactory  
- 
+  
 {  
-    public Activity Create(DependencyObject target)  
-    {  
-        return new System.Activities.Statements.Delay  
-        {  
-            DisplayName = "DelayActivityTemplate",  
-            Duration = new TimeSpan(0,0,10)  
- 
-        };  
-    }  
-}  
- 
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
 ```  
  
  ]]></format>
@@ -72,21 +72,21 @@ Use this to create and configure the activity instances used in a custom activit
 Create a template that configures a Delay activity with a duration of ten seconds.  
  
 ```  
- 
+  
 public sealed class MyDelayActivity : IActivityTemplateFactory  
- 
+  
 {  
-    public Activity Create(DependencyObject target)  
-    {  
-        return new System.Activities.Statements.Delay  
-        {  
-            DisplayName = "DelayActivityTemplate",  
-            Duration = new TimeSpan(0,0,10)  
- 
-        };  
-    }  
-}  
- 
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
 ```  
  
  ]]></format>

@@ -29,58 +29,58 @@ The following Web.config file specifies a user profile that contains a group of 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString=  
-     "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-       name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <authorization>  
-     <deny users="?" />  
-   </authorization>  
- 
-   <membership defaultProvider="SqlProvider"   
-     userIsOnlineTimeWindow="15">  
-     <providers>  
-       <clear />  
-       <add   
-         name="SqlProvider"   
-         type="System.Web.Security.SqlMembershipProvider"   
-         connectionStringName="SqlServices"  
-         enablePasswordRetrieval="false"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"   
-         requiresUniqueEmail="false"  
-         passwordFormat="Hashed"  
-         applicationName="MyApplication" />  
-     </providers>  
-   </membership>  
- 
-   <profile enabled="true" defaultProvider="SqlProvider">  
-     <providers>  
-       <add  
-         name="SqlProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication"  
-         type="System.Web.Profile.SqlProfileProvider" />  
-     </providers>  
- 
-     <properties>  
-       <add name="ZipCode" />  
-       <group name="Address">  
-         <add name="Street" />  
-         <add name="City" />  
-         <add name="State" />  
-         <add name="CountryOrRegion" />  
-       </group>  
-     </properties>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString=  
+      "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+        name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <authorization>  
+      <deny users="?" />  
+    </authorization>  
+  
+    <membership defaultProvider="SqlProvider"   
+      userIsOnlineTimeWindow="15">  
+      <providers>  
+        <clear />  
+        <add   
+          name="SqlProvider"   
+          type="System.Web.Security.SqlMembershipProvider"   
+          connectionStringName="SqlServices"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"   
+          requiresUniqueEmail="false"  
+          passwordFormat="Hashed"  
+          applicationName="MyApplication" />  
+      </providers>  
+    </membership>  
+  
+    <profile enabled="true" defaultProvider="SqlProvider">  
+      <providers>  
+        <add  
+          name="SqlProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication"  
+          type="System.Web.Profile.SqlProfileProvider" />  
+      </providers>  
+  
+      <properties>  
+        <add name="ZipCode" />  
+        <group name="Address">  
+          <add name="Street" />  
+          <add name="City" />  
+          <add name="State" />  
+          <add name="CountryOrRegion" />  
+        </group>  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -123,57 +123,57 @@ The following Web.config file specifies a user profile that contains a group of 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-            name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <authorization>  
-     <deny users="?" />  
-   </authorization>  
- 
-   <membership defaultProvider="SqlProvider"  
-               userIsOnlineTimeWindow="15">  
-     <providers>  
-       <clear />  
-       <add   
-         name="SqlProvider"   
-         type="System.Web.Security.SqlMembershipProvider"   
-         connectionStringName="SqlServices"  
-         enablePasswordRetrieval="false"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"   
-         requiresUniqueEmail="false"  
-         passwordFormat="Hashed"  
-         applicationName="MyApplication" />  
-     </providers>  
-   </membership>  
- 
-   <profile enabled="true" defaultProvider="SqlProvider">  
-     <providers>  
-       <add  
-         name="SqlProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="MyApplication"  
-         type="System.Web.Profile.SqlProfileProvider" />  
-     </providers>  
- 
-     <properties>  
-       <add name="ZipCode" />  
-       <group name="Address">  
-         <add name="Street" />  
-         <add name="City" />  
-         <add name="State" />  
-         <add name="CountryOrRegion" />  
-       </group>  
-     </properties>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+             name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <authorization>  
+      <deny users="?" />  
+    </authorization>  
+  
+    <membership defaultProvider="SqlProvider"  
+                userIsOnlineTimeWindow="15">  
+      <providers>  
+        <clear />  
+        <add   
+          name="SqlProvider"   
+          type="System.Web.Security.SqlMembershipProvider"   
+          connectionStringName="SqlServices"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"   
+          requiresUniqueEmail="false"  
+          passwordFormat="Hashed"  
+          applicationName="MyApplication" />  
+      </providers>  
+    </membership>  
+  
+    <profile enabled="true" defaultProvider="SqlProvider">  
+      <providers>  
+        <add  
+          name="SqlProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="MyApplication"  
+          type="System.Web.Profile.SqlProfileProvider" />  
+      </providers>  
+  
+      <properties>  
+        <add name="ZipCode" />  
+        <group name="Address">  
+          <add name="Street" />  
+          <add name="City" />  
+          <add name="State" />  
+          <add name="CountryOrRegion" />  
+        </group>  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  

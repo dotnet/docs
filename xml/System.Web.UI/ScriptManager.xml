@@ -446,10 +446,10 @@ The following example shows how to set the <xref:System.Web.UI.ScriptManager.Aja
 ```  
 <asp:ScriptManager ID="sm1" AjaxFrameworkMode="Explicit" runat="server">   
 <Scripts>   
-   <asp:ScriptReference Name="MicrosoftAjaxCore.js" />   
-   <asp:ScriptReference Name="MicrosoftAjaxComponentModel.js" />    
-   <asp:ScriptReference Name="MicrosoftAjaxSerialization.js" />   
-   <asp:ScriptReference Name="MicrosoftAjaxNetwork.js" />       
+    <asp:ScriptReference Name="MicrosoftAjaxCore.js" />   
+    <asp:ScriptReference Name="MicrosoftAjaxComponentModel.js" />    
+    <asp:ScriptReference Name="MicrosoftAjaxSerialization.js" />   
+    <asp:ScriptReference Name="MicrosoftAjaxNetwork.js" />       
 </Scripts>   
 </asp:ScriptManager>  
 ```  
@@ -674,7 +674,7 @@ You can use the ASP.NET authentication service or use a custom authentication se
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <AuthenticationService Path="MyAuthenticationService.asmx" />  
+  <AuthenticationService Path="MyAuthenticationService.asmx" />  
 </asp:ScriptManager>  
 ```  
  
@@ -1702,8 +1702,8 @@ You can use the ASP.NET profile service or use a custom profile service. You can
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <ProfileService LoadProperties="propertyA,propertyB"  
-   Path="MyProfileService.asmx" />  
+  <ProfileService LoadProperties="propertyA,propertyB"  
+    Path="MyProfileService.asmx" />  
 </asp:ScriptManager>  
 ```  
  
@@ -3016,7 +3016,7 @@ The <xref:System.Web.UI.RoleServiceManager> object that is returned by this prop
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <RoleService Path="MyRoleService.asmx" LoadRoles="True" />  
+  <RoleService Path="MyRoleService.asmx" LoadRoles="True" />  
 </asp:ScriptManager>  
 ```  
  
@@ -3162,9 +3162,9 @@ In the markup for an ASP.NET Web Forms page (.aspx file), add the following mark
  
 ```  
 <asp:ScriptManager ID="sm1" runat="server">  
- <Scripts>  
-   <asp:ScriptReference Name="jquery"/>  
- </Scripts>  
+  <Scripts>  
+    <asp:ScriptReference Name="jquery"/>  
+  </Scripts>  
 </asp:ScriptManager>  
 ```  
  
@@ -3214,9 +3214,9 @@ You can add script files to the collection in markup by adding `asp:ScriptRefere
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <Scripts>  
-   <asp:ScriptReference Name="Script.js" />  
- </Scripts>  
+  <Scripts>  
+    <asp:ScriptReference Name="Script.js" />  
+  </Scripts>  
 </asp:ScriptManager>  
 ```  
  
@@ -3272,9 +3272,9 @@ You can add services to the collection in markup by adding an `asp:ServiceRefere
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <Services>  
-   <asp:ServiceReference Path="Service.asmx" />  
- </Services>  
+  <Services>  
+    <asp:ServiceReference Path="Service.asmx" />  
+  </Services>  
 </asp:ScriptManager>  
 ```  
  

@@ -22,29 +22,29 @@ When creating your own validation control, you can enable the designer to displa
  
 ```vb  
 <TypeConverter(GetType(ValidatedControlConverter))> _  
-Public Property ControlToValidate() As String  
-   Get      
-      // Add code to get the ID of the control to validate.  
-   End Get  
-   Set  
-      // Add code to set the ID of the control to validate.  
-   End Set  
-End Property  
+ Public Property ControlToValidate() As String  
+    Get      
+       // Add code to get the ID of the control to validate.  
+    End Get  
+    Set  
+       // Add code to set the ID of the control to validate.  
+    End Set  
+ End Property  
 ```  
  
 ```csharp  
 [TypeConverter(typeof(ValidatedControlConverter))]  
-public string ControlToValidate  
-{  
-   get   
-   {  
-      // Add code to get the ID of the control to validate.  
-   }  
-   set  
-   {  
-      // Add code to set the ID of the control to validate.  
-   }  
-}  
+ public string ControlToValidate  
+ {  
+    get   
+    {  
+       // Add code to get the ID of the control to validate.  
+    }  
+    set  
+    {  
+       // Add code to set the ID of the control to validate.  
+    }  
+ }  
 ```  
  
  ]]></format>

@@ -31,9 +31,9 @@ Refer to the [NIB: How to: Create and Configure an HTTP Module](http://msdn.micr
  
 ```  
 <httpModules>  
-   <add name="TimerModule"   
-     type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-     PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
+    <add name="TimerModule"   
+      type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
+      PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
 </httpModules>  
 ```  
  

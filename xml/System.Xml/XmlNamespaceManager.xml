@@ -93,9 +93,9 @@ nsmanager.AddNamespace("msbooks", "www.microsoft.com/books")
 nsmanager.PushScope()  
 nsmanager.AddNamespace("msstore", "www.microsoft.com/store")  
 While reader.Read()  
-   Console.WriteLine("Reader Prefix:{0}", reader.Prefix)  
-   Console.WriteLine("XmlNamespaceManager Prefix:{0}",  
-    nsmanager.LookupPrefix(nsmanager.NameTable.Get(reader.NamespaceURI)))  
+    Console.WriteLine("Reader Prefix:{0}", reader.Prefix)  
+    Console.WriteLine("XmlNamespaceManager Prefix:{0}",  
+     nsmanager.LookupPrefix(nsmanager.NameTable.Get(reader.NamespaceURI)))  
 End While  
 ```  
  
@@ -107,9 +107,9 @@ nsmanager.PushScope();
 nsmanager.AddNamespace("msstore", "www.microsoft.com/store");  
 while (reader.Read())  
 {  
-   Console.WriteLine("Reader Prefix:{0}", reader.Prefix);  
-   Console.WriteLine("XmlNamespaceManager Prefix:{0}",  
-   nsmanager.LookupPrefix(nsmanager.NameTable.Get(reader.NamespaceURI)));  
+    Console.WriteLine("Reader Prefix:{0}", reader.Prefix);  
+    Console.WriteLine("XmlNamespaceManager Prefix:{0}",  
+    nsmanager.LookupPrefix(nsmanager.NameTable.Get(reader.NamespaceURI)));  
 }  
 ```  
  
@@ -315,9 +315,9 @@ The following code shows how to use the <xref:System.Collections.IEnumerator> to
 ```  
 Dim nsEnum As IEnumerator = nsmgr.GetEnumerator()  
 Do While nsEnum.MoveNext  
- If nsEnum.Current <> "" Then  
-   MsgBox("xmlns:" + nsEnum.Current + "=" + nsmgr.LookupNamespace(nsEnum.Current))  
- End If  
+  If nsEnum.Current <> "" Then  
+    MsgBox("xmlns:" + nsEnum.Current + "=" + nsmgr.LookupNamespace(nsEnum.Current))  
+  End If  
 Loop  
 ```  
  
@@ -518,7 +518,7 @@ The following example shows how to use the <xref:System.Xml.XmlNamespaceManager.
 ```vb  
 Dim prefix As String = nsMgr.LookupPrefix("urn:samples")  
 writer.WriteStartAttribute(prefix, "ISBN", "urn:samples")  
- 
+  
 ```  
  
 ```csharp  
@@ -539,14 +539,14 @@ writer.WriteEndElement()
 s = writer.LookupPrefix("book")  
 CError.Compare(s, Nothing, "Error in root element")  
 writer.WriteEndElement()  
- 
+  
 ```  
  
 **Output**  
  
 ```  
 <root xmlns="book">  
- <x:node xmlns:x="author" />   
+  <x:node xmlns:x="author" />   
 </root>  
 ```  
  

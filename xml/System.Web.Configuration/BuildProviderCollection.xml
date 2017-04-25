@@ -32,45 +32,45 @@ The following configuration file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <compilation>   
-   <buildProviders>  
-     <add extension=".aspx"   
-       type="System.Web.Compilation.PageBuildProvider"  
-        />  
-     <add extension=".ascx"   
-       type="System.Web.Compilation.UserControlBuildProvider"  
-        />  
-     <add extension=".master"   
-       type="System.Web.Compilation.MasterPageBuildProvider"  
-        />  
-     <add extension=".asix"   
-       type="System.Web.Compilation.ImageGeneratorBuildProvider"  
-        />  
-     <add extension=".asmx"   
-       type="System.Web.Compilation.WebServiceBuildProvider"  
-        />  
-     <add extension=".ashx"   
-       type="System.Web.Compilation.WebHandlerBuildProvider"  
-        />  
-     <add extension=".soap"   
-       type="System.Web.Compilation.WebServiceBuildProvider"  
-        />  
-     <add extension=".resx"   
-       type="System.Web.Compilation.ResXBuildProvider"  
-       appliesTo="Resources" />  
-     <add extension=".resources"   
-       type="System.Web.Compilation.ResourcesBuildProvider"  
-       appliesTo="Code, Resources" />  
-     <add extension=".wsdl"   
-       type="System.Web.Compilation.WsdlBuildProvider"  
-       appliesTo="Code" />  
-     <add extension=".xsd"   
-       type="System.Web.Compilation.XsdBuildProvider"  
-       appliesTo="Code" />  
-   </buildProviders>  
- </compilation>  
+  <compilation>   
+    <buildProviders>  
+      <add extension=".aspx"   
+        type="System.Web.Compilation.PageBuildProvider"  
+         />  
+      <add extension=".ascx"   
+        type="System.Web.Compilation.UserControlBuildProvider"  
+         />  
+      <add extension=".master"   
+        type="System.Web.Compilation.MasterPageBuildProvider"  
+         />  
+      <add extension=".asix"   
+        type="System.Web.Compilation.ImageGeneratorBuildProvider"  
+         />  
+      <add extension=".asmx"   
+        type="System.Web.Compilation.WebServiceBuildProvider"  
+         />  
+      <add extension=".ashx"   
+        type="System.Web.Compilation.WebHandlerBuildProvider"  
+         />  
+      <add extension=".soap"   
+        type="System.Web.Compilation.WebServiceBuildProvider"  
+         />  
+      <add extension=".resx"   
+        type="System.Web.Compilation.ResXBuildProvider"  
+        appliesTo="Resources" />  
+      <add extension=".resources"   
+        type="System.Web.Compilation.ResourcesBuildProvider"  
+        appliesTo="Code, Resources" />  
+      <add extension=".wsdl"   
+        type="System.Web.Compilation.WsdlBuildProvider"  
+        appliesTo="Code" />  
+      <add extension=".xsd"   
+        type="System.Web.Compilation.XsdBuildProvider"  
+        appliesTo="Code" />  
+    </buildProviders>  
+  </compilation>  
 </system.web>  
- 
+  
 ```  
  
 The following code example demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  

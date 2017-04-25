@@ -22,134 +22,134 @@ using System.CodeDom;
 using System.Text;  
 using System.Workflow.Activities.Rules;  
 using System.Workflow.ComponentModel.Compiler;  
- 
+  
 namespace TwoOfThreeRuleExpression  
 {  
-   public class TwoOfThree : CodeExpression, IRuleExpression  
-   {  
-       CodeExpression expression1, expression2, expression3;  
- 
-       public CodeExpression First  
-       {  
-           get { return expression1; }  
-           set { expression1 = value; }  
-       }  
- 
-       public CodeExpression Second  
-       {  
-           get { return expression2; }  
-           set { expression2 = value; }  
-       }  
- 
-       public CodeExpression Third  
-       {  
-           get { return expression3; }  
-           set { expression3 = value; }  
-       }  
- 
-       public TwoOfThree()  
-       {  
-           // constructor required for deserialization  
-       }  
- 
-       public TwoOfThree(CodeExpression first, CodeExpression second, CodeExpression third)  
-       {  
-           // constructor required by parser  
-           expression1 = first;  
-           expression2 = second;  
-           expression3 = third;  
-       }  
- 
-       public void AnalyzeUsage(RuleAnalysis analysis, bool isRead, bool isWritten, RulePathQualifier qualifier)  
-       {  
-           // check what the 3 expressions use  
-           RuleExpressionWalker.AnalyzeUsage(analysis, expression1, true, false, null);  
-           RuleExpressionWalker.AnalyzeUsage(analysis, expression2, true, false, null);  
-           RuleExpressionWalker.AnalyzeUsage(analysis, expression3, true, false, null);  
-       }  
- 
-       public CodeExpression Clone()  
-       {  
-           TwoOfThree result = new TwoOfThree();  
-           result.expression1 = RuleExpressionWalker.Clone(expression1);  
-           result.expression2 = RuleExpressionWalker.Clone(expression2);  
-           result.expression3 = RuleExpressionWalker.Clone(expression3);  
-           return result;  
-       }  
- 
-       public void Decompile(StringBuilder stringBuilder, CodeExpression parentExpression)  
-       {  
-           // what should be displayed by the parser  
-           stringBuilder.Append("TwoOfThree(");  
-           RuleExpressionWalker.Decompile(stringBuilder, expression1, this);  
-           stringBuilder.Append(", ");  
-           RuleExpressionWalker.Decompile(stringBuilder, expression2, this);  
-           stringBuilder.Append(", ");  
-           RuleExpressionWalker.Decompile(stringBuilder, expression3, this);  
-           stringBuilder.Append(")");  
-       }  
- 
-       static RuleLiteralResult resultTrue = new RuleLiteralResult(true);  
-       static RuleLiteralResult resultFalse = new RuleLiteralResult(false);  
- 
-       public RuleExpressionResult Evaluate(RuleExecution execution)  
-       {  
-           // start by doing the first 2 expressions  
-           RuleExpressionResult r1 = RuleExpressionWalker.Evaluate(execution, expression1);  
-           RuleExpressionResult r2 = RuleExpressionWalker.Evaluate(execution, expression2);  
-           bool b1 = (bool)r1.Value;  
-           bool b2 = (bool)r2.Value;  
-           if (b1 && b2)  
-           {  
-               // both are true, so result is true  
-               return resultTrue;  
-           }  
-           else if (b1 || b2)  
-           {  
-               // only one of the first 2 is true, evaluate the third to determine result  
-               return RuleExpressionWalker.Evaluate(execution, expression3);  
-           }  
-           else  
-               // both e1 and e2 are false, so skip e3 and return false;  
-               return resultFalse;  
-       }  
- 
-       public bool Match(CodeExpression expression)  
-       {  
-           TwoOfThree other = expression as TwoOfThree;  
-           return (other != null) &&  
-               RuleExpressionWalker.Match(expression1, other.expression1) &&  
-               RuleExpressionWalker.Match(expression2, other.expression2) &&  
-               RuleExpressionWalker.Match(expression3, other.expression3);  
-       }  
- 
-       public RuleExpressionInfo Validate(RuleValidation validation, bool isWritten)  
-       {  
-           ValidateExpression(validation, expression1, "First");  
-           ValidateExpression(validation, expression2, "Second");  
-           ValidateExpression(validation, expression3, "Third");  
-           return new RuleExpressionInfo(typeof(bool));  
-       }  
- 
-       private void ValidateExpression(RuleValidation validation, CodeExpression expression, string propertyName)  
-       {  
-           ValidationError error;  
-           if (expression == null)  
-           {  
-               error = new ValidationError(propertyName + " cannot be null", 123);  
-               validation.Errors.Add(error);  
-           }  
-           else  
-           {  
-               RuleExpressionInfo result = RuleExpressionWalker.Validate(validation, expression, false);  
-               if ((result == null) || (result.ExpressionType != typeof(bool)))  
-               {  
-                   error = new ValidationError(propertyName + " must return boolean result", 123);  
-                   validation.Errors.Add(error);  
-               }  
-           }  
-       }  
-   }  
+    public class TwoOfThree : CodeExpression, IRuleExpression  
+    {  
+        CodeExpression expression1, expression2, expression3;  
+  
+        public CodeExpression First  
+        {  
+            get { return expression1; }  
+            set { expression1 = value; }  
+        }  
+  
+        public CodeExpression Second  
+        {  
+            get { return expression2; }  
+            set { expression2 = value; }  
+        }  
+  
+        public CodeExpression Third  
+        {  
+            get { return expression3; }  
+            set { expression3 = value; }  
+        }  
+  
+        public TwoOfThree()  
+        {  
+            // constructor required for deserialization  
+        }  
+  
+        public TwoOfThree(CodeExpression first, CodeExpression second, CodeExpression third)  
+        {  
+            // constructor required by parser  
+            expression1 = first;  
+            expression2 = second;  
+            expression3 = third;  
+        }  
+  
+        public void AnalyzeUsage(RuleAnalysis analysis, bool isRead, bool isWritten, RulePathQualifier qualifier)  
+        {  
+            // check what the 3 expressions use  
+            RuleExpressionWalker.AnalyzeUsage(analysis, expression1, true, false, null);  
+            RuleExpressionWalker.AnalyzeUsage(analysis, expression2, true, false, null);  
+            RuleExpressionWalker.AnalyzeUsage(analysis, expression3, true, false, null);  
+        }  
+  
+        public CodeExpression Clone()  
+        {  
+            TwoOfThree result = new TwoOfThree();  
+            result.expression1 = RuleExpressionWalker.Clone(expression1);  
+            result.expression2 = RuleExpressionWalker.Clone(expression2);  
+            result.expression3 = RuleExpressionWalker.Clone(expression3);  
+            return result;  
+        }  
+  
+        public void Decompile(StringBuilder stringBuilder, CodeExpression parentExpression)  
+        {  
+            // what should be displayed by the parser  
+            stringBuilder.Append("TwoOfThree(");  
+            RuleExpressionWalker.Decompile(stringBuilder, expression1, this);  
+            stringBuilder.Append(", ");  
+            RuleExpressionWalker.Decompile(stringBuilder, expression2, this);  
+            stringBuilder.Append(", ");  
+            RuleExpressionWalker.Decompile(stringBuilder, expression3, this);  
+            stringBuilder.Append(")");  
+        }  
+  
+        static RuleLiteralResult resultTrue = new RuleLiteralResult(true);  
+        static RuleLiteralResult resultFalse = new RuleLiteralResult(false);  
+  
+        public RuleExpressionResult Evaluate(RuleExecution execution)  
+        {  
+            // start by doing the first 2 expressions  
+            RuleExpressionResult r1 = RuleExpressionWalker.Evaluate(execution, expression1);  
+            RuleExpressionResult r2 = RuleExpressionWalker.Evaluate(execution, expression2);  
+            bool b1 = (bool)r1.Value;  
+            bool b2 = (bool)r2.Value;  
+            if (b1 && b2)  
+            {  
+                // both are true, so result is true  
+                return resultTrue;  
+            }  
+            else if (b1 || b2)  
+            {  
+                // only one of the first 2 is true, evaluate the third to determine result  
+                return RuleExpressionWalker.Evaluate(execution, expression3);  
+            }  
+            else  
+                // both e1 and e2 are false, so skip e3 and return false;  
+                return resultFalse;  
+        }  
+  
+        public bool Match(CodeExpression expression)  
+        {  
+            TwoOfThree other = expression as TwoOfThree;  
+            return (other != null) &&  
+                RuleExpressionWalker.Match(expression1, other.expression1) &&  
+                RuleExpressionWalker.Match(expression2, other.expression2) &&  
+                RuleExpressionWalker.Match(expression3, other.expression3);  
+        }  
+  
+        public RuleExpressionInfo Validate(RuleValidation validation, bool isWritten)  
+        {  
+            ValidateExpression(validation, expression1, "First");  
+            ValidateExpression(validation, expression2, "Second");  
+            ValidateExpression(validation, expression3, "Third");  
+            return new RuleExpressionInfo(typeof(bool));  
+        }  
+  
+        private void ValidateExpression(RuleValidation validation, CodeExpression expression, string propertyName)  
+        {  
+            ValidationError error;  
+            if (expression == null)  
+            {  
+                error = new ValidationError(propertyName + " cannot be null", 123);  
+                validation.Errors.Add(error);  
+            }  
+            else  
+            {  
+                RuleExpressionInfo result = RuleExpressionWalker.Validate(validation, expression, false);  
+                if ((result == null) || (result.ExpressionType != typeof(bool)))  
+                {  
+                    error = new ValidationError(propertyName + " must return boolean result", 123);  
+                    validation.Errors.Add(error);  
+                }  
+            }  
+        }  
+    }  
 }  
 ```  
  

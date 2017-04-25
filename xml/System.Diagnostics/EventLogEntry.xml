@@ -404,11 +404,11 @@ The <xref:System.Diagnostics.EventLogEntry.ReplacementStrings%2A> property conta
  
 ```  
 ResourceManager LocRM = new ResourceManager("ReplacementStrings.TestStrings",   
-     typeof(Program).Assembly);  
+      typeof(Program).Assembly);  
 EventLog e1 = new EventLog("LocTest", "MyMachine", "LocTest");  
 // Get the string associated with the current culture.  
 e1.WriteEntry(LocRM.GetString("strMessage"),  
-  EventLogEntryType.Information);  
+   EventLogEntryType.Information);  
 ```  
  
  ]]></format>

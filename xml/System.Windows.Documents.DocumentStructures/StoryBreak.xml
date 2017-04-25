@@ -23,12 +23,12 @@ A <xref:System.Windows.Documents.DocumentStructures.StoryBreak> as the first ele
 ```  
 <!-- Fragment 1 -->  
 <StoryFragment>  
- <StoryBreak />   <!-- Identifies the start of a story when          -->  
-                  <!-- immediately after an opening <StoryFragment>. -->  
- <ParagraphStructure>  
-   <NamedElement NameReference="a" />  
-   <NamedElement NameReference="b" />  
- </ParagraphStructure>  
+  <StoryBreak />   <!-- Identifies the start of a story when          -->  
+                   <!-- immediately after an opening <StoryFragment>. -->  
+  <ParagraphStructure>  
+    <NamedElement NameReference="a" />  
+    <NamedElement NameReference="b" />  
+  </ParagraphStructure>  
 </StoryFragment>   <!-- Story continues in the next <StoryFragment>.  -->  
 ```  
  
@@ -37,11 +37,11 @@ A <xref:System.Windows.Documents.DocumentStructures.StoryBreak> as the last elem
 ```  
 <!-- Fragment 2 -->  
 <StoryFragment>    <!-- Story continued from prior <StoryFragment>.    -->  
- <ParagraphStructure>    
-   <NamedElement NameReference="c" />  
- </ParagraphStructure>  
- <StoryBreak />   <!-- Identifies the end of a story when             -->  
-                  <!-- immediately before a closing </StoryFragment>. -->  
+  <ParagraphStructure>    
+    <NamedElement NameReference="c" />  
+  </ParagraphStructure>  
+  <StoryBreak />   <!-- Identifies the end of a story when             -->  
+                   <!-- immediately before a closing </StoryFragment>. -->  
 </StoryFragment>  
 ```  
  
@@ -50,9 +50,9 @@ A story that is contained in a single <xref:System.Windows.Documents.DocumentStr
 ```  
 <!-- Fragments 1 and 2 Merged -->  
 <ParagraphStructure>  
- <NamedElement NameReference="a" />  
- <NamedElement NameReference="b" />  
- <NamedElement NameReference="c" />  
+  <NamedElement NameReference="a" />  
+  <NamedElement NameReference="b" />  
+  <NamedElement NameReference="c" />  
 </ParagraphStructure>  
 ```  
  

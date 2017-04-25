@@ -26,56 +26,56 @@ The following example demonstrates the information that is available about the <
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
- 
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Subscribe to StateChanged event.  
-       synth.StateChanged += new EventHandler<StateChangedEventArgs>(synth_StateChanged);  
- 
-       // Subscribe to the SpeakProgress event.  
-       synth.SpeakProgress += new EventHandler<SpeakProgressEventArgs>(synth_SpeakProgress);  
- 
-       // Speak the prompt.  
-       synth.Speak("What is your favorite color?");  
- 
-       // Pause the SpeechSynthesizer object.  
-       synth.Pause();  
- 
-       // Resume the SpeechSynthesizer object.  
-       synth.Resume();  
-     }  
- 
-     Console.WriteLine("\nPress any key to exit...");  
-     Console.ReadKey();  
-   }  
- 
-   // Write the state of the SpeechSynthesizer to the console.  
-   static void synth_StateChanged(object sender, StateChangedEventArgs e)  
-   {  
-     Console.WriteLine("State: {0}    Previous State: {1}\n", e.State, e.PreviousState);  
-   }  
- 
-   // Write the speak progress of the SpeechSynthesizer to the console.  
-   static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
-   {  
-     Console.WriteLine(e.Text);  
-   }  
- }  
+  class Program  
+  {  
+  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Subscribe to StateChanged event.  
+        synth.StateChanged += new EventHandler<StateChangedEventArgs>(synth_StateChanged);  
+  
+        // Subscribe to the SpeakProgress event.  
+        synth.SpeakProgress += new EventHandler<SpeakProgressEventArgs>(synth_SpeakProgress);  
+  
+        // Speak the prompt.  
+        synth.Speak("What is your favorite color?");  
+  
+        // Pause the SpeechSynthesizer object.  
+        synth.Pause();  
+  
+        // Resume the SpeechSynthesizer object.  
+        synth.Resume();  
+      }  
+  
+      Console.WriteLine("\nPress any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Write the state of the SpeechSynthesizer to the console.  
+    static void synth_StateChanged(object sender, StateChangedEventArgs e)  
+    {  
+      Console.WriteLine("State: {0}    Previous State: {1}\n", e.State, e.PreviousState);  
+    }  
+  
+    // Write the speak progress of the SpeechSynthesizer to the console.  
+    static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
+    {  
+      Console.WriteLine(e.Text);  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

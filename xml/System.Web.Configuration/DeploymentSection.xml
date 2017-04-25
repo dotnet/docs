@@ -94,8 +94,8 @@ The following configuration file example shows how to set this property to `true
  
 ```  
 <system.web>  
- <deployment   
-   retail="true" />  
+  <deployment   
+    retail="true" />  
 </system.web>  
 ```  
  

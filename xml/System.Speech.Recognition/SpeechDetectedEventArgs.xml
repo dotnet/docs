@@ -29,16 +29,16 @@ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRe
  
 ```  
 _recognizer.SpeechDetected +=  
- delegate(object sender, SpeechDetectedEventArgs eventArgs)   
- {  
- 
-   // Clear previous recognition information.  
-   _audioDeviceStatusLabel.Enabled = true;  
-   _audioDeviceStatusLabel.Visible = true;  
-   Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
-   Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
-   Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
- };  
+  delegate(object sender, SpeechDetectedEventArgs eventArgs)   
+  {  
+  
+    // Clear previous recognition information.  
+    _audioDeviceStatusLabel.Enabled = true;  
+    _audioDeviceStatusLabel.Visible = true;  
+    Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
+    Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
+    Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
+  };  
 ```  
  
  ]]></format>
@@ -68,16 +68,16 @@ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRe
  
 ```  
 _recognizer.SpeechDetected +=  
- delegate(object sender, SpeechDetectedEventArgs eventArgs)   
- {  
- 
-   // Clear previous recognition information.  
-   _audioDeviceStatusLabel.Enabled = true;  
-   _audioDeviceStatusLabel.Visible = true;  
-   Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
-   Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
-   Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
- };  
+  delegate(object sender, SpeechDetectedEventArgs eventArgs)   
+  {  
+  
+    // Clear previous recognition information.  
+    _audioDeviceStatusLabel.Enabled = true;  
+    _audioDeviceStatusLabel.Visible = true;  
+    Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
+    Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
+    Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
+  };  
 ```  
  
  ]]></format>

@@ -27,42 +27,42 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <healthMonitoring>  
- <eventMappings>  
-   <add name="All Events"  
-     type="System.Web.Management.WebBaseEvent, System.Web,   
-     Version=%ASSEMBLY_VERSION%, Culture=neutral,   
-     PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="HeartBeats"  
-     type="System.Web.Management.WebHeartBeatEvent, System.Web,   
-     Version=%ASSEMBLY_VERSION%, Culture=neutral,   
-     PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-       <add name="Application Lifetime Events"  
-           type="System.Web.Management.WebApplicationLifetimeEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="Request Processing Events"  
-           type="System.Web.Management.WebRequestEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="All Errors"  
-           type="System.Web.Management.WebBaseErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="Infrastructure Errors"  
-           type="System.Web.Management.WebErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="Request Processing Errors"  
-           type="System.Web.Management.WebRequestErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="All Audits"  
-           type="System.Web.Management.WebAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="Failure Audits"  
-           type="System.Web.Management.WebFailureAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-       <add name="Success Audits"  
-           type="System.Web.Management.WebSuccessAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-       />  
-   </eventMappings>  
+  <eventMappings>  
+    <add name="All Events"  
+      type="System.Web.Management.WebBaseEvent, System.Web,   
+      Version=%ASSEMBLY_VERSION%, Culture=neutral,   
+      PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="HeartBeats"  
+      type="System.Web.Management.WebHeartBeatEvent, System.Web,   
+      Version=%ASSEMBLY_VERSION%, Culture=neutral,   
+      PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+        <add name="Application Lifetime Events"  
+            type="System.Web.Management.WebApplicationLifetimeEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="Request Processing Events"  
+            type="System.Web.Management.WebRequestEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="All Errors"  
+            type="System.Web.Management.WebBaseErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="Infrastructure Errors"  
+            type="System.Web.Management.WebErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="Request Processing Errors"  
+            type="System.Web.Management.WebRequestErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="All Audits"  
+            type="System.Web.Management.WebAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="Failure Audits"  
+            type="System.Web.Management.WebFailureAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+        <add name="Success Audits"  
+            type="System.Web.Management.WebSuccessAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+        />  
+    </eventMappings>  
 </healthMonitoring>   
 ```  
  

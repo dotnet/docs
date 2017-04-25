@@ -93,24 +93,24 @@ The following code example uses the previous custom control. Notice that the val
  
 ```vb  
 <%@ Register TagPrefix='MyCurrentUserControl' Namespace='MyUserControl' Assembly='vb_myConstructorNeedsTagAtt'%>  
-<html>  
- <body>  
- <form method="POST" runat="server">  
- <MyCurrentUserControl:Simple runat="server" />  
- </form>  
- </body>  
-</html>  
+ <html>  
+  <body>  
+  <form method="POST" runat="server">  
+  <MyCurrentUserControl:Simple runat="server" />  
+  </form>  
+  </body>  
+ </html>  
 ```  
  
 ```csharp  
 <%@ Register TagPrefix='MyCurrentUserControl' Namespace='MyUserControl' Assembly='cs_myConstructorNeedsTagAtt'%>  
-<html>  
- <body>  
- <form method="POST" runat="server">  
- <MyCurrentUserControl:Simple runat="server" />  
- </form>  
- </body>  
-</html>  
+ <html>  
+  <body>  
+  <form method="POST" runat="server">  
+  <MyCurrentUserControl:Simple runat="server" />  
+  </form>  
+  </body>  
+ </html>  
 ```  
  
  ]]></format>

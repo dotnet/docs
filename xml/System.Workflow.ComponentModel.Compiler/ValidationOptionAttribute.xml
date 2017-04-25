@@ -37,32 +37,32 @@ If the <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> 
 ```csharp  
 public sealed partial class Activity1: Activity  
 {  
-   public Activity1()  
-   {  
-   }  
- 
-   public static DependencyProperty MyPropertyProperty =   
-       DependencyProperty.Register(  
-           "MyProperty",   
-           typeof(string),   
-           typeof(Activity1),  
-           new PropertyMetadata(  
-               DependencyPropertyOptions.Metadata,  
-               new ValidationOptionAttribute(ValidationOption.Required)));  
- 
-   [Browsable(true)]  
-   [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]  
-   public string MyProperty  
-   {  
-       get  
-       {  
-           return ((string)(base.GetValue(Activity1.MyPropertyProperty)));  
-       }  
-       set  
-       {  
-           base.SetValue(Activity1.MyPropertyProperty, value);  
-       }  
-   }  
+    public Activity1()  
+    {  
+    }  
+  
+    public static DependencyProperty MyPropertyProperty =   
+        DependencyProperty.Register(  
+            "MyProperty",   
+            typeof(string),   
+            typeof(Activity1),  
+            new PropertyMetadata(  
+                DependencyPropertyOptions.Metadata,  
+                new ValidationOptionAttribute(ValidationOption.Required)));  
+  
+    [Browsable(true)]  
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]  
+    public string MyProperty  
+    {  
+        get  
+        {  
+            return ((string)(base.GetValue(Activity1.MyPropertyProperty)));  
+        }  
+        set  
+        {  
+            base.SetValue(Activity1.MyPropertyProperty, value);  
+        }  
+    }  
 }  
 ```  
  

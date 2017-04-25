@@ -35,9 +35,9 @@ The following example is an excerpt of the configuration file that enables ASP.N
  
 ```  
 <httpModules>  
- <add name="TimerModule"   
-   type="Samples.AspNet.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-   PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
+  <add name="TimerModule"   
+    type="Samples.AspNet.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
+    PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
 </httpModules>  
 ```  
  

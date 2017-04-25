@@ -33,96 +33,96 @@ using System.Data;
 using System.Data.EntityClient;  
 using System.Data.Metadata.Edm;  
 using System.Collections.ObjectModel;  
- 
+  
 class GetEntityContainerExample  
 {  
- static void Main()  
- {  
-   try  
-   {  
-      // Establish a connection to the underlying data provider by   
-      // using the connection string specified in the config file.  
-      using (EntityConnection connection =  
-         new EntityConnection("Name=AdventureWorksEntities"))  
-      {  
-        // Open the connection.  
-        connection.Open();  
- 
-        // Access the metadata workspace.  
-        MetadataWorkspace workspace =   
-           connection.GetMetadataWorkspace();  
- 
-        // Get the entity containers in the conceptual model.  
-        GetEntityContainers(workspace, DataSpace.CSpace);  
- 
-        // Get the entity containers in the storage model.  
-            GetEntityContainers(workspace, DataSpace.SSpace);  
-      }  
-   }  
-   catch (MetadataException exceptionMetadata)  
-   {  
-     Console.WriteLine("MetadataException: {0}",   
-                      exceptionMetadata.Message);  
-   }  
-   catch (System.Data.MappingException exceptionMapping)  
-   {  
-     Console.WriteLine("MappingException: {0}",  
-                      exceptionMapping.Message);  
-   }  
- }  
- 
- public static void GetEntityContainers(  
-     MetadataWorkspace workspace, DataSpace model)  
- {  
-   // Get a collection of the entity containers.  
-   ReadOnlyCollection<EntityContainer> containers =   
-        workspace.GetItems<EntityContainer>(model);  
- 
-   // Iterate through the collection to get each entity container.  
-   foreach (EntityContainer container in containers)  
-   {  
-      Console.WriteLine("EntityContainer Name: {0} ",   
-                       container.Name);  
- 
-      // EntitySetBase is a super type for   
-      // EntitySets and RelationshipSets.   
-      // Iterate through the collection to get each EntitySetBase.  
-      foreach (EntitySetBase baseSet in container.BaseEntitySets)  
-      {  
-         // Check if this instance is an EntitySet.  
-         if (baseSet is EntitySet)  
+  static void Main()  
+  {  
+    try  
+    {  
+       // Establish a connection to the underlying data provider by   
+       // using the connection string specified in the config file.  
+       using (EntityConnection connection =  
+          new EntityConnection("Name=AdventureWorksEntities"))  
+       {  
+         // Open the connection.  
+         connection.Open();  
+  
+         // Access the metadata workspace.  
+         MetadataWorkspace workspace =   
+            connection.GetMetadataWorkspace();  
+  
+         // Get the entity containers in the conceptual model.  
+         GetEntityContainers(workspace, DataSpace.CSpace);  
+  
+         // Get the entity containers in the storage model.  
+             GetEntityContainers(workspace, DataSpace.SSpace);  
+       }  
+    }  
+    catch (MetadataException exceptionMetadata)  
+    {  
+      Console.WriteLine("MetadataException: {0}",   
+                       exceptionMetadata.Message);  
+    }  
+    catch (System.Data.MappingException exceptionMapping)  
+    {  
+      Console.WriteLine("MappingException: {0}",  
+                       exceptionMapping.Message);  
+    }  
+  }  
+  
+  public static void GetEntityContainers(  
+      MetadataWorkspace workspace, DataSpace model)  
+  {  
+    // Get a collection of the entity containers.  
+    ReadOnlyCollection<EntityContainer> containers =   
+         workspace.GetItems<EntityContainer>(model);  
+  
+    // Iterate through the collection to get each entity container.  
+    foreach (EntityContainer container in containers)  
+    {  
+       Console.WriteLine("EntityContainer Name: {0} ",   
+                        container.Name);  
+  
+       // EntitySetBase is a super type for   
+       // EntitySets and RelationshipSets.   
+       // Iterate through the collection to get each EntitySetBase.  
+       foreach (EntitySetBase baseSet in container.BaseEntitySets)  
+       {  
+          // Check if this instance is an EntitySet.  
+          if (baseSet is EntitySet)  
+          {  
+             Console.WriteLine(  
+                "  EntitySet Name: {0} , EntityType Name: {1} ",  
+                baseSet.Name, baseSet.ElementType.FullName);  
+          }  
+  
+         // RelationshipSet is a super type for AssociationSet.  
+         // Check if this instance is an AssociationSet.  
+         if (baseSet is AssociationSet)  
          {  
             Console.WriteLine(  
-               "  EntitySet Name: {0} , EntityType Name: {1} ",  
-               baseSet.Name, baseSet.ElementType.FullName);  
+               "  AssociationSet Name: {0} , " +  
+               "AssociationType Name: {1} ",  
+                baseSet.Name, baseSet.ElementType.FullName);  
+  
+            // Get the AssociationSet.  
+            AssociationSet associationSet =   
+                  baseSet as AssociationSet;  
+  
+            // Iterate through the collection to get   
+            // each AssociatedSetEnd.  
+            foreach (AssociationSetEnd end in   
+               associationSet.AssociationSetEnds)  
+            {  
+               Console.WriteLine(  
+                  "   EntitySet Name: {0} , Name: {1} ",  
+                  end.EntitySet, end.Name);  
+            }  
          }  
- 
-        // RelationshipSet is a super type for AssociationSet.  
-        // Check if this instance is an AssociationSet.  
-        if (baseSet is AssociationSet)  
-        {  
-           Console.WriteLine(  
-              "  AssociationSet Name: {0} , " +  
-              "AssociationType Name: {1} ",  
-               baseSet.Name, baseSet.ElementType.FullName);  
- 
-           // Get the AssociationSet.  
-           AssociationSet associationSet =   
-                 baseSet as AssociationSet;  
- 
-           // Iterate through the collection to get   
-           // each AssociatedSetEnd.  
-           foreach (AssociationSetEnd end in   
-              associationSet.AssociationSetEnds)  
-           {  
-              Console.WriteLine(  
-                 "   EntitySet Name: {0} , Name: {1} ",  
-                 end.EntitySet, end.Name);  
-           }  
-        }  
-     }  
-   }  
- }  
+      }  
+    }  
+  }  
 }  
 ```  
  
@@ -132,85 +132,85 @@ Imports System.Collections.ObjectModel
 Imports System.Data  
 Imports System.Data.EntityClient  
 Imports System.Data.Metadata.Edm  
- 
+  
 Class GetEntityContainerExample  
- Public Shared Sub Main()  
-   Try  
-     ' Establish a connection to the underlying data provider by   
-     ' using the connection string specified in the config file.  
-     Using connection As EntityConnection = _  
-       New EntityConnection("Name=AdventureWorksEntities")  
- 
-       ' Open the conection.  
-       connection.Open()  
- 
-       ' Access the metadata workspace.  
-       Dim workspace As MetadataWorkspace = _  
-          connection.GetMetadataWorkspace  
- 
-       ' Get the entity containers in the conceptual model.  
-       GetEntityContainers(workspace, DataSpace.CSpace)  
- 
-       ' Get the entity containers in the storage model.  
-       GetEntityContainers(workspace, DataSpace.SSpace)  
-     End Using  
-   Catch exceptionMetadata As MetadataException  
-      Console.WriteLine("MetadataException: {0}", _  
-         exceptionMetadata.Message)  
-   Catch exceptionMapping As MappingException  
-      Console.WriteLine("MappingException: {0}", _  
-         exceptionMapping.Message)  
-    End Try  
- End Sub  
- 
- Public Shared Sub GetEntityContainers( _  
-   ByVal workspace As MetadataWorkspace, ByVal model As DataSpace)  
- 
-   ' Get a collection of the entity containers.  
-   Dim containers As ReadOnlyCollection(Of EntityContainer) = _  
-      workspace.GetItems(Of EntityContainer)(model)  
- 
-   ' Iterate through the collection to get each entity container.  
-   Dim container As EntityContainer  
-   For Each container In containers  
-     Console.WriteLine("EntityContainer Name: {0} ", container.Name)  
- 
-     ' EntitySetBase is a super type for   
-     ' EntitySets and RelationshipSets.   
-     ' Iterate through the collection to get each EntitySetBase.  
-     Dim baseSet As EntitySetBase  
-     For Each baseSet In container.BaseEntitySets  
-        ' Check if this instance is an EntitySet.  
-        If TypeOf baseSet Is EntitySet Then  
-          Console.WriteLine( _  
-             "  EntitySet Name: {0} , EntityType Name: {1} ", _  
-             baseSet.Name, baseSet.ElementType.FullName)  
-         End If  
- 
-         ' RelationshipSet is a super type for AssociationSet.  
-         ' Check if this instance is an AssociationSet.  
-         If TypeOf baseSet Is AssociationSet Then  
+  Public Shared Sub Main()  
+    Try  
+      ' Establish a connection to the underlying data provider by   
+      ' using the connection string specified in the config file.  
+      Using connection As EntityConnection = _  
+        New EntityConnection("Name=AdventureWorksEntities")  
+  
+        ' Open the conection.  
+        connection.Open()  
+  
+        ' Access the metadata workspace.  
+        Dim workspace As MetadataWorkspace = _  
+           connection.GetMetadataWorkspace  
+  
+        ' Get the entity containers in the conceptual model.  
+        GetEntityContainers(workspace, DataSpace.CSpace)  
+  
+        ' Get the entity containers in the storage model.  
+        GetEntityContainers(workspace, DataSpace.SSpace)  
+      End Using  
+    Catch exceptionMetadata As MetadataException  
+       Console.WriteLine("MetadataException: {0}", _  
+          exceptionMetadata.Message)  
+    Catch exceptionMapping As MappingException  
+       Console.WriteLine("MappingException: {0}", _  
+          exceptionMapping.Message)  
+     End Try  
+  End Sub  
+  
+  Public Shared Sub GetEntityContainers( _  
+    ByVal workspace As MetadataWorkspace, ByVal model As DataSpace)  
+  
+    ' Get a collection of the entity containers.  
+    Dim containers As ReadOnlyCollection(Of EntityContainer) = _  
+       workspace.GetItems(Of EntityContainer)(model)  
+  
+    ' Iterate through the collection to get each entity container.  
+    Dim container As EntityContainer  
+    For Each container In containers  
+      Console.WriteLine("EntityContainer Name: {0} ", container.Name)  
+  
+      ' EntitySetBase is a super type for   
+      ' EntitySets and RelationshipSets.   
+      ' Iterate through the collection to get each EntitySetBase.  
+      Dim baseSet As EntitySetBase  
+      For Each baseSet In container.BaseEntitySets  
+         ' Check if this instance is an EntitySet.  
+         If TypeOf baseSet Is EntitySet Then  
            Console.WriteLine( _  
-             "  AssociationSet Name: {0} , " + _  
-             "AssociationType Name: {1} ", _  
-             baseSet.Name, baseSet.ElementType.FullName)  
- 
-           ' Get the AssociationSet.  
-           Dim associationSet As AssociationSet = _  
-              TryCast(baseSet, AssociationSet)  
- 
-           ' Iterate through the collection to get   
-           '  each AssociatedSetEnd.  
-           Dim endMember As AssociationSetEnd  
-           For Each endMember In associationSet.AssociationSetEnds  
-             Console.WriteLine( _  
-                "   EntitySet Name: {0} , Name: {1} ", _  
-                endMember.EntitySet, endMember.Name)  
-           Next  
-         End If  
-     Next  
-   Next  
- End Sub  
+              "  EntitySet Name: {0} , EntityType Name: {1} ", _  
+              baseSet.Name, baseSet.ElementType.FullName)  
+          End If  
+  
+          ' RelationshipSet is a super type for AssociationSet.  
+          ' Check if this instance is an AssociationSet.  
+          If TypeOf baseSet Is AssociationSet Then  
+            Console.WriteLine( _  
+              "  AssociationSet Name: {0} , " + _  
+              "AssociationType Name: {1} ", _  
+              baseSet.Name, baseSet.ElementType.FullName)  
+  
+            ' Get the AssociationSet.  
+            Dim associationSet As AssociationSet = _  
+               TryCast(baseSet, AssociationSet)  
+  
+            ' Iterate through the collection to get   
+            '  each AssociatedSetEnd.  
+            Dim endMember As AssociationSetEnd  
+            For Each endMember In associationSet.AssociationSetEnds  
+              Console.WriteLine( _  
+                 "   EntitySet Name: {0} , Name: {1} ", _  
+                 endMember.EntitySet, endMember.Name)  
+            Next  
+          End If  
+      Next  
+    Next  
+  End Sub  
 End Class  
 ```  
  

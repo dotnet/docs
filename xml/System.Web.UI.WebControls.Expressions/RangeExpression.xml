@@ -79,9 +79,9 @@ This code example is part of a larger example provided in [Walkthrough: Filterin
  
 ```  
 <asp:RangeExpression DataField="ListPrice"    
-   MinType="Inclusive" MaxType="Exclusive">  
- <asp:ControlParameter ControlID="FromTextBox" />  
- <asp:ControlParameter ControlID="ToTextBox" />  
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
 </asp:RangeExpression>  
 ```  
  
@@ -157,9 +157,9 @@ The following example shows how to include the minimum value that is specified i
  
 ```  
 <asp:RangeExpression DataField="ListPrice"    
-   MinType="Inclusive" MaxType="Exclusive">  
- <asp:ControlParameter ControlID="FromTextBox" />  
- <asp:ControlParameter ControlID="ToTextBox" />  
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
 </asp:RangeExpression>  
 ```  
  
@@ -197,9 +197,9 @@ The following example shows how to include the minimum value that is specified i
  
 ```  
 <asp:RangeExpression DataField="ListPrice"    
-   MinType="Inclusive" MaxType="Exclusive">  
- <asp:ControlParameter ControlID="FromTextBox" />  
- <asp:ControlParameter ControlID="ToTextBox" />  
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
 </asp:RangeExpression>  
 ```  
  

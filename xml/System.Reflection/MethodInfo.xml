@@ -368,20 +368,20 @@ If a generic method definition includes generic parameters of the declaring type
 ```  
 class B<U,V> {}  
 class C<T> { public B<T,S> M<S>() {...}}  
- 
+  
 Class B(Of U, V)  
 End Class  
 Class C(Of T)  
-   Public Function M(Of S)() As B(Of T, S)  
-       ...  
-   End Function  
+    Public Function M(Of S)() As B(Of T, S)  
+        ...  
+    End Function  
 End Class   
- 
+  
 generic <typename U, typename V> ref class B {};  
 generic <typename T> ref class C  
 {  
 public:  
-   generic <typename S> B<T,S>^ M() {...};  
+    generic <typename S> B<T,S>^ M() {...};  
 };  
 ```  
  
@@ -489,31 +489,31 @@ Methods constructed with the <xref:System.Reflection.MethodInfo.MakeGenericMetho
 ```  
 class C  
 {  
-   T N<T,U>(T t, U u) {...}  
-   public V M<V>(V v)  
-   {  
-       return N<V,int>(v, 42);  
-   }  
+    T N<T,U>(T t, U u) {...}  
+    public V M<V>(V v)  
+    {  
+        return N<V,int>(v, 42);  
+    }  
 }  
- 
+  
 Class C  
-   Public Function N(Of T,U)(ByVal ta As T, ByVal ua As U) As T  
-       ...  
-   End Function  
-   Public Function M(Of V)(ByVal va As V ) As V  
-       Return N(Of V, Integer)(va, 42)  
-   End Function  
+    Public Function N(Of T,U)(ByVal ta As T, ByVal ua As U) As T  
+        ...  
+    End Function  
+    Public Function M(Of V)(ByVal va As V ) As V  
+        Return N(Of V, Integer)(va, 42)  
+    End Function  
 End Class  
- 
+  
 ref class C  
 {  
 private:  
-   generic <typename T, typename U> T N(T t, U u) {...}  
+    generic <typename T, typename U> T N(T t, U u) {...}  
 public:  
-   generic <typename V> V M(V v)  
-   {  
-       return N<V, int>(v, 42);  
-   }  
+    generic <typename V> V M(V v)  
+    {  
+        return N<V, int>(v, 42);  
+    }  
 };  
 ```  
  

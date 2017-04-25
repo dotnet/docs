@@ -32,9 +32,9 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <httpModules>  
-   <add name="TimerModule"   
-     type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-     PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
+    <add name="TimerModule"   
+      type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
+      PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
 </httpModules>  
 ```  
  

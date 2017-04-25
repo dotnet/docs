@@ -34,32 +34,32 @@ Ensure that your custom event is raised at the proper time, that is, when the eq
  
 ```  
 <healthMonitoring  
-   heartBeatInterval="0" enabled="true">  
- 
- <profiles>  
-   <add name="Custom"   
-     minInstances="1"   
-     maxLimit="Infinite"   
-     minInterval="00:00:00" />  
- </profiles>  
- 
- <eventMappings>  
- 
-   <add   
-     name="SampleWebThreadInformation"   
+    heartBeatInterval="0" enabled="true">  
+  
+  <profiles>  
+    <add name="Custom"   
+      minInstances="1"   
+      maxLimit="Infinite"   
+      minInterval="00:00:00" />  
+  </profiles>  
+  
+  <eventMappings>  
+  
+    <add   
+      name="SampleWebThreadInformation"   
 type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0.1782.29648, Culture=neutral, PublicKeyToken=b3283a2de7dd3f27, processorArchitecture=MSIL" />  
- 
- </eventMappings>  
- 
- <rules>  
- 
-   <add name="Custom Web Thread Info Event"   
-     eventName="SampleWebThreadInformation"   
-     provider="EventLogProvider"  
-     profile="Custom" />  
- 
- </rules>  
- 
+  
+  </eventMappings>  
+  
+  <rules>  
+  
+    <add name="Custom Web Thread Info Event"   
+      eventName="SampleWebThreadInformation"   
+      provider="EventLogProvider"  
+      profile="Custom" />  
+  
+  </rules>  
+  
 </healthMonitoring>  
 ```  
  

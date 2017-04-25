@@ -25,38 +25,38 @@ The following example shows the implementation of a start/stop button for an app
 ```  
 private void _startRecogButton_Click(object sender, EventArgs eventArgs)   
 {  
- 
- // Toggle speech recognition on.  
- if (_startRecogButton.Text == "Start Speech Recognition")   
- {       
-   _startRecogButton.Text = "Stop Speech Recognition";  
-   if (_useMultiple)   
-   {  
-     _recognitionEngine.RecognizeAsync(RecognizeMode.Multiple);  
-   }   
-   else   
-   {  
-     _recognitionEngine.RecognizeAsync(RecognizeMode.Single);  
-   }  
- }  
- 
- // Toggle speech recognition off.   
- else   
- {                                                        
-   _startRecogButton.Text = "Start Speech Recognition";  
- 
-   // Stop after current phrase is finished.  
-   if (_friendlyStop)   
-   {       
-     _recognitionEngine.RecognizeAsyncStop();   
-   }  
- 
-   // Stop before current phrase is finished.  
-   else   
-   {        
-     _recognitionEngine.RecognizeAsyncCancel();   
-   }  
- }  
+  
+  // Toggle speech recognition on.  
+  if (_startRecogButton.Text == "Start Speech Recognition")   
+  {       
+    _startRecogButton.Text = "Stop Speech Recognition";  
+    if (_useMultiple)   
+    {  
+      _recognitionEngine.RecognizeAsync(RecognizeMode.Multiple);  
+    }   
+    else   
+    {  
+      _recognitionEngine.RecognizeAsync(RecognizeMode.Single);  
+    }  
+  }  
+  
+  // Toggle speech recognition off.   
+  else   
+  {                                                        
+    _startRecogButton.Text = "Start Speech Recognition";  
+  
+    // Stop after current phrase is finished.  
+    if (_friendlyStop)   
+    {       
+      _recognitionEngine.RecognizeAsyncStop();   
+    }  
+  
+    // Stop before current phrase is finished.  
+    else   
+    {        
+      _recognitionEngine.RecognizeAsyncCancel();   
+    }  
+  }  
 }  
 ```  
  

@@ -757,11 +757,11 @@ The following code example defines an `ie302` alias and includes sections needed
  
 ```  
 <configuration>  
- <system.web>  
-  <clientTarget>  
-   <add alias="ie302" useragent="Mozilla/2.0 (compatible; MSIE 3.02; Windows NT 3.5)" />  
-  </clientTarget>  
- </system.web>  
+  <system.web>  
+   <clientTarget>  
+    <add alias="ie302" useragent="Mozilla/2.0 (compatible; MSIE 3.02; Windows NT 3.5)" />  
+   </clientTarget>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -5254,7 +5254,7 @@ The syntax for setting this property in the  directive is as follows:
  
 ```vb  
 <%@ Page Language="VB" ViewStateEncryptionMode="Always" %>  
- 
+  
 ```  
  
 ```csharp  
@@ -5265,14 +5265,14 @@ The syntax for setting this property in the configuration file is as follows:
  
 ```vb  
 <system.web>  
- <pages viewStateEncryptionMode="Always" />  
+  <pages viewStateEncryptionMode="Always" />  
 </system.web>  
- 
+  
 ```  
  
 ```csharp  
 <system.web>  
- <pages viewStateEncryptionMode="Always" />  
+  <pages viewStateEncryptionMode="Always" />  
 </system.web>  
 ```  
  

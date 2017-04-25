@@ -33,11 +33,11 @@ The following example assumes that the data source has a table named **MoneyTabl
  
 ```  
 CREATE TABLE MoneyTable (col1 int, col2 smallmoney, col3 decimal);  
- 
+  
 CREATE PROC MoneyProcedure (@p1 int, @p2 smallmoney, @p3 decimal)   
 AS   
 INSERT INTO MyTable VALUES (@p1, @p2, @p3);  
- 
+  
 ```  
  
 The example creates parameters and calls the **MoneyProcedure** stored procedure.  

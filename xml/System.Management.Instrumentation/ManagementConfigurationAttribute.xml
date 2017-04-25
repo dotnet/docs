@@ -41,8 +41,8 @@ The following example shows how to use the ManagementConfiguration attribute to 
 [ManagementConfiguration]  
 public double ReadableWritableProperty  
 {  
-   get { return this.propertyValue; }  
-   set { this.propertyValue = value; }  
+    get { return this.propertyValue; }  
+    set { this.propertyValue = value; }  
 }  
 ```  
  

@@ -31,26 +31,26 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState mode="InProc"   
-     stateConnectionString="tcpip=127.0.0.1:42424"   
-     stateNetworkTimeout="10"  
-     sqlConnectionString="data source=127.0.0.1;  
-       Integrated Security=SSPI"  
-     sqlCommandTimeout="30"   
-     customProvider=""   
-     cookieless="UseDeviceProfile"   
-     cookieName="ASP.NET_SessionId"   
-     timeout="20"   
-     allowCustomSqlDatabase="False"   
-     regenerateExpiredSessionId="False"   
-     partitionResolverType=""   
-     useHostingIdentity="True">  
-     <providers>  
-       <clear />  
-     </providers>  
-   </sessionState>  
- </system.web>  
+  <system.web>  
+    <sessionState mode="InProc"   
+      stateConnectionString="tcpip=127.0.0.1:42424"   
+      stateNetworkTimeout="10"  
+      sqlConnectionString="data source=127.0.0.1;  
+        Integrated Security=SSPI"  
+      sqlCommandTimeout="30"   
+      customProvider=""   
+      cookieless="UseDeviceProfile"   
+      cookieName="ASP.NET_SessionId"   
+      timeout="20"   
+      allowCustomSqlDatabase="False"   
+      regenerateExpiredSessionId="False"   
+      partitionResolverType=""   
+      useHostingIdentity="True">  
+      <providers>  
+        <clear />  
+      </providers>  
+    </sessionState>  
+  </system.web>  
 </configuration>  
 ```  
  

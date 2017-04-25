@@ -39,17 +39,17 @@ To configure a <xref:System.Diagnostics.DelimitedListTraceListener>, edit the co
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="delimitedListener"   
-         type="System.Diagnostics.DelimitedListTraceListener"   
-         delimiter=","   
-         initializeData="delimitedOutput.csv"   
-         traceOutputOptions="ProcessId, DateTime" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="delimitedListener"   
+          type="System.Diagnostics.DelimitedListTraceListener"   
+          delimiter=","   
+          initializeData="delimitedOutput.csv"   
+          traceOutputOptions="ProcessId, DateTime" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -326,20 +326,20 @@ The default delimiter is ";" (semicolon). The following configuration file examp
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="delimitedListener"   
-         type="System.Diagnostics.DelimitedListTraceListener"   
-         delimiter=":"   
-         initializeData="delimitedOutput.txt"   
-         traceOutputOptions="ProcessId, DateTime" />  
-       <remove name="Default" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="delimitedListener"   
+          type="System.Diagnostics.DelimitedListTraceListener"   
+          delimiter=":"   
+          initializeData="delimitedOutput.txt"   
+          traceOutputOptions="ProcessId, DateTime" />  
+        <remove name="Default" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
- 
+  
 ```  
  
  ]]></format>
@@ -379,18 +379,18 @@ A custom attribute is an attribute that is not inherited from the base class tha
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="delimitedListener"   
-         type="System.Diagnostics.DelimitedListTraceListener"   
-         delimiter=":"   
-         initializeData="delimitedOutput.txt"   
-         traceOutputOptions="ProcessId, DateTime" />  
-       <remove name="Default" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="delimitedListener"   
+          type="System.Diagnostics.DelimitedListTraceListener"   
+          delimiter=":"   
+          initializeData="delimitedOutput.txt"   
+          traceOutputOptions="ProcessId, DateTime" />  
+        <remove name="Default" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

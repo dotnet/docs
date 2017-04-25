@@ -148,8 +148,8 @@ Because the <xref:System.Web.UI.WebControls.XmlDataSource> control supports data
     Visible="True|False"  
     XPath="string"  
 >  
-   <Data>string</Data>  
-   <Transform>string</Transform>  
+    <Data>string</Data>  
+    <Transform>string</Transform>  
 </asp:XmlDataSource>  
 ```  
  
@@ -167,14 +167,14 @@ The XML file in the code example has the following data:
  
 ```  
 <books>  
-  <computerbooks>  
-    <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
-    <book title="Straight Talk About Computers" author="Dean Straight"/>  
-    <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
-  </computerbooks>  
-  <cookbooks>  
-    <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
-  </cookbooks>  
+   <computerbooks>  
+     <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
+     <book title="Straight Talk About Computers" author="Dean Straight"/>  
+     <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
+   </computerbooks>  
+   <cookbooks>  
+     <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
+   </cookbooks>  
 </books>  
 ```  
  
@@ -187,26 +187,26 @@ The XML file in the code example has the following data:
  
 ```  
 <?xml version="1.0" encoding="iso-8859-1"?>  
-<orders>  
-  <order>  
-    <customer id="12345" />  
-    <customername>  
-        <firstn>John</firstn>  
-        <lastn>Smith</lastn>  
-    </customername>  
-    <transaction id="12345" />  
-    <shipaddress>  
-        <address1>1234 Tenth Avenue</address1>  
-        <city>Bellevue</city>  
-        <state>Washington</state>  
-        <zip>98001</zip>  
-    </shipaddress>  
-    <summary>  
-        <item dept="tools">screwdriver</item>  
-        <item dept="tools">hammer</item>  
-        <item dept="plumbing">fixture</item>  
-    </summary>  
-  </order>  
+ <orders>  
+   <order>  
+     <customer id="12345" />  
+     <customername>  
+         <firstn>John</firstn>  
+         <lastn>Smith</lastn>  
+     </customername>  
+     <transaction id="12345" />  
+     <shipaddress>  
+         <address1>1234 Tenth Avenue</address1>  
+         <city>Bellevue</city>  
+         <state>Washington</state>  
+         <zip>98001</zip>  
+     </shipaddress>  
+     <summary>  
+         <item dept="tools">screwdriver</item>  
+         <item dept="tools">hammer</item>  
+         <item dept="plumbing">fixture</item>  
+     </summary>  
+   </order>  
 </orders>  
 ```  
  
@@ -280,14 +280,14 @@ The XML file in the code example has the following data:
  
 ```  
 <books>  
-  <computerbooks>  
-    <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
-    <book title="Straight Talk About Computers" author="Dean Straight"/>  
-    <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>  
-  </computerbooks>  
-  <cookbooks>  
-    <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
-  </cookbooks>  
+   <computerbooks>  
+     <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
+     <book title="Straight Talk About Computers" author="Dean Straight"/>  
+     <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>  
+   </computerbooks>  
+   <cookbooks>  
+     <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
+   </cookbooks>  
 </books>  
 ```  
  
@@ -333,14 +333,14 @@ The XML file in the code example has the following data:
  
 ```  
 <books>  
-  <computerbooks>  
-    <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
-    <book title="Straight Talk About Computers" author="Dean Straight"/>  
-    <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
-  </computerbooks>  
-  <cookbooks>  
-    <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
-  </cookbooks>  
+   <computerbooks>  
+     <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
+     <book title="Straight Talk About Computers" author="Dean Straight"/>  
+     <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
+   </computerbooks>  
+   <cookbooks>  
+     <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
+   </cookbooks>  
 </books>  
 ```  
  
@@ -507,14 +507,14 @@ The XML file in the code example has the following data:
  
 ```  
 <books>  
-  <computerbooks>  
-    <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
-    <book title="Straight Talk About Computers" author="Dean Straight"/>  
-    <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
-  </computerbooks>  
-  <cookbooks>  
-    <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
-  </cookbooks>  
+   <computerbooks>  
+     <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
+     <book title="Straight Talk About Computers" author="Dean Straight"/>  
+     <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
+   </computerbooks>  
+   <cookbooks>  
+     <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
+   </cookbooks>  
 </books>  
 ```  
  
@@ -564,14 +564,14 @@ The XML file in the code example has the following data:
  
 ```  
 <books>  
-  <computerbooks>  
-    <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
-    <book title="Straight Talk About Computers" author="Dean Straight"/>  
-    <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
-  </computerbooks>  
-  <cookbooks>  
-    <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
-  </cookbooks>  
+   <computerbooks>  
+     <book title="Secrets of Silicon Valley" author="Sheryl Hunter"/>  
+     <book title="Straight Talk About Computers" author="Dean Straight"/>  
+     <book title="You Can Combat Computer Stress!" author="Marjorie Green"/>                  
+   </computerbooks>  
+   <cookbooks>  
+     <book title="Silicon Valley Gastronomic Treats" author="Innes del Castill"/>  
+   </cookbooks>  
 </books>  
 ```  
  
@@ -651,23 +651,23 @@ The XML file in the code examples has the following data:
  
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
-<bookstore xmlns:bk="urn:samples">  
-  <book genre="novel" publicationdate="1999" bk:ISBN="0000000000">  
-    <title>Secrets of Silicon Valley</title>  
-    <author>  
-      <first-name>Sheryl</first-name>  
-      <last-name>Hunter</last-name>  
-    </author>  
-    <price>24.95</price>"   
-    </book>  
-  <book genre="novel" publicationdate="1985" bk:ISBN="1111111111">  
-    <title>Straight Talk About Computers</title>  
-    <author>  
-      <first-name>Dean</first-name>  
-      <last-name>Straight</last-name>  
-    </author>  
-    <price>29.95</price>  
-  </book>  
+ <bookstore xmlns:bk="urn:samples">  
+   <book genre="novel" publicationdate="1999" bk:ISBN="0000000000">  
+     <title>Secrets of Silicon Valley</title>  
+     <author>  
+       <first-name>Sheryl</first-name>  
+       <last-name>Hunter</last-name>  
+     </author>  
+     <price>24.95</price>"   
+     </book>  
+   <book genre="novel" publicationdate="1985" bk:ISBN="1111111111">  
+     <title>Straight Talk About Computers</title>  
+     <author>  
+       <first-name>Dean</first-name>  
+       <last-name>Straight</last-name>  
+     </author>  
+     <price>29.95</price>  
+   </book>  
 </bookstore>  
 ```  
  
@@ -724,28 +724,28 @@ The XML file in the code example has the following data:
  
 ```  
 <bookstore>  
-  <genre name="fiction">  
-    <book ISBN="0000000000">  
-      <title>Secrets of Silicon Valley</title>  
-      <price>12.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />             
-        <chapter num="2" name="Body" />            
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
-  <genre name="novel">  
-    <book genre="novel" ISBN="1111111111">  
-      <title>Straight Talk About Computers</title>  
-      <price>24.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />   
-        <chapter num="2" name="Body" />  
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
+   <genre name="fiction">  
+     <book ISBN="0000000000">  
+       <title>Secrets of Silicon Valley</title>  
+       <price>12.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />             
+         <chapter num="2" name="Body" />            
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
+   <genre name="novel">  
+     <book genre="novel" ISBN="1111111111">  
+       <title>Straight Talk About Computers</title>  
+       <price>24.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />   
+         <chapter num="2" name="Body" />  
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
 </bookstore>  
 ```  
  
@@ -753,44 +753,44 @@ The XML transformation is performed using the following style sheet.
  
 ```  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-<xsl:param name="purchdate"/>  
-<xsl:template match="bookstore">  
-  <bookstore>  
-    <xsl:apply-templates select="genre"/>  
-  </bookstore>  
-</xsl:template>  
-<xsl:template match="genre">  
-  <genre>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates select="book"/>  
-  </genre>  
-</xsl:template>  
-<xsl:template match="book">  
-  <book>  
-    <xsl:attribute name="ISBN">  
-      <xsl:value-of select="@ISBN"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="title">  
-      <xsl:value-of select="title"/>  
-      Price: <xsl:value-of select="price"/>  
-          15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
-    </xsl:attribute>  
-    <xsl:apply-templates select="chapters/chapter" />  
-  </book>  
-</xsl:template>  
-<xsl:template match="chapter">  
-  <chapter>  
-    <xsl:attribute name="num">  
-      <xsl:value-of select="@num"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates/>  
-  </chapter>  
-</xsl:template>  
+ <xsl:param name="purchdate"/>  
+ <xsl:template match="bookstore">  
+   <bookstore>  
+     <xsl:apply-templates select="genre"/>  
+   </bookstore>  
+ </xsl:template>  
+ <xsl:template match="genre">  
+   <genre>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates select="book"/>  
+   </genre>  
+ </xsl:template>  
+ <xsl:template match="book">  
+   <book>  
+     <xsl:attribute name="ISBN">  
+       <xsl:value-of select="@ISBN"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="title">  
+       <xsl:value-of select="title"/>  
+       Price: <xsl:value-of select="price"/>  
+           15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
+     </xsl:attribute>  
+     <xsl:apply-templates select="chapters/chapter" />  
+   </book>  
+ </xsl:template>  
+ <xsl:template match="chapter">  
+   <chapter>  
+     <xsl:attribute name="num">  
+       <xsl:value-of select="@num"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates/>  
+   </chapter>  
+ </xsl:template>  
 </xsl:stylesheet>  
 ```  
  
@@ -847,25 +847,25 @@ The XML file in the code examples has the following data:
  
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
-<bookstore xmlns:bk="urn:samples">  
-  <book genre="novel" publicationdate="1999" bk:ISBN="0000000000">  
-    <title>Secrets of Silicon Valley</title>  
-    <author>  
-      <first-name>Sheryl</first-name>  
-      <last-name>Hunter</last-name>  
-    </author>  
-    <price>24.95</price>"   
-    </book>  
-  <book genre="novel" publicationdate="1985" bk:ISBN="1111111111">  
-    <title>Straight Talk About Computers</title>  
-    <author>  
-      <first-name>Dean</first-name>  
-      <last-name>Straight</last-name>  
-    </author>  
-    <price>29.95</price>  
-  </book>  
+ <bookstore xmlns:bk="urn:samples">  
+   <book genre="novel" publicationdate="1999" bk:ISBN="0000000000">  
+     <title>Secrets of Silicon Valley</title>  
+     <author>  
+       <first-name>Sheryl</first-name>  
+       <last-name>Hunter</last-name>  
+     </author>  
+     <price>24.95</price>"   
+     </book>  
+   <book genre="novel" publicationdate="1985" bk:ISBN="1111111111">  
+     <title>Straight Talk About Computers</title>  
+     <author>  
+       <first-name>Dean</first-name>  
+       <last-name>Straight</last-name>  
+     </author>  
+     <price>29.95</price>  
+   </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1036,26 +1036,26 @@ The XML file in the code example has the following data:
  
 ```  
 <?xml version="1.0" encoding="iso-8859-1"?>  
-<orders>  
-  <order>  
-    <customer id="12345" />  
-    <customername>  
-        <firstn>Todd</firstn>  
-        <lastn>Rowe</lastn>  
-    </customername>  
-    <transaction id="12345" />  
-    <shipaddress>  
-        <address1>1234 Tenth Avenue</address1>  
-        <city>Bellevue</city>  
-        <state>Washington</state>  
-        <zip>98001</zip>  
-    </shipaddress>  
-    <summary>  
-        <item dept="tools">screwdriver</item>  
-        <item dept="tools">hammer</item>  
-        <item dept="plumbing">fixture</item>  
-    </summary>  
-  </order>  
+ <orders>  
+   <order>  
+     <customer id="12345" />  
+     <customername>  
+         <firstn>Todd</firstn>  
+         <lastn>Rowe</lastn>  
+     </customername>  
+     <transaction id="12345" />  
+     <shipaddress>  
+         <address1>1234 Tenth Avenue</address1>  
+         <city>Bellevue</city>  
+         <state>Washington</state>  
+         <zip>98001</zip>  
+     </shipaddress>  
+     <summary>  
+         <item dept="tools">screwdriver</item>  
+         <item dept="tools">hammer</item>  
+         <item dept="plumbing">fixture</item>  
+     </summary>  
+   </order>  
 </orders>  
 ```  
  
@@ -1104,28 +1104,28 @@ The XML file in the code example has the following data:
  
 ```  
 <bookstore>  
-  <genre name="fiction">  
-    <book ISBN="0000000000">  
-      <title>Secrets of Silicon Valley</title>  
-      <price>12.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />             
-        <chapter num="2" name="Body" />            
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
-  <genre name="novel">  
-    <book genre="novel" ISBN="1111111111">  
-      <title>Straight Talk About Computers</title>  
-      <price>24.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />   
-        <chapter num="2" name="Body" />  
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
+   <genre name="fiction">  
+     <book ISBN="0000000000">  
+       <title>Secrets of Silicon Valley</title>  
+       <price>12.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />             
+         <chapter num="2" name="Body" />            
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
+   <genre name="novel">  
+     <book genre="novel" ISBN="1111111111">  
+       <title>Straight Talk About Computers</title>  
+       <price>24.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />   
+         <chapter num="2" name="Body" />  
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
 </bookstore>  
 ```  
  
@@ -1133,44 +1133,44 @@ The transformation of the XML data is performed with the following style sheet.
  
 ```  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-<xsl:param name="purchdate"/>  
-<xsl:template match="bookstore">  
-  <bookstore>  
-    <xsl:apply-templates select="genre"/>  
-  </bookstore>  
-</xsl:template>  
-<xsl:template match="genre">  
-  <genre>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates select="book"/>  
-  </genre>  
-</xsl:template>  
-<xsl:template match="book">  
-  <book>  
-    <xsl:attribute name="ISBN">  
-      <xsl:value-of select="@ISBN"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="title">  
-      <xsl:value-of select="title"/>  
-      Price: <xsl:value-of select="price"/>  
-          15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
-    </xsl:attribute>  
-    <xsl:apply-templates select="chapters/chapter" />  
-  </book>  
-</xsl:template>  
-<xsl:template match="chapter">  
-  <chapter>  
-    <xsl:attribute name="num">  
-      <xsl:value-of select="@num"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates/>  
-  </chapter>  
-</xsl:template>  
+ <xsl:param name="purchdate"/>  
+ <xsl:template match="bookstore">  
+   <bookstore>  
+     <xsl:apply-templates select="genre"/>  
+   </bookstore>  
+ </xsl:template>  
+ <xsl:template match="genre">  
+   <genre>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates select="book"/>  
+   </genre>  
+ </xsl:template>  
+ <xsl:template match="book">  
+   <book>  
+     <xsl:attribute name="ISBN">  
+       <xsl:value-of select="@ISBN"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="title">  
+       <xsl:value-of select="title"/>  
+       Price: <xsl:value-of select="price"/>  
+           15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
+     </xsl:attribute>  
+     <xsl:apply-templates select="chapters/chapter" />  
+   </book>  
+ </xsl:template>  
+ <xsl:template match="chapter">  
+   <chapter>  
+     <xsl:attribute name="num">  
+       <xsl:value-of select="@num"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates/>  
+   </chapter>  
+ </xsl:template>  
 </xsl:stylesheet>  
 ```  
  
@@ -1224,28 +1224,28 @@ The XML file in the code example has the following data:
  
 ```  
 <bookstore>  
-  <genre name="fiction">  
-    <book ISBN="0000000000">  
-      <title>Secrets of Silicon Valley</title>  
-      <price>12.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />             
-        <chapter num="2" name="Body" />            
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
-  <genre name="novel">  
-    <book genre="novel" ISBN="1111111111">  
-      <title>Straight Talk About Computers</title>  
-      <price>24.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />   
-        <chapter num="2" name="Body" />  
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
+   <genre name="fiction">  
+     <book ISBN="0000000000">  
+       <title>Secrets of Silicon Valley</title>  
+       <price>12.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />             
+         <chapter num="2" name="Body" />            
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
+   <genre name="novel">  
+     <book genre="novel" ISBN="1111111111">  
+       <title>Straight Talk About Computers</title>  
+       <price>24.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />   
+         <chapter num="2" name="Body" />  
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
 </bookstore>  
 ```  
  
@@ -1253,44 +1253,44 @@ The XSL style sheet that performs the XML transformation has the following struc
  
 ```  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-<xsl:template match="bookstore">  
-  <bookstore>  
-    <xsl:apply-templates select="genre"/>  
-  </bookstore>  
-</xsl:template>  
-<xsl:template match="genre">  
-  <genre>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates select="book"/>  
-  </genre>  
-</xsl:template>  
-<xsl:template match="book">  
-  <book>  
-    <xsl:attribute name="ISBN">  
-      <xsl:value-of select="@ISBN"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="title">  
-      <xsl:value-of select="title"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="price">  
-      <xsl:value-of select="price"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates select="chapters/chapter" />  
-  </book>  
-</xsl:template>  
-<xsl:template match="chapter">  
-  <chapter>  
-    <xsl:attribute name="num">  
-      <xsl:value-of select="@num"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates/>  
-  </chapter>  
-</xsl:template>  
+ <xsl:template match="bookstore">  
+   <bookstore>  
+     <xsl:apply-templates select="genre"/>  
+   </bookstore>  
+ </xsl:template>  
+ <xsl:template match="genre">  
+   <genre>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates select="book"/>  
+   </genre>  
+ </xsl:template>  
+ <xsl:template match="book">  
+   <book>  
+     <xsl:attribute name="ISBN">  
+       <xsl:value-of select="@ISBN"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="title">  
+       <xsl:value-of select="title"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="price">  
+       <xsl:value-of select="price"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates select="chapters/chapter" />  
+   </book>  
+ </xsl:template>  
+ <xsl:template match="chapter">  
+   <chapter>  
+     <xsl:attribute name="num">  
+       <xsl:value-of select="@num"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates/>  
+   </chapter>  
+ </xsl:template>  
 </xsl:stylesheet>  
 ```  
  
@@ -1333,28 +1333,28 @@ The XML file in the code example has the following data:
  
 ```  
 <bookstore>  
-  <genre name="fiction">  
-    <book ISBN="0000000000">  
-      <title>Secrets of Silicon Valley</title>  
-      <price>12.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />             
-        <chapter num="2" name="Body" />            
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
-  <genre name="novel">  
-    <book genre="novel" ISBN="1111111111">  
-      <title>Straight Talk About Computers</title>  
-      <price>24.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />   
-        <chapter num="2" name="Body" />  
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
+   <genre name="fiction">  
+     <book ISBN="0000000000">  
+       <title>Secrets of Silicon Valley</title>  
+       <price>12.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />             
+         <chapter num="2" name="Body" />            
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
+   <genre name="novel">  
+     <book genre="novel" ISBN="1111111111">  
+       <title>Straight Talk About Computers</title>  
+       <price>24.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />   
+         <chapter num="2" name="Body" />  
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
 </bookstore>  
 ```  
  
@@ -1362,44 +1362,44 @@ The transformation of the XML data is performed with the following style sheet:
  
 ```  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-<xsl:param name="purchdate"/>  
-<xsl:template match="bookstore">  
-  <bookstore>  
-    <xsl:apply-templates select="genre"/>  
-  </bookstore>  
-</xsl:template>  
-<xsl:template match="genre">  
-  <genre>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates select="book"/>  
-  </genre>  
-</xsl:template>  
-<xsl:template match="book">  
-  <book>  
-    <xsl:attribute name="ISBN">  
-      <xsl:value-of select="@ISBN"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="title">  
-      <xsl:value-of select="title"/>  
-      Price: <xsl:value-of select="price"/>  
-          15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
-    </xsl:attribute>  
-    <xsl:apply-templates select="chapters/chapter" />  
-  </book>  
-</xsl:template>  
-<xsl:template match="chapter">  
-  <chapter>  
-    <xsl:attribute name="num">  
-      <xsl:value-of select="@num"/>  
-    </xsl:attribute>  
-    <xsl:attribute name="name">  
-      <xsl:value-of select="@name"/>  
-    </xsl:attribute>  
-    <xsl:apply-templates/>  
-  </chapter>  
-</xsl:template>  
+ <xsl:param name="purchdate"/>  
+ <xsl:template match="bookstore">  
+   <bookstore>  
+     <xsl:apply-templates select="genre"/>  
+   </bookstore>  
+ </xsl:template>  
+ <xsl:template match="genre">  
+   <genre>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates select="book"/>  
+   </genre>  
+ </xsl:template>  
+ <xsl:template match="book">  
+   <book>  
+     <xsl:attribute name="ISBN">  
+       <xsl:value-of select="@ISBN"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="title">  
+       <xsl:value-of select="title"/>  
+       Price: <xsl:value-of select="price"/>  
+           15% discount if purchased by: <xsl:value-of select="$purchdate"/>        
+     </xsl:attribute>  
+     <xsl:apply-templates select="chapters/chapter" />  
+   </book>  
+ </xsl:template>  
+ <xsl:template match="chapter">  
+   <chapter>  
+     <xsl:attribute name="num">  
+       <xsl:value-of select="@num"/>  
+     </xsl:attribute>  
+     <xsl:attribute name="name">  
+       <xsl:value-of select="@name"/>  
+     </xsl:attribute>  
+     <xsl:apply-templates/>  
+   </chapter>  
+ </xsl:template>  
 </xsl:stylesheet>  
 ```  
  
@@ -1445,28 +1445,28 @@ The XML file in the code example has the following data:
  
 ```  
 <bookstore>  
-  <genre name="fiction">  
-    <book ISBN="0000000000">  
-      <title>Secrets of Silicon Valley</title>  
-      <price>12.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />             
-        <chapter num="2" name="Body" />            
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
-  <genre name="novel">  
-    <book genre="novel" ISBN="1111111111">  
-      <title>Straight Talk About Computers</title>  
-      <price>24.95</price>  
-      <chapters>  
-        <chapter num="1" name="Introduction" />   
-        <chapter num="2" name="Body" />  
-        <chapter num="3" name="Conclusion" />  
-      </chapters>  
-    </book>  
-  </genre>  
+   <genre name="fiction">  
+     <book ISBN="0000000000">  
+       <title>Secrets of Silicon Valley</title>  
+       <price>12.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />             
+         <chapter num="2" name="Body" />            
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
+   <genre name="novel">  
+     <book genre="novel" ISBN="1111111111">  
+       <title>Straight Talk About Computers</title>  
+       <price>24.95</price>  
+       <chapters>  
+         <chapter num="1" name="Introduction" />   
+         <chapter num="2" name="Body" />  
+         <chapter num="3" name="Conclusion" />  
+       </chapters>  
+     </book>  
+   </genre>  
 </bookstore>  
 ```  
  

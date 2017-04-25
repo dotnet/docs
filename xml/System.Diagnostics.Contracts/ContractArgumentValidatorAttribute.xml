@@ -56,7 +56,7 @@ From a specification point of view, the `Execute` method has the following three
 Contract.Requires<ArgumentNullException>(data != null);  
 Contract.Requires<ArgumentOutOfRangeException>(position >= 0);  
 Contract.Requires<ArgumentOutOfRangeException>(position < data.Length);  
- 
+  
 ```  
  
 In standard methods, calls to contract validator methods can be freely mixed with other contracts such as <xref:System.Diagnostics.Contracts.Contract.Ensures%2A?displayProperty=fullName> or <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=fullName>.  

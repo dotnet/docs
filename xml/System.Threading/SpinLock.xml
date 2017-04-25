@@ -110,39 +110,39 @@ The following example demonstrates how a SpinLock may be used.
 // C#  
 public class MyType  
 {  
-   private SpinLock _spinLock = new SpinLock();  
- 
-   public void DoWork()  
-   {  
-       bool lockTaken = false;   
-       try  
-       {  
-          _spinLock.Enter(ref lockTaken);  
-          // do work here protected by the lock  
-       }  
-       finally  
-       {  
-           if (lockTaken) _spinLock.Exit();  
-       }  
-   }  
+    private SpinLock _spinLock = new SpinLock();  
+  
+    public void DoWork()  
+    {  
+        bool lockTaken = false;   
+        try  
+        {  
+           _spinLock.Enter(ref lockTaken);  
+           // do work here protected by the lock  
+        }  
+        finally  
+        {  
+            if (lockTaken) _spinLock.Exit();  
+        }  
+    }  
 }  
 ```  
  
 ```  
 ' Visual Basic  
- 
+  
 Class MyType  
-  Private _spinLock As New SpinLock()  
- 
-  Public Sub DoWork()  
-     Dim lockTaken As Boolean = False  
-     Try  
-        _spinLock.Enter(lockTaken)  
-        ' do work here protected by the lock  
-     Finally  
-        If lockTaken Then _spinLock.Exit()  
-     End Try  
-  End Sub  
+   Private _spinLock As New SpinLock()  
+  
+   Public Sub DoWork()  
+      Dim lockTaken As Boolean = False  
+      Try  
+         _spinLock.Enter(lockTaken)  
+         ' do work here protected by the lock  
+      Finally  
+         If lockTaken Then _spinLock.Exit()  
+      End Try  
+   End Sub  
 End Class  
 ```  
  

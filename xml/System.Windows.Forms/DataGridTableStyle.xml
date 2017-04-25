@@ -45,11 +45,11 @@ To determine which <xref:System.Windows.Forms.DataGridTableStyle> is currently d
  
 ```  
 private void PrintCurrentListName(DataGrid myDataGrid){  
-CurrencyManager myCM = (CurrencyManager)  
-BindingContext[myDataGrid.DataSource, myDataGrid.DataMember];  
-IList myList = myCM.List;  
-ITypedList thisList = (ITypedList) myList;  
-Console.WriteLine(thisList.GetListName(null));  
+ CurrencyManager myCM = (CurrencyManager)  
+ BindingContext[myDataGrid.DataSource, myDataGrid.DataMember];  
+ IList myList = myCM.List;  
+ ITypedList thisList = (ITypedList) myList;  
+ Console.WriteLine(thisList.GetListName(null));  
 }  
 ```  
  

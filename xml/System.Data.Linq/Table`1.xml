@@ -47,11 +47,11 @@ An application can access a <xref:System.Data.Linq.Table%601> instance via <xref
 ```  
 [global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SignOffTool")]  
 public partial class DataClasses1DataContext : System.Data.Linq.DataContext {  
-  public System.Data.Linq.Table<User> Users {  
-     get {  
-        return this.GetTable<User>();  
-     }  
-  }  
+   public System.Data.Linq.Table<User> Users {  
+      get {  
+         return this.GetTable<User>();  
+      }  
+   }  
 }  
 ```  
  
@@ -315,9 +315,9 @@ The following C# snippet shows one use for this method:
  
 ```  
 IEnumerable<Customer> customersWithoutOrders = (from c in db.Customers  
-  where c.Orders.Count == 0  
-  select c).ToList();  
- 
+   where c.Orders.Count == 0  
+   select c).ToList();  
+  
 db.Customers.DeleteAllOnSubmit(customersWithoutOrders);  
 db.SubmitChanges();  
 ```  
@@ -326,9 +326,9 @@ In Visual Basic:
  
 ```  
 Dim customersWithoutOrders As IEnumerable(Of Customer) = (From c In db.Customers _   
-   Where c.Orders.Count = 0 _   
-   Select c).ToList()  
- 
+    Where c.Orders.Count = 0 _   
+    Select c).ToList()  
+  
 db.Customers.DeleteAllOnSubmit(customersWithoutOrders)  
 db.SubmitChanges()  
 ```  
@@ -1247,44 +1247,44 @@ When a new entity is attached, deferred loaders for any child collections (for e
  
 ```  
 using (SampleDataContext db = new SampleDataContext()) {  
-   Employee employee = new Employee { employeeId = 1 };  
- 
-   Master master = new Master();  
-   master.Employee = employee;  
- 
-   Child child = new Child();  
-   child.Employee = employee;  
- 
-   db.Employees.Attach(employee);  
- 
-   master.Child = child;  
- 
-   db.Masters.InsertOnSubmit(master);  
- 
-   db.SubmitChanges();  
+    Employee employee = new Employee { employeeId = 1 };  
+  
+    Master master = new Master();  
+    master.Employee = employee;  
+  
+    Child child = new Child();  
+    child.Employee = employee;  
+  
+    db.Employees.Attach(employee);  
+  
+    master.Child = child;  
+  
+    db.Masters.InsertOnSubmit(master);  
+  
+    db.SubmitChanges();  
 }  
- 
+  
 ```  
  
 The equivalent Visual Basic code is:  
  
 ```  
 Using db As New SampleDataContext()    Dim employee As New Employee With { .employeeId = 1 }  
- 
-   Dim master As New Master()  
-   master.Employee = employee  
- 
-   Dim child As New Child()  
-   child.Employee = employee  
- 
-   db.Employees.Attach(employee)  
- 
-   master.Child = child  
- 
-   db.Masters.InsertOnSubmit(master)  
- 
-   db.SubmitChanges()  
- 
+  
+    Dim master As New Master()  
+    master.Employee = employee  
+  
+    Dim child As New Child()  
+    child.Employee = employee  
+  
+    db.Employees.Attach(employee)  
+  
+    master.Child = child  
+  
+    db.Masters.InsertOnSubmit(master)  
+  
+    db.SubmitChanges()  
+  
 End Using  
 ```  
  

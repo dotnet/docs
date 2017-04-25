@@ -23,9 +23,9 @@ Parameters can be specified in a query string within a URL. This class takes tho
 [ServiceContract]  
 interface Calculator  
 {  
-  [WebGet(UriTemplate="Add?n1={n1}&n2={n2}")]  
-  [OperationContract]  
-  long Add(long n1, long n2);  
+   [WebGet(UriTemplate="Add?n1={n1}&n2={n2}")]  
+   [OperationContract]  
+   long Add(long n1, long n2);  
 }  
 ```  
  

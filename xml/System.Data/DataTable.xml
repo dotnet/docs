@@ -510,263 +510,263 @@ using System;
 using System.Linq;  
 using System.Data;  
 using System.ComponentModel;  
- 
+  
 class Program {  
-  static void Main(string[] args) {  
-     DataTable courses = NewCourseDataTable();  
-     Console.WriteLine("This is the source table:");  
-     WriteDataTable(courses);  
- 
-     ClonedDataTable clonedResult = new ClonedDataTable(courses);  
-     DataTable clonedCourses = clonedResult.DestinationTable;  
-     Console.WriteLine("This is the destination table:");  
-     WriteDataTable(clonedCourses);  
- 
-     // Add the events of updating column collection into the source table.  
-     clonedResult.UpdateAddedColumn();  
-     clonedResult.UpdateDeletedColumn();  
-     // Add a DataColumn in source table.  
-     DataColumn columnCreidts = new DataColumn("Credits", typeof(Int32));  
-     courses.Columns.Add(columnCreidts);  
-     Console.WriteLine("After add a column in source table, it's the result in the destination:");  
-     WriteDataTable(clonedCourses);  
- 
-     // Add the event of updating UniqueConstraint into the source table.  
-     clonedResult.UpdateUniqueConstraint();  
- 
-     // Add the unique constraint in source table.  
-     UniqueConstraint uniqueConstraint = new UniqueConstraint(courses.Columns["CourseId"]);  
-     courses.Constraints.Add(uniqueConstraint);  
- 
-     Console.WriteLine(@"If we add the unique constraint in source table and then insert the duplicate   
+   static void Main(string[] args) {  
+      DataTable courses = NewCourseDataTable();  
+      Console.WriteLine("This is the source table:");  
+      WriteDataTable(courses);  
+  
+      ClonedDataTable clonedResult = new ClonedDataTable(courses);  
+      DataTable clonedCourses = clonedResult.DestinationTable;  
+      Console.WriteLine("This is the destination table:");  
+      WriteDataTable(clonedCourses);  
+  
+      // Add the events of updating column collection into the source table.  
+      clonedResult.UpdateAddedColumn();  
+      clonedResult.UpdateDeletedColumn();  
+      // Add a DataColumn in source table.  
+      DataColumn columnCreidts = new DataColumn("Credits", typeof(Int32));  
+      courses.Columns.Add(columnCreidts);  
+      Console.WriteLine("After add a column in source table, it's the result in the destination:");  
+      WriteDataTable(clonedCourses);  
+  
+      // Add the event of updating UniqueConstraint into the source table.  
+      clonedResult.UpdateUniqueConstraint();  
+  
+      // Add the unique constraint in source table.  
+      UniqueConstraint uniqueConstraint = new UniqueConstraint(courses.Columns["CourseId"]);  
+      courses.Constraints.Add(uniqueConstraint);  
+  
+      Console.WriteLine(@"If we add the unique constraint in source table and then insert the duplicate   
 rows into the destination table, we will get the following error:");  
-     InsertDuplicateData(clonedCourses);  
-     Console.WriteLine();  
- 
-     // Add the event of updating ForeignKeyConstraint into the source table.  
-     clonedResult.UpdateForeignKeyConstraint();  
- 
-     // Add the ForeignKeyConstraint into the source table.  
-     DataTable deparments = NewDeparmentDataTable();  
-     DataSet dataset = new DataSet();  
- 
-     dataset.Tables.Add(courses);  
-     dataset.Tables.Add(clonedCourses);  
-     dataset.Tables.Add(deparments);  
- 
-     ForeignKeyConstraint foreignKey = new ForeignKeyConstraint(deparments.Columns["DepartmentId"], courses.Columns["DepartmentId"]);  
-     courses.Constraints.Add(foreignKey);  
- 
-     Console.WriteLine(@"If we add the foreign key constraint in source table and then insert a row   
+      InsertDuplicateData(clonedCourses);  
+      Console.WriteLine();  
+  
+      // Add the event of updating ForeignKeyConstraint into the source table.  
+      clonedResult.UpdateForeignKeyConstraint();  
+  
+      // Add the ForeignKeyConstraint into the source table.  
+      DataTable deparments = NewDeparmentDataTable();  
+      DataSet dataset = new DataSet();  
+  
+      dataset.Tables.Add(courses);  
+      dataset.Tables.Add(clonedCourses);  
+      dataset.Tables.Add(deparments);  
+  
+      ForeignKeyConstraint foreignKey = new ForeignKeyConstraint(deparments.Columns["DepartmentId"], courses.Columns["DepartmentId"]);  
+      courses.Constraints.Add(foreignKey);  
+  
+      Console.WriteLine(@"If we add the foreign key constraint in source table and then insert a row   
 without the parent  into the destination table, we will get the following error:");  
-     InsertNoParentRow(clonedCourses);  
-     Console.WriteLine();  
- 
-     Console.WriteLine("Please press any key to exit...");  
-     Console.ReadKey();  
-  }  
- 
-  static private DataTable NewCourseDataTable() {  
-     DataTable newTable = new DataTable();  
- 
-     DataColumn[] columns ={   
-                                     new DataColumn("CourseId", typeof(String)),  
-                                     new DataColumn("CourseName",typeof(String)),                                        
-                                     new DataColumn("DepartmentId", typeof(Int32))  
-                                 };  
- 
-     newTable.Columns.AddRange(columns);  
- 
-     newTable.Rows.Add("C1045", "Calculus", 7);  
-     newTable.Rows.Add("C1061", "Physics", 1);  
-     newTable.Rows.Add("C2021", "Composition", 2);  
-     newTable.Rows.Add("C2042", "Literature", 2);  
- 
-     return newTable;  
-  }  
- 
-  static private DataTable NewDeparmentDataTable() {  
-     DataTable newTable = new DataTable();  
- 
-     DataColumn[] columns ={   
-                                     new DataColumn("DepartmentId", typeof(Int32)),  
-                                     new DataColumn("Name",typeof(String)),  
-                                 };  
- 
-     newTable.Columns.AddRange(columns);  
- 
-     newTable.Rows.Add(1, "Engineering");  
-     newTable.Rows.Add(2, "English");  
-     newTable.Rows.Add(4, "Economics");  
-     newTable.Rows.Add(7, "Mathematics");  
- 
-     return newTable;  
-  }  
- 
-  static private void WriteDataTable(DataTable table) {  
-     if (table == null)  
-        return;  
- 
-     foreach (DataColumn column in table.Columns) {  
-        Console.Write("{0,-15}", column.ColumnName);  
-     }  
-     Console.WriteLine();  
- 
-     foreach (DataRow row in table.Rows) {  
-        for (int i = 0; i < table.Columns.Count; i++)  
-           Console.Write("{0,-15}", row[i].ToString());  
-        Console.WriteLine();  
-     }  
- 
-     Console.WriteLine();  
-  }  
- 
-  static private void InsertDuplicateData(DataTable table) {  
-     try {  
-        table.Rows.Add("C1045", "Calculus", 7);  
-        table.Rows.Add("C1045", "Calculus", 7);  
-     } catch (Exception e) {  
-        Console.WriteLine("\"" + e.Message + "\"");  
-     }  
-  }  
- 
-  private static void InsertNoParentRow(DataTable table) {  
-     try {  
-        table.Rows.Add("C1061", "Physics", 11);  
-     } catch (Exception e) {  
-        Console.WriteLine("\"" + e.Message + "\"");  
-     }  
-  }  
+      InsertNoParentRow(clonedCourses);  
+      Console.WriteLine();  
+  
+      Console.WriteLine("Please press any key to exit...");  
+      Console.ReadKey();  
+   }  
+  
+   static private DataTable NewCourseDataTable() {  
+      DataTable newTable = new DataTable();  
+  
+      DataColumn[] columns ={   
+                                      new DataColumn("CourseId", typeof(String)),  
+                                      new DataColumn("CourseName",typeof(String)),                                        
+                                      new DataColumn("DepartmentId", typeof(Int32))  
+                                  };  
+  
+      newTable.Columns.AddRange(columns);  
+  
+      newTable.Rows.Add("C1045", "Calculus", 7);  
+      newTable.Rows.Add("C1061", "Physics", 1);  
+      newTable.Rows.Add("C2021", "Composition", 2);  
+      newTable.Rows.Add("C2042", "Literature", 2);  
+  
+      return newTable;  
+   }  
+  
+   static private DataTable NewDeparmentDataTable() {  
+      DataTable newTable = new DataTable();  
+  
+      DataColumn[] columns ={   
+                                      new DataColumn("DepartmentId", typeof(Int32)),  
+                                      new DataColumn("Name",typeof(String)),  
+                                  };  
+  
+      newTable.Columns.AddRange(columns);  
+  
+      newTable.Rows.Add(1, "Engineering");  
+      newTable.Rows.Add(2, "English");  
+      newTable.Rows.Add(4, "Economics");  
+      newTable.Rows.Add(7, "Mathematics");  
+  
+      return newTable;  
+   }  
+  
+   static private void WriteDataTable(DataTable table) {  
+      if (table == null)  
+         return;  
+  
+      foreach (DataColumn column in table.Columns) {  
+         Console.Write("{0,-15}", column.ColumnName);  
+      }  
+      Console.WriteLine();  
+  
+      foreach (DataRow row in table.Rows) {  
+         for (int i = 0; i < table.Columns.Count; i++)  
+            Console.Write("{0,-15}", row[i].ToString());  
+         Console.WriteLine();  
+      }  
+  
+      Console.WriteLine();  
+   }  
+  
+   static private void InsertDuplicateData(DataTable table) {  
+      try {  
+         table.Rows.Add("C1045", "Calculus", 7);  
+         table.Rows.Add("C1045", "Calculus", 7);  
+      } catch (Exception e) {  
+         Console.WriteLine("\"" + e.Message + "\"");  
+      }  
+   }  
+  
+   private static void InsertNoParentRow(DataTable table) {  
+      try {  
+         table.Rows.Add("C1061", "Physics", 11);  
+      } catch (Exception e) {  
+         Console.WriteLine("\"" + e.Message + "\"");  
+      }  
+   }  
 }  
- 
+  
 public class ClonedDataTable {  
-  private DataTable sourceTable;  
-  private DataTable destinationTable;  
- 
-  public ClonedDataTable(DataTable source) {  
-     sourceTable = source;  
-     // set the cloned result  
-     destinationTable = sourceTable.Clone();  
-  }  
- 
-  public void UpdateAddedColumn() {  
-     sourceTable.Columns.CollectionChanged += new CollectionChangeEventHandler(ColumnAdded);  
-  }  
- 
-  public void UpdateDeletedColumn() {  
-     sourceTable.Columns.CollectionChanged += new CollectionChangeEventHandler(ColumnDeleted);  
-  }  
- 
-  public void UpdateUniqueConstraint() {  
-     sourceTable.Constraints.CollectionChanged += new CollectionChangeEventHandler(UniqueConstraint_Changed);  
-  }  
- 
-  public void UpdateForeignKeyConstraint() {  
-     sourceTable.Constraints.CollectionChanged += new CollectionChangeEventHandler(ForeignKeyConstraint_Changed);  
-  }  
- 
-  // After the source table adds a column, the method will add the same column in the destination table.  
-  void ColumnAdded(object sender, System.ComponentModel.CollectionChangeEventArgs e) {  
-     if (e.Action == CollectionChangeAction.Add) {  
-        DataColumn column = e.Element as DataColumn;  
- 
-        if (column != null) {  
-           DataColumn newColumn = new DataColumn(column.ColumnName, column.DataType, column.Expression, column.ColumnMapping);  
- 
-           if (!destinationTable.Columns.Contains(newColumn.ColumnName))  
-              destinationTable.Columns.Add(newColumn);  
-        }  
-     }  
-  }  
- 
-  // After the source table deletes a column, the method will delete the same column in the destination table.  
-  void ColumnDeleted(object sender, CollectionChangeEventArgs e) {  
-     if (e.Action == CollectionChangeAction.Remove) {  
-        DataColumn column = e.Element as DataColumn;  
- 
-        if (column != null)  
-           if (destinationTable.Columns.Contains(column.ColumnName))  
-              destinationTable.Columns.Remove(column.ColumnName);  
-     }  
-  }  
- 
-  // After the source table changes the UniqueConstraint, this method changes the same UniqueConstraint in destination table.        
-  void UniqueConstraint_Changed(object sender, CollectionChangeEventArgs e) {  
-     UniqueConstraint constraint = e.Element as UniqueConstraint;  
- 
-     if (constraint == null)  
-        return;  
- 
-     String constraintName = constraint.ConstraintName;  
- 
-     if (e.Action == CollectionChangeAction.Add) {  
-        DataColumn[] columns = new DataColumn[constraint.Columns.Count()];  
-        Boolean isPrimaryKey = constraint.IsPrimaryKey;  
- 
-        // Get the columns used in new constraint from the destiantion table.  
-        for (Int32 i = 0; i < constraint.Columns.Count(); i++) {  
-           String columnName = constraint.Columns[i].ColumnName;  
- 
-           if (destinationTable.Columns.Contains(columnName))  
-              columns[i] = destinationTable.Columns[columnName];  
-           else  
-              return;  
-        }  
- 
-        UniqueConstraint newConstraint = new UniqueConstraint(constraintName, columns, isPrimaryKey);  
- 
-        if (!destinationTable.Constraints.Contains(constraintName))  
-           destinationTable.Constraints.Add(newConstraint);  
- 
-     } else if (e.Action == CollectionChangeAction.Remove)  
-        if (destinationTable.Constraints.Contains(constraintName))  
-           destinationTable.Constraints.Remove(constraintName);  
-  }  
- 
-  // After the source table changes the ForeignKeyConstraint, this method changes    
-  // the same ForeignKeyConstraint in the destination table.  
-  void ForeignKeyConstraint_Changed(object sender, CollectionChangeEventArgs e) {  
-     ForeignKeyConstraint constraint = e.Element as ForeignKeyConstraint;  
- 
-     if (constraint == null)  
-        return;  
- 
-     // If the source and destination are not in the same DataSet, don't change the ForeignKeyConstraint.  
-     if (sourceTable.DataSet != destinationTable.DataSet)  
-        return;  
- 
-     String constraintName = constraint.ConstraintName;  
- 
-     if (e.Action == CollectionChangeAction.Add) {  
-        DataColumn[] columns = new DataColumn[constraint.Columns.Count()];  
-        DataColumn[] parentColumns = constraint.RelatedColumns;  
- 
-        // Get the columns used in new constraint from the destination table.  
-        for (int i = 0; i < constraint.Columns.Count(); i++) {  
-           String columnName = constraint.Columns[i].ColumnName;  
- 
-           if (destinationTable.Columns.Contains(columnName))  
-              columns[i] = destinationTable.Columns[columnName];  
-           else  
-              return;  
-        }  
- 
-        ForeignKeyConstraint newConstraint = new ForeignKeyConstraint(constraintName, parentColumns, columns);  
-        newConstraint.AcceptRejectRule = constraint.AcceptRejectRule;  
-        newConstraint.DeleteRule = constraint.DeleteRule;  
-        newConstraint.UpdateRule = constraint.UpdateRule;  
- 
-        if (!destinationTable.Constraints.Contains(constraintName))  
-           destinationTable.Constraints.Add(newConstraint);  
-     } else if (e.Action == CollectionChangeAction.Remove)  
-        if (destinationTable.Constraints.Contains(constraintName))  
-           destinationTable.Constraints.Remove(constraintName);  
-  }  
- 
-  // return the destination table.  
-  public DataTable DestinationTable {  
-     get { return destinationTable; }  
-  }  
+   private DataTable sourceTable;  
+   private DataTable destinationTable;  
+  
+   public ClonedDataTable(DataTable source) {  
+      sourceTable = source;  
+      // set the cloned result  
+      destinationTable = sourceTable.Clone();  
+   }  
+  
+   public void UpdateAddedColumn() {  
+      sourceTable.Columns.CollectionChanged += new CollectionChangeEventHandler(ColumnAdded);  
+   }  
+  
+   public void UpdateDeletedColumn() {  
+      sourceTable.Columns.CollectionChanged += new CollectionChangeEventHandler(ColumnDeleted);  
+   }  
+  
+   public void UpdateUniqueConstraint() {  
+      sourceTable.Constraints.CollectionChanged += new CollectionChangeEventHandler(UniqueConstraint_Changed);  
+   }  
+  
+   public void UpdateForeignKeyConstraint() {  
+      sourceTable.Constraints.CollectionChanged += new CollectionChangeEventHandler(ForeignKeyConstraint_Changed);  
+   }  
+  
+   // After the source table adds a column, the method will add the same column in the destination table.  
+   void ColumnAdded(object sender, System.ComponentModel.CollectionChangeEventArgs e) {  
+      if (e.Action == CollectionChangeAction.Add) {  
+         DataColumn column = e.Element as DataColumn;  
+  
+         if (column != null) {  
+            DataColumn newColumn = new DataColumn(column.ColumnName, column.DataType, column.Expression, column.ColumnMapping);  
+  
+            if (!destinationTable.Columns.Contains(newColumn.ColumnName))  
+               destinationTable.Columns.Add(newColumn);  
+         }  
+      }  
+   }  
+  
+   // After the source table deletes a column, the method will delete the same column in the destination table.  
+   void ColumnDeleted(object sender, CollectionChangeEventArgs e) {  
+      if (e.Action == CollectionChangeAction.Remove) {  
+         DataColumn column = e.Element as DataColumn;  
+  
+         if (column != null)  
+            if (destinationTable.Columns.Contains(column.ColumnName))  
+               destinationTable.Columns.Remove(column.ColumnName);  
+      }  
+   }  
+  
+   // After the source table changes the UniqueConstraint, this method changes the same UniqueConstraint in destination table.        
+   void UniqueConstraint_Changed(object sender, CollectionChangeEventArgs e) {  
+      UniqueConstraint constraint = e.Element as UniqueConstraint;  
+  
+      if (constraint == null)  
+         return;  
+  
+      String constraintName = constraint.ConstraintName;  
+  
+      if (e.Action == CollectionChangeAction.Add) {  
+         DataColumn[] columns = new DataColumn[constraint.Columns.Count()];  
+         Boolean isPrimaryKey = constraint.IsPrimaryKey;  
+  
+         // Get the columns used in new constraint from the destiantion table.  
+         for (Int32 i = 0; i < constraint.Columns.Count(); i++) {  
+            String columnName = constraint.Columns[i].ColumnName;  
+  
+            if (destinationTable.Columns.Contains(columnName))  
+               columns[i] = destinationTable.Columns[columnName];  
+            else  
+               return;  
+         }  
+  
+         UniqueConstraint newConstraint = new UniqueConstraint(constraintName, columns, isPrimaryKey);  
+  
+         if (!destinationTable.Constraints.Contains(constraintName))  
+            destinationTable.Constraints.Add(newConstraint);  
+  
+      } else if (e.Action == CollectionChangeAction.Remove)  
+         if (destinationTable.Constraints.Contains(constraintName))  
+            destinationTable.Constraints.Remove(constraintName);  
+   }  
+  
+   // After the source table changes the ForeignKeyConstraint, this method changes    
+   // the same ForeignKeyConstraint in the destination table.  
+   void ForeignKeyConstraint_Changed(object sender, CollectionChangeEventArgs e) {  
+      ForeignKeyConstraint constraint = e.Element as ForeignKeyConstraint;  
+  
+      if (constraint == null)  
+         return;  
+  
+      // If the source and destination are not in the same DataSet, don't change the ForeignKeyConstraint.  
+      if (sourceTable.DataSet != destinationTable.DataSet)  
+         return;  
+  
+      String constraintName = constraint.ConstraintName;  
+  
+      if (e.Action == CollectionChangeAction.Add) {  
+         DataColumn[] columns = new DataColumn[constraint.Columns.Count()];  
+         DataColumn[] parentColumns = constraint.RelatedColumns;  
+  
+         // Get the columns used in new constraint from the destination table.  
+         for (int i = 0; i < constraint.Columns.Count(); i++) {  
+            String columnName = constraint.Columns[i].ColumnName;  
+  
+            if (destinationTable.Columns.Contains(columnName))  
+               columns[i] = destinationTable.Columns[columnName];  
+            else  
+               return;  
+         }  
+  
+         ForeignKeyConstraint newConstraint = new ForeignKeyConstraint(constraintName, parentColumns, columns);  
+         newConstraint.AcceptRejectRule = constraint.AcceptRejectRule;  
+         newConstraint.DeleteRule = constraint.DeleteRule;  
+         newConstraint.UpdateRule = constraint.UpdateRule;  
+  
+         if (!destinationTable.Constraints.Contains(constraintName))  
+            destinationTable.Constraints.Add(newConstraint);  
+      } else if (e.Action == CollectionChangeAction.Remove)  
+         if (destinationTable.Constraints.Contains(constraintName))  
+            destinationTable.Constraints.Remove(constraintName);  
+   }  
+  
+   // return the destination table.  
+   public DataTable DestinationTable {  
+      get { return destinationTable; }  
+   }  
 }  
 ```  
  
@@ -777,14 +777,14 @@ First, create a database:
 ```  
 USE [master]  
 GO  
- 
+  
 CREATE DATABASE [MySchool]   
- 
+  
 GO  
- 
+  
 USE [MySchool]  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -794,14 +794,14 @@ CREATE TABLE [dbo].[Course]([CourseID] [nvarchar](10) NOT NULL,
 [Title] [nvarchar](100) NOT NULL,  
 [Credits] [int] NOT NULL,  
 [DepartmentID] [int] NOT NULL,  
-CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED   
 (  
 [CourseID] ASC,  
 [Year] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -811,26 +811,26 @@ CREATE TABLE [dbo].[Department]([DepartmentID] [int] IDENTITY(1,1) NOT NULL,
 [Budget] [money] NOT NULL,  
 [StartDate] [datetime] NOT NULL,  
 [Administrator] [int] NULL,  
-CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED   
 (  
 [DepartmentID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C1045', 2012, N'Calculus', 4, 7)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C1061', 2012, N'Physics', 4, 1)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C2021', 2012, N'Composition', 3, 2)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C2042', 2012, N'Literature', 4, 2)  
- 
+  
 SET IDENTITY_INSERT [dbo].[Department] ON   
- 
+  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (1, N'Engineering', 350000.0000, CAST(0x0000999C00000000 AS DateTime), 2)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (2, N'English', 120000.0000, CAST(0x0000999C00000000 AS DateTime), 6)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (4, N'Economics', 200000.0000, CAST(0x0000999C00000000 AS DateTime), 4)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (7, N'Mathematics', 250024.0000, CAST(0x0000999C00000000 AS DateTime), 3)  
 SET IDENTITY_INSERT [dbo].[Department] OFF  
- 
+  
 ALTER TABLE [dbo].[Course]  WITH CHECK ADD  CONSTRAINT [FK_Course_Department] FOREIGN KEY([DepartmentID])  
 REFERENCES [dbo].[Department] ([DepartmentID])  
 GO  
@@ -844,166 +844,166 @@ You can now compile and run the sample. [How to modify data in DataTable and upd
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
- 
+  
 class Program {  
-  static void Main(string[] args) {  
- 
-  string MySchoolConnectionString = "Data Source=(local);Initial Catalog=MySchool;Integrated Security=True";  
- 
-     // Get Data  
-     String selectString =  
-      @"Select [CourseID],[Year],[Title],[Credits],[DepartmentID] From [dbo].[Course];  
-              Select [DepartmentID],[Name],[Budget],[StartDate],[Administrator] From [dbo].[Department] ";  
- 
-     DataSet dataSet = new DataSet();  
-     DataTable course = dataSet.Tables.Add("Course");  
-     DataTable department = dataSet.Tables.Add("Department");  
- 
-     Console.WriteLine("Get data from database:");  
-     GetDataTables(MySchoolConnectionString, selectString, dataSet, course, department);  
-     Console.WriteLine();  
- 
-     // Use DataTable Edits to edit the data  
-     String updateString =  
-             @"Update [dbo].[Course] Set [Credits]=@Credits Where [CourseID]=@CourseID;";  
- 
-     course.ColumnChanged += OnColumnChanged;  
- 
-     // Set the Credits of first row is negative value, and set the Credits of second row is plus.  
-     ChangeCredits(course, course.Rows[0], -1);  
-     ChangeCredits(course, course.Rows[1], 11);  
- 
-     UpdateDataTables(MySchoolConnectionString, updateString, dataSet, "Course",  
-         new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"),  
-         new SqlParameter("@Credits", SqlDbType.Int, 4, "Credits"));  
-     Console.WriteLine("Only the Credits of second row is changed.");  
-     ShowDataTable(course);  
-     Console.WriteLine();  
- 
-     // Delete and Remove from DataTable  
-     // Create the foreign key constraint, and set the DeleteRule with Cascade.  
-     ForeignKeyConstraint courseDepartFK = new ForeignKeyConstraint("CourseDepartFK", department.Columns["DepartmentID"], course.Columns["DepartmentID"]);  
-     courseDepartFK.DeleteRule = Rule.Cascade;  
-     courseDepartFK.UpdateRule = Rule.Cascade;  
-     courseDepartFK.AcceptRejectRule = AcceptRejectRule.None;  
-     course.Constraints.Add(courseDepartFK);  
- 
-     String deleteString = @"Delete From [dbo].[Course] Where [CourseID]=@CourseID;";  
- 
-     department.Rows[0].Delete();  
-     Console.WriteLine("If One row in Department table is deleted, the related rows in Course table will also be deleted.");  
-     Console.WriteLine("Department DataTable:");  
-     ShowDataTable(department);  
-     Console.WriteLine();  
-     Console.WriteLine("Course DataTable:");  
-     ShowDataTable(course);  
-     Console.WriteLine();  
-     // Update the delete operation  
-     DeleteDataTables(MySchoolConnectionString, deleteString, dataSet, "Course",  
-         new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"));  
-     Console.WriteLine("After delete operation:");  
-     Console.WriteLine("Course DataTable:");  
-     ShowDataTable(course);  
-     Console.WriteLine();  
- 
-     course.Rows.RemoveAt(0);  
-     Console.WriteLine("Now we remove one row from Course:");  
-     ShowDataTable(course);  
-     DeleteDataTables(MySchoolConnectionString, deleteString, dataSet, "Course",  
-         new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"));  
-  }  
- 
-  // Use SqlDataAdapter to get data.  
-  private static void GetDataTables(String connectionString, String selectString,  
-      DataSet dataSet, params DataTable[] tables) {  
-     using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
-        adapter.SelectCommand = new SqlCommand(selectString);  
-        adapter.SelectCommand.Connection = new SqlConnection(connectionString);  
- 
-        adapter.Fill(0, 0, tables);  
- 
-        foreach (DataTable table in dataSet.Tables) {  
-           Console.WriteLine("Data in {0}:", table.TableName);  
-           ShowDataTable(table);  
-           Console.WriteLine();  
-        }  
-     }  
-  }  
- 
-  // Use SqlDataAdapter to update the updata operation.  
-  private static void UpdateDataTables(String connectionString, String updateString,  
-      DataSet dataSet, String tableName, params SqlParameter[] parameters) {  
-     using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
-        adapter.UpdateCommand = new SqlCommand(updateString);  
-        adapter.UpdateCommand.Parameters.AddRange(parameters);  
-        adapter.UpdateCommand.Connection = new SqlConnection(connectionString);  
- 
-        adapter.Update(dataSet, tableName);  
-     }  
-  }  
- 
-  // Use SqlDataAdapter to update delete operation.  
-  private static void DeleteDataTables(String connectionString, String deleteString,  
-      DataSet dataSet, String tableName, params SqlParameter[] parameters) {  
-     using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
-        adapter.DeleteCommand = new SqlCommand(deleteString);  
-        adapter.DeleteCommand.Parameters.AddRange(parameters);  
-        adapter.DeleteCommand.Connection = new SqlConnection(connectionString);  
- 
-        adapter.Update(dataSet, tableName);  
-     }  
-  }  
- 
-  // Use DataTable Edits to modify the data.  
-  private static void ChangeCredits(DataTable table, DataRow row, Int32 credits) {  
-     row.BeginEdit();  
-     Console.WriteLine("We change row {0}", table.Rows.IndexOf(row));  
-     row["Credits"] = credits;  
-     row.EndEdit();  
-  }  
- 
-  // The method will be invoked when the value in DataTable is changed.  
-  private static void OnColumnChanged(Object sender, DataColumnChangeEventArgs args) {  
-     Int32 credits = 0;  
-     // If Credits is changed and the value is negative, we'll cancel the edit.  
-     if ((args.Column.ColumnName == "Credits") &&  
-         (!Int32.TryParse(args.ProposedValue.ToString(), out credits) || credits < 0)) {  
-        Console.WriteLine("The value of Credits is invalid. Edit canceled.");  
-        args.Row.CancelEdit();  
-     }  
-  }  
- 
-  // Display the column and value of DataTable.  
-  private static void ShowDataTable(DataTable table) {  
-     foreach (DataColumn col in table.Columns) {  
-        Console.Write("{0,-14}", col.ColumnName);  
-     }  
-     Console.WriteLine("{0,-14}", "RowState");  
- 
-     foreach (DataRow row in table.Rows) {  
-        if (row.RowState == DataRowState.Deleted) {  
-           foreach (DataColumn col in table.Columns) {  
-              if (col.DataType.Equals(typeof(DateTime)))  
-                 Console.Write("{0,-14:d}", row[col, DataRowVersion.Original]);  
-              else if (col.DataType.Equals(typeof(Decimal)))  
-                 Console.Write("{0,-14:C}", row[col, DataRowVersion.Original]);  
-              else  
-                 Console.Write("{0,-14}", row[col, DataRowVersion.Original]);  
-           }  
-        }  
-        else {  
-           foreach (DataColumn col in table.Columns) {  
-              if (col.DataType.Equals(typeof(DateTime)))  
-                 Console.Write("{0,-14:d}", row[col]);  
-              else if (col.DataType.Equals(typeof(Decimal)))  
-                 Console.Write("{0,-14:C}", row[col]);  
-              else  
-                 Console.Write("{0,-14}", row[col]);  
-           }  
-        }  
-        Console.WriteLine("{0,-14}", row.RowState);  
-     }  
-  }  
+   static void Main(string[] args) {  
+  
+   string MySchoolConnectionString = "Data Source=(local);Initial Catalog=MySchool;Integrated Security=True";  
+  
+      // Get Data  
+      String selectString =  
+       @"Select [CourseID],[Year],[Title],[Credits],[DepartmentID] From [dbo].[Course];  
+               Select [DepartmentID],[Name],[Budget],[StartDate],[Administrator] From [dbo].[Department] ";  
+  
+      DataSet dataSet = new DataSet();  
+      DataTable course = dataSet.Tables.Add("Course");  
+      DataTable department = dataSet.Tables.Add("Department");  
+  
+      Console.WriteLine("Get data from database:");  
+      GetDataTables(MySchoolConnectionString, selectString, dataSet, course, department);  
+      Console.WriteLine();  
+  
+      // Use DataTable Edits to edit the data  
+      String updateString =  
+              @"Update [dbo].[Course] Set [Credits]=@Credits Where [CourseID]=@CourseID;";  
+  
+      course.ColumnChanged += OnColumnChanged;  
+  
+      // Set the Credits of first row is negative value, and set the Credits of second row is plus.  
+      ChangeCredits(course, course.Rows[0], -1);  
+      ChangeCredits(course, course.Rows[1], 11);  
+  
+      UpdateDataTables(MySchoolConnectionString, updateString, dataSet, "Course",  
+          new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"),  
+          new SqlParameter("@Credits", SqlDbType.Int, 4, "Credits"));  
+      Console.WriteLine("Only the Credits of second row is changed.");  
+      ShowDataTable(course);  
+      Console.WriteLine();  
+  
+      // Delete and Remove from DataTable  
+      // Create the foreign key constraint, and set the DeleteRule with Cascade.  
+      ForeignKeyConstraint courseDepartFK = new ForeignKeyConstraint("CourseDepartFK", department.Columns["DepartmentID"], course.Columns["DepartmentID"]);  
+      courseDepartFK.DeleteRule = Rule.Cascade;  
+      courseDepartFK.UpdateRule = Rule.Cascade;  
+      courseDepartFK.AcceptRejectRule = AcceptRejectRule.None;  
+      course.Constraints.Add(courseDepartFK);  
+  
+      String deleteString = @"Delete From [dbo].[Course] Where [CourseID]=@CourseID;";  
+  
+      department.Rows[0].Delete();  
+      Console.WriteLine("If One row in Department table is deleted, the related rows in Course table will also be deleted.");  
+      Console.WriteLine("Department DataTable:");  
+      ShowDataTable(department);  
+      Console.WriteLine();  
+      Console.WriteLine("Course DataTable:");  
+      ShowDataTable(course);  
+      Console.WriteLine();  
+      // Update the delete operation  
+      DeleteDataTables(MySchoolConnectionString, deleteString, dataSet, "Course",  
+          new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"));  
+      Console.WriteLine("After delete operation:");  
+      Console.WriteLine("Course DataTable:");  
+      ShowDataTable(course);  
+      Console.WriteLine();  
+  
+      course.Rows.RemoveAt(0);  
+      Console.WriteLine("Now we remove one row from Course:");  
+      ShowDataTable(course);  
+      DeleteDataTables(MySchoolConnectionString, deleteString, dataSet, "Course",  
+          new SqlParameter("@CourseID", SqlDbType.NVarChar, 10, "CourseID"));  
+   }  
+  
+   // Use SqlDataAdapter to get data.  
+   private static void GetDataTables(String connectionString, String selectString,  
+       DataSet dataSet, params DataTable[] tables) {  
+      using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
+         adapter.SelectCommand = new SqlCommand(selectString);  
+         adapter.SelectCommand.Connection = new SqlConnection(connectionString);  
+  
+         adapter.Fill(0, 0, tables);  
+  
+         foreach (DataTable table in dataSet.Tables) {  
+            Console.WriteLine("Data in {0}:", table.TableName);  
+            ShowDataTable(table);  
+            Console.WriteLine();  
+         }  
+      }  
+   }  
+  
+   // Use SqlDataAdapter to update the updata operation.  
+   private static void UpdateDataTables(String connectionString, String updateString,  
+       DataSet dataSet, String tableName, params SqlParameter[] parameters) {  
+      using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
+         adapter.UpdateCommand = new SqlCommand(updateString);  
+         adapter.UpdateCommand.Parameters.AddRange(parameters);  
+         adapter.UpdateCommand.Connection = new SqlConnection(connectionString);  
+  
+         adapter.Update(dataSet, tableName);  
+      }  
+   }  
+  
+   // Use SqlDataAdapter to update delete operation.  
+   private static void DeleteDataTables(String connectionString, String deleteString,  
+       DataSet dataSet, String tableName, params SqlParameter[] parameters) {  
+      using (SqlDataAdapter adapter = new SqlDataAdapter()) {  
+         adapter.DeleteCommand = new SqlCommand(deleteString);  
+         adapter.DeleteCommand.Parameters.AddRange(parameters);  
+         adapter.DeleteCommand.Connection = new SqlConnection(connectionString);  
+  
+         adapter.Update(dataSet, tableName);  
+      }  
+   }  
+  
+   // Use DataTable Edits to modify the data.  
+   private static void ChangeCredits(DataTable table, DataRow row, Int32 credits) {  
+      row.BeginEdit();  
+      Console.WriteLine("We change row {0}", table.Rows.IndexOf(row));  
+      row["Credits"] = credits;  
+      row.EndEdit();  
+   }  
+  
+   // The method will be invoked when the value in DataTable is changed.  
+   private static void OnColumnChanged(Object sender, DataColumnChangeEventArgs args) {  
+      Int32 credits = 0;  
+      // If Credits is changed and the value is negative, we'll cancel the edit.  
+      if ((args.Column.ColumnName == "Credits") &&  
+          (!Int32.TryParse(args.ProposedValue.ToString(), out credits) || credits < 0)) {  
+         Console.WriteLine("The value of Credits is invalid. Edit canceled.");  
+         args.Row.CancelEdit();  
+      }  
+   }  
+  
+   // Display the column and value of DataTable.  
+   private static void ShowDataTable(DataTable table) {  
+      foreach (DataColumn col in table.Columns) {  
+         Console.Write("{0,-14}", col.ColumnName);  
+      }  
+      Console.WriteLine("{0,-14}", "RowState");  
+  
+      foreach (DataRow row in table.Rows) {  
+         if (row.RowState == DataRowState.Deleted) {  
+            foreach (DataColumn col in table.Columns) {  
+               if (col.DataType.Equals(typeof(DateTime)))  
+                  Console.Write("{0,-14:d}", row[col, DataRowVersion.Original]);  
+               else if (col.DataType.Equals(typeof(Decimal)))  
+                  Console.Write("{0,-14:C}", row[col, DataRowVersion.Original]);  
+               else  
+                  Console.Write("{0,-14}", row[col, DataRowVersion.Original]);  
+            }  
+         }  
+         else {  
+            foreach (DataColumn col in table.Columns) {  
+               if (col.DataType.Equals(typeof(DateTime)))  
+                  Console.Write("{0,-14:d}", row[col]);  
+               else if (col.DataType.Equals(typeof(Decimal)))  
+                  Console.Write("{0,-14:C}", row[col]);  
+               else  
+                  Console.Write("{0,-14}", row[col]);  
+            }  
+         }  
+         Console.WriteLine("{0,-14}", row.RowState);  
+      }  
+   }  
 }  
 ```  
  
@@ -3333,18 +3333,18 @@ If no in-line schema is specified, the relational structure is extended through 
 ```  
 using System.Data;  
 public class A {  
-  static void Main(string[] args) {  
-     DataTable tabl = new DataTable("mytable");  
-     tabl.Columns.Add(new DataColumn("id", typeof(int)));  
-     for (int i = 0; i < 10; i++) {  
-        DataRow row = tabl.NewRow();  
-        row["id"] = i;  
-        tabl.Rows.Add(row);  
-     }  
-     tabl.WriteXml("f.xml", XmlWriteMode.WriteSchema);  
-     DataTable newt = new DataTable();  
-     newt.ReadXml("f.xml");  
-  }  
+   static void Main(string[] args) {  
+      DataTable tabl = new DataTable("mytable");  
+      tabl.Columns.Add(new DataColumn("id", typeof(int)));  
+      for (int i = 0; i < 10; i++) {  
+         DataRow row = tabl.NewRow();  
+         row["id"] = i;  
+         tabl.Rows.Add(row);  
+      }  
+      tabl.WriteXml("f.xml", XmlWriteMode.WriteSchema);  
+      DataTable newt = new DataTable();  
+      newt.ReadXml("f.xml");  
+   }  
 }  
 ```  
  
@@ -5067,134 +5067,134 @@ The example displays the following output in the console window:
 Customer table, without hierarchy  
 ==============================  
 <NewDataSet>  
- <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
 " xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-     <xs:complexType>  
-       <xs:choice minOccurs="0" maxOccurs="unbounded">  
-         <xs:element name="Table1">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="ID" type="xs:int" />  
-               <xs:element name="Name" type="xs:string" minOccurs="0" />  
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-       </xs:choice>  
-     </xs:complexType>  
-     <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table1" />  
-       <xs:field xpath="ID" />  
-     </xs:unique>  
-   </xs:element>  
- </xs:schema>  
- <Table1>  
-   <ID>1</ID>  
-   <Name>Mary</Name>  
- </Table1>  
- <Table1>  
-   <ID>2</ID>  
-   <Name>Andy</Name>  
- </Table1>  
- <Table1>  
-   <ID>3</ID>  
-   <Name>Peter</Name>  
- </Table1>  
- <Table1>  
-   <ID>4</ID>  
-   <Name>Russ</Name>  
- </Table1>  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
 </NewDataSet>  
 ==============================  
 Customer table, with hierarchy  
 ==============================  
 <NewDataSet>  
- <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
 " xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-     <xs:complexType>  
-       <xs:choice minOccurs="0" maxOccurs="unbounded">  
-         <xs:element name="Table1">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="ID" type="xs:int" />  
-               <xs:element name="Name" type="xs:string" minOccurs="0" />  
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-         <xs:element name="Table2">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="OrderID" type="xs:int" />  
-               <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-               <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
- 
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-       </xs:choice>  
-     </xs:complexType>  
-     <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table1" />  
-       <xs:field xpath="ID" />  
-     </xs:unique>  
-     <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+          <xs:element name="Table2">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="OrderID" type="xs:int" />  
+                <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+                <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+      <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
 sdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table2" />  
-       <xs:field xpath="OrderID" />  
-     </xs:unique>  
-     <xs:keyref name="CustomerOrder" refer="Constraint1">  
-       <xs:selector xpath=".//Table2" />  
-       <xs:field xpath="CustomerID" />  
-     </xs:keyref>  
-   </xs:element>  
- </xs:schema>  
- <Table1>  
-   <ID>1</ID>  
-   <Name>Mary</Name>  
- </Table1>  
- <Table1>  
-   <ID>2</ID>  
-   <Name>Andy</Name>  
- </Table1>  
- <Table1>  
-   <ID>3</ID>  
-   <Name>Peter</Name>  
- </Table1>  
- <Table1>  
-   <ID>4</ID>  
-   <Name>Russ</Name>  
- </Table1>  
- <Table2>  
-   <OrderID>1</OrderID>  
-   <CustomerID>1</CustomerID>  
-   <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>2</OrderID>  
-   <CustomerID>1</CustomerID>  
-   <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>3</OrderID>  
-   <CustomerID>2</CustomerID>  
-   <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>4</OrderID>  
-   <CustomerID>3</CustomerID>  
-   <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>5</OrderID>  
-   <CustomerID>3</CustomerID>  
-   <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>6</OrderID>  
-   <CustomerID>4</CustomerID>  
-   <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="OrderID" />  
+      </xs:unique>  
+      <xs:keyref name="CustomerOrder" refer="Constraint1">  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="CustomerID" />  
+      </xs:keyref>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
+  <Table2>  
+    <OrderID>1</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>2</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>3</OrderID>  
+    <CustomerID>2</CustomerID>  
+    <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>4</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>5</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>6</OrderID>  
+    <CustomerID>4</CustomerID>  
+    <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
 </NewDataSet>  
 ```  
  
@@ -5537,25 +5537,25 @@ Customer table, without hierarchy
 <?xml version="1.0" encoding="utf-16"?>  
 <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
 xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
- <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
 ble1">  
-   <xs:complexType>  
-     <xs:choice minOccurs="0" maxOccurs="unbounded">  
-       <xs:element name="Table1">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="ID" type="xs:int" />  
-             <xs:element name="Name" type="xs:string" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-     </xs:choice>  
-   </xs:complexType>  
-   <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table1" />  
-     <xs:field xpath="ID" />  
-   </xs:unique>  
- </xs:element>  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+  </xs:element>  
 </xs:schema>  
 ==============================  
 Customer table, with hierarchy  
@@ -5563,41 +5563,41 @@ Customer table, with hierarchy
 <?xml version="1.0" encoding="utf-16"?>  
 <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
 xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
- <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-   <xs:complexType>  
-     <xs:choice minOccurs="0" maxOccurs="unbounded">  
-       <xs:element name="Table1">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="ID" type="xs:int" />  
-             <xs:element name="Name" type="xs:string" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-       <xs:element name="Table2">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="OrderID" type="xs:int" />  
-             <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-             <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-     </xs:choice>  
-   </xs:complexType>  
-   <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table1" />  
-     <xs:field xpath="ID" />  
-   </xs:unique>  
-   <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table2" />  
-     <xs:field xpath="OrderID" />  
-   </xs:unique>  
-   <xs:keyref name="CustomerOrder" refer="Constraint1">  
-     <xs:selector xpath=".//Table2" />  
-     <xs:field xpath="CustomerID" />  
-   </xs:keyref>  
- </xs:element>  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+        <xs:element name="Table2">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="OrderID" type="xs:int" />  
+              <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+              <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+    <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="OrderID" />  
+    </xs:unique>  
+    <xs:keyref name="CustomerOrder" refer="Constraint1">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="CustomerID" />  
+    </xs:keyref>  
+  </xs:element>  
 </xs:schema>  
 ```  
  
@@ -5725,25 +5725,25 @@ Customer table, without hierarchy
 <?xml version="1.0" encoding="utf-16"?>  
 <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
 xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
- <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
 ble1">  
-   <xs:complexType>  
-     <xs:choice minOccurs="0" maxOccurs="unbounded">  
-       <xs:element name="Table1">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="ID" type="xs:int" />  
-             <xs:element name="Name" type="xs:string" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-     </xs:choice>  
-   </xs:complexType>  
-   <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table1" />  
-     <xs:field xpath="ID" />  
-   </xs:unique>  
- </xs:element>  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+  </xs:element>  
 </xs:schema>  
 ==============================  
 Customer table, with hierarchy  
@@ -5751,41 +5751,41 @@ Customer table, with hierarchy
 <?xml version="1.0" encoding="utf-16"?>  
 <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
 xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
- <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-   <xs:complexType>  
-     <xs:choice minOccurs="0" maxOccurs="unbounded">  
-       <xs:element name="Table1">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="ID" type="xs:int" />  
-             <xs:element name="Name" type="xs:string" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-       <xs:element name="Table2">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="OrderID" type="xs:int" />  
-             <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-             <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
-           </xs:sequence>  
-         </xs:complexType>  
-       </xs:element>  
-     </xs:choice>  
-   </xs:complexType>  
-   <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table1" />  
-     <xs:field xpath="ID" />  
-   </xs:unique>  
-   <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
-     <xs:selector xpath=".//Table2" />  
-     <xs:field xpath="OrderID" />  
-   </xs:unique>  
-   <xs:keyref name="CustomerOrder" refer="Constraint1">  
-     <xs:selector xpath=".//Table2" />  
-     <xs:field xpath="CustomerID" />  
-   </xs:keyref>  
- </xs:element>  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+        <xs:element name="Table2">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="OrderID" type="xs:int" />  
+              <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+              <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+    <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="OrderID" />  
+    </xs:unique>  
+    <xs:keyref name="CustomerOrder" refer="Constraint1">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="CustomerID" />  
+    </xs:keyref>  
+  </xs:element>  
 </xs:schema>  
 ```  
  
@@ -5854,134 +5854,134 @@ The example displays the following output in the console window:
 Customer table, without hierarchy  
 ==============================  
 <NewDataSet>  
- <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
 " xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-     <xs:complexType>  
-       <xs:choice minOccurs="0" maxOccurs="unbounded">  
-         <xs:element name="Table1">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="ID" type="xs:int" />  
-               <xs:element name="Name" type="xs:string" minOccurs="0" />  
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-       </xs:choice>  
-     </xs:complexType>  
-     <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table1" />  
-       <xs:field xpath="ID" />  
-     </xs:unique>  
-   </xs:element>  
- </xs:schema>  
- <Table1>  
-   <ID>1</ID>  
-   <Name>Mary</Name>  
- </Table1>  
- <Table1>  
-   <ID>2</ID>  
-   <Name>Andy</Name>  
- </Table1>  
- <Table1>  
-   <ID>3</ID>  
-   <Name>Peter</Name>  
- </Table1>  
- <Table1>  
-   <ID>4</ID>  
-   <Name>Russ</Name>  
- </Table1>  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
 </NewDataSet>  
 ==============================  
 Customer table, with hierarchy  
 ==============================  
 <NewDataSet>  
- <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
 " xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-     <xs:complexType>  
-       <xs:choice minOccurs="0" maxOccurs="unbounded">  
-         <xs:element name="Table1">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="ID" type="xs:int" />  
-               <xs:element name="Name" type="xs:string" minOccurs="0" />  
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-         <xs:element name="Table2">  
-           <xs:complexType>  
-             <xs:sequence>  
-               <xs:element name="OrderID" type="xs:int" />  
-               <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-               <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
- 
-             </xs:sequence>  
-           </xs:complexType>  
-         </xs:element>  
-       </xs:choice>  
-     </xs:complexType>  
-     <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table1" />  
-       <xs:field xpath="ID" />  
-     </xs:unique>  
-     <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+          <xs:element name="Table2">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="OrderID" type="xs:int" />  
+                <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+                <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+      <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
 sdata:PrimaryKey="true">  
-       <xs:selector xpath=".//Table2" />  
-       <xs:field xpath="OrderID" />  
-     </xs:unique>  
-     <xs:keyref name="CustomerOrder" refer="Constraint1">  
-       <xs:selector xpath=".//Table2" />  
-       <xs:field xpath="CustomerID" />  
-     </xs:keyref>  
-   </xs:element>  
- </xs:schema>  
- <Table1>  
-   <ID>1</ID>  
-   <Name>Mary</Name>  
- </Table1>  
- <Table1>  
-   <ID>2</ID>  
-   <Name>Andy</Name>  
- </Table1>  
- <Table1>  
-   <ID>3</ID>  
-   <Name>Peter</Name>  
- </Table1>  
- <Table1>  
-   <ID>4</ID>  
-   <Name>Russ</Name>  
- </Table1>  
- <Table2>  
-   <OrderID>1</OrderID>  
-   <CustomerID>1</CustomerID>  
-   <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>2</OrderID>  
-   <CustomerID>1</CustomerID>  
-   <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>3</OrderID>  
-   <CustomerID>2</CustomerID>  
-   <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>4</OrderID>  
-   <CustomerID>3</CustomerID>  
-   <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>5</OrderID>  
-   <CustomerID>3</CustomerID>  
-   <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
- <Table2>  
-   <OrderID>6</OrderID>  
-   <CustomerID>4</CustomerID>  
-   <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
- </Table2>  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="OrderID" />  
+      </xs:unique>  
+      <xs:keyref name="CustomerOrder" refer="Constraint1">  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="CustomerID" />  
+      </xs:keyref>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
+  <Table2>  
+    <OrderID>1</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>2</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>3</OrderID>  
+    <CustomerID>2</CustomerID>  
+    <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>4</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>5</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>6</OrderID>  
+    <CustomerID>4</CustomerID>  
+    <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
 </NewDataSet>  
 ```  
  

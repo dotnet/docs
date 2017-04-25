@@ -321,18 +321,18 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and displ
  
 ```vb  
 Public Sub CreateOdbcParameter()  
- Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 11, ParameterDirection.Output, True, 0, 0, "Description", DataRowVersion.Current, False, "garden hose")  
- MessageBox.Show(parameter.ToString())  
+  Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 11, ParameterDirection.Output, True, 0, 0, "Description", DataRowVersion.Current, False, "garden hose")  
+  MessageBox.Show(parameter.ToString())  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
 {  
- OdbcParameter parameter = new OdbcParameter("Description",OdbcType.VarChar,  
-             11,ParameterDirection.Output,true,0,0,"Description",  
-             DataRowVersion.Current, false, "garden hose");  
- MessageBox.Show(parameter.ToString());  
+  OdbcParameter parameter = new OdbcParameter("Description",OdbcType.VarChar,  
+              11,ParameterDirection.Output,true,0,0,"Description",  
+              DataRowVersion.Current, false, "garden hose");  
+  MessageBox.Show(parameter.ToString());  
 }  
 ```  
  
@@ -415,24 +415,24 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateMyProc(connection As OdbcConnection)  
- 
-  Dim command As OdbcCommand = connection.CreateCommand()  
-  command.CommandText = "{ call MyProc(?,?,?) }"  
-  command.Parameters.Add("", OdbcType.Int).Value = 1  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 2  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 3  
- 
+  
+   Dim command As OdbcCommand = connection.CreateCommand()  
+   command.CommandText = "{ call MyProc(?,?,?) }"  
+   command.Parameters.Add("", OdbcType.Int).Value = 1  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 2  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 3  
+  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateMyProc(OdbcConnection connection)   
 {  
-  OdbcCommand command = connection.CreateCommand();  
-  command.CommandText = "{ call MyProc(?,?,?) }";  
-  command.Parameters.Add("", OdbcType.Int).Value = 1;  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 2;  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 3;  
+   OdbcCommand command = connection.CreateCommand();  
+   command.CommandText = "{ call MyProc(?,?,?) }";  
+   command.Parameters.Add("", OdbcType.Int).Value = 1;  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 2;  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 3;  
 }  
 ```  
  
@@ -470,18 +470,18 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-  Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
-  parameter.IsNullable = True  
-  parameter.Direction = ParameterDirection.Output  
+   Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
+   parameter.IsNullable = True  
+   parameter.Direction = ParameterDirection.Output  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
 {  
-  OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
-  parameter.IsNullable = true;  
-  parameter.Direction = ParameterDirection.Output;  
+   OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
+   parameter.IsNullable = true;  
+   parameter.Direction = ParameterDirection.Output;  
 }  
 ```  
  
@@ -588,26 +588,26 @@ The following example creates parameters and calls the MyProc stored procedure:
  
 ```vb  
 Public Sub CreateMyProc(connection As OdbcConnection)  
- 
-  Dim command As OdbcCommand = connection.CreateCommand()  
- 
-  command.CommandText = "{ call MyProc(?,?,?) }"  
-  command.Parameters.Add("", OdbcType.Int).Value = 1  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 2  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 3  
- 
+  
+   Dim command As OdbcCommand = connection.CreateCommand()  
+  
+   command.CommandText = "{ call MyProc(?,?,?) }"  
+   command.Parameters.Add("", OdbcType.Int).Value = 1  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 2  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 3  
+  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateMyProc(OdbcConnection connection)   
 {  
-  OdbcCommand command = myConnection.CreateCommand();  
- 
-  command.CommandText = "{ call MyProc(?,?,?) }";  
-  command.Parameters.Add("", OdbcType.Int).Value = 1;  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 2;  
-  command.Parameters.Add("", OdbcType.Decimal).Value = 3;  
+   OdbcCommand command = myConnection.CreateCommand();  
+  
+   command.CommandText = "{ call MyProc(?,?,?) }";  
+   command.Parameters.Add("", OdbcType.Int).Value = 1;  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 2;  
+   command.Parameters.Add("", OdbcType.Decimal).Value = 3;  
 }  
 ```  
  
@@ -653,21 +653,21 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim parameter As New OdbcParameter("Price", OdbcType.Decimal)  
-   parameter.Value = 3.1416  
-   parameter.Precision = 8  
-   parameter.Scale = 4  
+    Dim parameter As New OdbcParameter("Price", OdbcType.Decimal)  
+    parameter.Value = 3.1416  
+    parameter.Precision = 8  
+    parameter.Scale = 4  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   OdbcParameter parameter = new OdbcParameter("Price", OdbcType.Decimal);  
-   parameter.Value = 3.1416;  
-   parameter.Precision = 8;  
-   parameter.Scale = 4;  
-}  
+ {  
+    OdbcParameter parameter = new OdbcParameter("Price", OdbcType.Decimal);  
+    parameter.Value = 3.1416;  
+    parameter.Precision = 8;  
+    parameter.Scale = 4;  
+ }  
 ```  
  
  ]]></format>
@@ -771,21 +771,21 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim parameter As New OdbcParameter("Price", OdbcType.Decimal)  
-   parameter.Value = 3.1416  
-   parameter.Precision = 8  
-   parameter.Scale = 4  
+    Dim parameter As New OdbcParameter("Price", OdbcType.Decimal)  
+    parameter.Value = 3.1416  
+    parameter.Precision = 8  
+    parameter.Scale = 4  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   OdbcParameter parameter = new OdbcParameter("Price", OdbcType.Decimal);  
-   parameter.Value = 3.1416;  
-   parameter.Precision = 8;  
-   parameter.Scale = 4;  
-}  
+ {  
+    OdbcParameter parameter = new OdbcParameter("Price", OdbcType.Decimal);  
+    parameter.Value = 3.1416;  
+    parameter.Precision = 8;  
+    parameter.Scale = 4;  
+ }  
 ```  
  
  ]]></format>
@@ -833,23 +833,23 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
-   Dim parameter As New OdbcParameter("Description", OdbcType.VarChar)  
-   parameter.Direction = ParameterDirection.Output  
-   parameter.Size = myValue.Length  
-   parameter.Value = myValue  
+    Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
+    Dim parameter As New OdbcParameter("Description", OdbcType.VarChar)  
+    parameter.Direction = ParameterDirection.Output  
+    parameter.Size = myValue.Length  
+    parameter.Value = myValue  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   string myValue = "12 foot scarf - multiple colors, one previous owner";  
-   OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar);  
-   parameter.Direction = ParameterDirection.Output;  
-   parameter.Size = myValue.Length;  
-   parameter.Value = myValue;  
-}  
+ {  
+    string myValue = "12 foot scarf - multiple colors, one previous owner";  
+    OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar);  
+    parameter.Direction = ParameterDirection.Output;  
+    parameter.Size = myValue.Length;  
+    parameter.Value = myValue;  
+ }  
 ```  
  
  ]]></format>
@@ -886,17 +886,17 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
-   parameter.SourceColumn = "Description"  
+    Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
+    parameter.SourceColumn = "Description"  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
-   parameter.SourceColumn = "Description";  
-}  
+ {  
+    OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
+    parameter.SourceColumn = "Description";  
+ }  
 ```  
  
  ]]></format>
@@ -929,7 +929,7 @@ public void CreateOdbcParameter()
  
 ```  
 ((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
- (FieldName = @Original_FieldName))  
+  (FieldName = @Original_FieldName))  
 ```  
  
 If <xref:System.Data.Odbc.OdbcParameter.SourceColumnNullMapping%2A> for the field is false, <xref:System.Data.Common.DbCommandBuilder> generates the following WHERE clause:  
@@ -974,19 +974,19 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
-   parameter.SourceColumn = "Description"  
-   parameter.SourceVersion = DataRowVersion.Current  
+    Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
+    parameter.SourceColumn = "Description"  
+    parameter.SourceVersion = DataRowVersion.Current  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
-   parameter.SourceColumn = "Description";  
-   parameter.SourceVersion = DataRowVersion.Current;  
-}  
+ {  
+    OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
+    parameter.SourceColumn = "Description";  
+    parameter.SourceVersion = DataRowVersion.Current;  
+ }  
 ```  
  
  ]]></format>
@@ -1082,17 +1082,17 @@ The following example creates an <xref:System.Data.Odbc.OdbcParameter> and sets 
  
 ```vb  
 Public Sub CreateOdbcParameter()  
-   Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
-   parameter.Value = "garden hose"  
+    Dim parameter As New OdbcParameter("Description", OdbcType.VarChar, 88)  
+    parameter.Value = "garden hose"  
 End Sub   
 ```  
  
 ```csharp  
 public void CreateOdbcParameter()   
-{  
-   OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
-   parameter.Value = "garden hose";  
-}  
+ {  
+    OdbcParameter parameter = new OdbcParameter("Description", OdbcType.VarChar, 88);  
+    parameter.Value = "garden hose";  
+ }  
 ```  
  
  ]]></format>

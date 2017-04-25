@@ -33,9 +33,9 @@ The following configuration excerpt shows how to specify values declaratively fo
  
 ```  
 <httpHandlers>  
- <add path="Calculator.custom"  
-   type="Samples.Aspnet.SystemWebConfiguration.Calculator, CalculatorHandler"  
-   verb="GET" validate="false" />  
+  <add path="Calculator.custom"  
+    type="Samples.Aspnet.SystemWebConfiguration.Calculator, CalculatorHandler"  
+    verb="GET" validate="false" />  
 </httpHandlers>   
 ```  
  

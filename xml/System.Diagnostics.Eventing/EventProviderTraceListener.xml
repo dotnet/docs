@@ -52,21 +52,21 @@ The keyword value that you specify for the session can be the value associated w
  
 ```  
 private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B}");  
- 
-   EventProviderTraceListener listener = new EventProviderTraceListener(providerId.ToString(), "Test Listener", "::");  
- 
-   // You should use the All default level and control the level using the  
-   // ETW session; otherwise, you may not log all the events requested by the  
-   // session.  
-   TraceSource source = new TraceSource("MyProvider", SourceLevels.All);  
- 
-   source.Listeners.Add(listener);  
- 
-   source.TraceData(TraceEventType.Warning | TraceEventType.Start, 2, new object[] { "abc", "def", true, 123 });  
- 
-   source.TraceEvent(TraceEventType.Warning, 12, "Provider guid: {0}", new object[] { providerId });  
- 
-   source.TraceInformation("string {0}, bool {1}, int {2}, ushort {3}", new object[] { "abc", false, 123, (UInt32)5 });  
+  
+    EventProviderTraceListener listener = new EventProviderTraceListener(providerId.ToString(), "Test Listener", "::");  
+  
+    // You should use the All default level and control the level using the  
+    // ETW session; otherwise, you may not log all the events requested by the  
+    // session.  
+    TraceSource source = new TraceSource("MyProvider", SourceLevels.All);  
+  
+    source.Listeners.Add(listener);  
+  
+    source.TraceData(TraceEventType.Warning | TraceEventType.Start, 2, new object[] { "abc", "def", true, 123 });  
+  
+    source.TraceEvent(TraceEventType.Warning, 12, "Provider guid: {0}", new object[] { providerId });  
+  
+    source.TraceInformation("string {0}, bool {1}, int {2}, ushort {3}", new object[] { "abc", false, 123, (UInt32)5 });  
 ```  
  
  ]]></format>

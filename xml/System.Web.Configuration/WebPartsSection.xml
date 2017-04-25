@@ -27,31 +27,31 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <webParts>  
-   <personalization  
-     defaultProvider=" AspNetSqlPersonalizationProvider ">  
-       <!—- Providers may only be defined at the   
-           application level -->  
-     <providers>  
-       <add name="AspNetSqlPersonalizationProvider"  
+  <webParts>  
+    <personalization  
+      defaultProvider=" AspNetSqlPersonalizationProvider ">  
+        <!—- Providers may only be defined at the   
+            application level -->  
+      <providers>  
+        <add name="AspNetSqlPersonalizationProvider"  
 type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"  
-       connectionStringName="LocalSqlServer"  
-       applicationName="/" />        
-     </providers>  
-     <authorization>  
-       <deny users="*" verbs="enterSharedScope" />  
-       <allow users="Admin" verbs="modifyState" />  
-     </authorization>  
-   </personalization>  
-   <transformers>  
-     <add name="RowToFieldTransformer"  
-       type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
-     <add name="RowToFilterTransformer"  
-       type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
-     <add name="RowToParametersTransformer"  
+        connectionStringName="LocalSqlServer"  
+        applicationName="/" />        
+      </providers>  
+      <authorization>  
+        <deny users="*" verbs="enterSharedScope" />  
+        <allow users="Admin" verbs="modifyState" />  
+      </authorization>  
+    </personalization>  
+    <transformers>  
+      <add name="RowToFieldTransformer"  
+        type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
+      <add name="RowToFilterTransformer"  
+        type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
+      <add name="RowToParametersTransformer"  
 type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />  
-   </transformers>  
- </webParts>  
+    </transformers>  
+  </webParts>  
 </system.web>  
 ```  
  

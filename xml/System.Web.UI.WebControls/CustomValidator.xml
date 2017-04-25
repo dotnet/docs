@@ -65,15 +65,15 @@ It is possible to use a <xref:System.Web.UI.WebControls.CustomValidator> control
  
 ```vb  
 Sub ServerValidation (source As object, args As ServerValidateEventArgs)  
-   args.IsValid = (CheckBox1.Checked = True)  
-End Sub  
+    args.IsValid = (CheckBox1.Checked = True)  
+ End Sub  
 ```  
  
 ```csharp  
 void ServerValidation (object source, ServerValidateEventArgs args)  
-{  
-   args.IsValid = (CheckBox1.Checked == true);  
-}  
+ {  
+    args.IsValid = (CheckBox1.Checked == true);  
+ }  
 ```  
  
 For more information on validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  

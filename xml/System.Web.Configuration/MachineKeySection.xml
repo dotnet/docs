@@ -27,9 +27,9 @@ The following example from a configuration file shows how to specify values decl
  
 ```  
 <system.web>  
- <machineKey validationKey="AutoGenerate,IsolateApps"   
-   decryptionKey="AutoGenerate,IsolateApps"   
-   validation="SHA1"/>  
+  <machineKey validationKey="AutoGenerate,IsolateApps"   
+    decryptionKey="AutoGenerate,IsolateApps"   
+    validation="SHA1"/>  
 </system.web>  
 ```  
  

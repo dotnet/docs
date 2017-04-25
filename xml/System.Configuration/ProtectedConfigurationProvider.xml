@@ -49,23 +49,23 @@ The following is an excerpt of the configuration file used by the above examples
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
- 
- <configProtectedData >  
-   <providers>  
-     <clear />  
-     <add keyContainerName="pcKey.txt"   
-       name="TripleDESProtectedConfigurationProvider"  
+  
+  <configProtectedData >  
+    <providers>  
+      <clear />  
+      <add keyContainerName="pcKey.txt"   
+        name="TripleDESProtectedConfigurationProvider"  
 type="Samples.Aspnet.TripleDESProtectedConfigurationProvider, protectedconfigurationproviderlib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />  
-   </providers>  
- 
- </configProtectedData >  
- 
- <connectionStrings>  
-   <add name="NorthwindConnectionString"   
-     connectionString="Data Source=webnetue2;Initial Catalog=Northwind;User ID=aspnet_test;Password=test"  
+    </providers>  
+  
+  </configProtectedData >  
+  
+  <connectionStrings>  
+    <add name="NorthwindConnectionString"   
+      connectionString="Data Source=webnetue2;Initial Catalog=Northwind;User ID=aspnet_test;Password=test"  
 providerName="System.Data.SqlClient" />  
- </connectionStrings>  
- 
+  </connectionStrings>  
+  
 </configuration>  
 ```  
  

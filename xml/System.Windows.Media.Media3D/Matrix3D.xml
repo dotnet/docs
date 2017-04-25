@@ -215,26 +215,26 @@ The value in the fourth row and third column of this <xref:System.Windows.Media.
 Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
  
 ```  
- 
+  
 A(B(...))  
- 
+  
 ```  
  
 Prepending A to B denotes a transformation by A and then by B:  
  
 ```  
- 
+  
 B(A(...))  
- 
+  
 ```  
  
 To transform point P by A and then by B, append B to A:  
  
 ```  
- 
+  
 C = A.Append(B);  
 P' = C.Transform(P);  
- 
+  
 ```  
  
  ]]></format>

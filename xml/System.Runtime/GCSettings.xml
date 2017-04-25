@@ -74,9 +74,9 @@ An unmanaged host can request server garbage collection, and the host request ov
  
 ```  
 <configuration>  
- <runtime>  
-   <gcServer enabled="true" />  
- </runtime>  
+  <runtime>  
+    <gcServer enabled="true" />  
+  </runtime>  
 </configuration>  
 ```  
  

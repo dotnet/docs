@@ -27,13 +27,13 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <securityPolicy>  
-   <trustLevel name="Full" policyFile="internal" />  
-   <trustLevel name="High" policyFile="web_hightrust.config" />  
-   <trustLevel name="Medium" policyFile="web_mediumtrust.config" />  
-   <trustLevel name="Low" policyFile="web_lowtrust.config" />  
-   <trustLevel name="Minimal" policyFile="web_minimaltrust.config" />  
- </securityPolicy>  
+  <securityPolicy>  
+    <trustLevel name="Full" policyFile="internal" />  
+    <trustLevel name="High" policyFile="web_hightrust.config" />  
+    <trustLevel name="Medium" policyFile="web_mediumtrust.config" />  
+    <trustLevel name="Low" policyFile="web_lowtrust.config" />  
+    <trustLevel name="Minimal" policyFile="web_minimaltrust.config" />  
+  </securityPolicy>  
 </system.web>  
 ```  
  

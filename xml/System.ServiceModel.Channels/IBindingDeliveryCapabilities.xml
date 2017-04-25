@@ -25,71 +25,71 @@ The following sample requires that `CalculatorService` must use a <xref:System.S
 <!-- Here is the configuration for a CalculatorService using a WSHttpBinding with ordered message delivery required. -->  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-  <system.serviceModel>  
-     <services>  
-        <service   
-            type="Microsoft.ServiceModel.Samples.CalculatorService">  
-           <!-- Use base address provided by host and a WSHttpBinding named "Binding1" -->  
-           <endpoint address=""  
-                     binding="wsHttpBinding"  
-                     bindingConfiguration="Binding1"   
-                     contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        </service>  
-     </services>  
- 
-     <bindings>  
-        <wsHttpBinding>   
-           <binding name="Binding1">           
-              <!-- The next element enables a ReliableSession and required ordered delivery-->  
-     <reliableSession enabled="true" ordered="true"/>  
-     </binding>  
-        </wsHttpBinding>  
-     </bindings>  
- 
-  </system.serviceModel>  
+   <system.serviceModel>  
+      <services>  
+         <service   
+             type="Microsoft.ServiceModel.Samples.CalculatorService">  
+            <!-- Use base address provided by host and a WSHttpBinding named "Binding1" -->  
+            <endpoint address=""  
+                      binding="wsHttpBinding"  
+                      bindingConfiguration="Binding1"   
+                      contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+         </service>  
+      </services>  
+  
+      <bindings>  
+         <wsHttpBinding>   
+            <binding name="Binding1">           
+               <!-- The next element enables a ReliableSession and required ordered delivery-->  
+      <reliableSession enabled="true" ordered="true"/>  
+      </binding>  
+         </wsHttpBinding>  
+      </bindings>  
+  
+   </system.serviceModel>  
 </configuration>  
- 
+  
 // The CalculatorService configuration has enabled a reliable session  
 // with ordered delivery set to true. This means that the binding  
 // requirement for ordered delivery specified by the  
 // BindingRequirementsAttribute on the CalculatorService class  
 // implemented below will be satisfied by this WSHttpBinding.  
- 
+  
 using System;  
 using System.ServiceModel;  
- 
+  
 [ServiceContract]  
 interface ICalculatorService  
 {  
- [OperationBehavior()]  
- int Add(int a, int b);    
- 
- [OperationContract]  
- int Subtract(int a, int b);  
+  [OperationBehavior()]  
+  int Add(int a, int b);    
+  
+  [OperationContract]  
+  int Subtract(int a, int b);  
 }  
- 
+  
 [BindingRequirements(  
- QueuedDeliveryRequirements=RequirementsMode.Disallow,  
- RequireOrderedDelivery=true  
+  QueuedDeliveryRequirements=RequirementsMode.Disallow,  
+  RequireOrderedDelivery=true  
 )]  
 class CalculatorService: ICalculatorService  
 {  
- public int Add(int a, int b)  
- {  
-   Console.WriteLine("Add called.");  
-   return a + b;   
- }  
- 
- public int Subtract(int a, int b)  
- {  
-   Console.WriteLine("Subtract called.");  
-   return a - b;  
- }  
- 
- public int Multiply(int a, int b)  
- {  
-   return a * b;  
- }  
+  public int Add(int a, int b)  
+  {  
+    Console.WriteLine("Add called.");  
+    return a + b;   
+  }  
+  
+  public int Subtract(int a, int b)  
+  {  
+    Console.WriteLine("Subtract called.");  
+    return a - b;  
+  }  
+  
+  public int Multiply(int a, int b)  
+  {  
+    return a * b;  
+  }  
 }  
 ```  
  
@@ -129,71 +129,71 @@ The following sample requires that `CalculatorService` must use a <xref:System.S
 <!-- Here is the configuration for a CalculatorService using a WSHttpBinding with ordered message delivery required. -->  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-  <system.serviceModel>  
-     <services>  
-        <service   
-            type="Microsoft.ServiceModel.Samples.CalculatorService">  
-           <!-- Use base address provided by host and a WSHttpBinding named "Binding1" -->  
-           <endpoint address=""  
-                     binding="wsHttpBinding"  
-                     bindingConfiguration="Binding1"   
-                     contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        </service>  
-     </services>  
- 
-     <bindings>  
-        <wsHttpBinding>   
-           <binding name="Binding1">           
-              <!-- The next element enables a ReliableSession and required ordered delivery-->  
-     <reliableSession enabled="true" ordered="true"/>  
-     </binding>  
-        </wsHttpBinding>  
-     </bindings>  
- 
-  </system.serviceModel>  
+   <system.serviceModel>  
+      <services>  
+         <service   
+             type="Microsoft.ServiceModel.Samples.CalculatorService">  
+            <!-- Use base address provided by host and a WSHttpBinding named "Binding1" -->  
+            <endpoint address=""  
+                      binding="wsHttpBinding"  
+                      bindingConfiguration="Binding1"   
+                      contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+         </service>  
+      </services>  
+  
+      <bindings>  
+         <wsHttpBinding>   
+            <binding name="Binding1">           
+               <!-- The next element enables a ReliableSession and required ordered delivery-->  
+      <reliableSession enabled="true" ordered="true"/>  
+      </binding>  
+         </wsHttpBinding>  
+      </bindings>  
+  
+   </system.serviceModel>  
 </configuration>  
- 
+  
 // The CalculatorService configuration has enabled a reliable session  
 // with ordered delivery set to true. This means that the binding  
 // requirement for ordered delivery specified by the  
 // BindingRequirementsAttribute on the CalculatorService class  
 // implemented below will be satisfied by this WSHttpBinding.  
- 
+  
 using System;  
 using System.ServiceModel;  
- 
+  
 [ServiceContract]  
 interface ICalculatorService  
 {  
- [OperationBehavior()]  
- int Add(int a, int b);    
- 
- [OperationContract]  
- int Subtract(int a, int b);  
+  [OperationBehavior()]  
+  int Add(int a, int b);    
+  
+  [OperationContract]  
+  int Subtract(int a, int b);  
 }  
- 
+  
 [BindingRequirements(  
- QueuedDeliveryRequirements=RequirementsMode.Disallow,  
- RequireOrderedDelivery=true  
+  QueuedDeliveryRequirements=RequirementsMode.Disallow,  
+  RequireOrderedDelivery=true  
 )]  
 class CalculatorService: ICalculatorService  
 {  
- public int Add(int a, int b)  
- {  
-   Console.WriteLine("Add called.");  
-   return a + b;   
- }  
- 
- public int Subtract(int a, int b)  
- {  
-   Console.WriteLine("Subtract called.");  
-   return a - b;  
- }  
- 
- public int Multiply(int a, int b)  
- {  
-   return a * b;  
- }  
+  public int Add(int a, int b)  
+  {  
+    Console.WriteLine("Add called.");  
+    return a + b;   
+  }  
+  
+  public int Subtract(int a, int b)  
+  {  
+    Console.WriteLine("Subtract called.");  
+    return a - b;  
+  }  
+  
+  public int Multiply(int a, int b)  
+  {  
+    return a * b;  
+  }  
 }  
 ```  
  

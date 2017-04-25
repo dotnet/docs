@@ -38,11 +38,11 @@ To configure a <xref:System.Diagnostics.BooleanSwitch>, edit the configuration f
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="1"/>  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="1"/>  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -117,15 +117,15 @@ To set the level of your <xref:System.Diagnostics.BooleanSwitch>, edit the confi
  
 ```  
 <configuration>  
-   <system.diagnostics>  
-      <switches>  
-         <add name="mySwitch" value="10" />  
-         <add name="myNewSwitch" value="20" />  
-         <remove name="mySwitch" />  
-         <clear/>  
-      </switches>  
-   </system.diagnostics>  
-</configuration>  
+    <system.diagnostics>  
+       <switches>  
+          <add name="mySwitch" value="10" />  
+          <add name="myNewSwitch" value="20" />  
+          <remove name="mySwitch" />  
+          <clear/>  
+       </switches>  
+    </system.diagnostics>  
+ </configuration>  
 ```  
  
 > [!NOTE]

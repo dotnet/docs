@@ -101,20 +101,20 @@ Using the `simpleContent` element, the following element declaration contains a 
  
 ```  
 <xs:element name="shoeSize">  
- <xs:complexType>  
-   <xs:simpleContent>  
-     <xs:extension base="xs:decimal">  
-       <xs:attribute name="sizing">  
-         <xs:restriction base="xs:string">  
-           <xs:enumeration value="US"/>  
-           <xs:enumeration value="European"/>  
-           <xs:enumeration value="UK"/>  
-           <xs:enumeration value="Japan"/>  
-         </xs:restriction>  
-       </xs:attribute>  
-     </xs:extension>  
-   </xs:simpleContent>  
- </xs:complexType>  
+  <xs:complexType>  
+    <xs:simpleContent>  
+      <xs:extension base="xs:decimal">  
+        <xs:attribute name="sizing">  
+          <xs:restriction base="xs:string">  
+            <xs:enumeration value="US"/>  
+            <xs:enumeration value="European"/>  
+            <xs:enumeration value="UK"/>  
+            <xs:enumeration value="Japan"/>  
+          </xs:restriction>  
+        </xs:attribute>  
+      </xs:extension>  
+    </xs:simpleContent>  
+  </xs:complexType>  
 </xs:element>  
 ```  
  

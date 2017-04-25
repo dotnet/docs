@@ -757,24 +757,24 @@ The following C# snippet shows one use for this method:
  
 ```  
 var customers = db.ExecuteQuery<Customer>(@"SELECT CustomerID, CompanyName, ContactName, ContactTitle,   
-  Address, City, Region, PostalCode, Country, Phone, Fax  
-  FROM   dbo.Customers  
-  WHERE  City = {0}", "London");  
- 
+   Address, City, Region, PostalCode, Country, Phone, Fax  
+   FROM   dbo.Customers  
+   WHERE  City = {0}", "London");  
+  
 foreach (Customer c in customers)  
-  Console.WriteLine(c.ContactName);  
+   Console.WriteLine(c.ContactName);  
 ```  
  
 In Visual Basic  
  
 ```  
 Dim customers = db.ExecuteQuery(Of Customer)("SELECT CustomerID, _    CompanyName, ContactName, ContactTitle, _  
-  Address, City, Region, PostalCode, Country, Phone, Fax _  
-  FROM dbo.Customers _  
+   Address, City, Region, PostalCode, Country, Phone, Fax _  
+   FROM dbo.Customers _  
 WHERE City = {0}", "London")  
- 
+  
 For Each c As Customer In customers  
-   Console.WriteLine(c.ContactName)  
+    Console.WriteLine(c.ContactName)  
 Next  
 ```  
  

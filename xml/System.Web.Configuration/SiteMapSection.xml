@@ -27,17 +27,17 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <siteMap defaultProvider="XmlSiteMapReader" enabled="true">  
-   <providers>  
-     <clear />  
-     <add   
-       name="XmlSiteMapReader"  
-       type="XmlSiteMapProvider, System.Web, Version=1.1.3300.0,  
-             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
-       siteMapFile="my.sitemap"   
-       description="XmlSiteMapProvider that loads my.sitemap"/>  
-   </providers>  
- </siteMap>  
+  <siteMap defaultProvider="XmlSiteMapReader" enabled="true">  
+    <providers>  
+      <clear />  
+      <add   
+        name="XmlSiteMapReader"  
+        type="XmlSiteMapProvider, System.Web, Version=1.1.3300.0,  
+              Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+        siteMapFile="my.sitemap"   
+        description="XmlSiteMapProvider that loads my.sitemap"/>  
+    </providers>  
+  </siteMap>  
 </system.web>  
 ```  
  

@@ -783,44 +783,44 @@ The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execut
 The following example demonstrates using <xref:System.Threading.Tasks.TaskContinuationOptions> to specify that a continuation task should run synchronously when the antecedent task completes. (If the specified task has already completed by the time <xref:System.Threading.Tasks.Task.ContinueWith%2A> is called, the synchronous continuation will run on the thread calling <xref:System.Threading.Tasks.Task.ContinueWith%2A>.)  
  
 ```csharp  
- 
+  
 public class TaskCounter  
 {  
-  private volatile int _count;  
- 
-  public void Track(Task t)  
-  {  
-     if (t == null) throw new ArgumentNullException("t");  
-     Interlocked.Increment(ref _count);  
-     t.ContinueWith(ct => Interlocked.Decrement(ref _count), TaskContinuationOptions.ExecuteSynchronously);  
-  }  
- 
-  public int NumberOfActiveTasks { get { return _count; } }  
+   private volatile int _count;  
+  
+   public void Track(Task t)  
+   {  
+      if (t == null) throw new ArgumentNullException("t");  
+      Interlocked.Increment(ref _count);  
+      t.ContinueWith(ct => Interlocked.Decrement(ref _count), TaskContinuationOptions.ExecuteSynchronously);  
+   }  
+  
+   public int NumberOfActiveTasks { get { return _count; } }  
 }  
- 
+  
 ```  
  
 ```vb  
- 
+  
 Public Class TaskCounter  
-  Private _count as Integer  
- 
-  Public Sub Track(ByVal t as Task)  
-     If t is Nothing Then Throw New ArgumentNullException("t")  
-     Interlocked.Increment(_count)  
-     t.ContinueWith(Sub(ct)  
-                       Interlocked.Decrement(_count)  
-                    End Sub,  
-                    TaskContinuationOptions.ExecuteSynchronously)  
-  End Sub  
- 
-  Public ReadOnly Property NumberOfActiveTasks As Integer  
-     Get  
-        Return _count  
-     End Get  
-  End Property  
+   Private _count as Integer  
+  
+   Public Sub Track(ByVal t as Task)  
+      If t is Nothing Then Throw New ArgumentNullException("t")  
+      Interlocked.Increment(_count)  
+      t.ContinueWith(Sub(ct)  
+                        Interlocked.Decrement(_count)  
+                     End Sub,  
+                     TaskContinuationOptions.ExecuteSynchronously)  
+   End Sub  
+  
+   Public ReadOnly Property NumberOfActiveTasks As Integer  
+      Get  
+         Return _count  
+      End Get  
+   End Property  
 End Class  
- 
+  
 ```  
  
  ]]></format>
@@ -1057,39 +1057,39 @@ The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execut
 The following is an example of using ContinueWith to run work both in the background and on the user interface threads.  
  
 ```csharp  
- 
+  
 private void Button1_Click(object sender, EventArgs e)  
 {  
-  var backgroundScheduler = TaskScheduler.Default;  
-  var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();  
-  Task.Factory.StartNew(delegate { DoBackgroundComputation(); },  
-                        backgroundScheduler).  
-  ContinueWith(delegate { UpdateUI(); }, uiScheduler).  
-               ContinueWith(delegate { DoAnotherBackgroundComputation(); },  
-                            backgroundScheduler).  
-               ContinueWith(delegate { UpdateUIAgain(); }, uiScheduler);  
+   var backgroundScheduler = TaskScheduler.Default;  
+   var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();  
+   Task.Factory.StartNew(delegate { DoBackgroundComputation(); },  
+                         backgroundScheduler).  
+   ContinueWith(delegate { UpdateUI(); }, uiScheduler).  
+                ContinueWith(delegate { DoAnotherBackgroundComputation(); },  
+                             backgroundScheduler).  
+                ContinueWith(delegate { UpdateUIAgain(); }, uiScheduler);  
 }  
- 
+  
 ```  
  
 ```vb  
- 
+  
 Private Sub Button1_Click(ByVal sender As System.Object,   
-                         ByVal e As System.EventArgs) Handles Button1.Click  
-  Dim backgroundScheduler = TaskScheduler.Default  
-  Dim uiScheduler = TaskScheduler.FromCurrentSynchronizationContext()  
- 
-  Task.Factory.StartNew(Sub()  
-                          DoBackgroundComputation()  
-                        End Sub, backgroundScheduler).ContinueWith(Sub(t)  
-                           UpdateUI()  
-                        End Sub, uiScheduler).ContinueWith(Sub(t)  
-                           DoAnotherBackgroundComputation()  
-                        End Sub, backgroundScheduler).ContinueWith(Sub(t)  
-                           UpdateUIAgain()  
-                        End Sub, uiScheduler)  
+                          ByVal e As System.EventArgs) Handles Button1.Click  
+   Dim backgroundScheduler = TaskScheduler.Default  
+   Dim uiScheduler = TaskScheduler.FromCurrentSynchronizationContext()  
+  
+   Task.Factory.StartNew(Sub()  
+                           DoBackgroundComputation()  
+                         End Sub, backgroundScheduler).ContinueWith(Sub(t)  
+                            UpdateUI()  
+                         End Sub, uiScheduler).ContinueWith(Sub(t)  
+                            DoAnotherBackgroundComputation()  
+                         End Sub, backgroundScheduler).ContinueWith(Sub(t)  
+                            UpdateUIAgain()  
+                         End Sub, uiScheduler)  
 End Sub  
- 
+  
 ```  
  
  ]]></format>

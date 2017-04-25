@@ -27,9 +27,9 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <globalization   
-   requestEncoding="utf-8"  
-   responseEncoding="utf-8"/>  
+  <globalization   
+    requestEncoding="utf-8"  
+    responseEncoding="utf-8"/>  
 </system.web>  
 ```  
  

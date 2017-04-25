@@ -85,9 +85,9 @@ The following example contains two <xref:System.Windows.MultiTrigger>s. The firs
  
 ```  
 <object>  
- <object.Conditions>  
-   ZeroOrMoreConditions  
- </object.Conditions>  
+  <object.Conditions>  
+    ZeroOrMoreConditions  
+  </object.Conditions>  
 </object>  
 ```  
  
@@ -141,9 +141,9 @@ The following example contains two <xref:System.Windows.MultiTrigger>s. The firs
  
 ```  
 <object>  
- <object.Setters>  
-   ZeroOrMoreSetters  
- </object.Setters>  
+  <object.Setters>  
+    ZeroOrMoreSetters  
+  </object.Setters>  
 </object>  
 ```  
  

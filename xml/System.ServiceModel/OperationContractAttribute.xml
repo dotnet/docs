@@ -74,29 +74,29 @@ The following example is a service that implements an implicit service contract 
 [ServiceContractAttribute]  
 public class OneAndTwoWay  
 {  
- // The client waits until a response message appears.  
- [OperationContractAttribute]  
- public int MethodOne (int x, out int y)  
- {  
-   y = 34;  
-   return 0;  
- }  
- 
- // The client waits until an empty response message appears.  
- [OperationContractAttribute]  
- public void MethodTwo (int x)  
- {  
-   return;  
- }  
- 
- // The client returns as soon as an outbound message  
- // is dispatched to the service; no response  
- // message is generated or sent from the service.  
- [OperationContractAttribute(IsOneWay=true)]  
- public void MethodThree (int x)  
- {  
-   return;  
- }  
+  // The client waits until a response message appears.  
+  [OperationContractAttribute]  
+  public int MethodOne (int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  // The client waits until an empty response message appears.  
+  [OperationContractAttribute]  
+  public void MethodTwo (int x)  
+  {  
+    return;  
+  }  
+  
+  // The client returns as soon as an outbound message  
+  // is dispatched to the service; no response  
+  // message is generated or sent from the service.  
+  [OperationContractAttribute(IsOneWay=true)]  
+  public void MethodThree (int x)  
+  {  
+    return;  
+  }  
 }  
 ```  
  
@@ -207,20 +207,20 @@ The following code example shows a client channel to a service contract that inc
 [ServiceContract]  
 public interface IAddTwoNumbers  
 {  
-   // If the asynchronous method pair  
-   // appears on the client channel, the client can call   
-   // them asynchronously to prevent blocking.  
-   [OperationContract (AsyncPattern=true)]  
-   IAsyncResult BeginAdd(int a, int b, AsyncCallback cb, AsyncState s);  
- 
-   [OperationContract]  
-   int EndAdd(IAsyncResult r);  
- 
-   // This is a synchronous version of the BeginAdd/EndAdd pair.  
-   // It appears in the client channel code by default.   
-   [OperationContract]  
-   int Add(int a, int b);  
-  }  
+    // If the asynchronous method pair  
+    // appears on the client channel, the client can call   
+    // them asynchronously to prevent blocking.  
+    [OperationContract (AsyncPattern=true)]  
+    IAsyncResult BeginAdd(int a, int b, AsyncCallback cb, AsyncState s);  
+  
+    [OperationContract]  
+    int EndAdd(IAsyncResult r);  
+  
+    // This is a synchronous version of the BeginAdd/EndAdd pair.  
+    // It appears in the client channel code by default.   
+    [OperationContract]  
+    int Add(int a, int b);  
+   }  
 ```  
  
  ]]></format>
@@ -300,35 +300,35 @@ The following example is a service that implements a service contract that speci
 [ServiceContract(SessionMode=SessionMode.Required)]  
 public class InitializeAndTerminateService  
 {  
- [OperationContract(  
-   IsOneWay=true,  
-   IsInitiating=true,  
-   IsTerminating=false  
- )]  
- public void MethodOne()  
- {  
-   return;  
- }  
- 
- [OperationContract(  
-   IsInitiating=false,  
-   IsTerminating=false  
- )]  
- public int MethodTwo(int x, out int y)  
- {  
-   y = 34;  
-   return 0;  
- }  
- 
- [OperationContract(  
-   IsOneWay=true,  
-   IsInitiating=false,  
-   IsTerminating=true  
- )]  
- public void MethodThree()  
- {  
-   return;  
- }  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=true,  
+    IsTerminating=false  
+  )]  
+  public void MethodOne()  
+  {  
+    return;  
+  }  
+  
+  [OperationContract(  
+    IsInitiating=false,  
+    IsTerminating=false  
+  )]  
+  public int MethodTwo(int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=false,  
+    IsTerminating=true  
+  )]  
+  public void MethodThree()  
+  {  
+    return;  
+  }  
 }  
 ```  
  
@@ -376,29 +376,29 @@ The following example is a service that implements a service contract that speci
 [ServiceContract]  
 public class OneAndTwoWay  
 {  
- // The client waits until a response message appears.  
- [OperationContract]  
- public int MethodOne (int x, out int y)  
- {  
-   y = 34;  
-   return 0;  
- }  
- 
- // The client waits until an empty response message appears.  
- [OperationContract]  
- public void MethodTwo (int x)  
- {  
-   return;  
- }  
- 
- // The client returns as soon as an outbound message  
- // is queued for dispatch to the service; no response  
- // message is generated or sent.  
- [OperationContract(IsOneWay=true)]  
- public void MethodThree (int x)  
- {  
-   return;  
- }  
+  // The client waits until a response message appears.  
+  [OperationContract]  
+  public int MethodOne (int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  // The client waits until an empty response message appears.  
+  [OperationContract]  
+  public void MethodTwo (int x)  
+  {  
+    return;  
+  }  
+  
+  // The client returns as soon as an outbound message  
+  // is queued for dispatch to the service; no response  
+  // message is generated or sent.  
+  [OperationContract(IsOneWay=true)]  
+  public void MethodThree (int x)  
+  {  
+    return;  
+  }  
 }  
 ```  
  
@@ -447,35 +447,35 @@ The following example is a service that implements a service contract that speci
 [ServiceContractAttribute(SessionMode=SessionMode.Required)]  
 public class InitializeAndTerminateService  
 {  
- [OperationContract(  
-   IsOneWay=true,  
-   IsInitiating=true,  
-   IsTerminating=false  
- )]  
- public void MethodOne()  
- {  
-   return;  
- }  
- 
- [OperationContract(  
-   IsInitiating=false,  
-   IsTerminating=false  
- )]  
- public int MethodTwo(int x, out int y)  
- {  
-   y = 34;  
-   return 0;  
- }  
- 
- [OperationContract(  
-   IsOneWay=true,  
-   IsInitiating=false  
-   IsTerminating=true  
- )]  
- public void MethodThree()  
- {  
-   return;  
- }  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=true,  
+    IsTerminating=false  
+  )]  
+  public void MethodOne()  
+  {  
+    return;  
+  }  
+  
+  [OperationContract(  
+    IsInitiating=false,  
+    IsTerminating=false  
+  )]  
+  public int MethodTwo(int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=false  
+    IsTerminating=true  
+  )]  
+  public void MethodThree()  
+  {  
+    return;  
+  }  
 }  
 ```  
  

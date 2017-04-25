@@ -63,19 +63,19 @@ The following code example demonstrates the use of an <xref:System.ActivationCon
 The format of the `applicationIdentityFullName` parameter is a comma-delimited Unicode string that begins with the name, as follows:  
  
 ```  
- 
+  
 applicationURL  
 #  
 deploymentIdentity  
 \  
 applicationIdentity  
- 
+  
 ```  
  
 Where *deploymentIdentity* =  
  
 ```  
- 
+  
 deploymentManifest  
 , Version =   
 Major.Minor.Build.Revision  
@@ -85,13 +85,13 @@ CultureInfo
 TokenNumber  
 , processorArchitecture=  
 processorArchitecture  
- 
+  
 ```  
  
 And *applicationIdentity* =  
  
 ```  
- 
+  
 applicationName  
 , Version =   
 Major.Minor.Build.Revision  
@@ -103,7 +103,7 @@ TokenNumber
 processorArchitecture  
 , type=  
 OsType  
- 
+  
 ```  
  
 The following is an example of the full name for an application named ActivationContext:  

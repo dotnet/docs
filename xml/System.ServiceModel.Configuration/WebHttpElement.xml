@@ -28,17 +28,17 @@ using System;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           WebHttpElement webHttpElement = new WebHttpElement();  
-           Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
-           Console.WriteLine("Press <ENTER> to terminate the program.");  
-           Console.ReadLine();  
-       }  
-   }  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebHttpElement webHttpElement = new WebHttpElement();  
+            Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -68,17 +68,17 @@ using System;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           WebHttpElement webHttpElement = new WebHttpElement();  
-           Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
-           Console.WriteLine("Press <ENTER> to terminate the program.");  
-           Console.ReadLine();  
-       }  
-   }  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebHttpElement webHttpElement = new WebHttpElement();  
+            Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -135,17 +135,17 @@ using System;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           WebHttpElement webHttpElement = new WebHttpElement();  
-           Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
-           Console.WriteLine("Press <ENTER> to terminate the program.");  
-           Console.ReadLine();  
-       }  
-   }  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebHttpElement webHttpElement = new WebHttpElement();  
+            Console.WriteLine("The type is: {0}", webHttpElement.BehaviorType);  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
 ```  
  
  ]]></format>

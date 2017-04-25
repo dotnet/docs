@@ -62,21 +62,21 @@ There are two ways to define a queue's default properties to send, as shown in t
  
 ```  
 DefaultPropertiesToSend myDefaultProperties = new DefaultPropertiesToSend();  
- // Set default values for the properties.  
- myDefaultProperties.Label = "myLabel";  
- myDefaultProperties.Recoverable = false;  
-...  
- myMessageQueue.DefaultPropertiesToSend = myDefaultProperties;  
- myMessageQueue.Send("hello");  
+  // Set default values for the properties.  
+  myDefaultProperties.Label = "myLabel";  
+  myDefaultProperties.Recoverable = false;  
+ ...  
+  myMessageQueue.DefaultPropertiesToSend = myDefaultProperties;  
+  myMessageQueue.Send("hello");  
 ```  
  
 Or, you can individually assign values to the <xref:System.Messaging.MessageQueue> instance's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property directly:  
  
 ```  
 myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";  
- myMessageQueue.DefaultPropertiesToSend.Recoverable = false;  
+  myMessageQueue.DefaultPropertiesToSend.Recoverable = false;  
 ...  
- myMessageQueue.Send("hello");  
+  myMessageQueue.Send("hello");  
 ```  
  
 If you choose the second of these options, you do not need to call the <xref:System.Messaging.DefaultPropertiesToSend.%23ctor%2A> constructor explicitly. You might want to create instances of <xref:System.Messaging.DefaultPropertiesToSend>, for example, if the properties' default values depend on some criterion of the message being sent. You can create multiple <xref:System.Messaging.DefaultPropertiesToSend> instances and assign one to the queue's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> property before sending the message to the queue.  

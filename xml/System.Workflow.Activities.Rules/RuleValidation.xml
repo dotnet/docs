@@ -26,21 +26,21 @@ invalidCompare.Operator = CodeBinaryOperatorType.LessThan;
 invalidCompare.Right = new CodePrimitiveExpression(true);  
 RuleExpressionCondition condition = new RuleExpressionCondition();  
 condition.Expression = invalidCompare;  
- 
+  
 // Create a validator for this condition.  
 // We are not using "this" in the condition, so the type is not used.  
 RuleValidation validation = new RuleValidation(this.GetType(), null);  
- 
+  
 // See whether the condition validates.  
 if (!condition.Validate(validation))  
 {  
-   // There were errors, so display them.  
-   foreach (ValidationError error in validation.Errors)  
-   {  
-       Console.WriteLine(error.ErrorText);  
-   }  
+    // There were errors, so display them.  
+    foreach (ValidationError error in validation.Errors)  
+    {  
+        Console.WriteLine(error.ErrorText);  
+    }  
 }  
- 
+  
 ```  
  
 Running this code produces the following error:  

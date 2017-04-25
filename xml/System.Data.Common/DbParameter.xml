@@ -438,7 +438,7 @@ For more information about how to use the <xref:System.Data.Common.DbParameter.S
  
 ```  
 ((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
- (FieldName = @Original_FieldName))  
+  (FieldName = @Original_FieldName))  
 ```  
  
 If <xref:System.Data.Common.DbParameter.SourceColumnNullMapping%2A> for the field is `false`, <xref:System.Data.Common.DbCommandBuilder> generates the following WHERE clause:  

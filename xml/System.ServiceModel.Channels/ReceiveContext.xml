@@ -584,17 +584,17 @@ Receive context functionality is two-fold. When working with a queued channel, r
 ```  
 using (TransactionScope ts = new TransactionScope())   
 {  
-  try  
-  {  
-      rc.Complete();  
-     ...  
-  }  
-  Catch (Exception)   
-  {  
-     rc.Abandon()  
-  }  
+   try  
+   {  
+       rc.Complete();  
+      ...  
+   }  
+   Catch (Exception)   
+   {  
+      rc.Abandon()  
+   }  
 }  
- 
+  
 ```  
  
 This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  

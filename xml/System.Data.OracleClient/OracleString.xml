@@ -37,39 +37,39 @@ public class Class1 {
       OracleString oraclestring1 = new OracleString("MyOracleString1");  
       OracleString oraclestring2 = new OracleString("MyOracleString2");  
       OracleString oraclestring3 = new OracleString("MyOracleString1");  
- 
+  
       // Type: System.Data.OracleClient.OracleString  
       Console.WriteLine("Type: " + oraclestring1.GetType());  
- 
+  
       // Length: 15  
       Console.WriteLine("Length: " + oraclestring1.Length);  
- 
+  
       // False  
       Console.WriteLine(oraclestring1.IsNull);  
- 
+  
       // -1  
       Console.WriteLine(oraclestring1.CompareTo(oraclestring2));  
- 
+  
       // 0  
       Console.WriteLine(oraclestring1.CompareTo(oraclestring3));  
- 
+  
       // 1  
       Console.WriteLine(oraclestring2.CompareTo(oraclestring3));  
- 
+  
       // False  
       Console.WriteLine(oraclestring1.Equals(oraclestring2));  
- 
+  
       // True  
       Console.WriteLine(oraclestring1.Equals(oraclestring3));  
- 
+  
       // MyOracleString1  
       Console.WriteLine(oraclestring1.Value);  
- 
+  
       // MyOracleString2  
       Console.WriteLine(oraclestring2.ToString());  
    }  
 }  
- 
+  
 ```  
  
  ]]></format>

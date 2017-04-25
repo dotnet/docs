@@ -51,13 +51,13 @@ The following code example attempts to populate a control with child controls, c
  
 ```vb  
 vbc /r:System.dll /r:System.Web.dll /t:library  
-      /out:myWebAppPath/bin/vb_myEmptyControlCollection.dll  
-      myEmptyControlCollection.vb  
+       /out:myWebAppPath/bin/vb_myEmptyControlCollection.dll  
+       myEmptyControlCollection.vb  
 ```  
  
 ```csharp  
 csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll  
-   myEmptyControlCollection.cs  
+    myEmptyControlCollection.cs  
 ```  
  
 [!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
@@ -67,22 +67,22 @@ The following code example uses the empty custom control defined above. When run
  
 ```vb  
 <%@ Register TagPrefix="custom" Assembly="vb_myEmptyControlCollection" Namespace="CustomControls" %>  
-<html>  
- <body>  
- <h1>Using an Empty Control</h1>  
- <custom:MyVB_EmptyControl id="vbEmptyControlId" runat="server"/>  
- </body>  
-</html>  
+ <html>  
+  <body>  
+  <h1>Using an Empty Control</h1>  
+  <custom:MyVB_EmptyControl id="vbEmptyControlId" runat="server"/>  
+  </body>  
+ </html>  
 ```  
  
 ```csharp  
 <%@ Register TagPrefix="custom" Assembly="cs_myEmptyControlCollection" Namespace="CustomControls" %>  
-<html>  
- <body>  
- <h1>Using an Empty Control </h1>  
- <custom:MyCS_EmptyControl id="csEmptyControlId" runat="server"/>  
- </body>  
-</html>  
+ <html>  
+  <body>  
+  <h1>Using an Empty Control </h1>  
+  <custom:MyCS_EmptyControl id="csEmptyControlId" runat="server"/>  
+  </body>  
+ </html>  
 ```  
  
  ]]></format>

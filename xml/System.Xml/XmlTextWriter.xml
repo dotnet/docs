@@ -38,10 +38,10 @@ This class implements the <xref:System.Xml.XmlWriter> class.
 ```  
 w.WriteStartElement("root");  
 w.WriteAttributeString("xmlns", "x", null, "urn:1");  
-w.WriteStartElement("item","urn:1");  
-w.WriteEndElement();  
-w.WriteStartElement("item","urn:1");  
-w.WriteEndElement();  
+ w.WriteStartElement("item","urn:1");  
+ w.WriteEndElement();  
+ w.WriteStartElement("item","urn:1");  
+ w.WriteEndElement();  
 w.WriteEndElement();  
 ```  
  
@@ -49,8 +49,8 @@ The above C# code produces the following output. `XmlTextWriter` promotes the na
  
 ```  
 <root xmlns:x="urn:1">  
-<x:item/>  
-<x:item/>  
+ <x:item/>  
+ <x:item/>  
 </x:root>  
 ```  
  
@@ -66,8 +66,8 @@ By using the write methods that take a prefix as an argument you can also specif
 ```  
 XmlTextWriter w = new XmlTextWriter(Console.Out);  
 w.WriteStartElement("x","root","urn:1");  
-w.WriteStartElement("y","item","urn:1");  
-w.WriteEndElement();  
+ w.WriteStartElement("y","item","urn:1");  
+ w.WriteEndElement();  
 w.WriteEndElement();  
 w.Close();  
 ```  
@@ -89,7 +89,7 @@ In the above C# example, because the `WriteAttributeString` call does not specif
  
 ```  
 <x:root xmlns:x="urn:1">  
-<y:item y:attr="123" xmlns:y="urn:1" />  
+ <y:item y:attr="123" xmlns:y="urn:1" />  
 </x:root>  
 ```  
  
@@ -398,22 +398,22 @@ If the `Indented` option is set, child elements are indented using the <xref:Sys
  
 ```  
 XmlTextWriter w = new XmlTextWriter(Console.Out);   
-w.Formatting = Formatting.Indented;   
-w.WriteStartElement("ol");   
-w.WriteStartElement("li");   
-w.WriteString("The big "); // This means "li" now has a mixed content model.  
-w.WriteElementString("b", "E");   
-w.WriteElementString("i", "lephant");   
-w.WriteString(" walks slowly.");   
-w.WriteEndElement();   
-w.WriteEndElement();  
+ w.Formatting = Formatting.Indented;   
+ w.WriteStartElement("ol");   
+ w.WriteStartElement("li");   
+ w.WriteString("The big "); // This means "li" now has a mixed content model.  
+ w.WriteElementString("b", "E");   
+ w.WriteElementString("i", "lephant");   
+ w.WriteString(" walks slowly.");   
+ w.WriteEndElement();   
+ w.WriteEndElement();  
 ```  
  
 The above code produces the following output:  
  
 ```  
 <ol>   
- <li>The big <b>E</b><i>lephant</i> walks slowly.</li>   
+  <li>The big <b>E</b><i>lephant</i> walks slowly.</li>   
 </ol>  
 ```  
  
@@ -471,10 +471,10 @@ String pubid = null;
 String sysid = null;  
 String subset =  
 @"  
-   <!ELEMENT Employees (Employee)+>  
-   <!ELEMENT Employee EMPTY>  
-   <!ATTLIST Employee firstname CDATA #REQUIRED>  
-   <!ENTITY Company 'Microsoft'>]>  
+    <!ELEMENT Employees (Employee)+>  
+    <!ELEMENT Employee EMPTY>  
+    <!ATTLIST Employee firstname CDATA #REQUIRED>  
+    <!ENTITY Company 'Microsoft'>]>  
 ";  
 XmlTextWriter tw = new XmlTextWriter(Console.Out);  
 tw.WriteDocType(name, pubid, sysid, subset);  
@@ -1400,23 +1400,23 @@ For example, the following Microsoft Visual C# code:
 ```  
 writer.Formatting = Formatting.Indented;  
 writer.WriteStartElement("root");  
-writer.WriteAttributeString("xmlns","x",null,"urn:abc");  
-writer.WriteStartElement("item");  
-writer.WriteStartAttribute("href",null);  
-writer.WriteString("#");  
-writer.WriteQualifiedName("test","urn:abc");  
-writer.WriteEndAttribute();  
-writer.WriteEndElement();  
-writer.WriteEndElement();  
-writer.Close();  
+ writer.WriteAttributeString("xmlns","x",null,"urn:abc");  
+ writer.WriteStartElement("item");  
+ writer.WriteStartAttribute("href",null);  
+ writer.WriteString("#");  
+ writer.WriteQualifiedName("test","urn:abc");  
+ writer.WriteEndAttribute();  
+ writer.WriteEndElement();  
+ writer.WriteEndElement();  
+ writer.Close();  
 ```  
  
 Generates the following output:  
  
 ```  
 <root xmlns:x="urn:abc">  
-<item href="#x:test"/>  
-</root>  
+ <item href="#x:test"/>  
+ </root>  
 ```  
  
 If `ns` maps to the current default namespace, no prefix is generated.  

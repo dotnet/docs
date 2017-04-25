@@ -32,19 +32,19 @@ The following configuration file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <compilation>   
-   <expressionBuilders>  
-     <add   
-       expressionPrefix="Resources"   
-       type="System.Web.Compilation.ResourceExpressionBuilder"/>  
-     <add   
-       expressionPrefix="ConnectionStrings"   
-       type="System.Web.Compilation.  
-       ConnectionStringsExpressionBuilder"/>  
-     <add expressionPrefix="AppSettings"   
-       type="System.Web.Compilation.AppSettingsExpressionBuilder" />  
-   </expressionBuilders>  
- </compilation>  
+  <compilation>   
+    <expressionBuilders>  
+      <add   
+        expressionPrefix="Resources"   
+        type="System.Web.Compilation.ResourceExpressionBuilder"/>  
+      <add   
+        expressionPrefix="ConnectionStrings"   
+        type="System.Web.Compilation.  
+        ConnectionStringsExpressionBuilder"/>  
+      <add expressionPrefix="AppSettings"   
+        type="System.Web.Compilation.AppSettingsExpressionBuilder" />  
+    </expressionBuilders>  
+  </compilation>  
 </system.web>  
 ```  
  

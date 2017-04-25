@@ -31,28 +31,28 @@ The following example shows how to replace default filters on the product entity
 ```csharp  
 MetadataType(typeof(Product_MD))]  
 public partial class Product {  
-   private class Product_MD {  
-       [FilterUIHint("MultiForeignKey")]  
-       public object Category { get; set; }  
-       [FilterUIHint("BooleanRadio")]  
-       public object Discontinued { get; set; }  
-   }  
+    private class Product_MD {  
+        [FilterUIHint("MultiForeignKey")]  
+        public object Category { get; set; }  
+        [FilterUIHint("BooleanRadio")]  
+        public object Discontinued { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(Product_MD))>  _  
 Public Class Product  
-   Private Class Product_MD  
-       <FilterUIHint("MultiForeignKey")>  _  
-       Public Property Category As Object  
-       End Property  
- 
-       <FilterUIHint("BooleanRadio")>  _  
-       Public Property Discontinued As Object  
-       End Property  
- 
-   End Class  
+    Private Class Product_MD  
+        <FilterUIHint("MultiForeignKey")>  _  
+        Public Property Category As Object  
+        End Property  
+  
+        <FilterUIHint("BooleanRadio")>  _  
+        Public Property Discontinued As Object  
+        End Property  
+  
+    End Class  
 End Class  
 ```  
  
@@ -89,28 +89,28 @@ The following example shows how to replace default filters on the product entity
 ```csharp  
 MetadataType(typeof(Product_MD))]  
 public partial class Product {  
-   private class Product_MD {  
-       [FilterUIHint("MultiForeignKey")]  
-       public object Category { get; set; }  
-       [FilterUIHint("BooleanRadio")]  
-       public object Discontinued { get; set; }  
-   }  
+    private class Product_MD {  
+        [FilterUIHint("MultiForeignKey")]  
+        public object Category { get; set; }  
+        [FilterUIHint("BooleanRadio")]  
+        public object Discontinued { get; set; }  
+    }  
 }  
 ```  
  
 ```vb  
 <MetadataType(GetType(Product_MD))>  _  
 Public Class Product  
-   Private Class Product_MD  
-       <FilterUIHint("MultiForeignKey")>  _  
-       Public Property Category As Object  
-       End Property  
- 
-       <FilterUIHint("BooleanRadio")>  _  
-       Public Property Discontinued As Object  
-       End Property  
- 
-   End Class  
+    Private Class Product_MD  
+        <FilterUIHint("MultiForeignKey")>  _  
+        Public Property Category As Object  
+        End Property  
+  
+        <FilterUIHint("BooleanRadio")>  _  
+        Public Property Discontinued As Object  
+        End Property  
+  
+    End Class  
 End Class  
 ```  
  

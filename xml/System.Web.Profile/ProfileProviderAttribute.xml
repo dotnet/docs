@@ -25,42 +25,42 @@ The <xref:System.Web.Profile.ProfileProviderAttribute> class is used to identify
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString=  
-     "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx"  
-       name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <authorization>  
-     <deny users="?" />  
-   </authorization>  
- 
-   <profile inherits="Samples.AspNet.Profile.EmployeeProfile"  
-     defaultProvider="SqlProvider">  
-     <providers>  
-       <clear />  
-       <add  
-         name="SqlProvider"  
-         type="System.Web.Profile.SqlProfileProvider"   
-         connectionStringName="SqlServices"   
-         description="SQL Profile Provider for Sample"/>   
-       <add  
-         name="EmployeeInfoProvider"  
-         type="System.Web.Profile.SqlProfileProvider"   
-         connectionStringName="SqlServices"   
-         description="SQL Profile Provider for Employee Info"/>   
-     </providers>  
- 
-     <properties>  
-       <add name="GarmentSize" />  
-     </properties>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString=  
+      "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx"  
+        name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <authorization>  
+      <deny users="?" />  
+    </authorization>  
+  
+    <profile inherits="Samples.AspNet.Profile.EmployeeProfile"  
+      defaultProvider="SqlProvider">  
+      <providers>  
+        <clear />  
+        <add  
+          name="SqlProvider"  
+          type="System.Web.Profile.SqlProfileProvider"   
+          connectionStringName="SqlServices"   
+          description="SQL Profile Provider for Sample"/>   
+        <add  
+          name="EmployeeInfoProvider"  
+          type="System.Web.Profile.SqlProfileProvider"   
+          connectionStringName="SqlServices"   
+          description="SQL Profile Provider for Employee Info"/>   
+      </providers>  
+  
+      <properties>  
+        <add name="GarmentSize" />  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  

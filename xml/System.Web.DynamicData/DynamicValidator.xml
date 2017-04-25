@@ -37,35 +37,35 @@ The following example shows how to create a <xref:System.Web.DynamicData.Dynamic
 ''' Display other exceptions in all pages.   
 ''' </summary>   
 Public Class MyDynamicValidator   
-   Inherits DynamicValidator   
- 
-   Protected Overloads Overrides Sub ValidateException(ByVal exception As Exception)   
-       ' If it's not an exception that DynamicValidator displays find   
-       ' the innermost exception.   
-       If Not (TypeOf exception Is IDynamicValidatorException) AndAlso _  
-               Not (TypeOf exception Is ValidationException) Then   
-           While exception.InnerException IsNot Nothing   
-               exception = exception.InnerException   
-           End While   
- 
-           ' Wrap it in a ValidationException so that the base code   
-           ' does not ignore it.   
-           If ExceptionShouldBeDisplayedInPage(exception) Then   
-               exception = New ValidationException(Nothing, exception)   
-           End If   
-       End If   
- 
-       ' Call the base class for the exception that is modified.  
-       MyBase.ValidateException(exception)   
-   End Sub   
- 
-   Private Function ExceptionShouldBeDisplayedInPage(ByVal e As Exception) _  
-           As Boolean   
-       ' Add code to find the exception and   
-       ' decide whether it should be shown in the page.  
- 
-       Return True   
-   End Function   
+    Inherits DynamicValidator   
+  
+    Protected Overloads Overrides Sub ValidateException(ByVal exception As Exception)   
+        ' If it's not an exception that DynamicValidator displays find   
+        ' the innermost exception.   
+        If Not (TypeOf exception Is IDynamicValidatorException) AndAlso _  
+                Not (TypeOf exception Is ValidationException) Then   
+            While exception.InnerException IsNot Nothing   
+                exception = exception.InnerException   
+            End While   
+  
+            ' Wrap it in a ValidationException so that the base code   
+            ' does not ignore it.   
+            If ExceptionShouldBeDisplayedInPage(exception) Then   
+                exception = New ValidationException(Nothing, exception)   
+            End If   
+        End If   
+  
+        ' Call the base class for the exception that is modified.  
+        MyBase.ValidateException(exception)   
+    End Sub   
+  
+    Private Function ExceptionShouldBeDisplayedInPage(ByVal e As Exception) _  
+            As Boolean   
+        ' Add code to find the exception and   
+        ' decide whether it should be shown in the page.  
+  
+        Return True   
+    End Function   
 End Class  
 ```  
  
@@ -76,33 +76,33 @@ End Class
 /// Display other exceptions in all pages.   
 /// </summary>  
 public class MyDynamicValidator : DynamicValidator {  
- 
-   protected override void ValidateException(Exception exception) {  
-       // If it's not an exception that DynamicValidator displays find   
-       // the innermost exception.  
-       if (!(exception is IDynamicValidatorException) && !(exception   
-             is ValidationException)) {  
-           while (exception.InnerException != null) {  
-               exception = exception.InnerException;  
-           }  
- 
-           // Wrap it in a ValidationException so that the base code   
-           // does not ignore it.  
-           if (ExceptionShouldBeDisplayedInPage(exception)) {  
-               exception = new ValidationException(null, exception);  
-           }  
-       }  
- 
-       // Call the base class on the exception that is modified.  
-       base.ValidateException(exception);  
-   }  
- 
-   private bool ExceptionShouldBeDisplayedInPage(Exception e) {  
-       // Add your code to find the exception and  
-       // decides whether it should be shown in the page.  
- 
-          return true;  
-   }  
+  
+    protected override void ValidateException(Exception exception) {  
+        // If it's not an exception that DynamicValidator displays find   
+        // the innermost exception.  
+        if (!(exception is IDynamicValidatorException) && !(exception   
+              is ValidationException)) {  
+            while (exception.InnerException != null) {  
+                exception = exception.InnerException;  
+            }  
+  
+            // Wrap it in a ValidationException so that the base code   
+            // does not ignore it.  
+            if (ExceptionShouldBeDisplayedInPage(exception)) {  
+                exception = new ValidationException(null, exception);  
+            }  
+        }  
+  
+        // Call the base class on the exception that is modified.  
+        base.ValidateException(exception);  
+    }  
+  
+    private bool ExceptionShouldBeDisplayedInPage(Exception e) {  
+        // Add your code to find the exception and  
+        // decides whether it should be shown in the page.  
+  
+           return true;  
+    }  
 }  
 ```  
  
@@ -110,10 +110,10 @@ The following example shows how to use tag remapping in the web.config file to d
  
 ```  
 <pages>  
- <tagMapping>  
-   <add tagType="System.Web.DynamicData.DynamicValidator"   
-       mappedTagType="MyDynamicValidator"/>  
- </tagMapping>  
+  <tagMapping>  
+    <add tagType="System.Web.DynamicData.DynamicValidator"   
+        mappedTagType="MyDynamicValidator"/>  
+  </tagMapping>  
 </pages>  
 ```  
  

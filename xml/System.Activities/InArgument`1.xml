@@ -35,12 +35,12 @@ In this example, a workflow is created that consists of a single <xref:System.Ac
  
 ```csharp  
 Activity wf = new WriteLine();  
- 
+  
 Dictionary<string, object> wfParams = new Dictionary<string, object>();  
 wfParams.Add("Text", "Hello World!");  
- 
+  
 WorkflowInvoker.Invoke(wf, wfParams);  
- 
+  
 ```  
  
  ]]></format>

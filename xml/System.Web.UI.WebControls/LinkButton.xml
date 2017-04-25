@@ -82,7 +82,7 @@ By default, page validation is performed when a <xref:System.Web.UI.WebControls.
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CausesValidation="True|False"  
     CommandArgument="string"  
@@ -96,7 +96,7 @@ By default, page validation is performed when a <xref:System.Web.UI.WebControls.
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -716,11 +716,11 @@ The <xref:System.Web.UI.WebControls.LinkButton.PostBackUrl%2A> property allows y
  
 ```  
 Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load  
-       If Page.PreviousPage.IsValid Then  
-           ' Handle the post back  
-       Else  
-           Response.Write("Invalid")  
-       End If  
+        If Page.PreviousPage.IsValid Then  
+            ' Handle the post back  
+        Else  
+            Response.Write("Invalid")  
+        End If  
 End Sub  
 ```  
  

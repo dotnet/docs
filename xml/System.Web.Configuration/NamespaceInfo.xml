@@ -26,18 +26,18 @@ This example demonstrates how to specify values declaratively for properties of 
 The following configuration file example shows how to specify values declaratively for the `namespaces` section.  
  
 ```  
- 
+  
 <system.web>  
- <pages>  
-   <namespaces>  
-     <add namespace="System" />  
-     <add namespace="System.Collections" />  
-     <add namespace="System.Collections.Specialized" />  
-     <add namespace="System.ComponentModel" />  
-     <add namespace="System.Configuration" />  
-     <add namespace="System.Web" />  
-   </namespaces>  
- </pages>  
+  <pages>  
+    <namespaces>  
+      <add namespace="System" />  
+      <add namespace="System.Collections" />  
+      <add namespace="System.Collections.Specialized" />  
+      <add namespace="System.ComponentModel" />  
+      <add namespace="System.Configuration" />  
+      <add namespace="System.Web" />  
+    </namespaces>  
+  </pages>  
 </system.web>  
 ```  
  

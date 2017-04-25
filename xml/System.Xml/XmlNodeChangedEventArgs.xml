@@ -34,7 +34,7 @@ doc.NodeInserted += new XmlNodeChangedEventHandler(NodeInsertedHandler);
 //Define the event handler.  
 void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)  
 {  
-Console.WriteLine("Node " + args.Node.Name + " inserted!!");  
+ Console.WriteLine("Node " + args.Node.Name + " inserted!!");  
 }  
 ```  
  

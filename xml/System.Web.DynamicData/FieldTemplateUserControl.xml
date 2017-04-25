@@ -36,35 +36,35 @@ The following example shows the code file for the ForeignKey.ascx user control.
  
 ```vb  
 Public Partial Class ForeignKeyField   
-   Inherits System.Web.DynamicData.FieldTemplateUserControl   
- 
-   Protected Function GetDisplayString() As String   
-       Return FormatFieldValue( _  
-           ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue))   
-   End Function   
- 
-   Public Overloads Overrides ReadOnly Property DataControl() As Control   
-       Get   
-           Return HyperLink1   
-       End Get   
-   End Property   
+    Inherits System.Web.DynamicData.FieldTemplateUserControl   
+  
+    Protected Function GetDisplayString() As String   
+        Return FormatFieldValue( _  
+            ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue))   
+    End Function   
+  
+    Public Overloads Overrides ReadOnly Property DataControl() As Control   
+        Get   
+            Return HyperLink1   
+        End Get   
+    End Property   
 End Class   
 ```  
  
 ```csharp  
 public partial class ForeignKeyField :   
-                       System.Web.DynamicData.FieldTemplateUserControl   
+                        System.Web.DynamicData.FieldTemplateUserControl   
 {  
-   protected string GetDisplayString()   
-   {  
-      Return         FormatFieldValue(ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue));  
- 
-   public override Control DataControl   
-   {  
-       get   
-       {  
-         return HyperLink1;  
-   }  
+    protected string GetDisplayString()   
+    {  
+       Return         FormatFieldValue(ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue));  
+  
+    public override Control DataControl   
+    {  
+        get   
+        {  
+          return HyperLink1;  
+    }  
 }  
 ```  
  
@@ -72,16 +72,16 @@ The following example shows the ForeignKey.aspx file.
  
 ```vb  
 <%@ Control Language="VB" CodeFile="ForeignKey.ascx.vb" Inherits="ForeignKeyField" %>  
- 
+  
 <asp:HyperLink ID="HyperLink1" runat="server"  
-   Text="<%# GetDisplayString() %>" />  
+    Text="<%# GetDisplayString() %>" />  
 ```  
  
 ```csharp  
 <%@ Control Language="C#" CodeFile="ForeignKey.ascx.cs" Inherits="ForeignKeyField" %>  
- 
+  
 <asp:HyperLink ID="HyperLink1" runat="server"  
-   Text="<%# GetDisplayString() %>" />  
+    Text="<%# GetDisplayString() %>" />  
 ```  
  
 To compile the example code, you need the following:  

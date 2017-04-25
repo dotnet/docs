@@ -140,7 +140,7 @@ For information about how to configure this control so that it generates markup 
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CancelButtonImageUrl="uri"  
     CancelButtonText="string"  
@@ -166,7 +166,7 @@ For information about how to configure this control so that it generates markup 
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -206,26 +206,26 @@ For information about how to configure this control so that it generates markup 
         <CancelButtonStyle />  
         <FinishCompleteButtonStyle />  
         <FinishNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </FinishNavigationTemplate>  
         <FinishPreviousButtonStyle />  
         <HeaderStyle />  
         <HeaderTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </HeaderTemplate>  
         <NavigationButtonStyle />  
         <NavigationStyle />  
         <SideBarButtonStyle />  
         <SideBarStyle />  
         <SideBarTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </SideBarTemplate>  
         <StartNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </StartNavigationTemplate>  
         <StartNextButtonStyle />  
         <StepNavigationTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </StepNavigationTemplate>  
         <StepNextButtonStyle />  
         <StepPreviousButtonStyle />  
@@ -252,10 +252,10 @@ For information about how to configure this control so that it generates markup 
                     Visible="True|False"  
 >  
                         <ContentTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ContentTemplate>  
                         <CustomNavigationTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </CustomNavigationTemplate>  
                 </asp:TemplatedWizardStep>  
                 <asp:WizardStep  
@@ -2857,16 +2857,16 @@ The following example shows how to add a <xref:System.Web.UI.WebControls.ListVie
  
 ```  
 <SideBarTemplate>  
- <asp:ListView ID="sideBarList" runat="server">  
-   <LayoutTemplate>  
-   <div id="ItemPlaceHolder" runat="server"/>  
-   </LayoutTemplate>  
- 
-   <ItemTemplate>  
-     <asp:LinkButton ID="sideBarButton" runat="server"   
-         Text="Button" />  
-   </ItemTemplate>  
- </asp:ListView>  
+  <asp:ListView ID="sideBarList" runat="server">  
+    <LayoutTemplate>  
+    <div id="ItemPlaceHolder" runat="server"/>  
+    </LayoutTemplate>  
+  
+    <ItemTemplate>  
+      <asp:LinkButton ID="sideBarButton" runat="server"   
+          Text="Button" />  
+    </ItemTemplate>  
+  </asp:ListView>  
 </SideBarTemplate>  
 ```  
  

@@ -221,7 +221,7 @@ The <xref:System.Resources.ResourceReader.%23ctor%28System.IO.Stream%29> constru
 The example in this section uses the following .txt file named `PatientForm.txt` to define the resources used by an application.  
  
 ```  
- 
+  
 Title="Top Pet Animal Clinic"  
 Label1="Patient Number:"  
 Label2="Pet Name:"  
@@ -234,7 +234,7 @@ Label8="Address:"
 Label9="Home Phone:"  
 Label10="Work Phone:"  
 Label11="Mobile Phone:"  
- 
+  
 ```  
  
 You can compile the .txt file into a .resources file by issuing the following command:  
@@ -303,7 +303,7 @@ The <xref:System.Resources.ResourceReader.%23ctor%28System.String%29> constructo
 The example in this section uses the following .txt file named `PatientForm.txt` to define the resources used by an application.  
  
 ```  
- 
+  
 Title="Top Pet Animal Clinic"  
 Label1="Patient Number:"  
 Label2="Pet Name:"  
@@ -316,7 +316,7 @@ Label8="Address:"
 Label9="Home Phone:"  
 Label10="Work Phone:"  
 Label11="Mobile Phone:"  
- 
+  
 ```  
  
 You can compile this .txt file into a .resources file by issuing the following command:  
@@ -469,7 +469,7 @@ You can handle the exception by calling the <xref:System.Resources.ResourceReade
 The example in this section uses the following .txt file named `PatientForm.txt` to define the resources used by an application.  
  
 ```  
- 
+  
 Title="Top Pet Animal Clinic"  
 Label1="Patient Number:"  
 Label2="Pet Name:"  
@@ -482,7 +482,7 @@ Label8="Address:"
 Label9="Home Phone:"  
 Label10="Work Phone:"  
 Label11="Mobile Phone:"  
- 
+  
 ```  
  
 You can compile the .txt file into a .resources file by issuing the following command:  

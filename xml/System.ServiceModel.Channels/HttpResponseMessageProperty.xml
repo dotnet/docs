@@ -260,27 +260,27 @@ The following code shows an example of how to do this.
 ```  
 public class Service1 : IService1  
 {  
-  public void GetData()  
-  {  
-     HttpContext hc = HttpContext.Current;  
-     string str = @"<?xml version=""1.0"" encoding=""utf-8"" ?>";  
-     byte[] buffer = new byte[str.Length];  
-     buffer = ASCIIEncoding.UTF8.GetBytes(str);  
- 
-     // enable the property  
-     HttpResponseMessageProperty responseProperty = new HttpResponseMessageProperty();  
-     responseProperty.SuppressPreamble = true;  
-     OperationContext.Current.OutgoingMessageProperties[HttpResponseMessageProperty.Name] = responseProperty;  
- 
-     // set the response   
-     hc.Response.StatusCode = 200;  
-     hc.Response.ContentType = "text/xml; charset=utf-8";  
-     hc.Response.ClearContent();  
+   public void GetData()  
+   {  
+      HttpContext hc = HttpContext.Current;  
+      string str = @"<?xml version=""1.0"" encoding=""utf-8"" ?>";  
+      byte[] buffer = new byte[str.Length];  
+      buffer = ASCIIEncoding.UTF8.GetBytes(str);  
+  
+      // enable the property  
+      HttpResponseMessageProperty responseProperty = new HttpResponseMessageProperty();  
+      responseProperty.SuppressPreamble = true;  
+      OperationContext.Current.OutgoingMessageProperties[HttpResponseMessageProperty.Name] = responseProperty;  
+  
+      // set the response   
+      hc.Response.StatusCode = 200;  
+      hc.Response.ContentType = "text/xml; charset=utf-8";  
+      hc.Response.ClearContent();  
+      hc.Response.Flush();  
+  
+      hc.Response.OutputStream.Write(buffer, 0, buffer.Length);  
      hc.Response.Flush();  
- 
-     hc.Response.OutputStream.Write(buffer, 0, buffer.Length);  
-    hc.Response.Flush();  
-  }  
+   }  
 }  
 ```  
  

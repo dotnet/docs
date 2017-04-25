@@ -420,8 +420,8 @@ To use the custom `ChtmlSimplelabelAdapter` adapter, add the following code to e
  
 ```  
 <controlAdapters>  
-  <adapter controlType="AspNet.Samples.SimpleLabel"  
-  adapterType="AspNet.Samples.ChtmlSimpleLabelAdapter" />  
+   <adapter controlType="AspNet.Samples.SimpleLabel"  
+   adapterType="AspNet.Samples.ChtmlSimpleLabelAdapter" />  
 </controlAdapters>  
 ```  
  

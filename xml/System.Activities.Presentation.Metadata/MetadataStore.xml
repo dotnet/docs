@@ -26,21 +26,21 @@ The following code example shows how to associate the `AcitivityDesigner1` custo
 ```  
 internal class Metadata : IRegisterMetadata  
 {  
-   private AttributeTable attributes;  
- 
-   // Called by the designer to register any design-time metadata.  
-   public void Register()  
-   {  
-       AttributeTableBuilder builder = new AttributeTableBuilder();  
- 
-       // Add the custom attributes to associate the ActivityDesigner1 custom designer  
-       // with the custom activity MyActivity.  
-       builder.AddCustomAttributes(  
-           typeof(MyActivity),  
-           new DesignerAttribute(typeof(ActivityDesigner1)));  
-       MetadataStore.AddAttributeTable(builder.CreateTable());  
- 
-   }  
+    private AttributeTable attributes;  
+  
+    // Called by the designer to register any design-time metadata.  
+    public void Register()  
+    {  
+        AttributeTableBuilder builder = new AttributeTableBuilder();  
+  
+        // Add the custom attributes to associate the ActivityDesigner1 custom designer  
+        // with the custom activity MyActivity.  
+        builder.AddCustomAttributes(  
+            typeof(MyActivity),  
+            new DesignerAttribute(typeof(ActivityDesigner1)));  
+        MetadataStore.AddAttributeTable(builder.CreateTable());  
+  
+    }  
 }  
 ```  
  

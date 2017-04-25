@@ -31,77 +31,77 @@ The following example is a configuration file excerpt that shows how to specify 
  
 ```  
 <system.web>  
- <healthMonitoring  
-   enabled="true"  
-   heartBeatInterval="0">  
-   <bufferModes>  
-     <add name="Critical Notification"  
-       maxBufferSize="100"  
-       maxFlushSize="20"  
-       urgentFlushThreshold="1"  
-       regularFlushInterval="Infinite"  
-       urgentFlushInterval="00:01:00"  
-       maxBufferThreads="1"  
-     />  
-   </bufferModes>  
-   <providers>  
-     <add name="CriticalMailEventProvider"  
-       type="System.Web.Management.TemplatedMailWebEventProvider,   
-       System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral,   
-       PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
-       template="../mailtemplates/critical.aspx"  
-       from="sender address"  
-       to="someone@example.com"   
-       cc="someone@example.com"  
-       bcc="someone@example.com"  
-       priority="High"  
-       bodyHeader="Warning!"  
-       bodyFooter="Please investigate ASAP."  
-       subjectPrefix="Action required."  
-       buffer="true"  
-       bufferMode="Critical Notification"  
-       maxEventLength="4096"  
-       maxSize="4096"  
-       maxMessagesPerNotification="1"  
-     />  
-   </providers>  
-   <eventMappings>  
-     <add name="Request Processing Events"  
-       type="System.Web.Management.WebRequestEvent, System.Web",   
-       Version=%ASSEMBLY_VERSION%, Culture=neutral,   
-       PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-     />  
-     <add name="Infrastructure Errors"  
-       type="System.Web.Management.WebErrorEvent, System.Web,   
-       Version=%ASSEMBLY_VERSION%, Culture=neutral,   
-       PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-     />  
-   </eventMappings>  
-   <profiles>  
-     <add name="Default"  
-       minInstances="1"  
-       maxLimit="Infinite"  
-       minInterval="00:10:00"  
-     />  
-     <add name="Critical"  
-       minInstances="1"  
-       maxLimit="1024"  
-       minInterval="00:00:00"  
-     />  
-   </profiles>  
-   <rules>  
-     <add name="Request Processing Errors"  
-       eventName="Request Processing Errors"  
-       provider="CriticalMailEventProvider"  
-       profile="Default"  
-     />  
-     <add name="Infrastructure Notifications"  
-       eventName="Infrastructure Errors"  
-       provider="CriticalMailEventProvider"  
-       profile="Critical"  
-     />  
-   </rules>  
- </healthMonitoring>   
+  <healthMonitoring  
+    enabled="true"  
+    heartBeatInterval="0">  
+    <bufferModes>  
+      <add name="Critical Notification"  
+        maxBufferSize="100"  
+        maxFlushSize="20"  
+        urgentFlushThreshold="1"  
+        regularFlushInterval="Infinite"  
+        urgentFlushInterval="00:01:00"  
+        maxBufferThreads="1"  
+      />  
+    </bufferModes>  
+    <providers>  
+      <add name="CriticalMailEventProvider"  
+        type="System.Web.Management.TemplatedMailWebEventProvider,   
+        System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral,   
+        PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+        template="../mailtemplates/critical.aspx"  
+        from="sender address"  
+        to="someone@example.com"   
+        cc="someone@example.com"  
+        bcc="someone@example.com"  
+        priority="High"  
+        bodyHeader="Warning!"  
+        bodyFooter="Please investigate ASAP."  
+        subjectPrefix="Action required."  
+        buffer="true"  
+        bufferMode="Critical Notification"  
+        maxEventLength="4096"  
+        maxSize="4096"  
+        maxMessagesPerNotification="1"  
+      />  
+    </providers>  
+    <eventMappings>  
+      <add name="Request Processing Events"  
+        type="System.Web.Management.WebRequestEvent, System.Web",   
+        Version=%ASSEMBLY_VERSION%, Culture=neutral,   
+        PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+      />  
+      <add name="Infrastructure Errors"  
+        type="System.Web.Management.WebErrorEvent, System.Web,   
+        Version=%ASSEMBLY_VERSION%, Culture=neutral,   
+        PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+      />  
+    </eventMappings>  
+    <profiles>  
+      <add name="Default"  
+        minInstances="1"  
+        maxLimit="Infinite"  
+        minInterval="00:10:00"  
+      />  
+      <add name="Critical"  
+        minInstances="1"  
+        maxLimit="1024"  
+        minInterval="00:00:00"  
+      />  
+    </profiles>  
+    <rules>  
+      <add name="Request Processing Errors"  
+        eventName="Request Processing Errors"  
+        provider="CriticalMailEventProvider"  
+        profile="Default"  
+      />  
+      <add name="Infrastructure Notifications"  
+        eventName="Infrastructure Errors"  
+        provider="CriticalMailEventProvider"  
+        profile="Critical"  
+      />  
+    </rules>  
+  </healthMonitoring>   
 </system.web>  
 ```  
  

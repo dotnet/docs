@@ -312,45 +312,45 @@ The following table lists the cultures that support alternate sort orders and th
 In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-only. You can set the current culture and current UI culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current culture and current UI culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, both property values reflect the new value of the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property.  
  
 ```csharp  
- 
+  
 ResourceContext context = ResourceManager.Current.DefaultContext;  
 var list = new List<String>();  
 if (CultureInfo.CurrentCulture.Name == "en-US")  
-  list.Add("fr-FR");  
+   list.Add("fr-FR");  
 else  
-  list.Add("en-US");  
- 
+   list.Add("en-US");  
+  
 context.Languages = list;  
 block.Text += String.Format("\nThe current culture is {0}\n",  
-                           CultureInfo.CurrentCulture);  
+                            CultureInfo.CurrentCulture);  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture);  
+                            CultureInfo.CurrentUICulture);  
 // The example displays output like the following if run on a system  
 // whose current culture is English (United States):  
 // The current culture is fr-FR  
 // The current UI culture is fr-FR  
- 
+  
 ```  
  
 ```  
- 
+  
 Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
 Dim list As New List(Of String)()  
 If CultureInfo.CurrentCulture.Name = "en-US" Then  
-  list.Add("fr-FR")  
+   list.Add("fr-FR")  
 Else  
-  list.Add("en-US")  
+   list.Add("en-US")  
 End If  
 context.Languages = list  
 block.Text += String.Format("{1}The current culture is {0}{1}",  
-                           CultureInfo.CurrentCulture, vbCrLf)  
+                            CultureInfo.CurrentCulture, vbCrLf)  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture)  
+                            CultureInfo.CurrentUICulture)  
 ' The example displays output Like the following if run on a system  
 ' whose current culture Is English (United States):  
 '    The current culture Is fr-FR  
 '    The current UI culture Is fr-FR  
- 
+  
 ```  
  
   
@@ -1028,45 +1028,45 @@ In some cases, particularly for server applications, setting the current culture
 In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property is read-only. You can set the current culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, the current culture changes when the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property changes.  
  
 ```csharp  
- 
+  
 ResourceContext context = ResourceManager.Current.DefaultContext;  
 var list = new List<String>();  
 if (CultureInfo.CurrentCulture.Name == "en-US")  
-  list.Add("fr-FR");  
+   list.Add("fr-FR");  
 else  
-  list.Add("en-US");  
- 
+   list.Add("en-US");  
+  
 context.Languages = list;  
 block.Text += String.Format("\nThe current culture is {0}\n",  
-                           CultureInfo.CurrentCulture);  
+                            CultureInfo.CurrentCulture);  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture);  
+                            CultureInfo.CurrentUICulture);  
 // The example displays output like the following if run on a system  
 // whose current culture is English (United States):  
 // The current culture is fr-FR  
 // The current UI culture is fr-FR  
- 
+  
 ```  
  
 ```  
- 
+  
 Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
 Dim list As New List(Of String)()  
 If CultureInfo.CurrentCulture.Name = "en-US" Then  
-  list.Add("fr-FR")  
+   list.Add("fr-FR")  
 Else  
-  list.Add("en-US")  
+   list.Add("en-US")  
 End If  
 context.Languages = list  
 block.Text += String.Format("{1}The current culture is {0}{1}",  
-                           CultureInfo.CurrentCulture, vbCrLf)  
+                            CultureInfo.CurrentCulture, vbCrLf)  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture)  
+                            CultureInfo.CurrentUICulture)  
 ' The example displays output Like the following if run on a system  
 ' whose current culture Is English (United States):  
 '    The current culture Is fr-FR  
 '    The current UI culture Is fr-FR  
- 
+  
 ```  
  
   
@@ -1184,45 +1184,45 @@ Changing the culture of the current thread requires a <xref:System.Security.Perm
 In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is read-only. You can set the current UI culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current UI culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, the current UI culture changes when the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property changes.  
  
 ```csharp  
- 
+  
 ResourceContext context = ResourceManager.Current.DefaultContext;  
 var list = new List<String>();  
 if (CultureInfo.CurrentCulture.Name == "en-US")  
-  list.Add("fr-FR");  
+   list.Add("fr-FR");  
 else  
-  list.Add("en-US");  
- 
+   list.Add("en-US");  
+  
 context.Languages = list;  
 block.Text += String.Format("\nThe current culture is {0}\n",  
-                           CultureInfo.CurrentCulture);  
+                            CultureInfo.CurrentCulture);  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture);  
+                            CultureInfo.CurrentUICulture);  
 // The example displays output like the following if run on a system  
 // whose current culture is English (United States):  
 // The current culture is fr-FR  
 // The current UI culture is fr-FR  
- 
+  
 ```  
  
 ```  
- 
+  
 Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
 Dim list As New List(Of String)()  
 If CultureInfo.CurrentCulture.Name = "en-US" Then  
-  list.Add("fr-FR")  
+   list.Add("fr-FR")  
 Else  
-  list.Add("en-US")  
+   list.Add("en-US")  
 End If  
 context.Languages = list  
 block.Text += String.Format("{1}The current culture is {0}{1}",  
-                           CultureInfo.CurrentCulture, vbCrLf)  
+                            CultureInfo.CurrentCulture, vbCrLf)  
 block.Text += String.Format("The current culture UI is {0}\n",  
-                           CultureInfo.CurrentUICulture)  
+                            CultureInfo.CurrentUICulture)  
 ' The example displays output Like the following if run on a system  
 ' whose current culture Is English (United States):  
 '    The current culture Is fr-FR  
 '    The current UI culture Is fr-FR  
- 
+  
 ```  
  
   

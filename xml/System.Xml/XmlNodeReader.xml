@@ -771,9 +771,9 @@ In the following XML string, if the reader is positioned on the `href` attribute
  
 ```  
 <root xmlns:a="urn:456">  
-<item>  
-<ref href="a:b"/>  
-</item>  
+ <item>  
+ <ref href="a:b"/>  
+ </item>  
 </root>  
 ```  
  
@@ -1833,11 +1833,11 @@ For example, suppose you have the following XML input:
  
 ```  
 <a name="bob" age="123">  
-  <x/>abc<y/>  
-</a>  
-<b>  
+   <x/>abc<y/>  
+ </a>  
+ <b>  
 ...  
-</b>  
+ </b>  
 ```  
  
 If the reader is positioned on the "\<a>" node or any of its attributes, calling `Skip` positions the reader to the "\<b>" node.  

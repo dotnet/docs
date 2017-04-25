@@ -366,8 +366,8 @@ To create an instance of a COM component, assign the object returned by `CreateO
  
 ```vb  
 Sub CreateADODB()  
-  Dim adoApp As Object  
-  adoApp = CreateObject("ADODB.Connection")  
+   Dim adoApp As Object  
+   adoApp = CreateObject("ADODB.Connection")  
 End Sub  
 ```  
  
@@ -390,10 +390,10 @@ The following code returns the version number of an instance of Excel running on
  
 ```vb  
 Sub CreateRemoteExcelObj()  
-   Dim xlApp As Object  
-   ' Replace string "\\MyServer" with name of the remote computer.  
-   xlApp = CreateObject("Excel.Application", "\\MyServer")  
-   MsgBox(xlApp.Version)  
+    Dim xlApp As Object  
+    ' Replace string "\\MyServer" with name of the remote computer.  
+    xlApp = CreateObject("Excel.Application", "\\MyServer")  
+    MsgBox(xlApp.Version)  
 End Sub  
 ```  
  
@@ -1170,10 +1170,10 @@ procID = newProc.Id
 newProc.WaitForExit()  
 Dim procEC As Integer = -1  
 If newProc.HasExited Then  
-   procEC = newProc.ExitCode  
+    procEC = newProc.ExitCode  
 End If  
 MsgBox("Process with ID " & CStr(ProcID) & _  
-   " terminated with exit code " & CStr(procEC))  
+    " terminated with exit code " & CStr(procEC))  
 ```  
  
 ## Protecting the File Specification  

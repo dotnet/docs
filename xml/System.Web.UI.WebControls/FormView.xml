@@ -190,7 +190,7 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
     BackImageUrl="uri"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     Caption="string"  
     CaptionAlign="NotSet|Top|Bottom|Left|Right"  
@@ -211,7 +211,7 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     FooterText="string"  
@@ -246,7 +246,7 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
     PagerSettings-LastPageImageUrl="uri"  
     PagerSettings-LastPageText="string"  
     PagerSettings-Mode="NextPrevious|Numeric|NextPreviousFirstLast|  
-       NumericFirstLast"  
+        NumericFirstLast"  
     PagerSettings-NextPageImageUrl="uri"  
     PagerSettings-NextPageText="string"  
     PagerSettings-PageButtonCount="integer"  
@@ -264,27 +264,27 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
     Width="size"  
 >  
         <EditItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </EditItemTemplate>  
         <EditRowStyle />  
         <EmptyDataRowStyle />  
         <EmptyDataTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </EmptyDataTemplate>  
         <FooterStyle />  
         <FooterTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </FooterTemplate>  
         <HeaderStyle />  
         <HeaderTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </HeaderTemplate>  
         <InsertItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </InsertItemTemplate>  
         <InsertRowStyle />  
         <ItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </ItemTemplate>  
         <PagerSettings  
             FirstPageImageUrl="uri"  
@@ -292,7 +292,7 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
             LastPageImageUrl="uri"  
             LastPageText="string"  
             Mode="NextPrevious|Numeric|NextPreviousFirstLast|  
-               NumericFirstLast"  
+                NumericFirstLast"  
             NextPageImageUrl="uri"  
             NextPageText="string"  
             OnPropertyChanged="PropertyChanged event handler"  
@@ -304,7 +304,7 @@ The <xref:System.Web.UI.WebControls.FormView> control lets you specify CSS style
         />  
         <PagerStyle />  
         <PagerTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </PagerTemplate>  
         <RowStyle />  
 </asp:FormView>  

@@ -111,14 +111,14 @@ The following example demonstrates how to create a master page declaratively and
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
 <html >  
 <head runat="server">  
-   <title>MasterPage Example</title>  
+    <title>MasterPage Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
@@ -128,14 +128,14 @@ The following example demonstrates how to create a master page declaratively and
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
 <html >  
 <head runat="server">  
-   <title>MasterPage Example</title>  
+    <title>MasterPage Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
@@ -144,70 +144,70 @@ The following example represents the content page that is associated with `Maste
  
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/MasterPageSample_1cs.master" Title="Content Page"%>  
- 
+  
 <asp:content   
-   runat="server"  
-   contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
 ```  
  
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/MasterPageSample_1vb.master" Title="Content Page"%>  
- 
+  
 <asp:content   
-   runat="server"  
-   contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
 ```  
  
 The following example demonstrates how to add a property to a master page. The `ClassName` attribute is used to name the master page.  
  
 ```csharp  
 <%@ Master Language="C#" ClassName="MasterExample" %>  
- 
+  
 <script runat="server">  
-       public string SiteName  
-       {  
-           get { return "My Site Name"; }  
-       }  
+        public string SiteName  
+        {  
+            get { return "My Site Name"; }  
+        }  
 </script>  
- 
+  
 <html >  
 <head runat="server">  
-   <title>MasterPage Example</title>  
+    <title>MasterPage Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Master Language="VB" ClassName="MasterExample" %>  
- 
+  
 <script runat="server">  
- Public ReadOnly Property SiteName() As String  
-   Get  
-     Return "My Site Name"  
-   End Get  
- End Property  
- 
+  Public ReadOnly Property SiteName() As String  
+    Get  
+      Return "My Site Name"  
+    End Get  
+  End Property  
+  
 </script>  
- 
+  
 <html >  
 <head runat="server">  
-   <title>MasterPage Example</title>  
+    <title>MasterPage Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
@@ -216,35 +216,35 @@ The following example shows how to use a content page to access the public prope
  
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
- 
+  
 <script runat="server">  
- protected void Page_Load(object sender, EventArgs e)  
- {  
-   MasterExample m = (MasterExample)Page.Master;  
-   mylabel.Text = m.SiteName;  
- }  
+  protected void Page_Load(object sender, EventArgs e)  
+  {  
+    MasterExample m = (MasterExample)Page.Master;  
+    mylabel.Text = m.SiteName;  
+  }  
 </script>  
- 
+  
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">  
-   Hello, Master Pages!  
-   <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
+    Hello, Master Pages!  
+    <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
 </asp:Content>  
 ```  
  
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
- 
+  
 <script runat="server">  
- 
- Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)  
-   Dim m As MasterExample = CType(Page.Master, MasterPage)  
-   mylabel.Text = m.SiteName  
- End Sub  
+  
+  Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)  
+    Dim m As MasterExample = CType(Page.Master, MasterPage)  
+    mylabel.Text = m.SiteName  
+  End Sub  
 </script>  
- 
+  
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">  
-   Hello, Master Pages!  
-   <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
+    Hello, Master Pages!  
+    <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
 </asp:Content>  
 ```  
  
@@ -430,42 +430,42 @@ The following code example demonstrates how to create a nested master page and r
  
 ```csharp  
 <%@ Master Language="C#" %>  
- 
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
- 
+  
 <html >  
 <head runat="server">  
-   <title>Nested Master Page Example</title>  
+    <title>Nested Master Page Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <h1>This is content in the parent master page.</h1>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <h1>This is content in the parent master page.</h1>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Master Language="VB" %>  
- 
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
- 
+  
 <html >  
 <head runat="server">  
-   <title>Nested Master Page Example</title>  
+    <title>Nested Master Page Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <h1>This is content in the parent master page.</h1>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <h1>This is content in the parent master page.</h1>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
@@ -474,25 +474,25 @@ The following code example demonstrates how to use a nested master page named `C
  
 ```csharp  
 <%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
- 
+  
 <asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-   <h2>This is the content of a nested Master Page.</h2>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
+    <h2>This is the content of a nested Master Page.</h2>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
 </asp:Content>  
 ```  
  
 ```vb  
 <%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
- 
+  
 <asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-   <h2>This is the content of a nested Master Page.</h2>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
+    <h2>This is the content of a nested Master Page.</h2>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
 </asp:Content>  
 ```  
  
@@ -500,7 +500,7 @@ The following code example demonstrates how to use a content page named `Content
  
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
- 
+  
 <asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
 This is the content of a Content control.  
 </asp:content>  
@@ -508,7 +508,7 @@ This is the content of a Content control.
  
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
- 
+  
 <asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
 This is the content of a Content control.  
 </asp:content>  
@@ -548,42 +548,42 @@ The following code example demonstrates how to create a nested master page and r
  
 ```csharp  
 <%@ Master Language="C#" %>  
- 
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
- 
+  
 <html >  
 <head runat="server">  
-   <title>Nested Master Page Example</title>  
+    <title>Nested Master Page Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <h1>This is content in the parent master page.</h1>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <h1>This is content in the parent master page.</h1>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
  
 ```vb  
 <%@ Master Language="VB" %>  
- 
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
- 
+  
 <html >  
 <head runat="server">  
-   <title>Nested Master Page Example</title>  
+    <title>Nested Master Page Example</title>  
 </head>  
 <body>  
-   <form id="form1" runat="server">  
-   <h1>This is content in the parent master page.</h1>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
-   </form>  
+    <form id="form1" runat="server">  
+    <h1>This is content in the parent master page.</h1>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
+    </form>  
 </body>  
 </html>  
 ```  
@@ -592,25 +592,25 @@ The following code example demonstrates how to use a nested master page named `C
  
 ```csharp  
 <%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
- 
+  
 <asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-   <h2>This is the content of a nested Master Page.</h2>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
+    <h2>This is the content of a nested Master Page.</h2>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
 </asp:Content>  
 ```  
  
 ```vb  
 <%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
- 
+  
 <asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-   <h2>This is the content of a nested Master Page.</h2>  
-   <div>  
-       <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-       </asp:contentplaceholder>  
-   </div>  
+    <h2>This is the content of a nested Master Page.</h2>  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
+        </asp:contentplaceholder>  
+    </div>  
 </asp:Content>  
 ```  
  
@@ -618,7 +618,7 @@ The following code example demonstrates how to use a content page named `Content
  
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
- 
+  
 <asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
 This is the content of a Content control.  
 </asp:content>  
@@ -626,7 +626,7 @@ This is the content of a Content control.
  
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
- 
+  
 <asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
 This is the content of a Content control.  
 </asp:content>  

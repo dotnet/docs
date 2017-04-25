@@ -363,22 +363,22 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleDbParameter()  
-  Dim parameter As New OracleParameter()  
-  parameter.ParameterName = "pDName"  
-  parameter.DbType = DbType.String  
-  parameter.Value = "ENGINEERING"  
-  parameter.SourceColumn = "DName"  
+   Dim parameter As New OracleParameter()  
+   parameter.ParameterName = "pDName"  
+   parameter.DbType = DbType.String  
+   parameter.Value = "ENGINEERING"  
+   parameter.SourceColumn = "DName"  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleDbParameter()   
 {  
-  OracleParameter parameter = new OracleParameter();  
-  parameter.ParameterName = "pDName";  
-  parameter.DbType = DbType.String;  
-  parameter.Value = "ENGINEERING";  
-  parameter.SourceColumn = "DName";  
+   OracleParameter parameter = new OracleParameter();  
+   parameter.ParameterName = "pDName";  
+   parameter.DbType = DbType.String;  
+   parameter.Value = "ENGINEERING";  
+   parameter.SourceColumn = "DName";  
 }  
 ```  
  
@@ -416,18 +416,18 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleParameter()  
-  Dim parameter As New OracleParameter("DName", OracleType.VarChar, 14)  
-  parameter.IsNullable = True  
-  parameter.Direction = ParameterDirection.Output  
+   Dim parameter As New OracleParameter("DName", OracleType.VarChar, 14)  
+   parameter.IsNullable = True  
+   parameter.Direction = ParameterDirection.Output  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleParameter()   
 {  
-  OracleParameter parameter = new OracleParameter("DName", OracleType.VarChar, 14);  
-  parameter.IsNullable = true;  
-  parameter.Direction = ParameterDirection.Output;  
+   OracleParameter parameter = new OracleParameter("DName", OracleType.VarChar, 14);  
+   parameter.IsNullable = true;  
+   parameter.Direction = ParameterDirection.Output;  
 }  
 ```  
  
@@ -473,18 +473,18 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleParameter()  
-  Dim parameter As New OracleParameter("pDName", OracleType.VarChar)  
-  parameter.IsNullable = True  
-  parameter.Offset = 3  
+   Dim parameter As New OracleParameter("pDName", OracleType.VarChar)  
+   parameter.IsNullable = True  
+   parameter.Offset = 3  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleParameter()   
 {  
-  OracleParameter parameter = new OracleParameter("pDName", OracleType.VarChar);  
-  parameter.IsNullable = true;  
-  parameter.Offset = 3;  
+   OracleParameter parameter = new OracleParameter("pDName", OracleType.VarChar);  
+   parameter.IsNullable = true;  
+   parameter.Offset = 3;  
 }  
 ```  
  
@@ -560,22 +560,22 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleDbParameter()  
-  Dim parameter As New OracleParameter()  
-  parameter.ParameterName = "pDName"  
-  parameter.DbType = DbType.String  
-  parameter.Value = "ENGINEERING"  
-  parameter.SourceColumn = "DName"  
+   Dim parameter As New OracleParameter()  
+   parameter.ParameterName = "pDName"  
+   parameter.DbType = DbType.String  
+   parameter.Value = "ENGINEERING"  
+   parameter.SourceColumn = "DName"  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleDbParameter()   
 {  
-  OracleParameter parameter = new OracleParameter();  
-  parameter.ParameterName = "pDName";  
-  parameter.DbType = DbType.String;  
-  parameter.Value = "ENGINEERING";  
-  parameter.SourceColumn = "DName";  
+   OracleParameter parameter = new OracleParameter();  
+   parameter.ParameterName = "pDName";  
+   parameter.DbType = DbType.String;  
+   parameter.Value = "ENGINEERING";  
+   parameter.SourceColumn = "DName";  
 }  
 ```  
  
@@ -745,20 +745,20 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleParameter()  
-  Dim parameter As New OracleParameter("pDescription", OracleType.VarChar)  
-  parameter.IsNullable = True  
-  parameter.Direction = ParameterDirection.Output  
-  parameter.Size = 88  
+   Dim parameter As New OracleParameter("pDescription", OracleType.VarChar)  
+   parameter.IsNullable = True  
+   parameter.Direction = ParameterDirection.Output  
+   parameter.Size = 88  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleParameter()   
 {  
-  OracleParameter parameter = new OracleParameter("pDescription", OracleType.VarChar);  
-  parameter.IsNullable = true;  
-  parameter.Direction = ParameterDirection.Output;  
-  parameter.Size = 88;  
+   OracleParameter parameter = new OracleParameter("pDescription", OracleType.VarChar);  
+   parameter.IsNullable = true;  
+   parameter.Direction = ParameterDirection.Output;  
+   parameter.Size = 88;  
 }  
 ```  
  
@@ -794,22 +794,22 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleDbParameter()  
-  Dim parameter As New OracleParameter()  
-  parameter.ParameterName = "pDName"  
-  parameter.DbType = DbType.String  
-  parameter.Value = "ENGINEERING"  
-  parameter.SourceColumn = "DName"  
+   Dim parameter As New OracleParameter()  
+   parameter.ParameterName = "pDName"  
+   parameter.DbType = DbType.String  
+   parameter.Value = "ENGINEERING"  
+   parameter.SourceColumn = "DName"  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleDbParameter()   
 {  
-  OracleParameter parameter = new OracleParameter();  
-  parameter.ParameterName = "pDName";  
-  parameter.DbType = DbType.String;  
-  parameter.Value = "ENGINEERING";  
-  parameter.SourceColumn = "DName";  
+   OracleParameter parameter = new OracleParameter();  
+   parameter.ParameterName = "pDName";  
+   parameter.DbType = DbType.String;  
+   parameter.Value = "ENGINEERING";  
+   parameter.SourceColumn = "DName";  
 }  
 ```  
  
@@ -843,7 +843,7 @@ public void CreateOracleDbParameter()
  
 ```  
 ((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
- (FieldName = @Original_FieldName))  
+  (FieldName = @Original_FieldName))  
 ```  
  
 If <xref:System.Data.OracleClient.OracleParameter.SourceColumnNullMapping%2A> for the field is false, <xref:System.Data.OracleClient.OracleCommandBuilder> generates the following WHERE clause:  
@@ -886,22 +886,22 @@ The following example creates a <xref:System.Data.OracleClient.OracleParameter> 
  
 ```vb  
 Public Sub CreateOracleParameter()  
-  Dim parameter As New OracleParameter("pDName", OracleType.VarChar)  
-  parameter.IsNullable = True  
-  parameter.SourceColumn = "Description"  
-  parameter.SourceVersion = DataRowVersion.Current  
-  parameter.Direction = ParameterDirection.Output  
+   Dim parameter As New OracleParameter("pDName", OracleType.VarChar)  
+   parameter.IsNullable = True  
+   parameter.SourceColumn = "Description"  
+   parameter.SourceVersion = DataRowVersion.Current  
+   parameter.Direction = ParameterDirection.Output  
 End Sub  
 ```  
  
 ```csharp  
 public void CreateOracleParameter()   
 {  
-  OracleParameter parameter = new OracleParameter("pDName", OracleType.VarChar);  
-  parameter.IsNullable = true;  
-  parameter.SourceColumn = "Description";  
-  parameter.SourceVersion = DataRowVersion.Current;  
-  parameter.Direction = ParameterDirection.Output;  
+   OracleParameter parameter = new OracleParameter("pDName", OracleType.VarChar);  
+   parameter.IsNullable = true;  
+   parameter.SourceColumn = "Description";  
+   parameter.SourceVersion = DataRowVersion.Current;  
+   parameter.Direction = ParameterDirection.Output;  
 }  
 ```  
  

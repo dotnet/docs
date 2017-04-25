@@ -39,11 +39,11 @@ To set the level of your switch, edit the configuration file that corresponds to
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="true" />  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="true" />  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -118,14 +118,14 @@ Within the XML configuration file, you can add a switch and set its value, remov
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="10" />  
-     <add name="myNewSwitch" value="20" />  
-     <remove name="mySwitch" />  
-     <clear/>  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="10" />  
+      <add name="myNewSwitch" value="20" />  
+      <remove name="mySwitch" />  
+      <clear/>  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

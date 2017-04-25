@@ -103,8 +103,8 @@ The following example shows how to search the Name and the ProductNumber data fi
  
 ```  
 <asp:SearchExpression SearchType="StartsWith"   
-     DataFields="Name","ProductNumber" >  
- <asp:ControlParameter ControlID="SearchTextBox" />  
+      DataFields="Name","ProductNumber" >  
+  <asp:ControlParameter ControlID="SearchTextBox" />  
 </asp:SearchExpression>  
 ```  
  

@@ -33,8 +33,8 @@ The following code example shows how to obtain the <xref:System.Web.Configuratio
  
 ```  
 <authorization>  
- <allow users="userName" roles="admin" verbs="post" />  
- <deny users="*" verbs="post"/>  
+  <allow users="userName" roles="admin" verbs="post" />  
+  <deny users="*" verbs="post"/>  
 </authorization>  
 ```  
  

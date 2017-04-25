@@ -27,41 +27,41 @@ The following example builds a prompt containing two sentences separated by a br
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Build a prompt with two sentences separated by a break.  
-       PromptBuilder builder = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       builder.AppendText(  
-         "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45.");  
-       builder.AppendBreak(PromptBreak.Medium);  
-       builder.AppendText(  
-         "Tonight's movie showings in theater B are at 5:15, 7:30, and 9:15.");  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt with two sentences separated by a break.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45.");  
+        builder.AppendBreak(PromptBreak.Medium);  
+        builder.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:30, and 9:15.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

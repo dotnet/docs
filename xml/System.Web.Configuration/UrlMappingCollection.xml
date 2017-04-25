@@ -30,10 +30,10 @@ The following code example shows how to obtain the <xref:System.Web.Configuratio
  
 ```  
 <urlMappings enabled="true">  
- <add url= "~/home.aspx"  
-   mappedUrl="~/default.aspx?parm1=1"/>  
- <add url= "~/products.aspx"  
-   mappedUrl="~/default.aspx?parm1=2"/>  
+  <add url= "~/home.aspx"  
+    mappedUrl="~/default.aspx?parm1=1"/>  
+  <add url= "~/products.aspx"  
+    mappedUrl="~/default.aspx?parm1=2"/>  
 </urlMappings>  
 ```  
  

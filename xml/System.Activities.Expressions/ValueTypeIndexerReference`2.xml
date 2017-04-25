@@ -36,51 +36,51 @@ The following code example uses <xref:System.Activities.Expressions.ValueTypeInd
 >  Instead of instantiating the <xref:System.Activities.Expressions.ValueTypeIndexerReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
  
 ```  
- 
-   // Define a struct with an indexer.  
-   struct StructWithIndexer  
-   {  
-       string val;  
-       public string this[int index]  
-       {                  
-           get { return val; }  
-           set { val = value; }  
-       }  
-   }  
- 
-   public static void ValueTypeIndexerReferenceSample()  
-   {  
-       // Create a variable of type StructWithIndexer to store the element.  
-       var swivar = new Variable<StructWithIndexer>("swivar", new StructWithIndexer());  
- 
-       // Create the top-level activity to be invoked later.  
-       Activity myActivity = new Sequence  
-       {  
-           Variables = { swivar },  
-           Activities =   
-           {  
-               // Create an Assign activity with an element at index 1.  
-               new Assign<string>  
-               {  
-                   To = new ValueTypeIndexerReference<StructWithIndexer, string>  
-                   {  
-                       OperandLocation = swivar,  
-                       Indices = { new InArgument<int>(1) },  
-                   },  
-                   // Assign a string literal to the element at index 1.  
-                   Value = "Hello",  
-               },  
-               new WriteLine()  
-               {  
-                   Text = ExpressionServices.Convert<string>(ctx => swivar.Get(ctx)[1]),  
-               }  
-           }  
-       };  
- 
-       // Invoke the Sequence activity.  
-       WorkflowInvoker.Invoke(myActivity);  
+  
+    // Define a struct with an indexer.  
+    struct StructWithIndexer  
+    {  
+        string val;  
+        public string this[int index]  
+        {                  
+            get { return val; }  
+            set { val = value; }  
+        }  
+    }  
+  
+    public static void ValueTypeIndexerReferenceSample()  
+    {  
+        // Create a variable of type StructWithIndexer to store the element.  
+        var swivar = new Variable<StructWithIndexer>("swivar", new StructWithIndexer());  
+  
+        // Create the top-level activity to be invoked later.  
+        Activity myActivity = new Sequence  
+        {  
+            Variables = { swivar },  
+            Activities =   
+            {  
+                // Create an Assign activity with an element at index 1.  
+                new Assign<string>  
+                {  
+                    To = new ValueTypeIndexerReference<StructWithIndexer, string>  
+                    {  
+                        OperandLocation = swivar,  
+                        Indices = { new InArgument<int>(1) },  
+                    },  
+                    // Assign a string literal to the element at index 1.  
+                    Value = "Hello",  
+                },  
+                new WriteLine()  
+                {  
+                    Text = ExpressionServices.Convert<string>(ctx => swivar.Get(ctx)[1]),  
+                }  
+            }  
+        };  
+  
+        // Invoke the Sequence activity.  
+        WorkflowInvoker.Invoke(myActivity);  
 }  
- 
+  
 ```  
  
  ]]></format>

@@ -36,50 +36,50 @@ using System.Linq;
 using System.Text;  
 using System.Windows.Forms;  
 using System.Speech.Synthesis;  
- 
+  
 namespace PhonemeReached  
 {  
- public partial class Form1 : Form  
- {  
- 
-   public Form1()  
-   {  
-     InitializeComponent();  
-     textBox1.Text = "";  
-   }  
- 
-   public void button1_Click(object sender, EventArgs e)  
-   {  
-     // Initialize a new instance of the SpeechSynthesizer.  
-     SpeechSynthesizer synth = new SpeechSynthesizer();  
- 
-     // Configure the audio output.   
-     synth.SetOutputToDefaultAudioDevice();  
- 
-     // Register for the PhonemeReached event.  
-     synth.PhonemeReached += new EventHandler<PhonemeReachedEventArgs>(synth_PhonemeReached);  
- 
-     // Speak the contents of a string.  
-     synth.Speak("Theme");  
-   }  
- 
-   // Write information about each phoneme as it is reached.  
-   private void synth_PhonemeReached(object sender, PhonemeReachedEventArgs e)  
-   {textBox1.AppendText(string.Format(  
- 
-       "  Phoneme reached summary:" + Environment.NewLine +  
-       "    Phoneme:                 {0}" + Environment.NewLine +    
-       "    Audio Position:         {1} mSec" + Environment.NewLine +  
-       "    Duration:                  {2} mSec" + Environment.NewLine +  
-       "    Emphasis:                {3}" + Environment.NewLine +  
-       "    Next Phoneme:         {4}" + Environment.NewLine + Environment.NewLine,   
-       e.Phoneme,  
-       e.AudioPosition,  
-       e.Duration,  
-       e.Emphasis,  
-       e.NextPhoneme));  
-   }  
- }  
+  public partial class Form1 : Form  
+  {  
+  
+    public Form1()  
+    {  
+      InitializeComponent();  
+      textBox1.Text = "";  
+    }  
+  
+    public void button1_Click(object sender, EventArgs e)  
+    {  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Register for the PhonemeReached event.  
+      synth.PhonemeReached += new EventHandler<PhonemeReachedEventArgs>(synth_PhonemeReached);  
+  
+      // Speak the contents of a string.  
+      synth.Speak("Theme");  
+    }  
+  
+    // Write information about each phoneme as it is reached.  
+    private void synth_PhonemeReached(object sender, PhonemeReachedEventArgs e)  
+    {textBox1.AppendText(string.Format(  
+  
+        "  Phoneme reached summary:" + Environment.NewLine +  
+        "    Phoneme:                 {0}" + Environment.NewLine +    
+        "    Audio Position:         {1} mSec" + Environment.NewLine +  
+        "    Duration:                  {2} mSec" + Environment.NewLine +  
+        "    Emphasis:                {3}" + Environment.NewLine +  
+        "    Next Phoneme:         {4}" + Environment.NewLine + Environment.NewLine,   
+        e.Phoneme,  
+        e.AudioPosition,  
+        e.Duration,  
+        e.Emphasis,  
+        e.NextPhoneme));  
+    }  
+  }  
 }  
 ```  
  

@@ -34,14 +34,14 @@ The following example demonstrates how to use the DisableOverride ManagementQual
 Flavor = ManagementQualifierFlavors.DisableOverride)]  
 public class AssociationSampleBase  
 {  
-  [ManagementReference(Type = "UserInfo")]  
-  [ManagementKey]  
-  public string Configuration;  
- 
-  [ManagementReference(Type = "LogInfo")]  
-  [ManagementKey]  
-  public string Hosting;  
-  //additional code omitted  
+   [ManagementReference(Type = "UserInfo")]  
+   [ManagementKey]  
+   public string Configuration;  
+  
+   [ManagementReference(Type = "LogInfo")]  
+   [ManagementKey]  
+   public string Hosting;  
+   //additional code omitted  
 ```  
  
  ]]></format>

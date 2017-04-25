@@ -182,34 +182,34 @@ In the following example, a new `pages` child element is appended to the list of
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -271,34 +271,34 @@ In the following example, a new `pages` child element is appended to the list of
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -362,34 +362,34 @@ In the following example, a new `pages` child element is appended to the list of
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -454,34 +454,34 @@ In the following example, a new `pages` child element is appended to the list of
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -558,34 +558,34 @@ In the following example, a new `pages` child element is appended to the list of
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -681,34 +681,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A>
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -811,31 +811,31 @@ The example takes the `books.xml` file as an input.
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1018,34 +1018,34 @@ In the following example, a new `discount` attribute is created on the `price` c
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1109,34 +1109,34 @@ In the following example, new `discount` and `currency` attributes are created o
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1225,34 +1225,34 @@ In the following example, the first and second `book` elements of the `contosoBo
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1309,34 +1309,34 @@ In the following example the `price` element of the first `book` element of the 
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1400,34 +1400,34 @@ The following example evaluates an XPath expression and returns a <xref:System.D
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1492,34 +1492,34 @@ The following example evaluates an <xref:System.Xml.XPath.XPathExpression> and r
 The example takes the `books.xml` file as an input.  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1586,34 +1586,34 @@ The following example evaluates an XPath expression and returns a <xref:System.D
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1680,34 +1680,34 @@ The following example evaluates an <xref:System.Xml.XPath.XPathExpression> and r
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -1958,34 +1958,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2042,34 +2042,34 @@ In the following example a new `pages` element is inserted after the `price` chi
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2129,34 +2129,34 @@ In the following example a new `pages` element is inserted after the `price` chi
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2218,34 +2218,34 @@ In the following example a new `pages` element is inserted after the `price` chi
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2308,34 +2308,34 @@ In the following example a new `pages` element is inserted after the `price` chi
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2394,34 +2394,34 @@ In the following example a new `pages` element is inserted before the `price` ch
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2481,34 +2481,34 @@ In the following example a new `pages` element is inserted before the `price` ch
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2570,34 +2570,34 @@ In the following example a new `pages` element is inserted before the `price` ch
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2660,34 +2660,34 @@ In the following example a new `pages` element is inserted before the `price` ch
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2762,34 +2762,34 @@ In the following example a new `pages` element is inserted after the `price` chi
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -2863,34 +2863,34 @@ In the following example a new `pages` element is inserted before the `price` ch
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -3113,34 +3113,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -3327,34 +3327,34 @@ The following example displays the titles of all novels.
 The example uses the file, `books.xml`, as input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -3610,34 +3610,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.MoveToFirst
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -3771,9 +3771,9 @@ Using the following XML fragment as an example, if the <xref:System.Xml.XPath.XP
  
 ```  
 <root xmlns='urn:default' xmlns:a='A1' xmlns:b='B'>  
-   <item xmlns='' xmlns:a='A2'>  
-       <data xmlns:c='C' />  
-   </item>  
+    <item xmlns='' xmlns:a='A2'>  
+        <data xmlns:c='C' />  
+    </item>  
 </root>  
 ```  
  
@@ -3839,34 +3839,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved fr
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -3922,34 +3922,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved fr
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4014,34 +4014,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved fr
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4106,34 +4106,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved fr
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4267,34 +4267,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4430,34 +4430,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.MoveToFirst
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4726,34 +4726,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4806,34 +4806,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4916,34 +4916,34 @@ The following example illustrates the use of the <xref:System.Xml.XPath.XPathNav
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -4987,34 +4987,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5065,34 +5065,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5141,34 +5141,34 @@ The following example iterates over the node tree recursively, and displays info
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5226,34 +5226,34 @@ In the following example, a new `pages` child element is prepended to the beginn
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5315,34 +5315,34 @@ In the following example, a new `pages` child element is prepended to the beginn
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5406,34 +5406,34 @@ In the following example, a new `pages` child element is prepended to the beginn
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5498,34 +5498,34 @@ In the following example, a new `pages` child element is prepended to the beginn
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5602,34 +5602,34 @@ In the following example, a new `pages` child element is prepended to the beginn
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5693,34 +5693,34 @@ The following example illustrates using the <xref:System.Xml.XPath.XPathNavigato
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5777,34 +5777,34 @@ In the following example, the first and second `book` elements of the `contosoBo
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5867,34 +5867,34 @@ In the following example the `price` element in the `contosoBooks.xml` file is r
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -5958,34 +5958,34 @@ In the following example the `price` element in the `contosoBooks.xml` file is r
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6050,34 +6050,34 @@ In the following example the `price` element in the `contosoBooks.xml` file is r
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6158,7 +6158,7 @@ The following C# code iterates over the selected set of nodes.
 XPathNodeIterator iterator = nav.Select("/bookstore/book");  
 while (iterator.MoveNext())  
 {  
-   Console.WriteLine(Iterator.Current.Name);  
+    Console.WriteLine(Iterator.Current.Name);  
 }  
 ```  
  
@@ -6184,34 +6184,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.Select%2A> 
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6260,7 +6260,7 @@ The following C# code iterates over the selected set of nodes.
 XPathNodeIterator ni = nav.Select(expr);  
 while (ni.MoveNext())  
 {  
-   Console.WriteLine(ni.Current.Name);  
+    Console.WriteLine(ni.Current.Name);  
 }  
 ```  
  
@@ -6276,9 +6276,9 @@ For example, suppose the document contains the following XML nodes.
  
 ```  
 <bookstore xmlns:bk='urn:samples'>  
-   <book bk:ISBN='1-325-0980'>  
-       <title>Pride And Prejudice</title>  
-   </book>  
+    <book bk:ISBN='1-325-0980'>  
+        <title>Pride And Prejudice</title>  
+    </book>  
 </bookstore>  
 ```  
  
@@ -6299,9 +6299,9 @@ For example, suppose you have the following XML.
  
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
-   <book>  
-       <title>Pride And Prejudice</title>  
-   </book>  
+    <book>  
+        <title>Pride And Prejudice</title>  
+    </book>  
 </bookstore>  
 ```  
  
@@ -6330,34 +6330,34 @@ The following example uses the <xref:System.Xml.XPath.XPathNavigator.Select%2A> 
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6409,34 +6409,34 @@ The following example illustrates selecting a node set using the <xref:System.Xm
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6542,34 +6542,34 @@ The following example illustrates selecting ancestor, child, and descendant node
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6816,34 +6816,34 @@ The following example selects a single node from the <xref:System.Xml.XPath.XPat
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6898,34 +6898,34 @@ The following example selects a single node from the <xref:System.Xml.XPath.XPat
 The example takes the `books.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>   
 <bookstore>  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -6985,34 +6985,34 @@ The following example selects a single node from the <xref:System.Xml.XPath.XPat
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -7068,34 +7068,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator.SetTypedValu
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -7154,34 +7154,34 @@ In the following example, the <xref:System.Xml.XPath.XPathNavigator.SetValue%2A>
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -7449,10 +7449,10 @@ The example takes the `valueas.xml` file as an input.
  
 ```  
 <root>  
-   <booleanElement>true</booleanElement>  
-   <dateTimeElement>2004-04-20T12:00:00</dateTimeElement>  
-   <decimalElement>10.00</decimalElement>  
-   <numberElement>100000000</numberElement>  
+    <booleanElement>true</booleanElement>  
+    <dateTimeElement>2004-04-20T12:00:00</dateTimeElement>  
+    <decimalElement>10.00</decimalElement>  
+    <numberElement>100000000</numberElement>  
 </root>  
 ```  
  
@@ -7680,70 +7680,70 @@ In the following example, the `contosoBooks.xml` XML file and `contosoBooks.xsd`
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
 The example also takes the `contosoBooks.xsd` as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.contoso.com/books" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-   <xs:element name="bookstore">  
-       <xs:complexType>  
-           <xs:sequence>  
-               <xs:element maxOccurs="unbounded" name="book">  
-                   <xs:complexType>  
-                       <xs:sequence>  
-                           <xs:element name="title" type="xs:string" />  
-                           <xs:element name="author">  
-                               <xs:complexType>  
-                                   <xs:sequence>  
-                                       <xs:element minOccurs="0" name="name" type="xs:string" />  
-                                       <xs:element minOccurs="0" name="first-name" type="xs:string" />  
-                                       <xs:element minOccurs="0" name="last-name" type="xs:string" />  
-                                   </xs:sequence>  
-                               </xs:complexType>  
-                           </xs:element>  
-                           <xs:element name="price" type="xs:decimal" />  
-                       </xs:sequence>  
-                       <xs:attribute name="genre" type="xs:string" use="required" />  
-                       <xs:attribute name="publicationdate" type="xs:date" use="required" />  
-                       <xs:attribute name="ISBN" type="xs:string" use="required" />  
-                   </xs:complexType>  
-               </xs:element>  
-           </xs:sequence>  
-       </xs:complexType>  
-   </xs:element>  
+    <xs:element name="bookstore">  
+        <xs:complexType>  
+            <xs:sequence>  
+                <xs:element maxOccurs="unbounded" name="book">  
+                    <xs:complexType>  
+                        <xs:sequence>  
+                            <xs:element name="title" type="xs:string" />  
+                            <xs:element name="author">  
+                                <xs:complexType>  
+                                    <xs:sequence>  
+                                        <xs:element minOccurs="0" name="name" type="xs:string" />  
+                                        <xs:element minOccurs="0" name="first-name" type="xs:string" />  
+                                        <xs:element minOccurs="0" name="last-name" type="xs:string" />  
+                                    </xs:sequence>  
+                                </xs:complexType>  
+                            </xs:element>  
+                            <xs:element name="price" type="xs:decimal" />  
+                        </xs:sequence>  
+                        <xs:attribute name="genre" type="xs:string" use="required" />  
+                        <xs:attribute name="publicationdate" type="xs:date" use="required" />  
+                        <xs:attribute name="ISBN" type="xs:string" use="required" />  
+                    </xs:complexType>  
+                </xs:element>  
+            </xs:sequence>  
+        </xs:complexType>  
+    </xs:element>  
 </xs:schema>  
- 
+  
 ```  
  
  ]]></format>
@@ -7788,12 +7788,12 @@ For example, if the <xref:System.Xml.XPath.XPathNavigator.WriteSubtree%2A> metho
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <book genre="autobiography" publicationdate="1981" ISBN="1-861003-11-0" xmlns="http://www.contoso.com/books">  
-   <title>The Autobiography of Benjamin Franklin</title>  
-   <author>  
-       <first-name>Benjamin</first-name>  
-       <last-name>Franklin</last-name>  
-   </author>  
-   <price>8.99</price>  
+    <title>The Autobiography of Benjamin Franklin</title>  
+    <author>  
+        <first-name>Benjamin</first-name>  
+        <last-name>Franklin</last-name>  
+    </author>  
+    <price>8.99</price>  
 </book>  
 ```  
  
@@ -7812,34 +7812,34 @@ The following example illustrates using the <xref:System.Xml.XPath.XPathNavigato
 The example takes the `contosoBooks.xml` file as an input.  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="utf-8" ?>  
 <bookstore xmlns="http://www.contoso.com/books">  
-   <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
-       <title>The Autobiography of Benjamin Franklin</title>  
-       <author>  
-           <first-name>Benjamin</first-name>  
-           <last-name>Franklin</last-name>  
-       </author>  
-       <price>8.99</price>  
-   </book>  
-   <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
-       <title>The Confidence Man</title>  
-       <author>  
-           <first-name>Herman</first-name>  
-           <last-name>Melville</last-name>  
-       </author>  
-       <price>11.99</price>  
-   </book>  
-   <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
-       <title>The Gorgias</title>  
-       <author>  
-           <name>Plato</name>  
-       </author>  
-       <price>9.99</price>  
-   </book>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
 </bookstore>  
- 
+  
 ```  
  
  ]]></format>
@@ -7878,7 +7878,7 @@ In the example XML below, when the <xref:System.Xml.XPath.XPathNavigator> is pos
  
 ```  
 <root xml:lang="en-us">  
-   <name>Name</name>  
+    <name>Name</name>  
 </root>  
 ```  
  

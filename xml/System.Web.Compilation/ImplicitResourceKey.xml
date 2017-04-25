@@ -22,9 +22,9 @@ An implicit resource is assigned to a control in the following form:
  
 ```  
 <asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
-   text="Welcome"   
-     ie:text="Welcome Internet Explorer User"    
-   forecolor="blue"/>    
+    text="Welcome"   
+      ie:text="Welcome Internet Explorer User"    
+    forecolor="blue"/>    
 ```  
  
 During page parsing, an implicit resource is converted into explicit keys in the form [*filter*:]*prefix*.*property*[.*subproperty*]. Any resource values with the specified prefix (in the preceding example, a prefix of `Welcome`) are assigned to the matching control properties. For example, suppose values exist in the resource file or source code for the following keys:  
@@ -103,9 +103,9 @@ The <xref:System.Web.Compilation.ImplicitResourceKey.Filter%2A> property refers 
  
 ```  
 <asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
-       text="Welcome"   
-       ie:text="Welcome Internet Explorer User"    
-       forecolor="blue"/>    
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
 ```  
  
 This resource contains three keys that potentially have localized resource values to retrieve from the resource file or source code. One of these keys is `Ie:Welcome.Text`, in which "Ie" is the <xref:System.Web.Compilation.ImplicitResourceKey.Filter%2A> value.  
@@ -137,9 +137,9 @@ The <xref:System.Web.Compilation.ImplicitResourceKey.KeyPrefix%2A> property ties
  
 ```  
 <asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
-       text="Welcome"   
-       ie:text="Welcome Internet Explorer User"    
-       forecolor="blue"/>    
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
 ```  
  
 This resource contains three keys, `Welcome.Text`, `Ie:Welcome.Text`, and `Welcome.Forecolor`, that potentially have localized resource values to retrieve from the resource file or source code. Each key has `"Welcome"` as the <xref:System.Web.Compilation.ImplicitResourceKey.KeyPrefix%2A> value.  
@@ -171,9 +171,9 @@ The <xref:System.Web.Compilation.ImplicitResourceKey.Property%2A> property speci
  
 ```  
 <asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
-       text="Welcome"   
-       ie:text="Welcome Internet Explorer User"    
-       forecolor="blue"/>    
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
 ```  
  
 This resource contains three keys, `Welcome.Text`, `Ie:Welcome.Text`, and `Welcome.Forecolor`, that potentially have localized resource values to retrieve from the resource file or source code. Those keys have <xref:System.Web.Compilation.ImplicitResourceKey.Property%2A> values of `"Text"`, `"Text"`, and `"Forecolor"`, respectively.  

@@ -77,34 +77,34 @@ The following example creates a grammar that recognizes the phrase "A nation tha
 ```  
 public void WorldSoccerWinners ()  
 {  
- 
- // Create an SrgsDocument, create a new rule  
- // and set its scope to public.  
- SrgsDocument document = new SrgsDocument();  
- SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
- winnerRule.Scope = SrgsRuleScope.Public;  
- 
- // Add the introduction.  
- winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
- 
- // Create the rule for the European nations.  
- SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
-   new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
- SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
- 
- // Create the rule for the South American nations.  
- SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
-   new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
- SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
- 
- // Add references to winnerRule for ruleEurope and ruleSAmerica.  
- winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
-   (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
- 
- // Add all the rules to the document and make winnerRule   
- // the root rule of the document.  
- document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
- document.Root = winnerRule;  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
 }  
 ```  
  
@@ -112,32 +112,32 @@ The created grammar has the following form.
  
 ```  
 <grammar version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar" root="WorldCupWinner">  
-   <rule id="WorldCupWinner" scope="public">  
-       <item> A nation that has won the world cup is </item>  
-       <one-of>  
-           <item>  
-               <ruleref uri="#EuropeanNations" />  
-           </item>  
-           <item>  
-               <ruleref uri="#SouthAmericanNations" />  
-           </item>  
-       </one-of>  
-   </rule>  
-   <rule id="EuropeanNations">  
-       <one-of>  
-           <item> England </item>  
-           <item> France </item>  
-           <item> Germany </item>  
-           <item> Italy </item>  
-       </one-of>  
-   </rule>  
-   <rule id="SouthAmericanNations">  
-       <one-of>  
-           <item> Argentina </item>  
-           <item> Brazil </item>  
-           <item> Uruguay </item>  
-       </one-of>  
-   </rule>  
+    <rule id="WorldCupWinner" scope="public">  
+        <item> A nation that has won the world cup is </item>  
+        <one-of>  
+            <item>  
+                <ruleref uri="#EuropeanNations" />  
+            </item>  
+            <item>  
+                <ruleref uri="#SouthAmericanNations" />  
+            </item>  
+        </one-of>  
+    </rule>  
+    <rule id="EuropeanNations">  
+        <one-of>  
+            <item> England </item>  
+            <item> France </item>  
+            <item> Germany </item>  
+            <item> Italy </item>  
+        </one-of>  
+    </rule>  
+    <rule id="SouthAmericanNations">  
+        <one-of>  
+            <item> Argentina </item>  
+            <item> Brazil </item>  
+            <item> Uruguay </item>  
+        </one-of>  
+    </rule>  
 </grammar>  
 ```  
  
@@ -184,23 +184,23 @@ The second method, `CreateGrammarForRoute`, creates an <xref:System.Speech.Recog
 ```  
 private Uri GrammarUrlForRoute(string route)  
 {  
- return new Uri("http://localhost/MyBus/MyBusLocations.grxml#LocationsForRoute" + route);  
+  return new Uri("http://localhost/MyBus/MyBusLocations.grxml#LocationsForRoute" + route);  
 }  
- 
+  
 private SrgsDocument CreateGrammarForRoute()  
 {  
- SrgsDocument grammar = new SrgsDocument();  
- grammar.Mode = SrgsGrammarMode.Voice;  
- SrgsRule rule = new SrgsRule("LocationsForRoute" + _route);  
- SrgsRuleRef ruleref = new SrgsRuleRef(GrammarUrlForRoute(_route));  
- 
- SrgsSemanticInterpretationTag tag = new SrgsSemanticInterpretationTag ("$.Location = $$");  
- 
- rule.Elements.Add(ruleref);  
- rule.Elements.Add(tag);  
- grammar.Rules.Add(rule);  
- grammar.Root = rule;  
- return grammar;  
+  SrgsDocument grammar = new SrgsDocument();  
+  grammar.Mode = SrgsGrammarMode.Voice;  
+  SrgsRule rule = new SrgsRule("LocationsForRoute" + _route);  
+  SrgsRuleRef ruleref = new SrgsRuleRef(GrammarUrlForRoute(_route));  
+  
+  SrgsSemanticInterpretationTag tag = new SrgsSemanticInterpretationTag ("$.Location = $$");  
+  
+  rule.Elements.Add(ruleref);  
+  rule.Elements.Add(tag);  
+  grammar.Rules.Add(rule);  
+  grammar.Root = rule;  
+  return grammar;  
 }  
 ```  
  
@@ -253,75 +253,75 @@ The following example creates a grammar for choosing the cities for a flight. Th
 using System;  
 using System.Speech.Recognition;  
 using System.Speech.Recognition.SrgsGrammar;  
- 
+  
 namespace SampleRecognition  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
- 
-   // Initialize a SpeechRecognitionEngine object.  
-   {  
-     using (SpeechRecognitionEngine recognizer =  
-        new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
-     {  
- 
-       // Build a rule with a list of cities, assign a semantic value to each city.  
-       SrgsItem chi = new SrgsItem("Chicago");  
-       chi.Add(new SrgsNameValueTag("ORD"));  
-       SrgsItem bos = new SrgsItem("Boston");  
-       bos.Add(new SrgsNameValueTag("BOS"));  
-       SrgsItem mia = new SrgsItem("Miami");  
-       mia.Add(new SrgsNameValueTag("MIA"));  
-       SrgsItem dal = new SrgsItem("Dallas");  
-       dal.Add(new SrgsNameValueTag("DFW"));  
- 
-       SrgsOneOf cities = new SrgsOneOf(new SrgsItem[] { chi, bos, mia, dal });  
-       SrgsRule citiesRule = new SrgsRule("flightCities");  
-       citiesRule.Add(cities);  
- 
-       // Build the root rule, add rule references to the cities rule.  
-       SrgsRule flightBooker = new SrgsRule("bookFlight");  
-       flightBooker.Add(new SrgsItem("I want to fly from"));  
-       flightBooker.Add(new SrgsRuleRef(citiesRule, "departureCity"));  
-       flightBooker.Add(new SrgsItem("to"));  
-       flightBooker.Add(new SrgsRuleRef(citiesRule, "arrivalCity"));  
- 
-       // Build an SrgsDocument object from the flightBooker rule and add the cities rule.  
-       SrgsDocument cityChooser = new SrgsDocument(flightBooker);  
-       cityChooser.Rules.Add(citiesRule);  
- 
-       // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
-       Grammar departArrive = new Grammar(cityChooser);  
-       departArrive.Name = ("Cities Grammar");  
-       recognizer.LoadGrammarAsync(departArrive);  
- 
-       // Configure recognizer input.  
-       recognizer.SetInputToDefaultAudioDevice();  
- 
-       // Attach a handler for the SpeechRecognized event.  
-       recognizer.SpeechRecognized +=  
-         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
- 
-       // Start asynchronous recognition.  
-       recognizer.RecognizeAsync();  
-       Console.WriteLine("Starting asynchronous recognition...");  
- 
-       // Keep the console window open.  
-       Console.ReadLine();  
-     }  
-   }  
- 
-   // Handle the SpeechRecognized event.  
-   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-   {  
-     Console.WriteLine("Speech recognized: " + e.Result.Text);  
-     Console.WriteLine();  
-     Console.WriteLine("Semantic results:");  
-     Console.WriteLine("  The departure city is: " + e.Result.Semantics["departureCity"].Value);  
-     Console.WriteLine("  The destination city is: " + e.Result.Semantics["arrivalCity"].Value);  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize a SpeechRecognitionEngine object.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
+      {  
+  
+        // Build a rule with a list of cities, assign a semantic value to each city.  
+        SrgsItem chi = new SrgsItem("Chicago");  
+        chi.Add(new SrgsNameValueTag("ORD"));  
+        SrgsItem bos = new SrgsItem("Boston");  
+        bos.Add(new SrgsNameValueTag("BOS"));  
+        SrgsItem mia = new SrgsItem("Miami");  
+        mia.Add(new SrgsNameValueTag("MIA"));  
+        SrgsItem dal = new SrgsItem("Dallas");  
+        dal.Add(new SrgsNameValueTag("DFW"));  
+  
+        SrgsOneOf cities = new SrgsOneOf(new SrgsItem[] { chi, bos, mia, dal });  
+        SrgsRule citiesRule = new SrgsRule("flightCities");  
+        citiesRule.Add(cities);  
+  
+        // Build the root rule, add rule references to the cities rule.  
+        SrgsRule flightBooker = new SrgsRule("bookFlight");  
+        flightBooker.Add(new SrgsItem("I want to fly from"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "departureCity"));  
+        flightBooker.Add(new SrgsItem("to"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "arrivalCity"));  
+  
+        // Build an SrgsDocument object from the flightBooker rule and add the cities rule.  
+        SrgsDocument cityChooser = new SrgsDocument(flightBooker);  
+        cityChooser.Rules.Add(citiesRule);  
+  
+        // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
+        Grammar departArrive = new Grammar(cityChooser);  
+        departArrive.Name = ("Cities Grammar");  
+        recognizer.LoadGrammarAsync(departArrive);  
+  
+        // Configure recognizer input.  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Start asynchronous recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting asynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Speech recognized: " + e.Result.Text);  
+      Console.WriteLine();  
+      Console.WriteLine("Semantic results:");  
+      Console.WriteLine("  The departure city is: " + e.Result.Semantics["departureCity"].Value);  
+      Console.WriteLine("  The destination city is: " + e.Result.Semantics["arrivalCity"].Value);  
+    }  
+  }  
 }  
 ```  
  

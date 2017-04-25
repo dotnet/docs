@@ -59,7 +59,7 @@ builder("Initial Catalog") = "AdventureWorks;NewValue=Bad"
  
 ```  
 System.Data.Common.DbConnectionStringBuilder builder =   
-   new System.Data.Common.DbConnectionStringBuilder();  
+    new System.Data.Common.DbConnectionStringBuilder();  
 builder["Data Source"] = "(local)";  
 builder["integrated Security"] = true;  
 builder["Initial Catalog"] = "AdventureWorks;NewValue=Bad";  

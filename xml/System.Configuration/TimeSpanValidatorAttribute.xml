@@ -37,10 +37,10 @@ The following example is an excerpt of the configuration file that contains the 
  
 ```  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
- <configSections>  
-   <section name="custom" type="Microsoft.Samples.AspNet.Configuration.SampleSection, ConfigurationValidatorAttribute" />  
- </configSections>  
- <custom fileName="NewFile.txt" maxSize="1000" maxAttempts="101" maxUsers="2500" maxIdleTime="00:15:00" />  
+  <configSections>  
+    <section name="custom" type="Microsoft.Samples.AspNet.Configuration.SampleSection, ConfigurationValidatorAttribute" />  
+  </configSections>  
+  <custom fileName="NewFile.txt" maxSize="1000" maxAttempts="101" maxUsers="2500" maxIdleTime="00:15:00" />  
 </configuration>  
 ```  
  

@@ -60,18 +60,18 @@ Start with an XML document like this one. It’s just a few books in a collectio
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <books xmlns="http://www.contoso.com/books">  
- <book genre="novel" ISBN="1-861001-57-8" publicationdate="1823-01-28">  
-   <title>Pride And Prejudice</title>  
-   <price>24.95</price>  
- </book>  
- <book genre="novel" ISBN="1-861002-30-1" publicationdate="1985-01-01">  
-   <title>The Handmaid's Tale</title>  
-   <price>29.95</price>  
- </book>  
- <book genre="novel" ISBN="1-861001-45-3" publicationdate="1811-01-01">  
-   <title>Sense and Sensibility</title>  
-   <price>19.95</price>  
- </book>  
+  <book genre="novel" ISBN="1-861001-57-8" publicationdate="1823-01-28">  
+    <title>Pride And Prejudice</title>  
+    <price>24.95</price>  
+  </book>  
+  <book genre="novel" ISBN="1-861002-30-1" publicationdate="1985-01-01">  
+    <title>The Handmaid's Tale</title>  
+    <price>29.95</price>  
+  </book>  
+  <book genre="novel" ISBN="1-861001-45-3" publicationdate="1811-01-01">  
+    <title>Sense and Sensibility</title>  
+    <price>19.95</price>  
+  </book>  
 </books>  
 ```  
  
@@ -94,26 +94,26 @@ Start with an XML schema like this one. This schema defines the data types in th
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  
- attributeFormDefault="unqualified"   
- elementFormDefault="qualified"  
- targetNamespace="http://www.contoso.com/books">   
- <xs:element name="books">  
-   <xs:complexType>  
-     <xs:sequence>  
-       <xs:element maxOccurs="unbounded" name="book">  
-         <xs:complexType>  
-           <xs:sequence>  
-             <xs:element name="title" type="xs:string" />  
-             <xs:element name="price" type="xs:decimal" />  
-           </xs:sequence>  
-           <xs:attribute name="genre" type="xs:string" use="required" />  
-           <xs:attribute name="ISBN" type="xs:string" use="required" />  
-           <xs:attribute name="publicationdate" type="xs:date" use="required" />  
-         </xs:complexType>  
-       </xs:element>  
-     </xs:sequence>  
-   </xs:complexType>  
- </xs:element>  
+  attributeFormDefault="unqualified"   
+  elementFormDefault="qualified"  
+  targetNamespace="http://www.contoso.com/books">   
+  <xs:element name="books">  
+    <xs:complexType>  
+      <xs:sequence>  
+        <xs:element maxOccurs="unbounded" name="book">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="title" type="xs:string" />  
+              <xs:element name="price" type="xs:decimal" />  
+            </xs:sequence>  
+            <xs:attribute name="genre" type="xs:string" use="required" />  
+            <xs:attribute name="ISBN" type="xs:string" use="required" />  
+            <xs:attribute name="publicationdate" type="xs:date" use="required" />  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:sequence>  
+    </xs:complexType>  
+  </xs:element>  
 </xs:schema>  
 ```  
  
@@ -929,7 +929,7 @@ results in an element that is equivalent to the following XML text.
  
 ```  
 <xy:item  
-      xmlns:xy="urn:abc"/>  
+       xmlns:xy="urn:abc"/>  
 ```  
  
 Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
@@ -1786,18 +1786,18 @@ The example uses the file, `ids.xml`, as input.
  
 ```xml  
 <!DOCTYPE root [  
- <!ELEMENT root ANY>   
- <!ELEMENT Person ANY>   
- <!ELEMENT Customer EMPTY>  
- <!ELEMENT Team EMPTY>  
- <!ATTLIST Person SSN ID #REQUIRED>  
- <!ATTLIST Customer id IDREF #REQUIRED >  
- <!ATTLIST Team members IDREFS #REQUIRED>]>  
+  <!ELEMENT root ANY>   
+  <!ELEMENT Person ANY>   
+  <!ELEMENT Customer EMPTY>  
+  <!ELEMENT Team EMPTY>  
+  <!ATTLIST Person SSN ID #REQUIRED>  
+  <!ATTLIST Customer id IDREF #REQUIRED >  
+  <!ATTLIST Team members IDREFS #REQUIRED>]>  
 <root>  
- <Person SSN='A111' Name='Fred'/>  
- <Person SSN='A222' Name='Tom'/>  
- <Customer id='A222334444'/>  
- <Team members='A222334444 A333445555'/>  
+  <Person SSN='A111' Name='Fred'/>  
+  <Person SSN='A222' Name='Tom'/>  
+  <Customer id='A222334444'/>  
+  <Team members='A222334444 A333445555'/>  
 </root>  
 ```  
  
@@ -2095,20 +2095,20 @@ Setting this property replaces the children of the node with the parsed contents
  
 ```  
 <xsl:stylesheet version="1.0"   
-     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-    <xsl:template match="stock">  
-        ...  
-    </xsl:template>  
-   </xsl:stylesheet>  
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+     <xsl:template match="stock">  
+         ...  
+     </xsl:template>  
+    </xsl:stylesheet>  
 ```  
  
 The `InnerXml` property on the stylesheet node returns the following string:  
  
 ```  
 <xsl:template match="stock"   
-     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-    ...  
-   </xsl:template>  
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+     ...  
+    </xsl:template>  
 ```  
  
 Notice the additional xmlns:xsl namespace declaration which is used to preserve the node identity. If you re-insert this inner XML string, you will get back your original document. In other words, `InnerXml` recognizes that the xmlns:xsl namespace declaration is redundant, given that the parent xsl:stylesheet element already has the xmlns:xsl namespace delcaration, and therefore removes it.  
@@ -2117,8 +2117,8 @@ If you move `InnerXml` from a document with no default namespace to a document w
  
 ```  
 <test>  
-     <item>123</item>  
-   </test>  
+      <item>123</item>  
+    </test>  
 ```  
  
 `InnerXml` returns a plain XML string with no namespace declarations:  
@@ -2131,15 +2131,15 @@ If you then insert this string into a document that does have a default namespac
  
 ```  
 <test2 xmlns="urn:1">  
-   </test>  
+    </test>  
 ```  
  
 `InnerXml` parses the string in context, and the new nodes pick up the urn:1 namespace. The result looks like this:  
  
 ```  
 <test2 xmlns="urn:1">  
-     <item>123</item>  
-   </test>  
+      <item>123</item>  
+    </test>  
 ```  
  
 Now when you ask for the `InnerXml` you get back the following:  
@@ -3002,8 +3002,8 @@ If the reader is positioned on the start of an element, `ReadNode` reads all the
 XmlDocument doc = new XmlDocument();  
 while (reader.MoveToNextAttribute())  
 {  
- XmlNode a = doc.ReadNode(reader);  
- // Do some more processing.  
+  XmlNode a = doc.ReadNode(reader);  
+  // Do some more processing.  
 }  
 ```  
  
@@ -3236,7 +3236,7 @@ generates this xmls attribute:
  
 ```  
 <item  
-   xmls="urn:1"/>  
+    xmls="urn:1"/>  
 ```  
  
 This method is a Microsoft extension to the Document Object Model (DOM).  

@@ -62,39 +62,39 @@ The <xref:System.Uri> properties return a canonical data representation in escap
 As part of canonicalization in the constructor for some schemes, escaped representations are compacted. The schemes for which URI will compact escaped sequences include the following: file, http, https, net.pipe, and net.tcp. For all other schemes, escaped sequences are not compacted. For example: if you percent encode the two dots ".." as "%2E%2E" then the URI constructor will compact this sequence for some schemes. For example, the following code sample shows a URI constructor for the http scheme.  
  
 ```  
- 
+  
 Uri uri = new Uri("http://myUrl/%2E%2E/%2E%2E");  
 Console.WriteLine(uri.AbsoluteUri);  
 Console.WriteLine(uri.PathAndQuery);  
- 
+  
 ```  
  
 When this code is executed, it returns the following output with the escaped sequence compacted.  
  
 ```  
- 
+  
 http://myUrl/  
 /  
- 
+  
 ```  
  
 The following code example shows a URI constructor for the ftp scheme:  
  
 ```  
- 
+  
 Uri uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E");  
 Console.WriteLine(uri.AbsoluteUri);  
 Console.WriteLine(uri.PathAndQuery);  
- 
+  
 ```  
  
 When this code is executed, it returns the following output with the escaped sequence not compacted.  
  
 ```  
- 
+  
 ftp://myUrl/%2E%2E/%2E%2E  
 /%2E%2E/%2E%2E  
- 
+  
 ```  
  
 You can transform the contents of the <xref:System.Uri> class from an escape encoded URI reference to a readable URI reference by using the <xref:System.Uri.ToString%2A> method. Note that some reserved characters might still be escaped in the output of the <xref:System.Uri.ToString%2A> method. This is to support unambiguous reconstruction of a URI from the value returned by <xref:System.Uri.ToString%2A>.  

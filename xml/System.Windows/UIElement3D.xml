@@ -536,8 +536,8 @@ Another typical way to populate the <xref:System.Windows.UIElement3D.CommandBind
  
 ```  
 <object>  
- <object.CommandBindings>  
-   oneOrMoreCommandBindings  </object.CommandBindings>  
+  <object.CommandBindings>  
+    oneOrMoreCommandBindings  </object.CommandBindings>  
 </object>  
 ```  
  
@@ -1420,8 +1420,8 @@ A related property, <xref:System.Windows.UIElement3D.CommandBindings%2A>, mainta
  
 ```  
 <object>  
- <object.InputBindings>  
-   oneOrMoreInputBindings  </object.InputBindings>  
+  <object.InputBindings>  
+    oneOrMoreInputBindings  </object.InputBindings>  
 </object>  
 ```  
  

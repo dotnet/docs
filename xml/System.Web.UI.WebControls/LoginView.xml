@@ -106,17 +106,17 @@ The <xref:System.Web.UI.Control.Focus%2A> method does not set the initial focus 
     Visible="True|False"  
 >  
         <AnonymousTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </AnonymousTemplate>  
         <LoggedInTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </LoggedInTemplate>  
         <RoleGroups>  
                 <asp:RoleGroup  
                     Roles="string"  
-               >  
+                >  
                         <ContentTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ContentTemplate>  
                 </asp:RoleGroup>  
         </RoleGroups>  

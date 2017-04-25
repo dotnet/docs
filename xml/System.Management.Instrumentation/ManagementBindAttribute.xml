@@ -48,9 +48,9 @@ The following example shows how to use the ManagementBind attribute to mark the 
 [ManagementBind]  
 public ClassConstructor(int Id)  
 {  
-    // Set this class instance to a specific instance  
-    // by assigning property values and   
-    // giving unique values to the key properties.   
+     // Set this class instance to a specific instance  
+     // by assigning property values and   
+     // giving unique values to the key properties.   
 }  
 ```  
  

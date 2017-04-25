@@ -35,43 +35,43 @@ The following configuration file excerpt shows a `healthMonitoring` configuratio
  
 ```  
 <healthMonitoring    
- heartBeatInterval="0" enabled="true">  
- 
- <bufferModes>  
-   <add name ="Custom Notification"  
-     maxBufferSize="10"  
-     maxFlushSize="5"  
-     urgentFlushThreshold="10"  
-     regularFlushInterval="Infinite"  
-     urgentFlushInterval="00:00:30"  
-     maxBufferThreads="1"  
+  heartBeatInterval="0" enabled="true">  
+  
+  <bufferModes>  
+    <add name ="Custom Notification"  
+      maxBufferSize="10"  
+      maxFlushSize="5"  
+      urgentFlushThreshold="10"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:00:30"  
+      maxBufferThreads="1"  
 />  
- </bufferModes>  
- 
- <providers>  
-   <clear/>  
-   <add name="SampleBufferedWebEventProvider"   
-     type="SamplesAspNet.SampleBufferedWebEventProvider, bufferedwebeventprovider, Version=1.0.1785.14700, Culture=neutral, PublicKeyToken=d31491bf33b55954, processorArchitecture=MSIL"   
-     buffer="true"  
-     bufferMode="Custom Notification"  
+  </bufferModes>  
+  
+  <providers>  
+    <clear/>  
+    <add name="SampleBufferedWebEventProvider"   
+      type="SamplesAspNet.SampleBufferedWebEventProvider, bufferedwebeventprovider, Version=1.0.1785.14700, Culture=neutral, PublicKeyToken=d31491bf33b55954, processorArchitecture=MSIL"   
+      buffer="true"  
+      bufferMode="Custom Notification"  
 />  
- </providers>  
- 
- <profiles>  
-   <add name="Custom"   
-     minInstances="1"   
-     maxLimit="Infinite"   
-     minInterval="00:00:00" />  
- </profiles>  
- 
- <rules>  
-   <clear />  
-     <add name="Custom Buffered Web Event Provider"   
-       eventName="All Events"  
-       provider="SampleBufferedWebEventProvider"   
-       profile="Custom" />  
- </rules>  
- 
+  </providers>  
+  
+  <profiles>  
+    <add name="Custom"   
+      minInstances="1"   
+      maxLimit="Infinite"   
+      minInterval="00:00:00" />  
+  </profiles>  
+  
+  <rules>  
+    <clear />  
+      <add name="Custom Buffered Web Event Provider"   
+        eventName="All Events"  
+        provider="SampleBufferedWebEventProvider"   
+        profile="Custom" />  
+  </rules>  
+  
 </healthMonitoring>  
 ```  
  
@@ -134,7 +134,7 @@ The following configuration-file excerpt shows how the name of the buffer mode s
  
 ```  
 <bufferModes>  
- <add name ="Custom Notification" />  
+  <add name ="Custom Notification" />  
 </bufferModes>  
 ```  
  

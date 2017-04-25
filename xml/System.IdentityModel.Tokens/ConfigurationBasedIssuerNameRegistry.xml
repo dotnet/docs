@@ -29,16 +29,16 @@ The following XML shows configuration for a <xref:System.IdentityModel.Tokens.Co
  
 ```  
 <system.identityModel>  
- <identityConfiguration>  
-   <securityTokenHandlersCollection>  
-     <securityTokenHandlerConfiguration>  
-       <issuerNameRegistry type="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, System.IdentityModel">  
-         <trustedIssuers>  
-            <add thumbprint="97249e … 158de" name="contoso.com" />  
-        </trustedIssuers>  
-       </issuerNameRegistry>  
-     </securityTokenHandlerConfiguration>  
- </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlersCollection>  
+      <securityTokenHandlerConfiguration>  
+        <issuerNameRegistry type="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, System.IdentityModel">  
+          <trustedIssuers>  
+             <add thumbprint="97249e … 158de" name="contoso.com" />  
+         </trustedIssuers>  
+        </issuerNameRegistry>  
+      </securityTokenHandlerConfiguration>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

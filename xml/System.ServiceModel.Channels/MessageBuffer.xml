@@ -119,20 +119,20 @@ The following example demonstrates how to properly close a message buffer.
 ```  
 public void AfterReceiveReply(ref Message reply, object correlationState)  
 {  
-   // Create the buffer  
-   MessageBuffer buffer = reply.CreateBufferedCopy(13000);  
-   // Inspect the response (for example, extract the body contents)  
-   Message thisReply = buffer.CreateMessage();  
-   XmlDictionaryReader reader = thisReply.GetReaderAtBodyContents();  
-   StringBuilder info = new StringBuilder();  
-   XmlWriter writer = XmlWriter.Create(info);  
-   writer.WriteNode(reader, true);  
-   writer.Close();  
-   // Resolution:  Re-create the message from the buffer before  
-   // closing.  
-   reply = buffer.CreateMessage();  
-   // You can close the buffer after the message has been recreated.  
-   buffer.Close();  
+    // Create the buffer  
+    MessageBuffer buffer = reply.CreateBufferedCopy(13000);  
+    // Inspect the response (for example, extract the body contents)  
+    Message thisReply = buffer.CreateMessage();  
+    XmlDictionaryReader reader = thisReply.GetReaderAtBodyContents();  
+    StringBuilder info = new StringBuilder();  
+    XmlWriter writer = XmlWriter.Create(info);  
+    writer.WriteNode(reader, true);  
+    writer.Close();  
+    // Resolution:  Re-create the message from the buffer before  
+    // closing.  
+    reply = buffer.CreateMessage();  
+    // You can close the buffer after the message has been recreated.  
+    buffer.Close();  
 ```  
  
 }  
@@ -383,7 +383,7 @@ private byte[] ConvertMessageToByteArray(ref Message message)
 ....stream.Flush();  
 ....//Convert the stream to an array  
 ....byte[] retval = stream.ToArray();  
-   return retval;  
+    return retval;  
 }  
 ```  
  

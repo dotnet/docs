@@ -31,61 +31,61 @@ When you validate an <xref:System.Xml.Linq.XDocument>, <xref:System.Xml.Linq.XEl
 The XSD in [Sample XSD File: Customers and Orders](http://msdn.microsoft.com/library/8b05efe3-cc5e-4c7b-b322-892dbda41687) contains a schema that can be used to validate the XML document in [Sample XML File: Customers and Orders (LINQ to XML)](http://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92). The following example loads the schema and the document, validates the document, changes the document so that the `xs:key` and `xs:keyref` relationship is not valid, and then attempts to validate again.  
  
 ```csharp  
- 
-               XmlSchemaSet schemas = new XmlSchemaSet();  
+  
+                XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", "CustomersOrders.xsd");  
- 
+  
 XDocument custOrd = XDocument.Load("CustomersOrders.xml");  
- 
+  
 Console.WriteLine("Validating custOrd");  
 bool errors = false;  
 custOrd.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    });  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     });  
 Console.WriteLine("custOrd {0}", errors ? "did not validate" : "validated");  
- 
+  
 // Modify the custOrd tree so that it is no longer valid.  
 custOrd.Root.Element("Orders").Element("Order").Element("CustomerID").Value = "AAAAA";  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating custOrd");  
 errors = false;  
 custOrd.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    });  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     });  
 Console.WriteLine("custOrd {0}", errors ? "did not validate" : "validated");  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", "CustomersOrders.xsd")  
- 
-   Console.WriteLine("Validating custOrd")  
-   Dim custOrd As XDocument = XDocument.Load("CustomersOrders.xml")  
-   errors = False  
-   custOrd.Validate(schemas, AddressOf XSDErrors)  
-   Console.WriteLine("custOrd {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating custOrd")  
-   ' Modify the source document so that it will not validate.  
-   custOrd.Root.Element("Orders").Element("Order").Element("CustomerID").Value = "AAAAA"  
-   errors = False  
-   custOrd.Validate(schemas, AddressOf XSDErrors)  
-   Console.WriteLine("custOrd {0}", IIf(errors, "did not validate", "validated"))  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", "CustomersOrders.xsd")  
+  
+    Console.WriteLine("Validating custOrd")  
+    Dim custOrd As XDocument = XDocument.Load("CustomersOrders.xml")  
+    errors = False  
+    custOrd.Validate(schemas, AddressOf XSDErrors)  
+    Console.WriteLine("custOrd {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating custOrd")  
+    ' Modify the source document so that it will not validate.  
+    custOrd.Root.Element("Orders").Element("Order").Element("CustomerID").Value = "AAAAA"  
+    errors = False  
+    custOrd.Validate(schemas, AddressOf XSDErrors)  
+    Console.WriteLine("custOrd {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
  
@@ -94,7 +94,7 @@ This example produces the following output:
 ```  
 Validating custOrd  
 custOrd validated  
- 
+  
 Validating custOrd  
 The key sequence 'AAAAA' in Keyref fails to refer to some key.  
 custOrd did not validate  
@@ -182,160 +182,160 @@ For an example of this property, see <xref:System.Xml.Schema.Extensions.Validate
 The following example populates the tree with a PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
  
 ```csharp  
- 
-               static void DumpInvalidNodes(XElement el)  
+  
+                static void DumpInvalidNodes(XElement el)  
 {  
-   if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-       Console.WriteLine("Invalid Element {0}",  
-           el.AncestorsAndSelf()  
-           .InDocumentOrder()  
-           .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
-   foreach (XAttribute att in el.Attributes())  
-       if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-           Console.WriteLine("Invalid Attribute {0}",  
-               att  
-               .Parent  
-               .AncestorsAndSelf()  
-               .InDocumentOrder()  
-               .Aggregate("",  
-                   (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
-               );  
-   foreach (XElement child in el.Elements())  
-       DumpInvalidNodes(child);  
+    if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+        Console.WriteLine("Invalid Element {0}",  
+            el.AncestorsAndSelf()  
+            .InDocumentOrder()  
+            .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
+    foreach (XAttribute att in el.Attributes())  
+        if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+            Console.WriteLine("Invalid Attribute {0}",  
+                att  
+                .Parent  
+                .AncestorsAndSelf()  
+                .InDocumentOrder()  
+                .Aggregate("",  
+                    (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
+                );  
+    foreach (XElement child in el.Elements())  
+        DumpInvalidNodes(child);  
 }  
- 
+  
 static void Main(string[] args)  
 {  
-   string xsdMarkup =  
-        @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-  <xsd:simpleType name='GCType'>  
-   <xsd:restriction base='xsd:token'>  
-    <xsd:enumeration value='AAA'/>  
-    <xsd:enumeration value='BBB'/>  
-   </xsd:restriction>  
-  </xsd:simpleType>  
-  <xsd:element name='Root'>  
-   <xsd:complexType>  
-    <xsd:sequence>  
-     <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-      <xsd:complexType>  
-       <xsd:sequence>  
-        <xsd:element name='GrandChild1' type='GCType'/>  
-        <xsd:element name='GrandChild2' type='GCType'/>  
-        <xsd:element name='GrandChild3' type='GCType'/>  
-       </xsd:sequence>  
-      </xsd:complexType>  
-     </xsd:element>  
-    </xsd:sequence>  
-   </xsd:complexType>  
-  </xsd:element>  
- </xsd:schema>";  
- 
-   XmlSchemaSet schemas = new XmlSchemaSet();  
-   schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
-   XDocument doc1 = new XDocument(  
-       new XElement("Root",  
-           new XElement("Child1",  
-               new XElement("GrandChild1", "AAA"),  
-               new XElement("GrandChild2", "ZZZ"),  
-               new XElement("GrandChild3", "ZZZ")  
-           )  
-       )  
-   );  
- 
-   Console.WriteLine("Validating doc1 ...");  
-   bool errors = false;  
-   doc1.Validate(schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
-   Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
-   DumpInvalidNodes(doc1.Root);  
+    string xsdMarkup =  
+         @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+   <xsd:simpleType name='GCType'>  
+    <xsd:restriction base='xsd:token'>  
+     <xsd:enumeration value='AAA'/>  
+     <xsd:enumeration value='BBB'/>  
+    </xsd:restriction>  
+   </xsd:simpleType>  
+   <xsd:element name='Root'>  
+    <xsd:complexType>  
+     <xsd:sequence>  
+      <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+       <xsd:complexType>  
+        <xsd:sequence>  
+         <xsd:element name='GrandChild1' type='GCType'/>  
+         <xsd:element name='GrandChild2' type='GCType'/>  
+         <xsd:element name='GrandChild3' type='GCType'/>  
+        </xsd:sequence>  
+       </xsd:complexType>  
+      </xsd:element>  
+     </xsd:sequence>  
+    </xsd:complexType>  
+   </xsd:element>  
+  </xsd:schema>";  
+  
+    XmlSchemaSet schemas = new XmlSchemaSet();  
+    schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
+  
+    XDocument doc1 = new XDocument(  
+        new XElement("Root",  
+            new XElement("Child1",  
+                new XElement("GrandChild1", "AAA"),  
+                new XElement("GrandChild2", "ZZZ"),  
+                new XElement("GrandChild3", "ZZZ")  
+            )  
+        )  
+    );  
+  
+    Console.WriteLine("Validating doc1 ...");  
+    bool errors = false;  
+    doc1.Validate(schemas, (sender, e) =>  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
+    Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
+    DumpInvalidNodes(doc1.Root);  
 }  
 ```  
  
 ```vb  
- 
-               Private Sub DumpInvalidNodes(ByVal el As XElement)  
-   If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-       Console.WriteLine("Invalid Element {0}", _  
-           el _  
-           .AncestorsAndSelf _  
-           .InDocumentOrder() _  
-           .Aggregate("", _  
-               Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
-   End If  
-   For Each att As XAttribute In el.Attributes()  
-       If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-           Console.WriteLine("Invalid Attribute {0}", _  
-               att _  
-               .Parent _  
-               .AncestorsAndSelf() _  
-               .InDocumentOrder() _  
-               .Aggregate("", _  
-                   Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
-                   "/@" + att.Name.ToString())  
-       End If  
-   Next  
-   For Each child As XElement In el.Elements()  
-       DumpInvalidNodes(child)  
-   Next  
+  
+                Private Sub DumpInvalidNodes(ByVal el As XElement)  
+    If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+        Console.WriteLine("Invalid Element {0}", _  
+            el _  
+            .AncestorsAndSelf _  
+            .InDocumentOrder() _  
+            .Aggregate("", _  
+                Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
+    End If  
+    For Each att As XAttribute In el.Attributes()  
+        If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+            Console.WriteLine("Invalid Attribute {0}", _  
+                att _  
+                .Parent _  
+                .AncestorsAndSelf() _  
+                .InDocumentOrder() _  
+                .Aggregate("", _  
+                    Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
+                    "/@" + att.Name.ToString())  
+        End If  
+    Next  
+    For Each child As XElement In el.Elements()  
+        DumpInvalidNodes(child)  
+    Next  
 End Sub  
- 
+  
 Dim errors As Boolean = False  
- 
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-   <?xml version='1.0'?>  
-   <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-       <xsd:simpleType name='GCType'>  
-           <xsd:restriction base='xsd:token'>  
-               <xsd:enumeration value='AAA'/>  
-               <xsd:enumeration value='BBB'/>  
-           </xsd:restriction>  
-       </xsd:simpleType>  
-       <xsd:element name='Root'>  
-           <xsd:complexType>  
-               <xsd:sequence>  
-                   <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-                       <xsd:complexType>  
-                           <xsd:sequence>  
-                               <xsd:element name='GrandChild1' type='GCType'/>  
-                               <xsd:element name='GrandChild2' type='GCType'/>  
-                               <xsd:element name='GrandChild3' type='GCType'/>  
-                           </xsd:sequence>  
-                       </xsd:complexType>  
-                   </xsd:element>  
-               </xsd:sequence>  
-           </xsd:complexType>  
-       </xsd:element>  
-   </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = _  
-   <?xml version='1.0'?>  
-   <Root>  
-       <Child1>  
-           <GrandChild1>AAA</GrandChild1>  
-           <GrandChild2>ZZZ</GrandChild2>  
-           <GrandChild3>ZZZ</GrandChild3>  
-       </Child1>  
-   </Root>  
- 
-   Console.WriteLine("Validating doc1 ...")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
-   DumpInvalidNodes(doc1.Root)  
+    Dim xsdMarkup As XDocument = _  
+    <?xml version='1.0'?>  
+    <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+        <xsd:simpleType name='GCType'>  
+            <xsd:restriction base='xsd:token'>  
+                <xsd:enumeration value='AAA'/>  
+                <xsd:enumeration value='BBB'/>  
+            </xsd:restriction>  
+        </xsd:simpleType>  
+        <xsd:element name='Root'>  
+            <xsd:complexType>  
+                <xsd:sequence>  
+                    <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+                        <xsd:complexType>  
+                            <xsd:sequence>  
+                                <xsd:element name='GrandChild1' type='GCType'/>  
+                                <xsd:element name='GrandChild2' type='GCType'/>  
+                                <xsd:element name='GrandChild3' type='GCType'/>  
+                            </xsd:sequence>  
+                        </xsd:complexType>  
+                    </xsd:element>  
+                </xsd:sequence>  
+            </xsd:complexType>  
+        </xsd:element>  
+    </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = _  
+    <?xml version='1.0'?>  
+    <Root>  
+        <Child1>  
+            <GrandChild1>AAA</GrandChild1>  
+            <GrandChild2>ZZZ</GrandChild2>  
+            <GrandChild3>ZZZ</GrandChild3>  
+        </Child1>  
+    </Root>  
+  
+    Console.WriteLine("Validating doc1 ...")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+    DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
  
@@ -395,105 +395,105 @@ This extension method validates that the <xref:System.Xml.Linq.XDocument> confor
 The following example creates an <xref:System.Xml.Schema.XmlSchemaSet>, then validates two <xref:System.Xml.Linq.XDocument> objects against the schema set. One of the documents is valid, the other is not.  
  
 ```csharp  
- 
-               string xsdMarkup =  
-   @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:sequence>  
-         <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-         <xsd:element name='Child2' minOccurs='1' maxOccurs='1'/>  
-        </xsd:sequence>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
+  
+                string xsdMarkup =  
+    @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:sequence>  
+          <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+          <xsd:element name='Child2' minOccurs='1' maxOccurs='1'/>  
+         </xsd:sequence>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
+  
 XDocument doc1 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "content1"),  
-       new XElement("Child2", "content1")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "content1"),  
+        new XElement("Child2", "content1")  
+    )  
 );  
- 
+  
 XDocument doc2 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "content1"),  
-       new XElement("Child3", "content1")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "content1"),  
+        new XElement("Child3", "content1")  
+    )  
 );  
- 
+  
 Console.WriteLine("Validating doc1");  
 bool errors = false;  
 doc1.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    });  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     });  
 Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating doc2");  
 errors = false;  
 doc2.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    });  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     });  
 Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-   <?xml version='1.0'?>  
-   <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-       <xsd:element name='Root'>  
-           <xsd:complexType>  
-               <xsd:sequence>  
-                   <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-                   <xsd:element name='Child2' minOccurs='1' maxOccurs='1'/>  
-               </xsd:sequence>  
-           </xsd:complexType>  
-       </xsd:element>  
-   </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = _  
-   <?xml version='1.0'?>  
-   <Root>  
-       <Child1>content1</Child1>  
-       <Child2>content2</Child2>  
-   </Root>  
- 
-   Dim doc2 As XDocument = _  
-   <?xml version='1.0'?>  
-   <Root>  
-       <Child1>content1</Child1>  
-       <Child3>content1</Child3>  
-   </Root>  
- 
-   Console.WriteLine("Validating doc1")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating doc2")  
-   errors = False  
-   doc2.Validate(schemas, AddressOf XSDErrors)  
-   Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
+    Dim xsdMarkup As XDocument = _  
+    <?xml version='1.0'?>  
+    <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+        <xsd:element name='Root'>  
+            <xsd:complexType>  
+                <xsd:sequence>  
+                    <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+                    <xsd:element name='Child2' minOccurs='1' maxOccurs='1'/>  
+                </xsd:sequence>  
+            </xsd:complexType>  
+        </xsd:element>  
+    </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = _  
+    <?xml version='1.0'?>  
+    <Root>  
+        <Child1>content1</Child1>  
+        <Child2>content2</Child2>  
+    </Root>  
+  
+    Dim doc2 As XDocument = _  
+    <?xml version='1.0'?>  
+    <Root>  
+        <Child1>content1</Child1>  
+        <Child3>content1</Child3>  
+    </Root>  
+  
+    Console.WriteLine("Validating doc1")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating doc2")  
+    errors = False  
+    doc2.Validate(schemas, AddressOf XSDErrors)  
+    Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
  
@@ -502,7 +502,7 @@ This example produces the following output:
 ```  
 Validating doc1  
 doc1 validated  
- 
+  
 Validating doc2  
 The element 'Root' has invalid child element 'Child3'. List of possible elements expected: 'Child2'.  
 doc2 did not validate  
@@ -569,131 +569,131 @@ After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you c
 ## Examples  
  
 ```csharp  
- 
-               string xsdMarkup =  
-   @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:simpleContent>  
-         <xsd:extension base='xsd:string'>  
-          <xsd:attribute name='Lang' use='required'>  
-           <xsd:simpleType>  
-            <xsd:restriction base='xsd:token'>  
-             <xsd:enumeration value='C#'/>  
-             <xsd:enumeration value='VB'/>  
-            </xsd:restriction>  
-           </xsd:simpleType>  
-          </xsd:attribute>  
-         </xsd:extension>  
-        </xsd:simpleContent>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
- 
+  
+                string xsdMarkup =  
+    @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:simpleContent>  
+          <xsd:extension base='xsd:string'>  
+           <xsd:attribute name='Lang' use='required'>  
+            <xsd:simpleType>  
+             <xsd:restriction base='xsd:token'>  
+              <xsd:enumeration value='C#'/>  
+              <xsd:enumeration value='VB'/>  
+             </xsd:restriction>  
+            </xsd:simpleType>  
+           </xsd:attribute>  
+          </xsd:extension>  
+         </xsd:simpleContent>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
+  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
+  
 XDocument doc1 = new XDocument(  
-   new XElement("Root",  
-       new XAttribute("Lang", "C#")  
-   )  
+    new XElement("Root",  
+        new XAttribute("Lang", "C#")  
+    )  
 );  
- 
+  
 Console.WriteLine("Validating doc1 ...");  
 bool errors = false;  
 doc1.Validate(schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
 Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating Lang attribute ...");  
 XAttribute lang = doc1.Root.Attribute("Lang");  
- 
+  
 errors = false;  
 lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   });  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    });  
 Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
- 
+  
 // the following makes the Lang attribute invalid according to the schema  
 lang.Value = "VC";  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating Lang attribute ...");  
- 
+  
 errors = false;  
 lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   });  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    });  
 Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-     <?xml version='1.0'?>  
-     <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-         <xsd:element name='Root'>  
-             <xsd:complexType>  
-                 <xsd:simpleContent>  
-                     <xsd:extension base='xsd:string'>  
-                         <xsd:attribute name='Lang' use='required'>  
-                             <xsd:simpleType>  
-                                 <xsd:restriction base='xsd:token'>  
-                                     <xsd:enumeration value='C#'/>  
-                                     <xsd:enumeration value='VB'/>  
-                                 </xsd:restriction>  
-                             </xsd:simpleType>  
-                         </xsd:attribute>  
-                     </xsd:extension>  
-                 </xsd:simpleContent>  
-             </xsd:complexType>  
-         </xsd:element>  
-     </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = <?xml version='1.0'?>  
-                           <Root Lang='C#'/>  
- 
-   Console.WriteLine("Validating doc1 ...")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating Lang attribute ...")  
-   Dim lang As XAttribute = doc1.Root.Attribute("Lang")  
- 
-   errors = False  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors)  
-   Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
- 
-   ' the following makes the Lang attribute invalid according to the schema  
-   lang.Value = "VC"  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating Lang attribute ...")  
- 
-   errors = False  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors)  
-   Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
+    Dim xsdMarkup As XDocument = _  
+      <?xml version='1.0'?>  
+      <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+          <xsd:element name='Root'>  
+              <xsd:complexType>  
+                  <xsd:simpleContent>  
+                      <xsd:extension base='xsd:string'>  
+                          <xsd:attribute name='Lang' use='required'>  
+                              <xsd:simpleType>  
+                                  <xsd:restriction base='xsd:token'>  
+                                      <xsd:enumeration value='C#'/>  
+                                      <xsd:enumeration value='VB'/>  
+                                  </xsd:restriction>  
+                              </xsd:simpleType>  
+                          </xsd:attribute>  
+                      </xsd:extension>  
+                  </xsd:simpleContent>  
+              </xsd:complexType>  
+          </xsd:element>  
+      </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = <?xml version='1.0'?>  
+                            <Root Lang='C#'/>  
+  
+    Console.WriteLine("Validating doc1 ...")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Lang attribute ...")  
+    Dim lang As XAttribute = doc1.Root.Attribute("Lang")  
+  
+    errors = False  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors)  
+    Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
+  
+    ' the following makes the Lang attribute invalid according to the schema  
+    lang.Value = "VC"  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Lang attribute ...")  
+  
+    errors = False  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors)  
+    Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
  
@@ -702,10 +702,10 @@ This example produces the following output:
 ```  
 Validating doc1 ...  
 doc1 validated  
- 
+  
 Validating Lang attribute ...  
 lang validated  
- 
+  
 Validating Lang attribute ...  
 The 'Lang' attribute is invalid - The value 'VC' is invalid according to its datatype 'Token' - The Enumeration constraint failed.  
 lang did not validate  
@@ -765,133 +765,133 @@ There are two steps to populating the XML tree with the PSVI.
 The following example contains an XSD that defines the `Child2` element with an `Att1` attribute with a default value. After successfully validating the document, the attribute with the default value is added to the XML tree. Note that the default attribute is not added to `doc2`, which does not validate against the schema.  
  
 ```csharp  
- 
-               string xsdMarkup =  
-   @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:sequence>  
-         <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-         <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
-          <xsd:complexType>  
-           <xsd:simpleContent>  
-            <xsd:extension base='xsd:string'>  
-             <xsd:attribute name='Att1' default='Att1 Default Value'/>  
-            </xsd:extension>  
-           </xsd:simpleContent>  
-          </xsd:complexType>  
-         </xsd:element>  
-        </xsd:sequence>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
+  
+                string xsdMarkup =  
+    @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:sequence>  
+          <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+          <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
+           <xsd:complexType>  
+            <xsd:simpleContent>  
+             <xsd:extension base='xsd:string'>  
+              <xsd:attribute name='Att1' default='Att1 Default Value'/>  
+             </xsd:extension>  
+            </xsd:simpleContent>  
+           </xsd:complexType>  
+          </xsd:element>  
+         </xsd:sequence>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
+  
 XDocument doc1 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "c1"),  
-       new XElement("Child2", "c2")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "c1"),  
+        new XElement("Child2", "c2")  
+    )  
 );  
- 
+  
 XDocument doc2 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "content1"),  
-       new XElement("Child3", "content1")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "content1"),  
+        new XElement("Child3", "content1")  
+    )  
 );  
- 
+  
 Console.WriteLine("Validating doc1");  
 bool errors = false;  
 doc1.Validate(schemas, (o, e) =>  
-                          {  
-                              Console.WriteLine("{0}", e.Message);  
-                              errors = true;  
-                          }, true);  
+                           {  
+                               Console.WriteLine("{0}", e.Message);  
+                               errors = true;  
+                           }, true);  
 Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating doc2");  
 errors = false;  
 doc2.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    }, true);  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     }, true);  
 Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Contents of doc1:");  
 Console.WriteLine(doc1);  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Contents of doc2:");  
 Console.WriteLine(doc2);  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-   <?xml version='1.0'?>  
-   <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-       <xsd:element name='Root'>  
-           <xsd:complexType>  
-               <xsd:sequence>  
-                   <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-                   <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
-                       <xsd:complexType>  
-                           <xsd:simpleContent>  
-                               <xsd:extension base='xsd:string'>  
-                                   <xsd:attribute name='Att1' default='Att1 Default Value'/>  
-                               </xsd:extension>  
-                           </xsd:simpleContent>  
-                       </xsd:complexType>  
-                   </xsd:element>  
-               </xsd:sequence>  
-           </xsd:complexType>  
-       </xsd:element>  
-   </xsd:schema>  
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = <?xml version='1.0'?>  
-                           <Root>  
-                               <Child1>c1</Child1>  
-                               <Child2>c2</Child2>  
-                           </Root>  
-   Dim doc2 As XDocument = <?xml version='1.0'?>  
-                           <Root>  
-                               <Child1>content1</Child1>  
-                               <Child3>content1</Child3>  
-                           </Root>  
- 
-   Console.WriteLine("Validating doc1")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating doc2")  
-   errors = False  
-   doc2.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Contents of doc1:")  
-   Console.WriteLine(doc1)  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Contents of doc2:")  
-   Console.WriteLine(doc2)  
+    Dim xsdMarkup As XDocument = _  
+    <?xml version='1.0'?>  
+    <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+        <xsd:element name='Root'>  
+            <xsd:complexType>  
+                <xsd:sequence>  
+                    <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+                    <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
+                        <xsd:complexType>  
+                            <xsd:simpleContent>  
+                                <xsd:extension base='xsd:string'>  
+                                    <xsd:attribute name='Att1' default='Att1 Default Value'/>  
+                                </xsd:extension>  
+                            </xsd:simpleContent>  
+                        </xsd:complexType>  
+                    </xsd:element>  
+                </xsd:sequence>  
+            </xsd:complexType>  
+        </xsd:element>  
+    </xsd:schema>  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = <?xml version='1.0'?>  
+                            <Root>  
+                                <Child1>c1</Child1>  
+                                <Child2>c2</Child2>  
+                            </Root>  
+    Dim doc2 As XDocument = <?xml version='1.0'?>  
+                            <Root>  
+                                <Child1>content1</Child1>  
+                                <Child3>content1</Child3>  
+                            </Root>  
+  
+    Console.WriteLine("Validating doc1")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating doc2")  
+    errors = False  
+    doc2.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Contents of doc1:")  
+    Console.WriteLine(doc1)  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Contents of doc2:")  
+    Console.WriteLine(doc2)  
 End Sub  
 ```  
  
@@ -900,181 +900,181 @@ This example produces the following output:
 ```  
 Validating doc1  
 doc1 validated  
- 
+  
 Validating doc2  
 The element 'Root' has invalid child element 'Child3'. List of possible elements expected: 'Child2'.  
 doc2 did not validate  
- 
+  
 Contents of doc1:  
 <Root>  
- <Child1>c1</Child1>  
- <Child2 Att1="Att1 Default Value">c2</Child2>  
+  <Child1>c1</Child1>  
+  <Child2 Att1="Att1 Default Value">c2</Child2>  
 </Root>  
- 
+  
 Contents of doc2:  
 <Root>  
- <Child1>content1</Child1>  
- <Child3>content1</Child3>  
+  <Child1>content1</Child1>  
+  <Child3>content1</Child3>  
 </Root>  
 ```  
  
 The following example populates the tree with PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
  
 ```csharp  
- 
-               static void DumpInvalidNodes(XElement el)  
+  
+                static void DumpInvalidNodes(XElement el)  
 {  
-   if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-       Console.WriteLine("Invalid Element {0}",  
-           el.AncestorsAndSelf()  
-           .InDocumentOrder()  
-           .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
-   foreach (XAttribute att in el.Attributes())  
-       if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-           Console.WriteLine("Invalid Attribute {0}",  
-               att  
-               .Parent  
-               .AncestorsAndSelf()  
-               .InDocumentOrder()  
-               .Aggregate("",  
-                   (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
-               );  
-   foreach (XElement child in el.Elements())  
-       DumpInvalidNodes(child);  
+    if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+        Console.WriteLine("Invalid Element {0}",  
+            el.AncestorsAndSelf()  
+            .InDocumentOrder()  
+            .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
+    foreach (XAttribute att in el.Attributes())  
+        if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+            Console.WriteLine("Invalid Attribute {0}",  
+                att  
+                .Parent  
+                .AncestorsAndSelf()  
+                .InDocumentOrder()  
+                .Aggregate("",  
+                    (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
+                );  
+    foreach (XElement child in el.Elements())  
+        DumpInvalidNodes(child);  
 }  
- 
+  
 static void Main(string[] args)  
 {  
-  string xsdMarkup =  
-       @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-          <xsd:simpleType name='GCType'>  
-           <xsd:restriction base='xsd:token'>  
-            <xsd:enumeration value='AAA'/>  
-            <xsd:enumeration value='BBB'/>  
-           </xsd:restriction>  
-          </xsd:simpleType>  
-          <xsd:element name='Root'>  
-           <xsd:complexType>  
-            <xsd:sequence>  
-             <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-              <xsd:complexType>  
-               <xsd:sequence>  
-                <xsd:element name='GrandChild1' type='GCType'/>  
-                <xsd:element name='GrandChild2' type='GCType'/>  
-                <xsd:element name='GrandChild3' type='GCType'/>  
-               </xsd:sequence>  
-              </xsd:complexType>  
-             </xsd:element>  
-            </xsd:sequence>  
-           </xsd:complexType>  
-          </xsd:element>  
-         </xsd:schema>";  
- 
-   XmlSchemaSet schemas = new XmlSchemaSet();  
-   schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
-   XDocument doc1 = new XDocument(  
-       new XElement("Root",  
-           new XElement("Child1",  
-               new XElement("GrandChild1", "AAA"),  
-               new XElement("GrandChild2", "ZZZ"),  
-               new XElement("GrandChild3", "ZZZ")  
-           )  
-       )  
-   );  
- 
-   Console.WriteLine("Validating doc1 ...");  
-   bool errors = false;  
-   doc1.Validate(schemas, (sender, e) =>  
-       {  
-           Console.WriteLine(e.Message);  
-           errors = true;  
-       }, true);  
-   Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
-   DumpInvalidNodes(doc1.Root);  
+   string xsdMarkup =  
+        @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+           <xsd:simpleType name='GCType'>  
+            <xsd:restriction base='xsd:token'>  
+             <xsd:enumeration value='AAA'/>  
+             <xsd:enumeration value='BBB'/>  
+            </xsd:restriction>  
+           </xsd:simpleType>  
+           <xsd:element name='Root'>  
+            <xsd:complexType>  
+             <xsd:sequence>  
+              <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+               <xsd:complexType>  
+                <xsd:sequence>  
+                 <xsd:element name='GrandChild1' type='GCType'/>  
+                 <xsd:element name='GrandChild2' type='GCType'/>  
+                 <xsd:element name='GrandChild3' type='GCType'/>  
+                </xsd:sequence>  
+               </xsd:complexType>  
+              </xsd:element>  
+             </xsd:sequence>  
+            </xsd:complexType>  
+           </xsd:element>  
+          </xsd:schema>";  
+  
+    XmlSchemaSet schemas = new XmlSchemaSet();  
+    schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
+  
+    XDocument doc1 = new XDocument(  
+        new XElement("Root",  
+            new XElement("Child1",  
+                new XElement("GrandChild1", "AAA"),  
+                new XElement("GrandChild2", "ZZZ"),  
+                new XElement("GrandChild3", "ZZZ")  
+            )  
+        )  
+    );  
+  
+    Console.WriteLine("Validating doc1 ...");  
+    bool errors = false;  
+    doc1.Validate(schemas, (sender, e) =>  
+        {  
+            Console.WriteLine(e.Message);  
+            errors = true;  
+        }, true);  
+    Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
+    DumpInvalidNodes(doc1.Root);  
 }  
 ```  
  
 ```vb  
- 
-               Private Sub DumpInvalidNodes(ByVal el As XElement)  
-   If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-       Console.WriteLine("Invalid Element {0}", _  
-           el _  
-           .AncestorsAndSelf _  
-           .InDocumentOrder() _  
-           .Aggregate("", _  
-               Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
-   End If  
-   For Each att As XAttribute In el.Attributes()  
-       If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-           Console.WriteLine("Invalid Attribute {0}", _  
-               att _  
-               .Parent _  
-               .AncestorsAndSelf() _  
-               .InDocumentOrder() _  
-               .Aggregate("", _  
-                   Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
-                   "/@" + att.Name.ToString())  
-       End If  
-   Next  
-   For Each child As XElement In el.Elements()  
-       DumpInvalidNodes(child)  
-   Next  
+  
+                Private Sub DumpInvalidNodes(ByVal el As XElement)  
+    If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+        Console.WriteLine("Invalid Element {0}", _  
+            el _  
+            .AncestorsAndSelf _  
+            .InDocumentOrder() _  
+            .Aggregate("", _  
+                Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
+    End If  
+    For Each att As XAttribute In el.Attributes()  
+        If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+            Console.WriteLine("Invalid Attribute {0}", _  
+                att _  
+                .Parent _  
+                .AncestorsAndSelf() _  
+                .InDocumentOrder() _  
+                .Aggregate("", _  
+                    Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
+                    "/@" + att.Name.ToString())  
+        End If  
+    Next  
+    For Each child As XElement In el.Elements()  
+        DumpInvalidNodes(child)  
+    Next  
 End Sub  
- 
+  
 Dim errors As Boolean = False  
- 
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-       <?xml version='1.0'?>  
-       <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-           <xsd:simpleType name='GCType'>  
-               <xsd:restriction base='xsd:token'>  
-                   <xsd:enumeration value='AAA'/>  
-                   <xsd:enumeration value='BBB'/>  
-               </xsd:restriction>  
-           </xsd:simpleType>  
-           <xsd:element name='Root'>  
-               <xsd:complexType>  
-                   <xsd:sequence>  
-                       <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-                           <xsd:complexType>  
-                               <xsd:sequence>  
-                                   <xsd:element name='GrandChild1' type='GCType'/>  
-                                   <xsd:element name='GrandChild2' type='GCType'/>  
-                                   <xsd:element name='GrandChild3' type='GCType'/>  
-                               </xsd:sequence>  
-                           </xsd:complexType>  
-                       </xsd:element>  
-                   </xsd:sequence>  
-               </xsd:complexType>  
-           </xsd:element>  
-       </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = _  
-       <?xml version='1.0'?>  
-       <Root>  
-           <Child1>  
-               <GrandChild1>AAA</GrandChild1>  
-               <GrandChild2>ZZZ</GrandChild2>  
-               <GrandChild3>ZZZ</GrandChild3>  
-           </Child1>  
-       </Root>  
- 
-   Console.WriteLine("Validating doc1 ...")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
-   DumpInvalidNodes(doc1.Root)  
+    Dim xsdMarkup As XDocument = _  
+        <?xml version='1.0'?>  
+        <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+            <xsd:simpleType name='GCType'>  
+                <xsd:restriction base='xsd:token'>  
+                    <xsd:enumeration value='AAA'/>  
+                    <xsd:enumeration value='BBB'/>  
+                </xsd:restriction>  
+            </xsd:simpleType>  
+            <xsd:element name='Root'>  
+                <xsd:complexType>  
+                    <xsd:sequence>  
+                        <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+                            <xsd:complexType>  
+                                <xsd:sequence>  
+                                    <xsd:element name='GrandChild1' type='GCType'/>  
+                                    <xsd:element name='GrandChild2' type='GCType'/>  
+                                    <xsd:element name='GrandChild3' type='GCType'/>  
+                                </xsd:sequence>  
+                            </xsd:complexType>  
+                        </xsd:element>  
+                    </xsd:sequence>  
+                </xsd:complexType>  
+            </xsd:element>  
+        </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = _  
+        <?xml version='1.0'?>  
+        <Root>  
+            <Child1>  
+                <GrandChild1>AAA</GrandChild1>  
+                <GrandChild2>ZZZ</GrandChild2>  
+                <GrandChild3>ZZZ</GrandChild3>  
+            </Child1>  
+        </Root>  
+  
+    Console.WriteLine("Validating doc1 ...")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+    DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
  
@@ -1152,131 +1152,131 @@ After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you c
 ## Examples  
  
 ```csharp  
- 
-               string xsdMarkup =  
-   @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:sequence>  
-         <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-          <xsd:complexType>  
-           <xsd:sequence>  
-            <xsd:element name='GrandChild1' minOccurs='1' maxOccurs='1'/>  
-            <xsd:element name='GrandChild2' minOccurs='1' maxOccurs='2'/>  
-           </xsd:sequence>  
-          </xsd:complexType>  
-         </xsd:element>  
-        </xsd:sequence>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
- 
+  
+                string xsdMarkup =  
+    @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:sequence>  
+          <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+           <xsd:complexType>  
+            <xsd:sequence>  
+             <xsd:element name='GrandChild1' minOccurs='1' maxOccurs='1'/>  
+             <xsd:element name='GrandChild2' minOccurs='1' maxOccurs='2'/>  
+            </xsd:sequence>  
+           </xsd:complexType>  
+          </xsd:element>  
+         </xsd:sequence>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
+  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
+  
 XDocument doc1 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1",  
-           new XElement("GrandChild1", "gc"),  
-           new XElement("GrandChild2", "gc")  
-       )  
-   )  
+    new XElement("Root",  
+        new XElement("Child1",  
+            new XElement("GrandChild1", "gc"),  
+            new XElement("GrandChild2", "gc")  
+        )  
+    )  
 );  
- 
+  
 Console.WriteLine("Validating doc1 ...");  
 bool errors = false;  
 doc1.Validate(schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
 Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating Child1 after first edit ...");  
 XElement child1 = doc1.Element("Root").Element("Child1");  
 child1.Add(new XElement("GrandChild2", "gc"));  
 errors = false;  
 child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   });  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    });  
 Console.WriteLine("child1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 // the following makes the Child1 element invalid according to the schema  
 child1.Add(new XElement("GrandChild3", "gc"));  
 Console.WriteLine();  
 Console.WriteLine("Validating Child1 after second edit ...");  
 child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   });  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    });  
 Console.WriteLine("child1 {0}", errors ? "did not validate" : "validated");  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
- 
-   Dim xsdMarkup As XDocument = _  
-       <?xml version='1.0'?>  
-       <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-           <xsd:element name='Root'>  
-               <xsd:complexType>  
-                   <xsd:sequence>  
-                       <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
-                           <xsd:complexType>  
-                               <xsd:sequence>  
-                                   <xsd:element name='GrandChild1' minOccurs='1' maxOccurs='1'/>  
-                                   <xsd:element name='GrandChild2' minOccurs='1' maxOccurs='2'/>  
-                               </xsd:sequence>  
-                           </xsd:complexType>  
-                       </xsd:element>  
-                   </xsd:sequence>  
-               </xsd:complexType>  
-           </xsd:element>  
-       </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = _  
-       <?xml version='1.0'?>  
-       <Root>  
-           <Child1>  
-               <GrandChild1>gc</GrandChild1>  
-               <GrandChild2>gc</GrandChild2>  
-           </Child1>  
-       </Root>  
- 
-   Console.WriteLine("Validating doc1 ...")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating Child1 after first edit ...")  
-   Dim child1 As XElement = doc1.Element("Root").Element("Child1")  
-   child1.Add(<GrandChild2>gc</GrandChild2>)  
-   errors = False  
-   child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, AddressOf XSDErrors)  
-   Console.WriteLine("child1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   ' the following makes the Child1 element invalid according to the schema  
-   child1.Add(<GrandChild3>gc</GrandChild3>)  
-   Console.WriteLine()  
-   Console.WriteLine("Validating Child1 after second edit ...")  
-   child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, AddressOf XSDErrors)  
-   Console.WriteLine("child1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Dim xsdMarkup As XDocument = _  
+        <?xml version='1.0'?>  
+        <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+            <xsd:element name='Root'>  
+                <xsd:complexType>  
+                    <xsd:sequence>  
+                        <xsd:element name='Child1' minOccurs='1' maxOccurs='1'>  
+                            <xsd:complexType>  
+                                <xsd:sequence>  
+                                    <xsd:element name='GrandChild1' minOccurs='1' maxOccurs='1'/>  
+                                    <xsd:element name='GrandChild2' minOccurs='1' maxOccurs='2'/>  
+                                </xsd:sequence>  
+                            </xsd:complexType>  
+                        </xsd:element>  
+                    </xsd:sequence>  
+                </xsd:complexType>  
+            </xsd:element>  
+        </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = _  
+        <?xml version='1.0'?>  
+        <Root>  
+            <Child1>  
+                <GrandChild1>gc</GrandChild1>  
+                <GrandChild2>gc</GrandChild2>  
+            </Child1>  
+        </Root>  
+  
+    Console.WriteLine("Validating doc1 ...")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Child1 after first edit ...")  
+    Dim child1 As XElement = doc1.Element("Root").Element("Child1")  
+    child1.Add(<GrandChild2>gc</GrandChild2>)  
+    errors = False  
+    child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, AddressOf XSDErrors)  
+    Console.WriteLine("child1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    ' the following makes the Child1 element invalid according to the schema  
+    child1.Add(<GrandChild3>gc</GrandChild3>)  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Child1 after second edit ...")  
+    child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, AddressOf XSDErrors)  
+    Console.WriteLine("child1 {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
  
@@ -1285,10 +1285,10 @@ This example produces the following output:
 ```  
 Validating doc1 ...  
 doc1 validated  
- 
+  
 Validating Child1 after first edit ...  
 child1 validated  
- 
+  
 Validating Child1 after second edit ...  
 The element 'Child1' has invalid child element 'GrandChild3'.  
 child1 did not validate  
@@ -1359,188 +1359,188 @@ After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you c
 ## Examples  
  
 ```csharp  
- 
-               static void DumpInvalidNodes(XElement el)  
+  
+                static void DumpInvalidNodes(XElement el)  
 {  
-   if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-       Console.WriteLine("Invalid Element {0}",  
-           el.AncestorsAndSelf()  
-           .InDocumentOrder()  
-           .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
-   foreach (XAttribute att in el.Attributes())  
-       if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
-           Console.WriteLine("Invalid Attribute {0}",  
-               att  
-               .Parent  
-               .AncestorsAndSelf()  
-               .InDocumentOrder()  
-               .Aggregate("",  
-                   (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
-               );  
-   foreach (XElement child in el.Elements())  
-       DumpInvalidNodes(child);  
+    if (el.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+        Console.WriteLine("Invalid Element {0}",  
+            el.AncestorsAndSelf()  
+            .InDocumentOrder()  
+            .Aggregate("", (s, i) => s + "/" + i.Name.ToString()));  
+    foreach (XAttribute att in el.Attributes())  
+        if (att.GetSchemaInfo().Validity != XmlSchemaValidity.Valid)  
+            Console.WriteLine("Invalid Attribute {0}",  
+                att  
+                .Parent  
+                .AncestorsAndSelf()  
+                .InDocumentOrder()  
+                .Aggregate("",  
+                    (s, i) => s + "/" + i.Name.ToString()) + "/@" + att.Name.ToString()  
+                );  
+    foreach (XElement child in el.Elements())  
+        DumpInvalidNodes(child);  
 }  
- 
+  
 static void Main(string[] args)  
 {  
-   string xsdMarkup =  
-       @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:simpleContent>  
-         <xsd:extension base='xsd:string'>  
-          <xsd:attribute name='Lang' use='required'>  
-           <xsd:simpleType>  
-            <xsd:restriction base='xsd:token'>  
-             <xsd:enumeration value='C#'/>  
-             <xsd:enumeration value='VB'/>  
-            </xsd:restriction>  
-           </xsd:simpleType>  
-          </xsd:attribute>  
-         </xsd:extension>  
-        </xsd:simpleContent>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
- 
-   XmlSchemaSet schemas = new XmlSchemaSet();  
-   schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
-   XDocument doc1 = new XDocument(  
-       new XElement("Root",  
-           new XAttribute("Lang", "C#")  
-       )  
-   );  
- 
-   Console.WriteLine("Validating doc1 ...");  
-   bool errors = false;  
-   doc1.Validate(schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
-   Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
-   DumpInvalidNodes(doc1.Root);  
- 
-   Console.WriteLine();  
-   Console.WriteLine("Validating Lang attribute ...");  
-   XAttribute lang = doc1.Element("Root").Attribute("Lang");  
- 
-   errors = false;  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
-   Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
-   DumpInvalidNodes(doc1.Root);  
- 
-   // the following makes the Lang attribute invalid according to the schema  
-   lang.Value = "VC";  
- 
-   Console.WriteLine();  
-   Console.WriteLine("Validating Lang attribute ...");  
- 
-   errors = false;  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
-   {  
-       Console.WriteLine(e.Message);  
-       errors = true;  
-   }, true);  
-   Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
-   DumpInvalidNodes(doc1.Root);  
+    string xsdMarkup =  
+        @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:simpleContent>  
+          <xsd:extension base='xsd:string'>  
+           <xsd:attribute name='Lang' use='required'>  
+            <xsd:simpleType>  
+             <xsd:restriction base='xsd:token'>  
+              <xsd:enumeration value='C#'/>  
+              <xsd:enumeration value='VB'/>  
+             </xsd:restriction>  
+            </xsd:simpleType>  
+           </xsd:attribute>  
+          </xsd:extension>  
+         </xsd:simpleContent>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
+  
+    XmlSchemaSet schemas = new XmlSchemaSet();  
+    schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
+  
+    XDocument doc1 = new XDocument(  
+        new XElement("Root",  
+            new XAttribute("Lang", "C#")  
+        )  
+    );  
+  
+    Console.WriteLine("Validating doc1 ...");  
+    bool errors = false;  
+    doc1.Validate(schemas, (sender, e) =>  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
+    Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
+    DumpInvalidNodes(doc1.Root);  
+  
+    Console.WriteLine();  
+    Console.WriteLine("Validating Lang attribute ...");  
+    XAttribute lang = doc1.Element("Root").Attribute("Lang");  
+  
+    errors = false;  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
+    Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
+    DumpInvalidNodes(doc1.Root);  
+  
+    // the following makes the Lang attribute invalid according to the schema  
+    lang.Value = "VC";  
+  
+    Console.WriteLine();  
+    Console.WriteLine("Validating Lang attribute ...");  
+  
+    errors = false;  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>  
+    {  
+        Console.WriteLine(e.Message);  
+        errors = true;  
+    }, true);  
+    Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
+    DumpInvalidNodes(doc1.Root);  
 }  
 ```  
  
 ```vb  
- 
-               Private Sub DumpInvalidNodes(ByVal el As XElement)  
-   If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-       Console.WriteLine("Invalid Element {0}", _  
-           el _  
-           .AncestorsAndSelf _  
-           .InDocumentOrder() _  
-           .Aggregate("", _  
-               Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
-   End If  
-   For Each att As XAttribute In el.Attributes()  
-       If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
-           Console.WriteLine("Invalid Attribute {0}", _  
-               att _  
-               .Parent _  
-               .AncestorsAndSelf() _  
-               .InDocumentOrder() _  
-               .Aggregate("", _  
-                   Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
-                   "/@" + att.Name.ToString())  
-       End If  
-   Next  
-   For Each child As XElement In el.Elements()  
-       DumpInvalidNodes(child)  
-   Next  
+  
+                Private Sub DumpInvalidNodes(ByVal el As XElement)  
+    If el.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+        Console.WriteLine("Invalid Element {0}", _  
+            el _  
+            .AncestorsAndSelf _  
+            .InDocumentOrder() _  
+            .Aggregate("", _  
+                Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()))  
+    End If  
+    For Each att As XAttribute In el.Attributes()  
+        If att.GetSchemaInfo.Validity <> XmlSchemaValidity.Valid Then  
+            Console.WriteLine("Invalid Attribute {0}", _  
+                att _  
+                .Parent _  
+                .AncestorsAndSelf() _  
+                .InDocumentOrder() _  
+                .Aggregate("", _  
+                    Function(ByVal s, ByVal i) s + "/" + i.Name.ToString()) + _  
+                    "/@" + att.Name.ToString())  
+        End If  
+    Next  
+    For Each child As XElement In el.Elements()  
+        DumpInvalidNodes(child)  
+    Next  
 End Sub  
- 
+  
 Dim errors As Boolean = False  
- 
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
- 
-   Dim xsdMarkup As XDocument = _  
-       <?xml version='1.0'?>  
-       <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-           <xsd:element name='Root'>  
-               <xsd:complexType>  
-                   <xsd:simpleContent>  
-                       <xsd:extension base='xsd:string'>  
-                           <xsd:attribute name='Lang' use='required'>  
-                               <xsd:simpleType>  
-                                   <xsd:restriction base='xsd:token'>  
-                                       <xsd:enumeration value='C#'/>  
-                                       <xsd:enumeration value='VB'/>  
-                                   </xsd:restriction>  
-                               </xsd:simpleType>  
-                           </xsd:attribute>  
-                       </xsd:extension>  
-                   </xsd:simpleContent>  
-               </xsd:complexType>  
-           </xsd:element>  
-       </xsd:schema>  
- 
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = <?xml version='1.0'?>  
-                           <Root Lang='C#'/>  
- 
-   Console.WriteLine("Validating doc1 ...")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
-   DumpInvalidNodes(doc1.Root)  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating Lang attribute ...")  
-   Dim lang As XAttribute = doc1.Element("Root").Attribute("Lang")  
- 
-   errors = False  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
-   DumpInvalidNodes(doc1.Root)  
- 
-   ' the following makes the Lang attribute invalid according to the schema  
-   lang.Value = "VC"  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating Lang attribute ...")  
- 
-   errors = False  
-   lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
-   DumpInvalidNodes(doc1.Root)  
+  
+    Dim xsdMarkup As XDocument = _  
+        <?xml version='1.0'?>  
+        <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+            <xsd:element name='Root'>  
+                <xsd:complexType>  
+                    <xsd:simpleContent>  
+                        <xsd:extension base='xsd:string'>  
+                            <xsd:attribute name='Lang' use='required'>  
+                                <xsd:simpleType>  
+                                    <xsd:restriction base='xsd:token'>  
+                                        <xsd:enumeration value='C#'/>  
+                                        <xsd:enumeration value='VB'/>  
+                                    </xsd:restriction>  
+                                </xsd:simpleType>  
+                            </xsd:attribute>  
+                        </xsd:extension>  
+                    </xsd:simpleContent>  
+                </xsd:complexType>  
+            </xsd:element>  
+        </xsd:schema>  
+  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = <?xml version='1.0'?>  
+                            <Root Lang='C#'/>  
+  
+    Console.WriteLine("Validating doc1 ...")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+    DumpInvalidNodes(doc1.Root)  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Lang attribute ...")  
+    Dim lang As XAttribute = doc1.Element("Root").Attribute("Lang")  
+  
+    errors = False  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
+    DumpInvalidNodes(doc1.Root)  
+  
+    ' the following makes the Lang attribute invalid according to the schema  
+    lang.Value = "VC"  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating Lang attribute ...")  
+  
+    errors = False  
+    lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
+    DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
  
@@ -1549,10 +1549,10 @@ This example produces the following output:
 ```  
 Validating doc1 ...  
 doc1 validated  
- 
+  
 Validating Lang attribute ...  
 lang validated  
- 
+  
 Validating Lang attribute ...  
 The 'Lang' attribute is invalid - The value 'VC' is invalid according to its datatype 'Token' - The Enumeration constraint failed.  
 lang did not validate  
@@ -1630,136 +1630,136 @@ After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you c
 ## Examples  
  
 ```csharp  
- 
-               string xsdMarkup =  
-   @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-      <xsd:element name='Root'>  
-       <xsd:complexType>  
-        <xsd:sequence>  
-         <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-         <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
-          <xsd:complexType>  
-           <xsd:simpleContent>  
-            <xsd:extension base='xsd:string'>  
-             <xsd:attribute name='Att1' default='Att1 Default Value'/>  
-            </xsd:extension>  
-           </xsd:simpleContent>  
-          </xsd:complexType>  
-         </xsd:element>  
-        </xsd:sequence>  
-       </xsd:complexType>  
-      </xsd:element>  
-     </xsd:schema>";  
+  
+                string xsdMarkup =  
+    @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+       <xsd:element name='Root'>  
+        <xsd:complexType>  
+         <xsd:sequence>  
+          <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+          <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
+           <xsd:complexType>  
+            <xsd:simpleContent>  
+             <xsd:extension base='xsd:string'>  
+              <xsd:attribute name='Att1' default='Att1 Default Value'/>  
+             </xsd:extension>  
+            </xsd:simpleContent>  
+           </xsd:complexType>  
+          </xsd:element>  
+         </xsd:sequence>  
+        </xsd:complexType>  
+       </xsd:element>  
+      </xsd:schema>";  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", XmlReader.Create(new StringReader(xsdMarkup)));  
- 
+  
 XDocument doc1 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "c1"),  
-       new XElement("Child2", "c2")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "c1"),  
+        new XElement("Child2", "c2")  
+    )  
 );  
- 
+  
 XDocument doc2 = new XDocument(  
-   new XElement("Root",  
-       new XElement("Child1", "content1"),  
-       new XElement("Child3", "content1")  
-   )  
+    new XElement("Root",  
+        new XElement("Child1", "content1"),  
+        new XElement("Child3", "content1")  
+    )  
 );  
- 
+  
 Console.WriteLine("Validating doc1");  
 bool errors = false;  
 doc1.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    }, true);  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     }, true);  
 Console.WriteLine("doc1 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Validating doc2");  
 errors = false;  
 doc2.Validate(schemas, (o, e) =>  
-                    {  
-                        Console.WriteLine("{0}", e.Message);  
-                        errors = true;  
-                    }, true);  
+                     {  
+                         Console.WriteLine("{0}", e.Message);  
+                         errors = true;  
+                     }, true);  
 Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Contents of doc1:");  
 Console.WriteLine(doc1);  
- 
+  
 Console.WriteLine();  
 Console.WriteLine("Contents of doc2:");  
 Console.WriteLine(doc2);  
 ```  
  
 ```vb  
- 
-               Dim errors As Boolean = False  
- 
+  
+                Dim errors As Boolean = False  
+  
 Private Sub XSDErrors(ByVal o As Object, ByVal e As ValidationEventArgs)  
-   Console.WriteLine("{0}", e.Message)  
-   errors = True  
+    Console.WriteLine("{0}", e.Message)  
+    errors = True  
 End Sub  
- 
+  
 Sub Main()  
-   Dim xsdMarkup As XDocument = _  
-       <?xml version='1.0'?>  
-       <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
-           <xsd:element name='Root'>  
-               <xsd:complexType>  
-                   <xsd:sequence>  
-                       <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
-                       <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
-                           <xsd:complexType>  
-                               <xsd:simpleContent>  
-                                   <xsd:extension base='xsd:string'>  
-                                       <xsd:attribute name='Att1' default='Att1 Default Value'/>  
-                                   </xsd:extension>  
-                               </xsd:simpleContent>  
-                           </xsd:complexType>  
-                       </xsd:element>  
-                   </xsd:sequence>  
-               </xsd:complexType>  
-           </xsd:element>  
-       </xsd:schema>  
-   Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-   schemas.Add("", xsdMarkup.CreateReader)  
- 
-   Dim doc1 As XDocument = _  
-       <?xml version='1.0'?>  
-       <Root>  
-           <Child1>c1</Child1>  
-           <Child2>c2</Child2>  
-       </Root>  
- 
-   Dim doc2 As XDocument = _  
-       <?xml version='1.0'?>  
-       <Root>  
-           <Child1>content1</Child1>  
-           <Child3>content1</Child3>  
-       </Root>  
- 
-   Console.WriteLine("Validating doc1")  
-   errors = False  
-   doc1.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Validating doc2")  
-   errors = False  
-   doc2.Validate(schemas, AddressOf XSDErrors, True)  
-   Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Contents of doc1:")  
-   Console.WriteLine(doc1)  
- 
-   Console.WriteLine()  
-   Console.WriteLine("Contents of doc2:")  
-   Console.WriteLine(doc2)  
+    Dim xsdMarkup As XDocument = _  
+        <?xml version='1.0'?>  
+        <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
+            <xsd:element name='Root'>  
+                <xsd:complexType>  
+                    <xsd:sequence>  
+                        <xsd:element name='Child1' minOccurs='1' maxOccurs='1'/>  
+                        <xsd:element name='Child2' minOccurs='1' maxOccurs='1'>  
+                            <xsd:complexType>  
+                                <xsd:simpleContent>  
+                                    <xsd:extension base='xsd:string'>  
+                                        <xsd:attribute name='Att1' default='Att1 Default Value'/>  
+                                    </xsd:extension>  
+                                </xsd:simpleContent>  
+                            </xsd:complexType>  
+                        </xsd:element>  
+                    </xsd:sequence>  
+                </xsd:complexType>  
+            </xsd:element>  
+        </xsd:schema>  
+    Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
+    schemas.Add("", xsdMarkup.CreateReader)  
+  
+    Dim doc1 As XDocument = _  
+        <?xml version='1.0'?>  
+        <Root>  
+            <Child1>c1</Child1>  
+            <Child2>c2</Child2>  
+        </Root>  
+  
+    Dim doc2 As XDocument = _  
+        <?xml version='1.0'?>  
+        <Root>  
+            <Child1>content1</Child1>  
+            <Child3>content1</Child3>  
+        </Root>  
+  
+    Console.WriteLine("Validating doc1")  
+    errors = False  
+    doc1.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc1 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Validating doc2")  
+    errors = False  
+    doc2.Validate(schemas, AddressOf XSDErrors, True)  
+    Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Contents of doc1:")  
+    Console.WriteLine(doc1)  
+  
+    Console.WriteLine()  
+    Console.WriteLine("Contents of doc2:")  
+    Console.WriteLine(doc2)  
 End Sub  
 ```  
  
@@ -1768,21 +1768,21 @@ This example produces the following output:
 ```  
 Validating doc1  
 doc1 validated  
- 
+  
 Validating doc2  
 The element 'Root' has invalid child element 'Child3'. List of possible elements expected: 'Child2'.  
 doc2 did not validate  
- 
+  
 Contents of doc1:  
 <Root>  
- <Child1>c1</Child1>  
- <Child2 Att1="Att1 Default Value">c2</Child2>  
+  <Child1>c1</Child1>  
+  <Child2 Att1="Att1 Default Value">c2</Child2>  
 </Root>  
- 
+  
 Contents of doc2:  
 <Root>  
- <Child1>content1</Child1>  
- <Child3>content1</Child3>  
+  <Child1>content1</Child1>  
+  <Child3>content1</Child3>  
 </Root>  
 ```  
  

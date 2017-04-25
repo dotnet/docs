@@ -38,22 +38,22 @@ The following code example shows a Web.config file for an application that enabl
  
 ```  
 <configuration>  
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <anonymousIdentification enabled="true" />  
- 
-   <profile defaultProvider="AspNetSqlProvider">  
-     <properties>  
-       <add name="ZipCode" allowAnonymous="true" />  
-       <add name="CityAndState" allowAnonymous="true" />  
-       <add name="StockSymbols" type="System.Collections.ArrayList"   
-         allowAnonymous="true" />  
-     </properties>  
-   </profile>  
- </system.web>  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <anonymousIdentification enabled="true" />  
+  
+    <profile defaultProvider="AspNetSqlProvider">  
+      <properties>  
+        <add name="ZipCode" allowAnonymous="true" />  
+        <add name="CityAndState" allowAnonymous="true" />  
+        <add name="StockSymbols" type="System.Collections.ArrayList"   
+          allowAnonymous="true" />  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -216,22 +216,22 @@ The following code example shows a Web.config file for an application that enabl
  
 ```  
 <configuration>  
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-   </authentication>  
- 
-   <anonymousIdentification enabled="true" />  
- 
-   <profile defaultProvider="AspNetSqlProvider">  
-     <properties>  
-       <add name="ZipCode" allowAnonymous="true" />  
-       <add name="CityAndState" allowAnonymous="true" />  
-       <add name="StockSymbols" type="System.Collections.ArrayList"   
-         allowAnonymous="true" />  
-     </properties>  
-   </profile>  
- </system.web>  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
+    </authentication>  
+  
+    <anonymousIdentification enabled="true" />  
+  
+    <profile defaultProvider="AspNetSqlProvider">  
+      <properties>  
+        <add name="ZipCode" allowAnonymous="true" />  
+        <add name="CityAndState" allowAnonymous="true" />  
+        <add name="StockSymbols" type="System.Collections.ArrayList"   
+          allowAnonymous="true" />  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  

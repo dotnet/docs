@@ -1122,13 +1122,13 @@ This code example also includes an HTML page that could contain Help content for
 ```  
 <html>  
 <head runat="server">  
-   <title>Text Content WebPart Help</title>  
+    <title>Text Content WebPart Help</title>  
 </head>  
 <body>  
- <div>  
- <h1>Text Content WebPart Help</h1>  
- To make the WebPart control work...  
- </div>  
+  <div>  
+  <h1>Text Content WebPart Help</h1>  
+  To make the WebPart control work...  
+  </div>  
 </body>  
 </html>  
 ```  
@@ -1591,10 +1591,10 @@ Because the menu that contains the verbs is created using Microsoft Internet Exp
  
 ```  
 <asp:WebPartZone ID="WebPartZone1" runat="server">  
- <MenuVerbHoverStyle BorderStyle="Solid" BorderWidth="1px"       BorderColor="White" />  
- <ZoneTemplate>  
-     <asp:Button ID="Button1" runat="server" Text="Button" />  
- </ZoneTemplate>  
+  <MenuVerbHoverStyle BorderStyle="Solid" BorderWidth="1px"       BorderColor="White" />  
+  <ZoneTemplate>  
+      <asp:Button ID="Button1" runat="server" Text="Button" />  
+  </ZoneTemplate>  
 </asp:WebPartZone>  
 ```  
  

@@ -30,91 +30,91 @@ The following example creates a shared speech recognizer, and then creates two t
 ```  
 using System;  
 using System.Speech.Recognition;  
- 
+  
 namespace SampleRecognition  
 {  
- class Program  
- {  
-   private static SpeechRecognizer recognizer;  
-   public static void Main(string[] args)  
-   {  
- 
-     // Initialize a shared speech recognition engine.  
-     recognizer = new SpeechRecognizer();  
- 
-     // Add a handler for the LoadGrammarCompleted event.  
-     recognizer.LoadGrammarCompleted += new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
- 
-     // Add a handler for the SpeechRecognized event.  
-     recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
- 
-     // Add a handler for the StateChanged event.  
-     recognizer.StateChanged += new EventHandler<StateChangedEventArgs>(recognizer_StateChanged);  
- 
-     // Create "yesno" grammar.  
-     Choices yesChoices = new Choices(new string[] { "yes", "yup", "yah}" });  
-     SemanticResultValue yesValue =  
-         new SemanticResultValue(yesChoices, (bool)true);  
-     Choices noChoices = new Choices(new string[] { "no", "nope", "nah" });  
-     SemanticResultValue noValue = new SemanticResultValue(noChoices, (bool)false);  
-     SemanticResultKey yesNoKey =  
-         new SemanticResultKey("yesno", new Choices(new GrammarBuilder[] { yesValue, noValue }));  
-     Grammar yesnoGrammar = new Grammar(yesNoKey);  
-     yesnoGrammar.Name = "yesNo";  
- 
-     // Create "done" grammar.  
-     Grammar doneGrammar =  
-       new Grammar(new Choices(new string[] { "done", "exit", "quit", "stop" }));  
-     doneGrammar.Name = "Done";  
- 
-     // Create dictation grammar.  
-     Grammar dictation = new DictationGrammar();  
-     dictation.Name = "Dictation";  
- 
-     // Load grammars to the recognizer.  
-     recognizer.LoadGrammarAsync(yesnoGrammar);  
-     recognizer.LoadGrammarAsync(doneGrammar);  
-     recognizer.LoadGrammarAsync(dictation);  
- 
-     // Keep the console window open.  
-     Console.ReadLine();  
-   }  
- 
-   // Put the shared speech recognizer into "listening" mode.  
-   static void  recognizer_StateChanged(object sender, StateChangedEventArgs e)  
-   {  
-    if (e.RecognizerState != RecognizerState.Stopped)  
-     {  
-       recognizer.EmulateRecognizeAsync("Start listening");  
-     }  
-   }  
- 
-   // Write the grammar name and the text of the recognized phrase to the console.  
-   static void  recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-   {  
-    Console.WriteLine("Grammar({0}): {1}", e.Result.Grammar.Name, e.Result.Text);  
- 
-     // Add event handler code here.  
-   }  
- 
-   // Handle the LoadGrammarCompleted event.  
-   static void  recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
-   {  
-    string grammarName = e.Grammar.Name;  
-     bool grammarLoaded = e.Grammar.Loaded;  
-     if (e.Error != null)  
-     {  
-       Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
-       grammarName, e.Error.GetType().Name);  
-     }  
- 
-     // Add exception handling code here.  
-     Console.WriteLine("Grammar {0} {1} loaded.",  
-     grammarName, (grammarLoaded) ? "is" : "is not");  
-   }  
- }  
+  class Program  
+  {  
+    private static SpeechRecognizer recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a shared speech recognition engine.  
+      recognizer = new SpeechRecognizer();  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted += new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the SpeechRecognized event.  
+      recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+      // Add a handler for the StateChanged event.  
+      recognizer.StateChanged += new EventHandler<StateChangedEventArgs>(recognizer_StateChanged);  
+  
+      // Create "yesno" grammar.  
+      Choices yesChoices = new Choices(new string[] { "yes", "yup", "yah}" });  
+      SemanticResultValue yesValue =  
+          new SemanticResultValue(yesChoices, (bool)true);  
+      Choices noChoices = new Choices(new string[] { "no", "nope", "nah" });  
+      SemanticResultValue noValue = new SemanticResultValue(noChoices, (bool)false);  
+      SemanticResultKey yesNoKey =  
+          new SemanticResultKey("yesno", new Choices(new GrammarBuilder[] { yesValue, noValue }));  
+      Grammar yesnoGrammar = new Grammar(yesNoKey);  
+      yesnoGrammar.Name = "yesNo";  
+  
+      // Create "done" grammar.  
+      Grammar doneGrammar =  
+        new Grammar(new Choices(new string[] { "done", "exit", "quit", "stop" }));  
+      doneGrammar.Name = "Done";  
+  
+      // Create dictation grammar.  
+      Grammar dictation = new DictationGrammar();  
+      dictation.Name = "Dictation";  
+  
+      // Load grammars to the recognizer.  
+      recognizer.LoadGrammarAsync(yesnoGrammar);  
+      recognizer.LoadGrammarAsync(doneGrammar);  
+      recognizer.LoadGrammarAsync(dictation);  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Put the shared speech recognizer into "listening" mode.  
+    static void  recognizer_StateChanged(object sender, StateChangedEventArgs e)  
+    {  
+     if (e.RecognizerState != RecognizerState.Stopped)  
+      {  
+        recognizer.EmulateRecognizeAsync("Start listening");  
+      }  
+    }  
+  
+    // Write the grammar name and the text of the recognized phrase to the console.  
+    static void  recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+     Console.WriteLine("Grammar({0}): {1}", e.Result.Grammar.Name, e.Result.Text);  
+  
+      // Add event handler code here.  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.  
+    static void  recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+     string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+      }  
+  
+      // Add exception handling code here.  
+      Console.WriteLine("Grammar {0} {1} loaded.",  
+      grammarName, (grammarLoaded) ? "is" : "is not");  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -143,13 +143,13 @@ namespace SampleRecognition
 The following example updates a display based on the state information provided by a <xref:System.Speech.Recognition.RecognizerState> instance that is obtained from the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of a <xref:System.Speech.Recognition.StateChangedEventArgs> instance passed to a handler for a <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event.  
  
 ```  
- 
+  
 // Make sure that _recognizer and recognition start buttons are disabled if state is stopped.  
 // Re-enable the start button to allow manual re-enable if the speech recognizer is listening.  
 _recognizer.StateChanged +=  
- delegate(object sender, StateChangedEventArgs eventArgs)   
+  delegate(object sender, StateChangedEventArgs eventArgs)   
 {  
- _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
+  _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
 };  
 ```  
  

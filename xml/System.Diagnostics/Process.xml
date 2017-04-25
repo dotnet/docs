@@ -422,15 +422,15 @@ When you call <xref:System.Diagnostics.Process.CancelErrorRead%2A>, all in-progr
 ```  
 // At this point the DataReceivedEventHandler(ErrorHandler1)   
 // has executed a CancelErrorRead.  
- 
+  
 // Remove the prior event handler.  
 process.ErrorDataReceived -=   
-   new DataReceivedEventHandler(ErrorHandler1);  
- 
+    new DataReceivedEventHandler(ErrorHandler1);  
+  
 // Register a new event handler.  
 process.ErrorDataReceived +=   
-   new DataReceivedEventHandler(ErrorHandler2);  
- 
+    new DataReceivedEventHandler(ErrorHandler2);  
+  
 // Call the corresponding BeginErrorReadLine.  
 process.BeginErrorReadLine();  
 ```  
@@ -495,15 +495,15 @@ When you call <xref:System.Diagnostics.Process.CancelOutputRead%2A>, all in-prog
 ```  
 // At this point the DataReceivedEventHandler(OutputHandler1)   
 // has executed a CancelOutputRead.  
- 
+  
 // Remove the prior event handler.  
 process.OutputDataReceived -=   
-   new DataReceivedEventHandler(OutputHandler1);  
- 
+    new DataReceivedEventHandler(OutputHandler1);  
+  
 // Register a new event handler.  
 process.OutputDataReceived +=   
-   new DataReceivedEventHandler(OutputHandler2);  
- 
+    new DataReceivedEventHandler(OutputHandler2);  
+  
 // Call the corresponding BeginOutputReadLine.  
 process.BeginOutputReadLine();  
 ```  
@@ -3485,18 +3485,18 @@ The following C# code, for example, shows how to read from a redirected stream a
  
 ```  
 // Start the child process.  
-Process p = new Process();  
-// Redirect the error stream of the child process.  
-p.StartInfo.UseShellExecute = false;  
-p.StartInfo.RedirectStandardError = true;  
-p.StartInfo.FileName = "Write500Lines.exe";  
-p.Start();  
-// Do not wait for the child process to exit before  
-// reading to the end of its redirected error stream.  
-// p.WaitForExit();  
-// Read the error stream first and then wait.  
-string error = p.StandardError.ReadToEnd();  
-p.WaitForExit();  
+ Process p = new Process();  
+ // Redirect the error stream of the child process.  
+ p.StartInfo.UseShellExecute = false;  
+ p.StartInfo.RedirectStandardError = true;  
+ p.StartInfo.FileName = "Write500Lines.exe";  
+ p.Start();  
+ // Do not wait for the child process to exit before  
+ // reading to the end of its redirected error stream.  
+ // p.WaitForExit();  
+ // Read the error stream first and then wait.  
+ string error = p.StandardError.ReadToEnd();  
+ p.WaitForExit();  
 ```  
  
 The code example avoids a deadlock condition by calling `p.StandardError.ReadToEnd` before `p.WaitForExit`. A deadlock condition can result if the parent process calls `p.WaitForExit` before `p.StandardError.ReadToEnd` and the child process writes enough text to fill the redirected stream. The parent process would wait indefinitely for the child process to exit. The child process would wait indefinitely for the parent to read from the full <xref:System.Diagnostics.Process.StandardError%2A> stream.  
@@ -3658,7 +3658,7 @@ p.StartInfo.UseShellExecute = false;
 p.StartInfo.RedirectStandardOutput = true;  
 p.StartInfo.FileName = "Write500Lines.exe";  
 p.Start();  
- 
+  
 // To avoid deadlocks, always read the output stream first and then wait.  
 string output = p.StandardOutput.ReadToEnd();  
 p.WaitForExit();  

@@ -31,20 +31,20 @@ The following example is an excerpt of the configuration file that is used by th
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
- <configSections>  
-   <section name="MyUrls" type="Samples.AspNet.UrlsSection,  
-     ConfigurationElement, Version=1.0.0.0, Culture=neutral,  
-     PublicKeyToken=null" allowDefinition="Everywhere"  
-     allowExeDefinition="MachineToApplication"  
-     restartOnExternalChanges="true" />  
- </configSections>  
- <MyUrls name="MyFavorites">  
-   <simple name="Contoso" url="http://www.contoso.com" port="8080" />  
-   <urls>  
-     <clear />  
-     <add name="Microsoft" url="http://www.microsoft.com" port="0" />  
-   </urls>  
- </MyUrls>  
+  <configSections>  
+    <section name="MyUrls" type="Samples.AspNet.UrlsSection,  
+      ConfigurationElement, Version=1.0.0.0, Culture=neutral,  
+      PublicKeyToken=null" allowDefinition="Everywhere"  
+      allowExeDefinition="MachineToApplication"  
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  <MyUrls name="MyFavorites">  
+    <simple name="Contoso" url="http://www.contoso.com" port="8080" />  
+    <urls>  
+      <clear />  
+      <add name="Microsoft" url="http://www.microsoft.com" port="0" />  
+    </urls>  
+  </MyUrls>  
 </configuration>  
 ```  
  
@@ -857,15 +857,15 @@ The following example shows two possible trust levels for a Web application when
  
 ```  
 <system.web>  
-  // With the following trust value   
-  // the code below works.  
- <trust level="Full" />  
+   // With the following trust value   
+   // the code below works.  
+  <trust level="Full" />  
 </system.web>  
- 
+  
 <system.web>  
- // With the following trust value   
- // the code below does not work.  
- <trust level="Medium" />  
+  // With the following trust value   
+  // the code below does not work.  
+  <trust level="Medium" />  
 </system.web>  
 ```  
  
@@ -873,19 +873,19 @@ The following example shows code that runs without errors when the trust level i
  
 ```csharp  
 AppSettingsSection apSection =   
- ConfigurationManager.GetSection("appSettings") as AppSettingsSection;  
- 
+  ConfigurationManager.GetSection("appSettings") as AppSettingsSection;  
+  
 NameValueCollection apSectionCollection =  
- ConfigurationManager.AppSettings;  
+  ConfigurationManager.AppSettings;  
 ```  
  
 ```vb  
 Dim apSection As AppSettingsSection = _   
- TryCast(ConfigurationManager.GetSection("appSettings"),   
-   AppSettingsSection)  
- 
- Dim apSectionCollection As NameValueCollection = _   
-   ConfigurationManager.AppSettings  
+  TryCast(ConfigurationManager.GetSection("appSettings"),   
+    AppSettingsSection)  
+  
+  Dim apSectionCollection As NameValueCollection = _   
+    ConfigurationManager.AppSettings  
 ```  
  
  ]]></format>

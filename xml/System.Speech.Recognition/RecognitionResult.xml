@@ -73,41 +73,41 @@ For more information about recognition events, see [Using Speech Recognition Eve
 The following example shows a handler for the `SpeechRecognized` event of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> or <xref:System.Speech.Recognition.SpeechRecognizer> object, and some of the information about the associated <xref:System.Speech.Recognition.RecognitionResult>.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- // Add event handler code here.  
- 
- // The following code illustrates some of the information available  
- // in the recognition result.  
- Console.WriteLine("Grammar({0}), {1}: {2}",  
-   e.Result.Grammar.Name, e.Result.Audio.Duration, e.Result.Text);  
- 
- // Display the semantic values in the recognition result.  
- foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
- {  
-   Console.WriteLine(" {0} key: {1}",  
-     child.Key, child.Value.Value ?? "null");  
- }  
- Console.WriteLine();  
- 
- // Display information about the words in the recognition result.  
- foreach (RecognizedWordUnit word in e.Result.Words)  
- {  
-   RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
-   Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
-     word.Text, word.LexicalForm, word.Pronunciation,  
-     audio.Duration, word.DisplayAttributes);  
- }  
- 
- // Display the recognition alternates for the result.  
- foreach (RecognizedPhrase phrase in e.Result.Alternates)  
- {  
-   Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
- }  
+  if (e.Result == null) return;  
+  
+  // Add event handler code here.  
+  
+  // The following code illustrates some of the information available  
+  // in the recognition result.  
+  Console.WriteLine("Grammar({0}), {1}: {2}",  
+    e.Result.Grammar.Name, e.Result.Audio.Duration, e.Result.Text);  
+  
+  // Display the semantic values in the recognition result.  
+  foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
+  {  
+    Console.WriteLine(" {0} key: {1}",  
+      child.Key, child.Value.Value ?? "null");  
+  }  
+  Console.WriteLine();  
+  
+  // Display information about the words in the recognition result.  
+  foreach (RecognizedWordUnit word in e.Result.Words)  
+  {  
+    RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
+    Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
+      word.Text, word.LexicalForm, word.Pronunciation,  
+      audio.Duration, word.DisplayAttributes);  
+  }  
+  
+  // Display the recognition alternates for the result.  
+  foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+  {  
+    Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
+  }  
 }  
 ```  
  
@@ -148,41 +148,41 @@ For more information about speech recognition and the use of recognition alterna
 The following example shows a handler for the `SpeechRecognized` event and some of the information about the associated <xref:System.Speech.Recognition.RecognitionResult>.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- // Add event handler code here.  
- 
- // The following code illustrates some of the information available  
- // in the recognition result.  
- Console.WriteLine("Grammar({0}), {1}: {2}",  
-   e.Result.Grammar.Name, e.Result.Audio.Duration, e.Result.Text);  
- 
- // Display the semantic values in the recognition result.  
- foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
- {  
-   Console.WriteLine(" {0} key: {1}",  
-     child.Key, child.Value.Value ?? "null");  
- }  
- Console.WriteLine();  
- 
- // Display information about the words in the recognition result.  
- foreach (RecognizedWordUnit word in e.Result.Words)  
- {  
-   RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
-   Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
-     word.Text, word.LexicalForm, word.Pronunciation,  
-     audio.Duration, word.DisplayAttributes);  
- }  
- 
- // Display the recognition alternates for the result.  
- foreach (RecognizedPhrase phrase in e.Result.Alternates)  
- {  
-   Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
- }  
+  if (e.Result == null) return;  
+  
+  // Add event handler code here.  
+  
+  // The following code illustrates some of the information available  
+  // in the recognition result.  
+  Console.WriteLine("Grammar({0}), {1}: {2}",  
+    e.Result.Grammar.Name, e.Result.Audio.Duration, e.Result.Text);  
+  
+  // Display the semantic values in the recognition result.  
+  foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
+  {  
+    Console.WriteLine(" {0} key: {1}",  
+      child.Key, child.Value.Value ?? "null");  
+  }  
+  Console.WriteLine();  
+  
+  // Display information about the words in the recognition result.  
+  foreach (RecognizedWordUnit word in e.Result.Words)  
+  {  
+    RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
+    Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
+      word.Text, word.LexicalForm, word.Pronunciation,  
+      audio.Duration, word.DisplayAttributes);  
+  }  
+  
+  // Display the recognition alternates for the result.  
+  foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+  {  
+    Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
+  }  
 }  
 ```  
  
@@ -217,44 +217,44 @@ To get a section of the audio that is associated with a specific range of words 
 The following example shows a handler for the **SpeechRecognized** event and some of the information about the associated <xref:System.Speech.Recognition.RecognitionResult>.  
  
 ```csharp  
- 
+  
 // Handle the SpeechRecognized event.   
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- // Add event handler code here.  
- 
- // The following code illustrates some of the information available  
- // in the recognition result.  
-     Console.WriteLine("Grammar({0}): {1}", e.Result.Grammar.Name, e.Result.Text);  
-     Console.WriteLine("Audio for result:");  
-     Console.WriteLine("  Start time: "+ e.Result.Audio.StartTime);  
-     Console.WriteLine("  Duration: " + e.Result.Audio.Duration);  
-     Console.WriteLine("  Format: " + e.Result.Audio.Format.EncodingFormat);  
- 
- // Display the semantic values in the recognition result.  
- foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
- {  
-   Console.WriteLine(" {0} key: {1}",  
-     child.Key, child.Value.Value ?? "null");  
- }  
- Console.WriteLine();  
- 
- // Display information about the words in the recognition result.  
- foreach (RecognizedWordUnit word in e.Result.Words)  
- {  
-   RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
-   Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
-     word.Text, word.LexicalForm, word.Pronunciation,  
-     audio.Duration, word.DisplayAttributes);  
- }  
- 
- // Display the recognition alternates for the result.  
- foreach (RecognizedPhrase phrase in e.Result.Alternates)  
- {  
-   Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
- }  
+  if (e.Result == null) return;  
+  
+  // Add event handler code here.  
+  
+  // The following code illustrates some of the information available  
+  // in the recognition result.  
+      Console.WriteLine("Grammar({0}): {1}", e.Result.Grammar.Name, e.Result.Text);  
+      Console.WriteLine("Audio for result:");  
+      Console.WriteLine("  Start time: "+ e.Result.Audio.StartTime);  
+      Console.WriteLine("  Duration: " + e.Result.Audio.Duration);  
+      Console.WriteLine("  Format: " + e.Result.Audio.Format.EncodingFormat);  
+  
+  // Display the semantic values in the recognition result.  
+  foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
+  {  
+    Console.WriteLine(" {0} key: {1}",  
+      child.Key, child.Value.Value ?? "null");  
+  }  
+  Console.WriteLine();  
+  
+  // Display information about the words in the recognition result.  
+  foreach (RecognizedWordUnit word in e.Result.Words)  
+  {  
+    RecognizedAudio audio = e.Result.GetAudioForWordRange(word, word);  
+    Console.WriteLine(" {0,-10} {1,-10} {2,-10} {3} ({4})",  
+      word.Text, word.LexicalForm, word.Pronunciation,  
+      audio.Duration, word.DisplayAttributes);  
+  }  
+  
+  // Display the recognition alternates for the result.  
+  foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+  {  
+    Console.WriteLine(" alt({0}) {1}", phrase.Confidence, phrase.Text);  
+  }  
 }  
 ```  
  
@@ -295,59 +295,59 @@ To get the complete audio associated with the recognition result, use the <xref:
 The following example creates a grammar to accept name input and attaches to it a handler for the `SpeechRecognized` event. The grammar uses a wildcard for the name element of the phrase. The event handler uses the audio from the wildcard to create and play a greeting prompt.  
  
 ```csharp  
- 
+  
 private Grammar CreateNameInputGrammar()  
 {  
- GrammarBuilder wildcardBuilder = new GrammarBuilder();  
- wildcardBuilder.AppendWildcard();  
- SemanticResultKey nameKey =  
-   new SemanticResultKey("Name", wildcardBuilder);  
- 
- GrammarBuilder nameBuilder =  
-   new GrammarBuilder("My name is");  
- nameBuilder.Append(nameKey);  
- 
- Grammar nameGrammar = new Grammar(nameBuilder);  
- nameGrammar.Name = "Name input";  
- 
- nameGrammar.SpeechRecognized +=  
-   new EventHandler<SpeechRecognizedEventArgs>(  
-     NameInputHandler);  
- 
- return nameGrammar;  
+  GrammarBuilder wildcardBuilder = new GrammarBuilder();  
+  wildcardBuilder.AppendWildcard();  
+  SemanticResultKey nameKey =  
+    new SemanticResultKey("Name", wildcardBuilder);  
+  
+  GrammarBuilder nameBuilder =  
+    new GrammarBuilder("My name is");  
+  nameBuilder.Append(nameKey);  
+  
+  Grammar nameGrammar = new Grammar(nameBuilder);  
+  nameGrammar.Name = "Name input";  
+  
+  nameGrammar.SpeechRecognized +=  
+    new EventHandler<SpeechRecognizedEventArgs>(  
+      NameInputHandler);  
+  
+  return nameGrammar;  
 }  
- 
+  
 // Handle the SpeechRecognized event for the name grammar.  
 private void NameInputHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- RecognitionResult result = e.Result;  
- SemanticValue semantics = e.Result.Semantics;  
- 
- if (semantics.ContainsKey("Name"))  
- {  
-   RecognizedAudio nameAudio =  
-     result.GetAudioForWordRange(  
-       result.Words[3], result.Words[result.Words.Count - 1]);  
- 
-   // Save the audio. Create a directory and file as necessary.  
-   FileInfo fi = new FileInfo(@"C:\temp\temp.wav");  
-   if (!fi.Directory.Exists)  
-   {  
-     fi.Directory.Create();  
-   }  
-   FileStream stream = new FileStream(fi.FullName, FileMode.Create);  
-   nameAudio.WriteToWaveStream(stream);  
-   stream.Close();  
- 
-   // Greet the person using the saved audio.  
-   SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
-   PromptBuilder builder = new PromptBuilder();  
-   builder.AppendText("Hello");  
-   builder.AppendAudio(fi.FullName);  
-   synthesizer.Speak(builder);  
- }  
+  if (e.Result == null) return;  
+  
+  RecognitionResult result = e.Result;  
+  SemanticValue semantics = e.Result.Semantics;  
+  
+  if (semantics.ContainsKey("Name"))  
+  {  
+    RecognizedAudio nameAudio =  
+      result.GetAudioForWordRange(  
+        result.Words[3], result.Words[result.Words.Count - 1]);  
+  
+    // Save the audio. Create a directory and file as necessary.  
+    FileInfo fi = new FileInfo(@"C:\temp\temp.wav");  
+    if (!fi.Directory.Exists)  
+    {  
+      fi.Directory.Create();  
+    }  
+    FileStream stream = new FileStream(fi.FullName, FileMode.Create);  
+    nameAudio.WriteToWaveStream(stream);  
+    stream.Close();  
+  
+    // Greet the person using the saved audio.  
+    SpeechSynthesizer synthesizer = new SpeechSynthesizer();  
+    PromptBuilder builder = new PromptBuilder();  
+    builder.AppendText("Hello");  
+    builder.AppendAudio(fi.FullName);  
+    synthesizer.Speak(builder);  
+  }  
 }  
 ```  
  

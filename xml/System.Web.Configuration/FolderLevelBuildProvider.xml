@@ -29,10 +29,10 @@ The following example shows how to add a build provider named `BuildProvider1` t
  
 ```  
 <compilation>  
- <folderLevelBuildProviders>  
-   <add type="BuildProvider1, Assembly1,Version=1.0.0.0,    
-       PublicKeyToken=xxxxx"/>  
- </folderLevelBuildProviders>  
+  <folderLevelBuildProviders>  
+    <add type="BuildProvider1, Assembly1,Version=1.0.0.0,    
+        PublicKeyToken=xxxxx"/>  
+  </folderLevelBuildProviders>  
 </compilation>  
 ```  
  

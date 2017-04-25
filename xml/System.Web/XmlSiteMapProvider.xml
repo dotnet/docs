@@ -30,12 +30,12 @@ The following code example shows an example of an XML file that can be used with
  
 ```  
 <siteMap>  
- <siteMapNode title="RootNode" description="This is the root node of the site map. There can be only one root node." url="Page1.aspx" >  
-   <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page2.aspx">  
-     <siteMapNode title="ChildOfChildNode" description="SiteMapNode objects can be nested to any level." url="Page3.aspx"/>  
-   </siteMapNode>  
-   <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page4.aspx"/>  
- </siteMapNode>  
+  <siteMapNode title="RootNode" description="This is the root node of the site map. There can be only one root node." url="Page1.aspx" >  
+    <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page2.aspx">  
+      <siteMapNode title="ChildOfChildNode" description="SiteMapNode objects can be nested to any level." url="Page3.aspx"/>  
+    </siteMapNode>  
+    <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page4.aspx"/>  
+  </siteMapNode>  
 </siteMap>  
 ```  
  
@@ -48,12 +48,12 @@ The following code example demonstrates an example Web.config file, where the <x
  
 ```  
 <siteMap defaultProvider="MyXmlSiteMapProvider" enabled="true">  
- <providers>  
-   <add name="MyXmlSiteMapProvider"  
-     description="SiteMap provider that reads in .sitemap files."  
-     type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
-     siteMapFile="CustomWeb.sitemap" />  
- </providers>  
+  <providers>  
+    <add name="MyXmlSiteMapProvider"  
+      description="SiteMap provider that reads in .sitemap files."  
+      type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+      siteMapFile="CustomWeb.sitemap" />  
+  </providers>  
 </siteMap>  
 ```  
  
@@ -197,35 +197,35 @@ The following code example demonstrates how to create a new instance of the <xre
  
 ```csharp  
 <%@ Page Language="c#" %>  
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
-<SCRIPT runat="server">  
-private void Page_Load(object sender, System.EventArgs e)  
-{  
-    // Create an instance of the XmlSiteMapProvider class.  
-    XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
-    NameValueCollection providerAttributes = new NameValueCollection(1);  
-    providerAttributes.Add("siteMapFile","test.sitemap");  
-    // Initialize the provider with a provider name and file name.  
-    testXmlProvider.Initialize("testProvider", providerAttributes);  
- 
-    // The BuildSiteMap method is implicitly called when the   
-    // RootNode propety is accessed.  
- 
-    // Prints "/myvirtualdirectory/WebForm1.aspx"  
-    Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
-    // Prints "/myvirtualdirectory/WebForm2.aspx"  
-    Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
-}  
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+ <SCRIPT runat="server">  
+ private void Page_Load(object sender, System.EventArgs e)  
+ {  
+     // Create an instance of the XmlSiteMapProvider class.  
+     XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
+     NameValueCollection providerAttributes = new NameValueCollection(1);  
+     providerAttributes.Add("siteMapFile","test.sitemap");  
+     // Initialize the provider with a provider name and file name.  
+     testXmlProvider.Initialize("testProvider", providerAttributes);  
+  
+     // The BuildSiteMap method is implicitly called when the   
+     // RootNode propety is accessed.  
+  
+     // Prints "/myvirtualdirectory/WebForm1.aspx"  
+     Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
+     // Prints "/myvirtualdirectory/WebForm2.aspx"  
+     Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
+ }  
 ```  
  
 The preceding code example uses an XML file that is located in the virtual root of the ASP.NET application. The file has the following format:  
  
 ```  
 <siteMap>  
-    <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
-        <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
-    </siteMapNode>  
-</siteMap>  
+     <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
+         <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
+     </siteMapNode>  
+ </siteMap>  
 ```  
  
  ]]></format>
@@ -573,34 +573,34 @@ The following code example demonstrates how to create a new instance of the <xre
 ```csharp  
 <%@ Page Language="c#" %>  
 <SCRIPT runat="server">  
-private void Page_Load(object sender, System.EventArgs e) {  
-    // Create an instance of the XmlSiteMapProvider class.  
-    XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
-    NameValueCollection providerAttributes = new NameValueCollection(1);  
-    providerAttributes.Add("siteMapFile","test.sitemap");  
- 
-    // Initialize the provider with a provider name and file name.  
-    testXmlProvider.Initialize("testProvider", providerAttributes);  
- 
-    // Call the BuildSiteMap to load the site map information into memory.  
-    testXmlProvider.BuildSiteMap();  
- 
-    // Prints "/myvirtualdirectory/WebForm1.aspx"  
-    Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
- 
-    // Prints "/myvirtualdirectory/WebForm2.aspx"  
-    Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
-}  
-</SCRIPT>  
+ private void Page_Load(object sender, System.EventArgs e) {  
+     // Create an instance of the XmlSiteMapProvider class.  
+     XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
+     NameValueCollection providerAttributes = new NameValueCollection(1);  
+     providerAttributes.Add("siteMapFile","test.sitemap");  
+  
+     // Initialize the provider with a provider name and file name.  
+     testXmlProvider.Initialize("testProvider", providerAttributes);  
+  
+     // Call the BuildSiteMap to load the site map information into memory.  
+     testXmlProvider.BuildSiteMap();  
+  
+     // Prints "/myvirtualdirectory/WebForm1.aspx"  
+     Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
+  
+     // Prints "/myvirtualdirectory/WebForm2.aspx"  
+     Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
+ }  
+ </SCRIPT>  
 ```  
  
 The preceding code example uses an XML file that is located in the virtual root of the ASP.NET application. The file has the following format:  
  
 ```  
 <siteMap>  
- <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
-   <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
- </siteMapNode>  
+  <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
+    <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
+  </siteMapNode>  
 </siteMap>  
 ```  
  

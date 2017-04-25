@@ -20,15 +20,15 @@ This class is used to represent a scope URI in configuration files. The followin
  
 ```  
 <endpointBehaviors>  
-   <behavior name="ep1Behavior">  
-       <endpointDiscovery>  
-           <scopes>  
-               <add scope="http://www.microsoft.com/building42/floor1"/>  
-               <add scope="ldap:///ou=engineeringo=examplecomc=us"/>  
-               <add scope="mailto:vipulm@microsoft.com"/>  
-            </scopes>  
-       </endpointDiscovery>  
-   </behavior>  
+    <behavior name="ep1Behavior">  
+        <endpointDiscovery>  
+            <scopes>  
+                <add scope="http://www.microsoft.com/building42/floor1"/>  
+                <add scope="ldap:///ou=engineeringo=examplecomc=us"/>  
+                <add scope="mailto:vipulm@microsoft.com"/>  
+             </scopes>  
+        </endpointDiscovery>  
+    </behavior>  
 </endpointBehaviors>  
 ```  
  

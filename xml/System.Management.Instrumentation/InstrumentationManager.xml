@@ -53,10 +53,10 @@ In the next example, the callback method of registration is used to expose the R
 ```  
 public int MainNew(string[] args)   
 {  
-   InstrumentationManager.RegisterType(typeof(RouterNew));  
-   // ....  
-   InstrumentationManager.UnRegisterType(typeof(RouterNew));  
-   return 0;  
+    InstrumentationManager.RegisterType(typeof(RouterNew));  
+    // ....  
+    InstrumentationManager.UnRegisterType(typeof(RouterNew));  
+    return 0;  
 }  
 ```  
  
@@ -132,8 +132,8 @@ public int MainNew(string[] args)
 ```  
 static int Main(string[] args)  
 {  
-  InstrumentationManager.RegisterType(typeof(MySampleProvider));  
-  return 0;  
+   InstrumentationManager.RegisterType(typeof(MySampleProvider));  
+   return 0;  
 }  
 ```  
  

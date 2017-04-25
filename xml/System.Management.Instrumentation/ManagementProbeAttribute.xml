@@ -46,9 +46,9 @@ The next example shows how to use the ManagementProbe attribute to mark a proper
 [ManagementProbe]  
 public int ReadOnlyProperty  
 {  
-   get { return this.propertyValue; }  
+    get { return this.propertyValue; }  
 }  
- 
+  
 ```  
  
  ]]></format>

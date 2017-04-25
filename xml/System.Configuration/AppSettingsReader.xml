@@ -21,31 +21,31 @@ The following example creates a configuration file that contains the `<appSettin
 ```  
 using System;  
 using System.Configuration;  
- 
+  
 class Program  
 {  
-   static void Main(string[] args)  
-   {  
-       var reader = new AppSettingsReader();  
- 
-       var stringSetting = reader.GetValue("String setting", typeof(string));  
-       Console.WriteLine("String setting: " + stringSetting);  
- 
-       var dateTimeSetting = reader.GetValue("DateTime setting", typeof(DateTime));  
-       Console.WriteLine("DateTime setting: " + dateTimeSetting);  
- 
-       try  
-       {  
-           var missingSetting = reader.GetValue("Int setting", typeof(Int32));  
-       }  
-       catch (InvalidOperationException e)  
-       {  
-           Console.WriteLine("Missing key error: " + e.Message);  
-       }  
- 
-       Console.WriteLine("Press any key to continue");  
-       Console.ReadKey();  
-   }  
+    static void Main(string[] args)  
+    {  
+        var reader = new AppSettingsReader();  
+  
+        var stringSetting = reader.GetValue("String setting", typeof(string));  
+        Console.WriteLine("String setting: " + stringSetting);  
+  
+        var dateTimeSetting = reader.GetValue("DateTime setting", typeof(DateTime));  
+        Console.WriteLine("DateTime setting: " + dateTimeSetting);  
+  
+        try  
+        {  
+            var missingSetting = reader.GetValue("Int setting", typeof(Int32));  
+        }  
+        catch (InvalidOperationException e)  
+        {  
+            Console.WriteLine("Missing key error: " + e.Message);  
+        }  
+  
+        Console.WriteLine("Press any key to continue");  
+        Console.ReadKey();  
+    }  
 }  
 ```  
  
@@ -54,10 +54,10 @@ The following example demonstrates a configuration file used by the previous exa
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-   <appSettings>  
-       <add key="String setting" value="String retrieved from App.Config"/>  
-       <add key="Date setting" value="Thursday, December 01, 2005 12:53:56 PM"/>  
-   </appSettings>  
+    <appSettings>  
+        <add key="String setting" value="String retrieved from App.Config"/>  
+        <add key="Date setting" value="Thursday, December 01, 2005 12:53:56 PM"/>  
+    </appSettings>  
 </configuration>  
 ```  
  
@@ -86,31 +86,31 @@ The following example creates a configuration file that contains the `<appSettin
 ```  
 using System;  
 using System.Configuration;  
- 
+  
 class Program  
 {  
-   static void Main(string[] args)  
-   {  
-       var reader = new AppSettingsReader();  
- 
-       var stringSetting = reader.GetValue("String setting", typeof(string));  
-       Console.WriteLine("String setting: " + stringSetting);  
- 
-       var dateTimeSetting = reader.GetValue("DateTime setting", typeof(DateTime));  
-       Console.WriteLine("DateTime setting: " + dateTimeSetting);  
- 
-       try  
-       {  
-           var missingSetting = reader.GetValue("Int setting", typeof(Int32));  
-       }  
-       catch (InvalidOperationException e)  
-       {  
-           Console.WriteLine("Missing key error: " + e.Message);  
-       }  
- 
-       Console.WriteLine("Press any key to continue");  
-       Console.ReadKey();  
-   }  
+    static void Main(string[] args)  
+    {  
+        var reader = new AppSettingsReader();  
+  
+        var stringSetting = reader.GetValue("String setting", typeof(string));  
+        Console.WriteLine("String setting: " + stringSetting);  
+  
+        var dateTimeSetting = reader.GetValue("DateTime setting", typeof(DateTime));  
+        Console.WriteLine("DateTime setting: " + dateTimeSetting);  
+  
+        try  
+        {  
+            var missingSetting = reader.GetValue("Int setting", typeof(Int32));  
+        }  
+        catch (InvalidOperationException e)  
+        {  
+            Console.WriteLine("Missing key error: " + e.Message);  
+        }  
+  
+        Console.WriteLine("Press any key to continue");  
+        Console.ReadKey();  
+    }  
 }  
 ```  
  
@@ -119,10 +119,10 @@ The following example demonstrates a configuration file used by the previous exa
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-   <appSettings>  
-       <add key="String setting" value="String retrieved from App.Config"/>  
-       <add key="Date setting" value="Thursday, December 01, 2005 12:53:56 PM"/>  
-   </appSettings>  
+    <appSettings>  
+        <add key="String setting" value="String retrieved from App.Config"/>  
+        <add key="Date setting" value="Thursday, December 01, 2005 12:53:56 PM"/>  
+    </appSettings>  
 </configuration>  
 ```  
  

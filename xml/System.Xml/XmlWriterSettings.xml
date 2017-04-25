@@ -66,9 +66,9 @@ The sample produces the following output:
  
 ```  
 <order  
- orderID="367A54"  
- date="2001-05-03">  
- <price>19.95</price>  
+  orderID="367A54"  
+  date="2001-05-03">  
+  <price>19.95</price>  
 </order>  
 ```  
  
@@ -441,16 +441,16 @@ In the following example:
  
 ```csharp  
 using (StreamWriter output =  
-   new StreamWriter(new FileStream("Xml01.xml", FileMode.Create), Encoding.Unicode))  
+    new StreamWriter(new FileStream("Xml01.xml", FileMode.Create), Encoding.Unicode))  
 {  
-   using (XmlWriter xmlWriter =  
-       XmlWriter.Create(output, new XmlWriterSettings()))  
-   {  
-       xmlWriter.WriteStartDocument();  
-       xmlWriter.WriteStartElement("Root");  
-       xmlWriter.WriteEndElement();  
-       xmlWriter.WriteEndDocument();  
-   }  
+    using (XmlWriter xmlWriter =  
+        XmlWriter.Create(output, new XmlWriterSettings()))  
+    {  
+        xmlWriter.WriteStartDocument();  
+        xmlWriter.WriteStartElement("Root");  
+        xmlWriter.WriteEndElement();  
+        xmlWriter.WriteEndDocument();  
+    }  
 }  
 ```  
  
@@ -754,9 +754,9 @@ The sample produces the following output:
  
 ```  
 <order  
- orderID="367A54"  
- date="2001-05-03">  
- <price>19.95</price>  
+  orderID="367A54"  
+  date="2001-05-03">  
+  <price>19.95</price>  
 </order>  
 ```  
  

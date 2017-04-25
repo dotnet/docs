@@ -34,22 +34,22 @@ The following is a configuration excerpt used by the previous example.
  
 ```  
 <configuration>  
- 
- <configSections>  
-   <section name="CustomSection"  
-     type="Samples.AspNet.CustomSection,  
-     ConfigurationConverters,  
-     Version=1.0.0.0, Culture=neutral,  
-     PublicKeyToken=null"  
-     allowDefinition="Everywhere"  
-     allowExeDefinition="MachineToApplication"  
-     restartOnExternalChanges="true" />  
- </configSections>  
- 
- <CustomSection fileName="default.txt" maxIdleTime="90"   
-   timeDelay="infinite" cdStr="str0, str1" permission="Read"   
-   maxUsers="Infinite"/>  
- 
+  
+  <configSections>  
+    <section name="CustomSection"  
+      type="Samples.AspNet.CustomSection,  
+      ConfigurationConverters,  
+      Version=1.0.0.0, Culture=neutral,  
+      PublicKeyToken=null"  
+      allowDefinition="Everywhere"  
+      allowExeDefinition="MachineToApplication"  
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  
+  <CustomSection fileName="default.txt" maxIdleTime="90"   
+    timeDelay="infinite" cdStr="str0, str1" permission="Read"   
+    maxUsers="Infinite"/>  
+  
 </configuration>  
 ```  
  

@@ -854,8 +854,8 @@ Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceiv
  
 ```  
 myMessageQueue.BeginTransaction();  
-myMessageQueue.Receive();  
-myMessageQueue.CommitTransaction();  
+ myMessageQueue.Receive();  
+ myMessageQueue.CommitTransaction();  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -933,8 +933,8 @@ Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceiv
  
 ```  
 myMessageQueue.BeginTransaction();  
-myMessageQueue.Receive();  
-myMessageQueue.CommitTransaction();  
+ myMessageQueue.Receive();  
+ myMessageQueue.CommitTransaction();  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -1012,8 +1012,8 @@ Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceiv
  
 ```  
 myMessageQueue.BeginTransaction();  
-myMessageQueue.Receive();  
-myMessageQueue.CommitTransaction();  
+ myMessageQueue.Receive();  
+ myMessageQueue.CommitTransaction();  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -1089,8 +1089,8 @@ Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceiv
  
 ```  
 myMessageQueue.BeginTransaction();  
-myMessageQueue.Receive();  
-myMessageQueue.CommitTransaction();  
+ myMessageQueue.Receive();  
+ myMessageQueue.CommitTransaction();  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -1168,8 +1168,8 @@ Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceiv
  
 ```  
 myMessageQueue.BeginTransaction();  
-myMessageQueue.Receive();  
-myMessageQueue.CommitTransaction();  
+ myMessageQueue.Receive();  
+ myMessageQueue.CommitTransaction();  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -6027,11 +6027,11 @@ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property app
  
 ```  
 <System.MTAThreadAttribute>  
-public sub Main()  
+ public sub Main()  
 ```  
  
 ```vb  
- 
+  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -6228,11 +6228,11 @@ The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property app
  
 ```  
 <System.MTAThreadAttribute>  
-public sub Main()  
+ public sub Main()  
 ```  
  
 ```vb  
- 
+  
 ```  
  
 The following table shows whether this method is available in various Workgroup modes.  
@@ -6776,11 +6776,11 @@ If you send a non-transactional message to a transactional queue, you will not b
  
 ```  
 <System.MTAThreadAttribute>  
-public sub Main()  
+ public sub Main()  
 ```  
  
 ```vb  
- 
+  
 ```  
  
 The following table shows whether this property is available in various Workgroup modes.  

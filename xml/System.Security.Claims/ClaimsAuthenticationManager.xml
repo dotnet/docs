@@ -39,12 +39,12 @@ The following XML shows the `<claimsAuthenticationManager>` element.
  
 ```xml  
 <system.identityModel>  
- <identityConfiguration>  
-   <claimsAuthenticationManager type="MyClaimsAuthenticationManager.SimpleClaimsAuthenticatonManager, MyClaimsAuthenticationManager" />  
- 
-   ...  
- 
- </identityConfiguration>  
+  <identityConfiguration>  
+    <claimsAuthenticationManager type="MyClaimsAuthenticationManager.SimpleClaimsAuthenticatonManager, MyClaimsAuthenticationManager" />  
+  
+    ...  
+  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

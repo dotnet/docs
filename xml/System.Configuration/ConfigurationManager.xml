@@ -57,143 +57,143 @@ The first example shows a simple console application that reads application sett
 ```csharp  
 using System;  
 using System.Configuration;  
- 
+  
 namespace ConsoleApplication1  
 {  
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           ReadAllSettings();  
-           ReadSetting("Setting1");  
-           ReadSetting("NotValid");  
-           AddUpdateAppSettings("NewSetting", "May 7, 2014");  
-           AddUpdateAppSettings("Setting1", "May 8, 2014");  
-           ReadAllSettings();  
-       }  
- 
-       static void ReadAllSettings()  
-       {  
-           try  
-           {  
-               var appSettings = ConfigurationManager.AppSettings;  
- 
-               if (appSettings.Count == 0)  
-               {  
-                   Console.WriteLine("AppSettings is empty.");  
-               }  
-               else  
-               {  
-                   foreach (var key in appSettings.AllKeys)  
-                   {  
-                       Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
-                   }  
-               }  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error reading app settings");  
-           }  
-       }  
- 
-       static void ReadSetting(string key)  
-       {  
-           try  
-           {  
-               var appSettings = ConfigurationManager.AppSettings;  
-               string result = appSettings[key] ?? "Not Found";  
-               Console.WriteLine(result);  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error reading app settings");  
-           }  
-       }  
- 
-       static void AddUpdateAppSettings(string key, string value)  
-       {  
-           try  
-           {  
-               var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);  
-               var settings = configFile.AppSettings.Settings;  
-               if (settings[key] == null)  
-               {  
-                   settings.Add(key, value);  
-               }  
-               else  
-               {  
-                   settings[key].Value = value;  
-               }  
-               configFile.Save(ConfigurationSaveMode.Modified);  
-               ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error writing app settings");  
-           }  
-       }  
-   }  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            ReadAllSettings();  
+            ReadSetting("Setting1");  
+            ReadSetting("NotValid");  
+            AddUpdateAppSettings("NewSetting", "May 7, 2014");  
+            AddUpdateAppSettings("Setting1", "May 8, 2014");  
+            ReadAllSettings();  
+        }  
+  
+        static void ReadAllSettings()  
+        {  
+            try  
+            {  
+                var appSettings = ConfigurationManager.AppSettings;  
+  
+                if (appSettings.Count == 0)  
+                {  
+                    Console.WriteLine("AppSettings is empty.");  
+                }  
+                else  
+                {  
+                    foreach (var key in appSettings.AllKeys)  
+                    {  
+                        Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
+                    }  
+                }  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error reading app settings");  
+            }  
+        }  
+  
+        static void ReadSetting(string key)  
+        {  
+            try  
+            {  
+                var appSettings = ConfigurationManager.AppSettings;  
+                string result = appSettings[key] ?? "Not Found";  
+                Console.WriteLine(result);  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error reading app settings");  
+            }  
+        }  
+  
+        static void AddUpdateAppSettings(string key, string value)  
+        {  
+            try  
+            {  
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);  
+                var settings = configFile.AppSettings.Settings;  
+                if (settings[key] == null)  
+                {  
+                    settings.Add(key, value);  
+                }  
+                else  
+                {  
+                    settings[key].Value = value;  
+                }  
+                configFile.Save(ConfigurationSaveMode.Modified);  
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error writing app settings");  
+            }  
+        }  
+    }  
 }  
 ```  
  
 ```vb  
 Imports System.Configuration  
 Module Module1  
- 
-   Sub Main()  
-       ReadAllSettings()  
-       ReadSetting("Setting1")  
-       ReadSetting("NotValid")  
-       AddUpdateAppSettings("NewSetting", "May 7, 2014")  
-       AddUpdateAppSettings("Setting1", "May 8, 2014")  
-       ReadAllSettings()  
-   End Sub  
- 
-   Sub ReadAllSettings()  
-       Try  
-           Dim appSettings = ConfigurationManager.AppSettings  
- 
-           If appSettings.Count = 0 Then  
-               Console.WriteLine("AppSettings is empty.")  
-           Else  
-               For Each key As String In appSettings.AllKeys  
-                   Console.WriteLine("Key: {0} Value: {1}", key, appSettings(key))  
-               Next  
-           End If  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error reading app settings")  
-       End Try  
-   End Sub  
- 
-   Sub ReadSetting(key As String)  
-       Try  
-           Dim appSettings = ConfigurationManager.AppSettings  
-           Dim result As String = appSettings(key)  
-           If IsNothing(result) Then  
-               result = "Not found"  
-           End If  
-           Console.WriteLine(result)  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error reading app settings")  
-       End Try  
-   End Sub  
- 
-   Sub AddUpdateAppSettings(key As String, value As String)  
-       Try  
-           Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)  
-           Dim settings = configFile.AppSettings.Settings  
-           If IsNothing(settings(key)) Then  
-               settings.Add(key, value)  
-           Else  
-               settings(key).Value = value  
-           End If  
-           configFile.Save(ConfigurationSaveMode.Modified)  
-           ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name)  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error writing app settings")  
-       End Try  
-   End Sub  
- 
+  
+    Sub Main()  
+        ReadAllSettings()  
+        ReadSetting("Setting1")  
+        ReadSetting("NotValid")  
+        AddUpdateAppSettings("NewSetting", "May 7, 2014")  
+        AddUpdateAppSettings("Setting1", "May 8, 2014")  
+        ReadAllSettings()  
+    End Sub  
+  
+    Sub ReadAllSettings()  
+        Try  
+            Dim appSettings = ConfigurationManager.AppSettings  
+  
+            If appSettings.Count = 0 Then  
+                Console.WriteLine("AppSettings is empty.")  
+            Else  
+                For Each key As String In appSettings.AllKeys  
+                    Console.WriteLine("Key: {0} Value: {1}", key, appSettings(key))  
+                Next  
+            End If  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error reading app settings")  
+        End Try  
+    End Sub  
+  
+    Sub ReadSetting(key As String)  
+        Try  
+            Dim appSettings = ConfigurationManager.AppSettings  
+            Dim result As String = appSettings(key)  
+            If IsNothing(result) Then  
+                result = "Not found"  
+            End If  
+            Console.WriteLine(result)  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error reading app settings")  
+        End Try  
+    End Sub  
+  
+    Sub AddUpdateAppSettings(key As String, value As String)  
+        Try  
+            Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)  
+            Dim settings = configFile.AppSettings.Settings  
+            If IsNothing(settings(key)) Then  
+                settings.Add(key, value)  
+            Else  
+                settings(key).Value = value  
+            End If  
+            configFile.Save(ConfigurationSaveMode.Modified)  
+            ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name)  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error writing app settings")  
+        End Try  
+    End Sub  
+  
 End Module  
 ```  
  
@@ -202,13 +202,13 @@ The previous example assumes your project has an App.config file as shown below.
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-   <startup>   
-       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
-   </startup>  
- <appSettings>  
-   <add key="Setting1" value="May 5, 2014"/>  
-   <add key="Setting2" value="May 6, 2014"/>  
- </appSettings>  
+    <startup>   
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
+    </startup>  
+  <appSettings>  
+    <add key="Setting1" value="May 5, 2014"/>  
+    <add key="Setting2" value="May 6, 2014"/>  
+  </appSettings>  
 </configuration>  
 ```  
  
@@ -218,34 +218,34 @@ The following example shows how to use a connection string to read data from a d
 using System;  
 using System.Configuration;  
 using System.Data.SqlClient;  
- 
+  
 namespace ConsoleApplication1  
 {  
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           ReadProducts();  
-       }  
- 
-       static void ReadProducts()  
-       {  
-           var connectionString = ConfigurationManager.ConnectionStrings["WingtipToys"].ConnectionString;  
-           string queryString = "SELECT Id, ProductName FROM dbo.Products;";  
-           using (var connection = new SqlConnection(connectionString))  
-           {  
-               var command = new SqlCommand(queryString, connection);  
-               connection.Open();  
-               using (var reader = command.ExecuteReader())  
-               {  
-                   while (reader.Read())  
-                   {  
-                       Console.WriteLine(String.Format("{0}, {1}", reader[0], reader[1]));  
-                   }  
-               }  
-           }  
-       }  
-   }  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            ReadProducts();  
+        }  
+  
+        static void ReadProducts()  
+        {  
+            var connectionString = ConfigurationManager.ConnectionStrings["WingtipToys"].ConnectionString;  
+            string queryString = "SELECT Id, ProductName FROM dbo.Products;";  
+            using (var connection = new SqlConnection(connectionString))  
+            {  
+                var command = new SqlCommand(queryString, connection);  
+                connection.Open();  
+                using (var reader = command.ExecuteReader())  
+                {  
+                    while (reader.Read())  
+                    {  
+                        Console.WriteLine(String.Format("{0}, {1}", reader[0], reader[1]));  
+                    }  
+                }  
+            }  
+        }  
+    }  
 }  
 ```  
  
@@ -253,26 +253,26 @@ namespace ConsoleApplication1
 Imports System.Configuration  
 Imports System.Data.SqlClient  
 Module Module1  
- 
-   Sub Main()  
-       ReadProducts()  
-   End Sub  
- 
-   Sub ReadProducts()  
-       Dim connectionString = ConfigurationManager.ConnectionStrings("WingtipToys").ConnectionString  
-       Dim queryString = "SELECT Id, ProductName FROM dbo.Products;"  
-       Using connection As New SqlConnection(connectionString)  
-           Dim command = New SqlCommand(queryString, connection)  
-           connection.Open()  
- 
-           Using reader As SqlDataReader = command.ExecuteReader()  
-               While reader.Read()  
-                   Console.WriteLine(String.Format("{0}, {1}", reader(0), reader(1)))  
-               End While  
-           End Using  
-       End Using  
-   End Sub  
- 
+  
+    Sub Main()  
+        ReadProducts()  
+    End Sub  
+  
+    Sub ReadProducts()  
+        Dim connectionString = ConfigurationManager.ConnectionStrings("WingtipToys").ConnectionString  
+        Dim queryString = "SELECT Id, ProductName FROM dbo.Products;"  
+        Using connection As New SqlConnection(connectionString)  
+            Dim command = New SqlCommand(queryString, connection)  
+            connection.Open()  
+  
+            Using reader As SqlDataReader = command.ExecuteReader()  
+                While reader.Read()  
+                    Console.WriteLine(String.Format("{0}, {1}", reader(0), reader(1)))  
+                End While  
+            End Using  
+        End Using  
+    End Sub  
+  
 End Module  
 ```  
  
@@ -281,12 +281,12 @@ The previous example assumes your project has an App.config as shown below.
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-   <startup>   
-       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
-   </startup>  
-   <connectionStrings>  
-     <add name="WingtipToys" connectionString="Data Source=(LocalDB)\v11.0;Initial Catalog=WingtipToys;Integrated Security=True;Pooling=False" />  
-   </connectionStrings>  
+    <startup>   
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
+    </startup>  
+    <connectionStrings>  
+      <add name="WingtipToys" connectionString="Data Source=(LocalDB)\v11.0;Initial Catalog=WingtipToys;Integrated Security=True;Pooling=False" />  
+    </connectionStrings>  
 </configuration>  
 ```  
  
@@ -340,143 +340,143 @@ The first example shows a simple console application that reads application sett
 ```csharp  
 using System;  
 using System.Configuration;  
- 
+  
 namespace ConsoleApplication1  
 {  
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           ReadAllSettings();  
-           ReadSetting("Setting1");  
-           ReadSetting("NotValid");  
-           AddUpdateAppSettings("NewSetting", "May 7, 2014");  
-           AddUpdateAppSettings("Setting1", "May 8, 2014");  
-           ReadAllSettings();  
-       }  
- 
-       static void ReadAllSettings()  
-       {  
-           try  
-           {  
-               var appSettings = ConfigurationManager.AppSettings;  
- 
-               if (appSettings.Count == 0)  
-               {  
-                   Console.WriteLine("AppSettings is empty.");  
-               }  
-               else  
-               {  
-                   foreach (var key in appSettings.AllKeys)  
-                   {  
-                       Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
-                   }  
-               }  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error reading app settings");  
-           }  
-       }  
- 
-       static void ReadSetting(string key)  
-       {  
-           try  
-           {  
-               var appSettings = ConfigurationManager.AppSettings;  
-               string result = appSettings[key] ?? "Not Found";  
-               Console.WriteLine(result);  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error reading app settings");  
-           }  
-       }  
- 
-       static void AddUpdateAppSettings(string key, string value)  
-       {  
-           try  
-           {  
-               var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);  
-               var settings = configFile.AppSettings.Settings;  
-               if (settings[key] == null)  
-               {  
-                   settings.Add(key, value);  
-               }  
-               else  
-               {  
-                   settings[key].Value = value;  
-               }  
-               configFile.Save(ConfigurationSaveMode.Modified);  
-               ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);  
-           }  
-           catch (ConfigurationErrorsException)  
-           {  
-               Console.WriteLine("Error writing app settings");  
-           }  
-       }  
-   }  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            ReadAllSettings();  
+            ReadSetting("Setting1");  
+            ReadSetting("NotValid");  
+            AddUpdateAppSettings("NewSetting", "May 7, 2014");  
+            AddUpdateAppSettings("Setting1", "May 8, 2014");  
+            ReadAllSettings();  
+        }  
+  
+        static void ReadAllSettings()  
+        {  
+            try  
+            {  
+                var appSettings = ConfigurationManager.AppSettings;  
+  
+                if (appSettings.Count == 0)  
+                {  
+                    Console.WriteLine("AppSettings is empty.");  
+                }  
+                else  
+                {  
+                    foreach (var key in appSettings.AllKeys)  
+                    {  
+                        Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
+                    }  
+                }  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error reading app settings");  
+            }  
+        }  
+  
+        static void ReadSetting(string key)  
+        {  
+            try  
+            {  
+                var appSettings = ConfigurationManager.AppSettings;  
+                string result = appSettings[key] ?? "Not Found";  
+                Console.WriteLine(result);  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error reading app settings");  
+            }  
+        }  
+  
+        static void AddUpdateAppSettings(string key, string value)  
+        {  
+            try  
+            {  
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);  
+                var settings = configFile.AppSettings.Settings;  
+                if (settings[key] == null)  
+                {  
+                    settings.Add(key, value);  
+                }  
+                else  
+                {  
+                    settings[key].Value = value;  
+                }  
+                configFile.Save(ConfigurationSaveMode.Modified);  
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);  
+            }  
+            catch (ConfigurationErrorsException)  
+            {  
+                Console.WriteLine("Error writing app settings");  
+            }  
+        }  
+    }  
 }  
 ```  
  
 ```vb  
 Imports System.Configuration  
 Module Module1  
- 
-   Sub Main()  
-       ReadAllSettings()  
-       ReadSetting("Setting1")  
-       ReadSetting("NotValid")  
-       AddUpdateAppSettings("NewSetting", "May 7, 2014")  
-       AddUpdateAppSettings("Setting1", "May 8, 2014")  
-       ReadAllSettings()  
-   End Sub  
- 
-   Sub ReadAllSettings()  
-       Try  
-           Dim appSettings = ConfigurationManager.AppSettings  
- 
-           If appSettings.Count = 0 Then  
-               Console.WriteLine("AppSettings is empty.")  
-           Else  
-               For Each key As String In appSettings.AllKeys  
-                   Console.WriteLine("Key: {0} Value: {1}", key, appSettings(key))  
-               Next  
-           End If  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error reading app settings")  
-       End Try  
-   End Sub  
- 
-   Sub ReadSetting(key As String)  
-       Try  
-           Dim appSettings = ConfigurationManager.AppSettings  
-           Dim result As String = appSettings(key)  
-           If IsNothing(result) Then  
-               result = "Not found"  
-           End If  
-           Console.WriteLine(result)  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error reading app settings")  
-       End Try  
-   End Sub  
- 
-   Sub AddUpdateAppSettings(key As String, value As String)  
-       Try  
-           Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)  
-           Dim settings = configFile.AppSettings.Settings  
-           If IsNothing(settings(key)) Then  
-               settings.Add(key, value)  
-           Else  
-               settings(key).Value = value  
-           End If  
-           configFile.Save(ConfigurationSaveMode.Modified)  
-           ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name)  
-       Catch e As ConfigurationErrorsException  
-           Console.WriteLine("Error writing app settings")  
-       End Try  
-   End Sub  
- 
+  
+    Sub Main()  
+        ReadAllSettings()  
+        ReadSetting("Setting1")  
+        ReadSetting("NotValid")  
+        AddUpdateAppSettings("NewSetting", "May 7, 2014")  
+        AddUpdateAppSettings("Setting1", "May 8, 2014")  
+        ReadAllSettings()  
+    End Sub  
+  
+    Sub ReadAllSettings()  
+        Try  
+            Dim appSettings = ConfigurationManager.AppSettings  
+  
+            If appSettings.Count = 0 Then  
+                Console.WriteLine("AppSettings is empty.")  
+            Else  
+                For Each key As String In appSettings.AllKeys  
+                    Console.WriteLine("Key: {0} Value: {1}", key, appSettings(key))  
+                Next  
+            End If  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error reading app settings")  
+        End Try  
+    End Sub  
+  
+    Sub ReadSetting(key As String)  
+        Try  
+            Dim appSettings = ConfigurationManager.AppSettings  
+            Dim result As String = appSettings(key)  
+            If IsNothing(result) Then  
+                result = "Not found"  
+            End If  
+            Console.WriteLine(result)  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error reading app settings")  
+        End Try  
+    End Sub  
+  
+    Sub AddUpdateAppSettings(key As String, value As String)  
+        Try  
+            Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)  
+            Dim settings = configFile.AppSettings.Settings  
+            If IsNothing(settings(key)) Then  
+                settings.Add(key, value)  
+            Else  
+                settings(key).Value = value  
+            End If  
+            configFile.Save(ConfigurationSaveMode.Modified)  
+            ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name)  
+        Catch e As ConfigurationErrorsException  
+            Console.WriteLine("Error writing app settings")  
+        End Try  
+    End Sub  
+  
 End Module  
 ```  
  
@@ -485,13 +485,13 @@ The previous example assumes your project has an App.config file as shown below.
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-   <startup>   
-       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
-   </startup>  
- <appSettings>  
-   <add key="Setting1" value="May 5, 2014"/>  
-   <add key="Setting2" value="May 6, 2014"/>  
- </appSettings>  
+    <startup>   
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
+    </startup>  
+  <appSettings>  
+    <add key="Setting1" value="May 5, 2014"/>  
+    <add key="Setting2" value="May 6, 2014"/>  
+  </appSettings>  
 </configuration>  
 ```  
  
@@ -530,34 +530,34 @@ The following example shows how to use a connection string to read data from a d
 using System;  
 using System.Configuration;  
 using System.Data.SqlClient;  
- 
+  
 namespace ConsoleApplication1  
 {  
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           ReadProducts();  
-       }  
- 
-       static void ReadProducts()  
-       {  
-           var connectionString = ConfigurationManager.ConnectionStrings["WingtipToys"].ConnectionString;  
-           string queryString = "SELECT Id, ProductName FROM dbo.Products;";  
-           using (var connection = new SqlConnection(connectionString))  
-           {  
-               var command = new SqlCommand(queryString, connection);  
-               connection.Open();  
-               using (var reader = command.ExecuteReader())  
-               {  
-                   while (reader.Read())  
-                   {  
-                       Console.WriteLine(String.Format("{0}, {1}", reader[0], reader[1]));  
-                   }  
-               }  
-           }  
-       }  
-   }  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            ReadProducts();  
+        }  
+  
+        static void ReadProducts()  
+        {  
+            var connectionString = ConfigurationManager.ConnectionStrings["WingtipToys"].ConnectionString;  
+            string queryString = "SELECT Id, ProductName FROM dbo.Products;";  
+            using (var connection = new SqlConnection(connectionString))  
+            {  
+                var command = new SqlCommand(queryString, connection);  
+                connection.Open();  
+                using (var reader = command.ExecuteReader())  
+                {  
+                    while (reader.Read())  
+                    {  
+                        Console.WriteLine(String.Format("{0}, {1}", reader[0], reader[1]));  
+                    }  
+                }  
+            }  
+        }  
+    }  
 }  
 ```  
  
@@ -565,26 +565,26 @@ namespace ConsoleApplication1
 Imports System.Configuration  
 Imports System.Data.SqlClient  
 Module Module1  
- 
-   Sub Main()  
-       ReadProducts()  
-   End Sub  
- 
-   Sub ReadProducts()  
-       Dim connectionString = ConfigurationManager.ConnectionStrings("WingtipToys").ConnectionString  
-       Dim queryString = "SELECT Id, ProductName FROM dbo.Products;"  
-       Using connection As New SqlConnection(connectionString)  
-           Dim command = New SqlCommand(queryString, connection)  
-           connection.Open()  
- 
-           Using reader As SqlDataReader = command.ExecuteReader()  
-               While reader.Read()  
-                   Console.WriteLine(String.Format("{0}, {1}", reader(0), reader(1)))  
-               End While  
-           End Using  
-       End Using  
-   End Sub  
- 
+  
+    Sub Main()  
+        ReadProducts()  
+    End Sub  
+  
+    Sub ReadProducts()  
+        Dim connectionString = ConfigurationManager.ConnectionStrings("WingtipToys").ConnectionString  
+        Dim queryString = "SELECT Id, ProductName FROM dbo.Products;"  
+        Using connection As New SqlConnection(connectionString)  
+            Dim command = New SqlCommand(queryString, connection)  
+            connection.Open()  
+  
+            Using reader As SqlDataReader = command.ExecuteReader()  
+                While reader.Read()  
+                    Console.WriteLine(String.Format("{0}, {1}", reader(0), reader(1)))  
+                End While  
+            End Using  
+        End Using  
+    End Sub  
+  
 End Module  
 ```  
  
@@ -593,12 +593,12 @@ The previous example assumes your project has an App.config as shown below.
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-   <startup>   
-       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
-   </startup>  
-   <connectionStrings>  
-     <add name="WingtipToys" connectionString="Data Source=(LocalDB)\v11.0;Initial Catalog=WingtipToys;Integrated Security=True;Pooling=False" />  
-   </connectionStrings>  
+    <startup>   
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />  
+    </startup>  
+    <connectionStrings>  
+      <add name="WingtipToys" connectionString="Data Source=(LocalDB)\v11.0;Initial Catalog=WingtipToys;Integrated Security=True;Pooling=False" />  
+    </connectionStrings>  
 </configuration>  
 ```  
  

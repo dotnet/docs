@@ -34,23 +34,23 @@ Use commas to separate multiple properties on the attribute.
 ```vb  
 <Table(Name:="Employees")>  _  
 Public Class Employees  
-   Private _LastName As String  
-   ' …  
-   <Column(Storage:="_LastName", DbType:="NVarChar(20) NOT NULL", _  
-       CanBeNull:=false)> _  
-   Public Property LastName() As String  
-       Get  
-           Return Me._LastName  
-       End Get  
-       Set  
-           If ((Me._LastName = value) _  
-               = false) Then  
-               Me.OnPropertyChanging("LastName")  
-               Me._LastName = value  
-               Me.OnPropertyChanged("LastName")  
-           End If  
-       End Set  
-   End Property  
+    Private _LastName As String  
+    ' …  
+    <Column(Storage:="_LastName", DbType:="NVarChar(20) NOT NULL", _  
+        CanBeNull:=false)> _  
+    Public Property LastName() As String  
+        Get  
+            Return Me._LastName  
+        End Get  
+        Set  
+            If ((Me._LastName = value) _  
+                = false) Then  
+                Me.OnPropertyChanging("LastName")  
+                Me._LastName = value  
+                Me.OnPropertyChanged("LastName")  
+            End If  
+        End Set  
+    End Property  
 End Class  
 ```  
  
@@ -58,26 +58,26 @@ End Class
 [Table(Name="Employees")]  
 public class Employees  
 {  
-   private string _LastName;      
-   // …  
-   [Column(Storage="_LastName", DbType="NVarChar(20) NOT NULL",   
-       CanBeNull=false)]  
-   public string LastName  
-   {  
-       get  
-       {  
-           return this._LastName;  
-       }  
-       set  
-       {  
-           if ((this._LastName != value))  
-           {  
-               this.OnPropertyChanging("LastName");  
-               this._LastName = value;  
-               this.OnPropertyChanged("LastName");  
-           }  
-       }  
-   }  
+    private string _LastName;      
+    // …  
+    [Column(Storage="_LastName", DbType="NVarChar(20) NOT NULL",   
+        CanBeNull=false)]  
+    public string LastName  
+    {  
+        get  
+        {  
+            return this._LastName;  
+        }  
+        set  
+        {  
+            if ((this._LastName != value))  
+            {  
+                this.OnPropertyChanging("LastName");  
+                this._LastName = value;  
+                this.OnPropertyChanged("LastName");  
+            }  
+        }  
+    }  
 }  
 ```  
  

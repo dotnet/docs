@@ -174,15 +174,15 @@ The following example demonstrates how to the use the <xref:System.Web.UI.Mobile
  
 ```vb  
 Private Sub Form1_PageIndexChanged(sender As Object, e As EventArgs)  
-    Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1)  
+     Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1)  
 End Sub  
 ```  
  
 ```csharp  
 void Form1_PageIndexChanged(object sender, EventArgs e)  
 {  
-   Form1.PagerStyle.NextPageText =   
-       (Form1.CurrentPage + 1).ToString();  
+    Form1.PagerStyle.NextPageText =   
+        (Form1.CurrentPage + 1).ToString();  
 }  
 ```  
  
@@ -249,24 +249,24 @@ The following example demonstrates how to use the <xref:System.Web.UI.MobileCont
  
 ```vb  
 Private Sub Page_Load(ByVal sender As System.Object, _  
-   ByVal e As System.EventArgs) Handles MyBase.Load  
-   If Not IsPostBack  
-       Form1.PagerStyle.NextPageText = "2"  
-   End If  
-   Form1.PagerStyle.StyleReference = "title"  
-   Form1.PagerStyle.PageLabel = "Go to page"  
+    ByVal e As System.EventArgs) Handles MyBase.Load  
+    If Not IsPostBack  
+        Form1.PagerStyle.NextPageText = "2"  
+    End If  
+    Form1.PagerStyle.StyleReference = "title"  
+    Form1.PagerStyle.PageLabel = "Go to page"  
 End Sub  
 ```  
  
 ```csharp  
 void Page_Load(object sender, EventArgs e)  
 {  
-   if(!IsPostBack)  
-   {  
-       Form1.PagerStyle.NextPageText = "2";  
-   }  
-   Form1.PagerStyle.StyleReference = "title";  
-   Form1.PagerStyle.PageLabel = "Go to page"  
+    if(!IsPostBack)  
+    {  
+        Form1.PagerStyle.NextPageText = "2";  
+    }  
+    Form1.PagerStyle.StyleReference = "title";  
+    Form1.PagerStyle.PageLabel = "Go to page"  
 }  
 ```  
  
@@ -330,18 +330,18 @@ The following example demonstrates how to use the <xref:System.Web.UI.MobileCont
  
 ```vb  
 Sub Form1_PageIndexChanged(ByVal sender As Object, _  
-   ByVal e As EventArgs)  
-   Form1.PagerStyle.PreviousPageText = _  
-      (Form1.CurrentPage - 1).ToString()  
+    ByVal e As EventArgs)  
+    Form1.PagerStyle.PreviousPageText = _  
+       (Form1.CurrentPage - 1).ToString()  
 End Sub  
 ```  
  
 ```csharp  
 void Form1_PageIndexChanged(object sender, EventArgs e)  
 {  
-   Form1.PagerStyle.PreviousPageText =   
-       (Form1.CurrentPage - 1).ToString();  
-   Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1).ToString();  
+    Form1.PagerStyle.PreviousPageText =   
+        (Form1.CurrentPage - 1).ToString();  
+    Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1).ToString();  
 }  
 ```  
  

@@ -34,13 +34,13 @@ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRe
 ```  
 // Create a handler for the SpeechHypothesized event.  
 recognizer.SpeechHypothesized += new EventHandler<SpeechHypothesizedEventArgs>(recognizer_SpeechHypothesized);  
- 
+  
 // Handle the event and display the hypothesized result.  
 void recognizer_SpeechHypothesized (object sender, SpeechHypothesizedEventArgs e)  
- {  
-   Console.WriteLine("Hypothesized text: " + e.Result.Text);  
- }  
- 
+  {  
+    Console.WriteLine("Hypothesized text: " + e.Result.Text);  
+  }  
+  
 ```  
  
  ]]></format>

@@ -29,18 +29,18 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <healthMonitoring>  
-   <profiles>  
-       <add name="Default"  
-           minInstances="1"  
-           maxLimit="Infinite"  
-           minInterval="00:10:00"  
-       />  
-       <add name="Critical"  
-           minInstances="1"  
-           maxLimit="1024"  
-           minInterval="00:00:00"  
-       />  
-   </profiles>  
+    <profiles>  
+        <add name="Default"  
+            minInstances="1"  
+            maxLimit="Infinite"  
+            minInterval="00:10:00"  
+        />  
+        <add name="Critical"  
+            minInstances="1"  
+            maxLimit="1024"  
+            minInterval="00:00:00"  
+        />  
+    </profiles>  
 </healthMonitoring>   
 ```  
  

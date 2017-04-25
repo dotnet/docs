@@ -3034,14 +3034,14 @@ The following example reads a UTF-8 encoded string from a binary file represente
 The example uses the following text, which should be saved to a UTF-8 encoded file named Utf8Example.txt.  
  
 ```  
- 
+  
 This is a UTF-8-encoded file that contains primarily Latin text, although it   
 does list the first twelve letters of the Russian (Cyrillic) alphabet:  
- 
+  
 А б в г д е ё ж з и й к  
- 
+  
 The goal is to save this file, then open and decode it as a binary stream.  
- 
+  
 ```  
  
  ]]></format>
@@ -3174,14 +3174,14 @@ The following example reads a UTF-8 encoded string from a binary file that is re
 The example uses the following text, which should be saved to a UTF-8 encoded file named Utf8Example.txt.  
  
 ```  
- 
+  
 This is a UTF-8-encoded file that contains primarily Latin text, although it   
 does list the first twelve letters of the Russian (Cyrillic) alphabet:  
- 
+  
 А б в г д е ё ж з и й к  
- 
+  
 The goal is to save this file, then open and decode it as a binary stream.  
- 
+  
 ```  
  
  ]]></format>

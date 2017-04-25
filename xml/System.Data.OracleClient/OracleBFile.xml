@@ -541,13 +541,13 @@ The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Re
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  
-   if (dataReader.Read()) {  
-           OracleBFile BFile = dataReader.GetOracleBFile(1);  
-       using (BFile) {  
-           BFile.Seek(0, SeekOrigin.Begin);  
-           BFile.Read(buffer, 0, 100);  
-       }  
-   }  
+    if (dataReader.Read()) {  
+            OracleBFile BFile = dataReader.GetOracleBFile(1);  
+        using (BFile) {  
+            BFile.Seek(0, SeekOrigin.Begin);  
+            BFile.Read(buffer, 0, 100);  
+        }  
+    }  
 }  
 ```  
  
@@ -606,13 +606,13 @@ The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Re
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  
-   if (dataReader.Read()) {  
-           OracleBFile BFile = dataReader.GetOracleBFile(1);  
-       using (BFile) {  
-           BFile.Seek(0, SeekOrigin.Begin);  
-           BFile.Read(buffer, 0, 100);  
-       }  
-   }  
+    if (dataReader.Read()) {  
+            OracleBFile BFile = dataReader.GetOracleBFile(1);  
+        using (BFile) {  
+            BFile.Seek(0, SeekOrigin.Begin);  
+            BFile.Read(buffer, 0, 100);  
+        }  
+    }  
 }  
 ```  
  
@@ -664,16 +664,16 @@ The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Se
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  
-   if (dataReader.Read()) {  
-       OracleBFile BFile = dataReader.GetOracleBFile(1);  
-       using (BFile) {  
-           BFile.Seek(0, SeekOrigin.Begin);  
-           BFile.Read(buffer, 0, 100);  
-           command.Transaction = connection.BeginTransaction();  
-           BFile.SetFileName("TESTDIR", "File1.jpg");  
-           BFile.Read(buffer, 0, 100);  
-       }  
-   }  
+    if (dataReader.Read()) {  
+        OracleBFile BFile = dataReader.GetOracleBFile(1);  
+        using (BFile) {  
+            BFile.Seek(0, SeekOrigin.Begin);  
+            BFile.Read(buffer, 0, 100);  
+            command.Transaction = connection.BeginTransaction();  
+            BFile.SetFileName("TESTDIR", "File1.jpg");  
+            BFile.Read(buffer, 0, 100);  
+        }  
+    }  
 }  
 ```  
  

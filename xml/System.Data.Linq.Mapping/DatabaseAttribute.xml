@@ -76,8 +76,8 @@ The information is used only if the connection itself does not specify the datab
 ```vb  
 <Database(Name:="Database#5")> _  
 Public Class Database5  
-   Inherits DataContext  
-   …  
+    Inherits DataContext  
+    …  
 End Class  
 ```  
  
@@ -85,7 +85,7 @@ End Class
 [Database(Name="Database#5")]  
 public class Database5 : DataContext  
 {  
-   …  
+    …  
 }  
 ```  
  

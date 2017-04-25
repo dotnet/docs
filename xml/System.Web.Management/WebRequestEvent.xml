@@ -35,30 +35,30 @@ The following is an excerpt of the configuration file that enables ASP.NET to us
  
 ```  
 <healthMonitoring   
- enabled="true" heartBeatInterval="0">  
- <providers>  
-   <!-- Define the custom provider that   
-        processes custom Web request events. -->  
-   <add name="SampleWebEventProvider"   
+  enabled="true" heartBeatInterval="0">  
+  <providers>  
+    <!-- Define the custom provider that   
+         processes custom Web request events. -->  
+    <add name="SampleWebEventProvider"   
 type="SamplesAspNet.SampleEventProvider,webeventprovider,Version=1.0.1573.18094, Culture=neutral, PublicKeyToken=b5a57a9a9d487cf4, processorArchitecture=MSIL"/>  
- </providers>  
- 
- <eventMappings>  
-   <!--  Define the event source that   
-        issues custom events.   -->  
-   <add  name="SampleWebRequestEvent"   
+  </providers>  
+  
+  <eventMappings>  
+    <!--  Define the event source that   
+         issues custom events.   -->  
+    <add  name="SampleWebRequestEvent"   
 type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947, Culture=neutral, PublicKeyToken=e717d983a78c8ddb, processorArchitecture=MSIL"/>  
-   </eventMappings>  
- 
- <rules>  
-       <!-- Associate custom event with   
-       related custom provider -->  
-   <add   
-     name="CustomWebRequestEvent"  
-     eventName="SampleWebRequestEvent"   
-     provider="SampleWebEventProvider"   
-     profile="Critical"/>  
- </rules>  
+    </eventMappings>  
+  
+  <rules>  
+        <!-- Associate custom event with   
+        related custom provider -->  
+    <add   
+      name="CustomWebRequestEvent"  
+      eventName="SampleWebRequestEvent"   
+      provider="SampleWebEventProvider"   
+      profile="Critical"/>  
+  </rules>  
 </healthMonitoring>  
 ```  
  

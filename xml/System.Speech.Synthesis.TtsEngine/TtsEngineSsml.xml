@@ -104,20 +104,20 @@ The implementation of <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml.AddL
  
 ```  
 public static Dictionary<Uri, Stream> _aLexicons = new Dictionary<Uri, Stream>();  
- 
-public void AddLexicon(Uri uri, string mediaType, ITtsEngineSite site) {  
-   Stream stream = site.LoadResource(uri, mediaType);  
-   _aLexicons.Add(uri, stream);  
+  
+ public void AddLexicon(Uri uri, string mediaType, ITtsEngineSite site) {  
+    Stream stream = site.LoadResource(uri, mediaType);  
+    _aLexicons.Add(uri, stream);  
 }  
- 
-public void RemoveLexicon(Uri uri, ITtsEngineSite site) {  
-    Stream stream;  
-    if (_aLexicons.TryGetValue(uri, out stream)) {  
-        stream.Close();  
-        _aLexicons.Remove(uri);  
-    }  
+  
+ public void RemoveLexicon(Uri uri, ITtsEngineSite site) {  
+     Stream stream;  
+     if (_aLexicons.TryGetValue(uri, out stream)) {  
+         stream.Close();  
+         _aLexicons.Remove(uri);  
+     }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -159,13 +159,13 @@ The `struct` must provide functionality equivalent to:
 ```  
 internal struct WaveFormat  
 {  
-   public Int16 FormatTag;  
-   public Int16 Channels;  
-   public int SamplesPerSec;  
-   public int AvgBytesPerSec;  
-   public Int16 BlockAlign;  
-   public Int16 BitsPerSample;  
-   public Int16 Size;  
+    public Int16 FormatTag;  
+    public Int16 Channels;  
+    public int SamplesPerSec;  
+    public int AvgBytesPerSec;  
+    public Int16 BlockAlign;  
+    public Int16 BitsPerSample;  
+    public Int16 Size;  
 }  
 ```  
  
@@ -176,32 +176,32 @@ The sample implementation below validates selected inputs, using them if they ar
  
 ```  
 public IntPtr GetOutputFormat(SpeakOutputFormat format, IntPtr targetWaveFormat) {  
-   WaveFormat waveFormat = new WaveFormat();  
-   WaveFormat rq=new WaveFormat();  
-   Marshal.PtrToStructure(targetWaveFormat,rq);  
- 
-   waveFormat.AvgBytesPerSec = AvgBytesPerSec Min < rq.AvgBytesPerSec && rq.AvgBytesPerSec < AvgBytesPerSecMax? rq.AvgBytesPerSec : 3200;  
-   waveFormat.BitsPerSample = BitsPerSampleMin < rq.AvgBytesPerSec && rq.BitsPerSample < BitsPerSampleMax ? rq.AvgBytesPerSec : 3200; 16;  
-   waveFormat.BlockAlign = 2;  
-   waveFormat.Channels = 1;  
-   waveFormat.FormatTag = 1;  
-   waveFormat.SamplesPerSec = 16000;  
-   waveFormat.Size = 0;  
- 
-   IntPtr wfx = Marshal.AllocCoTaskMem(Marshal.SizeOf(waveFormat));  
-   Marshal.StructureToPtr(waveFormat, wfx, false);  
- 
-   //Console.WriteLine ("GetOutputFormat called");  
-   return wfx;  
+    WaveFormat waveFormat = new WaveFormat();  
+    WaveFormat rq=new WaveFormat();  
+    Marshal.PtrToStructure(targetWaveFormat,rq);  
+  
+    waveFormat.AvgBytesPerSec = AvgBytesPerSec Min < rq.AvgBytesPerSec && rq.AvgBytesPerSec < AvgBytesPerSecMax? rq.AvgBytesPerSec : 3200;  
+    waveFormat.BitsPerSample = BitsPerSampleMin < rq.AvgBytesPerSec && rq.BitsPerSample < BitsPerSampleMax ? rq.AvgBytesPerSec : 3200; 16;  
+    waveFormat.BlockAlign = 2;  
+    waveFormat.Channels = 1;  
+    waveFormat.FormatTag = 1;  
+    waveFormat.SamplesPerSec = 16000;  
+    waveFormat.Size = 0;  
+  
+    IntPtr wfx = Marshal.AllocCoTaskMem(Marshal.SizeOf(waveFormat));  
+    Marshal.StructureToPtr(waveFormat, wfx, false);  
+  
+    //Console.WriteLine ("GetOutputFormat called");  
+    return wfx;  
 }  
 internal struct WaveFormat {  
-   public Int16 FormatTag;  
-   public Int16 Channels;  
-   public int SamplesPerSec;  
-   public int AvgBytesPerSec;  
-   public Int16 BlockAlign;  
-   public Int16 BitsPerSample;  
-   public Int16 Size;  
+    public Int16 FormatTag;  
+    public Int16 Channels;  
+    public int SamplesPerSec;  
+    public int AvgBytesPerSec;  
+    public Int16 BlockAlign;  
+    public Int16 BitsPerSample;  
+    public Int16 Size;  
 }  
 ```  
  
@@ -247,18 +247,18 @@ The implementation of <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml.Remo
  
 ```  
 public static Dictionary<Uri, Stream> _aLexicons = new Dictionary<Uri, Stream>();  
- 
-public void AddLexicon(Uri uri, string mediaType, ITtsEngineSite site) {  
-   Stream stream = site.LoadResource(uri, mediaType);  
-   _aLexicons.Add(uri, stream);  
+  
+ public void AddLexicon(Uri uri, string mediaType, ITtsEngineSite site) {  
+    Stream stream = site.LoadResource(uri, mediaType);  
+    _aLexicons.Add(uri, stream);  
 }  
- 
-public void RemoveLexicon(Uri uri, ITtsEngineSite site) {  
-    Stream stream;  
-    if (_aLexicons.TryGetValue(uri, out stream)) {  
-        stream.Close();  
-        _aLexicons.Remove(uri);  
-    }  
+  
+ public void RemoveLexicon(Uri uri, ITtsEngineSite site) {  
+     Stream stream;  
+     if (_aLexicons.TryGetValue(uri, out stream)) {  
+         stream.Close();  
+         _aLexicons.Remove(uri);  
+     }  
 }  
 ```  
  
@@ -302,13 +302,13 @@ The `struct` must provide functionality equivalent to:
 ```  
 internal struct WaveFormat  
 {  
-   public Int16 FormatTag;  
-   public Int16 Channels;  
-   public int SamplesPerSec;  
-   public int AvgBytesPerSec;  
-   public Int16 BlockAlign;  
-   public Int16 BitsPerSample;  
-   public Int16 Size;  
+    public Int16 FormatTag;  
+    public Int16 Channels;  
+    public int SamplesPerSec;  
+    public int AvgBytesPerSec;  
+    public Int16 BlockAlign;  
+    public Int16 BitsPerSample;  
+    public Int16 Size;  
 }  
 ```  
  
@@ -334,47 +334,47 @@ private const int WordBoundaryFlag = 1 << (int)TtsEventId.WordBoundary;
 private readonly char[] spaces = new char[] { ' ', '\t', '\r', '\n' };  
 internal struct UsVsUk  
 {  
- internal string UK;  
- internal string US;  
+  internal string UK;  
+  internal string US;  
 }  
- 
+  
 override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite site)  
 {  
- TextFragment [] newFrags=new TextFragment[frags.Length];  
- 
- for (int i=0;i<frags.Length;i++){  
-   newFrags[i].State=frags[i].State;  
-   //truncate  
-   newFrags[i].TextToSpeak = frags[i].TextToSpeak.Substring(frags[i].TextOffset,  
-                              frags[i].TextLength);  
-   newFrags[i].TextLength = newFrags[i].TextToSpeak.Length;  
-   newFrags[i].TextOffset = 0;  
-   if (newFrags[i].State.Action == TtsEngineAction.Speak) {  
-     //Us to UK conversion  
-     foreach (UsVsUk term in TransList) {  
-     newFrags[i].TextToSpeak.Replace(term.US, term.UK);  
-     }  
-     //Generate progress meter events if supported  
-     if ((site.EventInterest & WordBoundaryFlag) != 0) {  
-     string[] subs = newFrags[i].TextToSpeak.Split(spaces);  
- 
-     foreach (string s in subs) {  
-       int offset = newFrags[i].TextOffset;  
-       SpeechEventInfo spEvent = new SpeechEventInfo((Int16)TtsEventId.WordBoundary,   
-               (Int16)EventParameterType.Undefined,   
-                s.Length, new IntPtr(offset));  
-       offset += s.Length;  
-       if (s.Trim().Length > 0) {  
-         SpeechEventInfo[] events = new SpeechEventInfo[1];  
-         events[0] = spEvent;  
-         site.AddEvents(events, 1);  
-       }  
-     }  
-     }  
-   }  
- }  
-   _baseSynthesize.Speak(newFrags, wfx, site);  
- 
+  TextFragment [] newFrags=new TextFragment[frags.Length];  
+  
+  for (int i=0;i<frags.Length;i++){  
+    newFrags[i].State=frags[i].State;  
+    //truncate  
+    newFrags[i].TextToSpeak = frags[i].TextToSpeak.Substring(frags[i].TextOffset,  
+                               frags[i].TextLength);  
+    newFrags[i].TextLength = newFrags[i].TextToSpeak.Length;  
+    newFrags[i].TextOffset = 0;  
+    if (newFrags[i].State.Action == TtsEngineAction.Speak) {  
+      //Us to UK conversion  
+      foreach (UsVsUk term in TransList) {  
+      newFrags[i].TextToSpeak.Replace(term.US, term.UK);  
+      }  
+      //Generate progress meter events if supported  
+      if ((site.EventInterest & WordBoundaryFlag) != 0) {  
+      string[] subs = newFrags[i].TextToSpeak.Split(spaces);  
+  
+      foreach (string s in subs) {  
+        int offset = newFrags[i].TextOffset;  
+        SpeechEventInfo spEvent = new SpeechEventInfo((Int16)TtsEventId.WordBoundary,   
+                (Int16)EventParameterType.Undefined,   
+                 s.Length, new IntPtr(offset));  
+        offset += s.Length;  
+        if (s.Trim().Length > 0) {  
+          SpeechEventInfo[] events = new SpeechEventInfo[1];  
+          events[0] = spEvent;  
+          site.AddEvents(events, 1);  
+        }  
+      }  
+      }  
+    }  
+  }  
+    _baseSynthesize.Speak(newFrags, wfx, site);  
+  
 }  
 ```  
  

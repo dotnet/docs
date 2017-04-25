@@ -75,25 +75,25 @@ The following code example demonstrates how to add an event to an instance of th
 ```csharp  
 class Program  
 {  
-   static void Main(string[] args)  
-   {  
-       dynamic sampleObject = new ExpandoObject();  
- 
-       // Create a new event and initialize it with null.  
-       sampleObject.sampleEvent = null;  
- 
-       // Add an event handler.  
-       sampleObject.sampleEvent += new EventHandler(SampleHandler);  
- 
-       // Raise an event for testing purposes.  
-       sampleObject.sampleEvent(sampleObject, new EventArgs());  
-  }  
- 
-   // Event handler.  
-   static void SampleHandler(object sender, EventArgs e)  
-   {  
-       Console.WriteLine("SampleHandler for {0} event", sender);  
+    static void Main(string[] args)  
+    {  
+        dynamic sampleObject = new ExpandoObject();  
+  
+        // Create a new event and initialize it with null.  
+        sampleObject.sampleEvent = null;  
+  
+        // Add an event handler.  
+        sampleObject.sampleEvent += new EventHandler(SampleHandler);  
+  
+        // Raise an event for testing purposes.  
+        sampleObject.sampleEvent(sampleObject, new EventArgs());  
    }  
+  
+    // Event handler.  
+    static void SampleHandler(object sender, EventArgs e)  
+    {  
+        Console.WriteLine("SampleHandler for {0} event", sender);  
+    }  
 }  
 // This code example produces the following output:  
 // SampleHandler for System.Dynamic.ExpandoObject event.  
@@ -101,31 +101,31 @@ class Program
  
 ```vb  
 Module Module1  
- 
+  
 Sub Main()  
-   Dim sampleObject As Object = New ExpandoObject()  
- 
-   ' Create a new event and initialize it with null.  
-   sampleObject.sampleEvent = Nothing  
- 
-   ' Add an event handler.  
-   Dim handler As EventHandler = AddressOf SampleHandler  
-   sampleObject.sampleEvent =   
-       [Delegate].Combine(sampleObject.sampleEvent, handler)  
- 
-   ' Raise an event for testing purposes.  
-   sampleObject.sampleEvent.Invoke(sampleObject, New EventArgs())  
- 
+    Dim sampleObject As Object = New ExpandoObject()  
+  
+    ' Create a new event and initialize it with null.  
+    sampleObject.sampleEvent = Nothing  
+  
+    ' Add an event handler.  
+    Dim handler As EventHandler = AddressOf SampleHandler  
+    sampleObject.sampleEvent =   
+        [Delegate].Combine(sampleObject.sampleEvent, handler)  
+  
+    ' Raise an event for testing purposes.  
+    sampleObject.sampleEvent.Invoke(sampleObject, New EventArgs())  
+  
 End Sub  
- 
+  
 ' Event handler.  
 Sub SampleHandler(ByVal sender As Object, ByVal e As EventArgs)  
-   Console.WriteLine("SampleHandler for {0} event", sender)  
+    Console.WriteLine("SampleHandler for {0} event", sender)  
 End Sub  
- 
+  
 ' This code example produces the following output:  
 ' SampleHandler for System.Dynamic.ExpandoObject event.  
- 
+  
 End Module  
 ```  
  

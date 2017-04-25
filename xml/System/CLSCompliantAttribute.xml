@@ -64,7 +64,7 @@ The following example applies a <xref:System.CLSCompliantAttribute> to the entir
  
 ```  
 using System;  
-   [assembly: CLSCompliant(true)]  
+    [assembly: CLSCompliant(true)]  
 ```  
  
 The following declaration generates a CLS-compliance warning because the type `UInt32` is not specified in the CLS.  
@@ -77,7 +77,7 @@ If the declaration is marked with a <xref:System.CLSCompliantAttribute>, no comp
  
 ```  
 [CLSCompliant(false)]  
-public int SetValue(UInt32 value);  
+ public int SetValue(UInt32 value);  
 ```  
  
  ]]></format>

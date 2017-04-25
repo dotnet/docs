@@ -35,16 +35,16 @@ The following code examples demonstrate a custom message contract that uses the 
 [MessageContract]  
 public class BankingTransaction  
 {  
- [MessageHeader]   
- public Operation operation;  
- [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")]   
- public bool IsAudited;  
- [MessageBody(ProtectionLevel=ProtectionLevel.EncryptAndSign)]   
- public Account sourceAccount;  
- [MessageBody]   
- public Account targetAccount;  
- [MessageBody(Name="transactionAmount")]   
- public int amount;  
+  [MessageHeader]   
+  public Operation operation;  
+  [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")]   
+  public bool IsAudited;  
+  [MessageBody(ProtectionLevel=ProtectionLevel.EncryptAndSign)]   
+  public Account sourceAccount;  
+  [MessageBody]   
+  public Account targetAccount;  
+  [MessageBody(Name="transactionAmount")]   
+  public int amount;  
 ```  
  
  ]]></format>
@@ -116,11 +116,11 @@ The following code examples demonstrate a custom message contract that uses the 
 [MessageContract]  
 public class BankingTransaction  
 {  
- [MessageHeader] public Operation operation;  
- [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")] public bool IsAudited;  
- [MessageBody] public Account sourceAccount;  
- [MessageBody] public Account targetAccount;  
- [MessageBody(Name="transactionAmount")] public int amount;  
+  [MessageHeader] public Operation operation;  
+  [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")] public bool IsAudited;  
+  [MessageBody] public Account sourceAccount;  
+  [MessageBody] public Account targetAccount;  
+  [MessageBody(Name="transactionAmount")] public int amount;  
 ```  
  
  ]]></format>
@@ -156,11 +156,11 @@ The following code examples demonstrate a custom message contract that uses the 
 [MessageContract]  
 public class BankingTransaction  
 {  
- [MessageHeader] public Operation operation;  
- [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")] public bool IsAudited;  
- [MessageBody] public Account sourceAccount;  
- [MessageBody] public Account targetAccount;  
- [MessageBody(Name="transactionAmount")] public int amount;  
+  [MessageHeader] public Operation operation;  
+  [MessageHeader(Namespace="http://schemas.contosobank.com/auditing/2005")] public bool IsAudited;  
+  [MessageBody] public Account sourceAccount;  
+  [MessageBody] public Account targetAccount;  
+  [MessageBody(Name="transactionAmount")] public int amount;  
 ```  
  
  ]]></format>
@@ -195,12 +195,12 @@ In addition, the protection level is determined for each header individually. Ho
 [MessageContract]  
 public class PatientRecord  
 {  
-  [MessageHeader(ProtectionLevel=None)] public int recordID;  
-  [MessageHeader(ProtectionLevel=Sign)] public string patientName;  
-  [MessageHeader(ProtectionLevel=EncryptAndSign)] public string SSN;  
-  [MessageBody(ProtectionLevel=None)] public string comments;  
-  [MessageBody(ProtectionLevel=Sign)] public string diagnosis;  
-  [MessageBody(ProtectionLevel=EncryptAndSign)] public string medicalHistory;  
+   [MessageHeader(ProtectionLevel=None)] public int recordID;  
+   [MessageHeader(ProtectionLevel=Sign)] public string patientName;  
+   [MessageHeader(ProtectionLevel=EncryptAndSign)] public string SSN;  
+   [MessageBody(ProtectionLevel=None)] public string comments;  
+   [MessageBody(ProtectionLevel=Sign)] public string diagnosis;  
+   [MessageBody(ProtectionLevel=EncryptAndSign)] public string medicalHistory;  
 }  
 ```  
  

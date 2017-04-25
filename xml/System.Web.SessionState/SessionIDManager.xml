@@ -98,17 +98,17 @@ To use the custom class demonstrated in this example, configure the sessionIDMan
  
 ```  
 <sessionState  
- Mode="InProc"  
- stateConnectionString="tcp=127.0.0.1:42424"  
- stateNetworkTimeout="10"  
- sqlConnectionString="data source=127.0.0.1;Integrated Security=SSPI"  
- sqlCommandTimeout="30"  
- customProvider=""  
- cookieless="false"  
- regenerateExpiredSessionId="false"  
- timeout="20"  
- sessionIDManagerType="Your.ID.Manager.Type,  
-   CustomAssemblyNameInBinFolder"  
+  Mode="InProc"  
+  stateConnectionString="tcp=127.0.0.1:42424"  
+  stateNetworkTimeout="10"  
+  sqlConnectionString="data source=127.0.0.1;Integrated Security=SSPI"  
+  sqlCommandTimeout="30"  
+  customProvider=""  
+  cookieless="false"  
+  regenerateExpiredSessionId="false"  
+  timeout="20"  
+  sessionIDManagerType="Your.ID.Manager.Type,  
+    CustomAssemblyNameInBinFolder"  
 />  
 ```  
  
@@ -424,9 +424,9 @@ To use the custom class demonstrated in this example, replace the `SessionID` HT
  
 ```  
 <httpModules>  
- <remove name="SessionID" />  
- <add name="SessionID"  
-      type="Samples.AspNet.Session.GuidSessionIDManager" />  
+  <remove name="SessionID" />  
+  <add name="SessionID"  
+       type="Samples.AspNet.Session.GuidSessionIDManager" />  
 </httpModules>  
 ```  
  

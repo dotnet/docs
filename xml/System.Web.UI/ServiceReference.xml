@@ -36,9 +36,9 @@ You can define the Web service location declaratively by adding an `<asp:Service
  
 ```  
 <asp:ScriptManager runat="server" ID="scriptManager">  
- <Services>  
-   <asp:ServiceReference Path="~/WebServices/SimpleWebService.asmx" />  
- </Services>  
+  <Services>  
+    <asp:ServiceReference Path="~/WebServices/SimpleWebService.asmx" />  
+  </Services>  
 </asp:ScriptManager>  
 ```  
  

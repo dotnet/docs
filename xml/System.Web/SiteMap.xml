@@ -43,12 +43,12 @@ The following code example is a Web.config configuration section that demonstrat
  
 ```  
 <siteMap defaultProvider="MyXmlSiteMapProvider" enabled="true">  
- <providers>  
-   <add name="MyXmlSiteMapProvider"  
-     description="The site map provider that reads in the .sitemap XML files."  
-     type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
-     siteMapFile="my.sitemap" />  
- </providers>  
+  <providers>  
+    <add name="MyXmlSiteMapProvider"  
+      description="The site map provider that reads in the .sitemap XML files."  
+      type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+      siteMapFile="my.sitemap" />  
+  </providers>  
 </siteMap>  
 ```  
  
@@ -132,12 +132,12 @@ The following code example is a Web.config configuration section that demonstrat
  
 ```  
 <siteMap defaultProvider="MyXmlSiteMapProvider" enabled="true">  
- <providers>  
-   <add name="MyXmlSiteMapProvider"  
-     description="SiteMap provider that reads in .sitemap XML files."  
-     type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
-     siteMapFile="my.sitemap" />  
- </providers>  
+  <providers>  
+    <add name="MyXmlSiteMapProvider"  
+      description="SiteMap provider that reads in .sitemap XML files."  
+      type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+      siteMapFile="my.sitemap" />  
+  </providers>  
 </siteMap>  
 ```  
  

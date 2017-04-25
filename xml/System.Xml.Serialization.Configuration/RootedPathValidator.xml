@@ -22,10 +22,10 @@ Web service clients learn where to find the Web service description (WSDL) docum
  
 ```  
 <configuration>  
- <system.web>  
- <system.xml.serialization>  
-   <xmlSerializer tempFilesLocation=".."/>  
- </system.xml.serialization>  
+  <system.web>  
+  <system.xml.serialization>  
+    <xmlSerializer tempFilesLocation=".."/>  
+  </system.xml.serialization>  
 </configuration>  
 ```  
  

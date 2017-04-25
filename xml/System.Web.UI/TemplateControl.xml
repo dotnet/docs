@@ -756,53 +756,53 @@ The following code example demonstrates a possible way to use of the <xref:Syste
  
 ```vb  
 <%@ Page language="VB" %>  
-<html>  
- <head>  
- <script language="VB" runat="server">  
- Sub Page_Load(sender as object, e as System.EventArgs)  
- AddHandler Page.Error, AddressOf Error_Handler  
- try  
- Dim myString as string = "Hello"  
- 'An exception is raised because the length of 'myString' is less than '6'.  
- Dim mySubString as string= myString.Substring(0,6)  
- catch e1 As Exception  
- OnError (EventArgs.Empty)  
- End try  
- End Sub  
- Sub Error_Handler(sender as object,e as System.EventArgs)  
- Response.Write("<br><b>An Error was raised</b>")  
- End Sub  
- </script>  
- </head>  
-</html>  
+ <html>  
+  <head>  
+  <script language="VB" runat="server">  
+  Sub Page_Load(sender as object, e as System.EventArgs)  
+  AddHandler Page.Error, AddressOf Error_Handler  
+  try  
+  Dim myString as string = "Hello"  
+  'An exception is raised because the length of 'myString' is less than '6'.  
+  Dim mySubString as string= myString.Substring(0,6)  
+  catch e1 As Exception  
+  OnError (EventArgs.Empty)  
+  End try  
+  End Sub  
+  Sub Error_Handler(sender as object,e as System.EventArgs)  
+  Response.Write("<br><b>An Error was raised</b>")  
+  End Sub  
+  </script>  
+  </head>  
+ </html>  
 ```  
  
 ```csharp  
 <%@ Page language="c#" %>  
-<html>  
- <head>  
- <script language="C#" runat="server">  
- void Page_Load(object sender, System.EventArgs e)  
- {  
- Page.Error += new System.EventHandler(Error_Handler);  
- try  
- {  
- string myString = "Hello";  
- // An exception is raised because the length of 'myString' is less than '6'.  
- string mySubString = myString.Substring(0,6);  
- }  
- catch(Exception)  
- {  
- OnError(EventArgs.Empty);  
- }  
- }  
- void Error_Handler(object sender,System.EventArgs e)  
- {  
- Response.Write("<br><b>An Error was raised</b>");  
- }  
- </script>  
- </head>  
-</html>  
+ <html>  
+  <head>  
+  <script language="C#" runat="server">  
+  void Page_Load(object sender, System.EventArgs e)  
+  {  
+  Page.Error += new System.EventHandler(Error_Handler);  
+  try  
+  {  
+  string myString = "Hello";  
+  // An exception is raised because the length of 'myString' is less than '6'.  
+  string mySubString = myString.Substring(0,6);  
+  }  
+  catch(Exception)  
+  {  
+  OnError(EventArgs.Empty);  
+  }  
+  }  
+  void Error_Handler(object sender,System.EventArgs e)  
+  {  
+  Response.Write("<br><b>An Error was raised</b>");  
+  }  
+  </script>  
+  </head>  
+ </html>  
 ```  
  
  ]]></format>
@@ -1169,14 +1169,14 @@ The following test XML data can be used in the preceding code example.
  
 ```  
 <contacts>  
-  <contact id="1">  
-    <name>contact name 1</name>  
-    <note>contact note 1</note>  
-  </contact>  
-  <contact id="2">  
-    <name>contact name 2</name>  
-    <note>contact note 2</note>  
-  </contact>  
+   <contact id="1">  
+     <name>contact name 1</name>  
+     <note>contact note 1</note>  
+   </contact>  
+   <contact id="2">  
+     <name>contact name 2</name>  
+     <note>contact note 2</note>  
+   </contact>  
 </contacts>  
 ```  
  
@@ -1320,14 +1320,14 @@ The following test XML data can be used in the preceding code example.
  
 ```  
 <contacts>  
-  <contact id="1">  
-    <name>contact name 1</name>  
-    <note>contact note 1</note>  
-  </contact>  
-  <contact id="2">  
-    <name>contact name 2</name>  
-    <note>contact note 2</note>  
-  </contact>  
+   <contact id="1">  
+     <name>contact name 1</name>  
+     <note>contact note 1</note>  
+   </contact>  
+   <contact id="2">  
+     <name>contact name 2</name>  
+     <note>contact note 2</note>  
+   </contact>  
 </contacts>  
 ```  
  

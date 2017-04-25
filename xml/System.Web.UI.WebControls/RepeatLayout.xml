@@ -49,17 +49,17 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
  
 ```  
 <span id="ctl00_MainContent_CheckBoxList1">  
- <input id="ctl00_MainContent_CheckBoxList1_0" type="checkbox"   
-   name="ctl00$MainContent$CheckBoxList1$0" value="Item 1" />  
- <label for="ctl00_MainContent_CheckBoxList1_0">Item 1</label>  
- <br />  
- <input id="ctl00_MainContent_CheckBoxList1_1" type="checkbox"  
-   name="ctl00$MainContent$CheckBoxList1$1" value="Item 2"/>  
- <label for="ctl00_MainContent_CheckBoxList1_1">Item 2</label>  
- <br />  
- <input id="ctl00_MainContent_CheckBoxList1_2" type="checkbox"  
-   name="ctl00$MainContent$CheckBoxList1$2" value="Item 2" />  
- <label for="ctl00_MainContent_CheckBoxList1_2">Item 2</label>  
+  <input id="ctl00_MainContent_CheckBoxList1_0" type="checkbox"   
+    name="ctl00$MainContent$CheckBoxList1$0" value="Item 1" />  
+  <label for="ctl00_MainContent_CheckBoxList1_0">Item 1</label>  
+  <br />  
+  <input id="ctl00_MainContent_CheckBoxList1_1" type="checkbox"  
+    name="ctl00$MainContent$CheckBoxList1$1" value="Item 2"/>  
+  <label for="ctl00_MainContent_CheckBoxList1_1">Item 2</label>  
+  <br />  
+  <input id="ctl00_MainContent_CheckBoxList1_2" type="checkbox"  
+    name="ctl00$MainContent$CheckBoxList1$2" value="Item 2" />  
+  <label for="ctl00_MainContent_CheckBoxList1_2">Item 2</label>  
 </span>  
 ```  
  
@@ -89,21 +89,21 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
  
 ```  
 <ol id="ctl00_MainContent_CheckBoxList3">  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList3_0" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList3$0" value="Item 1" />  
-   <label for="ctl00_MainContent_CheckBoxList3_0">Item 1</label>  
- </li>  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList3_1" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList3$1" value="Item 2" />  
-   <label for="ctl00_MainContent_CheckBoxList3_1">Item 2</label>  
- </li>  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList3_2" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList3$2" value="Item 2" />  
-   <label for="ctl00_MainContent_CheckBoxList3_2">Item 2</label>  
- </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_0" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$0" value="Item 1" />  
+    <label for="ctl00_MainContent_CheckBoxList3_0">Item 1</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_1" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$1" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList3_1">Item 2</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_2" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$2" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList3_2">Item 2</label>  
+  </li>  
 </ol>  
 ```  
  
@@ -139,27 +139,27 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
  
 ```  
 <table id="ctl00_MainContent_CheckBoxList2">  
- <tr>  
-   <td>  
-     <input id="ctl00_MainContent_CheckBoxList2_0" type="checkbox"  
-       name="ctl00$MainContent$CheckBoxList2$0" value="Item 1" />  
-     <label for="ctl00_MainContent_CheckBoxList2_0">Item 1</label>  
-   </td>  
- </tr>  
- <tr>  
-   <td>  
-     <input id="ctl00_MainContent_CheckBoxList2_1" type="checkbox"  
-       name="ctl00$MainContent$CheckBoxList2$1" value="Item 2" />  
-     <label for="ctl00_MainContent_CheckBoxList2_1">Item 2</label>  
-   </td>  
- </tr>  
- <tr>  
-   <td>  
-     <input id="ctl00_MainContent_CheckBoxList2_2" type="checkbox"  
-       name="ctl00$MainContent$CheckBoxList2$2" value="Item 3" />  
-     <label for="ctl00_MainContent_CheckBoxList2_2">Item 3</label>  
-   </td>  
- </tr>  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_0" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$0" value="Item 1" />  
+      <label for="ctl00_MainContent_CheckBoxList2_0">Item 1</label>  
+    </td>  
+  </tr>  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_1" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$1" value="Item 2" />  
+      <label for="ctl00_MainContent_CheckBoxList2_1">Item 2</label>  
+    </td>  
+  </tr>  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_2" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$2" value="Item 3" />  
+      <label for="ctl00_MainContent_CheckBoxList2_2">Item 3</label>  
+    </td>  
+  </tr>  
 </table>  
 ```  
  
@@ -189,21 +189,21 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
  
 ```  
 <ul id="ctl00_MainContent_CheckBoxList4">  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList4_0" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList4$0" value="Item 1" />  
-   <label for="ctl00_MainContent_CheckBoxList4_0">Item 1</label>  
- </li>  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList4_1" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList4$1" value="Item 2" />  
-   <label for="ctl00_MainContent_CheckBoxList4_1">Item 2</label>  
- </li>  
- <li>  
-   <input id="ctl00_MainContent_CheckBoxList4_2" type="checkbox"  
-     name="ctl00$MainContent$CheckBoxList4$2" value="Item 2" />  
-   <label for="ctl00_MainContent_CheckBoxList4_2">Item 2</label>  
- </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_0" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$0" value="Item 1" />  
+    <label for="ctl00_MainContent_CheckBoxList4_0">Item 1</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_1" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$1" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList4_1">Item 2</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_2" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$2" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList4_2">Item 2</label>  
+  </li>  
 </ul>  
 ```  
  

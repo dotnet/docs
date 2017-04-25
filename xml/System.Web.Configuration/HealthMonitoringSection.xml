@@ -28,151 +28,151 @@ The following configuration file excerpt shows how to specify the <xref:System.W
  
 ```  
 <healthMonitoring  
- enabled="true"  
- heartBeatInterval="0">  
- <bufferModes>  
-   <add name="Critical Notification"  
-     maxBufferSize="100"  
-     maxFlushSize="20"  
-     urgentFlushThreshold="1"  
-     regularFlushInterval="Infinite"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Notification"  
-     maxBufferSize="300"  
-     maxFlushSize="20"  
-     urgentFlushThreshold="1"  
-     regularFlushInterval="Infinite"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Analysis"  
-     maxBufferSize="1000"  
-     maxFlushSize="100"  
-     urgentFlushThreshold="100"  
-     regularFlushInterval="00:05:00"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Logging"  
-     maxBufferSize="1000"  
-     maxFlushSize="200"  
-     urgentFlushThreshold="800"  
-     regularFlushInterval="00:30:00"  
-     urgentFlushInterval="00:05:00"  
-     maxBufferThreads="1"  
-   />  
- </bufferModes>  
- <providers>  
-   <add name="CriticalMailEventProvider"  
-     type="System.Web.Management.SimpleMailWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
-     from="sender address"  
-     to="bob@contoso.com"  
-     cc="stella@contoso.com"  
-     bcc="joe@contoso.com"  
-     priority="High"  
-     bodyHeader="Warning!"  
-     bodyFooter="Please investigate ASAP."  
-     subjectPrefix="Action required."  
-     buffer="true"  
-     bufferMode="Critical Notification"  
-     maxEventLength="4096"  
-     maxSize="4096"  
-     maxMessagesPerNotification="1"  
-   />  
-   <add name="EventLogProvider"  
-     type="System.Web.Management.EventLogWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
-     buffer="true"  
-     bufferMode="Logging"  
-   />  
-   <add name="SqlWebEventProvider"  
-     type="System.Web.Management.SqlWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
-     connectionStringName="LocalSqlServer"  
-     maxEventDetailsLength="1073741823"  
-     buffer="true"  
-     bufferMode="Analysis"  
-   />  
-   <add name="WmiWebEventProvider"  
-     type="System.Web.Management.WmiWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
-     buffer="true"  
-     bufferMode="Notification"  
-   />  
- </providers>  
- <eventMappings>  
-   <add name="All Events"  
-     type="System.Web.Management.WebBaseEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="HeartBeats"  
-     type="System.Web.Management.WebHeartbeatEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Application Lifetime Events"  
-     type="System.Web.Management.WebApplicationLifetimeEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Request Processing Events"  
-     type="System.Web.Management.WebRequestEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="All Errors"  
-     type="System.Web.Management.WebBaseErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Infrastructure Errors"  
-     type="System.Web.Management.WebErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Request Processing Errors"  
-     type="System.Web.Management.WebRequestErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="All Audits"  
-     type="System.Web.Management.WebAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Failure Audits"  
-     type="System.Web.Management.WebFailureAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
-   <add name="Success Audits"  
-     type="System.Web.Management.WebSuccessAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
-   />  
- </eventMappings>  
- <profiles>  
-   <add name="Default"  
-     minInstances="1"  
-     maxLimit="Infinite"  
-     minInterval="00:10:00"  
-   />  
-   <add name="Critical"  
-     minInstances="1"  
-     maxLimit="1024"  
-     minInterval="00:00:00"  
-   />  
- </profiles>  
- <rules>  
-   <add name="All Errors Default"  
-     eventName="All Errors"  
-     provider="EventLogProvider"  
-     profile="Default"  
-     minInterval="00:01:00"   
-   />  
-   <add name="All Audits Default"  
-     eventName="All Audits"  
-     provider="SqlWebEventProvider"  
-     profile="Default"  
-     minInterval="00:00:30"   
-   />  
-   <add name="Failure Audits Default"  
-     eventName="Failure Audits"  
-     provider="WmiWebEventProvider"  
-     profile="Critical"  
-     minInterval="00:00:30"   
+  enabled="true"  
+  heartBeatInterval="0">  
+  <bufferModes>  
+    <add name="Critical Notification"  
+      maxBufferSize="100"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Notification"  
+      maxBufferSize="300"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Analysis"  
+      maxBufferSize="1000"  
+      maxFlushSize="100"  
+      urgentFlushThreshold="100"  
+      regularFlushInterval="00:05:00"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Logging"  
+      maxBufferSize="1000"  
+      maxFlushSize="200"  
+      urgentFlushThreshold="800"  
+      regularFlushInterval="00:30:00"  
+      urgentFlushInterval="00:05:00"  
+      maxBufferThreads="1"  
+    />  
+  </bufferModes>  
+  <providers>  
+    <add name="CriticalMailEventProvider"  
+      type="System.Web.Management.SimpleMailWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      from="sender address"  
+      to="bob@contoso.com"  
+      cc="stella@contoso.com"  
+      bcc="joe@contoso.com"  
+      priority="High"  
+      bodyHeader="Warning!"  
+      bodyFooter="Please investigate ASAP."  
+      subjectPrefix="Action required."  
+      buffer="true"  
+      bufferMode="Critical Notification"  
+      maxEventLength="4096"  
+      maxSize="4096"  
+      maxMessagesPerNotification="1"  
+    />  
+    <add name="EventLogProvider"  
+      type="System.Web.Management.EventLogWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      buffer="true"  
+      bufferMode="Logging"  
+    />  
+    <add name="SqlWebEventProvider"  
+      type="System.Web.Management.SqlWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      connectionStringName="LocalSqlServer"  
+      maxEventDetailsLength="1073741823"  
+      buffer="true"  
+      bufferMode="Analysis"  
+    />  
+    <add name="WmiWebEventProvider"  
+      type="System.Web.Management.WmiWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      buffer="true"  
+      bufferMode="Notification"  
+    />  
+  </providers>  
+  <eventMappings>  
+    <add name="All Events"  
+      type="System.Web.Management.WebBaseEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="HeartBeats"  
+      type="System.Web.Management.WebHeartbeatEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Application Lifetime Events"  
+      type="System.Web.Management.WebApplicationLifetimeEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Request Processing Events"  
+      type="System.Web.Management.WebRequestEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="All Errors"  
+      type="System.Web.Management.WebBaseErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Infrastructure Errors"  
+      type="System.Web.Management.WebErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
     />  
     <add name="Request Processing Errors"  
-      eventName="Request Processing Errors"  
-      provider="CriticalMailEventProvider"  
-      profile="Default"  
+      type="System.Web.Management.WebRequestErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
     />  
-    <add name="Infrastructure Notifications"  
-     eventName="Infrastructure Errors"  
-     provider="CriticalMailEventProvider"  
-     profile="Critical"  
-   />  
- </rules>  
+    <add name="All Audits"  
+      type="System.Web.Management.WebAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Failure Audits"  
+      type="System.Web.Management.WebFailureAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Success Audits"  
+      type="System.Web.Management.WebSuccessAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+  </eventMappings>  
+  <profiles>  
+    <add name="Default"  
+      minInstances="1"  
+      maxLimit="Infinite"  
+      minInterval="00:10:00"  
+    />  
+    <add name="Critical"  
+      minInstances="1"  
+      maxLimit="1024"  
+      minInterval="00:00:00"  
+    />  
+  </profiles>  
+  <rules>  
+    <add name="All Errors Default"  
+      eventName="All Errors"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00"   
+    />  
+    <add name="All Audits Default"  
+      eventName="All Audits"  
+      provider="SqlWebEventProvider"  
+      profile="Default"  
+      minInterval="00:00:30"   
+    />  
+    <add name="Failure Audits Default"  
+      eventName="Failure Audits"  
+      provider="WmiWebEventProvider"  
+      profile="Critical"  
+      minInterval="00:00:30"   
+     />  
+     <add name="Request Processing Errors"  
+       eventName="Request Processing Errors"  
+       provider="CriticalMailEventProvider"  
+       profile="Default"  
+     />  
+     <add name="Infrastructure Notifications"  
+      eventName="Infrastructure Errors"  
+      provider="CriticalMailEventProvider"  
+      profile="Critical"  
+    />  
+  </rules>  
 </healthMonitoring>   
 ```  
  

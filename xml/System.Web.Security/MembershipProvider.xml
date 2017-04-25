@@ -805,21 +805,21 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <membership>  
- <providers>  
-   <clear/>  
-   <add name="AspNetSqlMembershipProvider"   
-     type="System.Web.Security.SqlMembershipProvider"   
-     connectionStringName="ApplicationServices"   
-     enablePasswordRetrieval="false"   
-     enablePasswordReset="true"   
-     requiresQuestionAndAnswer="false"   
-     requiresUniqueEmail="false"   
-     maxInvalidPasswordAttempts="5"   
-     minRequiredPasswordLength="6"   
-     minRequiredNonalphanumericCharacters="1"   
-     passwordAttemptWindow="10"   
-     applicationName="/"/>  
- </providers>  
+  <providers>  
+    <clear/>  
+    <add name="AspNetSqlMembershipProvider"   
+      type="System.Web.Security.SqlMembershipProvider"   
+      connectionStringName="ApplicationServices"   
+      enablePasswordRetrieval="false"   
+      enablePasswordReset="true"   
+      requiresQuestionAndAnswer="false"   
+      requiresUniqueEmail="false"   
+      maxInvalidPasswordAttempts="5"   
+      minRequiredPasswordLength="6"   
+      minRequiredNonalphanumericCharacters="1"   
+      passwordAttemptWindow="10"   
+      applicationName="/"/>  
+  </providers>  
 </membership>  
 ```  
  
@@ -857,16 +857,16 @@ The following example shows the [membership Element (ASP.NET Settings Schema)](h
  
 ```  
 <membership defaultProvider="SqlProvider"  
- userIsOnlineTimeWindow = "20>  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     requiresQuestionAndAnswer="true"  
-     minRequiredPasswordLength="7"  
-     />  
- </providers>  
+  userIsOnlineTimeWindow = "20>  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      requiresQuestionAndAnswer="true"  
+      minRequiredPasswordLength="7"  
+      />  
+  </providers>  
 </membership>  
 ```  
  
@@ -1013,16 +1013,16 @@ If the password does not meet these criteria, the password is not accepted by th
  
 ```  
 <membership defaultProvider="SqlProvider"  
- userIsOnlineTimeWindow = "20>  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlMembershipProvider"  
-     connectionStringName="SqlServices"  
-     requiresQuestionAndAnswer="true"  
-     passwordStrengthRegularExpression="@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})"  
-     />  
- </providers>  
+  userIsOnlineTimeWindow = "20>  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlMembershipProvider"  
+      connectionStringName="SqlServices"  
+      requiresQuestionAndAnswer="true"  
+      passwordStrengthRegularExpression="@\"(?=.{6,})(?=(.*\d){1,})(?=(.*\W){1,})"  
+      />  
+  </providers>  
 </membership>  
 ```  
  

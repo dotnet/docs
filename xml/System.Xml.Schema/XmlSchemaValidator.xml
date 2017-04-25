@@ -247,98 +247,98 @@ For example, in the XML Schema Definition Language (XSD) schema and XML document
  
 ```vb  
 Dim reader As XmlReader =  XmlReader.Create("input.xml")   
- 
+  
 Dim schemaSet As XmlSchemaSet =  New XmlSchemaSet()   
 schemaSet.Add(Nothing, "schema.xsd")  
 Dim manager As XmlNamespaceManager =  New XmlNamespaceManager(reader.NameTable)   
- 
+  
 Dim validator As XmlSchemaValidator =  New XmlSchemaValidator(reader.NameTable,schemaSet,manager,XmlSchemaValidationFlags.None)  
 validator.Initialize()  
- 
+  
 validator.ValidateElement("book", "", Nothing)  
 validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
 validator.ValidateEndOfAttributes(Nothing)  
 For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
-   Console.WriteLine(element.Name)  
+    Console.WriteLine(element.Name)  
 Next  
- 
+  
 validator.ValidateElement("title", "", Nothing)  
 validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
 validator.ValidateEndOfAttributes(Nothing)  
 For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
-   Console.WriteLine(element.Name)  
+    Console.WriteLine(element.Name)  
 Next  
 validator.ValidateEndElement(Nothing)  
- 
+  
 For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
-   Console.WriteLine(element.Name)  
+    Console.WriteLine(element.Name)  
 Next  
- 
+  
 validator.ValidateElement("description", "", Nothing)  
 validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
 validator.ValidateEndOfAttributes(Nothing)  
 validator.ValidateEndElement(Nothing)  
- 
+  
 For Each particle As XmlSchemaParticle In validator.GetExpectedParticles()  
-   Console.WriteLine(particle.GetType())  
+    Console.WriteLine(particle.GetType())  
 Next  
- 
+  
 validator.ValidateElement("namespace", "", Nothing)  
 validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
 validator.ValidateEndOfAttributes(Nothing)  
 validator.ValidateEndElement(Nothing)  
- 
+  
 validator.ValidateEndElement(Nothing)  
 ```  
  
 ```csharp  
 XmlReader reader = XmlReader.Create("input.xml");  
- 
+  
 XmlSchemaSet schemaSet = new XmlSchemaSet();  
 schemaSet.Add(null, "schema.xsd");  
 XmlNamespaceManager manager = new XmlNamespaceManager(reader.NameTable);  
- 
+  
 XmlSchemaValidator validator = new XmlSchemaValidator(reader.NameTable, schemaSet, manager, XmlSchemaValidationFlags.None);  
 validator.Initialize();  
- 
+  
 validator.ValidateElement("book", "", null);  
- 
+  
 validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
 validator.ValidateEndOfAttributes(null);  
 foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
 {  
-   Console.WriteLine(element.Name);  
+    Console.WriteLine(element.Name);  
 }  
- 
+  
 validator.ValidateElement("title", "", null);  
 validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
 validator.ValidateEndOfAttributes(null);  
 foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
 {  
-   Console.WriteLine(element.Name);  
+    Console.WriteLine(element.Name);  
 }  
 validator.ValidateEndElement(null);  
- 
+  
 foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
 {  
-   Console.WriteLine(element.Name);  
+    Console.WriteLine(element.Name);  
 }  
- 
+  
 validator.ValidateElement("description", "", null);  
 validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
 validator.ValidateEndOfAttributes(null);  
 validator.ValidateEndElement(null);  
- 
+  
 foreach (XmlSchemaParticle particle in validator.GetExpectedParticles())  
 {  
-   Console.WriteLine(particle.GetType());  
+    Console.WriteLine(particle.GetType());  
 }  
- 
+  
 validator.ValidateElement("namespace", "", null);  
 validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
 validator.ValidateEndOfAttributes(null);  
 validator.ValidateEndElement(null);  
- 
+  
 validator.ValidateEndElement(null);  
 ```  
  
@@ -502,10 +502,10 @@ schemaSet.Add(Nothing, "schema.xsd")
 schemaSet.Compile()  
 Dim nameTable As NameTable = New NameTable()  
 Dim manager As XmlNamespaceManager = New XmlNamespaceManager(nameTable)  
- 
+  
 Dim validator As XmlSchemaValidator = New XmlSchemaValidator(nameTable, schemaSet, manager, XmlSchemaValidationFlags.None)  
 validator.Initialize(schemaSet.GlobalElements.Item(New XmlQualifiedName("orderNumber")))  
- 
+  
 validator.ValidateElement("orderNumber", "", Nothing)  
 validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
 validator.ValidateEndOfAttributes(Nothing)  
@@ -519,10 +519,10 @@ schemaSet.Add(null, "schema.xsd");
 schemaSet.Compile();  
 NameTable nameTable = new NameTable();  
 XmlNamespaceManager manager = new XmlNamespaceManager(nameTable);  
- 
+  
 XmlSchemaValidator validator = new XmlSchemaValidator(nameTable, schemaSet, manager, XmlSchemaValidationFlags.None);  
 validator.Initialize(schemaSet.GlobalElements[new XmlQualifiedName("orderNumber")]);  
- 
+  
 validator.ValidateElement("orderNumber", "", null);  
 validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
 validator.ValidateEndOfAttributes(null);  

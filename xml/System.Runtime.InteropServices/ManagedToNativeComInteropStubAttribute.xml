@@ -62,9 +62,9 @@ You could inform the runtime to use a customized interop stub at build time inst
 [ComImport]  
 interface IMyInterface  
 {  
-   [ManagedToNativeComInteropStubAttribute(typeof(TestStubClass),  
-             "ForwardTestStub")]  
-   void GetString (string arg);  
+    [ManagedToNativeComInteropStubAttribute(typeof(TestStubClass),  
+              "ForwardTestStub")]  
+    void GetString (string arg);  
 }  
 ```  
  
@@ -73,8 +73,8 @@ You could then use the following code to declare the corresponding stub method:
 ```  
 class TestStubClass  
 {  
-   internal static void ForwardTestStub(IMyInterface thisObject,  
-            string arg) {…}  
+    internal static void ForwardTestStub(IMyInterface thisObject,  
+             string arg) {…}  
 }  
 ```  
  

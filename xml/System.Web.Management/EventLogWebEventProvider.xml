@@ -30,16 +30,16 @@ The following configuration file excerpt shows how to specify a provider of type
  
 ```  
 <healthMonitoring   
- enabled="true" heartbeatInterval="10">  
- 
- <rule>  
-   <add name="Success Audits Default"  
-     eventName="Success Audits"  
-     provider="EventLogProvider"  
-     profile="Default"  
-     minInterval="00:01:00" />  
- </rule>  
- 
+  enabled="true" heartbeatInterval="10">  
+  
+  <rule>  
+    <add name="Success Audits Default"  
+      eventName="Success Audits"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00" />  
+  </rule>  
+  
 </healthMonitoring>  
 ```  
  

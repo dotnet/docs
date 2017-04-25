@@ -446,9 +446,9 @@ You can customize column headers in a <xref:System.Windows.Controls.GridView> vi
  
 ```  
 <object>  
- <object.ColumnHeaderTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.ColumnHeaderTemplateSelector>  
+  <object.ColumnHeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.ColumnHeaderTemplateSelector>  
 </object>  
 ```  
  
@@ -526,15 +526,15 @@ You can customize column headers in a <xref:System.Windows.Controls.GridView> vi
  
 ```  
 <object>  
- <object.ToolTip>  
-   <ToolTip .../>  
- </object.ToolTip>  
+  <object.ToolTip>  
+    <ToolTip .../>  
+  </object.ToolTip>  
 </object>  
 - or -  
 <object>  
- <object.ToolTip>  
-   toolTipObjectContent  
- </object.ToolTip>  
+  <object.ToolTip>  
+    toolTipObjectContent  
+  </object.ToolTip>  
 </object>  
 ```  
  

@@ -42,14 +42,14 @@ To add a trace listener, edit the configuration file that corresponds to the nam
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="false" indentsize="4">  
-     <listeners>  
-       <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="TextWriterOutput.log" />  
-       <remove name="Default" />  
-     </listeners>  
-   </trace>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="TextWriterOutput.log" />  
+        <remove name="Default" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -155,12 +155,12 @@ Classes that inherit from the <xref:System.Diagnostics.TraceListener> class can 
  
 ```  
 <listeners>  
- <add name="delimitedListener"   
-   type="System.Diagnostics.DelimitedListTraceListener"   
-   delimiter=":"   
-   initializeData="delimitedOutput.txt"   
-   traceOutputOptions="ProcessId, DateTime" />  
- <remove name="Default" />  
+  <add name="delimitedListener"   
+    type="System.Diagnostics.DelimitedListTraceListener"   
+    delimiter=":"   
+    initializeData="delimitedOutput.txt"   
+    traceOutputOptions="ProcessId, DateTime" />  
+  <remove name="Default" />  
 </listeners>  
 ```  
  

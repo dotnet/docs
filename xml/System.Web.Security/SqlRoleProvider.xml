@@ -33,50 +33,50 @@ The following example shows the Web.config file for an ASP.NET application confi
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="logincs.aspx"  
-     name=".ASPXFORMSAUTH" />  
-   </authentication>  
-   <authorization>  
-     <deny users="?" />  
-        <allow roles="Administrators" />  
-        <deny users="*" />  
-   </authorization>  
-   <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="15">  
-     <providers>  
-       <add   
-         name="SqlProvider"   
-         type="System.Web.Security.SqlMembershipProvider"   
-         connectionStringName="SqlServices"  
-         enablePasswordRetrieval="false"  
-         enablePasswordReset="false"  
-         requiresQuestionAndAnswer="false"   
-         passwordFormat="Hashed"   
-         applicationName="SampleApplication" />  
-     </providers>  
-   </membership>  
-   <roleManager defaultProvider="SqlProvider"   
-     enabled="true"  
-     cacheRolesInCookie="true"  
-     cookieName=".ASPROLES"  
-     cookieTimeout="30"  
-     cookiePath="/"  
-     cookieRequireSSL="true"  
-     cookieSlidingExpiration="true"  
-     cookieProtection="All" >  
-     <providers>  
-       <add  
-         name="SqlProvider"  
-         type="System.Web.Security.SqlRoleProvider"  
-         connectionStringName="SqlServices"   
-         applicationName="SampleApplication" />  
-     </providers>  
-   </roleManager>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="logincs.aspx"  
+      name=".ASPXFORMSAUTH" />  
+    </authentication>  
+    <authorization>  
+      <deny users="?" />  
+         <allow roles="Administrators" />  
+         <deny users="*" />  
+    </authorization>  
+    <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="15">  
+      <providers>  
+        <add   
+          name="SqlProvider"   
+          type="System.Web.Security.SqlMembershipProvider"   
+          connectionStringName="SqlServices"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="false"  
+          requiresQuestionAndAnswer="false"   
+          passwordFormat="Hashed"   
+          applicationName="SampleApplication" />  
+      </providers>  
+    </membership>  
+    <roleManager defaultProvider="SqlProvider"   
+      enabled="true"  
+      cacheRolesInCookie="true"  
+      cookieName=".ASPROLES"  
+      cookieTimeout="30"  
+      cookiePath="/"  
+      cookieRequireSSL="true"  
+      cookieSlidingExpiration="true"  
+      cookieProtection="All" >  
+      <providers>  
+        <add  
+          name="SqlProvider"  
+          type="System.Web.Security.SqlRoleProvider"  
+          connectionStringName="SqlServices"   
+          applicationName="SampleApplication" />  
+      </providers>  
+    </roleManager>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -222,21 +222,21 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="SqlProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.SqlRoleProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.SqlRoleProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  

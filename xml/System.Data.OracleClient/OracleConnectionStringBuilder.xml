@@ -41,7 +41,7 @@ The <xref:System.Data.OracleClient.OracleConnectionStringBuilder> handles attemp
  
 ```  
 Dim builder As New System.Data. _  
-   OracleClient.OracleConnectionStringBuilder  
+    OracleClient.OracleConnectionStringBuilder  
 builder("Data Source") = "OracleDemo"  
 builder("Integrated Security") = True  
 builder("User ID") = "Mary;NewValue=Bad"  
@@ -52,7 +52,7 @@ System.Diagnostics.Debug.WriteLine(builder.ConnectionString)
  
 ```  
 System.Data.OracleClient.OracleConnectionStringBuilder builder =  
-  new System.Data.OracleClient.OracleConnectionStringBuilder();  
+   new System.Data.OracleClient.OracleConnectionStringBuilder();  
 builder["Data Source"] = "OracleDemo";  
 builder["integrated Security"] = true;  
 builder["User ID"] = "Mary;NewValue=Bad";  

@@ -20,16 +20,16 @@ Settings in configuration files (such as the Web.config file) are organized into
  
 ```  
 <configSections>  
- <sectionGroup name="system.web.extensions"...>  
-   <sectionGroup name="scripting" ...>  
-     <section name="scriptResourceHandler".../>  
-     <sectionGroup name="webServices"...>  
-       <section name="jsonSerialization" .../>  
-       <section name="profileService" ... />        <section name="authenticationService" .../>  
-       <section name="roleService" .../>  
-     </sectionGroup>  
-   </sectionGroup>  
- </sectionGroup>  
+  <sectionGroup name="system.web.extensions"...>  
+    <sectionGroup name="scripting" ...>  
+      <section name="scriptResourceHandler".../>  
+      <sectionGroup name="webServices"...>  
+        <section name="jsonSerialization" .../>  
+        <section name="profileService" ... />        <section name="authenticationService" .../>  
+        <section name="roleService" .../>  
+      </sectionGroup>  
+    </sectionGroup>  
+  </sectionGroup>  
 </configSections>  
 ```  
  

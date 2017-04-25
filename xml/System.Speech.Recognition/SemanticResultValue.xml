@@ -82,52 +82,52 @@ For more information about using <xref:System.Speech.Recognition.SemanticResultV
 The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]".  <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
  
 ```  
- 
+  
 private Grammar FgBgColorGrammar()   
 {  
- Grammar grammar = null;  
- 
- // Allow the command to begin with set, alter, change.  
- Choices introChoices = new Choices();  
- foreach (string introString in new string[] { "Change", "Set", "Alter" })   
- {  
-   GrammarBuilder introGB = new GrammarBuilder(introString);  
-   introChoices.Add(new SemanticResultValue(introGB, String.Format("Command: {0}", introString)));  
- }    
- 
- GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
- 
- // Define the arguments for the command to select foreground or background   
- // and to change their color as semantic values.  
- Choices fgOrbgChoice = new Choices();  
- GrammarBuilder backgroundGB=new GrammarBuilder("background");  
- backgroundGB.Append(new SemanticResultValue(true));  
- fgOrbgChoice.Add(backgroundGB);  
- fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
- SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
-   colorChoice.Add(  
-       (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
- }  
- 
- // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
- // semantic keys.  
- GrammarBuilder cmdArgs = new GrammarBuilder();  
- cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
- cmdArgs.AppendWildcard();  
- cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
- 
- GrammarBuilder cmds =   
-     GrammarBuilder.Add(  
-                      cmdIntro,  
-                      new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
- grammar = new Grammar(cmds);  
- grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
- return grammar;  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(new SemanticResultValue(introGB, String.Format("Command: {0}", introString)));  
+  }    
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+        (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+                       cmdIntro,  
+                       new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
 }  
 ```  
  
@@ -169,54 +169,54 @@ backgroundGB.Append(new SemanticResultValue(true));
 The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]". <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
  
 ```csharp  
- 
+  
 private Grammar FgBgColorGrammar()   
 {  
- Grammar grammar = null;  
- 
- // Allow the command to begin with set, alter, change.  
- Choices introChoices = new Choices();  
- foreach (string introString in new string[] { "Change", "Set", "Alter" })   
- {  
-   GrammarBuilder introGB = new GrammarBuilder(introString);  
-   introChoices.Add(  
-                 new SemanticResultValue(introGB,  
-                 String.Format("Command: {0}", introString)));  
- }           
- 
- GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
- 
- // Define the arguments for the command to select foreground or background   
- // and to change their color as semantic values.  
- Choices fgOrbgChoice = new Choices();  
- GrammarBuilder backgroundGB=new GrammarBuilder("background");  
- backgroundGB.Append(new SemanticResultValue(true));  
- fgOrbgChoice.Add(backgroundGB);  
- fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
- SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
-   colorChoice.Add(  
-                (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
- }  
- 
- // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
- // semantic keys.  
- GrammarBuilder cmdArgs = new GrammarBuilder();  
- cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
- cmdArgs.AppendWildcard();  
- cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
- 
- GrammarBuilder cmds =   
-     GrammarBuilder.Add(  
-       cmdIntro,   
-       new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
- grammar = new Grammar(cmds);  
- grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
- return grammar;  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }           
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+                 (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+        cmdIntro,   
+        new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
 }  
 ```  
  
@@ -261,53 +261,53 @@ As <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversion 
 The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]". <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
  
 ```csharp  
- 
+  
 private Grammar FgBgColorGrammar()   
 {  
- Grammar grammar = null;  
- 
- // Allow the command to begin with set, alter, change.  
- Choices introChoices = new Choices();  
- foreach (string introString in new string[] { "Change", "Set", "Alter" })   
- {  
-   GrammarBuilder introGB = new GrammarBuilder(introString);  
-   introChoices.Add(  
-                 new SemanticResultValue(introGB,  
-                 String.Format("Command: {0}", introString)));  
- }           
- GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
- 
- // Define the arguments for the command to select foreground or background   
- // and to change their color as semantic values.  
- Choices fgOrbgChoice = new Choices();  
- GrammarBuilder backgroundGB=new GrammarBuilder("background");  
- backgroundGB.Append(new SemanticResultValue(true));  
- fgOrbgChoice.Add(backgroundGB);  
- fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
- SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
-   colorChoice.Add(  
-             (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
-   }  
- 
- // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
- // semantic keys.  
- GrammarBuilder cmdArgs = new GrammarBuilder();  
- cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
- cmdArgs.AppendWildcard();  
- cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
- 
- GrammarBuilder cmds =   
-     GrammarBuilder.Add(  
-                     cmdIntro,  
-                     new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
- grammar = new Grammar(cmds);  
- grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
- return grammar;  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }           
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+              (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+    }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+                      cmdIntro,  
+                      new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
 }  
 ```  
  
@@ -352,52 +352,52 @@ The following example returns a <xref:System.Speech.Recognition.Grammar> that re
 ```  
 private Grammar FgBgColorGrammar()   
 {  
- Grammar grammar = null;  
- 
- // Allow command to begin with set, alter, change.  
- Choices introChoices = new Choices();  
- foreach (string introString in new string[] { "Change", "Set", "Alter" })   
- {  
-   GrammarBuilder introGB = new GrammarBuilder(introString);  
-   introChoices.Add(  
-                 new SemanticResultValue(introGB,  
-                 String.Format("Command: {0}", introString)));  
- }  
- 
- GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
- 
- // Define the arguments for the command to select foreground or background   
- // and to change their color as semantic values.  
- Choices fgOrbgChoice = new Choices();  
- GrammarBuilder backgroundGB=new GrammarBuilder("background");  
- backgroundGB.Append(new SemanticResultValue(true));  
- fgOrbgChoice.Add(backgroundGB);  
- fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
- SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
-   colorChoice.Add(  
-         (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
- }  
- 
- // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
- // semantic keys.  
- GrammarBuilder cmdArgs = new GrammarBuilder();  
- cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
- cmdArgs.AppendWildcard();  
- cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
- 
- GrammarBuilder cmds =   
-     GrammarBuilder.Add(cmdIntro,  
-                        new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
- grammar = new Grammar(cmds);  
- grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
- return grammar;  
+  Grammar grammar = null;  
+  
+  // Allow command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }  
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+          (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(cmdIntro,  
+                         new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -436,41 +436,41 @@ A <xref:System.Speech.Recognition.Choices> object (`colorChoice`) containing the
 A <xref:System.Speech.Recognition.GrammarBuilder> is then obtained by calling <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> on a <xref:System.Speech.Recognition.SemanticResultKey> instance, which will be used to key the semantic choices in the `colorChoice` instance.  
  
 ```csharp  
- 
+  
 private Grammar CreateGrammarBuilderRGBSemantics()   
 {  
- 
- // Create a set of choices, each a lookup from a color name to RBG.  
- // Choices constructors do not take a SemanticResultValue parameter, so  
- // cast SemanticResultValue to GrammarBuilder.  
- Choices colorChoice = new Choices();  
- foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
- {  
- 
-   // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
-   SemanticResultValue colorValue =   
-       new SemanticResultValue(colorName, Color.FromName(colorName).ToArgb());  
-   colorChoice.Add(colorValue.ToGrammarBuilder());  
- }  
- 
- SemanticResultKey choiceKey = new SemanticResultKey("rgb", colorChoice);  
- GrammarBuilder choiceBuilder = choiceKey.ToGrammarBuilder();  
- 
- // Create two intermediate grammars with an introductory phrase and the  
- // color choice.  
- GrammarBuilder makeBackgroundBuilder = "Make background";  
- makeBackgroundBuilder.Append(choiceBuilder);  
- 
- GrammarBuilder configureBackgroundBuilder = new GrammarBuilder("Configure background as");  
- configureBackgroundBuilder.Append((new SemanticResultKey("rgb", colorChoice)).ToGrammarBuilder());  
- 
- // Create the final grammar, which recognizes either intermediate grammar.  
- Grammar grammar = new Grammar(new Choices(new GrammarBuilder[] { makeBackgroundBuilder, configureBackgroundBuilder }));  
- grammar.Name = "Set Background Color";  
- 
- return grammar;  
+  
+  // Create a set of choices, each a lookup from a color name to RBG.  
+  // Choices constructors do not take a SemanticResultValue parameter, so  
+  // cast SemanticResultValue to GrammarBuilder.  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    SemanticResultValue colorValue =   
+        new SemanticResultValue(colorName, Color.FromName(colorName).ToArgb());  
+    colorChoice.Add(colorValue.ToGrammarBuilder());  
+  }  
+  
+  SemanticResultKey choiceKey = new SemanticResultKey("rgb", colorChoice);  
+  GrammarBuilder choiceBuilder = choiceKey.ToGrammarBuilder();  
+  
+  // Create two intermediate grammars with an introductory phrase and the  
+  // color choice.  
+  GrammarBuilder makeBackgroundBuilder = "Make background";  
+  makeBackgroundBuilder.Append(choiceBuilder);  
+  
+  GrammarBuilder configureBackgroundBuilder = new GrammarBuilder("Configure background as");  
+  configureBackgroundBuilder.Append((new SemanticResultKey("rgb", colorChoice)).ToGrammarBuilder());  
+  
+  // Create the final grammar, which recognizes either intermediate grammar.  
+  Grammar grammar = new Grammar(new Choices(new GrammarBuilder[] { makeBackgroundBuilder, configureBackgroundBuilder }));  
+  grammar.Name = "Set Background Color";  
+  
+  return grammar;  
 }  
- 
+  
 ```  
  
  ]]></format>

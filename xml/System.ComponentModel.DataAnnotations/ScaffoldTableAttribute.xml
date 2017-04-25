@@ -49,11 +49,11 @@ The following code example hides the ErrorLog Table in AdventureWorksLT database
 <MetadataType(GetType(ErrorLogMetada))> _   
 <ScaffoldTable(False)>   
 Public Partial Class ErrorLog   
- 
+  
 End Class   
- 
+  
 Public Class ErrorLogMetada  
- 
+  
 End Class   
 ```  
  
@@ -62,14 +62,14 @@ End Class
 [ScaffoldTable(false)]  
 public partial class ErrorLog  
 {  
- 
+  
 }  
- 
+  
 public class ErrorLogMetada  
 {  
- 
+  
 }  
- 
+  
 ```  
  
 To compile the example code, you need the following:  

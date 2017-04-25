@@ -35,7 +35,7 @@ The following code example shows how to obtain the <xref:System.Web.Configuratio
  
 ```  
 <authentication>  
- <passport redirectUrl="Login.aspx"/>  
+  <passport redirectUrl="Login.aspx"/>  
 </authentication>  
 ```  
  

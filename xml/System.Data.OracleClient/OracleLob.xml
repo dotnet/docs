@@ -890,43 +890,43 @@ The following C# example demonstrates how to read <xref:System.Data.OracleClient
 ```  
 public static void ReadLobExample(OracleCommand command)  
 {  
-  int actual = 0;  
- 
-  //Select some data.  
-  // Table Schema:  
-  //  "CREATE TABLE TableWithLobs (a int, b BLOB, c CLOB, d NCLOB)";  
-  //  "INSERT INTO TableWithLobs values (1, 'AA', 'AAA', N'AAAA')";  
-  command.CommandText = "SELECT * FROM TableWithLobs";  
-  OracleDataReader reader = command.ExecuteReader();  
-  using(reader)  
-  {  
-     //Obtain the first row of data.  
-     reader.Read();  
-     //Obtain the LOBs (all 3 varieties).  
-     OracleLob BLOB = reader.GetOracleLob(1);  
-     OracleLob CLOB  = reader.GetOracleLob(2);  
-     OracleLob NCLOB = reader.GetOracleLob(3);  
- 
-     //Example - Reading binary data (in chunks).  
-     byte[] buffer = new byte[100];  
-     while((actual = BLOB.Read(buffer, 0, buffer.Length)) >0)  
-        Console.WriteLine(BLOB.LobType + ".Read(" + buffer + ", " + buffer.Length + ") => " + actual);  
- 
-     //Example - Reading CLOB/NCLOB data (in chunks).  
-     //Note: You can read character data as raw Unicode bytes (using OracleLob.Read as in the above example).  
-     //However, because the OracleLob object inherits directly from the.NET stream object,   
-     //all the existing classes that manipluate streams can also be used. For example, the   
-     //.NET StreamReader makes converting the raw bytes into actual characters easier.  
-     StreamReader streamreader = new StreamReader(CLOB, Encoding.Unicode);  
-     char[] cbuffer = new char[100];  
-     while((actual = streamreader.Read(cbuffer, 0, cbuffer.Length)) >0)  
-        Console.WriteLine(CLOB.LobType + ".Read(" + new string(cbuffer, 0, actual) + ", " + cbuffer.Length + ") => " + actual);  
- 
-     //Example - Reading data (all at once).  
-     //You could use StreamReader.ReadToEnd to obtain all the string data,or simply  
-     //call OracleLob.Value to obtain a contiguous allocation of all the data.  
-     Console.WriteLine(NCLOB.LobType + ".Value => " + NCLOB.Value);  
-  }  
+   int actual = 0;  
+  
+   //Select some data.  
+   // Table Schema:  
+   //  "CREATE TABLE TableWithLobs (a int, b BLOB, c CLOB, d NCLOB)";  
+   //  "INSERT INTO TableWithLobs values (1, 'AA', 'AAA', N'AAAA')";  
+   command.CommandText = "SELECT * FROM TableWithLobs";  
+   OracleDataReader reader = command.ExecuteReader();  
+   using(reader)  
+   {  
+      //Obtain the first row of data.  
+      reader.Read();  
+      //Obtain the LOBs (all 3 varieties).  
+      OracleLob BLOB = reader.GetOracleLob(1);  
+      OracleLob CLOB  = reader.GetOracleLob(2);  
+      OracleLob NCLOB = reader.GetOracleLob(3);  
+  
+      //Example - Reading binary data (in chunks).  
+      byte[] buffer = new byte[100];  
+      while((actual = BLOB.Read(buffer, 0, buffer.Length)) >0)  
+         Console.WriteLine(BLOB.LobType + ".Read(" + buffer + ", " + buffer.Length + ") => " + actual);  
+  
+      //Example - Reading CLOB/NCLOB data (in chunks).  
+      //Note: You can read character data as raw Unicode bytes (using OracleLob.Read as in the above example).  
+      //However, because the OracleLob object inherits directly from the.NET stream object,   
+      //all the existing classes that manipluate streams can also be used. For example, the   
+      //.NET StreamReader makes converting the raw bytes into actual characters easier.  
+      StreamReader streamreader = new StreamReader(CLOB, Encoding.Unicode);  
+      char[] cbuffer = new char[100];  
+      while((actual = streamreader.Read(cbuffer, 0, cbuffer.Length)) >0)  
+         Console.WriteLine(CLOB.LobType + ".Read(" + new string(cbuffer, 0, actual) + ", " + cbuffer.Length + ") => " + actual);  
+  
+      //Example - Reading data (all at once).  
+      //You could use StreamReader.ReadToEnd to obtain all the string data,or simply  
+      //call OracleLob.Value to obtain a contiguous allocation of all the data.  
+      Console.WriteLine(NCLOB.LobType + ".Value => " + NCLOB.Value);  
+   }  
 }  
 ```  
  
@@ -1112,44 +1112,44 @@ The following C# example demonstrates how to write to <xref:System.Data.OracleCl
 ```  
 public static void WriteLobExample(OracleCommand command)  
 {  
-  //Note: Updating LOB data requires a transaction.  
-  command.Transaction = command.Connection.BeginTransaction();  
-  //Select some data.  
-  //    Table Schema:  
-  //        "CREATE TABLE tablewithlobs (a int, b BLOB, c BLOB)";  
-  //        "INSERT INTO tablewithlobs values (1, 'AA', 'AAA')";  
-  command.CommandText = "SELECT * FROM TableWithLobs FOR UPDATE";  
-  OracleDataReader reader = command.ExecuteReader();  
-  using(reader)  
-  {  
-     //Obtain the first row of data.  
-     reader.Read();  
-     //Obtain both LOBs.  
-     OracleLob BLOB1    = reader.GetOracleLob(1);  
-     OracleLob BLOB2    = reader.GetOracleLob(2);  
-     //Perform any desired operations on the LOB, (read, position, and so on).  
-     //...  
-     //Example - Writing binary data (directly to the backend).  
-     //To write, you can use any of the stream classes, or write raw binary data using   
-     //the OracleLob write method. Writing character vs. binary is the same;  
-     //however note that character is always in terms of Unicode byte counts  
-     //(for example: even number of bytes - 2 bytes for every Unicode character).  
-     byte[] buffer = new byte[100];  
-     buffer[0] = 0xCC;  
-     buffer[1] = 0xDD;  
-     BLOB1.Write(buffer, 0, 2);  
-     BLOB1.Position = 0;  
-     Console.WriteLine(BLOB1.LobType + ".Write(" + buffer + ", 0, 2) => " + BLOB1.Value);  
- 
-     //Example - Copying data into another LOB.  
-     long actual = BLOB1.CopyTo(BLOB2);  
-     Console.WriteLine(BLOB1.LobType + ".CopyTo(" + BLOB2.Value + ") => " + actual);  
- 
-     //Commit the transaction now that everything succeeded.  
-     //Note: On error, Transaction.Dispose is called (from the using statement)  
-     //and will automatically roll-back the pending transaction.  
-     command.Transaction.Commit();  
-  }  
+   //Note: Updating LOB data requires a transaction.  
+   command.Transaction = command.Connection.BeginTransaction();  
+   //Select some data.  
+   //    Table Schema:  
+   //        "CREATE TABLE tablewithlobs (a int, b BLOB, c BLOB)";  
+   //        "INSERT INTO tablewithlobs values (1, 'AA', 'AAA')";  
+   command.CommandText = "SELECT * FROM TableWithLobs FOR UPDATE";  
+   OracleDataReader reader = command.ExecuteReader();  
+   using(reader)  
+   {  
+      //Obtain the first row of data.  
+      reader.Read();  
+      //Obtain both LOBs.  
+      OracleLob BLOB1    = reader.GetOracleLob(1);  
+      OracleLob BLOB2    = reader.GetOracleLob(2);  
+      //Perform any desired operations on the LOB, (read, position, and so on).  
+      //...  
+      //Example - Writing binary data (directly to the backend).  
+      //To write, you can use any of the stream classes, or write raw binary data using   
+      //the OracleLob write method. Writing character vs. binary is the same;  
+      //however note that character is always in terms of Unicode byte counts  
+      //(for example: even number of bytes - 2 bytes for every Unicode character).  
+      byte[] buffer = new byte[100];  
+      buffer[0] = 0xCC;  
+      buffer[1] = 0xDD;  
+      BLOB1.Write(buffer, 0, 2);  
+      BLOB1.Position = 0;  
+      Console.WriteLine(BLOB1.LobType + ".Write(" + buffer + ", 0, 2) => " + BLOB1.Value);  
+  
+      //Example - Copying data into another LOB.  
+      long actual = BLOB1.CopyTo(BLOB2);  
+      Console.WriteLine(BLOB1.LobType + ".CopyTo(" + BLOB2.Value + ") => " + actual);  
+  
+      //Commit the transaction now that everything succeeded.  
+      //Note: On error, Transaction.Dispose is called (from the using statement)  
+      //and will automatically roll-back the pending transaction.  
+      command.Transaction.Commit();  
+   }  
 }  
 ```  
  

@@ -83,104 +83,104 @@ The handler identifies recognized phrases that have no underlying semantic struc
 In other cases, the handler uses keys to obtain the RGB components of a color name, to determine whether the command will change the foreground or background, or to indicate that no valid key was found.  
  
 ```csharp  
- 
+  
 newGrammar.SpeechRecognized +=  
- delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
- {  
- 
-   // Retrieve the value of the semantic property.  
-   bool changeBackGround = true;  
-   string errorString = "";  
-   SemanticValue semantics = eventArgs.Result.Semantics;  
- 
-   Color newColor = Color.Empty;  
- 
-   try   
-   {  
-     if (semantics.Count == 0 && semantics.Value==null)  
-     {  
-       // Signifies recognition by a grammar with no semantics.  
-       // Parse the string, assuming that the last word is color,  
-       // and search for “background” or “foreground” in the input.  
-       if (eventArgs.Result.Text.Contains("foreground"))   
-       {  
-         changeBackGround = false;  
-       }  
-       string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-       newColor = Color.FromName(cName);  
- 
-     }  
-     else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-     {  
- 
-       // Determine whether to change background or foreground.  
-       if (semantics.ContainsKey("applyChgToBackground"))   
-       {  
-         changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-       }  
- 
-       // Get the RGB color value.  
-       if (semantics.ContainsKey("colorStringList"))   
-       {  
-         newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-       }  
-       if (semantics.ContainsKey("colorRGBValueList"))   
-       {  
-         newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-       }  
-     }  
-     else   
-     {  
- 
-       // Throw an exception if the semantics do not contain the keys we  
-       // support.  
-       throw(new Exception("Unsupported semantics keys found."));  
-     }  
-   }  
- 
-   catch (Exception exp)   
-   {  
-     MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-     return;  
-   }  
- 
-   // Change colors, either foreground or background.  
-   if (changeBackGround)   
-   {  
-     BackColor = newColor;  
-     float Bright = BackColor.GetBrightness();  
-     float Hue = BackColor.GetHue();  
-     float Sat = BackColor.GetSaturation();  
- 
-     // Make sure that text is readable regardless of the background.  
-     if (BackColor.GetBrightness() <= .50)   
-     {  
-       ForeColor = Color.White;  
-     }  
-     else   
-     {  
-       ForeColor = Color.Black;  
-     }  
-   }  
-   else   
-   {  
-     ForeColor = newColor;  
-     float Bright = ForeColor.GetBrightness();  
-     float Hue = ForeColor.GetHue();  
-     float Sat = ForeColor.GetSaturation();  
- 
-     // Make sure that text is readable regardless of Foreground.  
-     if (ForeColor.GetBrightness() <= .50)   
-     {  
-       BackColor = Color.White;  
-     }  
-     else   
-     {  
-       BackColor = Color.Black;  
-     }  
-   }  
-   return;  
- };  
+  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+  {  
+  
+    // Retrieve the value of the semantic property.  
+    bool changeBackGround = true;  
+    string errorString = "";  
+    SemanticValue semantics = eventArgs.Result.Semantics;  
+  
+    Color newColor = Color.Empty;  
+  
+    try   
+    {  
+      if (semantics.Count == 0 && semantics.Value==null)  
+      {  
+        // Signifies recognition by a grammar with no semantics.  
+        // Parse the string, assuming that the last word is color,  
+        // and search for “background” or “foreground” in the input.  
+        if (eventArgs.Result.Text.Contains("foreground"))   
+        {  
+          changeBackGround = false;  
+        }  
+        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
+        newColor = Color.FromName(cName);  
+  
+      }  
+      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
+      {  
+  
+        // Determine whether to change background or foreground.  
+        if (semantics.ContainsKey("applyChgToBackground"))   
+        {  
+          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
+        }  
+  
+        // Get the RGB color value.  
+        if (semantics.ContainsKey("colorStringList"))   
+        {  
+          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
+        }  
+        if (semantics.ContainsKey("colorRGBValueList"))   
+        {  
+          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
+        }  
+      }  
+      else   
+      {  
+  
+        // Throw an exception if the semantics do not contain the keys we  
+        // support.  
+        throw(new Exception("Unsupported semantics keys found."));  
+      }  
+    }  
+  
+    catch (Exception exp)   
+    {  
+      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
+      return;  
+    }  
+  
+    // Change colors, either foreground or background.  
+    if (changeBackGround)   
+    {  
+      BackColor = newColor;  
+      float Bright = BackColor.GetBrightness();  
+      float Hue = BackColor.GetHue();  
+      float Sat = BackColor.GetSaturation();  
+  
+      // Make sure that text is readable regardless of the background.  
+      if (BackColor.GetBrightness() <= .50)   
+      {  
+        ForeColor = Color.White;  
+      }  
+      else   
+      {  
+        ForeColor = Color.Black;  
+      }  
+    }  
+    else   
+    {  
+      ForeColor = newColor;  
+      float Bright = ForeColor.GetBrightness();  
+      float Hue = ForeColor.GetHue();  
+      float Sat = ForeColor.GetSaturation();  
+  
+      // Make sure that text is readable regardless of Foreground.  
+      if (ForeColor.GetBrightness() <= .50)   
+      {  
+        BackColor = Color.White;  
+      }  
+      else   
+      {  
+        BackColor = Color.Black;  
+      }  
+    }  
+    return;  
+  };  
 ```  
  
  ]]></format>
@@ -279,33 +279,33 @@ The following example is used to recursively traverse and then display informati
  
 ```csharp  
 internal static void CreateSemanticsTreeNodes(  
-       TreeNodeCollection nodes,  
-       SemanticValue semantics,  
-       String name)   
+        TreeNodeCollection nodes,  
+        SemanticValue semantics,  
+        String name)   
 {  
- string semanticsText =   
-     String.Format("  {0}  (Confidence {1})", name,semantics.Confidence);  
- 
- // Format integers as hexadecimal.  
- if (semantics.Value == null )  
- {  
-   semanticsText = semanticsText + " = null";  
- }  
- else if (semantics.Value.GetType() == typeof(int))   
- {  
-   semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
- }   
- else   
- {  
-   semanticsText = semanticsText + " = " + semantics.Value.ToString();  
- }  
- 
- TreeNode semanticsNode = new TreeNode(semanticsText);  
- foreach (KeyValuePair<String, SemanticValue> child in semantics)   
- {  
-   CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
- }  
- nodes.Add(semanticsNode);  
+  string semanticsText =   
+      String.Format("  {0}  (Confidence {1})", name,semantics.Confidence);  
+  
+  // Format integers as hexadecimal.  
+  if (semantics.Value == null )  
+  {  
+    semanticsText = semanticsText + " = null";  
+  }  
+  else if (semantics.Value.GetType() == typeof(int))   
+  {  
+    semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
+  }   
+  else   
+  {  
+    semanticsText = semanticsText + " = " + semantics.Value.ToString();  
+  }  
+  
+  TreeNode semanticsNode = new TreeNode(semanticsText);  
+  foreach (KeyValuePair<String, SemanticValue> child in semantics)   
+  {  
+    CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
+  }  
+  nodes.Add(semanticsNode);  
 }  
 ```  
  
@@ -369,103 +369,103 @@ The following example shows a handler for a <xref:System.Speech.Recognition.Gram
 After handling phrases that are recognized but have no semantic structure, the handler checks for the presence of appropriate keys using <xref:System.Speech.Recognition.SemanticValue.ContainsKey%2A> (`applyChgToBackground`, `colorRGBValueList`, or `colorStringList)`,  and then processes the semantically organized data.  
  
 ```csharp  
- 
+  
 newGrammar.SpeechRecognized +=  
- delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
- {  
- 
-   // Retrieve the value of the semantic property.  
-   bool changeBackGround = true;  
-   string errorString = "";  
-   SemanticValue semantics = eventArgs.Result.Semantics;  
- 
-   Color newColor = Color.Empty;  
- 
-   try   
-   {  
-     if (semantics.Count == 0 && semantics.Value==null)  
-     {  
- 
-       // Signifies recognition by a grammar with no semantics.  
-       // Parse the string, assuming that the last word is color,  
-       // searching for background or foreground in input.  
-       if (eventArgs.Result.Text.Contains("foreground"))   
-       {  
-         changeBackGround = false;  
-       }  
-       string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-       newColor = Color.FromName(cName);  
- 
-     }  
-     else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-     {  
- 
-       // Determine whether to change background or foreground.  
-       if (semantics.ContainsKey("applyChgToBackground"))   
-       {  
-         changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-       }  
- 
-       // Get the RGB color value.  
-       if (semantics.ContainsKey("colorStringList"))   
-       {  
-         newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-       }  
-       if (semantics.ContainsKey("colorRGBValueList"))   
-       {  
-         newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-       }  
-     }  
-     else   
-     {  
- 
-       // Throw an exception if the semantics do not contain the keys we  
-       // support.  
-       throw(new Exception("Unsupported semantics keys found."));  
-     }  
-   }  
- 
-   catch (Exception exp)   
-   {  
-     MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-     return;  
-   }  
- 
-   // Change colors, either foreground or background.  
-   if (changeBackGround)   
-   {  
-     BackColor = newColor;  
-     float Bright = BackColor.GetBrightness();  
-     float Hue = BackColor.GetHue();  
-     float Sat = BackColor.GetSaturation();  
-     // Make sure that text is readable regardless of background.  
-     if (BackColor.GetBrightness() <= .50)   
-     {  
-       ForeColor = Color.White;  
-     }  
-     else   
-     {  
-       ForeColor = Color.Black;  
-     }  
-   }  
-   else   
-   {  
-     ForeColor = newColor;  
-     float Bright = ForeColor.GetBrightness();  
-     float Hue = ForeColor.GetHue();  
-     float Sat = ForeColor.GetSaturation();  
-     // Make sure that text is readable regardless of Foreground.  
-     if (ForeColor.GetBrightness() <= .50)   
-     {  
-       BackColor = Color.White;  
-     }  
-     else   
-     {  
-       BackColor = Color.Black;  
-     }  
-   }  
-   return;  
- };  
+  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+  {  
+  
+    // Retrieve the value of the semantic property.  
+    bool changeBackGround = true;  
+    string errorString = "";  
+    SemanticValue semantics = eventArgs.Result.Semantics;  
+  
+    Color newColor = Color.Empty;  
+  
+    try   
+    {  
+      if (semantics.Count == 0 && semantics.Value==null)  
+      {  
+  
+        // Signifies recognition by a grammar with no semantics.  
+        // Parse the string, assuming that the last word is color,  
+        // searching for background or foreground in input.  
+        if (eventArgs.Result.Text.Contains("foreground"))   
+        {  
+          changeBackGround = false;  
+        }  
+        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
+        newColor = Color.FromName(cName);  
+  
+      }  
+      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
+      {  
+  
+        // Determine whether to change background or foreground.  
+        if (semantics.ContainsKey("applyChgToBackground"))   
+        {  
+          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
+        }  
+  
+        // Get the RGB color value.  
+        if (semantics.ContainsKey("colorStringList"))   
+        {  
+          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
+        }  
+        if (semantics.ContainsKey("colorRGBValueList"))   
+        {  
+          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
+        }  
+      }  
+      else   
+      {  
+  
+        // Throw an exception if the semantics do not contain the keys we  
+        // support.  
+        throw(new Exception("Unsupported semantics keys found."));  
+      }  
+    }  
+  
+    catch (Exception exp)   
+    {  
+      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
+      return;  
+    }  
+  
+    // Change colors, either foreground or background.  
+    if (changeBackGround)   
+    {  
+      BackColor = newColor;  
+      float Bright = BackColor.GetBrightness();  
+      float Hue = BackColor.GetHue();  
+      float Sat = BackColor.GetSaturation();  
+      // Make sure that text is readable regardless of background.  
+      if (BackColor.GetBrightness() <= .50)   
+      {  
+        ForeColor = Color.White;  
+      }  
+      else   
+      {  
+        ForeColor = Color.Black;  
+      }  
+    }  
+    else   
+    {  
+      ForeColor = newColor;  
+      float Bright = ForeColor.GetBrightness();  
+      float Hue = ForeColor.GetHue();  
+      float Sat = ForeColor.GetSaturation();  
+      // Make sure that text is readable regardless of Foreground.  
+      if (ForeColor.GetBrightness() <= .50)   
+      {  
+        BackColor = Color.White;  
+      }  
+      else   
+      {  
+        BackColor = Color.Black;  
+      }  
+    }  
+    return;  
+  };  
 ```  
  
  ]]></format>
@@ -503,103 +503,103 @@ The handler identifies recognized phrases that have no underlying semantic struc
 In other cases, the handler uses keys to obtain the RGB components of a color name, to determine whether the command will change the foreground or background, or to indicate that no valid key was found.  
  
 ```csharp  
- 
+  
 newGrammar.SpeechRecognized +=  
- delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
- {  
- 
-   // Retrieve the value of the semantic property.  
-   bool changeBackGround = true;  
-   string errorString = "";  
-   SemanticValue semantics = eventArgs.Result.Semantics;  
- 
-   Color newColor = Color.Empty;  
- 
-   try   
-   {  
-     if (semantics.Count == 0 && semantics.Value==null)  
-     {  
-       // Signifies recognition by a grammar with no semantics.  
-       // Parse the string, assuming that the last word is color,  
-       //  searching for background or foreground in input.  
-       if (eventArgs.Result.Text.Contains("foreground"))   
-       {  
-         changeBackGround = false;  
-       }  
-       string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-       newColor = Color.FromName(cName);  
- 
-     }  
-     else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-     {  
- 
-       // Determine whether to change background or foreground.  
-       if (semantics.ContainsKey("applyChgToBackground"))   
-       {  
-         changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-       }  
- 
-       // Get the RGB color value.  
-       if (semantics.ContainsKey("colorStringList"))   
-       {  
-         newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-       }  
-       if (semantics.ContainsKey("colorRGBValueList"))   
-       {  
-         newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-       }  
-     }  
-     else   
-     {  
- 
-       // Throw an exception if the semantics do not contain the keys we  
-       // support.  
-       throw(new Exception("Unsupported semantics keys found."));  
-     }  
-   }  
- 
-   catch (Exception exp)   
-   {  
-     MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-     return;  
-   }  
- 
-   // Change colors, either foreground or background.  
-   if (changeBackGround)   
-   {  
-     BackColor = newColor;  
-     float Bright = BackColor.GetBrightness();  
-     float Hue = BackColor.GetHue();  
-     float Sat = BackColor.GetSaturation();  
-     // Make sure that text is readable regardless of background.  
-     if (BackColor.GetBrightness() <= .50)   
-     {  
-       ForeColor = Color.White;  
-     }  
-     else   
-     {  
-       ForeColor = Color.Black;  
-     }  
-   }  
-   else   
-   {  
-     ForeColor = newColor;  
-     float Bright = ForeColor.GetBrightness();  
-     float Hue = ForeColor.GetHue();  
-     float Sat = ForeColor.GetSaturation();  
- 
-     // Make sure that text is readable regardless of Foreground.  
-     if (ForeColor.GetBrightness() <= .50)   
-     {  
-       BackColor = Color.White;  
-     }  
-     else   
-     {  
-       BackColor = Color.Black;  
-     }  
-   }  
-   return;  
- };  
+  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+  {  
+  
+    // Retrieve the value of the semantic property.  
+    bool changeBackGround = true;  
+    string errorString = "";  
+    SemanticValue semantics = eventArgs.Result.Semantics;  
+  
+    Color newColor = Color.Empty;  
+  
+    try   
+    {  
+      if (semantics.Count == 0 && semantics.Value==null)  
+      {  
+        // Signifies recognition by a grammar with no semantics.  
+        // Parse the string, assuming that the last word is color,  
+        //  searching for background or foreground in input.  
+        if (eventArgs.Result.Text.Contains("foreground"))   
+        {  
+          changeBackGround = false;  
+        }  
+        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
+        newColor = Color.FromName(cName);  
+  
+      }  
+      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
+      {  
+  
+        // Determine whether to change background or foreground.  
+        if (semantics.ContainsKey("applyChgToBackground"))   
+        {  
+          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
+        }  
+  
+        // Get the RGB color value.  
+        if (semantics.ContainsKey("colorStringList"))   
+        {  
+          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
+        }  
+        if (semantics.ContainsKey("colorRGBValueList"))   
+        {  
+          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
+        }  
+      }  
+      else   
+      {  
+  
+        // Throw an exception if the semantics do not contain the keys we  
+        // support.  
+        throw(new Exception("Unsupported semantics keys found."));  
+      }  
+    }  
+  
+    catch (Exception exp)   
+    {  
+      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
+      return;  
+    }  
+  
+    // Change colors, either foreground or background.  
+    if (changeBackGround)   
+    {  
+      BackColor = newColor;  
+      float Bright = BackColor.GetBrightness();  
+      float Hue = BackColor.GetHue();  
+      float Sat = BackColor.GetSaturation();  
+      // Make sure that text is readable regardless of background.  
+      if (BackColor.GetBrightness() <= .50)   
+      {  
+        ForeColor = Color.White;  
+      }  
+      else   
+      {  
+        ForeColor = Color.Black;  
+      }  
+    }  
+    else   
+    {  
+      ForeColor = newColor;  
+      float Bright = ForeColor.GetBrightness();  
+      float Hue = ForeColor.GetHue();  
+      float Sat = ForeColor.GetSaturation();  
+  
+      // Make sure that text is readable regardless of Foreground.  
+      if (ForeColor.GetBrightness() <= .50)   
+      {  
+        BackColor = Color.White;  
+      }  
+      else   
+      {  
+        BackColor = Color.Black;  
+      }  
+    }  
+    return;  
+  };  
 ```  
  
  ]]></format>
@@ -687,103 +687,103 @@ After handling recognized phrases that have no semantic structure, the handler c
 The use of <xref:System.Speech.Recognition.SemanticValue.Item%2A> is highlighted below.  
  
 ```csharp  
- 
+  
 newGrammar.SpeechRecognized +=  
- delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
- {  
- 
-   // Retrieve the value of the semantic property.  
-   bool changeBackGround = true;  
-   string errorString = "";  
-   SemanticValue semantics = eventArgs.Result.Semantics;  
- 
-   Color newColor = Color.Empty;  
- 
-   try   
-   {  
-     if (semantics.Count == 0 && semantics.Value==null)  
-     {  
-       // Signifies recognition by a grammar with no semantics.  
-       // Parse the string, assuming that the last word is color,  
-       //  searching for background or foreground in input.  
-       if (eventArgs.Result.Text.Contains("foreground"))   
-       {  
-         changeBackGround = false;  
-       }  
-       string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-       newColor = Color.FromName(cName);  
- 
-     }  
-     else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-     {  
- 
-       // Determine whether to change background or foreground.  
-       if (semantics.ContainsKey("applyChgToBackground"))   
-       {  
-         changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-       }  
- 
-       // Get the RGB color value.  
-       if (semantics.ContainsKey("colorStringList"))   
-       {  
-         newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-       }  
-       if (semantics.ContainsKey("colorRGBValueList"))   
-       {  
-         newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-       }  
-     }  
-     else   
-     {  
- 
-       // Throw an exception if the semantics do not contain the keys we  
-       // support.  
-       throw(new Exception("Unsupported semantic keys found."));  
-     }  
-   }  
- 
-   catch (Exception exp)   
-   {  
-     MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-     return;  
-   }  
- 
-   // Change colors, either foreground or background.  
-   if (changeBackGround)   
-   {  
-     BackColor = newColor;  
-     float Bright = BackColor.GetBrightness();  
-     float Hue = BackColor.GetHue();  
-     float Sat = BackColor.GetSaturation();  
-     // Make sure that text is readable regardless of background.  
-     if (BackColor.GetBrightness() <= .50)   
-     {  
-       ForeColor = Color.White;  
-     }  
-     else   
-     {  
-       ForeColor = Color.Black;  
-     }  
-   }  
-   else   
-   {  
-     ForeColor = newColor;  
-     float Bright = ForeColor.GetBrightness();  
-     float Hue = ForeColor.GetHue();  
-     float Sat = ForeColor.GetSaturation();  
- 
-     // Make sure that text is readable regardless of the foreground.  
-     if (ForeColor.GetBrightness() <= .50)   
-     {  
-       BackColor = Color.White;  
-     }  
-     else   
-     {  
-       BackColor = Color.Black;  
-     }  
-   }  
-   return;  
- };  
+  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
+  {  
+  
+    // Retrieve the value of the semantic property.  
+    bool changeBackGround = true;  
+    string errorString = "";  
+    SemanticValue semantics = eventArgs.Result.Semantics;  
+  
+    Color newColor = Color.Empty;  
+  
+    try   
+    {  
+      if (semantics.Count == 0 && semantics.Value==null)  
+      {  
+        // Signifies recognition by a grammar with no semantics.  
+        // Parse the string, assuming that the last word is color,  
+        //  searching for background or foreground in input.  
+        if (eventArgs.Result.Text.Contains("foreground"))   
+        {  
+          changeBackGround = false;  
+        }  
+        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
+        newColor = Color.FromName(cName);  
+  
+      }  
+      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
+      {  
+  
+        // Determine whether to change background or foreground.  
+        if (semantics.ContainsKey("applyChgToBackground"))   
+        {  
+          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
+        }  
+  
+        // Get the RGB color value.  
+        if (semantics.ContainsKey("colorStringList"))   
+        {  
+          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
+        }  
+        if (semantics.ContainsKey("colorRGBValueList"))   
+        {  
+          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
+        }  
+      }  
+      else   
+      {  
+  
+        // Throw an exception if the semantics do not contain the keys we  
+        // support.  
+        throw(new Exception("Unsupported semantic keys found."));  
+      }  
+    }  
+  
+    catch (Exception exp)   
+    {  
+      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
+      return;  
+    }  
+  
+    // Change colors, either foreground or background.  
+    if (changeBackGround)   
+    {  
+      BackColor = newColor;  
+      float Bright = BackColor.GetBrightness();  
+      float Hue = BackColor.GetHue();  
+      float Sat = BackColor.GetSaturation();  
+      // Make sure that text is readable regardless of background.  
+      if (BackColor.GetBrightness() <= .50)   
+      {  
+        ForeColor = Color.White;  
+      }  
+      else   
+      {  
+        ForeColor = Color.Black;  
+      }  
+    }  
+    else   
+    {  
+      ForeColor = newColor;  
+      float Bright = ForeColor.GetBrightness();  
+      float Hue = ForeColor.GetHue();  
+      float Sat = ForeColor.GetSaturation();  
+  
+      // Make sure that text is readable regardless of the foreground.  
+      if (ForeColor.GetBrightness() <= .50)   
+      {  
+        BackColor = Color.White;  
+      }  
+      else   
+      {  
+        BackColor = Color.Black;  
+      }  
+    }  
+    return;  
+  };  
 ```  
  
  ]]></format>
@@ -1065,33 +1065,33 @@ The following example is used to recursively traverse and then display informati
  
 ```csharp  
 internal static void CreateSemanticsTreeNodes(  
-         TreeNodeCollection nodes,  
-         SemanticValue semantics,  
-         String name)   
+          TreeNodeCollection nodes,  
+          SemanticValue semantics,  
+          String name)   
 {  
- string semanticsText =   
-     String.Format("  {0} ( Confidence {1})", name,semantics.Confidence);  
- 
- // Format integers as hexadecimal.  
- if (semantics.Value == null )  
- {  
-   semanticsText = semanticsText + " = null";  
- }  
- else if (semantics.Value.GetType() == typeof(int))   
- {  
-   semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
- }  
- else   
- {  
-   semanticsText = semanticsText + " = " + semantics.Value.ToString();  
- }  
- 
- TreeNode semanticsNode = new TreeNode(semanticsText);  
- foreach (KeyValuePair<String, SemanticValue> child in semantics)   
- {  
-   CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
- }  
- nodes.Add(semanticsNode);  
+  string semanticsText =   
+      String.Format("  {0} ( Confidence {1})", name,semantics.Confidence);  
+  
+  // Format integers as hexadecimal.  
+  if (semantics.Value == null )  
+  {  
+    semanticsText = semanticsText + " = null";  
+  }  
+  else if (semantics.Value.GetType() == typeof(int))   
+  {  
+    semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
+  }  
+  else   
+  {  
+    semanticsText = semanticsText + " = " + semantics.Value.ToString();  
+  }  
+  
+  TreeNode semanticsNode = new TreeNode(semanticsText);  
+  foreach (KeyValuePair<String, SemanticValue> child in semantics)   
+  {  
+    CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
+  }  
+  nodes.Add(semanticsNode);  
 }  
 ```  
  

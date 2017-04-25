@@ -31,73 +31,73 @@ using System.Data;
 using System.Collections.ObjectModel;  
 using System.Data.EntityClient;  
 using System.Data.Metadata.Edm;  
- 
+  
 class GetComplexTypeMembersExample  
 {  
- static void Main()  
- {  
-   try  
-   {  
-     // Establish a connection to the underlying data provider by   
-     // using the connection string specified in the config file.  
-     using (EntityConnection connection =  
-       new EntityConnection("Name=CustomerWComplexAddrEntities"))  
-     {  
-        // Open the connection.  
-        connection.Open();  
- 
-        // Access the metadata workspace.  
-        MetadataWorkspace workspace =   
-           connection.GetMetadataWorkspace();  
- 
-        // Get properties of complex types.  
-        GetProperties(workspace, DataSpace.CSpace);  
-     }  
-   }  
-   catch (MetadataException exceptionMetadata)  
-   {  
-      Console.WriteLine("MetadataException: {0}",  
-             exceptionMetadata.Message);  
-   }  
-   catch (System.Data.MappingException exceptionMapping)  
-   {  
-      Console.WriteLine("MappingException: {0}",  
-              exceptionMapping.Message);  
-   }  
- }  
- 
- public static void GetProperties(MetadataWorkspace workspace,   
-     DataSpace model)  
- {  
-   // Get a collection of complex types.  
-   ReadOnlyCollection<ComplexType> complexTypes =  
-      workspace.GetItems<ComplexType>(model);  
- 
-   // Iterate through the collection to get each complex type.  
-   foreach (ComplexType complexType in complexTypes)  
-   {  
-      Console.WriteLine(  
-        "\n\n***ComplexType Name: {0}, Namespace: {1}",  
-        complexType.Name,  
-        complexType.NamespaceName);  
- 
-      Console.WriteLine(  
-         "\nGet the properties of this " +  
-         "ComplexType object ==>");  
-         // Iterate through the collection to get each property of the   
-         // current ComplexType object.  
-         foreach (EdmProperty property in complexType.Properties)  
-         {  
-           Console.Write("   Property Name: {0} ", property.Name);  
- 
-           Console.WriteLine(  
-              "   Property declaring Type: {0}, edmtype: {1}," +  
-              " default: {2}, nullable: {3} ",  
-              property.DeclaringType, property.TypeUsage.EdmType,  
-              property.Default, property.Nullable);  
-         }  
-     }  
- }  
+  static void Main()  
+  {  
+    try  
+    {  
+      // Establish a connection to the underlying data provider by   
+      // using the connection string specified in the config file.  
+      using (EntityConnection connection =  
+        new EntityConnection("Name=CustomerWComplexAddrEntities"))  
+      {  
+         // Open the connection.  
+         connection.Open();  
+  
+         // Access the metadata workspace.  
+         MetadataWorkspace workspace =   
+            connection.GetMetadataWorkspace();  
+  
+         // Get properties of complex types.  
+         GetProperties(workspace, DataSpace.CSpace);  
+      }  
+    }  
+    catch (MetadataException exceptionMetadata)  
+    {  
+       Console.WriteLine("MetadataException: {0}",  
+              exceptionMetadata.Message);  
+    }  
+    catch (System.Data.MappingException exceptionMapping)  
+    {  
+       Console.WriteLine("MappingException: {0}",  
+               exceptionMapping.Message);  
+    }  
+  }  
+  
+  public static void GetProperties(MetadataWorkspace workspace,   
+      DataSpace model)  
+  {  
+    // Get a collection of complex types.  
+    ReadOnlyCollection<ComplexType> complexTypes =  
+       workspace.GetItems<ComplexType>(model);  
+  
+    // Iterate through the collection to get each complex type.  
+    foreach (ComplexType complexType in complexTypes)  
+    {  
+       Console.WriteLine(  
+         "\n\n***ComplexType Name: {0}, Namespace: {1}",  
+         complexType.Name,  
+         complexType.NamespaceName);  
+  
+       Console.WriteLine(  
+          "\nGet the properties of this " +  
+          "ComplexType object ==>");  
+          // Iterate through the collection to get each property of the   
+          // current ComplexType object.  
+          foreach (EdmProperty property in complexType.Properties)  
+          {  
+            Console.Write("   Property Name: {0} ", property.Name);  
+  
+            Console.WriteLine(  
+               "   Property declaring Type: {0}, edmtype: {1}," +  
+               " default: {2}, nullable: {3} ",  
+               property.DeclaringType, property.TypeUsage.EdmType,  
+               property.Default, property.Nullable);  
+          }  
+      }  
+  }  
 }  
 ```  
  
@@ -107,66 +107,66 @@ Imports System.Collections.ObjectModel
 Imports System.Data  
 Imports System.Data.EntityClient  
 Imports System.Data.Metadata.Edm  
- 
+  
 Class GetComplexTypeMembersExample  
- Public Shared Sub Main()  
-   Try  
-     ' Establish a connection to the underlying data provider by   
-     ' using the connection string specified in the config file.  
-     Using connection As EntityConnection = _  
-        New EntityConnection("Name=CustomerWComplexAddrEntities")  
- 
-        ' Open the conection.  
-        connection.Open()  
- 
-        ' Access the metadata workspace.  
-        Dim workspace As MetadataWorkspace = _  
-           connection.GetMetadataWorkspace  
- 
-        ' Get properties of complex types.  
-        GetProperties(workspace, DataSpace.CSpace)  
-     End Using  
-   Catch exceptionMetadata As MetadataException  
-      Console.WriteLine("MetadataException: {0}", _  
-          exceptionMetadata.Message)  
-   Catch exceptionMapping As MappingException  
-      Console.WriteLine("MappingException: {0}", _  
-          exceptionMapping.Message)  
-    End Try  
- End Sub  
- 
- Public Shared Sub GetProperties( _  
-   ByVal workspace As MetadataWorkspace, ByVal model As DataSpace)  
- 
-   ' Get a collection of complex types.  
-   Dim complexTypes As ReadOnlyCollection(Of ComplexType) = _  
-      workspace.GetItems(Of ComplexType)(model)  
- 
-   ' Iterate through the collection to get each complex type.  
-   Dim complexType As ComplexType  
-   For Each complexType In complexTypes  
-      Console.WriteLine( _  
-         ControlChars.Lf & ControlChars.Lf & _  
-         "***ComplexType Name: {0}, Namespace: {1}", _  
-         complexType.Name, complexType.NamespaceName)  
- 
-      Console.WriteLine(ControlChars.Lf & _  
-         "Get the properties of this ComplexType object ==>")  
- 
-         ' Iterate through the collection to get each property of the   
-         ' current ComplexType object.  
-         Dim property1 As EdmProperty  
-         For Each property1 In complexType.Properties  
-           Console.Write("   Property Name: {0} ", property1.Name)  
-           Console.WriteLine( _  
-             "   Property declaring Type: {0}, edmtype: {1}, " + _  
-             "default: {2}, nullable: {3} ", _  
-             New Object() {property1.DeclaringType, _  
-             property1.TypeUsage.EdmType, _  
-             property1.Default, property1.Nullable})  
-         Next  
-       Next  
-   End Sub  
+  Public Shared Sub Main()  
+    Try  
+      ' Establish a connection to the underlying data provider by   
+      ' using the connection string specified in the config file.  
+      Using connection As EntityConnection = _  
+         New EntityConnection("Name=CustomerWComplexAddrEntities")  
+  
+         ' Open the conection.  
+         connection.Open()  
+  
+         ' Access the metadata workspace.  
+         Dim workspace As MetadataWorkspace = _  
+            connection.GetMetadataWorkspace  
+  
+         ' Get properties of complex types.  
+         GetProperties(workspace, DataSpace.CSpace)  
+      End Using  
+    Catch exceptionMetadata As MetadataException  
+       Console.WriteLine("MetadataException: {0}", _  
+           exceptionMetadata.Message)  
+    Catch exceptionMapping As MappingException  
+       Console.WriteLine("MappingException: {0}", _  
+           exceptionMapping.Message)  
+     End Try  
+  End Sub  
+  
+  Public Shared Sub GetProperties( _  
+    ByVal workspace As MetadataWorkspace, ByVal model As DataSpace)  
+  
+    ' Get a collection of complex types.  
+    Dim complexTypes As ReadOnlyCollection(Of ComplexType) = _  
+       workspace.GetItems(Of ComplexType)(model)  
+  
+    ' Iterate through the collection to get each complex type.  
+    Dim complexType As ComplexType  
+    For Each complexType In complexTypes  
+       Console.WriteLine( _  
+          ControlChars.Lf & ControlChars.Lf & _  
+          "***ComplexType Name: {0}, Namespace: {1}", _  
+          complexType.Name, complexType.NamespaceName)  
+  
+       Console.WriteLine(ControlChars.Lf & _  
+          "Get the properties of this ComplexType object ==>")  
+  
+          ' Iterate through the collection to get each property of the   
+          ' current ComplexType object.  
+          Dim property1 As EdmProperty  
+          For Each property1 In complexType.Properties  
+            Console.Write("   Property Name: {0} ", property1.Name)  
+            Console.WriteLine( _  
+              "   Property declaring Type: {0}, edmtype: {1}, " + _  
+              "default: {2}, nullable: {3} ", _  
+              New Object() {property1.DeclaringType, _  
+              property1.TypeUsage.EdmType, _  
+              property1.Default, property1.Nullable})  
+          Next  
+        Next  
+    End Sub  
 End Class  
 ```  
  

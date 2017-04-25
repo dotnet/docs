@@ -24,12 +24,12 @@ All <xref:System.Web.SiteMapProvider> objects are configured in the Web.config f
  
 ```  
 <siteMap defaultProvider="<name>">  
- <providers>  
-   <add  
-     name="<friendly name>"  
-     type="<fully qualified class name>, <assembly name (optional)>"   
-     siteMapFile = "<file name>" />  
- </providers>  
+  <providers>  
+    <add  
+      name="<friendly name>"  
+      type="<fully qualified class name>, <assembly name (optional)>"   
+      siteMapFile = "<file name>" />  
+  </providers>  
 </siteMap>  
 ```  
  
@@ -727,13 +727,13 @@ The connection string for the <xref:System.Data.OleDb.OleDbConnection> object is
  
 ```  
 <siteMap defaultProvider="AccessSiteMapProvider">  
- <providers>  
-    <add  
-      name="AccessSiteMapProvider"  
-      type="Samples.AspNet.AccessSiteMapProvider,Samples.AspNet"  
-      accessSiteMapConnectionString="PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA SOURCE=\\SomeUNCShare\\sitemap.mdb"/>  
- </providers>   
-</siteMap>  
+  <providers>  
+     <add  
+       name="AccessSiteMapProvider"  
+       type="Samples.AspNet.AccessSiteMapProvider,Samples.AspNet"  
+       accessSiteMapConnectionString="PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA SOURCE=\\SomeUNCShare\\sitemap.mdb"/>  
+  </providers>   
+ </siteMap>  
 ```  
  
 This code example is part of a larger example provided for the <xref:System.Web.SiteMapProvider> class.  

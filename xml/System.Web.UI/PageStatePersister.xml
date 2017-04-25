@@ -46,13 +46,13 @@ Finally, to enable the `MyPageAdapter` adapter, you must create a directory name
  
 ```  
 <browsers>  
-   <browser refid="Default" >  
-       <controlAdapters>  
-           <adapter   
-               controlType="System.Web.UI.Page"                              
-               adapterType="Samples.AspNet.CS.MyPageAdapter" />  
-       </controlAdapters>  
-   </browser>  
+    <browser refid="Default" >  
+        <controlAdapters>  
+            <adapter   
+                controlType="System.Web.UI.Page"                              
+                adapterType="Samples.AspNet.CS.MyPageAdapter" />  
+        </controlAdapters>  
+    </browser>  
 </browsers>  
 ```  
  

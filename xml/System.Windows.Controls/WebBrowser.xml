@@ -43,36 +43,36 @@ The following example shows how to configure <xref:System.Windows.Controls.WebBr
 ```xaml  
 <!-- Web Browser Control that hosts a web page. -->  
 <WebBrowser x:Name="webBrowser" Source="http://msdn.com"   
- Width="600" Height="600"  />  
+  Width="600" Height="600"  />  
 ```  
  
 The following example shows how to configure <xref:System.Windows.Controls.WebBrowser> to navigate to a document by using markup and code-behind.  
  
 ```xaml  
 <StackPanel>  
-   <StackPanel Orientation="Horizontal">  
-       <TextBox x:Name="addressTextBox" Width="200" />  
-       <Button Click="goNavigateButton_Click">Go</Button>  
-   </StackPanel>  
-   <WebBrowser x:Name="myWebBrowser" />  
+    <StackPanel Orientation="Horizontal">  
+        <TextBox x:Name="addressTextBox" Width="200" />  
+        <Button Click="goNavigateButton_Click">Go</Button>  
+    </StackPanel>  
+    <WebBrowser x:Name="myWebBrowser" />  
 </StackPanel>  
 ```  
  
 ```csharp  
 private void goNavigateButton_Click(object sender, RoutedEventArgs e)  
 {  
-   // Get URI to navigate to  
-   Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
- 
-   // Only absolute URIs can be navigated to  
-   if (!uri.IsAbsoluteUri)  
-   {  
-       MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
-       return;  
-   }  
- 
-   // Navigate to the desired URL by calling the .Navigate method  
-   this.myWebBrowser.Navigate(uri);  
+    // Get URI to navigate to  
+    Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
+  
+    // Only absolute URIs can be navigated to  
+    if (!uri.IsAbsoluteUri)  
+    {  
+        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        return;  
+    }  
+  
+    // Navigate to the desired URL by calling the .Navigate method  
+    this.myWebBrowser.Navigate(uri);  
 }  
 ```  
  
@@ -81,33 +81,33 @@ The following example shows how to handle the `NewWindow2` event and similar eve
 ```csharp  
 public MainWindow()  
 {  
-   InitializeComponent();  
- 
-   var serviceProvider = (IServiceProvider)webBrowser1.Document;  
-   if (serviceProvider != null)  
-   {  
-       Guid serviceGuid = new Guid("0002DF05-0000-0000-C000-000000000046");  
-       Guid iid = typeof(SHDocVw.WebBrowser).GUID;  
-       var webBrowserPtr = (SHDocVw.WebBrowser)serviceProvider  
-           .QueryService(ref serviceGuid, ref iid);  
-       if (webBrowserPtr != null)  
-       {  
-           webBrowserPtr.NewWindow2 += webBrowser1_NewWindow2;  
-       }  
-   }  
+    InitializeComponent();  
+  
+    var serviceProvider = (IServiceProvider)webBrowser1.Document;  
+    if (serviceProvider != null)  
+    {  
+        Guid serviceGuid = new Guid("0002DF05-0000-0000-C000-000000000046");  
+        Guid iid = typeof(SHDocVw.WebBrowser).GUID;  
+        var webBrowserPtr = (SHDocVw.WebBrowser)serviceProvider  
+            .QueryService(ref serviceGuid, ref iid);  
+        if (webBrowserPtr != null)  
+        {  
+            webBrowserPtr.NewWindow2 += webBrowser1_NewWindow2;  
+        }  
+    }  
 }  
- 
+  
 private void webBrowser1_NewWindow2(ref object ppDisp, ref bool Cancel)  
 {  
-   // Handle the event.  
+    // Handle the event.  
 }  
- 
+  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]  
 [Guid("6d5140c1-7436-11ce-8034-00aa006009fa")]  
 internal interface IServiceProvider  
 {  
-   [return: MarshalAs(UnmanagedType.IUnknown)]  
-   object QueryService(ref Guid guidService, ref Guid riid);  
+    [return: MarshalAs(UnmanagedType.IUnknown)]  
+    object QueryService(ref Guid guidService, ref Guid riid);  
 }  
 ```  
  
@@ -160,11 +160,11 @@ The following example shows how to navigate back to the previous document by cal
 ```csharp  
 private void backButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Navigate to the previous HTML document, if there is one  
- if (this.webBrowser.CanGoBack)  
- {  
-   this.webBrowser.GoBack();  
- }  
+  // Navigate to the previous HTML document, if there is one  
+  if (this.webBrowser.CanGoBack)  
+  {  
+    this.webBrowser.GoBack();  
+  }  
 }  
 ```  
  
@@ -196,11 +196,11 @@ The following example shows how to navigate forward to the next [!INCLUDE[TLA2#t
 ```csharp  
 private void forwardButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Navigate to the next HTML document, if there is one  
- if (this.webBrowser.CanGoForward)  
- {  
-   this.webBrowser.GoForward();  
- }  
+  // Navigate to the next HTML document, if there is one  
+  if (this.webBrowser.CanGoForward)  
+  {  
+    this.webBrowser.GoForward();  
+  }  
 }  
 ```  
  
@@ -275,11 +275,11 @@ The following example shows how to navigate back to the previous [!INCLUDE[TLA2#
 ```csharp  
 private void backButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Navigate to the previous HTML document, if there is one  
- if (this.webBrowser.CanGoBack)  
- {  
-   this.webBrowser.GoBack();  
- }  
+  // Navigate to the previous HTML document, if there is one  
+  if (this.webBrowser.CanGoBack)  
+  {  
+    this.webBrowser.GoBack();  
+  }  
 }  
 ```  
  
@@ -324,11 +324,11 @@ The following example shows how to navigate forward to the next document by call
 ```csharp  
 private void forwardButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Navigate to the next HTML document, if there is one  
- if (this.webBrowser.CanGoForward)  
- {  
-   this.webBrowser.GoForward();  
- }  
+  // Navigate to the next HTML document, if there is one  
+  if (this.webBrowser.CanGoForward)  
+  {  
+    this.webBrowser.GoForward();  
+  }  
 }  
 ```  
  
@@ -373,20 +373,20 @@ The following is the [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md
  
 ```html  
 <html>  
-   <head>  
-       <script type="text/javascript">  
-           // Function Without Parameters  
-           function JavaScriptFunctionWithoutParameters()    
-           {  
-             outputID.innerHTML = "JavaScript function called!";  
-           }  
-       </script>  
-   </head>  
-   <body>  
-   <div id="outputID" style="color:Red; font-size:16">  
-       Hello from HTML document with script!  
-   </div>  
-   </body>  
+    <head>  
+        <script type="text/javascript">  
+            // Function Without Parameters  
+            function JavaScriptFunctionWithoutParameters()    
+            {  
+              outputID.innerHTML = "JavaScript function called!";  
+            }  
+        </script>  
+    </head>  
+    <body>  
+    <div id="outputID" style="color:Red; font-size:16">  
+        Hello from HTML document with script!  
+    </div>  
+    </body>  
 </html>  
 ```  
  
@@ -395,23 +395,23 @@ The following shows the [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.m
 ```csharp  
 private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Make sure the HTML document has loaded before attempting to  
- // invoke script of the document page. You could set loadCompleted  
- // to true when the LoadCompleted event on the WebBrowser fires.  
- if (this.loadCompleted)  
- {  
-   try  
-   {  
-     this.webBrowser.InvokeScript("JavaScriptFunctionWithoutParameters");  
-   }  
-   catch (Exception ex)  
-   {  
-     string msg = "Could not call script: " +  
-                  ex.Message +  
-                 "\n\nPlease click the 'Load HTML Document with Script' button to load.";  
-     MessageBox.Show(msg);  
-   }  
- }  
+  // Make sure the HTML document has loaded before attempting to  
+  // invoke script of the document page. You could set loadCompleted  
+  // to true when the LoadCompleted event on the WebBrowser fires.  
+  if (this.loadCompleted)  
+  {  
+    try  
+    {  
+      this.webBrowser.InvokeScript("JavaScriptFunctionWithoutParameters");  
+    }  
+    catch (Exception ex)  
+    {  
+      string msg = "Could not call script: " +  
+                   ex.Message +  
+                  "\n\nPlease click the 'Load HTML Document with Script' button to load.";  
+      MessageBox.Show(msg);  
+    }  
+  }  
 }  
 ```  
  
@@ -471,20 +471,20 @@ The following is the document that implements the script functions that will be 
  
 ```html  
 <html>  
-   <head>  
-       <script type="text/javascript">  
-           // Function Without Parameters  
-           function JavaScriptFunctionWithoutParameters()    
-           {  
-             outputID.innerHTML = "JavaScript function 'called: " + message + ".";  
-           }  
-       </script>  
-   </head>  
-   <body>  
-   <div id="outputID" style="color:Red; font-size:16">  
-       Hello from HTML document with script!  
-   </div>  
-   </body>  
+    <head>  
+        <script type="text/javascript">  
+            // Function Without Parameters  
+            function JavaScriptFunctionWithoutParameters()    
+            {  
+              outputID.innerHTML = "JavaScript function 'called: " + message + ".";  
+            }  
+        </script>  
+    </head>  
+    <body>  
+    <div id="outputID" style="color:Red; font-size:16">  
+        Hello from HTML document with script!  
+    </div>  
+    </body>  
 </html>  
 ```  
  
@@ -493,23 +493,23 @@ The following shows the [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.m
 ```csharp  
 private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Make sure the HTML document has loaded before attempting to  
- // invoke script of the document page. You could set loadCompleted  
- // to true when the LoadCompleted event on the WebBrowser fires.  
- if (this.loadCompleted)  
- {  
-   try  
-   {  
-     this.webBrowser.InvokeScript("JavaScriptFunctionWithoutParameters", this.messageTextBox.Text);  
-   }  
-   catch (Exception ex)  
-   {  
-     string msg = "Could not call script: " +  
-                  ex.Message +  
-                 "\n\nPlease click the 'Load HTML Document with Script' button to load.";  
-     MessageBox.Show(msg);  
-   }  
- }  
+  // Make sure the HTML document has loaded before attempting to  
+  // invoke script of the document page. You could set loadCompleted  
+  // to true when the LoadCompleted event on the WebBrowser fires.  
+  if (this.loadCompleted)  
+  {  
+    try  
+    {  
+      this.webBrowser.InvokeScript("JavaScriptFunctionWithoutParameters", this.messageTextBox.Text);  
+    }  
+    catch (Exception ex)  
+    {  
+      string msg = "Could not call script: " +  
+                   ex.Message +  
+                  "\n\nPlease click the 'Load HTML Document with Script' button to load.";  
+      MessageBox.Show(msg);  
+    }  
+  }  
 }  
 ```  
  
@@ -607,29 +607,29 @@ The following example shows how to use <xref:System.Windows.Controls.WebBrowser>
  
 ```xaml  
 <StackPanel>  
-   <StackPanel Orientation="Horizontal">  
-       <TextBox x:Name="addressTextBox" Width="200" />  
-       <Button Click="goNavigateButton_Click">Go</Button>  
-   </StackPanel>  
-   <WebBrowser x:Name="myWebBrowser" />  
+    <StackPanel Orientation="Horizontal">  
+        <TextBox x:Name="addressTextBox" Width="200" />  
+        <Button Click="goNavigateButton_Click">Go</Button>  
+    </StackPanel>  
+    <WebBrowser x:Name="myWebBrowser" />  
 </StackPanel>  
 ```  
  
 ```csharp  
 private void goNavigateButton_Click(object sender, RoutedEventArgs e)  
 {  
-   // Get URI to navigate to  
-   Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
- 
-   // Only absolute URIs can be navigated to  
-   if (!uri.IsAbsoluteUri)  
-   {  
-       MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
-       return;  
-   }  
- 
-   // Navigate to the desired URL by calling the .Navigate method  
-   this.myWebBrowser.Navigate(uri);  
+    // Get URI to navigate to  
+    Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
+  
+    // Only absolute URIs can be navigated to  
+    if (!uri.IsAbsoluteUri)  
+    {  
+        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        return;  
+    }  
+  
+    // Navigate to the desired URL by calling the .Navigate method  
+    this.myWebBrowser.Navigate(uri);  
 }  
 ```  
  
@@ -711,29 +711,29 @@ The following example shows how to navigate to a document and open it in a new b
  
 ```xaml  
 <StackPanel>  
-   <StackPanel Orientation="Horizontal">  
-       <TextBox x:Name="addressTextBox" Width="200" />  
-       <Button Click="goNavigateButton_Click">Go</Button>  
-   </StackPanel>  
-   <WebBrowser x:Name="myWebBrowser" />  
+    <StackPanel Orientation="Horizontal">  
+        <TextBox x:Name="addressTextBox" Width="200" />  
+        <Button Click="goNavigateButton_Click">Go</Button>  
+    </StackPanel>  
+    <WebBrowser x:Name="myWebBrowser" />  
 </StackPanel>  
 ```  
  
 ```csharp  
 private void goNavigateButton_Click(object sender, RoutedEventArgs e)  
 {  
-   // Get URI to navigate to  
-   Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
- 
-   // Only absolute URIs can be navigated to  
-   if (!uri.IsAbsoluteUri)  
-   {  
-       MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
-       return;  
-   }  
- 
-   // Navigate to the desired URL by calling the .Navigate method  
-   this.myWebBrowser.Navigate(uri, "_blank", null, null);  
+    // Get URI to navigate to  
+    Uri uri = new Uri(this.addressTextBox.Text, UriKind.RelativeOrAbsolute);  
+  
+    // Only absolute URIs can be navigated to  
+    if (!uri.IsAbsoluteUri)  
+    {  
+        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        return;  
+    }  
+  
+    // Navigate to the desired URL by calling the .Navigate method  
+    this.myWebBrowser.Navigate(uri, "_blank", null, null);  
 }  
 ```  
  
@@ -810,12 +810,12 @@ The following example shows how to navigate to a stream that contains a document
 ```csharp  
 private void goNavigateToStreamButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Load HTML document as a stream  
- Uri uri = new Uri(@"pack://application:,,,/HTMLDocumentWithScript.html", UriKind.Absolute);  
- Stream source = Application.GetResourceStream(uri).Stream;  
- 
- // Navigate to HTML document stream  
- this.webBrowser.NavigateToStream(source);  
+  // Load HTML document as a stream  
+  Uri uri = new Uri(@"pack://application:,,,/HTMLDocumentWithScript.html", UriKind.Absolute);  
+  Stream source = Application.GetResourceStream(uri).Stream;  
+  
+  // Navigate to HTML document stream  
+  this.webBrowser.NavigateToStream(source);  
 }  
 ```  
  
@@ -861,14 +861,14 @@ The following example shows how to navigate to a string that contains a document
 ```csharp  
 private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)  
 {  
- // Load HTML document as a string  
- Uri uri = new Uri(@"pack://application:,,,/HTMLDocumentWithoutScript.html", UriKind.Absolute);  
- Stream stream = Application.GetResourceStream(uri).Stream;  
- using (StreamReader reader = new StreamReader(stream))  
- {  
-   // Navigate to HTML document string  
-   this.webBrowser.NavigateToString(reader.ReadToEnd());  
- }  
+  // Load HTML document as a string  
+  Uri uri = new Uri(@"pack://application:,,,/HTMLDocumentWithoutScript.html", UriKind.Absolute);  
+  Stream stream = Application.GetResourceStream(uri).Stream;  
+  using (StreamReader reader = new StreamReader(stream))  
+  {  
+    // Navigate to HTML document string  
+    this.webBrowser.NavigateToString(reader.ReadToEnd());  
+  }  
 }  
 ```  
  
@@ -1032,7 +1032,7 @@ The following example shows how to configure <xref:System.Windows.Controls.WebBr
 ```xaml  
 <!-- Web Browser Control that hosts a web page. -->  
 <WebBrowser x:Name="webBrowser" Source="http://msdn.com"   
- Width="600" Height="600"  />  
+  Width="600" Height="600"  />  
 ```  
  
  ]]></format>

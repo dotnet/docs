@@ -279,9 +279,9 @@ The following example demonstrates the entries you place in the web.config file 
  
 ```  
 <security>  
-<authentication mode="Windows"> <!-- Mode Options are Windows, Cookie, Passport and None or Empty String -->  
-</authentication>  
-</security>  
+ <authentication mode="Windows"> <!-- Mode Options are Windows, Cookie, Passport and None or Empty String -->  
+ </authentication>  
+ </security>  
 ```  
  
 For more information on setting up security for an XML Web service see [&#91;\<topic://cpconSecuringASPNETWebServices>&#93;](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c).  

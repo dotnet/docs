@@ -51,40 +51,40 @@ The following example constructs a <xref:System.Speech.Recognition.Grammar> obje
 // Load a cities grammar from a local file and return the grammar object.   
 private static Grammar CreateGrammarFromFile()  
 {  
- Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml");  
- citiesGrammar.Name = "SRGS File Cities Grammar";  
- return citiesGrammar;  
+  Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml");  
+  citiesGrammar.Name = "SRGS File Cities Grammar";  
+  return citiesGrammar;  
 }  
- 
+  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item> Seattle </item>  
-     <item> Los Angeles </item>  
-     <item> New York </item>  
-     <item> Miami </item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item> Seattle </item>  
+      <item> Los Angeles </item>  
+      <item> New York </item>  
+      <item> Miami </item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -146,46 +146,46 @@ To create a <xref:System.Speech.Recognition.Grammar> object from a stream and sp
 The following example creates a speech recognition grammar from a local SRGS file (cities.xml) using a file stream. The content of the cities.xml file appears following C# example.  
  
 ```csharp  
- 
+  
 // Load a cities grammar from an I/O stream and    
 // return the new grammar.   
 private static Grammar CreateGrammarFromStream()  
 {  
- string fileName = @"c:\temp\cities.xml";  
- Grammar citiesGrammar =  
-   new Grammar(new FileStream(fileName, FileMode.Open));  
- citiesGrammar.Name = "Stream Cities Grammar";  
- return citiesGrammar;  
+  string fileName = @"c:\temp\cities.xml";  
+  Grammar citiesGrammar =  
+    new Grammar(new FileStream(fileName, FileMode.Open));  
+  citiesGrammar.Name = "Stream Cities Grammar";  
+  return citiesGrammar;  
 }  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -225,24 +225,24 @@ For more information about using the <xref:System.Speech.Recognition.GrammarBuil
 The following example creates a speech recognition grammar using <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects. The <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor creates a <xref:System.Speech.Recognition.Grammar> object from the <xref:System.Speech.Recognition.GrammarBuilder> object.  
  
 ```csharp  
- 
+  
 // Create a grammar using a GrammarBuilder and return the new grammar.   
 private static Grammar CreateGrammarBuilderGrammar()  
 {  
- GrammarBuilder builder = new GrammarBuilder();  
- 
- Choices cityChoice = new Choices (new string[]   
- {"Seattle", "New York", "Miami", "Los Angeles"});  
- 
- builder.Append("I would like to fly from");  
- builder.Append(cityChoice);  
- builder.Append("to");  
- builder.Append(cityChoice);  
- 
- Grammar citiesGrammar = new Grammar(builder);  
- citiesGrammar.Name = "GrammarBuilder Cities Grammar";  
- 
- return citiesGrammar;  
+  GrammarBuilder builder = new GrammarBuilder();  
+  
+  Choices cityChoice = new Choices (new string[]   
+  {"Seattle", "New York", "Miami", "Los Angeles"});  
+  
+  builder.Append("I would like to fly from");  
+  builder.Append(cityChoice);  
+  builder.Append("to");  
+  builder.Append(cityChoice);  
+  
+  Grammar citiesGrammar = new Grammar(builder);  
+  citiesGrammar.Name = "GrammarBuilder Cities Grammar";  
+  
+  return citiesGrammar;  
 }  
 ```  
  
@@ -283,43 +283,43 @@ The following example creates a speech recognition grammar in an <xref:System.Sp
 ```csharp  
 private static Grammar CreateSrgsDocumentGrammar()  
 {  
- // Create the SrgsDocument.  
- SrgsDocument document = new SrgsDocument();  
- 
- // Create the Cities rule and add it to the document.  
- SrgsRule citiesRule = new SrgsRule("Cities");  
- 
- SrgsOneOf cityChoice = new SrgsOneOf();  
- cityChoice.Add(new SrgsItem("Seattle"));  
- cityChoice.Add(new SrgsItem("Los Angeles"));  
- cityChoice.Add(new SrgsItem("New York"));  
- cityChoice.Add(new SrgsItem("Miami"));  
- 
- citiesRule.Add(cityChoice);  
- document.Rules.Add(citiesRule);  
- 
- // Create the Main rule and add it to the document.  
- SrgsRule mainRule = new SrgsRule("Main");  
- mainRule.Scope = SrgsRuleScope.Public;  
- 
- SrgsItem item = new SrgsItem("I would like to fly from");  
- item.Add(new SrgsRuleRef(citiesRule));  
- item.Add(new SrgsText("to"));  
- item.Add(new SrgsRuleRef(citiesRule));  
- 
- mainRule.Add(item);  
- document.Rules.Add(mainRule);  
- 
- // Set the root rule.  
- document.Root = mainRule;  
- 
- // Create the Grammar object.  
- Grammar citiesGrammar = new Grammar(document);  
- citiesGrammar.Name = "SrgsDocument Cities Grammar";  
- 
- return citiesGrammar;  
+  // Create the SrgsDocument.  
+  SrgsDocument document = new SrgsDocument();  
+  
+  // Create the Cities rule and add it to the document.  
+  SrgsRule citiesRule = new SrgsRule("Cities");  
+  
+  SrgsOneOf cityChoice = new SrgsOneOf();  
+  cityChoice.Add(new SrgsItem("Seattle"));  
+  cityChoice.Add(new SrgsItem("Los Angeles"));  
+  cityChoice.Add(new SrgsItem("New York"));  
+  cityChoice.Add(new SrgsItem("Miami"));  
+  
+  citiesRule.Add(cityChoice);  
+  document.Rules.Add(citiesRule);  
+  
+  // Create the Main rule and add it to the document.  
+  SrgsRule mainRule = new SrgsRule("Main");  
+  mainRule.Scope = SrgsRuleScope.Public;  
+  
+  SrgsItem item = new SrgsItem("I would like to fly from");  
+  item.Add(new SrgsRuleRef(citiesRule));  
+  item.Add(new SrgsText("to"));  
+  item.Add(new SrgsRuleRef(citiesRule));  
+  
+  mainRule.Add(item);  
+  document.Rules.Add(mainRule);  
+  
+  // Set the root rule.  
+  document.Root = mainRule;  
+  
+  // Create the Grammar object.  
+  Grammar citiesGrammar = new Grammar(document);  
+  citiesGrammar.Name = "SrgsDocument Cities Grammar";  
+  
+  return citiesGrammar;  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -375,40 +375,40 @@ The following example loads a speech recognition grammar from a local SRGS file 
 // return the new grammar.   
 private static Grammar CreateGrammarFromFile()  
 {  
- Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml");  
- citiesGrammar.Name = "SRGS File Cities Grammar";  
- return citiesGrammar;  
+  Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml");  
+  citiesGrammar.Name = "SRGS File Cities Grammar";  
+  return citiesGrammar;  
 }  
- 
+  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -460,45 +460,45 @@ To create a <xref:System.Speech.Recognition.Grammar> from a stream and specify a
 The following example loads a local SRGS file (cities.xml) from a file stream and specifies a rule to use as the root of the grammar. The content of the cities.xml file appears in the XML example that follows the C# example.  
  
 ```csharp  
- 
+  
 // Load a cities grammar from an I/O stream, use a specific  
 // rule as the root of the grammar, and return the new grammar.   
 private static Grammar CreateGrammarFromStream2()  
 {  
- FileInfo file = new FileInfo(@"c:\temp\cities.xml");  
- Grammar citiesGrammar = new Grammar(file.OpenRead(), "Main");  
- citiesGrammar.Name = "Stream Cities Grammar 2";  
- return citiesGrammar;  
+  FileInfo file = new FileInfo(@"c:\temp\cities.xml");  
+  Grammar citiesGrammar = new Grammar(file.OpenRead(), "Main");  
+  citiesGrammar.Name = "Stream Cities Grammar 2";  
+  return citiesGrammar;  
 }  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -545,76 +545,76 @@ The following example creates a speech recognition grammar in an <xref:System.Sp
 using System;  
 using System.Speech.Recognition;  
 using System.Speech.Recognition.SrgsGrammar;  
- 
+  
 namespace SampleRecognition  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
- 
-   // Initialize an in-process speech recognition engine.  
-   {  
-     using (SpeechRecognitionEngine recognizer =  
-        new SpeechRecognitionEngine())  
-     {  
- 
-       // Create the SrgsDocument.  
-       SrgsDocument document = new SrgsDocument();  
- 
-       // Create the Cities rule and add it to the document.  
-       SrgsRule citiesRule = new SrgsRule("Cities");  
-       citiesRule.Scope = SrgsRuleScope.Public;  
- 
-       SrgsOneOf cityChoice = new SrgsOneOf();  
-       cityChoice.Add(new SrgsItem("Seattle"));  
-       cityChoice.Add(new SrgsItem("Los Angeles"));  
-       cityChoice.Add(new SrgsItem("New York"));  
-       cityChoice.Add(new SrgsItem("Miami"));  
- 
-       citiesRule.Add(cityChoice);  
-       document.Rules.Add(citiesRule);  
- 
-       // Create the Main rule and add it to the document.  
-       SrgsRule mainRule = new SrgsRule("Main");  
-       mainRule.Scope = SrgsRuleScope.Public;  
- 
-       mainRule.Add(new SrgsItem("I would like to fly from"));  
-       mainRule.Add(new SrgsRuleRef(citiesRule));  
-       mainRule.Add(new SrgsItem("to"));  
-       mainRule.Add(new SrgsRuleRef(citiesRule));  
- 
-       document.Rules.Add(mainRule);  
- 
-       // Create the Grammar object and specify which rule to use as the root.  
-       Grammar citiesGrammar = new Grammar(document,"Main");  
- 
-       // Load the grammar object to the recognizer.  
-       recognizer.LoadGrammarAsync(citiesGrammar);  
- 
-       // Attach a handler for the SpeechRecognized event.  
-       recognizer.SpeechRecognized +=  
-         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
- 
-       // Set the input to the recognizer.  
-       recognizer.SetInputToDefaultAudioDevice();  
- 
-       // Start recognition.  
-       recognizer.RecognizeAsync();  
-       Console.WriteLine("Starting aynchronous recognition...");  
- 
-       // Keep the console window open.  
-       Console.ReadLine();  
-     }  
-   }  
- 
-   // Handle the SpeechRecognized event.  
-   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-   {  
-     Console.WriteLine("  Speech recognized: " + e.Result.Text);  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize an in-process speech recognition engine.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine())  
+      {  
+  
+        // Create the SrgsDocument.  
+        SrgsDocument document = new SrgsDocument();  
+  
+        // Create the Cities rule and add it to the document.  
+        SrgsRule citiesRule = new SrgsRule("Cities");  
+        citiesRule.Scope = SrgsRuleScope.Public;  
+  
+        SrgsOneOf cityChoice = new SrgsOneOf();  
+        cityChoice.Add(new SrgsItem("Seattle"));  
+        cityChoice.Add(new SrgsItem("Los Angeles"));  
+        cityChoice.Add(new SrgsItem("New York"));  
+        cityChoice.Add(new SrgsItem("Miami"));  
+  
+        citiesRule.Add(cityChoice);  
+        document.Rules.Add(citiesRule);  
+  
+        // Create the Main rule and add it to the document.  
+        SrgsRule mainRule = new SrgsRule("Main");  
+        mainRule.Scope = SrgsRuleScope.Public;  
+  
+        mainRule.Add(new SrgsItem("I would like to fly from"));  
+        mainRule.Add(new SrgsRuleRef(citiesRule));  
+        mainRule.Add(new SrgsItem("to"));  
+        mainRule.Add(new SrgsRuleRef(citiesRule));  
+  
+        document.Rules.Add(mainRule);  
+  
+        // Create the Grammar object and specify which rule to use as the root.  
+        Grammar citiesGrammar = new Grammar(document,"Main");  
+  
+        // Load the grammar object to the recognizer.  
+        recognizer.LoadGrammarAsync(citiesGrammar);  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Set the input to the recognizer.  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Start recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting aynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("  Speech recognized: " + e.Result.Text);  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -666,44 +666,44 @@ To create a <xref:System.Speech.Recognition.Grammar> that specifies a base URI t
 The following example loads a local SRGS file (cities.xml) from a file and specifies a rule to use as the root of the grammar. The content of the cities.xml file appears in the XML example that follows the C# example.  
  
 ```csharp  
- 
+  
 // Load a cities grammar from a local file, use a specific  
 // rule as the root of the grammar, and return the new grammar.  
 private static Grammar CreateGrammarFromFile2()  
 {  
- Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml", "Main");  
- citiesGrammar.Name = "SRGS File Cities Grammar 2";  
- return citiesGrammar;  
+  Grammar citiesGrammar = new Grammar(@"c:\temp\cities.xml", "Main");  
+  citiesGrammar.Name = "SRGS File Cities Grammar 2";  
+  return citiesGrammar;  
 }  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -799,64 +799,64 @@ This constructor does not validate `baseUri`. However, the `LoadGrammar` method 
 The following example loads a local SRGS file (shuttle.xml) from a file stream. The file contains a relative rule reference to a rule in the cities.xml file, and specifies a base URI to use to resolve the rule reference. The content of the shuttle.xml and cities.xml files appears in the XML examples that follow the C# example.  
  
 ```csharp  
- 
+  
 private static Grammar CreateGrammarFromStream3()  
 {  
- FileInfo file = new FileInfo(@".\shuttle.xml");  
- Uri baseUri = new Uri(@"file://c:\temp\");  
- Grammar citiesGrammar = new Grammar(file.OpenRead(), null, baseUri);  
- citiesGrammar.Name = "Stream Cities Grammar 3";  
- return citiesGrammar;  
+  FileInfo file = new FileInfo(@".\shuttle.xml");  
+  Uri baseUri = new Uri(@"file://c:\temp\");  
+  Grammar citiesGrammar = new Grammar(file.OpenRead(), null, baseUri);  
+  citiesGrammar.Name = "Stream Cities Grammar 3";  
+  return citiesGrammar;  
 }  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- shuttle.xml:   
-   Defines an SRGS grammar for asking about a shuttle service. This grammar  
-   references a Cities rule that is defined in the cities.xml grammar. -->  
- 
- <rule id="Main">  
-   <item>  
-     Can I get a shuttle in  
-     <ruleref uri="cities.xml#Cities"/>  
-   </item>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- shuttle.xml:   
+    Defines an SRGS grammar for asking about a shuttle service. This grammar  
+    references a Cities rule that is defined in the cities.xml grammar. -->  
+  
+  <rule id="Main">  
+    <item>  
+      Can I get a shuttle in  
+      <ruleref uri="cities.xml#Cities"/>  
+    </item>  
+  </rule>  
 </grammar>  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -941,66 +941,66 @@ This constructor does not validate `baseUri`. However, the `LoadGrammar` method 
 The following example creates a speech recognition grammar in an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> that contains a relative rule reference to the cities.xml file, and specifies a URI to use to resolve the rule reference. The content of the cities.xml file appears in the XML example that follows the C# example.  
  
 ```csharp  
- 
+  
 private static Grammar CreateSrgsDocumentGrammar3()  
 {  
- // Create the SrgsDocument.  
- SrgsDocument document = new SrgsDocument();  
- 
- // Create the Main rule and add it to the document.  
- SrgsRule mainRule = new SrgsRule("Main");  
- mainRule.Scope = SrgsRuleScope.Public;  
- 
- SrgsItem item = new SrgsItem("Can I get a shuttle in");  
- 
- // Create a relative URI for the cities rule.  
- Uri ruleUri = new Uri("cities.xml#Cities", UriKind.Relative);  
- 
- item.Add(new SrgsRuleRef(ruleUri));  
- 
- mainRule.Add(item);  
- document.Rules.Add(mainRule);  
- 
- // Set the root rule.  
- document.Root = mainRule;  
- 
- // Create the grammar.  
- Uri baseUri = new Uri(@"file://c:\temp\");  
- Grammar citiesGrammar = new Grammar(document, null, baseUri);  
- citiesGrammar.Name = "SrgsDocument Cities Grammar 3";  
- 
- return citiesGrammar;  
+  // Create the SrgsDocument.  
+  SrgsDocument document = new SrgsDocument();  
+  
+  // Create the Main rule and add it to the document.  
+  SrgsRule mainRule = new SrgsRule("Main");  
+  mainRule.Scope = SrgsRuleScope.Public;  
+  
+  SrgsItem item = new SrgsItem("Can I get a shuttle in");  
+  
+  // Create a relative URI for the cities rule.  
+  Uri ruleUri = new Uri("cities.xml#Cities", UriKind.Relative);  
+  
+  item.Add(new SrgsRuleRef(ruleUri));  
+  
+  mainRule.Add(item);  
+  document.Rules.Add(mainRule);  
+  
+  // Set the root rule.  
+  document.Root = mainRule;  
+  
+  // Create the grammar.  
+  Uri baseUri = new Uri(@"file://c:\temp\");  
+  Grammar citiesGrammar = new Grammar(document, null, baseUri);  
+  citiesGrammar.Name = "SrgsDocument Cities Grammar 3";  
+  
+  return citiesGrammar;  
 }  
- 
+  
 ```  
  
 ```xml  
- 
+  
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-        xmlns="http://www.w3.org/2001/06/grammar"  
-        tag-format="semantics/1.0" root="Main">  
- 
- <!-- cities.xml:   
-   Defines an SRGS grammar for requesting a flight. This grammar includes  
-   a Cities rule that lists the cities that can be used for departures  
-   and destinations. -->  
- 
- <rule id="Main">  
-   <item>  
-     I would like to fly from <ruleref uri="#Cities"/>  
-     to <ruleref uri="#Cities"/>  
-   </item>  
- </rule>  
- 
- <rule id="Cities" scope="public">  
-   <one-of>  
-     <item>Seattle</item>  
-     <item>Los Angeles</item>  
-     <item>New York</item>  
-     <item>Miami</item>  
-   </one-of>  
- </rule>  
+         xmlns="http://www.w3.org/2001/06/grammar"  
+         tag-format="semantics/1.0" root="Main">  
+  
+  <!-- cities.xml:   
+    Defines an SRGS grammar for requesting a flight. This grammar includes  
+    a Cities rule that lists the cities that can be used for departures  
+    and destinations. -->  
+  
+  <rule id="Main">  
+    <item>  
+      I would like to fly from <ruleref uri="#Cities"/>  
+      to <ruleref uri="#Cities"/>  
+    </item>  
+  </rule>  
+  
+  <rule id="Cities" scope="public">  
+    <one-of>  
+      <item>Seattle</item>  
+      <item>Los Angeles</item>  
+      <item>New York</item>  
+      <item>Miami</item>  
+    </one-of>  
+  </rule>  
 </grammar>  
 ```  
  
@@ -1163,22 +1163,22 @@ An instance of <xref:System.Speech.Recognition.Grammar> may be enabled or disabl
 The following example writes information about a <xref:System.Speech.Recognition.Grammar> object to the [console](http://go.microsoft.com/fwlink/?LinkId=159613).  
  
 ```csharp  
- 
+  
 private static void DumpGrammarStatus(Grammar item)  
 {  
- Console.WriteLine("Grammar name is {0}:", item.Name);  
- Console.WriteLine("  The Grammar {0} loaded.",  
-   item.Loaded ? "is" : "is not");  
- Console.WriteLine("  The Grammar {0} enabled.",  
-   item.Enabled ? "is" : "is not");  
- if (item.RuleName != null)  
- {  
-   Console.WriteLine("  The root rule is {0}.", item.RuleName);  
- }  
- else  
- {  
-   Console.WriteLine("  The Grammar does not specify a root rule.");  
- }  
+  Console.WriteLine("Grammar name is {0}:", item.Name);  
+  Console.WriteLine("  The Grammar {0} loaded.",  
+    item.Loaded ? "is" : "is not");  
+  Console.WriteLine("  The Grammar {0} enabled.",  
+    item.Enabled ? "is" : "is not");  
+  if (item.RuleName != null)  
+  {  
+    Console.WriteLine("  The root rule is {0}.", item.RuleName);  
+  }  
+  else  
+  {  
+    Console.WriteLine("  The Grammar does not specify a root rule.");  
+  }  
 }  
 ```  
  
@@ -1245,22 +1245,22 @@ Once a <xref:System.Speech.Recognition.Grammar> has been loaded, the values of <
 The following example writes information about a <xref:System.Speech.Recognition.Grammar> object to the [console](http://go.microsoft.com/fwlink/?LinkId=159613).  
  
 ```csharp  
- 
+  
 private static void DumpGrammarStatus(Grammar item)  
 {  
- Console.WriteLine("Grammar name is {0}:", item.Name);  
- Console.WriteLine("  The Grammar {0} loaded.",  
-   item.Loaded ? "is" : "is not");  
- Console.WriteLine("  The Grammar {0} enabled.",  
-   item.Enabled ? "is" : "is not");  
- if (item.RuleName != null)  
- {  
-   Console.WriteLine("  The root rule is {0}.", item.RuleName);  
- }  
- else  
- {  
-   Console.WriteLine("  The Grammar does not specify a root rule.");  
- }  
+  Console.WriteLine("Grammar name is {0}:", item.Name);  
+  Console.WriteLine("  The Grammar {0} loaded.",  
+    item.Loaded ? "is" : "is not");  
+  Console.WriteLine("  The Grammar {0} enabled.",  
+    item.Enabled ? "is" : "is not");  
+  if (item.RuleName != null)  
+  {  
+    Console.WriteLine("  The root rule is {0}.", item.RuleName);  
+  }  
+  else  
+  {  
+    Console.WriteLine("  The Grammar does not specify a root rule.");  
+  }  
 }  
 ```  
  
@@ -1327,30 +1327,30 @@ Localized grammars obtained with `LoadLocalizedGrammarFromType` are typically st
 The following example creates two <xref:System.Speech.Recognition.Grammar> objects, one for digits and one for fractions. The Grammar objects are assigned names and relative weights and priorities, and loaded by an in-process speech recognizer. The `CreateDigitsGrammar`, `CreateFractionsGrammar`, and `recognizer_SpeechRecognized` methods are not shown here.  
  
 ```csharp  
- 
+  
 // Create a Grammar for recognizing numeric digits.  
 Grammar digitsGrammar = CreateDigitsGrammar();  
 digitsGrammar.Name = "Digits Grammar";  
 digitsGrammar.Priority = 2;  
 digitsGrammar.Weight = 0.6f;  
- 
+  
 // Create a Grammar for recognizing fractions.  
 Grammar fractionsGrammar = CreateFractionsGrammar();  
 fractionsGrammar.Name = "Fractions Grammar";  
 fractionsGrammar.Priority = 1;  
 fractionsGrammar.Weight = 1f;  
- 
+  
 // Create an in-process speech recognizer.  
 SpeechRecognitionEngine recognizer = new SpeechRecognitionEngine();  
- 
+  
 recognizer.SpeechRecognized +=  
- new EventHandler<SpeechRecognizedEventArgs>(  
-   recognizer_SpeechRecognized);  
- 
+  new EventHandler<SpeechRecognizedEventArgs>(  
+    recognizer_SpeechRecognized);  
+  
 // Load the digits and fractions Grammar objects.  
 recognizer.LoadGrammar(digitsGrammar);  
 recognizer.LoadGrammar(fractionsGrammar);  
- 
+  
 // Start recognition.  
 recognizer.SetInputToDefaultAudioDevice();  
 recognizer.RecognizeAsync(RecognizeMode.Multiple);  
@@ -1387,30 +1387,30 @@ The `Priority` property is used to select a grammar when more than one grammar w
 The following example creates two <xref:System.Speech.Recognition.Grammar> objects, one for digits and one for fractions. The <xref:System.Speech.Recognition.Grammar> objects are assigned names and relative weights and priorities, and loaded by an in-process speech recognizer. The `CreateDigitsGrammar`, `CreateFractionsGrammar`, and `recognizer_SpeechRecognized` methods are not shown here.  
  
 ```csharp  
- 
+  
 // Create a Grammar for recognizing numeric digits.  
 Grammar digitsGrammar = CreateDigitsGrammar();  
 digitsGrammar.Name = "Digits Grammar";  
 digitsGrammar.Priority = 2;  
 digitsGrammar.Weight = 0.6f;  
- 
+  
 // Create a Grammar for recognizing fractions.  
 Grammar fractionsGrammar = CreateFractionsGrammar();  
 fractionsGrammar.Name = "Fractions Grammar";  
 fractionsGrammar.Priority = 1;  
 fractionsGrammar.Weight = 1f;  
- 
+  
 // Create an in-process speech recognizer.  
 SpeechRecognitionEngine recognizer = new SpeechRecognitionEngine();  
- 
+  
 recognizer.SpeechRecognized +=  
- new EventHandler<SpeechRecognizedEventArgs>(  
-   recognizer_SpeechRecognized);  
- 
+  new EventHandler<SpeechRecognizedEventArgs>(  
+    recognizer_SpeechRecognized);  
+  
 // Load the digits and fractions Grammar objects.  
 recognizer.LoadGrammar(digitsGrammar);  
 recognizer.LoadGrammar(fractionsGrammar);  
- 
+  
 // Start recognition.  
 recognizer.SetInputToDefaultAudioDevice();  
 recognizer.RecognizeAsync(RecognizeMode.Multiple);  
@@ -1469,22 +1469,22 @@ The root rules of <xref:System.Speech.Recognition.Grammar> instances constructed
 The following example writes information about a <xref:System.Speech.Recognition.Grammar> object to the [console](http://go.microsoft.com/fwlink/?LinkId=159613).  
  
 ```csharp  
- 
+  
 private static void DumpGrammarStatus(Grammar item)  
 {  
- Console.WriteLine("Grammar name is {0}:", item.Name);  
- Console.WriteLine("  The Grammar {0} loaded.",  
-   item.Loaded ? "is" : "is not");  
- Console.WriteLine("  The Grammar {0} enabled.",  
-   item.Enabled ? "is" : "is not");  
- if (item.RuleName != null)  
- {  
-   Console.WriteLine("  The root rule is {0}.", item.RuleName);  
- }  
- else  
- {  
-   Console.WriteLine("  The Grammar does not specify a root rule.");  
- }  
+  Console.WriteLine("Grammar name is {0}:", item.Name);  
+  Console.WriteLine("  The Grammar {0} loaded.",  
+    item.Loaded ? "is" : "is not");  
+  Console.WriteLine("  The Grammar {0} enabled.",  
+    item.Enabled ? "is" : "is not");  
+  if (item.RuleName != null)  
+  {  
+    Console.WriteLine("  The root rule is {0}.", item.RuleName);  
+  }  
+  else  
+  {  
+    Console.WriteLine("  The Grammar does not specify a root rule.");  
+  }  
 }  
 ```  
  
@@ -1522,34 +1522,34 @@ The following example shows the use of an event handler for the <xref:System.Spe
 ```csharp  
 public partial class Form1 : Form  
 {  
- SpeechRecognitionEngine sre;  
- 
- public Form1()  
- {  
- InitializeComponent();  
- 
- // Create an in-process speech recognizer.  
- sre = new SpeechRecognitionEngine();  
- 
- // Configure input to the speech recognizer.  
- sre.SetInputToDefaultAudioDevice();  
- 
- // Create a simple grammar and load it.  
- Grammar testGrammar = new Grammar(new GrammarBuilder("testing"));  
- sre.LoadGrammarAsync(testGrammar);  
- 
- // Add a handler for the grammar's speech recognized event.  
- testGrammar.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(testGrammar_SpeechRecognized);  
- 
- // Start asynchronous speech recognition.  
- sre.RecognizeAsync();  
- }  
- 
- // Handle the grammar's SpeechRecognized event, output the recognized text.  
- void testGrammar_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
- {  
-   Console.WriteLine("Recognized text: " + e.Result.Text);  
- }  
+  SpeechRecognitionEngine sre;  
+  
+  public Form1()  
+  {  
+  InitializeComponent();  
+  
+  // Create an in-process speech recognizer.  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Configure input to the speech recognizer.  
+  sre.SetInputToDefaultAudioDevice();  
+  
+  // Create a simple grammar and load it.  
+  Grammar testGrammar = new Grammar(new GrammarBuilder("testing"));  
+  sre.LoadGrammarAsync(testGrammar);  
+  
+  // Add a handler for the grammar's speech recognized event.  
+  testGrammar.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(testGrammar_SpeechRecognized);  
+  
+  // Start asynchronous speech recognition.  
+  sre.RecognizeAsync();  
+  }  
+  
+  // Handle the grammar's SpeechRecognized event, output the recognized text.  
+  void testGrammar_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+  {  
+    Console.WriteLine("Recognized text: " + e.Result.Text);  
+  }  
 }  
 ```  
  
@@ -1623,30 +1623,30 @@ The effect of the <xref:System.Speech.Recognition.Grammar.Weight%2A> property on
 The following example creates two <xref:System.Speech.Recognition.Grammar> objects, one for digits and one for fractions. The <xref:System.Speech.Recognition.Grammar> objects are assigned names and relative weights and priorities, and loaded by an in-process speech recognizer. The `CreateDigitsGrammar`, `CreateFractionsGrammar`, and `recognizer_SpeechRecognized` methods are not shown here.  
  
 ```csharp  
- 
+  
 // Create a Grammar for recognizing numeric digits.  
 Grammar digitsGrammar = CreateDigitsGrammar();  
 digitsGrammar.Name = "Digits Grammar";  
 digitsGrammar.Priority = 2;  
 digitsGrammar.Weight = 0.6f;  
- 
+  
 // Create a Grammar for recognizing fractions.  
 Grammar fractionsGrammar = CreateFractionsGrammar();  
 fractionsGrammar.Name = "Fractions Grammar";  
 fractionsGrammar.Priority = 1;  
 fractionsGrammar.Weight = 1f;  
- 
+  
 // Create an in-process speech recognizer.  
 SpeechRecognitionEngine recognizer = new SpeechRecognitionEngine();  
- 
+  
 recognizer.SpeechRecognized +=  
- new EventHandler<SpeechRecognizedEventArgs>(  
-   recognizer_SpeechRecognized);  
- 
+  new EventHandler<SpeechRecognizedEventArgs>(  
+    recognizer_SpeechRecognized);  
+  
 // Load the digits and fractions Grammar objects.  
 recognizer.LoadGrammar(digitsGrammar);  
 recognizer.LoadGrammar(fractionsGrammar);  
- 
+  
 // Start recognition.  
 recognizer.SetInputToDefaultAudioDevice();  
 recognizer.RecognizeAsync(RecognizeMode.Multiple);  

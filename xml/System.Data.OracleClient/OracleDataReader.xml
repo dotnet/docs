@@ -30,11 +30,11 @@ Create the following Oracle package on the Oracle server.
  
 ```  
 CREATE OR REPLACE PACKAGE CURSPKG AS   
-  TYPE T_CURSOR IS REF CURSOR;   
-  PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-     IO_CURSOR IN OUT T_CURSOR);   
-  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-     DEPTCURSOR OUT T_CURSOR);  
+   TYPE T_CURSOR IS REF CURSOR;   
+   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+      IO_CURSOR IN OUT T_CURSOR);   
+   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+      DEPTCURSOR OUT T_CURSOR);  
 END CURSPKG;  
 /  
 ```  
@@ -42,38 +42,38 @@ END CURSPKG;
 Create the following Oracle package body on the Oracle server.  
  
 ```  
- 
+  
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
-   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-                              IO_CURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR T_CURSOR;   
-   BEGIN   
-       IF N_EMPNO <> 0 THEN   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO   
-                       AND EMP.EMPNO = N_EMPNO;   
-       ELSE   
-            OPEN V_CURSOR FOR   
-            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                 FROM EMP, DEPT   
-                 WHERE EMP.DEPTNO = DEPT.DEPTNO;   
-       END IF;   
-       IO_CURSOR := V_CURSOR;   
-   END OPEN_ONE_CURSOR;   
-   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-                               DEPTCURSOR OUT T_CURSOR)   
-   IS   
-       V_CURSOR1 T_CURSOR;   
-       V_CURSOR2 T_CURSOR;   
-   BEGIN   
-       OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
-       OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
-       EMPCURSOR  := V_CURSOR1;   
-       DEPTCURSOR := V_CURSOR2;   
-   END OPEN_TWO_CURSORS;   
+    PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+                               IO_CURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR T_CURSOR;   
+    BEGIN   
+        IF N_EMPNO <> 0 THEN   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO   
+                        AND EMP.EMPNO = N_EMPNO;   
+        ELSE   
+             OPEN V_CURSOR FOR   
+             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                  FROM EMP, DEPT   
+                  WHERE EMP.DEPTNO = DEPT.DEPTNO;   
+        END IF;   
+        IO_CURSOR := V_CURSOR;   
+    END OPEN_ONE_CURSOR;   
+    PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+                                DEPTCURSOR OUT T_CURSOR)   
+    IS   
+        V_CURSOR1 T_CURSOR;   
+        V_CURSOR2 T_CURSOR;   
+    BEGIN   
+        OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
+        OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
+        EMPCURSOR  := V_CURSOR1;   
+        DEPTCURSOR := V_CURSOR2;   
+    END OPEN_TWO_CURSORS;   
 END CURSPKG;  
 /  
 ```  
@@ -82,23 +82,23 @@ This Visual Basic example executes a PL/SQL stored procedure that returns a `REF
  
 ```vb  
 Private Sub ReadOracleData(ByVal connectionString As String)  
-  Dim connection As New OracleConnection(connectionString)  
-  Dim command As New OracleCommand()  
-  Dim reader As OracleDataReader  
- 
-  connection.Open()  
-  command.Connection = connection  
-  command.CommandText = "CURSPKG.OPEN_ONE_CURSOR"  
-  command.CommandType = CommandType.StoredProcedure  
-  command.Parameters.Add(New OracleParameter("N_EMPNO", OracleType.Number)).Value = 7369  
-  command.Parameters.Add(New OracleParameter("IO_CURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
- 
-  reader = command.ExecuteReader()  
-  While (reader.Read())  
-     ' Do something with the values.  
-  End While  
-  reader.Close()  
-  connection.Close()  
+   Dim connection As New OracleConnection(connectionString)  
+   Dim command As New OracleCommand()  
+   Dim reader As OracleDataReader  
+  
+   connection.Open()  
+   command.Connection = connection  
+   command.CommandText = "CURSPKG.OPEN_ONE_CURSOR"  
+   command.CommandType = CommandType.StoredProcedure  
+   command.Parameters.Add(New OracleParameter("N_EMPNO", OracleType.Number)).Value = 7369  
+   command.Parameters.Add(New OracleParameter("IO_CURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+  
+   reader = command.ExecuteReader()  
+   While (reader.Read())  
+      ' Do something with the values.  
+   End While  
+   reader.Close()  
+   connection.Close()  
 End Sub  
 ```  
  
@@ -106,29 +106,29 @@ This Visual Basic example executes a PL/SQL stored procedure that returns two `R
  
 ```vb  
 Private Sub ReadOracleData(ByVal connectionString As String)  
-  Dim dataSet As New DataSet()  
-  Dim connection As New OracleConnection(connectionString)  
-  Dim command As New OracleCommand()  
-  Dim reader As OracleDataReader  
- 
-  connection.Open()  
-  command.Connection = connection  
-  command.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
-  command.CommandType = CommandType.StoredProcedure  
-  command.Parameters.Add(New OracleParameter("EMPCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
-  command.Parameters.Add(New OracleParameter("DEPTCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
- 
-  reader = command.ExecuteReader(CommandBehavior.CloseConnection)  
-  While (reader.Read())  
-     ' Do something with the values.  
-  End While  
-  reader.NextResult()  
-  While (reader.Read())  
-       ' Do something with the values.  
-  End While  
-  reader.Close()  
-  connection.Close()  
-End Sub  
+   Dim dataSet As New DataSet()  
+   Dim connection As New OracleConnection(connectionString)  
+   Dim command As New OracleCommand()  
+   Dim reader As OracleDataReader  
+  
+   connection.Open()  
+   command.Connection = connection  
+   command.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
+   command.CommandType = CommandType.StoredProcedure  
+   command.Parameters.Add(New OracleParameter("EMPCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+   command.Parameters.Add(New OracleParameter("DEPTCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+  
+   reader = command.ExecuteReader(CommandBehavior.CloseConnection)  
+   While (reader.Read())  
+      ' Do something with the values.  
+   End While  
+   reader.NextResult()  
+   While (reader.Read())  
+        ' Do something with the values.  
+   End While  
+   reader.Close()  
+   connection.Close()  
+ End Sub  
 ```  
  
 This C# example creates an Oracle table and loads it with data. You must run this example prior to running the subsequent example, which demonstrates using an <xref:System.Data.OracleClient.OracleDataReader> to access the data using OracleType structures.  
@@ -136,24 +136,24 @@ This C# example creates an Oracle table and loads it with data. You must run thi
 ```csharp  
 public void Setup(string connectionString)  
 {  
-  OracleConnection connection = new OracleConnection(connectionString);  
-  try  
-  {  
-     connection.Open();  
-     OracleCommand command = connection.CreateCommand();  
-     command.CommandText ="CREATE TABLE OracleTypesTable (MyVarchar2 varchar2(3000),MyNumber number(28,4) PRIMARY KEY,MyDate date, MyRaw raw(255))";  
-     command.ExecuteNonQuery();  
-     command.CommandText ="INSERT INTO OracleTypesTable VALUES ('test', 2, to_date('2000-01-11 12:54:01','yyyy-mm-dd hh24:mi:ss'), '0001020304')";  
-     command.ExecuteNonQuery();  
-     command.CommandText="SELECT * FROM OracleTypesTable";  
-  }  
-  catch(Exception)  
-  {  
-  }  
-  finally  
-  {  
-     connection.Close();  
-  }  
+   OracleConnection connection = new OracleConnection(connectionString);  
+   try  
+   {  
+      connection.Open();  
+      OracleCommand command = connection.CreateCommand();  
+      command.CommandText ="CREATE TABLE OracleTypesTable (MyVarchar2 varchar2(3000),MyNumber number(28,4) PRIMARY KEY,MyDate date, MyRaw raw(255))";  
+      command.ExecuteNonQuery();  
+      command.CommandText ="INSERT INTO OracleTypesTable VALUES ('test', 2, to_date('2000-01-11 12:54:01','yyyy-mm-dd hh24:mi:ss'), '0001020304')";  
+      command.ExecuteNonQuery();  
+      command.CommandText="SELECT * FROM OracleTypesTable";  
+   }  
+   catch(Exception)  
+   {  
+   }  
+   finally  
+   {  
+      connection.Close();  
+   }  
 }  
 ```  
  
@@ -162,54 +162,54 @@ This C# example uses an <xref:System.Data.OracleClient.OracleDataReader> to acce
 ```csharp  
 public void ReadOracleTypesExample(string connectionString)  
 {  
-  OracleConnection connection = new OracleConnection(connectionString);  
-  connection.Open();  
-  OracleCommand command = connection.CreateCommand();  
-  try  
-  {  
-     command.CommandText = "SELECT * FROM OracleTypesTable";  
-     OracleDataReader reader = command.ExecuteReader();  
-     reader.Read();  
-     //Using the Oracle specific getters for each type is faster than  
-     //using GetOracleValue.  
-     //First column, MyVarchar2, is a VARCHAR2 data type in Oracle Server  
-     //and maps to OracleString.  
-     OracleString oraclestring1 = reader.GetOracleString(0);  
-     Console.WriteLine("OracleString " + oraclestring1.ToString());  
- 
-     //Second column, MyNumber, is a NUMBER data type in Oracle Server  
-     //and maps to OracleNumber.  
-     OracleNumber oraclenumber1 = reader.GetOracleNumber(1);  
-     Console.WriteLine("OracleNumber " + oraclenumber1.ToString());  
- 
-     //Third column, MyDate, is a DATA data type in Oracle Server  
-     //and maps to OracleDateTime.  
-     OracleDateTime oracledatetime1 = reader.GetOracleDateTime(2);  
-     Console.WriteLine("OracleDateTime " + oracledatetime1.ToString());  
- 
-     //Fourth column, MyRaw, is a RAW data type in Oracle Server and  
-     //maps to OracleBinary.  
-     OracleBinary oraclebinary1 = reader.GetOracleBinary(3);  
- 
-     //Calling value on a null OracleBinary throws  
-     //OracleNullValueException; therefore, check for a null value.  
-     if (oraclebinary1.IsNull==false)  
-     {  
-        foreach(byte b in oraclebinary1.Value)  
-        {  
-           Console.WriteLine("byte " + b.ToString());  
-        }  
-     }  
-     reader.Close();  
-  }  
-  catch(Exception e)  
-  {  
-     Console.WriteLine(e.ToString());  
-  }  
-  finally  
-  {  
-     connection.Close();  
-  }  
+   OracleConnection connection = new OracleConnection(connectionString);  
+   connection.Open();  
+   OracleCommand command = connection.CreateCommand();  
+   try  
+   {  
+      command.CommandText = "SELECT * FROM OracleTypesTable";  
+      OracleDataReader reader = command.ExecuteReader();  
+      reader.Read();  
+      //Using the Oracle specific getters for each type is faster than  
+      //using GetOracleValue.  
+      //First column, MyVarchar2, is a VARCHAR2 data type in Oracle Server  
+      //and maps to OracleString.  
+      OracleString oraclestring1 = reader.GetOracleString(0);  
+      Console.WriteLine("OracleString " + oraclestring1.ToString());  
+  
+      //Second column, MyNumber, is a NUMBER data type in Oracle Server  
+      //and maps to OracleNumber.  
+      OracleNumber oraclenumber1 = reader.GetOracleNumber(1);  
+      Console.WriteLine("OracleNumber " + oraclenumber1.ToString());  
+  
+      //Third column, MyDate, is a DATA data type in Oracle Server  
+      //and maps to OracleDateTime.  
+      OracleDateTime oracledatetime1 = reader.GetOracleDateTime(2);  
+      Console.WriteLine("OracleDateTime " + oracledatetime1.ToString());  
+  
+      //Fourth column, MyRaw, is a RAW data type in Oracle Server and  
+      //maps to OracleBinary.  
+      OracleBinary oraclebinary1 = reader.GetOracleBinary(3);  
+  
+      //Calling value on a null OracleBinary throws  
+      //OracleNullValueException; therefore, check for a null value.  
+      if (oraclebinary1.IsNull==false)  
+      {  
+         foreach(byte b in oraclebinary1.Value)  
+         {  
+            Console.WriteLine("byte " + b.ToString());  
+         }  
+      }  
+      reader.Close();  
+   }  
+   catch(Exception e)  
+   {  
+      Console.WriteLine(e.ToString());  
+   }  
+   finally  
+   {  
+      connection.Close();  
+   }  
 }  
 ```  
  
@@ -1146,23 +1146,23 @@ The following example demonstrates how to use the <xref:System.Data.OracleClient
  
 ```  
 Public Sub ReadOracleData(ByVal connectionString As String)  
- 
-   Dim queryString As String = "SELECT OrderID, CustomerID FROM Orders"  
-   Dim connection As New OracleConnection(connectionString)  
-   Dim command As New OracleCommand(queryString, connectionString)  
- 
-   connection.Open()  
- 
-   Dim reader As OracleDataReader = command.ExecuteReader()  
- 
-   Dim custIdCol As Integer = reader.GetOrdinal("CustomerID")  
- 
-   Do While reader.Read()  
-       Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol))  
-   Loop  
- 
-   reader.Close()  
-   connection.Close()  
+  
+    Dim queryString As String = "SELECT OrderID, CustomerID FROM Orders"  
+    Dim connection As New OracleConnection(connectionString)  
+    Dim command As New OracleCommand(queryString, connectionString)  
+  
+    connection.Open()  
+  
+    Dim reader As OracleDataReader = command.ExecuteReader()  
+  
+    Dim custIdCol As Integer = reader.GetOrdinal("CustomerID")  
+  
+    Do While reader.Read()  
+        Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol))  
+    Loop  
+  
+    reader.Close()  
+    connection.Close()  
 End Sub  
 ```  
  
@@ -1171,20 +1171,20 @@ End Sub
 ```  
 public void ReadOracleData(string connectionString)  
 {  
-   string queryString = "SELECT OrderID, CustomerID FROM Orders";  
-   OracleConnection connection = new OracleConnection(connectionString);  
-   OracleCommand command = new OracleCommand(queryString,connection);  
- 
-   connection.Open();  
-   OracleDataReader reader = command.ExecuteReader();  
- 
-   int custIdCol = reader.GetOrdinal("CustomerID");  
- 
-   while (reader.Read())  
-       Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol));  
- 
-   reader.Close();  
-   connection.Close();  
+    string queryString = "SELECT OrderID, CustomerID FROM Orders";  
+    OracleConnection connection = new OracleConnection(connectionString);  
+    OracleCommand command = new OracleCommand(queryString,connection);  
+  
+    connection.Open();  
+    OracleDataReader reader = command.ExecuteReader();  
+  
+    int custIdCol = reader.GetOrdinal("CustomerID");  
+  
+    while (reader.Read())  
+        Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol));  
+  
+    reader.Close();  
+    connection.Close();  
 }  
 ```  
  

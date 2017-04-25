@@ -25,33 +25,33 @@ The following example shows how to use the <xref:System.ServiceModel.Discovery.C
  
 ```  
 <configuration>  
-   <system.serviceModel>  
-     <services>  
-       <service name="Microsoft.Samples.Discovery.CalculatorService"  
-                behaviorConfiguration="calculatorServiceBehavior">  
-         <endpoint address=""  
-                   binding="wsHttpBinding"               contract="Microsoft.Samples.Discovery.ICalculatorService"  
-                   behaviorConfiguration="ep1Behavior" />  
-       </service>  
-     </services>  
-     <behaviors>  
-       <serviceBehaviors>  
-         <behavior name="calculatorServiceBehavior">  
-           <serviceDiscovery />  
-         </behavior>  
-       </serviceBehaviors>  
-       <endpointBehaviors>  
-         <behavior name="ep1Behavior">  
-           <endpointDiscovery enabled="true">  
-             <scopes>  
-               <add scope="http://www.example.org/engineering/calculator"/>  
-               <add scope="ldap:///ou=engineering,o=exampleorg,c=us"/>  
-             </scopes>  
-           </endpointDiscovery>  
-         </behavior>            
-       </endpointBehaviors>  
-     </behaviors>  
-         </system.serviceModel>  
+    <system.serviceModel>  
+      <services>  
+        <service name="Microsoft.Samples.Discovery.CalculatorService"  
+                 behaviorConfiguration="calculatorServiceBehavior">  
+          <endpoint address=""  
+                    binding="wsHttpBinding"               contract="Microsoft.Samples.Discovery.ICalculatorService"  
+                    behaviorConfiguration="ep1Behavior" />  
+        </service>  
+      </services>  
+      <behaviors>  
+        <serviceBehaviors>  
+          <behavior name="calculatorServiceBehavior">  
+            <serviceDiscovery />  
+          </behavior>  
+        </serviceBehaviors>  
+        <endpointBehaviors>  
+          <behavior name="ep1Behavior">  
+            <endpointDiscovery enabled="true">  
+              <scopes>  
+                <add scope="http://www.example.org/engineering/calculator"/>  
+                <add scope="ldap:///ou=engineering,o=exampleorg,c=us"/>  
+              </scopes>  
+            </endpointDiscovery>  
+          </behavior>            
+        </endpointBehaviors>  
+      </behaviors>  
+          </system.serviceModel>  
 </configuration>  
 ```  
  

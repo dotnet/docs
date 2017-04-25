@@ -967,9 +967,9 @@ In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], <xref:System.W
  
 ```  
 <object>  
- <object.DataContext>  
-   <dataContextObject />  
- </object.DataContext>  
+  <object.DataContext>  
+    <dataContextObject />  
+  </object.DataContext>  
 </object>  
 ```  
  
@@ -2231,9 +2231,9 @@ Elements that have margins set will not typically constrain the size of the spec
  
 ```  
 <object>  
- <object.Margin>  
-   <Thickness Left="left" Top="top" Right="right" Bottom="bottom"/>  
- </object.Margin>  
+  <object.Margin>  
+    <Thickness Left="left" Top="top" Right="right" Bottom="bottom"/>  
+  </object.Margin>  
 </object>  
 ```  
  
@@ -3535,9 +3535,9 @@ Notice that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] sy
  
 ```  
 <object>  
- <object.Resources>  
-   oneOrMoreResourceElements  
- </object.Resources>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
 </object>  
 ```  
  
@@ -4146,15 +4146,15 @@ If the value of this property is of type <xref:System.Windows.Controls.ToolTip>,
  
 ```  
 <object>  
- <object.ToolTip>  
-   <ToolTip .../>  
- </object.ToolTip>  
+  <object.ToolTip>  
+    <ToolTip .../>  
+  </object.ToolTip>  
 </object>  
 - or -  
 <object>  
- <object.ToolTip>  
-   toolTipObjectContent  
- </object.ToolTip>  
+  <object.ToolTip>  
+    toolTipObjectContent  
+  </object.ToolTip>  
 </object>  
 ```  
  
@@ -4373,9 +4373,9 @@ Note that the collection of triggers established on an element only supports <xr
  
 ```  
 <object>  
- <object.Triggers>  
-   oneOrMoreTriggers  
- </object.Triggers>  
+  <object.Triggers>  
+    oneOrMoreTriggers  
+  </object.Triggers>  
 </object>  
 ```  
  
@@ -4580,36 +4580,36 @@ When you use layout rounding and <xref:System.Windows.GridUnitType> sizing, the 
 The following example demonstrates the effect that the <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A> property has on a single pixel-width line. The line on the left does not use layout rounding and the line on the right uses layout rounding. If you slowly resize the window, you can see the difference that layout rounding makes.  
  
 ```xaml  
- 
+  
 <Page x:Class="LayoutRounding.Lines"  
-   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-   Title="Lines" Name="linesPage"  
-   >  
- <StackPanel Width="150"  Margin="7" Orientation="Horizontal">  
-   <!-- Single pixel line with layout rounding turned OFF.-->  
-   <Rectangle UseLayoutRounding="False"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    Title="Lines" Name="linesPage"  
+    >  
+  <StackPanel Width="150"  Margin="7" Orientation="Horizontal">  
+    <!-- Single pixel line with layout rounding turned OFF.-->  
+    <Rectangle UseLayoutRounding="False"  
+       Width="45.5" Margin="10" Height="1" Fill="Red"/>  
+    <!-- Single pixel line with layout rounding turned ON.-->  
+    <Rectangle UseLayoutRounding="True"  
       Width="45.5" Margin="10" Height="1" Fill="Red"/>  
-   <!-- Single pixel line with layout rounding turned ON.-->  
-   <Rectangle UseLayoutRounding="True"  
-     Width="45.5" Margin="10" Height="1" Fill="Red"/>  
- </StackPanel>  
- <!-- Background Grid -->  
- <Page.Background>  
-   <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">  
-     <DrawingBrush.Drawing>  
-       <DrawingGroup>  
-         <GeometryDrawing Brush="White">  
-           <GeometryDrawing.Geometry>  
-             <RectangleGeometry Rect="0,0,1,1" />  
-           </GeometryDrawing.Geometry>  
-         </GeometryDrawing>  
-         <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />  
-         <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />  
-       </DrawingGroup>  
-     </DrawingBrush.Drawing>  
-   </DrawingBrush>  
- </Page.Background>  
+  </StackPanel>  
+  <!-- Background Grid -->  
+  <Page.Background>  
+    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">  
+      <DrawingBrush.Drawing>  
+        <DrawingGroup>  
+          <GeometryDrawing Brush="White">  
+            <GeometryDrawing.Geometry>  
+              <RectangleGeometry Rect="0,0,1,1" />  
+            </GeometryDrawing.Geometry>  
+          </GeometryDrawing>  
+          <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />  
+          <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />  
+        </DrawingGroup>  
+      </DrawingBrush.Drawing>  
+    </DrawingBrush>  
+  </Page.Background>  
 </Page>  
 ```  
  

@@ -37,14 +37,14 @@ You can apply this attribute to parameters, fields, properties, or return values
 In the following type library,  `OLE_COLOR` is an alias for `int`. During import, the arguments of the `Color` accessor are marked with the <xref:System.Runtime.InteropServices.ComAliasNameAttribute> to indicate that type library refers to them as `OLE_COLOR`.  
  
 ```  
- 
+  
 typedef int OLE_COLOR;    
- 
+  
 interface Baz {  
-HRESULT SetColor([in] OLE_COLOR cl);  
-HRESULT GetColor([out, retval] OLE_COLOR *cl);  
+ HRESULT SetColor([in] OLE_COLOR cl);  
+ HRESULT GetColor([out, retval] OLE_COLOR *cl);  
 }  
- 
+  
 ```  
  
 is imported as:  

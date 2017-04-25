@@ -288,14 +288,14 @@ The purpose of the <xref:System.Security.Cryptography.HMACSHA512.ProduceLegacyHm
  
 ```  
 public static void Test()  
-   {  
-   HMACSHA512 hmac = new HMACSHA512();  
-   hmac.ProduceLegacyHmacValues = true;  
-   hmac.Key = // ...Get the HMAC key.  
-   // ...  
-   // Use the HMAC algorithm.  
-   // ...  
-   }  
+    {  
+    HMACSHA512 hmac = new HMACSHA512();  
+    hmac.ProduceLegacyHmacValues = true;  
+    hmac.Key = // ...Get the HMAC key.  
+    // ...  
+    // Use the HMAC algorithm.  
+    // ...  
+    }  
 ```  
  
  ]]></format>

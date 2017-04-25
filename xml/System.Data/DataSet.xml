@@ -1052,10 +1052,10 @@ Before you compile and run the sample, you need to create four XML files in the 
  
 ```  
 <MySchool>  
- <Course CourseID="C1045" Year="2012"  Title="Calculus" Credits="4" DepartmentID="7">New</Course>  
- <Course CourseID="C1061" Year="2012"  Title="Physics" Credits="4" DepartmentID="1" />  
- <Department DepartmentID="1" Name="Engineering" Budget="350000" StartDate="2007-09-01T00:00:00+08:00" Administrator="2" />  
- <Department DepartmentID="7" Name="Mathematics" Budget="250024" StartDate="2007-09-01T00:00:00+08:00" Administrator="3">Cancelled</Department>  
+  <Course CourseID="C1045" Year="2012"  Title="Calculus" Credits="4" DepartmentID="7">New</Course>  
+  <Course CourseID="C1061" Year="2012"  Title="Physics" Credits="4" DepartmentID="1" />  
+  <Department DepartmentID="1" Name="Engineering" Budget="350000" StartDate="2007-09-01T00:00:00+08:00" Administrator="2" />  
+  <Department DepartmentID="7" Name="Mathematics" Budget="250024" StartDate="2007-09-01T00:00:00+08:00" Administrator="3">Cancelled</Department>  
 </MySchool>  
 ```  
  
@@ -1063,62 +1063,62 @@ Next, create ElementsWithChildElementsxml.xml:
  
 ```  
 <MySchool>  
- <Course>  
-   <CourseID>C1045</CourseID>  
-   <Year>2012</Year>  
-   <Title>Calculus</Title>  
-   <Credits>4</Credits>  
-   <DepartmentID>7</DepartmentID>  
- </Course>  
- <Course>  
-   <CourseID>C1061</CourseID>  
-   <Year>2012</Year>  
-   <Title>Physics</Title>  
-   <Credits>4</Credits>  
-   <DepartmentID>1</DepartmentID>  
- </Course>  
- <Course>  
-   <CourseID>C2021</CourseID>  
-   <Year>2012</Year>  
-   <Title>Composition</Title>  
-   <Credits>3</Credits>  
-   <DepartmentID>2</DepartmentID>  
- </Course>  
- <Course>  
-   <CourseID>C2042</CourseID>  
-   <Year>2012</Year>  
-   <Title>Literature</Title>  
-   <Credits>4</Credits>  
-   <DepartmentID>2</DepartmentID>  
- </Course>  
- <Department>  
-   <DepartmentID>1</DepartmentID>  
-   <Name>Engineering</Name>  
-   <Budget>350000</Budget>  
-   <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
-   <Administrator>2</Administrator>  
- </Department>  
- <Department>  
-   <DepartmentID>2</DepartmentID>  
-   <Name>English</Name>  
-   <Budget>120000</Budget>  
-   <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
-   <Administrator>6</Administrator>  
- </Department>  
- <Department>  
-   <DepartmentID>4</DepartmentID>  
-   <Name>Economics</Name>  
-   <Budget>200000</Budget>  
-   <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
-   <Administrator>4</Administrator>  
- </Department>  
- <Department>  
-   <DepartmentID>7</DepartmentID>  
-   <Name>Mathematics</Name>  
-   <Budget>250024</Budget>  
-   <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
-   <Administrator>3</Administrator>  
- </Department>  
+  <Course>  
+    <CourseID>C1045</CourseID>  
+    <Year>2012</Year>  
+    <Title>Calculus</Title>  
+    <Credits>4</Credits>  
+    <DepartmentID>7</DepartmentID>  
+  </Course>  
+  <Course>  
+    <CourseID>C1061</CourseID>  
+    <Year>2012</Year>  
+    <Title>Physics</Title>  
+    <Credits>4</Credits>  
+    <DepartmentID>1</DepartmentID>  
+  </Course>  
+  <Course>  
+    <CourseID>C2021</CourseID>  
+    <Year>2012</Year>  
+    <Title>Composition</Title>  
+    <Credits>3</Credits>  
+    <DepartmentID>2</DepartmentID>  
+  </Course>  
+  <Course>  
+    <CourseID>C2042</CourseID>  
+    <Year>2012</Year>  
+    <Title>Literature</Title>  
+    <Credits>4</Credits>  
+    <DepartmentID>2</DepartmentID>  
+  </Course>  
+  <Department>  
+    <DepartmentID>1</DepartmentID>  
+    <Name>Engineering</Name>  
+    <Budget>350000</Budget>  
+    <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
+    <Administrator>2</Administrator>  
+  </Department>  
+  <Department>  
+    <DepartmentID>2</DepartmentID>  
+    <Name>English</Name>  
+    <Budget>120000</Budget>  
+    <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
+    <Administrator>6</Administrator>  
+  </Department>  
+  <Department>  
+    <DepartmentID>4</DepartmentID>  
+    <Name>Economics</Name>  
+    <Budget>200000</Budget>  
+    <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
+    <Administrator>4</Administrator>  
+  </Department>  
+  <Department>  
+    <DepartmentID>7</DepartmentID>  
+    <Name>Mathematics</Name>  
+    <Budget>250024</Budget>  
+    <StartDate>2007-09-01T00:00:00+08:00</StartDate>  
+    <Administrator>3</Administrator>  
+  </Department>  
 </MySchool>  
 ```  
  
@@ -1126,10 +1126,10 @@ Now create ElementsWithOnlyAttributes.xml:
  
 ```  
 <MySchool>  
- <Course CourseID="C1045" Year="2012"  Title="Calculus" Credits="4" DepartmentID="7" />  
- <Course CourseID="C1061" Year="2012"  Title="Physics" Credits="4" DepartmentID="1" />  
- <Department DepartmentID="1" Name="Engineering" Budget="350000" StartDate="2007-09-01T00:00:00+08:00" Administrator="2" />  
- <Department DepartmentID="7" Name="Mathematics" Budget="250024" StartDate="2007-09-01T00:00:00+08:00" Administrator="3" />  
+  <Course CourseID="C1045" Year="2012"  Title="Calculus" Credits="4" DepartmentID="7" />  
+  <Course CourseID="C1061" Year="2012"  Title="Physics" Credits="4" DepartmentID="1" />  
+  <Department DepartmentID="1" Name="Engineering" Budget="350000" StartDate="2007-09-01T00:00:00+08:00" Administrator="2" />  
+  <Department DepartmentID="7" Name="Mathematics" Budget="250024" StartDate="2007-09-01T00:00:00+08:00" Administrator="3" />  
 </MySchool>  
 ```  
  
@@ -1137,10 +1137,10 @@ And finally, create RepeatingElements.xml:
  
 ```  
 <MySchool>  
- <Course>C1045</Course>  
- <Course>C1061</Course>  
- <Department>Engineering</Department>   
- <Department>Mathematics</Department>  
+  <Course>C1045</Course>  
+  <Course>C1061</Course>  
+  <Department>Engineering</Department>   
+  <Department>Mathematics</Department>  
 </MySchool>  
 ```  
  
@@ -1152,218 +1152,218 @@ using System.Data;
 using System.IO;  
 using System.Text;  
 using System.Xml;  
- 
+  
 // Use WriteXml method to export the dataset.  
 static class DataTableHelper {  
-  public static void WriteDataSetToXML(DataSet dataset, String xmlFileName) {  
-     using (FileStream fsWriterStream = new FileStream(xmlFileName, FileMode.Create)) {  
-        using (XmlTextWriter xmlWriter = new XmlTextWriter(fsWriterStream, Encoding.Unicode)) {  
-           dataset.WriteXml(xmlWriter, XmlWriteMode.WriteSchema);  
-           Console.WriteLine("Write {0} to the File {1}.", dataset.DataSetName, xmlFileName);  
-           Console.WriteLine();  
-        }  
-     }  
-  }  
- 
-  // Use GetXml method to get the XML data of the dataset and then export to the file.  
-  public static void GetXMLFromDataSet(DataSet dataset, String xmlFileName) {  
-     using (StreamWriter writer = new StreamWriter(xmlFileName)) {  
-        writer.WriteLine(dataset.GetXml());  
-        Console.WriteLine("Get Xml data from {0} and write to the File {1}.", dataset.DataSetName, xmlFileName);  
-        Console.WriteLine();  
-     }  
-  }  
- 
-  // Use ReadXml method to import the dataset from the dataset.  
-  public static void ReadXmlIntoDataSet(DataSet newDataSet, String xmlFileName) {  
-     using (FileStream fsReaderStream = new FileStream(xmlFileName, FileMode.Open)) {  
-        using (XmlTextReader xmlReader = new XmlTextReader(fsReaderStream)) {  
-           newDataSet.ReadXml(xmlReader, XmlReadMode.ReadSchema);  
-        }  
-     }  
-  }  
- 
-  // Display the columns and value of DataSet.  
-  public static void ShowDataSet(DataSet dataset) {  
-     foreach (DataTable table in dataset.Tables) {  
-        Console.WriteLine("Table {0}:", table.TableName);  
-        ShowDataTable(table);  
-     }  
-  }  
- 
-  // Display the columns and value of DataTable.  
-  private static void ShowDataTable(DataTable table) {  
-     foreach (DataColumn col in table.Columns) {  
-        Console.Write("{0,-14}", col.ColumnName);  
-     }  
-     Console.WriteLine("{0,-14}", "");  
- 
-     foreach (DataRow row in table.Rows) {  
-        if (row.RowState == DataRowState.Deleted) {  
-           foreach (DataColumn col in table.Columns) {  
-              if (col.DataType.Equals(typeof(DateTime))) {  
-                 Console.Write("{0,-14:d}", row[col, DataRowVersion.Original]);  
-              }  
-              else if (col.DataType.Equals(typeof(Decimal))) {  
-                 Console.Write("{0,-14:C}", row[col, DataRowVersion.Original]);  
-              }  
-              else {  
-                 Console.Write("{0,-14}", row[col, DataRowVersion.Original]);  
-              }  
-           }  
-        }  
-        else {  
-           foreach (DataColumn col in table.Columns) {  
-              if (col.DataType.Equals(typeof(DateTime))) {  
-                 Console.Write("{0,-14:d}", row[col]);  
-              }  
-              else if (col.DataType.Equals(typeof(Decimal))) {  
-                 Console.Write("{0,-14:C}", row[col]);  
-              }  
-              else {  
-                 Console.Write("{0,-14}", row[col]);  
-              }  
-           }  
-        }  
-        Console.WriteLine("{0,-14}", "");  
-     }  
-  }  
- 
-  // Display the columns of DataSet.  
-  public static void ShowDataSetSchema(DataSet dataSet) {  
-     Console.WriteLine("{0} contains the following tables:", dataSet.DataSetName);  
-     foreach (DataTable table in dataSet.Tables) {  
-        Console.WriteLine("   Table {0} contains the following columns:", table.TableName);  
-        ShowDataTableSchema(table);  
-     }  
-  }  
- 
-  // Display the columns of DataTable  
-  private static void ShowDataTableSchema(DataTable table) {  
-     String columnString = "";  
-     foreach (DataColumn col in table.Columns) {  
-        columnString += col.ColumnName + "   ";  
-     }  
-     Console.WriteLine(columnString);  
-  }  
+   public static void WriteDataSetToXML(DataSet dataset, String xmlFileName) {  
+      using (FileStream fsWriterStream = new FileStream(xmlFileName, FileMode.Create)) {  
+         using (XmlTextWriter xmlWriter = new XmlTextWriter(fsWriterStream, Encoding.Unicode)) {  
+            dataset.WriteXml(xmlWriter, XmlWriteMode.WriteSchema);  
+            Console.WriteLine("Write {0} to the File {1}.", dataset.DataSetName, xmlFileName);  
+            Console.WriteLine();  
+         }  
+      }  
+   }  
+  
+   // Use GetXml method to get the XML data of the dataset and then export to the file.  
+   public static void GetXMLFromDataSet(DataSet dataset, String xmlFileName) {  
+      using (StreamWriter writer = new StreamWriter(xmlFileName)) {  
+         writer.WriteLine(dataset.GetXml());  
+         Console.WriteLine("Get Xml data from {0} and write to the File {1}.", dataset.DataSetName, xmlFileName);  
+         Console.WriteLine();  
+      }  
+   }  
+  
+   // Use ReadXml method to import the dataset from the dataset.  
+   public static void ReadXmlIntoDataSet(DataSet newDataSet, String xmlFileName) {  
+      using (FileStream fsReaderStream = new FileStream(xmlFileName, FileMode.Open)) {  
+         using (XmlTextReader xmlReader = new XmlTextReader(fsReaderStream)) {  
+            newDataSet.ReadXml(xmlReader, XmlReadMode.ReadSchema);  
+         }  
+      }  
+   }  
+  
+   // Display the columns and value of DataSet.  
+   public static void ShowDataSet(DataSet dataset) {  
+      foreach (DataTable table in dataset.Tables) {  
+         Console.WriteLine("Table {0}:", table.TableName);  
+         ShowDataTable(table);  
+      }  
+   }  
+  
+   // Display the columns and value of DataTable.  
+   private static void ShowDataTable(DataTable table) {  
+      foreach (DataColumn col in table.Columns) {  
+         Console.Write("{0,-14}", col.ColumnName);  
+      }  
+      Console.WriteLine("{0,-14}", "");  
+  
+      foreach (DataRow row in table.Rows) {  
+         if (row.RowState == DataRowState.Deleted) {  
+            foreach (DataColumn col in table.Columns) {  
+               if (col.DataType.Equals(typeof(DateTime))) {  
+                  Console.Write("{0,-14:d}", row[col, DataRowVersion.Original]);  
+               }  
+               else if (col.DataType.Equals(typeof(Decimal))) {  
+                  Console.Write("{0,-14:C}", row[col, DataRowVersion.Original]);  
+               }  
+               else {  
+                  Console.Write("{0,-14}", row[col, DataRowVersion.Original]);  
+               }  
+            }  
+         }  
+         else {  
+            foreach (DataColumn col in table.Columns) {  
+               if (col.DataType.Equals(typeof(DateTime))) {  
+                  Console.Write("{0,-14:d}", row[col]);  
+               }  
+               else if (col.DataType.Equals(typeof(Decimal))) {  
+                  Console.Write("{0,-14:C}", row[col]);  
+               }  
+               else {  
+                  Console.Write("{0,-14}", row[col]);  
+               }  
+            }  
+         }  
+         Console.WriteLine("{0,-14}", "");  
+      }  
+   }  
+  
+   // Display the columns of DataSet.  
+   public static void ShowDataSetSchema(DataSet dataSet) {  
+      Console.WriteLine("{0} contains the following tables:", dataSet.DataSetName);  
+      foreach (DataTable table in dataSet.Tables) {  
+         Console.WriteLine("   Table {0} contains the following columns:", table.TableName);  
+         ShowDataTableSchema(table);  
+      }  
+   }  
+  
+   // Display the columns of DataTable  
+   private static void ShowDataTableSchema(DataTable table) {  
+      String columnString = "";  
+      foreach (DataColumn col in table.Columns) {  
+         columnString += col.ColumnName + "   ";  
+      }  
+      Console.WriteLine(columnString);  
+   }  
 }  
- 
+  
 class Program {  
-  static void Main(string[] args) {  
-     // Create the DataSet  
-     DataSet school = new DataSet("MySchool");  
-     DataTable course = CreateCourse();  
-     DataTable department = CreateDepartment();  
-     school.Tables.Add(course);  
-     school.Tables.Add(department);  
- 
-     // Define the constraint between the tables.  
-     ForeignKeyConstraint courseDepartFK = new ForeignKeyConstraint("CourseDepartFK", department.Columns["DepartmentID"], course.Columns["DepartmentID"]);  
-     courseDepartFK.DeleteRule = Rule.Cascade;  
-     courseDepartFK.UpdateRule = Rule.Cascade;  
-     courseDepartFK.AcceptRejectRule = AcceptRejectRule.None;  
-     course.Constraints.Add(courseDepartFK);  
- 
-     InsertDepartments(department);  
-     InsertCourses(course);  
- 
-     // Export the dataset to the XML file.  
-     Console.WriteLine("Data of the whole DataSet {0}", school.DataSetName);  
-     DataTableHelper.ShowDataSet(school);  
- 
-     String xmlWithSchemaFileName = "WriterXMLWithSchema.xml";  
-     String xmlGetDataFileName = "GetXML.xml";  
- 
-     // Use two ways to export the dataset to the Xml file.  
-     DataTableHelper.WriteDataSetToXML(school, xmlWithSchemaFileName);  
-     DataTableHelper.GetXMLFromDataSet(school, xmlGetDataFileName);  
- 
-     // Import the dataset from the XML file.  
-     // Use two ways to import the dataset from the Xml file.  
-     Console.WriteLine("Read Xml document into a new DataSet:");  
-     DataSet newSchool = new DataSet("NewSchool");  
-     DataTableHelper.ReadXmlIntoDataSet(newSchool, xmlWithSchemaFileName);  
-     DataTableHelper.ShowDataSetSchema(newSchool);  
-     Console.WriteLine();  
- 
-     Console.WriteLine("Infer a schema for a DataSet from an XML document:");  
-     InferDataSetSchemaFromXml();  
- 
-     Console.WriteLine("Press any key to exit.");  
-     Console.ReadKey();  
-  }  
- 
-  static DataTable CreateCourse() {  
-     DataTable course = new DataTable("Course");  
-     DataColumn[] cols ={  
-                             new DataColumn("CourseID",typeof(String)),  
-                             new DataColumn("Year",typeof(Int32)),  
-                             new DataColumn("Title",typeof(String)),  
-                             new DataColumn("Credits",typeof(Int32)),  
-                             new DataColumn("DepartmentID",typeof(Int32))};  
-     course.Columns.AddRange(cols);  
- 
-     course.PrimaryKey = new DataColumn[] { course.Columns["CourseID"], course.Columns["Year"] };  
- 
-     return course;  
-  }  
- 
-  static DataTable CreateDepartment() {  
-     DataTable department = new DataTable("Department");  
-     DataColumn[] cols = {   
-                               new DataColumn("DepartmentID", typeof(Int32)),  
-                               new DataColumn("Name",typeof(String)),  
-                               new DataColumn("Budget",typeof(Decimal)),  
-                               new DataColumn("StartDate",typeof(DateTime)),  
-                               new DataColumn("Administrator",typeof(Int32))};  
-     department.Columns.AddRange(cols);  
- 
-     department.PrimaryKey = new DataColumn[] { department.Columns["DepartmentID"] };  
- 
-     return department;  
-  }  
- 
-  static void InsertDepartments(DataTable department) {  
-     Object[] rows = {   
-                           new Object[]{1,"Engineering",350000.00,new DateTime(2007,9,1),2},  
-                           new Object[]{2,"English",120000.00,new DateTime(2007,9,1),6},  
-                           new Object[]{4,"Economics",200000.00,new DateTime(2007,9,1),4},  
-                           new Object[]{7,"Mathematics",250024.00,new DateTime(2007,9,1),3}};  
- 
-     foreach (Object[] row in rows) {  
-        department.Rows.Add(row);  
-     }  
-  }  
- 
-  static void InsertCourses(DataTable course) {  
-     Object[] rows ={  
-                              new Object[]{"C1045",2012,"Calculus",4,7},  
-                              new Object[]{"C1061",2012,"Physics",4,1},  
-                              new Object[]{"C2021",2012,"Composition",3,2},  
-                              new Object[]{"C2042",2012,"Literature",4,2}};  
- 
-     foreach (Object[] row in rows) {  
-        course.Rows.Add(row);  
-     }  
-  }  
- 
-  // Display the results of inferring schema from four types of XML structures  
-  private static void InferDataSetSchemaFromXml() {  
-     String[] xmlFileNames = {   
- 
-                                   @"ElementsWithOnlyAttributes.xml",   
-                                   @"ElementsWithAttributes.xml",  
-                                   @"RepeatingElements.xml",   
-                                   @"ElementsWithChildElements.xml" };  
- 
-     foreach (String xmlFileName in xmlFileNames) {  
-        Console.WriteLine("Result of {0}", Path.GetFileNameWithoutExtension(xmlFileName));  
-        DataSet newSchool = new DataSet();  
-        newSchool.InferXmlSchema(xmlFileName, null);  
-        DataTableHelper.ShowDataSetSchema(newSchool);  
-        Console.WriteLine();  
-     }  
-  }  
+   static void Main(string[] args) {  
+      // Create the DataSet  
+      DataSet school = new DataSet("MySchool");  
+      DataTable course = CreateCourse();  
+      DataTable department = CreateDepartment();  
+      school.Tables.Add(course);  
+      school.Tables.Add(department);  
+  
+      // Define the constraint between the tables.  
+      ForeignKeyConstraint courseDepartFK = new ForeignKeyConstraint("CourseDepartFK", department.Columns["DepartmentID"], course.Columns["DepartmentID"]);  
+      courseDepartFK.DeleteRule = Rule.Cascade;  
+      courseDepartFK.UpdateRule = Rule.Cascade;  
+      courseDepartFK.AcceptRejectRule = AcceptRejectRule.None;  
+      course.Constraints.Add(courseDepartFK);  
+  
+      InsertDepartments(department);  
+      InsertCourses(course);  
+  
+      // Export the dataset to the XML file.  
+      Console.WriteLine("Data of the whole DataSet {0}", school.DataSetName);  
+      DataTableHelper.ShowDataSet(school);  
+  
+      String xmlWithSchemaFileName = "WriterXMLWithSchema.xml";  
+      String xmlGetDataFileName = "GetXML.xml";  
+  
+      // Use two ways to export the dataset to the Xml file.  
+      DataTableHelper.WriteDataSetToXML(school, xmlWithSchemaFileName);  
+      DataTableHelper.GetXMLFromDataSet(school, xmlGetDataFileName);  
+  
+      // Import the dataset from the XML file.  
+      // Use two ways to import the dataset from the Xml file.  
+      Console.WriteLine("Read Xml document into a new DataSet:");  
+      DataSet newSchool = new DataSet("NewSchool");  
+      DataTableHelper.ReadXmlIntoDataSet(newSchool, xmlWithSchemaFileName);  
+      DataTableHelper.ShowDataSetSchema(newSchool);  
+      Console.WriteLine();  
+  
+      Console.WriteLine("Infer a schema for a DataSet from an XML document:");  
+      InferDataSetSchemaFromXml();  
+  
+      Console.WriteLine("Press any key to exit.");  
+      Console.ReadKey();  
+   }  
+  
+   static DataTable CreateCourse() {  
+      DataTable course = new DataTable("Course");  
+      DataColumn[] cols ={  
+                              new DataColumn("CourseID",typeof(String)),  
+                              new DataColumn("Year",typeof(Int32)),  
+                              new DataColumn("Title",typeof(String)),  
+                              new DataColumn("Credits",typeof(Int32)),  
+                              new DataColumn("DepartmentID",typeof(Int32))};  
+      course.Columns.AddRange(cols);  
+  
+      course.PrimaryKey = new DataColumn[] { course.Columns["CourseID"], course.Columns["Year"] };  
+  
+      return course;  
+   }  
+  
+   static DataTable CreateDepartment() {  
+      DataTable department = new DataTable("Department");  
+      DataColumn[] cols = {   
+                                new DataColumn("DepartmentID", typeof(Int32)),  
+                                new DataColumn("Name",typeof(String)),  
+                                new DataColumn("Budget",typeof(Decimal)),  
+                                new DataColumn("StartDate",typeof(DateTime)),  
+                                new DataColumn("Administrator",typeof(Int32))};  
+      department.Columns.AddRange(cols);  
+  
+      department.PrimaryKey = new DataColumn[] { department.Columns["DepartmentID"] };  
+  
+      return department;  
+   }  
+  
+   static void InsertDepartments(DataTable department) {  
+      Object[] rows = {   
+                            new Object[]{1,"Engineering",350000.00,new DateTime(2007,9,1),2},  
+                            new Object[]{2,"English",120000.00,new DateTime(2007,9,1),6},  
+                            new Object[]{4,"Economics",200000.00,new DateTime(2007,9,1),4},  
+                            new Object[]{7,"Mathematics",250024.00,new DateTime(2007,9,1),3}};  
+  
+      foreach (Object[] row in rows) {  
+         department.Rows.Add(row);  
+      }  
+   }  
+  
+   static void InsertCourses(DataTable course) {  
+      Object[] rows ={  
+                               new Object[]{"C1045",2012,"Calculus",4,7},  
+                               new Object[]{"C1061",2012,"Physics",4,1},  
+                               new Object[]{"C2021",2012,"Composition",3,2},  
+                               new Object[]{"C2042",2012,"Literature",4,2}};  
+  
+      foreach (Object[] row in rows) {  
+         course.Rows.Add(row);  
+      }  
+   }  
+  
+   // Display the results of inferring schema from four types of XML structures  
+   private static void InferDataSetSchemaFromXml() {  
+      String[] xmlFileNames = {   
+  
+                                    @"ElementsWithOnlyAttributes.xml",   
+                                    @"ElementsWithAttributes.xml",  
+                                    @"RepeatingElements.xml",   
+                                    @"ElementsWithChildElements.xml" };  
+  
+      foreach (String xmlFileName in xmlFileNames) {  
+         Console.WriteLine("Result of {0}", Path.GetFileNameWithoutExtension(xmlFileName));  
+         DataSet newSchool = new DataSet();  
+         newSchool.InferXmlSchema(xmlFileName, null);  
+         DataTableHelper.ShowDataSetSchema(newSchool);  
+         Console.WriteLine();  
+      }  
+   }  
 }  
 ```  
  
@@ -2692,11 +2692,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes `targetNamespace`, d
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -2761,11 +2761,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes `targetNamespace`, d
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -2832,11 +2832,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes a `targetNamespace`,
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -2904,11 +2904,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes a `targetNamespace`,
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -2980,11 +2980,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes `targetNamespace`, d
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -3043,11 +3043,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes `targetNamespace`, d
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -3106,11 +3106,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes a `targetNamespace`,
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  
@@ -3172,11 +3172,11 @@ If the XML Schema for a <xref:System.Data.DataSet> includes a `targetNamespace`,
  
 ```  
 <xsd:schema id="MyDataSet"   
-  elementFormDefault="qualified"   
-  targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns="http://www.tempuri.org/MyDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+   elementFormDefault="qualified"   
+   targetNamespace="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns="http://www.tempuri.org/MyDataSet.xsd"   
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  
  

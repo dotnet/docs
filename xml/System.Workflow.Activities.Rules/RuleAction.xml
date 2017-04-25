@@ -40,83 +40,83 @@ using System.Collections.Generic;
 using System.Text;  
 using System.Workflow.Activities.Rules;  
 using System.Workflow.ComponentModel.Compiler;  
- 
+  
 namespace LogRuleAction  
 {  
-   public class Log : RuleAction  
-   {  
-       CodeExpression message;  
- 
-       public CodeExpression Message  
-       {  
-           get { return message; }  
-           set { message = value; }  
-       }  
- 
-       public Log()  
-       {  
-           // constructor required for deserialization  
-       }  
- 
-       public Log(CodeExpression expression)  
-       {  
-           // constructor required by parser  
-           message = expression;  
-       }  
- 
-       public override bool Validate(RuleValidation validator)  
-       {  
-           ValidationError error;  
-           if (message == null)  
-           {  
-               error = new ValidationError("Message cannot be null", 123);  
-               validator.Errors.Add(error);  
-               return false;  
-           }  
-           else  
-           {  
-               RuleExpressionInfo result = RuleExpressionWalker.Validate(validator, message, false);  
-               if ((result == null) || (result.ExpressionType != typeof(string)))  
-               {  
-                   error = new ValidationError("Message must return string result", 123);  
-                   validator.Errors.Add(error);  
-                   return false;  
-               }  
-           }  
-           return (validator.Errors.Count == 0);  
-       }  
- 
-       public override RuleAction Clone()  
-       {  
-           Log result = new Log();  
-           result.Message = RuleExpressionWalker.Clone(message);  
-           return result;  
-       }  
- 
-       public override void Execute(RuleExecution context)  
-       {  
-           RuleExpressionResult result = RuleExpressionWalker.Evaluate(context, message);  
-           if (result != null)  
-               Console.WriteLine(result.Value);  
-       }  
- 
-       public override ICollection<string> GetSideEffects(RuleValidation validation)  
-       {  
-           RuleAnalysis analysis = new RuleAnalysis(validation, true);  
-           if (message != null)  
-               RuleExpressionWalker.AnalyzeUsage(analysis, message, true, false, null);  
-           return analysis.GetSymbols();  
-       }  
- 
-       public override string ToString()  
-       {  
-           // what should be displayed by the parser  
-           StringBuilder result = new StringBuilder("Log(");  
-           RuleExpressionWalker.Decompile(result, message, null);  
-           result.Append(")");  
-           return result.ToString();  
-       }  
-   }  
+    public class Log : RuleAction  
+    {  
+        CodeExpression message;  
+  
+        public CodeExpression Message  
+        {  
+            get { return message; }  
+            set { message = value; }  
+        }  
+  
+        public Log()  
+        {  
+            // constructor required for deserialization  
+        }  
+  
+        public Log(CodeExpression expression)  
+        {  
+            // constructor required by parser  
+            message = expression;  
+        }  
+  
+        public override bool Validate(RuleValidation validator)  
+        {  
+            ValidationError error;  
+            if (message == null)  
+            {  
+                error = new ValidationError("Message cannot be null", 123);  
+                validator.Errors.Add(error);  
+                return false;  
+            }  
+            else  
+            {  
+                RuleExpressionInfo result = RuleExpressionWalker.Validate(validator, message, false);  
+                if ((result == null) || (result.ExpressionType != typeof(string)))  
+                {  
+                    error = new ValidationError("Message must return string result", 123);  
+                    validator.Errors.Add(error);  
+                    return false;  
+                }  
+            }  
+            return (validator.Errors.Count == 0);  
+        }  
+  
+        public override RuleAction Clone()  
+        {  
+            Log result = new Log();  
+            result.Message = RuleExpressionWalker.Clone(message);  
+            return result;  
+        }  
+  
+        public override void Execute(RuleExecution context)  
+        {  
+            RuleExpressionResult result = RuleExpressionWalker.Evaluate(context, message);  
+            if (result != null)  
+                Console.WriteLine(result.Value);  
+        }  
+  
+        public override ICollection<string> GetSideEffects(RuleValidation validation)  
+        {  
+            RuleAnalysis analysis = new RuleAnalysis(validation, true);  
+            if (message != null)  
+                RuleExpressionWalker.AnalyzeUsage(analysis, message, true, false, null);  
+            return analysis.GetSymbols();  
+        }  
+  
+        public override string ToString()  
+        {  
+            // what should be displayed by the parser  
+            StringBuilder result = new StringBuilder("Log(");  
+            RuleExpressionWalker.Decompile(result, message, null);  
+            result.Append(")");  
+            return result.ToString();  
+        }  
+    }  
 }  
 ```  
  

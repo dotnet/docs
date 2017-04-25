@@ -44,20 +44,20 @@ The following code shows how to imperatively use the <xref:System.ServiceModel.C
  
 ```  
 <bindings>  
- <customBinding>  
-   <binding name="Binding1">  
-     <reliableSession acknowledgementInterval="00:00:00.2000000" enableFlowControl="true"  
-                       maxTransferWindowSize="32" inactivityTimeout="00:10:00" maxPendingChannels="128"  
-                       maxRetryCount="8" ordered="true" />  
-     <security mode="None"/>  
-     <httpTransport authenticationScheme="Anonymous" bypassProxyOnLocal="false"  
-                   hostNameComparisonMode="StrongWildcard"   
-                   proxyAuthenticationScheme="Anonymous" realm=""   
-                   useDefaultWebProxy="true" />  
-   </binding>  
- </customBinding>  
+  <customBinding>  
+    <binding name="Binding1">  
+      <reliableSession acknowledgementInterval="00:00:00.2000000" enableFlowControl="true"  
+                        maxTransferWindowSize="32" inactivityTimeout="00:10:00" maxPendingChannels="128"  
+                        maxRetryCount="8" ordered="true" />  
+      <security mode="None"/>  
+      <httpTransport authenticationScheme="Anonymous" bypassProxyOnLocal="false"  
+                    hostNameComparisonMode="StrongWildcard"   
+                    proxyAuthenticationScheme="Anonymous" realm=""   
+                    useDefaultWebProxy="true" />  
+    </binding>  
+  </customBinding>  
 </bindings>  
- 
+  
 ```  
  
  ]]></format>
@@ -112,9 +112,9 @@ The following example shows how to use the copy constructor in a derived class.
 ```  
 public class MyBindingElement : HttpTransportBindingElement  
 {  
-   public MyBindingElement(MyBindingElement elementToBeCloned) : base(elementToBeCloned)  
-   {  
-   }  
+    public MyBindingElement(MyBindingElement elementToBeCloned) : base(elementToBeCloned)  
+    {  
+    }  
 }  
 ```  
  
@@ -160,7 +160,7 @@ The following example sets this property to indicate that all cookies from the s
 ```  
 HttpTransportBindingElement httpBindingElement = new HttpBindingElement();  
 httpBindingElement.AllowCookies = true;  
- 
+  
 ```  
  
  ]]></format>
@@ -205,23 +205,23 @@ The following example sets this property to use when authenticating client reque
 [ServiceContract]  
 interface ICalculator  
 {  
-    [OperationContract]  
-           Int Add(int a, int b);  
+     [OperationContract]  
+            Int Add(int a, int b);  
 }  
- 
+  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.AuthenticationScheme = AuthenticationSchemes.Digest;  
 CustomBinding binding = new CustomBinding(new TextMessageEncodingBindingElement(), httpBinding);  
- 
+  
 EndpointAddress endpoint = new EndpointAddress(address);  
 ChannelFactory<ICalculator> proxy = new ChannelFactory<ICalculator>(binding, endpoint);  
- 
+  
 proxy.Credentials.Windows.ClientCredential = new NetworkCredential("user", "password", "domain");  
 proxy.Credentials.Windows.AllowedImpersonationLevel = System.Security.Principal.TokenImpersonationLevel.Impersonation;  
 proxy.Open();  
- 
+  
 ICalculator calc = proxy.CreateChannel();  
- 
+  
 int odd=calc.Add(5,4);  
 ```  
  

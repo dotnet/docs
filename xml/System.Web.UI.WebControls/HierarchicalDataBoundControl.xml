@@ -46,14 +46,14 @@ The geneology.xml file accessed in the code example contains the following data.
  
 ```  
 <family>  
- <member title="great-grandfather">  
-   <member title="grandfather" >  
-     <member title="child" />  
-     <member title="father" >  
-        <member title="son" />  
-     </member>  
-   </member>  
- </member>  
+  <member title="great-grandfather">  
+    <member title="grandfather" >  
+      <member title="child" />  
+      <member title="father" >  
+         <member title="son" />  
+      </member>  
+    </member>  
+  </member>  
 </family>  
 ```  
  

@@ -79,13 +79,13 @@ First you must create the sample database, by executing the following script:
 ```  
 USE [master]  
 GO  
- 
+  
 CREATE DATABASE [MySchool]  
 GO  
- 
+  
 USE [MySchool]  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -95,9 +95,9 @@ as
 select c.CourseID,c.Title,c.Credits,d.Name as DepartmentName  
 from Course as c left outer join Department as d on c.DepartmentID=d.DepartmentID  
 where c.CourseID=@CourseId  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -107,13 +107,13 @@ as
 select @CourseCount=Count(c.CourseID)  
 from course as c  
 where c.DepartmentID=@DepartmentId  
- 
+  
 select d.DepartmentID,d.Name,d.Budget,d.StartDate,d.Administrator  
 from Department as d  
 where d.DepartmentID=@DepartmentId  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -122,21 +122,21 @@ Create PROCEDURE [dbo].[GetDepartmentsOfSpecifiedYear]
 @Year int,@BudgetSum money output  
 AS  
 BEGIN  
-       SELECT @BudgetSum=SUM([Budget])  
- FROM [MySchool].[dbo].[Department]  
- Where YEAR([StartDate])=@Year   
- 
+        SELECT @BudgetSum=SUM([Budget])  
+  FROM [MySchool].[dbo].[Department]  
+  Where YEAR([StartDate])=@Year   
+  
 SELECT [DepartmentID]  
-     ,[Name]  
-     ,[Budget]  
-     ,[StartDate]  
-     ,[Administrator]  
- FROM [MySchool].[dbo].[Department]  
- Where YEAR([StartDate])=@Year  
- 
+      ,[Name]  
+      ,[Budget]  
+      ,[StartDate]  
+      ,[Administrator]  
+  FROM [MySchool].[dbo].[Department]  
+  Where YEAR([StartDate])=@Year  
+  
 END  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -146,14 +146,14 @@ CREATE TABLE [dbo].[Course]([CourseID] [nvarchar](10) NOT NULL,
 [Title] [nvarchar](100) NOT NULL,  
 [Credits] [int] NOT NULL,  
 [DepartmentID] [int] NOT NULL,  
-CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED   
 (  
 [CourseID] ASC,  
 [Year] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -163,13 +163,13 @@ CREATE TABLE [dbo].[Department]([DepartmentID] [int] IDENTITY(1,1) NOT NULL,
 [Budget] [money] NOT NULL,  
 [StartDate] [datetime] NOT NULL,  
 [Administrator] [int] NULL,  
-CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED   
 (  
 [DepartmentID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -179,13 +179,13 @@ CREATE TABLE [dbo].[Person]([PersonID] [int] IDENTITY(1,1) NOT NULL,
 [FirstName] [nvarchar](50) NOT NULL,  
 [HireDate] [datetime] NULL,  
 [EnrollmentDate] [datetime] NULL,  
-CONSTRAINT [PK_School.Student] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_School.Student] PRIMARY KEY CLUSTERED   
 (  
 [PersonID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -194,13 +194,13 @@ CREATE TABLE [dbo].[StudentGrade]([EnrollmentID] [int] IDENTITY(1,1) NOT NULL,
 [CourseID] [nvarchar](10) NOT NULL,  
 [StudentID] [int] NOT NULL,  
 [Grade] [decimal](3, 2) NOT NULL,  
-CONSTRAINT [PK_StudentGrade] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_StudentGrade] PRIMARY KEY CLUSTERED   
 (  
 [EnrollmentID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
- 
+  
 GO  
- 
+  
 SET ANSI_NULLS ON  
 GO  
 SET QUOTED_IDENTIFIER ON  
@@ -210,21 +210,21 @@ as
 select c.CourseID,c.Title,c.Credits,c.DepartmentID  
 from Course as c join Department as d on c.DepartmentID=d.DepartmentID  
 where d.Name=N'English'  
- 
+  
 GO  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C1045', 2012, N'Calculus', 4, 7)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C1061', 2012, N'Physics', 4, 1)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C2021', 2012, N'Composition', 3, 2)  
 INSERT [dbo].[Course] ([CourseID], [Year], [Title], [Credits], [DepartmentID]) VALUES (N'C2042', 2012, N'Literature', 4, 2)  
 SET IDENTITY_INSERT [dbo].[Department] ON   
- 
+  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (1, N'Engineering', 350000.0000, CAST(0x0000999C00000000 AS DateTime), 2)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (2, N'English', 120000.0000, CAST(0x0000999C00000000 AS DateTime), 6)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (4, N'Economics', 200000.0000, CAST(0x0000999C00000000 AS DateTime), 4)  
 INSERT [dbo].[Department] ([DepartmentID], [Name], [Budget], [StartDate], [Administrator]) VALUES (7, N'Mathematics', 250024.0000, CAST(0x0000999C00000000 AS DateTime), 3)  
 SET IDENTITY_INSERT [dbo].[Department] OFF  
 SET IDENTITY_INSERT [dbo].[Person] ON   
- 
+  
 INSERT [dbo].[Person] ([PersonID], [LastName], [FirstName], [HireDate], [EnrollmentDate]) VALUES (1, N'Hu', N'Nan', NULL, CAST(0x0000A0BF00000000 AS DateTime))  
 INSERT [dbo].[Person] ([PersonID], [LastName], [FirstName], [HireDate], [EnrollmentDate]) VALUES (2, N'Norman', N'Laura', NULL, CAST(0x0000A0BF00000000 AS DateTime))  
 INSERT [dbo].[Person] ([PersonID], [LastName], [FirstName], [HireDate], [EnrollmentDate]) VALUES (3, N'Olivotto', N'Nino', NULL, CAST(0x0000A0BF00000000 AS DateTime))  
@@ -234,7 +234,7 @@ INSERT [dbo].[Person] ([PersonID], [LastName], [FirstName], [HireDate], [Enrollm
 INSERT [dbo].[Person] ([PersonID], [LastName], [FirstName], [HireDate], [EnrollmentDate]) VALUES (7, N'Martin', N'Randall', CAST(0x00008B1A00000000 AS DateTime), NULL)  
 SET IDENTITY_INSERT [dbo].[Person] OFF  
 SET IDENTITY_INSERT [dbo].[StudentGrade] ON   
- 
+  
 INSERT [dbo].[StudentGrade] ([EnrollmentID], [CourseID], [StudentID], [Grade]) VALUES (1, N'C1045', 1, CAST(3.50 AS Decimal(3, 2)))  
 INSERT [dbo].[StudentGrade] ([EnrollmentID], [CourseID], [StudentID], [Grade]) VALUES (2, N'C1045', 2, CAST(3.00 AS Decimal(3, 2)))  
 INSERT [dbo].[StudentGrade] ([EnrollmentID], [CourseID], [StudentID], [Grade]) VALUES (3, N'C1045', 3, CAST(2.50 AS Decimal(3, 2)))  
@@ -272,123 +272,123 @@ using System;
 using System.Data;  
 using System.Data.SqlClient;  
 using System.Threading.Tasks;  
- 
+  
 class Program {  
- 
-  static class SqlHelper {  
-     // Set the connection, command, and then execute the command with non query.  
-     public static Int32 ExecuteNonQuery(String connectionString, String commandText,  
-         CommandType commandType, params SqlParameter[] parameters) {  
-        using (SqlConnection conn = new SqlConnection(connectionString)) {  
-           using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
-              // There're three command types: StoredProcedure, Text, TableDirect. The TableDirect   
-              // type is only for OLE DB.    
-              cmd.CommandType = commandType;  
-              cmd.Parameters.AddRange(parameters);  
- 
-              conn.Open();  
-              return cmd.ExecuteNonQuery();  
-           }  
-        }  
-     }  
- 
-     // Set the connection, command, and then execute the command and only return one value.  
-     public static Object ExecuteScalar(String connectionString, String commandText,  
-         CommandType commandType, params SqlParameter[] parameters) {  
-        using (SqlConnection conn = new SqlConnection(connectionString)) {  
-           using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
-              cmd.CommandType = commandType;  
-              cmd.Parameters.AddRange(parameters);  
- 
-              conn.Open();  
-              return cmd.ExecuteScalar();  
-           }  
-        }  
-     }  
- 
-     // Set the connection, command, and then execute the command with query and return the reader.  
-     public static SqlDataReader ExecuteReader(String connectionString, String commandText,  
-         CommandType commandType, params SqlParameter[] parameters) {  
-        SqlConnection conn = new SqlConnection(connectionString);  
- 
-        using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
-           cmd.CommandType = commandType;  
-           cmd.Parameters.AddRange(parameters);  
- 
-           conn.Open();  
-           // When using CommandBehavior.CloseConnection, the connection will be closed when the   
-           // IDataReader is closed.  
-           SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);  
- 
-           return reader;  
-        }  
-     }  
-  }  
- 
-  static void Main(string[] args) {  
-     String connectionString = "Data Source=(local);Initial Catalog=MySchool;Integrated Security=True;Asynchronous Processing=true;";  
- 
-     CountCourses(connectionString, 2012);  
-     Console.WriteLine();  
- 
-     Console.WriteLine("Following result is the departments that started from 2007:");  
-     GetDepartments(connectionString, 2007);  
-     Console.WriteLine();  
- 
-     Console.WriteLine("Add the credits when the credits of course is lower than 4.");  
-     AddCredits(connectionString, 4);  
-     Console.WriteLine();  
- 
-     Console.WriteLine("Please press any key to exit...");  
-     Console.ReadKey();  
-  }  
- 
-  static void CountCourses(String connectionString, Int32 year) {  
-     String commandText = "Select Count([CourseID]) FROM [MySchool].[dbo].[Course] Where Year=@Year";  
-     SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);  
-     parameterYear.Value = year;  
- 
-     Object oValue = SqlHelper.ExecuteScalar(connectionString, commandText, CommandType.Text, parameterYear);  
-     Int32 count;  
-     if (Int32.TryParse(oValue.ToString(), out count))  
-        Console.WriteLine("There {0} {1} course{2} in {3}.", count > 1 ? "are" : "is", count, count > 1 ? "s" : null, year);  
-  }  
- 
-  // Display the Departments that start from the specified year.  
-  static void GetDepartments(String connectionString, Int32 year) {  
-     String commandText = "dbo.GetDepartmentsOfSpecifiedYear";  
- 
-     // Specify the year of StartDate  
-     SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);  
-     parameterYear.Value = year;  
- 
-     // When the direction of parameter is set as Output, you can get the value after   
-     // executing the command.  
-     SqlParameter parameterBudget = new SqlParameter("@BudgetSum", SqlDbType.Money);  
-     parameterBudget.Direction = ParameterDirection.Output;  
- 
-     using (SqlDataReader reader = SqlHelper.ExecuteReader(connectionString, commandText,  
-         CommandType.StoredProcedure, parameterYear, parameterBudget)) {  
-        Console.WriteLine("{0,-20}{1,-20}{2,-20}{3,-20}", "Name", "Budget", "StartDate",  
-            "Administrator");  
-        while (reader.Read()) {  
-           Console.WriteLine("{0,-20}{1,-20:C}{2,-20:d}{3,-20}", reader["Name"],  
-               reader["Budget"], reader["StartDate"], reader["Administrator"]);  
-        }  
-     }  
-     Console.WriteLine("{0,-20}{1,-20:C}", "Sum:", parameterBudget.Value);  
-  }  
- 
-  // If credits of course is lower than the certain value, the method will add the credits.  
-  static void AddCredits(String connectionString, Int32 creditsLow) {  
-     String commandText = "Update [MySchool].[dbo].[Course] Set Credits=Credits+1 Where Credits<@Credits";  
- 
-     SqlParameter parameterCredits = new SqlParameter("@Credits", creditsLow);  
- 
-     Int32 rows = SqlHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameterCredits);  
- 
-     Console.WriteLine("{0} row{1} {2} updated.", rows, rows > 1 ? "s" : null, rows > 1 ? "are" : "is");  
-  }  
+  
+   static class SqlHelper {  
+      // Set the connection, command, and then execute the command with non query.  
+      public static Int32 ExecuteNonQuery(String connectionString, String commandText,  
+          CommandType commandType, params SqlParameter[] parameters) {  
+         using (SqlConnection conn = new SqlConnection(connectionString)) {  
+            using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
+               // There're three command types: StoredProcedure, Text, TableDirect. The TableDirect   
+               // type is only for OLE DB.    
+               cmd.CommandType = commandType;  
+               cmd.Parameters.AddRange(parameters);  
+  
+               conn.Open();  
+               return cmd.ExecuteNonQuery();  
+            }  
+         }  
+      }  
+  
+      // Set the connection, command, and then execute the command and only return one value.  
+      public static Object ExecuteScalar(String connectionString, String commandText,  
+          CommandType commandType, params SqlParameter[] parameters) {  
+         using (SqlConnection conn = new SqlConnection(connectionString)) {  
+            using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
+               cmd.CommandType = commandType;  
+               cmd.Parameters.AddRange(parameters);  
+  
+               conn.Open();  
+               return cmd.ExecuteScalar();  
+            }  
+         }  
+      }  
+  
+      // Set the connection, command, and then execute the command with query and return the reader.  
+      public static SqlDataReader ExecuteReader(String connectionString, String commandText,  
+          CommandType commandType, params SqlParameter[] parameters) {  
+         SqlConnection conn = new SqlConnection(connectionString);  
+  
+         using (SqlCommand cmd = new SqlCommand(commandText, conn)) {  
+            cmd.CommandType = commandType;  
+            cmd.Parameters.AddRange(parameters);  
+  
+            conn.Open();  
+            // When using CommandBehavior.CloseConnection, the connection will be closed when the   
+            // IDataReader is closed.  
+            SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);  
+  
+            return reader;  
+         }  
+      }  
+   }  
+  
+   static void Main(string[] args) {  
+      String connectionString = "Data Source=(local);Initial Catalog=MySchool;Integrated Security=True;Asynchronous Processing=true;";  
+  
+      CountCourses(connectionString, 2012);  
+      Console.WriteLine();  
+  
+      Console.WriteLine("Following result is the departments that started from 2007:");  
+      GetDepartments(connectionString, 2007);  
+      Console.WriteLine();  
+  
+      Console.WriteLine("Add the credits when the credits of course is lower than 4.");  
+      AddCredits(connectionString, 4);  
+      Console.WriteLine();  
+  
+      Console.WriteLine("Please press any key to exit...");  
+      Console.ReadKey();  
+   }  
+  
+   static void CountCourses(String connectionString, Int32 year) {  
+      String commandText = "Select Count([CourseID]) FROM [MySchool].[dbo].[Course] Where Year=@Year";  
+      SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);  
+      parameterYear.Value = year;  
+  
+      Object oValue = SqlHelper.ExecuteScalar(connectionString, commandText, CommandType.Text, parameterYear);  
+      Int32 count;  
+      if (Int32.TryParse(oValue.ToString(), out count))  
+         Console.WriteLine("There {0} {1} course{2} in {3}.", count > 1 ? "are" : "is", count, count > 1 ? "s" : null, year);  
+   }  
+  
+   // Display the Departments that start from the specified year.  
+   static void GetDepartments(String connectionString, Int32 year) {  
+      String commandText = "dbo.GetDepartmentsOfSpecifiedYear";  
+  
+      // Specify the year of StartDate  
+      SqlParameter parameterYear = new SqlParameter("@Year", SqlDbType.Int);  
+      parameterYear.Value = year;  
+  
+      // When the direction of parameter is set as Output, you can get the value after   
+      // executing the command.  
+      SqlParameter parameterBudget = new SqlParameter("@BudgetSum", SqlDbType.Money);  
+      parameterBudget.Direction = ParameterDirection.Output;  
+  
+      using (SqlDataReader reader = SqlHelper.ExecuteReader(connectionString, commandText,  
+          CommandType.StoredProcedure, parameterYear, parameterBudget)) {  
+         Console.WriteLine("{0,-20}{1,-20}{2,-20}{3,-20}", "Name", "Budget", "StartDate",  
+             "Administrator");  
+         while (reader.Read()) {  
+            Console.WriteLine("{0,-20}{1,-20:C}{2,-20:d}{3,-20}", reader["Name"],  
+                reader["Budget"], reader["StartDate"], reader["Administrator"]);  
+         }  
+      }  
+      Console.WriteLine("{0,-20}{1,-20:C}", "Sum:", parameterBudget.Value);  
+   }  
+  
+   // If credits of course is lower than the certain value, the method will add the credits.  
+   static void AddCredits(String connectionString, Int32 creditsLow) {  
+      String commandText = "Update [MySchool].[dbo].[Course] Set Credits=Credits+1 Where Credits<@Credits";  
+  
+      SqlParameter parameterCredits = new SqlParameter("@Credits", creditsLow);  
+  
+      Int32 rows = SqlHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameterCredits);  
+  
+      Console.WriteLine("{0} row{1} {2} updated.", rows, rows > 1 ? "s" : null, rows > 1 ? "are" : "is");  
+   }  
 }  
 ```  
  
@@ -1330,25 +1330,25 @@ using System;
 using System.Data.SqlClient;  
 ///   
 public class A {  
-  ///   
-  public static void Main() {  
-     string connectionString = "";  
-     // Wait for 5 second delay in the command  
-     string queryString = "waitfor delay '00:00:05'";  
-     using (SqlConnection connection = new SqlConnection(connectionString)) {  
-        connection.Open();  
-        SqlCommand command = new SqlCommand(queryString, connection);  
-        // Setting command timeout to 1 second  
-        command.CommandTimeout = 1;  
-        try {  
-           command.ExecuteNonQuery();  
-        }  
-        catch (SqlException e) {  
-           Console.WriteLine("Got expected SqlException due to command timeout ");  
-           Console.WriteLine(e);  
-        }  
-     }  
-  }  
+   ///   
+   public static void Main() {  
+      string connectionString = "";  
+      // Wait for 5 second delay in the command  
+      string queryString = "waitfor delay '00:00:05'";  
+      using (SqlConnection connection = new SqlConnection(connectionString)) {  
+         connection.Open();  
+         SqlCommand command = new SqlCommand(queryString, connection);  
+         // Setting command timeout to 1 second  
+         command.CommandTimeout = 1;  
+         try {  
+            command.ExecuteNonQuery();  
+         }  
+         catch (SqlException e) {  
+            Console.WriteLine("Got expected SqlException due to command timeout ");  
+            Console.WriteLine(e);  
+         }  
+      }  
+   }  
 }  
 ```  
  

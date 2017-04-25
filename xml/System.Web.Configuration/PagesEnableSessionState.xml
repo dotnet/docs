@@ -24,9 +24,9 @@ The following configuration file excerpt shows how to declaratively use values o
  
 ```  
 <system.web>  
- <pages enableSessionState="true" />  
+  <pages enableSessionState="true" />  
 </system.web>  
- 
+  
 ```  
  
 The following code example shows how to use the <xref:System.Web.Configuration.PagesEnableSessionState> enumeration with the <xref:System.Web.Configuration.PagesSection> type.  

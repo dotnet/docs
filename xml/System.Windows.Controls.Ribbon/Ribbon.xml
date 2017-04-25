@@ -152,10 +152,10 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         </ribbon:RibbonApplicationMenu>  
     </ribbon:Ribbon.ApplicationMenu>  
     <ribbon:RibbonTab>  
-       <!-- Ribbon content goes here. -->  
+        <!-- Ribbon content goes here. -->  
     </ribbon:RibbonTab>  
 </ribbon:Ribbon >  
- 
+  
 ```  
  
  ]]></format>
@@ -394,13 +394,13 @@ The following example shows a <xref:System.Windows.Controls.Ribbon.RibbonTab> na
 ```xaml  
 </ribbon:Ribbon>  
     <ribbon:RibbonTab Name="Pens" Header="Pens" ContextualTabGroupHeader="Ink Tools" >  
-   <!-- Ribbon Tab Content -->  
+    <!-- Ribbon Tab Content -->  
     </ribbon:RibbonTab>  
     <ribbon:Ribbon.ContextualTabGroups>  
         <ribbon:RibbonContextualTabGroup Header="Ink Tools" Visibility="Visible" Background="Green" />  
     </ribbon:Ribbon.ContextualTabGroups>  
 </ribbon:Ribbon>  
- 
+  
 ```  
  
  ]]></format>

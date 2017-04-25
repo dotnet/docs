@@ -51,7 +51,7 @@ The following example collects all unknown attributes into an array of <xref:Sys
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
 GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>  
- <GroupName>MyGroup</GroupName>  
+  <GroupName>MyGroup</GroupName>  
 </Group>  
 ```  
  
@@ -93,7 +93,7 @@ The following example constructs an <xref:System.Xml.Serialization.XmlAnyAttribu
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>  
- <GroupName>MyGroup</GroupName>  
+  <GroupName>MyGroup</GroupName>  
 </Group>  
 ```  
  

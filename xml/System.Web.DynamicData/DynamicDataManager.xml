@@ -241,19 +241,19 @@ The following example shows markup from a Dynamic Data page template that uses t
  
 ```  
 <asp:DynamicDataManager ID="DDM1" runat="server">  
- <DataControls>  
-   <asp:DataControlReference ControlID="FormView1" />  
- </DataControls>  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
 </asp:DynamicDataManager>  
- 
+  
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
- <ContentTemplate>  
- 
-   <asp:FormView runat="server" ID="FormView1" DataSourceID="DDS">  
-       <!-- Items omitted for clarity. -->  
-   </asp:FormView>  
- 
- </ContentTemplate>  
+  <ContentTemplate>  
+  
+    <asp:FormView runat="server" ID="FormView1" DataSourceID="DDS">  
+        <!-- Items omitted for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
 </asp:UpdatePanel>  
 ```  
  

@@ -33,14 +33,14 @@ To set the event type at which to begin tracing, edit the configuration file tha
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <sharedListeners>  
-     <add name="Console" type="System.Diagnostics.ConsoleTraceListener">  
-       <filter type="System.Diagnostics.EventTypeFilter"   
-         initializeData="Warning" />  
-     </add>  
-   </sharedListeners>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <sharedListeners>  
+      <add name="Console" type="System.Diagnostics.ConsoleTraceListener">  
+        <filter type="System.Diagnostics.EventTypeFilter"   
+          initializeData="Warning" />  
+      </add>  
+    </sharedListeners>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

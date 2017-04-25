@@ -38,33 +38,33 @@ The following example shows how to limit the number of characters in a field. Th
 ```vb  
 <MetadataType(GetType(ProductMetadata))> _   
 Public Partial Class Product   
- 
+  
 End Class   
- 
+  
 Public Class ProductMetadata   
- 
-   <ScaffoldColumn(True)> _   
-   <StringLength(4, ErrorMessage := "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")> _   
-   Public ThumbnailPhotoFileName As Object   
- 
+  
+    <ScaffoldColumn(True)> _   
+    <StringLength(4, ErrorMessage := "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")> _   
+    Public ThumbnailPhotoFileName As Object   
+  
 End Class  
- 
+  
 ```  
  
 ```csharp  
 [MetadataType(typeof(ProductMetadata))]  
 public partial class Product  
 {  
- 
+  
 }  
- 
+  
 public class ProductMetadata  
 {  
- 
-   [ScaffoldColumn(true)]  
-   [StringLength(4, ErrorMessage = "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")]  
-   public object ThumbnailPhotoFileName;  
- 
+  
+    [ScaffoldColumn(true)]  
+    [StringLength(4, ErrorMessage = "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")]  
+    public object ThumbnailPhotoFileName;  
+  
 }  
 ```  
  

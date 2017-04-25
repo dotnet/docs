@@ -38,10 +38,10 @@ Only applies when the managed signature of a method takes an object.
  
 ```  
 int MyMethod(Object o); //Managed signature  
-   HRESULT MyMethod(VARIANT o); //COM signature  
-   MyObject o = new MyObject();  
-   MyMethod(o); //o gets passed as VARIANT VT_DISPATCH  
-   MyMethod(new UnknownWrapper(o)); //o gets passed as VARIANT VT_UNKNOWN  
+    HRESULT MyMethod(VARIANT o); //COM signature  
+    MyObject o = new MyObject();  
+    MyMethod(o); //o gets passed as VARIANT VT_DISPATCH  
+    MyMethod(new UnknownWrapper(o)); //o gets passed as VARIANT VT_UNKNOWN  
 ```  
  
  ]]></format>

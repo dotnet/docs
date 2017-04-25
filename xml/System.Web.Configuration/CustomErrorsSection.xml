@@ -30,8 +30,8 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <customErrors mode="RemoteOnly"  
- defaultRedirect="customerror.htm">  
-   <error statusCode="404" redirect="customerror404.htm"/>  
+  defaultRedirect="customerror.htm">  
+    <error statusCode="404" redirect="customerror404.htm"/>  
 </customErrors>  
 ```  
  

@@ -181,21 +181,21 @@ The following example code shows how to use the asynchronous API to generate XML
 ```  
 async Task TestWriter(Stream stream)   
 {  
-   XmlWriterSettings settings = new XmlWriterSettings();  
-   settings.Async = true;  
- 
-   using (XmlWriter writer = XmlWriter.Create(stream, settings)) {  
-       await writer.WriteStartElementAsync("pf", "root", "http://ns");  
-       await writer.WriteStartElementAsync(null, "sub", null);  
-       await writer.WriteAttributeStringAsync(null, "att", null, "val");  
-       await writer.WriteStringAsync("text");  
-       await writer.WriteEndElementAsync();  
-       await writer.WriteProcessingInstructionAsync("pName", "pValue");  
-       await writer.WriteCommentAsync("cValue");  
-       await writer.WriteCDataAsync("cdata value");  
-       await writer.WriteEndElementAsync();  
-       await writer.FlushAsync();  
-   }  
+    XmlWriterSettings settings = new XmlWriterSettings();  
+    settings.Async = true;  
+  
+    using (XmlWriter writer = XmlWriter.Create(stream, settings)) {  
+        await writer.WriteStartElementAsync("pf", "root", "http://ns");  
+        await writer.WriteStartElementAsync(null, "sub", null);  
+        await writer.WriteAttributeStringAsync(null, "att", null, "val");  
+        await writer.WriteStringAsync("text");  
+        await writer.WriteEndElementAsync();  
+        await writer.WriteProcessingInstructionAsync("pName", "pValue");  
+        await writer.WriteCommentAsync("cValue");  
+        await writer.WriteCDataAsync("cdata value");  
+        await writer.WriteEndElementAsync();  
+        await writer.FlushAsync();  
+    }  
 }  
 ```  
  
@@ -3002,8 +3002,8 @@ reader.Read(); // Read Comment
 reader.Read(); // Read DOCType  
 XmlWriter writer = XmlWriter.Create(Console.Out);  
 while (!reader.EOF){  
- writer.WriteNode(reader, false);  
-}  
+  writer.WriteNode(reader, false);  
+ }  
 ```  
  
 If the reader is configured to return white space and the writer has is configured to indent output, `WriteNode` may produce strange output. You will essentially be getting double formatting.  
@@ -3349,7 +3349,7 @@ The example writes the following element:
  
 ```  
 <root xmlns:x="urn:abc">  
- <item href="#x:test"/>  
+  <item href="#x:test"/>  
 </root>  
 ```  
  

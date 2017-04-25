@@ -41,9 +41,9 @@ You can use the <xref:System.Windows.Forms.PropertyGrid.LargeButtons%2A> propert
  
 ```  
 <appSettings>  
- <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
- 
+  
 ```  
  
 The <xref:System.Windows.Forms.PropertyGrid> control is not initially presented in the toolbox in the development environment. You can add a property grid to the toolbox, which enables you to drag a <xref:System.Windows.Forms.PropertyGrid> onto your form. You can also define an instance of <xref:System.Windows.Forms.PropertyGrid> by adding the appropriate code in your source code.  
@@ -1183,9 +1183,9 @@ You can use this property to enhance accessibility. Large buttons are 32-by-32 p
  
 ```  
 <appSettings>  
- <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
- 
+  
 ```  
  
  ]]></format>

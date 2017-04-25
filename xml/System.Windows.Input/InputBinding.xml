@@ -219,9 +219,9 @@ The <xref:System.Windows.Input.InputBinding> class does not support [!INCLUDE[TL
  
 ```  
 <inputBindingDerivedClass>  
- <inputBindingDerivedClass.Command>  
-   <iCommandImplementation/>  
- </inputBindingDerivedClass.Command>  
+  <inputBindingDerivedClass.Command>  
+    <iCommandImplementation/>  
+  </inputBindingDerivedClass.Command>  
 </inputBindingDerivedClass>  
 ```  
  
@@ -287,9 +287,9 @@ The <xref:System.Windows.Input.InputBinding> class does not support [!INCLUDE[TL
  
 ```  
 <inputBindingDerivedClass>  
- <inputBindingDerivedClass.CommandParameter>  
-   <commandParameterObject/>  
- </inputBindingDerivedClass.CommandParameter>  
+  <inputBindingDerivedClass.CommandParameter>  
+    <commandParameterObject/>  
+  </inputBindingDerivedClass.CommandParameter>  
 </inputBindingDerivedClass>  
 ```  
  
@@ -467,9 +467,9 @@ The <xref:System.Windows.Input.InputBinding> class itself does not support [!INC
  
 ```  
 <inputBindingDerivedClass>  
- <inputBindingDerivedClass.Gesture>  
-   <inputGestureImplementation/>  
- </inputBindingDerivedClass.Gesture>  
+  <inputBindingDerivedClass.Gesture>  
+    <inputGestureImplementation/>  
+  </inputBindingDerivedClass.Gesture>  
 </inputBindingDerivedClass>  
 ```  
  

@@ -34,42 +34,42 @@ The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property obt
 The following example attaches a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> events of the speech recognizer. The event argument types for the three events all derive from <xref:System.Speech.Recognition.RecognitionEventArgs>, which is used as the event data parameter in the handler.  
  
 ```csharp  
- 
+  
 // Initialize the speech recognizer.  
 private void Initialize(SpeechRecognitionEngine recognizer)  
 {  
- // Attach handlers for the SpeechHypothesized, SpeechRecognitionRejected,  
- // and SpeechRecognized events.  
- recognizer.SpeechHypothesized +=  
-   new EventHandler<SpeechHypothesizedEventArgs>(DisplayResult);  
- recognizer.SpeechRecognitionRejected +=  
-   new EventHandler<SpeechRecognitionRejectedEventArgs>(DisplayResult);  
- recognizer.SpeechRecognized +=  
-   new EventHandler<SpeechRecognizedEventArgs>(DisplayResult);  
- 
- // Add other initialization code here.  
+  // Attach handlers for the SpeechHypothesized, SpeechRecognitionRejected,  
+  // and SpeechRecognized events.  
+  recognizer.SpeechHypothesized +=  
+    new EventHandler<SpeechHypothesizedEventArgs>(DisplayResult);  
+  recognizer.SpeechRecognitionRejected +=  
+    new EventHandler<SpeechRecognitionRejectedEventArgs>(DisplayResult);  
+  recognizer.SpeechRecognized +=  
+    new EventHandler<SpeechRecognizedEventArgs>(DisplayResult);  
+  
+  // Add other initialization code here.  
 }  
- 
+  
 // Handle the SpeechHypothesized, SpeechRecognitionRejected,  
 // and SpeechRecognized events.  
 private void DisplayResult(object sender, RecognitionEventArgs e)  
 {  
- if (e is SpeechHypothesizedEventArgs)  
- {  
-   Console.WriteLine("Speech hypothesized:");  
- }  
- else if (e is SpeechRecognitionRejectedEventArgs)  
- {  
-   Console.WriteLine("Speech recognition rejected:");  
- }  
- else if (e is SpeechRecognizedEventArgs)  
- {  
-   Console.WriteLine("Speech recognized:");  
- }  
- 
- // Add code to handle the event.  
+  if (e is SpeechHypothesizedEventArgs)  
+  {  
+    Console.WriteLine("Speech hypothesized:");  
+  }  
+  else if (e is SpeechRecognitionRejectedEventArgs)  
+  {  
+    Console.WriteLine("Speech recognition rejected:");  
+  }  
+  else if (e is SpeechRecognizedEventArgs)  
+  {  
+    Console.WriteLine("Speech recognized:");  
+  }  
+  
+  // Add code to handle the event.  
 }  
- 
+  
 ```  
  
  ]]></format>

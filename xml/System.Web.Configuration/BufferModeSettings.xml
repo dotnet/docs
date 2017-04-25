@@ -27,40 +27,40 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <healthMonitoring>  
- <bufferModes>  
-   <add name="Critical Notification"  
-     maxBufferSize="100"  
-     maxFlushSize="20"  
-     urgentFlushThreshold="1"  
-     regularFlushInterval="Infinite"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Notification"  
-     maxBufferSize="300"  
-     maxFlushSize="20"  
-     urgentFlushThreshold="1"  
-     regularFlushInterval="Infinite"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Analysis"  
-     maxBufferSize="1000"  
-     maxFlushSize="100"  
-     urgentFlushThreshold="100"  
-     regularFlushInterval="00:05:00"  
-     urgentFlushInterval="00:01:00"  
-     maxBufferThreads="1"  
-   />  
-   <add name="Logging"  
-     maxBufferSize="1000"  
-     maxFlushSize="200"  
-     urgentFlushThreshold="800"  
-     regularFlushInterval="00:30:00"  
-     urgentFlushInterval="00:05:00"  
-     maxBufferThreads="1"  
-   />  
- </bufferModes>  
+  <bufferModes>  
+    <add name="Critical Notification"  
+      maxBufferSize="100"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Notification"  
+      maxBufferSize="300"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Analysis"  
+      maxBufferSize="1000"  
+      maxFlushSize="100"  
+      urgentFlushThreshold="100"  
+      regularFlushInterval="00:05:00"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Logging"  
+      maxBufferSize="1000"  
+      maxFlushSize="200"  
+      urgentFlushThreshold="800"  
+      regularFlushInterval="00:30:00"  
+      urgentFlushInterval="00:05:00"  
+      maxBufferThreads="1"  
+    />  
+  </bufferModes>  
 </healthMonitoring>  
 ```  
  

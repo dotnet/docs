@@ -54,51 +54,51 @@ Smart labels are not supported for the following chart types:
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Private Function SetSmartLabelsOptions()  
- 
-  ' Enabling the SmartLabels™ attribute.  
-  Chart1.Series("Series1").SmartLabels.Enabled = true  
- 
-  ' Set the callout style.  
-  Chart1.Series("Series1").SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined  
- 
-  ' Set the callout line color.  
-  Chart1.Series("Series1").SmartLabels.CalloutLineColor = Color.Goldenrod;  
- 
-  ' Set the callout line style.  
-  Chart1.Series("Series1").SmartLabels.CalloutLineStyle = ChartDashStyle.Dash  
- 
-  ' Set the callout line width.  
-  Chart1.Series("Series1").SmartLabels.CalloutLineWidth = 3   
- 
-  ' Set the callout line anchor cap.  
-  Chart1.Series("Series1").SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow  
+  
+   ' Enabling the SmartLabels™ attribute.  
+   Chart1.Series("Series1").SmartLabels.Enabled = true  
+  
+   ' Set the callout style.  
+   Chart1.Series("Series1").SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined  
+  
+   ' Set the callout line color.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineColor = Color.Goldenrod;  
+  
+   ' Set the callout line style.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineStyle = ChartDashStyle.Dash  
+  
+   ' Set the callout line width.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineWidth = 3   
+  
+   ' Set the callout line anchor cap.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow  
 End Function  
 ```  
  
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
- 
+  
 private void SetSmartLabelsOptions()  
 {  
-  // Enabling the SmartLabels™ attribute.  
-  Chart1.Series["Series1"].SmartLabels.Enabled = true;  
- 
-  // Set the callout style.  
-  Chart1.Series["Series1"].SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined;  
- 
-  // Set the callout line color.  
-  Chart1.Series["Series1"].SmartLabels.CalloutLineColor = Color.Goldenrod;  
- 
-  // Set the callout line style.  
-  Chart1.Series["Series1"].SmartLabels.CalloutLineStyle = ChartDashStyle.Dash;  
- 
-  // Set the callout line width.  
-  Chart1.Series["Series1"].SmartLabels.CalloutLineWidth = 3;  
- 
-  // Set the callout line anchor cap.  
-  Chart1.Series["Series1"].SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow;  
+   // Enabling the SmartLabels™ attribute.  
+   Chart1.Series["Series1"].SmartLabels.Enabled = true;  
+  
+   // Set the callout style.  
+   Chart1.Series["Series1"].SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined;  
+  
+   // Set the callout line color.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineColor = Color.Goldenrod;  
+  
+   // Set the callout line style.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineStyle = ChartDashStyle.Dash;  
+  
+   // Set the callout line width.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineWidth = 3;  
+  
+   // Set the callout line anchor cap.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow;  
 }  
 ```  
  

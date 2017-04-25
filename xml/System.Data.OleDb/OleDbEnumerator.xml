@@ -69,27 +69,27 @@ The following console application retrieves information about all the visible OL
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
- 
+  
 Module Module1  
- 
+  
 Sub Main()  
- Dim enumerator As New OleDbEnumerator  
- Dim table As System.Data.DataTable = enumerator.GetElements()  
- 
- DisplayData(table)  
- 
-  Console.WriteLine("Press any key to continue.")  
-  Console.ReadKey()  
-End Sub  
- 
-Private Sub DisplayData(ByVal table As DataTable)  
-  For Each row As DataRow In table.Rows  
-    For Each col As DataColumn In table.Columns  
-      Console.WriteLine("{0} = {1}", col.ColumnName, row(col))  
-    Next  
-    Console.WriteLine("==================================")  
-  Next  
-End Sub  
+  Dim enumerator As New OleDbEnumerator  
+  Dim table As System.Data.DataTable = enumerator.GetElements()  
+  
+  DisplayData(table)  
+  
+   Console.WriteLine("Press any key to continue.")  
+   Console.ReadKey()  
+ End Sub  
+  
+ Private Sub DisplayData(ByVal table As DataTable)  
+   For Each row As DataRow In table.Rows  
+     For Each col As DataColumn In table.Columns  
+       Console.WriteLine("{0} = {1}", col.ColumnName, row(col))  
+     Next  
+     Console.WriteLine("==================================")  
+   Next  
+ End Sub  
 End Module  
 ```  
  
@@ -97,31 +97,31 @@ End Module
 using System;  
 using System.Data;  
 using System.Data.OleDb;  
- 
+  
 class Program  
 {  
-static void Main()  
-{  
-  OleDbEnumerator enumerator = new OleDbEnumerator();  
-  DataTable table = enumerator.GetElements();  
- 
-  DisplayData(table);  
- 
-  Console.WriteLine("Press any key to continue.");  
-  Console.ReadKey();  
-}  
- 
-static void DisplayData(DataTable table)  
-{  
-  foreach (DataRow row in table.Rows)  
-  {  
-    foreach (DataColumn col in table.Columns)  
-    {  
-      Console.WriteLine("{0} = {1}", col.ColumnName, row[col]);  
-    }  
-    Console.WriteLine("==================================");  
-  }  
-}  
+ static void Main()  
+ {  
+   OleDbEnumerator enumerator = new OleDbEnumerator();  
+   DataTable table = enumerator.GetElements();  
+  
+   DisplayData(table);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(DataTable table)  
+ {  
+   foreach (DataRow row in table.Rows)  
+   {  
+     foreach (DataColumn col in table.Columns)  
+     {  
+       Console.WriteLine("{0} = {1}", col.ColumnName, row[col]);  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
 }  
 ```  
  
@@ -174,30 +174,30 @@ The following console application uses the MSDAENUM component to retrieve inform
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
- 
+  
 Module Module1  
- 
- Sub Main()  
-   Dim enumerator As New OleDbEnumerator  
-   Dim reader As OleDbDataReader = _  
-    OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"))  
- 
-   DisplayData(reader)  
- 
-   Console.WriteLine("Press any key to continue.")  
-   Console.ReadKey()  
- End Sub  
- 
- Private Sub DisplayData(ByVal reader As OleDbDataReader)  
-   While reader.Read()  
-     For i As Integer = 0 To reader.FieldCount - 1  
-       Console.WriteLine("{0} = {1}", _  
-        reader.GetName(i), reader.GetValue(i))  
-     Next  
-     Console.WriteLine("==================================")  
-   End While  
- 
- End Sub  
+  
+  Sub Main()  
+    Dim enumerator As New OleDbEnumerator  
+    Dim reader As OleDbDataReader = _  
+     OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"))  
+  
+    DisplayData(reader)  
+  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
+  
+  Private Sub DisplayData(ByVal reader As OleDbDataReader)  
+    While reader.Read()  
+      For i As Integer = 0 To reader.FieldCount - 1  
+        Console.WriteLine("{0} = {1}", _  
+         reader.GetName(i), reader.GetValue(i))  
+      Next  
+      Console.WriteLine("==================================")  
+    End While  
+  
+  End Sub  
 End Module  
 ```  
  
@@ -205,32 +205,32 @@ End Module
 using System;  
 using System.Data;  
 using System.Data.OleDb;  
- 
+  
 class Program  
 {  
-static void Main()  
-{  
-  OleDbDataReader reader =   
-    OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"));  
- 
-  DisplayData(reader);  
- 
-  Console.WriteLine("Press any key to continue.");  
-  Console.ReadKey();  
-}  
- 
-static void DisplayData(OleDbDataReader reader)  
-{  
-  while (reader.Read())  
-  {  
-    for (int i = 0; i < reader.FieldCount; i++)  
-    {  
-      Console.WriteLine("{0} = {1}",  
-       reader.GetName(i), reader.GetValue(i));  
-    }  
-    Console.WriteLine("==================================");  
-  }  
-}  
+ static void Main()  
+ {  
+   OleDbDataReader reader =   
+     OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"));  
+  
+   DisplayData(reader);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(OleDbDataReader reader)  
+ {  
+   while (reader.Read())  
+   {  
+     for (int i = 0; i < reader.FieldCount; i++)  
+     {  
+       Console.WriteLine("{0} = {1}",  
+        reader.GetName(i), reader.GetValue(i));  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
 }  
 ```  
  
@@ -279,29 +279,29 @@ The following console application retrieves information about all the visible OL
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
- 
+  
 Module Module1  
- 
- Sub Main()  
-   Dim enumerator As New OleDbEnumerator  
-   Dim reader As OleDbDataReader = OleDbEnumerator.GetRootEnumerator()  
- 
-   DisplayData(reader)  
- 
-   Console.WriteLine("Press any key to continue.")  
-   Console.ReadKey()  
- End Sub  
- 
- Private Sub DisplayData(ByVal reader As OleDbDataReader)  
-   While reader.Read()  
-     For i As Integer = 0 To reader.FieldCount - 1  
-       Console.WriteLine("{0} = {1}", _  
-        reader.GetName(i), reader.GetValue(i))  
-     Next  
-     Console.WriteLine("==================================")  
-   End While  
- 
- End Sub  
+  
+  Sub Main()  
+    Dim enumerator As New OleDbEnumerator  
+    Dim reader As OleDbDataReader = OleDbEnumerator.GetRootEnumerator()  
+  
+    DisplayData(reader)  
+  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
+  
+  Private Sub DisplayData(ByVal reader As OleDbDataReader)  
+    While reader.Read()  
+      For i As Integer = 0 To reader.FieldCount - 1  
+        Console.WriteLine("{0} = {1}", _  
+         reader.GetName(i), reader.GetValue(i))  
+      Next  
+      Console.WriteLine("==================================")  
+    End While  
+  
+  End Sub  
 End Module  
 ```  
  
@@ -309,31 +309,31 @@ End Module
 using System;  
 using System.Data;  
 using System.Data.OleDb;  
- 
+  
 class Program  
 {  
-static void Main()  
-{  
-  OleDbDataReader reader = OleDbEnumerator.GetRootEnumerator();  
- 
-  DisplayData(reader);  
- 
-  Console.WriteLine("Press any key to continue.");  
-  Console.ReadKey();  
-}  
- 
-static void DisplayData(OleDbDataReader reader)  
-{  
-  while (reader.Read())  
-  {  
-    for (int i = 0; i < reader.FieldCount; i++)  
-    {  
-      Console.WriteLine("{0} = {1}",  
-       reader.GetName(i), reader.GetValue(i));  
-    }  
-    Console.WriteLine("==================================");  
-  }  
-}  
+ static void Main()  
+ {  
+   OleDbDataReader reader = OleDbEnumerator.GetRootEnumerator();  
+  
+   DisplayData(reader);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(OleDbDataReader reader)  
+ {  
+   while (reader.Read())  
+   {  
+     for (int i = 0; i < reader.FieldCount; i++)  
+     {  
+       Console.WriteLine("{0} = {1}",  
+        reader.GetName(i), reader.GetValue(i));  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
 }  
 ```  
  

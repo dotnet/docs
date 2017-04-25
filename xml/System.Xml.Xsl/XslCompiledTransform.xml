@@ -455,14 +455,14 @@ The code example above uses the following transformation:
  
 ```  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
- xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
- xmlns:user="urn:my-scripts">  
- <msxsl:script language="C#" implements-prefix="user">  
-   <![CDATA[  
- public double modifyPrice(double price){  
-   price*=0.9;  
-   return price;  
- }  
+  xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
+  xmlns:user="urn:my-scripts">  
+  <msxsl:script language="C#" implements-prefix="user">  
+    <![CDATA[  
+  public double modifyPrice(double price){  
+    price*=0.9;  
+    return price;  
+  }  
   ]]]><![CDATA[]>  
   </msxsl:script>  
   <xsl:template match="Root">  
@@ -472,7 +472,7 @@ The code example above uses the following transformation:
   </xsl:template>  
 </xsl:stylesheet>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

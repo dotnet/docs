@@ -47,32 +47,32 @@ So, in general, write an exception handler that catches any provider specific ex
  
 ```  
 Try {  
-  // code here  
+   // code here  
 }  
 catch (SqlException odbcEx) {  
-  // Handle more specific SqlException exception here.  
+   // Handle more specific SqlException exception here.  
 }  
 catch (Exception ex) {  
-  // Handle generic ones here.  
+   // Handle generic ones here.  
 }  
- 
+  
 ```  
  
 Or:  
  
 ```  
 Try {  
-  // code here  
+   // code here  
 }  
 catch (Exception ex) {  
-  if (ex is SqlException) {  
-     // Handle more specific SqlException exception here.  
-  }  
-  Else {  
-     // Handle generic ones here.  
-  }  
+   if (ex is SqlException) {  
+      // Handle more specific SqlException exception here.  
+   }  
+   Else {  
+      // Handle generic ones here.  
+   }  
 }  
- 
+  
 ```  
  
 It is also possible for a .NET Framework data provider method call to fail on a thread pool thread with no user code on the stack. In this case, and when using asynchronous method calls, you must register the <xref:System.AppDomain.UnhandledException> event to handle those exceptions and avoid application crash.  
@@ -558,20 +558,20 @@ The following C# example shows how a connection attempt to a valid server but no
 ```  
 using System.Data.SqlClient;  
 using System;  
- 
+  
 public class A {  
-  public static void Main() {  
-     SqlConnection connection = new SqlConnection();  
-     connection.ConnectionString = "Data Source=a_valid_server;Initial Catalog=Northwinda;Integrated Security=true";  
-     try {  
-        connection.Open();  
-     }  
-     catch (SqlException p) {  
-        Console.WriteLine("{0}", p.ClientConnectionId);  
-        Console.WriteLine("{0}", p.ToString());  
-     }  
-     connection.Close();  
-  }  
+   public static void Main() {  
+      SqlConnection connection = new SqlConnection();  
+      connection.ConnectionString = "Data Source=a_valid_server;Initial Catalog=Northwinda;Integrated Security=true";  
+      try {  
+         connection.Open();  
+      }  
+      catch (SqlException p) {  
+         Console.WriteLine("{0}", p.ClientConnectionId);  
+         Console.WriteLine("{0}", p.ToString());  
+      }  
+      connection.Close();  
+   }  
 }  
 ```  
  
@@ -580,21 +580,21 @@ The following Visual Basic sample is functionally equivalent to the previous (C#
 ```  
 Imports System.Data.SqlClient  
 Imports System  
- 
+  
 Module Module1  
- 
-   Sub Main()  
-       Dim connection As New SqlConnection()  
-       connection.ConnectionString = "Data Source=a_valid_server;Initial Catalog=Northwinda;Integrated Security=true"  
-       Try  
-           connection.Open()  
-       Catch p As SqlException  
-           Console.WriteLine("{0}", p.ClientConnectionId)  
-           Console.WriteLine("{0}", p.ToString())  
-       End Try  
-       connection.Close()  
-   End Sub  
- 
+  
+    Sub Main()  
+        Dim connection As New SqlConnection()  
+        connection.ConnectionString = "Data Source=a_valid_server;Initial Catalog=Northwinda;Integrated Security=true"  
+        Try  
+            connection.Open()  
+        Catch p As SqlException  
+            Console.WriteLine("{0}", p.ClientConnectionId)  
+            Console.WriteLine("{0}", p.ToString())  
+        End Try  
+        connection.Close()  
+    End Sub  
+  
 End Module  
 ```  
  

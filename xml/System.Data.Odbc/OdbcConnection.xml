@@ -353,15 +353,15 @@ You can use the <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A> prope
  
 ```  
 "Driver={SQL Server};Server=(local);Trusted_Connection=Yes;Database=AdventureWorks;"  
- 
+  
 "Driver={Microsoft ODBC for Oracle};Server=ORACLE8i7;Persist Security Info=False;Trusted_Connection=Yes"  
- 
+  
 "Driver={Microsoft Access Driver (*.mdb)};DBQ=c:\bin\Northwind.mdb"  
- 
+  
 "Driver={Microsoft Excel Driver (*.xls)};DBQ=c:\bin\book1.xls"  
- 
+  
 "Driver={Microsoft Text Driver (*.txt; *.csv)};DBQ=c:\bin"  
- 
+  
 "DSN=dsnname"  
 ```  
  
@@ -381,7 +381,7 @@ connection-string ::= empty-string[;] | attribute[;] | attribute; connection-str
 empty-string ::=  
 attribute ::= attribute-keyword=attribute-value | DRIVER=[{]attribute-value[}]  
 attribute-keyword ::= DSN | UID | PWD  
-| driver-defined-attribute-keyword  
+ | driver-defined-attribute-keyword  
 attribute-value ::= character-string  
 driver-defined-attribute-keyword ::= identifier  
 ```  

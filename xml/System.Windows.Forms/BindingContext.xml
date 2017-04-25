@@ -38,12 +38,12 @@ If you add a <xref:System.Windows.Forms.TextBox> control to a form and bind it t
  
 ```vb  
 TextBox1.DataBindings.Add("Text", dataSet1, "Customers.FirstName")  
- 
+  
 ```  
  
 ```csharp  
 textBox1.DataBindings.Add("Text", dataSet1, "Customers.FirstName");  
- 
+  
 ```  
  
 ```cpp  
@@ -54,12 +54,12 @@ You can add a second <xref:System.Windows.Forms.TextBox> control (`TextBox2`) to
  
 ```vb  
 TextBox2.DataBindings.Add("Text", dataSet1, "Customers.LastName")  
- 
+  
 ```  
  
 ```csharp  
 textBox2.DataBindings.Add("Text", dataSet1, "Customers.LastName");  
- 
+  
 ```  
  
 ```cpp  
@@ -74,42 +74,42 @@ It is important to be consistent about how you set the <xref:System.Windows.Form
 ComboBox1.DataSource = DataSet1  
 ComboBox1.DisplayMember = "Customers.FirstName"  
 Me.BindingContext(dataSet1, "Customers").Position = 1  
- 
+  
 ```  
  
 ```csharp  
 comboBox1.DataSource = DataSet1;  
 comboBox1.DisplayMember = "Customers.FirstName";  
 this.BindingContext[dataSet1, "Customers"].Position = 1;  
- 
+  
 ```  
  
 ```cpp  
 comboBox1->DataSource = dataSet1;  
 comboBox1->DisplayMember = "Customers.FirstName";  
 this->BindingContext->get_Item(dataSet1, "Customers")->Position = 1;  
- 
+  
 ```  
  
 ```vb  
 ComboBox1.DataSource = DataSet1.Customers  
 ComboBox1.DisplayMember = "FirstName"  
 Me.BindingContext(dataSet1.Customers).Position = 1  
- 
+  
 ```  
  
 ```csharp  
 comboBox1.DataSource = DataSet1.Customers;  
 comboBox1.DisplayMember = "FirstName";  
 this.BindingContext[dataSet1.Customers].Position = 1;  
- 
+  
 ```  
  
 ```cpp  
 comboBox1->DataSource = dataSet1->Customers;  
 comboBox1->DisplayMember = "FirstName";  
 this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;  
- 
+  
 ```  
  
 > [!NOTE]

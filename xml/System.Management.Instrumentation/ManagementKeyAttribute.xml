@@ -47,7 +47,7 @@ The next example shows how to use the <xref:System.Management.Instrumentation.Ma
 [ManagementKey]  
 public int Id  
 {  
-   get { return System.Diagnostics.Process.GetCurrentProcess().Id; }  
+    get { return System.Diagnostics.Process.GetCurrentProcess().Id; }  
 }  
 ```  
  

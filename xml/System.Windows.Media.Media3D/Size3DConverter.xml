@@ -22,17 +22,17 @@ The following sample uses a <xref:System.Windows.Media.Media3D.Size3DConverter> 
  
 ```csharp  
 ...  
- 
+  
 // Converts a String to a Size3D using a Size3DConverter  
 // Returns a Size3D.  
- 
+  
 Size3DConverter s3DConverter = new Size3DConverter();  
 Size3D size3DResult = new Size3D();  
 string string3 = "10,20,30";  
- 
+  
 size3DResult = (Size3D)s3DConverter.ConvertFromString(string3);  
 // size3DResult is equal to (10, 20, 30)  
- 
+  
 ...  
 ```  
  

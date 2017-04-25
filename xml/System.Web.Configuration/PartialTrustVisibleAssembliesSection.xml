@@ -29,8 +29,8 @@ The following example shows how to configure a partial trust assembly by using t
  
 ```  
 <partialTrustVisibleAssemblies>  
- <add assemblyName="MyAssembly"   
-   publicKey="hex_key_representation"/>  
+  <add assemblyName="MyAssembly"   
+    publicKey="hex_key_representation"/>  
 </partialTrustVisibleAssemblies>  
 ```  
  

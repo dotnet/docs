@@ -32,32 +32,32 @@ During the page load, the <xref:System.Web.Mobile.MobileCapabilities> object obt
  
 ```csharp  
 <%@ Page Inherits="System.Web.UI.MobileControls.MobilePage"   
-   Language="c#" %>  
+    Language="c#" %>  
 <script language="c#" runat="server">  
 public void Page_Load(Object sender, EventArgs e)  
 {  
-   System.Web.Mobile.MobileCapabilities currentCapabilities;  
-   MobileCapabilities currentCapabilities =   
-       (MobileCapabilities)Request.Browser;  
-   // Programatically find the mobile capabilities without using   
-   // DeviceSpecific Filters.  
-   if(currentCapabilities.PreferredRenderingMIME=="text/html")  
-   {  
-       Label2.Text = "You are using an html supported device.";  
-   }  
-   else if(currentCapabilities.PreferredRenderingMIME ==   
-       "text/vnd.wap.wml")  
-   {  
-       Label2.Text = "You are using a wml supported device.";  
-   }  
-   Label1.Text = "Screen Width (chars): " +   
-       currentCapabilities.ScreenCharactersWidth;  
-}  
-</script>  
-<Mobile:Form runat="server" id=frmTemplate >  
-     <mobile:label ID="Label1" runat="server" />  
-     <mobile:label ID="Label2" runat="server" />  
-</Mobile:Form>  
+    System.Web.Mobile.MobileCapabilities currentCapabilities;  
+    MobileCapabilities currentCapabilities =   
+        (MobileCapabilities)Request.Browser;  
+    // Programatically find the mobile capabilities without using   
+    // DeviceSpecific Filters.  
+    if(currentCapabilities.PreferredRenderingMIME=="text/html")  
+    {  
+        Label2.Text = "You are using an html supported device.";  
+    }  
+    else if(currentCapabilities.PreferredRenderingMIME ==   
+        "text/vnd.wap.wml")  
+    {  
+        Label2.Text = "You are using a wml supported device.";  
+    }  
+    Label1.Text = "Screen Width (chars): " +   
+        currentCapabilities.ScreenCharactersWidth;  
+ }  
+ </script>  
+ <Mobile:Form runat="server" id=frmTemplate >  
+      <mobile:label ID="Label1" runat="server" />  
+      <mobile:label ID="Label2" runat="server" />  
+ </Mobile:Form>  
 ```  
  
  ]]></format>

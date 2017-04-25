@@ -42,9 +42,9 @@ The following shows the XML necessary to configure an application with the trust
  
 ```xml  
 <system.identityModel>  
- <identityConfiguration>  
-   <issuerNameRegistry type="System.IdentityModel.Samples.TrustedIssuerNameRegistry, MyApp" />  
- </identityConfiguration>  
+  <identityConfiguration>  
+    <issuerNameRegistry type="System.IdentityModel.Samples.TrustedIssuerNameRegistry, MyApp" />  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

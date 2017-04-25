@@ -27,30 +27,30 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <compilation   
-   tempDirectory=""   
-   debug="False"   
-   strict="False"   
-   explicit="True"   
-   batch="True"   
-   batchTimeout="900"   
-   maxBatchSize="1000"   
-   maxBatchGeneratedFileSize="1000"   
-   numRecompilesBeforeAppRestart="15"   
-   defaultLanguage="vb"   
-   targetFramework="4.0"   
-   urlLinePragmas="False"   
-   assemblyPostProcessorType="">  
-   <assemblies>  
-     <clear />  
-   </assemblies>  
-   <buildProviders>  
-     <clear />  
-   </buildProviders>  
-   <expressionBuilders>  
-     <clear />  
-   </expressionBuilders>  
- </compilation>   
+  <compilation   
+    tempDirectory=""   
+    debug="False"   
+    strict="False"   
+    explicit="True"   
+    batch="True"   
+    batchTimeout="900"   
+    maxBatchSize="1000"   
+    maxBatchGeneratedFileSize="1000"   
+    numRecompilesBeforeAppRestart="15"   
+    defaultLanguage="vb"   
+    targetFramework="4.0"   
+    urlLinePragmas="False"   
+    assemblyPostProcessorType="">  
+    <assemblies>  
+      <clear />  
+    </assemblies>  
+    <buildProviders>  
+      <clear />  
+    </buildProviders>  
+    <expressionBuilders>  
+      <clear />  
+    </expressionBuilders>  
+  </compilation>   
 </system.web>  
 ```  
  

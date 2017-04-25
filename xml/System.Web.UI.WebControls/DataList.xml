@@ -113,7 +113,7 @@ For more information about security, see [Securing Standard Controls](http://msd
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     Caption="string"  
     CaptionAlign="NotSet|Top|Bottom|Left|Right"  
@@ -134,7 +134,7 @@ For more information about security, see [Securing Standard Controls](http://msd
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -173,31 +173,31 @@ For more information about security, see [Securing Standard Controls](http://msd
 >  
         <AlternatingItemStyle />  
         <AlternatingItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </AlternatingItemTemplate>  
         <EditItemStyle />  
         <EditItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </EditItemTemplate>  
         <FooterStyle />  
         <FooterTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </FooterTemplate>  
         <HeaderStyle />  
         <HeaderTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </HeaderTemplate>  
         <ItemStyle />  
         <ItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </ItemTemplate>  
         <SelectedItemStyle />  
         <SelectedItemTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </SelectedItemTemplate>  
         <SeparatorStyle />  
         <SeparatorTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </SeparatorTemplate>  
 </asp:DataList>  
 ```  

@@ -1268,8 +1268,8 @@ In contrast, the formula for the modulus operator is:
  
 ```  
 Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *   
-         (Math.Floor(Math.Abs(dividend) / Math.Abs(divisor))))) *   
-         Math.Sign(dividend)  
+          (Math.Floor(Math.Abs(dividend) / Math.Abs(divisor))))) *   
+          Math.Sign(dividend)  
 ```  
  
   

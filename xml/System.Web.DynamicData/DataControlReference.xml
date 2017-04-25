@@ -23,22 +23,22 @@ The following example shows the markup from a Dynamic Data page template that co
  
 ```  
 <asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
-   AutoLoadForeignKeys="true">  
- <DataControls>  
-   <asp:DataControlReference ControlID="FormView1" />  
- </DataControls>  
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
 </asp:DynamicDataManager>  
- 
+  
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
- <ContentTemplate>  
-   <!-- Items ommited for clarity. -->  
-   <asp:FormView runat="server" ID="FormView1"   
-       DataSourceID="DetailsDataSource" DefaultMode="Edit"  
-       OnDataBound="FormView1_DataBound">  
-       <!-- Items ommited for clarity. -->  
-   </asp:FormView>  
- 
- </ContentTemplate>  
+  <ContentTemplate>  
+    <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
 </asp:UpdatePanel>  
 ```  
  
@@ -108,24 +108,24 @@ The following example shows the markup from a Dynamic Data page template that co
  
 ```  
 <asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
-   AutoLoadForeignKeys="true">  
- <DataControls>  
-   <asp:DataControlReference ControlID="FormView1" />  
- </DataControls>  
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
 </asp:DynamicDataManager>  
- 
+  
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
- <ContentTemplate>  
- <!-- Items ommited for clarity. -->  
-   <asp:FormView runat="server" ID="FormView1"   
-       DataSourceID="DetailsDataSource" DefaultMode="Edit"  
-       OnDataBound="FormView1_DataBound">  
-       <!-- Items ommited for clarity. -->  
-   </asp:FormView>  
- 
- </ContentTemplate>  
+  <ContentTemplate>  
+  <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
 </asp:UpdatePanel>  
- 
+  
 ```  
  
  ]]></format>

@@ -1627,9 +1627,9 @@ To enable the legacy behavior, insert the following lines into the configuration
  
 ```xml  
 <configuration>  
- <appSettings>  
-   <add key="UseCompatibleTypeConverterBehavior" value="true" />  
- </appSettings>  
+  <appSettings>  
+    <add key="UseCompatibleTypeConverterBehavior" value="true" />  
+  </appSettings>  
 </configuration>  
 ```  
  
@@ -1687,9 +1687,9 @@ To enable the legacy behavior, insert the following lines into the configuration
  
 ```xml  
 <configuration>  
- <appSettings>  
-   <add key="UseCompatibleTypeConverterBehavior" value="true" />  
- </appSettings>  
+  <appSettings>  
+    <add key="UseCompatibleTypeConverterBehavior" value="true" />  
+  </appSettings>  
 </configuration>  
 ```  
  

@@ -30,20 +30,20 @@ The following is an example of using this configuration element to configure a [
 ```  
 <system.serviceModel>  
 <services>  
-       <service name="Microsoft.Ajax.Samples.CalculatorService">  
-           <endpoint address=""  
-               behaviorConfiguration="AspNetAjaxBehavior"   
-               binding="webHttpBinding"  
-               contract="Microsoft.Ajax.Samples.ICalculator" />  
-       </service>  
-   </services>  
-   <behaviors>  
-       <endpointBehaviors>  
-           <behavior name="AspNetAjaxBehavior">  
-               <enableWebScript />  
-           </behavior>  
-       </endpointBehaviors>  
-   </behaviors>  
+        <service name="Microsoft.Ajax.Samples.CalculatorService">  
+            <endpoint address=""  
+                behaviorConfiguration="AspNetAjaxBehavior"   
+                binding="webHttpBinding"  
+                contract="Microsoft.Ajax.Samples.ICalculator" />  
+        </service>  
+    </services>  
+    <behaviors>  
+        <endpointBehaviors>  
+            <behavior name="AspNetAjaxBehavior">  
+                <enableWebScript />  
+            </behavior>  
+        </endpointBehaviors>  
+    </behaviors>  
 </system.serviceModel>  
 ```  
  
@@ -74,17 +74,17 @@ using System;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
-           Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
-           Console.WriteLine("Press <ENTER> to terminate the program.");  
-           Console.ReadLine();  
-       }  
-   }  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
+            Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -117,18 +117,18 @@ using System;
 using System.ServiceModel;  
 using System.ServiceModel.Web;  
 using System.ServiceModel.Configuration;  
- 
-   class Program  
-   {  
-       static void Main(string[] args)  
-       {  
-           WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
-           Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
-           Console.WriteLine("Press <ENTER> to terminate the program.");  
-           Console.ReadLine();  
-       }  
-   }  
- 
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
+            Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
+  
 ```  
  
  ]]></format>

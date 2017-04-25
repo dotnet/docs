@@ -1155,12 +1155,12 @@ For more information about handling events, see [NIB: Consuming Events](http://m
  
 ```  
 internal class MyWebClient:WebClient{  
-       protected override WebRequest GetWebRequest(Uri address) {  
-           FtpWebRequest req = (FtpWebRequest)base.GetWebRequest(address);  
-           req.UsePassive = false;  
-           return req;  
-       }  
-   }  
+        protected override WebRequest GetWebRequest(Uri address) {  
+            FtpWebRequest req = (FtpWebRequest)base.GetWebRequest(address);  
+            req.UsePassive = false;  
+            return req;  
+        }  
+    }  
 ```  
  
   

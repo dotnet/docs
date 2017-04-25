@@ -737,18 +737,18 @@ For example, the following C# code shows how to read from a redirected stream an
  
 ```  
 // Start the child process.  
-Process p = new Process();  
-// Redirect the error stream of the child process.  
-p.StartInfo.UseShellExecute = false;  
-p.StartInfo.RedirectStandardError = true;  
-p.StartInfo.FileName = "Write500Lines.exe";  
-p.Start();  
-// Do not wait for the child process to exit before  
-// reading to the end of its redirected error stream.  
-// p.WaitForExit();  
-// Read the error stream first and then wait.  
-string error = p.StandardError.ReadToEnd();  
-p.WaitForExit();  
+ Process p = new Process();  
+ // Redirect the error stream of the child process.  
+ p.StartInfo.UseShellExecute = false;  
+ p.StartInfo.RedirectStandardError = true;  
+ p.StartInfo.FileName = "Write500Lines.exe";  
+ p.Start();  
+ // Do not wait for the child process to exit before  
+ // reading to the end of its redirected error stream.  
+ // p.WaitForExit();  
+ // Read the error stream first and then wait.  
+ string error = p.StandardError.ReadToEnd();  
+ p.WaitForExit();  
 ```  
  
 The code example avoids a deadlock condition by calling `p.StandardError.ReadToEnd` before `p.WaitForExit`. A deadlock condition can result if the parent process calls `p.WaitForExit` before `p.StandardError.ReadToEnd` and the child process writes enough text to fill the redirected stream. The parent process would wait indefinitely for the child process to exit. The child process would wait indefinitely for the parent to read from the full <xref:System.Diagnostics.Process.StandardError%2A> stream.  
@@ -906,7 +906,7 @@ p.StartInfo.UseShellExecute = false;
 p.StartInfo.RedirectStandardOutput = true;  
 p.StartInfo.FileName = "Write500Lines.exe";  
 p.Start();  
- 
+  
 // To avoid deadlocks, always read the output stream first and then wait.  
 string output = p.StandardOutput.ReadToEnd();  
 p.WaitForExit();  

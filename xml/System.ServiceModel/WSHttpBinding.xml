@@ -172,34 +172,34 @@ Setting <xref:System.ServiceModel.WSHttpBinding.AllowCookies%2A> to `true` is us
  
 ```csharp  
 MyWebServiceClient client = new MyWebServiceClient();  
- 
-       using (new OperationContextScope(client.InnerChannel))  
-       {  
-           client.DoSomething();  
- 
-           // Extract the cookie embedded in the received web service response  
-           // and stores it locally  
-           HttpResponseMessageProperty response = (HttpResponseMessageProperty)  
-           OperationContext.Current.IncomingMessageProperties[  
-               HttpResponseMessageProperty.Name];  
-           sharedCookie = response.Headers["Set-Cookie"];  
-       }  
- 
-       MyOtherWebServiceClient otherClient = new MyOtherWebServiceClient();  
- 
-       using (new OperationContextScope(otherClient.InnerChannel))  
-       {  
-           // Embeds the extracted cookie in the next web service request  
-           // Note that we manually have to create the request object since  
-           // since it doesn't exist yet at this stage   
-           HttpRequestMessageProperty request = new HttpRequestMessageProperty();  
-           request.Headers["Cookie"] = sharedCookie;  
-           OperationContext.Current.OutgoingMessageProperties[  
-               HttpRequestMessageProperty.Name] = request;  
- 
-           otherClient.DoSomethingElse();  
-       }  
- 
+  
+        using (new OperationContextScope(client.InnerChannel))  
+        {  
+            client.DoSomething();  
+  
+            // Extract the cookie embedded in the received web service response  
+            // and stores it locally  
+            HttpResponseMessageProperty response = (HttpResponseMessageProperty)  
+            OperationContext.Current.IncomingMessageProperties[  
+                HttpResponseMessageProperty.Name];  
+            sharedCookie = response.Headers["Set-Cookie"];  
+        }  
+  
+        MyOtherWebServiceClient otherClient = new MyOtherWebServiceClient();  
+  
+        using (new OperationContextScope(otherClient.InnerChannel))  
+        {  
+            // Embeds the extracted cookie in the next web service request  
+            // Note that we manually have to create the request object since  
+            // since it doesn't exist yet at this stage   
+            HttpRequestMessageProperty request = new HttpRequestMessageProperty();  
+            request.Headers["Cookie"] = sharedCookie;  
+            OperationContext.Current.OutgoingMessageProperties[  
+                HttpRequestMessageProperty.Name] = request;  
+  
+            otherClient.DoSomethingElse();  
+        }  
+  
 ```  
  
  ]]></format>

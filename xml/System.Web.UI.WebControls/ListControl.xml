@@ -961,14 +961,14 @@ When the selected value is not in the list of available values and a postback is
 ```vb  
 Me.DropDownList1.Items.Add(New ListItem( Text="Hello", Value="1" ))   
 If DropDownList1.Items.FindByValue("2") IsNot Nothing Then   
-   Response.Write("Found")   
+    Response.Write("Found")   
 End If  
 ```  
  
 ```csharp  
 this.DropDownList1.Items.Add(new ListItem{ Text="Hello", Value="1" });  
 if(DropDownList1.Items.FindByValue("2") != null) {  
-   Response.Write("Found");  
+    Response.Write("Found");  
 }  
 ```  
  

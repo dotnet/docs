@@ -56,195 +56,195 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ' Adds a week of data with values between 20 and 35.   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ' Adds repeating horizontal strip lines at intervals of 5.   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()  
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ' Adds strip lines to highlight weekend values.   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ' Adds a horizontal threshold strip line at the mean value of the first series.  
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ' Adds a week of data with values between 20 and 35.   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ' Adds repeating horizontal strip lines at intervals of 5.   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()  
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ' Adds strip lines to highlight weekend values.   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ' Adds a horizontal threshold strip line at the mean value of the first series.  
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -317,204 +317,204 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds repeating horizontal strip lines at intervals of 5.   
-   ''' </summary>   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()   
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds strip lines to highlight weekend values.   
-   ''' </summary>   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds repeating horizontal strip lines at intervals of 5.   
+    ''' </summary>   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()   
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds strip lines to highlight weekend values.   
+    ''' </summary>   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -1107,204 +1107,204 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds repeating horizontal strip lines at intervals of 5.   
-   ''' </summary>   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()   
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds strip lines to highlight weekend values.   
-   ''' </summary>   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds repeating horizontal strip lines at intervals of 5.   
+    ''' </summary>   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()   
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds strip lines to highlight weekend values.   
+    ''' </summary>   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -1359,204 +1359,204 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds repeating horizontal strip lines at intervals of 5.   
-   ''' </summary>   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()   
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds strip lines to highlight weekend values.   
-   ''' </summary>   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds repeating horizontal strip lines at intervals of 5.   
+    ''' </summary>   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()   
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds strip lines to highlight weekend values.   
+    ''' </summary>   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -1605,204 +1605,204 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds repeating horizontal strip lines at intervals of 5.   
-   ''' </summary>   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()   
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds strip lines to highlight weekend values.   
-   ''' </summary>   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds repeating horizontal strip lines at intervals of 5.   
+    ''' </summary>   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()   
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds strip lines to highlight weekend values.   
+    ''' </summary>   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -1853,204 +1853,204 @@ The following code example demonstrates three applications of strip lines. First
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds repeating horizontal strip lines.   
-       AddHorizRepeatingStripLines()   
- 
-       ' Highlights weekend points using strip lines.   
-       HighlightWeekendsWithStripLines()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds repeating horizontal strip lines at intervals of 5.   
-   ''' </summary>   
-   Private Sub AddHorizRepeatingStripLines()   
-       ' Instantiate new strip line   
-       Dim stripLine1 As New StripLine()   
-       stripLine1.StripWidth = 2.5   
-       stripLine1.Interval = 5   
- 
-       ' Consider adding transparency so that the strip lines are lighter   
-       stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
- 
-       ' Add the strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds strip lines to highlight weekend values.   
-   ''' </summary>   
-   Private Sub HighlightWeekendsWithStripLines()   
-       ' Set strip line to highlight weekends   
-       Dim stripLine2 As New StripLine()   
-       stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
-       stripLine2.IntervalOffset = -1.5   
-       stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
-       stripLine2.Interval = 1   
-       stripLine2.IntervalType = DateTimeIntervalType.Weeks   
-       stripLine2.StripWidth = 2   
-       stripLine2.StripWidthType = DateTimeIntervalType.Days   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
- 
-       ' Set the axis label to show the name of the day   
-       ' This is done in order to demonstrate that weekends are highlighted   
-       chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds repeating horizontal strip lines.   
+        AddHorizRepeatingStripLines()   
+  
+        ' Highlights weekend points using strip lines.   
+        HighlightWeekendsWithStripLines()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds repeating horizontal strip lines at intervals of 5.   
+    ''' </summary>   
+    Private Sub AddHorizRepeatingStripLines()   
+        ' Instantiate new strip line   
+        Dim stripLine1 As New StripLine()   
+        stripLine1.StripWidth = 2.5   
+        stripLine1.Interval = 5   
+  
+        ' Consider adding transparency so that the strip lines are lighter   
+        stripLine1.BackColor = Color.FromArgb(120, Color.Red)   
+  
+        ' Add the strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine1)   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds strip lines to highlight weekend values.   
+    ''' </summary>   
+    Private Sub HighlightWeekendsWithStripLines()   
+        ' Set strip line to highlight weekends   
+        Dim stripLine2 As New StripLine()   
+        stripLine2.BackColor = Color.FromArgb(120, Color.Gold)   
+        stripLine2.IntervalOffset = -1.5   
+        stripLine2.IntervalOffsetType = DateTimeIntervalType.Days   
+        stripLine2.Interval = 1   
+        stripLine2.IntervalType = DateTimeIntervalType.Weeks   
+        stripLine2.StripWidth = 2   
+        stripLine2.StripWidthType = DateTimeIntervalType.Days   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisX.StripLines.Add(stripLine2)   
+  
+        ' Set the axis label to show the name of the day   
+        ' This is done in order to demonstrate that weekends are highlighted   
+        chart1.ChartAreas(0).AxisX.LabelStyle.Format = "ddd"   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds repeating horizontal strip lines.  
-           AddHorizRepeatingStripLines();  
- 
-           // Highlights weekend points using strip lines.  
-           HighlightWeekendsWithStripLines();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds repeating horizontal strip lines at intervals of 5.  
-       /// </summary>  
-       private void AddHorizRepeatingStripLines()  
-       {  
-           // Instantiate new strip line  
-           StripLine stripLine1 = new StripLine();  
-           stripLine1.StripWidth = 0;  
-           stripLine1.BorderColor = Color.Black;  
-           stripLine1.BorderWidth = 3;  
-           stripLine1.Interval = 5;  
- 
-           // Consider adding transparency so that the strip lines are lighter  
-           stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
- 
-           stripLine1.BackSecondaryColor = Color.Black;  
-           stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
- 
-           // Add the strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
-       }  
- 
-       /// <summary>  
-       /// Adds strip lines to highlight weekend values.  
-       /// </summary>  
-       private void HighlightWeekendsWithStripLines()  
-       {  
-           // Set strip line to highlight weekends  
-           StripLine stripLine2 = new StripLine();  
-           stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
-           stripLine2.IntervalOffset = -1.5;  
-           stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
-           stripLine2.Interval = 1;  
-           stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
-           stripLine2.StripWidth = 2;  
-           stripLine2.StripWidthType = DateTimeIntervalType.Days;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
- 
-           // Set the axis label to show the name of the day  
-           // This is done in order to demonstrate that weekends are highlighted  
-           chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds repeating horizontal strip lines.  
+            AddHorizRepeatingStripLines();  
+  
+            // Highlights weekend points using strip lines.  
+            HighlightWeekendsWithStripLines();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds repeating horizontal strip lines at intervals of 5.  
+        /// </summary>  
+        private void AddHorizRepeatingStripLines()  
+        {  
+            // Instantiate new strip line  
+            StripLine stripLine1 = new StripLine();  
+            stripLine1.StripWidth = 0;  
+            stripLine1.BorderColor = Color.Black;  
+            stripLine1.BorderWidth = 3;  
+            stripLine1.Interval = 5;  
+  
+            // Consider adding transparency so that the strip lines are lighter  
+            stripLine1.BackColor = Color.FromArgb(120, Color.Red);  
+  
+            stripLine1.BackSecondaryColor = Color.Black;  
+            stripLine1.BackGradientStyle = GradientStyle.LeftRight;  
+  
+            // Add the strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine1);  
+        }  
+  
+        /// <summary>  
+        /// Adds strip lines to highlight weekend values.  
+        /// </summary>  
+        private void HighlightWeekendsWithStripLines()  
+        {  
+            // Set strip line to highlight weekends  
+            StripLine stripLine2 = new StripLine();  
+            stripLine2.BackColor = Color.FromArgb(120, Color.Gold);              
+            stripLine2.IntervalOffset = -1.5;  
+            stripLine2.IntervalOffsetType = DateTimeIntervalType.Days;  
+            stripLine2.Interval = 1;  
+            stripLine2.IntervalType = DateTimeIntervalType.Weeks;  
+            stripLine2.StripWidth = 2;  
+            stripLine2.StripWidthType = DateTimeIntervalType.Days;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisX.StripLines.Add(stripLine2);  
+  
+            // Set the axis label to show the name of the day  
+            // This is done in order to demonstrate that weekends are highlighted  
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "ddd";  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -2269,109 +2269,109 @@ The following code example demonstrates how to add a threshold line after the ch
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -2415,115 +2415,115 @@ The following code example demonstrates how to add a threshold line after the ch
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
-       stripLine3.TextAlignment = StringAlignment.Near   
-       stripLine3.TextLineAlignment = StringAlignment.Near   
-       stripLine3.TextOrientation = TextOrientation.Auto   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+        stripLine3.TextAlignment = StringAlignment.Near   
+        stripLine3.TextLineAlignment = StringAlignment.Near   
+        stripLine3.TextOrientation = TextOrientation.Auto   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
-           stripLine3.TextAlignment = StringAlignment.Near;  
-           stripLine3.TextLineAlignment = StringAlignment.Near;  
-           stripLine3.TextOrientation = TextOrientation.Auto;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+            stripLine3.TextAlignment = StringAlignment.Near;  
+            stripLine3.TextLineAlignment = StringAlignment.Near;  
+            stripLine3.TextOrientation = TextOrientation.Auto;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -2567,115 +2567,115 @@ The following code example demonstrates how to add a threshold line after the ch
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
- 
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
-       stripLine3.TextAlignment = StringAlignment.Near   
-       stripLine3.TextLineAlignment = StringAlignment.Near   
-       stripLine3.TextOrientation = TextOrientation.Auto   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+        stripLine3.TextAlignment = StringAlignment.Near   
+        stripLine3.TextLineAlignment = StringAlignment.Near   
+        stripLine3.TextOrientation = TextOrientation.Auto   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
-           stripLine3.TextAlignment = StringAlignment.Near;  
-           stripLine3.TextLineAlignment = StringAlignment.Near;  
-           stripLine3.TextOrientation = TextOrientation.Auto;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+            stripLine3.TextAlignment = StringAlignment.Near;  
+            stripLine3.TextLineAlignment = StringAlignment.Near;  
+            stripLine3.TextOrientation = TextOrientation.Auto;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -2724,114 +2724,114 @@ The following code example demonstrates how to add a threshold line after the ch
  
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
- 
+  
 Public Partial Class StripLines   
-   Inherits System.Web.UI.Page   
-   Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
-       ' Add chart data before adding strip lines.   
-       AddChartData()   
- 
-       ' Adds a threshold line using strip lines.   
-       AddThresholdStripLine()   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a week of data with values between 20 and 35.   
-   ''' </summary>   
-   Private Sub AddChartData()   
-       ' Declare new random variable   
-       Dim rand As New Random()   
-       For i As Integer = 0 To 6   
- 
-           ' Add a week of data   
-           chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
-       Next   
-   End Sub   
- 
-   ''' <summary>   
-   ''' Adds a horizontal threshold strip line at the calculated mean   
-   ''' value of all data points in the first series of the chart.   
-   ''' </summary>   
-   Private Sub AddThresholdStripLine()   
-       Dim stripLine3 As New StripLine()   
- 
-       ' Set threshold line so that it is only shown once   
-       stripLine3.Interval = 0   
- 
-       ' Set the threshold line to be drawn at the calculated mean of the first series   
-       stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
- 
-       stripLine3.BackColor = Color.DarkGreen   
-       stripLine3.StripWidth = 0.25   
- 
-       ' Set text properties for the threshold line   
-       stripLine3.Text = "Mean"   
-       stripLine3.ForeColor = Color.Black   
-       stripLine3.TextAlignment = StringAlignment.Near   
-       stripLine3.TextLineAlignment = StringAlignment.Near   
-       stripLine3.TextOrientation = TextOrientation.Auto   
- 
-       ' Add strip line to the chart   
-       chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
-   End Sub   
+    Inherits System.Web.UI.Page   
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)  
+        ' Add chart data before adding strip lines.   
+        AddChartData()   
+  
+        ' Adds a threshold line using strip lines.   
+        AddThresholdStripLine()   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a week of data with values between 20 and 35.   
+    ''' </summary>   
+    Private Sub AddChartData()   
+        ' Declare new random variable   
+        Dim rand As New Random()   
+        For i As Integer = 0 To 6   
+  
+            ' Add a week of data   
+            chart1.Series(0).Points.AddXY(DateTime.Now.AddDays(i), rand.[Next](20, 35))   
+        Next   
+    End Sub   
+  
+    ''' <summary>   
+    ''' Adds a horizontal threshold strip line at the calculated mean   
+    ''' value of all data points in the first series of the chart.   
+    ''' </summary>   
+    Private Sub AddThresholdStripLine()   
+        Dim stripLine3 As New StripLine()   
+  
+        ' Set threshold line so that it is only shown once   
+        stripLine3.Interval = 0   
+  
+        ' Set the threshold line to be drawn at the calculated mean of the first series   
+        stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series(0).Name)   
+  
+        stripLine3.BackColor = Color.DarkGreen   
+        stripLine3.StripWidth = 0.25   
+  
+        ' Set text properties for the threshold line   
+        stripLine3.Text = "Mean"   
+        stripLine3.ForeColor = Color.Black   
+        stripLine3.TextAlignment = StringAlignment.Near   
+        stripLine3.TextLineAlignment = StringAlignment.Near   
+        stripLine3.TextOrientation = TextOrientation.Auto   
+  
+        ' Add strip line to the chart   
+        chart1.ChartAreas(0).AxisY.StripLines.Add(stripLine3)   
+    End Sub   
 End Class  
 ```  
  
 ```csharp  
 public partial class StripLines : System.Web.UI.Page   
-   {  
-       protected void Page_Load(object sender, EventArgs e)  
-       {              
-           // Add chart data  
-           AddChartData();  
- 
-           // Adds a threshold line using strip lines.  
-           AddThresholdStripLine();  
-       }  
- 
-       /// <summary>  
-       /// Adds a week of data with values between 20 and 35.  
-       /// </summary>  
-       private void AddChartData()  
-       {  
-           // Declare new random variable  
-           Random rand = new Random();  
- 
-           // Add a week of data  
-           for (int i = 0; i < 7; i++)   
-           {  
-               chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
-           }  
-       }  
- 
-       /// <summary>  
-       /// Adds a horizontal threshold strip line at the calculated mean   
-       /// value of all data points in the first series of the chart.  
-       /// </summary>  
-       private void AddThresholdStripLine()  
-       {  
-           StripLine stripLine3 = new StripLine();  
- 
-           // Set threshold line so that it is only shown once  
-           stripLine3.Interval = 0;  
- 
-           // Set the threshold line to be drawn at the calculated mean of the first series  
-           stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
- 
-           stripLine3.BackColor = Color.DarkGreen;  
-           stripLine3.StripWidth = 0.25;  
- 
-           // Set text properties for the threshold line  
-           stripLine3.Text = "Mean";  
-           stripLine3.ForeColor = Color.Black;  
-           stripLine3.TextAlignment = StringAlignment.Near;  
-           stripLine3.TextLineAlignment = StringAlignment.Near;  
-           stripLine3.TextOrientation = TextOrientation.Auto;  
- 
-           // Add strip line to the chart  
-           chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
-       }  
-   }  
+    {  
+        protected void Page_Load(object sender, EventArgs e)  
+        {              
+            // Add chart data  
+            AddChartData();  
+  
+            // Adds a threshold line using strip lines.  
+            AddThresholdStripLine();  
+        }  
+  
+        /// <summary>  
+        /// Adds a week of data with values between 20 and 35.  
+        /// </summary>  
+        private void AddChartData()  
+        {  
+            // Declare new random variable  
+            Random rand = new Random();  
+  
+            // Add a week of data  
+            for (int i = 0; i < 7; i++)   
+            {  
+                chart1.Series[0].Points.AddXY(DateTime.Now.AddDays(i), rand.Next(20,35));  
+            }  
+        }  
+  
+        /// <summary>  
+        /// Adds a horizontal threshold strip line at the calculated mean   
+        /// value of all data points in the first series of the chart.  
+        /// </summary>  
+        private void AddThresholdStripLine()  
+        {  
+            StripLine stripLine3 = new StripLine();  
+  
+            // Set threshold line so that it is only shown once  
+            stripLine3.Interval = 0;  
+  
+            // Set the threshold line to be drawn at the calculated mean of the first series  
+            stripLine3.IntervalOffset = chart1.DataManipulator.Statistics.Mean(chart1.Series[0].Name);  
+  
+            stripLine3.BackColor = Color.DarkGreen;  
+            stripLine3.StripWidth = 0.25;  
+  
+            // Set text properties for the threshold line  
+            stripLine3.Text = "Mean";  
+            stripLine3.ForeColor = Color.Black;  
+            stripLine3.TextAlignment = StringAlignment.Near;  
+            stripLine3.TextLineAlignment = StringAlignment.Near;  
+            stripLine3.TextOrientation = TextOrientation.Auto;  
+  
+            // Add strip line to the chart  
+            chart1.ChartAreas[0].AxisY.StripLines.Add(stripLine3);  
+        }  
+    }  
 ```  
  
  ]]></format>

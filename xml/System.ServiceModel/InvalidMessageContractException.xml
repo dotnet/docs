@@ -28,18 +28,18 @@ The following code example shows a contract and service that throws an <xref:Sys
 [ServiceContract(Namespace = "http://contoso.com/IMath")]  
 public interface IMath  
 {  
-   [OperationContract]  
-   void Add(AddMessage a);  
+    [OperationContract]  
+    void Add(AddMessage a);  
 }  
- 
+  
 [MessageContract]  
 public class AddMessage   
 {  
-   [MessageBodyMember(Name="operand")]  
-   public int a;  
- 
-   [MessageBodyMember(Name = "operand")]  
-   public int b;  
+    [MessageBodyMember(Name="operand")]  
+    public int a;  
+  
+    [MessageBodyMember(Name = "operand")]  
+    public int b;  
 }  
 ```  
  

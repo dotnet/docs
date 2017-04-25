@@ -27,11 +27,11 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web.extensions>  
- <scripting>  
-   <webServices>  
-     <jsonSerialization maxJsonLength="1000" />  
-   </webServices>  
- </scripting>  
+  <scripting>  
+    <webServices>  
+      <jsonSerialization maxJsonLength="1000" />  
+    </webServices>  
+  </scripting>  
 </system.web.extensions>  
 ```  
  

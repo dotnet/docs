@@ -40,9 +40,9 @@ The <xref:System.Xml.Serialization.XmlElementAttribute> can be applied multiple 
  
 ```  
 public class Things{  
-  [XmlElement(Type = typeof(string)),  
-  XmlElement(Type = typeof(int))]  
-  public object[] StringsAndInts;  
+   [XmlElement(Type = typeof(string)),  
+   XmlElement(Type = typeof(int))]  
+   public object[] StringsAndInts;  
 }  
 ```  
  
@@ -50,9 +50,9 @@ This results in XML that might resemble the following.
  
 ```  
 <Things>  
-  <string>Hello</string>  
-  <int>999</int>  
-  <string>World</string>  
+   <string>Hello</string>  
+   <int>999</int>  
+   <string>World</string>  
 </Things>  
 ```  
  
@@ -435,8 +435,8 @@ If the <xref:System.Xml.Serialization.XmlAttributeAttribute.Namespace%2A> proper
 ```  
 <schema elementFormDefault="qualified"   
 attributeFormDefault="unqualified"... >  
-<element name="Name"/>  
-<attribute name="Number"/>  
+ <element name="Name"/>  
+ <attribute name="Number"/>  
 </schema>  
 ```  
  

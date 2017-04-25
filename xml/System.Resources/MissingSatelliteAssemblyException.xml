@@ -55,33 +55,33 @@ The following source code builds an app that changes the current UI culture firs
 You can use the following batch file to build and execute the C# version of the example. If you're using Visual Basic, replace `csc` with `vbc`, and replace the `.cs` extension with `.vb`. When the example is executed, it displays a French language string but throws a <xref:System.Resources.MissingSatelliteAssemblyException> exception when the current culture is Russian (Russia). This is because the satellite assembly en\HelloWorld.dll that contains the resources of the default culture does not exist.  
  
 ```  
- 
+  
 vbc HelloWorld.vb  
- 
+  
 md fr  
 resgen Greet.fr.txt  
 al /out:fr\HelloWorld.resources.dll /culture:fr /embed:GreetResources.fr.resources  
- 
+  
 HelloWorld  
- 
+  
 ```  
  
 You can use the following batch file to build and execute the Visual Basic version of the example. If you're using C#, replace `vbc` with `csc`, and replace the `.vb` extension with `.cs`. When the example is executed, it displays a French language string when the current UI culture is French (France). When the current UI culture is Russia (Russian), it displays an English language string because Russian language resources do not exist, but the resource manager is able to load the resources of the default culture from the satellite assembly en\HelloWorld2.dll.  
  
 ```  
- 
+  
 vbc HelloWorld.vb /out:HelloWorld2.exe  
- 
+  
 md fr  
 resgen GreetResources.fr.txt  
 al /out:fr\HelloWorld2.resources.dll /culture:fr /embed:GreetResources.fr.resources  
- 
+  
 md en  
 resgen GreetResources.en.txt  
 al /out:en\HelloWorld2.resources.dll /culture:en /embed:GreetResources.en.resources  
- 
+  
 HelloWorld2  
- 
+  
 ```  
  
  ]]></format>

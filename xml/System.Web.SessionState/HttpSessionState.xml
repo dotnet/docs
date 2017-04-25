@@ -225,12 +225,12 @@ The following code example sets the `cookieless` session attribute to `true` in 
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState   
-     mode="InProc"  
-     cookieless="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState   
+      mode="InProc"  
+      cookieless="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -355,13 +355,13 @@ The following code example sets the `cookieless` session attribute to true in th
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState   
-     mode="InProc"  
-     cookieless="true"  
-     regenerateExpiredSessionId="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState   
+      mode="InProc"  
+      cookieless="true"  
+      regenerateExpiredSessionId="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -543,13 +543,13 @@ The following code example sets the `mode` session attribute to <xref:System.Web
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState   
-     mode="SQLServer"  
-     sqlConnectionString="Data Source=localhost;Integrated Security=SSPI"  
-     cookieless="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState   
+      mode="SQLServer"  
+      sqlConnectionString="Data Source=localhost;Integrated Security=SSPI"  
+      cookieless="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -681,12 +681,12 @@ The following code example shows a Web.config file that configures session state
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState   
-     cookieless="true"  
-     regenerateExpiredSessionId="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState   
+      cookieless="true"  
+      regenerateExpiredSessionId="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -777,12 +777,12 @@ The following code example sets the `timeout` session attribute to 30 minutes in
  
 ```  
 <configuration>  
- <system.web>  
-   <sessionState   
-     mode="InProc"  
-     cookieless="true"  
-     timeout="30" />  
- </system.web>  
+  <system.web>  
+    <sessionState   
+      mode="InProc"  
+      cookieless="true"  
+      timeout="30" />  
+  </system.web>  
 </configuration>  
 ```  
  

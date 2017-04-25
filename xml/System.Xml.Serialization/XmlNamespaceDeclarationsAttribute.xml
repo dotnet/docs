@@ -44,11 +44,11 @@ The schema for this might be:
  
 ```  
 <element name="select">  
-  <complexType>  
-     <simpleContent>  
-        <attribute name="path" />  
-     </simpleContent>  
-  </complexType>  
+   <complexType>  
+      <simpleContent>  
+         <attribute name="path" />  
+      </simpleContent>  
+   </complexType>  
 </element>  
 ```  
  
@@ -59,13 +59,13 @@ To retain the association between the prefix and the namespace URI, add a member
 ```  
 // C#  
 public class Select {  
- [XmlAttribute] public string path;  
- [XmlNamespaceDeclarations] public XmlSerializerNamespaces xmlns;  
+  [XmlAttribute] public string path;  
+  [XmlNamespaceDeclarations] public XmlSerializerNamespaces xmlns;  
 }  
 ' Visual Basic  
 Public Class Select  
-  <XmlAttribute> Public path As String  
-  <XmlNamespaceDeclarations> Public xmlns As XmlSerializerNamespaces  
+   <XmlAttribute> Public path As String  
+   <XmlNamespaceDeclarations> Public xmlns As XmlSerializerNamespaces  
 End Class  
 ```  
  
@@ -73,16 +73,16 @@ When serialized, the schema for the generated XML document contains the XML Sche
  
 ```  
 <xs:element name="select">  
-  <xs:complexType>  
-     <xs:annotation>   
-        <xs:appinfo>  
-         <keepNamespaceDeclarations>xmlns</keepNamespaceDeclarations>  
-        </xs:appinfo>   
-     </xs:annotation>   
-     <xs:simpleContent>  
-        <xs:attribute name="path" />  
-     </xs:simpleContent>  
-  </xs:complexType>  
+   <xs:complexType>  
+      <xs:annotation>   
+         <xs:appinfo>  
+          <keepNamespaceDeclarations>xmlns</keepNamespaceDeclarations>  
+         </xs:appinfo>   
+      </xs:annotation>   
+      <xs:simpleContent>  
+         <xs:attribute name="path" />  
+      </xs:simpleContent>  
+   </xs:complexType>  
 </xs:element>  
 ```  
  
@@ -97,21 +97,21 @@ using System.IO;
 using System.Xml.Serialization;  
 [XmlRoot("select")]  
 public class Select {  
-  [XmlAttribute]  
-  public string xpath;  
-  [XmlNamespaceDeclarations]  
-  public XmlSerializerNamespaces xmlns;  
+   [XmlAttribute]  
+   public string xpath;  
+   [XmlNamespaceDeclarations]  
+   public XmlSerializerNamespaces xmlns;  
 }  
 public class Test {  
-  public static void Main(string[] args) {  
-     Select mySelect = new Select();  
-     mySelect.xpath = "myNS:ref/@common:y";  
-     mySelect.xmlns = new XmlSerializerNamespaces();  
-     mySelect.xmlns.Add("MyNS", "myNS.tempuri.org");  
-     mySelect.xmlns.Add("common", "common.tempuri.org");  
-     XmlSerializer ser = new XmlSerializer(typeof(Select));  
-     ser.Serialize(Console.Out, mySelect);  
-  }  
+   public static void Main(string[] args) {  
+      Select mySelect = new Select();  
+      mySelect.xpath = "myNS:ref/@common:y";  
+      mySelect.xmlns = new XmlSerializerNamespaces();  
+      mySelect.xmlns.Add("MyNS", "myNS.tempuri.org");  
+      mySelect.xmlns.Add("common", "common.tempuri.org");  
+      XmlSerializer ser = new XmlSerializer(typeof(Select));  
+      ser.Serialize(Console.Out, mySelect);  
+   }  
 }  
 // Output:  
 // <?xml version="1.0" encoding="IBM437"?>  
@@ -123,21 +123,21 @@ Imports System.IO
 Imports System.Xml.Serialization  
 <XmlRoot("select")> _  
 Public Class SelectPath  
-  <XmlAttribute> _  
-  Public xpath As String   
-  <XmlNamespaceDeclarations> _  
-  public xmlns As XmlSerializerNamespaces   
+   <XmlAttribute> _  
+   Public xpath As String   
+   <XmlNamespaceDeclarations> _  
+   public xmlns As XmlSerializerNamespaces   
 End Class  
 Public Class Test   
-  Public Shared Sub Main()   
-     Dim mySelect As SelectPath = New SelectPath()  
-     mySelect.xpath = "myNS:ref/@common:y"  
-     mySelect.xmlns = New XmlSerializerNamespaces()  
-     mySelect.xmlns.Add("MyNS", "myNS.tempuri.org")  
-     mySelect.xmlns.Add("common", "common.tempuri.org")  
-     Dim ser As XmlSerializer = New XmlSerializer(mySelect.GetType)  
-     ser.Serialize(Console.Out, mySelect)  
-  End Sub  
+   Public Shared Sub Main()   
+      Dim mySelect As SelectPath = New SelectPath()  
+      mySelect.xpath = "myNS:ref/@common:y"  
+      mySelect.xmlns = New XmlSerializerNamespaces()  
+      mySelect.xmlns.Add("MyNS", "myNS.tempuri.org")  
+      mySelect.xmlns.Add("common", "common.tempuri.org")  
+      Dim ser As XmlSerializer = New XmlSerializer(mySelect.GetType)  
+      ser.Serialize(Console.Out, mySelect)  
+   End Sub  
 End Class  
 'Output:  
 ' <?xml version="1.0" encoding="IBM437"?>  
@@ -150,7 +150,7 @@ Also note that the member to which the attribute is applied contains only the pr
 ```  
 <?xml version="1.0"?>  
 <x:root xmlns:x="http://www.cohowinery.com/x/">  
- <x:select xmlns:cal="http://www.cohowinery.com/calendar/" path="cal:appointments/@cal:startTime" />  
+  <x:select xmlns:cal="http://www.cohowinery.com/calendar/" path="cal:appointments/@cal:startTime" />  
 </x:root>  
 ```  
  

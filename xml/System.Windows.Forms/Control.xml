@@ -4756,12 +4756,12 @@ The following is an example of how to adjust the existing font to make it bold:
  
 ```csharp  
 myControl.Font = new Font(myControl.Font,   
-   myControl.Font.Style | FontStyle.Bold);  
+    myControl.Font.Style | FontStyle.Bold);  
 ```  
  
 ```vb  
 MyControl.Font = New Font(MyControl.Font, _   
-   MyControl.Font.Style Or FontStyle.Bold)  
+    MyControl.Font.Style Or FontStyle.Bold)  
 ```  
  
   
@@ -12145,8 +12145,8 @@ For example:
  
 ```csharp  
 if (CanSelect && IsMnemonic(charCode, MyControl.Text) {  
-     // Perform action associated with mnemonic.  
-      }  
+      // Perform action associated with mnemonic.  
+       }  
 ```  
  
 This default implementation of the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method simply returns `false` to indicate that the control has no mnemonic.  

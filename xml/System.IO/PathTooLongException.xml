@@ -53,11 +53,11 @@ Long paths are disabled by default, and the legacy behavior is maintained. The r
 If this is undesirable, apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier but run under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] can enable long path support by including the following setting in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) element of the application configuration file:  
  
 ```xml  
- 
+  
 <runtime>   
-  <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=false" />   
+   <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=false" />   
 </runtime>  
- 
+  
 ```  
  
 <xref:System.IO.PathTooLongException> uses the HRESULT `COR_E_PATHTOOLONG`, which has the value 0x800700CE.  

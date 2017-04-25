@@ -31,29 +31,29 @@ The following sample code shows how you can build a designer for the Parallel ac
  
 ```  
 <sap:ActivityDesigner x:Class="customActivityDesigners.CustomParallelDesigner"  
-   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-   xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
-   xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"  
-   xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
-  <Grid>  
-       <StackPanel>  
-           <Label>Custom Parallel Designer</Label>  
-           <TextBlock Text="{Binding Path=ModelItem.Branches.Count, StringFormat=Branches: {0}}" />  
-           <sap:WorkflowItemsPresenter Items="{Binding Path=ModelItem.Branches}" AllowedItemType="{x:Type sa:Activity }" HintText="Place Activities Here" Margin="20,0,0,0">  
-               <sap:WorkflowItemsPresenter.ItemsPanel>  
-                   <ItemsPanelTemplate>  
-                       <StackPanel Orientation="Vertical" />  
-                   </ItemsPanelTemplate>  
-               </sap:WorkflowItemsPresenter.ItemsPanel>  
-               <sap:WorkflowItemsPresenter.SpacerTemplate>  
-                   <DataTemplate>  
-                       <Rectangle Width="80" Height="5" Fill="Black" />  
-                   </DataTemplate>  
-               </sap:WorkflowItemsPresenter.SpacerTemplate>  
-           </sap:WorkflowItemsPresenter>  
-       </StackPanel>  
-   </Grid>  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+    xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"  
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+   <Grid>  
+        <StackPanel>  
+            <Label>Custom Parallel Designer</Label>  
+            <TextBlock Text="{Binding Path=ModelItem.Branches.Count, StringFormat=Branches: {0}}" />  
+            <sap:WorkflowItemsPresenter Items="{Binding Path=ModelItem.Branches}" AllowedItemType="{x:Type sa:Activity }" HintText="Place Activities Here" Margin="20,0,0,0">  
+                <sap:WorkflowItemsPresenter.ItemsPanel>  
+                    <ItemsPanelTemplate>  
+                        <StackPanel Orientation="Vertical" />  
+                    </ItemsPanelTemplate>  
+                </sap:WorkflowItemsPresenter.ItemsPanel>  
+                <sap:WorkflowItemsPresenter.SpacerTemplate>  
+                    <DataTemplate>  
+                        <Rectangle Width="80" Height="5" Fill="Black" />  
+                    </DataTemplate>  
+                </sap:WorkflowItemsPresenter.SpacerTemplate>  
+            </sap:WorkflowItemsPresenter>  
+        </StackPanel>  
+    </Grid>  
 </sap:ActivityDesigner>  
 ```  
  
@@ -391,13 +391,13 @@ By providing a custom panel template, you can customize and control the layout o
 The following example in XAML shows the `ItemsPanel` for the designer of <xref:System.Activities.Statements.Parallel> activities that is based on a horizontally oriented `StackPanel`.  
  
 ```  
- 
+  
 <sad:WorkflowItemsPresenter.ItemsPanel>  
- <ItemsPanelTemplate>  
-   <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="ItemsPanel"/>  
- </ItemsPanelTemplate>  
+  <ItemsPanelTemplate>  
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="ItemsPanel"/>  
+  </ItemsPanelTemplate>  
 </sad:WorkflowItemsPresenter.ItemsPanel>  
- 
+  
 ```  
  
  ]]></format>

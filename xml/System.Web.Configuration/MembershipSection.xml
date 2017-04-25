@@ -27,29 +27,29 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <membership   
-   defaultProvider="AspNetSqlMembershipProvider"  
-   userIsOnlineTimeWindow="15">  
-   <providers>  
-     <add   
-       name=" AspNetSqlMembershipProvider"  
-       type="System.Web.Security.SqlMembershipProvider, System.Web,   
-         Version=2.0.3600.0, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a"  
-       connectionStringName="LocalSqlServer"  
-       passwordAttemptThreshold="5"  
-       passwordAttemptWindow="10"  
-       enablePasswordRetrieval="false"  
-       enablePasswordReset="true"  
-       requiresQuestionAndAnswer="true"  
-       applicationName="/"  
-       requiresUniqueEmail="false"  
-       passwordFormat="Hashed"  
-       description="Stores and retrieves membership data from   
-         the local Microsoft SQL Server database."  
-     />  
-   </providers>  
- </membership>  
+  <membership   
+    defaultProvider="AspNetSqlMembershipProvider"  
+    userIsOnlineTimeWindow="15">  
+    <providers>  
+      <add   
+        name=" AspNetSqlMembershipProvider"  
+        type="System.Web.Security.SqlMembershipProvider, System.Web,   
+          Version=2.0.3600.0, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a"  
+        connectionStringName="LocalSqlServer"  
+        passwordAttemptThreshold="5"  
+        passwordAttemptWindow="10"  
+        enablePasswordRetrieval="false"  
+        enablePasswordReset="true"  
+        requiresQuestionAndAnswer="true"  
+        applicationName="/"  
+        requiresUniqueEmail="false"  
+        passwordFormat="Hashed"  
+        description="Stores and retrieves membership data from   
+          the local Microsoft SQL Server database."  
+      />  
+    </providers>  
+  </membership>  
 </system.web>  
 ```  
  

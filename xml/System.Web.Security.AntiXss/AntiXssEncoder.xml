@@ -586,19 +586,19 @@ With some exceptions, Unicode code charts do not directly correspond to written 
 To add support for the Japanese language while continuing to allow English, use the following syntax:  
  
 ```  
- 
+  
 MarkAsSafe(  
-           LowerCodeCharts.Default,  
-           LowerMidCodeCharts.HangulJamo,  
-           MidCodeCharts.None,  
-           UpperMidCodeCharts.CjkRadicalsSupplement |   
-           UpperMidCodeCharts.CjkSymbolsAndPunctuation |   
-           UpperMidCodeCharts.Hiragana |   
-           UpperMidCodeCharts.Katakana |   
-           UpperMidCodeCharts.KatakanaPhoneticExtensions |   
-           UpperMidCodeCharts.LatinExtendedD |  
-           UpperMidCodeCharts.CjkUnifiedIdeographs,  
-           UpperCodeCharts.None);  
+            LowerCodeCharts.Default,  
+            LowerMidCodeCharts.HangulJamo,  
+            MidCodeCharts.None,  
+            UpperMidCodeCharts.CjkRadicalsSupplement |   
+            UpperMidCodeCharts.CjkSymbolsAndPunctuation |   
+            UpperMidCodeCharts.Hiragana |   
+            UpperMidCodeCharts.Katakana |   
+            UpperMidCodeCharts.KatakanaPhoneticExtensions |   
+            UpperMidCodeCharts.LatinExtendedD |  
+            UpperMidCodeCharts.CjkUnifiedIdeographs,  
+            UpperCodeCharts.None);  
 ```  
  
 > [!NOTE]

@@ -187,25 +187,25 @@ If the <xref:System.Xml.Schema.XmlSchemaSet.IsCompiled%2A> property of the <xref
 ```vb  
 ' First example  
 schemaSet.Add(schemaSet1)  
- 
+  
 ' Second example  
 Dim schema As XmlSchema  
- 
+  
 For Each schema in schemaSet.Schemas()  
- 
-   schemaSet.Add(schema)  
- 
+  
+    schemaSet.Add(schema)  
+  
 Next  
 ```  
  
 ```csharp  
 // First example  
 schemaSet.Add(schemaSet1);  
- 
+  
 // Second example  
 foreach(XmlSchema schema in schemaSet.Schemas())  
 {  
-   schemaSet.Add(schema);  
+    schemaSet.Add(schema);  
 }  
 ```  
  
@@ -221,7 +221,7 @@ Dim schemaSet1 As XmlSchemaSet = New XmlSchemaSet
 schemaSet1.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd")  
 schemaSet1.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
 schemaSet1.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd")  
- 
+  
 Dim schemaSet2 As XmlSchemaSet = New XmlSchemaSet  
 schemaSet2.Add(schemaSet1)  
 ```  
@@ -231,7 +231,7 @@ XmlSchemaSet schemaSet1 = new XmlSchemaSet();
 schemaSet1.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd");  
 schemaSet1.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
 schemaSet1.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd");  
- 
+  
 XmlSchemaSet schemaSet2 = new XmlSchemaSet();  
 schemaSet2.Add(schemaSet1);  
 ```  
@@ -296,20 +296,20 @@ The following are important notes to consider when using the <xref:System.Xml.Sc
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
 schemaSet.Add(Nothing, "books.xsd")  
- 
+  
 Dim schema As XmlSchema  
 For Each schema In schemaSet.Schemas("http://www.contoso.com/books")  
-   schema.Write(Console.Out)  
+    schema.Write(Console.Out)  
 Next  
 ```  
  
 ```csharp  
 XmlSchemaSet schemaSet = new XmlSchemaSet();  
 schemaSet.Add(null, "books.xsd");  
- 
+  
 foreach(XmlSchema schema in schemaSet.Schemas("http://www.contoso.com/books"))  
 {  
-   schema.Write(Console.Out);  
+    schema.Write(Console.Out);  
 }  
 ```  
  
@@ -319,7 +319,7 @@ In the code example above, `null` is specified as the `targetNamespace` paramete
  
 ```  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-   <xs:element name="A" type="xs:string" />  
+    <xs:element name="A" type="xs:string" />  
 </xs:schema>  
 ```  
  
@@ -328,13 +328,13 @@ If the schema above is added to the <xref:System.Xml.Schema.XmlSchemaSet> with t
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
 schemaSet.Add("http://www.contoso.com/new/targetnamespace", "http://www.contoso.com/targetnamespace.xsd")  
- 
+  
 Dim schema As XmlSchema  
- 
+  
 For Each schema in schemaSet.Schemas()  
- 
-   Console.WriteLine(schema.TargetNamespace)     
- 
+  
+    Console.WriteLine(schema.TargetNamespace)     
+  
 Next  
 ```  
  
@@ -343,7 +343,7 @@ XmlSchemaSet schemaSet = new XmlSchemaSet();
 schemaSet.Add("http://www.contoso.com/new/targetnamespace", "http://www.contoso.com/targetnamespace.xsd");  
 foreach(XmlSchema schema in schemaSet.Schemas())  
 {  
-   Console.WriteLine(schema.TargetNamespace);  
+    Console.WriteLine(schema.TargetNamespace);  
 }  
 ```  
  
@@ -627,7 +627,7 @@ Dim schemaSet As XmlSchemaSet = New XmlSchemaSet
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd")  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd")  
- 
+  
 Dim schemas(schemaSet.Count) As XmlSchema  
 schemaSet.CopyTo(schemas, 0)  
 ```  
@@ -637,7 +637,7 @@ XmlSchemaSet schemaSet = new XmlSchemaSet();
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd");  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd");  
- 
+  
 XmlSchema[] schemas = new XmlSchema[schemaSet.Count];  
 schemaSet.CopyTo(schemas, 0);  
 ```  
@@ -851,15 +851,15 @@ Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd")  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd")  
- 
+  
 Dim schema As XmlSchema  
- 
+  
 For Each schema In schemaSet.Schemas()  
- 
-   If schema.TargetNamespace = "http://www.contoso.com/music" Then  
-       schemaSet.Remove(schema)  
-   End If  
- 
+  
+    If schema.TargetNamespace = "http://www.contoso.com/music" Then  
+        schemaSet.Remove(schema)  
+    End If  
+  
 Next  
 ```  
  
@@ -868,13 +868,13 @@ XmlSchemaSet schemaSet = new XmlSchemaSet();
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd");  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd");  
- 
+  
 foreach (XmlSchema schema in schemaSet.Schemas())  
 {  
-   if (schema.TargetNamespace == "http://www.contoso.com/music")  
-   {  
-       schemaSet.Remove(schema);  
-   }  
+    if (schema.TargetNamespace == "http://www.contoso.com/music")  
+    {  
+        schemaSet.Remove(schema);  
+    }  
 }  
 ```  
  
@@ -951,15 +951,15 @@ Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd")  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd")  
- 
+  
 Dim schema As XmlSchema  
- 
+  
 For Each schema In schemaSet.Schemas()  
- 
-   If schema.TargetNamespace = "http://www.contoso.com/music" Then  
-       schemaSet.RemoveRecursive(schema)  
-   End If  
- 
+  
+    If schema.TargetNamespace = "http://www.contoso.com/music" Then  
+        schemaSet.RemoveRecursive(schema)  
+    End If  
+  
 Next  
 ```  
  
@@ -968,13 +968,13 @@ XmlSchemaSet schemaSet = new XmlSchemaSet();
 schemaSet.Add("http://www.contoso.com/retail", "http://www.contoso.com/retail.xsd");  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
 schemaSet.Add("http://www.contoso.com/music", "http://www.contoso.com/music.xsd");  
- 
+  
 foreach (XmlSchema schema in schemaSet.Schemas())  
 {  
-   if (schema.TargetNamespace == "http://www.contoso.com/music")  
-   {  
-       schemaSet.RemoveRecursive(schema);  
-   }  
+    if (schema.TargetNamespace == "http://www.contoso.com/music")  
+    {  
+        schemaSet.RemoveRecursive(schema);  
+    }  
 }  
 ```  
  
@@ -1027,12 +1027,12 @@ The following example illustrates reprocessing a schema added to the <xref:Syste
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
 Dim schema As XmlSchema = schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
 schemaSet.Compile()  
- 
+  
 Dim element As XmlSchemaElement = New XmlSchemaElement()  
 schema.Items.Add(element)  
 element.Name = "book"  
 element.SchemaTypeName = New XmlQualifiedName("string", "http://www.w3.org/2001/XMLSchema")  
- 
+  
 schemaSet.Reprocess(schema)  
 ```  
  
@@ -1040,12 +1040,12 @@ schemaSet.Reprocess(schema)
 XmlSchemaSet schemaSet = new XmlSchemaSet();  
 XmlSchema schema = schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
 schemaSet.Compile();  
- 
+  
 XmlSchemaElement element = new XmlSchemaElement();  
 schema.Items.Add(element);  
 element.Name = "book";  
 element.SchemaTypeName = new XmlQualifiedName("string", "http://www.w3.org/2001/XMLSchema");  
- 
+  
 schemaSet.Reprocess(schema);  
 ```  
  
@@ -1094,23 +1094,23 @@ The following example illustrates how to iterate over all the schemas in the <xr
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
- 
+  
 Dim schema As XmlSchema  
- 
+  
 For Each schema In schemaSet.Schemas()  
- 
-   schema.Write(Console.Out)  
- 
+  
+    schema.Write(Console.Out)  
+  
 Next  
 ```  
  
 ```csharp  
 XmlSchemaSet schemaSet = new XmlSchemaSet();  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
- 
+  
 foreach (XmlSchema schema in schemaSet.Schemas())  
 {  
-   schema.Write(Console.Out);  
+    schema.Write(Console.Out);  
 }  
 ```  
  
@@ -1161,23 +1161,23 @@ The following example illustrates how to iterate over all the schemas in the htt
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd")  
- 
+  
 Dim schema As XmlSchema  
- 
+  
 For Each schema In schemaSet.Schemas("http://www.contoso.com/books")  
- 
-   schema.Write(Console.Out)  
- 
+  
+    schema.Write(Console.Out)  
+  
 Next  
 ```  
  
 ```csharp  
 XmlSchemaSet schemaSet = new XmlSchemaSet();  
 schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd");  
- 
+  
 foreach (XmlSchema schema in schemaSet.Schemas("http://www.contoso.com/books"))  
 {  
-   schema.Write(Console.Out);  
+    schema.Write(Console.Out);  
 }  
 ```  
  

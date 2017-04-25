@@ -37,8 +37,8 @@ A <xref:System.Windows.Controls.ControlTemplate> is intended to be a self-contai
  
 ```  
 <ControlTemplate>  
- <VisualTreeRootNode > VisualTreeNodeContents  
- </VisualTreeRootNode >  
+  <VisualTreeRootNode > VisualTreeNodeContents  
+  </VisualTreeRootNode >  
 </ControlTemplate>  
 ```  
  
@@ -205,9 +205,9 @@ For the complete sample, see [Styling with ControlTemplates Sample](http://go.mi
  
 ```  
 <object>  
- <object.Triggers>  
-   oneOrMoreTriggers  
- </object.Triggers>  
+  <object.Triggers>  
+    oneOrMoreTriggers  
+  </object.Triggers>  
 </object>  
 ```  
  

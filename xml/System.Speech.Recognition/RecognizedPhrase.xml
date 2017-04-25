@@ -47,57 +47,57 @@ The following example shows a handler for a <xref:System.Speech.Recognition.Spee
 ```csharp  
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- // Add event handler code here.  
- 
- // The following code illustrates some of the information available  
- // in the recognition result.  
- Console.WriteLine("Recognition result summary:");  
- Console.WriteLine(  
-   "  Recognized phrase: {0}\n" +   
-   "  Confidence score {1}\n" +   
-   "  Grammar used: {2}\n",   
-   e.Result.Text, e.Result.Confidence, e.Result.Grammar.Name);  
- 
- // Display the semantic values in the recognition result.  
- Console.WriteLine("  Semantic results:");  
- foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
- {  
-   Console.WriteLine("    The {0} city is {1}",  
-     child.Key, child.Value.Value ?? "null");  
- }  
- Console.WriteLine();  
- 
- // Display information about the words in the recognition result.  
- Console.WriteLine("  Word summary: ");  
- foreach (RecognizedWordUnit word in e.Result.Words)  
- {  
-   Console.WriteLine(  
-     "    Lexical form ({1})" +  
-     " Pronunciation ({0})" +  
-     " Display form ({2})",  
-     word.Pronunciation, word.LexicalForm, word.DisplayAttributes);  
- }  
- 
- // Display information about the audio in the recognition result.  
- Console.WriteLine("  Input audio summary:\n" +  
-   "    Candidate Phrase at:       {0} mSec\n" +  
-   "    Phrase Length:             {1} mSec\n" +  
-   "    Input State Time:          {2}\n" +  
-   "    Input Format:              {3}\n",  
-   e.Result.Audio.AudioPosition,  
-   e.Result.Audio.Duration,  
-   e.Result.Audio.StartTime,  
-   e.Result.Audio.Format.EncodingFormat);  
- 
- // Display information about the alternate recognitions in the recognition result.  
- Console.WriteLine("  Alternate phrase collection:");  
- foreach (RecognizedPhrase phrase in e.Result.Alternates)  
- {  
-   Console.WriteLine("    Phrase: " + phrase.Text);  
-   Console.WriteLine("    Confidence score: " + phrase.Confidence);  
- }  
+  if (e.Result == null) return;  
+  
+  // Add event handler code here.  
+  
+  // The following code illustrates some of the information available  
+  // in the recognition result.  
+  Console.WriteLine("Recognition result summary:");  
+  Console.WriteLine(  
+    "  Recognized phrase: {0}\n" +   
+    "  Confidence score {1}\n" +   
+    "  Grammar used: {2}\n",   
+    e.Result.Text, e.Result.Confidence, e.Result.Grammar.Name);  
+  
+  // Display the semantic values in the recognition result.  
+  Console.WriteLine("  Semantic results:");  
+  foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
+  {  
+    Console.WriteLine("    The {0} city is {1}",  
+      child.Key, child.Value.Value ?? "null");  
+  }  
+  Console.WriteLine();  
+  
+  // Display information about the words in the recognition result.  
+  Console.WriteLine("  Word summary: ");  
+  foreach (RecognizedWordUnit word in e.Result.Words)  
+  {  
+    Console.WriteLine(  
+      "    Lexical form ({1})" +  
+      " Pronunciation ({0})" +  
+      " Display form ({2})",  
+      word.Pronunciation, word.LexicalForm, word.DisplayAttributes);  
+  }  
+  
+  // Display information about the audio in the recognition result.  
+  Console.WriteLine("  Input audio summary:\n" +  
+    "    Candidate Phrase at:       {0} mSec\n" +  
+    "    Phrase Length:             {1} mSec\n" +  
+    "    Input State Time:          {2}\n" +  
+    "    Input Format:              {3}\n",  
+    e.Result.Audio.AudioPosition,  
+    e.Result.Audio.Duration,  
+    e.Result.Audio.StartTime,  
+    e.Result.Audio.Format.EncodingFormat);  
+  
+  // Display information about the alternate recognitions in the recognition result.  
+  Console.WriteLine("  Alternate phrase collection:");  
+  foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+  {  
+    Console.WriteLine("    Phrase: " + phrase.Text);  
+    Console.WriteLine("    Confidence score: " + phrase.Confidence);  
+  }  
 }  
 ```  
  
@@ -142,59 +142,59 @@ The following example shows a handler for a <xref:System.Speech.Recognition.Spee
 ```csharp  
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
- if (e.Result == null) return;  
- 
- // Add event handler code here.  
- 
- // The following code illustrates some of the information available  
- // in the recognition result.  
- Console.WriteLine("Recognition result summary:");  
- Console.WriteLine(  
-   "  Recognized phrase: {0}\n" +   
-   "  Confidence score {1}\n" +   
-   "  Grammar used: {2}\n",   
-   e.Result.Text, e.Result.Confidence, e.Result.Grammar.Name);  
- 
- // Display the semantic values in the recognition result.  
- Console.WriteLine("  Semantic results:");  
- foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
- {  
-   Console.WriteLine("    The {0} city is {1}",  
-     child.Key, child.Value.Value ?? "null");  
- }  
- Console.WriteLine();  
- 
- // Display information about the words in the recognition result.  
- Console.WriteLine("  Word summary: ");  
- foreach (RecognizedWordUnit word in e.Result.Words)  
- {  
-   Console.WriteLine(  
-     "    Lexical form ({1})" +  
-     " Pronunciation ({0})" +  
-     " Display form ({2})",  
-     word.Pronunciation, word.LexicalForm, word.DisplayAttributes);  
- }  
- 
- // Display information about the audio in the recognition result.  
- Console.WriteLine("  Input audio summary:\n" +  
-   "    Candidate Phrase at:       {0} mSec\n" +  
-   "    Phrase Length:             {1} mSec\n" +  
-   "    Input State Time:          {2}\n" +  
-   "    Input Format:              {3}\n",  
-   e.Result.Audio.AudioPosition,  
-   e.Result.Audio.Duration,  
-   e.Result.Audio.StartTime,  
-   e.Result.Audio.Format.EncodingFormat);  
- 
- // Display information about the alternate recognitions in the recognition result.  
- Console.WriteLine("  Alternate phrase collection:");  
- foreach (RecognizedPhrase phrase in e.Result.Alternates)  
- {  
-   Console.WriteLine("    Phrase: " + phrase.Text);  
-   Console.WriteLine("    Confidence score: " + phrase.Confidence);  
- }  
+  if (e.Result == null) return;  
+  
+  // Add event handler code here.  
+  
+  // The following code illustrates some of the information available  
+  // in the recognition result.  
+  Console.WriteLine("Recognition result summary:");  
+  Console.WriteLine(  
+    "  Recognized phrase: {0}\n" +   
+    "  Confidence score {1}\n" +   
+    "  Grammar used: {2}\n",   
+    e.Result.Text, e.Result.Confidence, e.Result.Grammar.Name);  
+  
+  // Display the semantic values in the recognition result.  
+  Console.WriteLine("  Semantic results:");  
+  foreach (KeyValuePair<String, SemanticValue> child in e.Result.Semantics)  
+  {  
+    Console.WriteLine("    The {0} city is {1}",  
+      child.Key, child.Value.Value ?? "null");  
+  }  
+  Console.WriteLine();  
+  
+  // Display information about the words in the recognition result.  
+  Console.WriteLine("  Word summary: ");  
+  foreach (RecognizedWordUnit word in e.Result.Words)  
+  {  
+    Console.WriteLine(  
+      "    Lexical form ({1})" +  
+      " Pronunciation ({0})" +  
+      " Display form ({2})",  
+      word.Pronunciation, word.LexicalForm, word.DisplayAttributes);  
+  }  
+  
+  // Display information about the audio in the recognition result.  
+  Console.WriteLine("  Input audio summary:\n" +  
+    "    Candidate Phrase at:       {0} mSec\n" +  
+    "    Phrase Length:             {1} mSec\n" +  
+    "    Input State Time:          {2}\n" +  
+    "    Input Format:              {3}\n",  
+    e.Result.Audio.AudioPosition,  
+    e.Result.Audio.Duration,  
+    e.Result.Audio.StartTime,  
+    e.Result.Audio.Format.EncodingFormat);  
+  
+  // Display information about the alternate recognitions in the recognition result.  
+  Console.WriteLine("  Alternate phrase collection:");  
+  foreach (RecognizedPhrase phrase in e.Result.Alternates)  
+  {  
+    Console.WriteLine("    Phrase: " + phrase.Text);  
+    Console.WriteLine("    Confidence score: " + phrase.Confidence);  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -231,14 +231,14 @@ In the following example, a method returns a string that contains the SML for th
 ```  
 private string GetSemanticsSML(RecognizedPhrase result)  
 {  
- if (result.Semantics.Count > 0)  
- {  
-   return result.ConstructSmlFromSemantics().CreateNavigator().OuterXml;  
- }  
- else  
- {  
-   return null;  
- }  
+  if (result.Semantics.Count > 0)  
+  {  
+    return result.ConstructSmlFromSemantics().CreateNavigator().OuterXml;  
+  }  
+  else  
+  {  
+    return null;  
+  }  
 }  
 ```  
  
@@ -373,16 +373,16 @@ The following example defines a method that gets specific semantic information f
  
 ```  
 static bool TryGetSemanticValue(  
-     RecognizedPhrase phrase, string key, out SemanticValue value)  
+      RecognizedPhrase phrase, string key, out SemanticValue value)  
 {  
- value = null;  
- bool found = phrase.Semantics.ContainsKey(key);  
- if (found)  
- {  
-   value = phrase.Semantics[key];  
- }  
- 
- return found;  
+  value = null;  
+  bool found = phrase.Semantics.ContainsKey(key);  
+  if (found)  
+  {  
+    value = phrase.Semantics[key];  
+  }  
+  
+  return found;  
 }  
 ```  
  

@@ -32,33 +32,33 @@ The following configuration file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <compilation>   
-   <assemblies>  
-     <add assembly="mscorlib" />  
-     <add assembly="System, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b77a5c561934e089" />  
-     <add assembly="System.Configuration, Version=2.0.0.0,   
-       Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.Web, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.Data, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b77a5c561934e089" />  
-     <add assembly="System.Web.Services, Version=2.0.0.0,   
-       Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.Xml, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b77a5c561934e089" />  
-     <add assembly="System.Drawing, Version=2.0.0.0,   
-       Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.EnterpriseServices, Version=2.0.0.0,   
-       Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.Web.Mobile, Version=2.0.0.0,   
-       Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="System.Web.UI.MobileControls.Adapters,   
-       Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add assembly="*" />  
-   </assemblies>  
- </compilation>  
+  <compilation>   
+    <assemblies>  
+      <add assembly="mscorlib" />  
+      <add assembly="System, Version=2.0.0.0, Culture=neutral,   
+        PublicKeyToken=b77a5c561934e089" />  
+      <add assembly="System.Configuration, Version=2.0.0.0,   
+        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.Web, Version=2.0.0.0, Culture=neutral,   
+        PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.Data, Version=2.0.0.0, Culture=neutral,   
+        PublicKeyToken=b77a5c561934e089" />  
+      <add assembly="System.Web.Services, Version=2.0.0.0,   
+        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.Xml, Version=2.0.0.0, Culture=neutral,   
+        PublicKeyToken=b77a5c561934e089" />  
+      <add assembly="System.Drawing, Version=2.0.0.0,   
+        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.EnterpriseServices, Version=2.0.0.0,   
+        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.Web.Mobile, Version=2.0.0.0,   
+        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="System.Web.UI.MobileControls.Adapters,   
+        Version=2.0.0.0, Culture=neutral,   
+        PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add assembly="*" />  
+    </assemblies>  
+  </compilation>  
 </system.web>  
 ```  
  

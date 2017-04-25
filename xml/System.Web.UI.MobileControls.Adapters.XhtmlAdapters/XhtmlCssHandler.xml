@@ -32,11 +32,11 @@ For your Web site to take advantage of the <xref:System.Web.UI.MobileControls.Ad
  
 ```  
 <httpHandlers>  
-   <add verb="*" path="*/xhtmlCss.axd"   
+    <add verb="*" path="*/xhtmlCss.axd"   
 type =   
- "System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler,   
-   System.Web.UI.MobileControls.Adapters,Version=1.0.0.0,   
-   PublicKeyToken=b03f5f7f11d50a3a,Culture=neutral" />  
+  "System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCssHandler,   
+    System.Web.UI.MobileControls.Adapters,Version=1.0.0.0,   
+    PublicKeyToken=b03f5f7f11d50a3a,Culture=neutral" />  
 </httpHandlers>  
 ```  
  

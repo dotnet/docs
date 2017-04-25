@@ -39,21 +39,21 @@ The method marked with the ManagementCommit attribute does not take any paramete
 ```  
 public class Process  
 {  
-   /// Key attribute marks a key property. Keys are not changeable.  
-   /// Keys have to be unique information.  
-   [ManagementKey]  
-   public int Id   
-   {  
-       get {    }  
-   }  
- 
-   /// ManagementConfiguration stands for read/write manageable  
-   /// property from a read/write field.  
-   [ManagementConfiguration]  
-   public string UserDefinedString;  
- 
-   [ManagementCommit]  
-   void SaveOnDevice();  
+    /// Key attribute marks a key property. Keys are not changeable.  
+    /// Keys have to be unique information.  
+    [ManagementKey]  
+    public int Id   
+    {  
+        get {    }  
+    }  
+  
+    /// ManagementConfiguration stands for read/write manageable  
+    /// property from a read/write field.  
+    [ManagementConfiguration]  
+    public string UserDefinedString;  
+  
+    [ManagementCommit]  
+    void SaveOnDevice();  
 }  
 ```  
  

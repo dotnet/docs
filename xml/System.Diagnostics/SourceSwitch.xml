@@ -33,7 +33,7 @@ To configure a <xref:System.Diagnostics.SourceSwitch>, edit the configuration fi
  
 ```  
 <switches>  
- <add name="SourceSwitch" value="Verbose"></add>  
+  <add name="SourceSwitch" value="Verbose"></add>  
 </switches>  
 ```  
  
@@ -77,11 +77,11 @@ To set the level of your <xref:System.Diagnostics.SourceSwitch>, edit the config
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="SourceSwitch" value="Verbose" ></add>  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="SourceSwitch" value="Verbose" ></add>  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -128,11 +128,11 @@ To set the level of your <xref:System.Diagnostics.SourceSwitch>, edit the config
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="SourceSwitch" value="Verbose" ></add>  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="SourceSwitch" value="Verbose" ></add>  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

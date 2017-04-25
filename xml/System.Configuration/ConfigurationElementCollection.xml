@@ -51,15 +51,15 @@ When you run the console application, an instance of the `UrlsSection` class is 
  
 ```  
 <configuration>  
-   <configSections>  
-       <section name="MyUrls" type="UrlsSection,   
-         ConfigurationElementCollection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-   </configSections>  
-   <MyUrls>  
-       <urls>  
-          <add name="Contoso" url="http://www.contoso.com" port="4040 />  
-       </urls>  
-   </MyUrls>  
+    <configSections>  
+        <section name="MyUrls" type="UrlsSection,   
+          ConfigurationElementCollection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </configSections>  
+    <MyUrls>  
+        <urls>  
+           <add name="Contoso" url="http://www.contoso.com" port="4040 />  
+        </urls>  
+    </MyUrls>  
 </configuration  
 ```  
  

@@ -20,26 +20,26 @@ The following example is part of the code-behind file for the Insert.aspx page t
  
 ```csharp  
 public partial class Insert : System.Web.UI.Page {  
-   protected MetaTable table;     
- 
-   protected void Page_Load(object sender, EventArgs e) {  
-       table = DetailsDataSource.GetTable();  
-       Title = table.DisplayName;  
-   }  
+    protected MetaTable table;     
+  
+    protected void Page_Load(object sender, EventArgs e) {  
+        table = DetailsDataSource.GetTable();  
+        Title = table.DisplayName;  
+    }  
 }  
 ```  
  
 ```vb  
 Partial Class Insert  
-   Inherits System.Web.UI.Page  
- 
-   Protected table As MetaTable      
- 
-   Protected Sub Page_Load(ByVal sender As Object, _  
-           ByVal e As EventArgs)  
-       table = DetailsDataSource.GetTable  
-       Title = table.DisplayName  
-   End Sub  
+    Inherits System.Web.UI.Page  
+  
+    Protected table As MetaTable      
+  
+    Protected Sub Page_Load(ByVal sender As Object, _  
+            ByVal e As EventArgs)  
+        table = DetailsDataSource.GetTable  
+        Title = table.DisplayName  
+    End Sub  
 End Class  
 ```  
  
@@ -904,22 +904,22 @@ The following example shows how to create a primary-key dictionary.
  
 ```csharp  
 private RouteValueDictionary GetRouteValues(MetaTable table, object row) {  
-   RouteValueDictionary routeValues = GetRouteValues();  
-   foreach (var pk in table.GetPrimaryKeyDictionary(row)) {  
-       routeValues[pk.Key] = pk.Value;  
-   }  
-   return routeValues;  
+    RouteValueDictionary routeValues = GetRouteValues();  
+    foreach (var pk in table.GetPrimaryKeyDictionary(row)) {  
+        routeValues[pk.Key] = pk.Value;  
+    }  
+    return routeValues;  
 }   
 ```  
  
 ```vb  
 Private Function GetRouteValues(ByVal table As MetaTable, _  
-       ByVal row As Object) As RouteValueDictionary   
-   Dim routeValues As RouteValueDictionary = GetRouteValues()   
-   For Each pk In table.GetPrimaryKeyDictionary(row)   
-       routeValues(pk.Key) = pk.Value   
-   Next   
-   Return routeValues   
+        ByVal row As Object) As RouteValueDictionary   
+    Dim routeValues As RouteValueDictionary = GetRouteValues()   
+    For Each pk In table.GetPrimaryKeyDictionary(row)   
+        routeValues(pk.Key) = pk.Value   
+    Next   
+    Return routeValues   
 End Function   
 ```  
  
@@ -1153,15 +1153,15 @@ The following example shows how to override the <xref:System.Web.DynamicData.Met
  
 ```csharp  
 protected  override void Initialize() {  
-   base.Initialize();  
-   MyOverridenInit();  
+    base.Initialize();  
+    MyOverridenInit();  
 }  
 ```  
  
 ```vb  
 Protected Overloads Overrides Sub Initialize()   
-   MyBase.Initialize()   
-   MyOverridenInit()   
+    MyBase.Initialize()   
+    MyOverridenInit()   
 End Sub  
 ```  
  

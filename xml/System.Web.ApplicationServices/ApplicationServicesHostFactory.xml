@@ -27,18 +27,18 @@ The following example shows how to specify <xref:System.Web.ApplicationServices.
  
 ```csharp  
 <%@ ServiceHost   
- Language="C#"   
- Service="System.Web.ApplicationServices.AuthenticationService"   
- Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+  Language="C#"   
+  Service="System.Web.ApplicationServices.AuthenticationService"   
+  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
 %>  
- 
+  
 ```  
  
 ```vb  
 <%@ ServiceHost   
- Language="VB"   
- Service="System.Web.ApplicationServices.AuthenticationService"   
- Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+  Language="VB"   
+  Service="System.Web.ApplicationServices.AuthenticationService"   
+  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
 %>  
 ```  
  

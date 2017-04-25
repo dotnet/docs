@@ -100,8 +100,8 @@ The following example adds a new node to the XML document.
 Display the modified XML...  
 <?xml version="1.0" encoding="IBM437"?>  
 <book genre="novel" ISBN="1-861001-57-5">  
- <title>Pride And Prejudice</title>  
- <price>19.95</price>  
+  <title>Pride And Prejudice</title>  
+  <price>19.95</price>  
 ```  
  
  ]]></format>
@@ -2177,9 +2177,9 @@ For example, suppose you have the following XML:
  
 ```  
 <bookstore>  
- <book>  
-   <title>&apos;Emma&apos;</title>  
- </book>  
+  <book>  
+    <title>&apos;Emma&apos;</title>  
+  </book>  
 </bookstore>  
 ```  
  
@@ -2250,9 +2250,9 @@ For example, if you had the following XML:
  
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
-<book>  
-  <title>Pride And Prejudice</title>  
-</book>  
+ <book>  
+   <title>Pride And Prejudice</title>  
+ </book>  
 </bookstore>  
 ```  
  
@@ -2271,9 +2271,9 @@ For example, suppose you have the following XML:
  
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
- <book>  
-   <title>&apos;Emma&apos;</title>  
- </book>  
+  <book>  
+    <title>&apos;Emma&apos;</title>  
+  </book>  
 </bookstore>  
 ```  
  
@@ -2347,9 +2347,9 @@ For example, suppose you have the following XML:
  
 ```  
 <bookstore>  
- <book>  
-   <title>&apos;Emma&apos;</title>  
- </book>  
+  <book>  
+    <title>&apos;Emma&apos;</title>  
+  </book>  
 </bookstore>  
 ```  
  
@@ -2418,9 +2418,9 @@ For example, if you had the following XML:
  
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
-<book>  
-  <title>Pride And Prejudice</title>  
-</book>  
+ <book>  
+   <title>Pride And Prejudice</title>  
+ </book>  
 </bookstore>  
 ```  
  
@@ -2439,9 +2439,9 @@ For example, suppose you have the following XML:
  
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
- <book>  
-   <title>&apos;Emma&apos;</title>  
- </book>  
+  <book>  
+    <title>&apos;Emma&apos;</title>  
+  </book>  
 </bookstore>  
 ```  
  

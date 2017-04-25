@@ -27,121 +27,121 @@ The following example creates a new <xref:System.DirectoryServices.DirectoryEntr
 Imports System  
 Imports System.DirectoryServices  
 Imports Microsoft.VisualBasic  
- 
+  
 Public Class MySample  
-  Public Shared Sub Main()  
-     Dim myLDAPPath As String = ""  
-     Try  
-        ' Create a 'DirectoryEntry' object to search.  
-        Console.WriteLine("Enter the path ( Ex : 'LDAP://MyServer')")  
-        myLDAPPath = Console.ReadLine()  
-        Dim mySearchRoot As New DirectoryEntry(myLDAPPath)  
- 
-        Dim myDirectorySearcher As New DirectorySearcher(mySearchRoot)  
- 
-        ' Get the first entry of the search.  
-        Dim mySearchResult As SearchResult = myDirectorySearcher.FindOne()  
-        If Not (mySearchResult Is Nothing) Then  
-           ' Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
-           Dim myDirectoryEntry As DirectoryEntry = mySearchResult.GetDirectoryEntry()  
-           Console.WriteLine(ControlChars.Newline + "The name of the 'myDirectoryEntry' " + _  
-                       "directory entry that corresponds to the " + _  
-                       "'mySearchResult' search result is : {0}" + _  
-                       ControlChars.Newline, myDirectoryEntry.Name)  
-           Dim mySearchResultPath As String = mySearchResult.Path  
-           Console.WriteLine("The path for the 'mySearchResult' search result is : {0}" + _  
-                             ControlChars.Newline, mySearchResultPath)  
-           ' Get the properties of the 'mySearchResult'.  
-           Dim myResultPropColl As ResultPropertyCollection  
-           myResultPropColl = mySearchResult.Properties  
-           Console.WriteLine("The properties of the 'mySearchResult' are :")  
-           Dim myKey As String  
-           For Each myKey In  myResultPropColl.PropertyNames  
-              Dim tab1 As String = "    "  
-              Console.WriteLine(myKey + " = ")  
-              Dim myCollection As Object  
-              For Each myCollection In  myResultPropColl(myKey)  
-                 Console.WriteLine(tab1 + myCollection)  
-              Next myCollection  
-           Next myKey  
-           myDirectoryEntry.Dispose()  
-           mySearchRoot.Dispose()  
-        Else  
-           Console.WriteLine("The '" + myLDAPPath + "' path not found.")  
-        End If  
-     Catch e As Exception  
-        Console.WriteLine("The '" + myLDAPPath + "' path not found.")  
-        Console.WriteLine("Exception : " & e.Message)  
-     End Try  
-  End Sub 'Main  
+   Public Shared Sub Main()  
+      Dim myLDAPPath As String = ""  
+      Try  
+         ' Create a 'DirectoryEntry' object to search.  
+         Console.WriteLine("Enter the path ( Ex : 'LDAP://MyServer')")  
+         myLDAPPath = Console.ReadLine()  
+         Dim mySearchRoot As New DirectoryEntry(myLDAPPath)  
+  
+         Dim myDirectorySearcher As New DirectorySearcher(mySearchRoot)  
+  
+         ' Get the first entry of the search.  
+         Dim mySearchResult As SearchResult = myDirectorySearcher.FindOne()  
+         If Not (mySearchResult Is Nothing) Then  
+            ' Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
+            Dim myDirectoryEntry As DirectoryEntry = mySearchResult.GetDirectoryEntry()  
+            Console.WriteLine(ControlChars.Newline + "The name of the 'myDirectoryEntry' " + _  
+                        "directory entry that corresponds to the " + _  
+                        "'mySearchResult' search result is : {0}" + _  
+                        ControlChars.Newline, myDirectoryEntry.Name)  
+            Dim mySearchResultPath As String = mySearchResult.Path  
+            Console.WriteLine("The path for the 'mySearchResult' search result is : {0}" + _  
+                              ControlChars.Newline, mySearchResultPath)  
+            ' Get the properties of the 'mySearchResult'.  
+            Dim myResultPropColl As ResultPropertyCollection  
+            myResultPropColl = mySearchResult.Properties  
+            Console.WriteLine("The properties of the 'mySearchResult' are :")  
+            Dim myKey As String  
+            For Each myKey In  myResultPropColl.PropertyNames  
+               Dim tab1 As String = "    "  
+               Console.WriteLine(myKey + " = ")  
+               Dim myCollection As Object  
+               For Each myCollection In  myResultPropColl(myKey)  
+                  Console.WriteLine(tab1 + myCollection)  
+               Next myCollection  
+            Next myKey  
+            myDirectoryEntry.Dispose()  
+            mySearchRoot.Dispose()  
+         Else  
+            Console.WriteLine("The '" + myLDAPPath + "' path not found.")  
+         End If  
+      Catch e As Exception  
+         Console.WriteLine("The '" + myLDAPPath + "' path not found.")  
+         Console.WriteLine("Exception : " & e.Message)  
+      End Try  
+   End Sub 'Main  
 End Class 'MySample  
 ```  
  
 ```csharp  
 using System;  
 using System.DirectoryServices;  
- 
+  
 public class MySample  
 {  
-   public static void Main()  
-   {  
-       string myLDAPPath = "";  
-       try  
-       {  
-           // Create a 'DirectoryEntry' object to search.  
-           Console.WriteLine("Enter the path ( Ex : 'LDAP://MyServer')");  
-           myLDAPPath = Console.ReadLine();  
- 
-           DirectoryEntry mySearchRoot = new DirectoryEntry(myLDAPPath);  
-           DirectorySearcher myDirectorySearcher =   
-                   new DirectorySearcher(mySearchRoot);  
- 
-           // Get the first entry of the search.  
-           SearchResult mySearchResult = myDirectorySearcher.FindOne();  
- 
-           if ( mySearchResult != null )  
-           {  
-               // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
-               DirectoryEntry myDirectoryEntry =   
-               mySearchResult.GetDirectoryEntry();  
-               Console.WriteLine("\nThe name of the 'myDirectoryEntry' " +  
-                       "directory entry that corresponds to the " +  
-                       "'mySearchResult' search result is : {0}\n",  
-                       myDirectoryEntry.Name);  
-               string mySearchResultPath = mySearchResult.Path;  
-               Console.WriteLine("The path for the 'mySearchResult' search "  
-                       + "result is : {0}\n", mySearchResultPath);  
- 
-               // Get the properties of the 'mySearchResult'.  
-               ResultPropertyCollection myResultPropColl;  
-               myResultPropColl = mySearchResult.Properties;  
-               Console.WriteLine("The properties of the " +   
-                       "'mySearchResult' are :");  
- 
-               foreach( string myKey in myResultPropColl.PropertyNames)  
-               {  
-                   string tab = "    ";  
-                   Console.WriteLine(myKey + " = ");  
-                   foreach( Object myCollection in myResultPropColl[myKey])  
-                   {  
-                       Console.WriteLine(tab + myCollection);  
-                   }  
-               }  
-               mySearchRoot.Dispose();  
-               myDirectoryEntry.Dispose();  
-           }  
-           else  
-           {  
-               Console.WriteLine("The '" + myLDAPPath + "' path not found.");  
-           }  
-       }  
-       catch(Exception e)  
-       {  
-           Console.WriteLine("The '" + myLDAPPath + "' path not found.");  
-           Console.WriteLine("Exception : " + e.Message);  
-       }  
-   }  
- 
+    public static void Main()  
+    {  
+        string myLDAPPath = "";  
+        try  
+        {  
+            // Create a 'DirectoryEntry' object to search.  
+            Console.WriteLine("Enter the path ( Ex : 'LDAP://MyServer')");  
+            myLDAPPath = Console.ReadLine();  
+  
+            DirectoryEntry mySearchRoot = new DirectoryEntry(myLDAPPath);  
+            DirectorySearcher myDirectorySearcher =   
+                    new DirectorySearcher(mySearchRoot);  
+  
+            // Get the first entry of the search.  
+            SearchResult mySearchResult = myDirectorySearcher.FindOne();  
+  
+            if ( mySearchResult != null )  
+            {  
+                // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
+                DirectoryEntry myDirectoryEntry =   
+                mySearchResult.GetDirectoryEntry();  
+                Console.WriteLine("\nThe name of the 'myDirectoryEntry' " +  
+                        "directory entry that corresponds to the " +  
+                        "'mySearchResult' search result is : {0}\n",  
+                        myDirectoryEntry.Name);  
+                string mySearchResultPath = mySearchResult.Path;  
+                Console.WriteLine("The path for the 'mySearchResult' search "  
+                        + "result is : {0}\n", mySearchResultPath);  
+  
+                // Get the properties of the 'mySearchResult'.  
+                ResultPropertyCollection myResultPropColl;  
+                myResultPropColl = mySearchResult.Properties;  
+                Console.WriteLine("The properties of the " +   
+                        "'mySearchResult' are :");  
+  
+                foreach( string myKey in myResultPropColl.PropertyNames)  
+                {  
+                    string tab = "    ";  
+                    Console.WriteLine(myKey + " = ");  
+                    foreach( Object myCollection in myResultPropColl[myKey])  
+                    {  
+                        Console.WriteLine(tab + myCollection);  
+                    }  
+                }  
+                mySearchRoot.Dispose();  
+                myDirectoryEntry.Dispose();  
+            }  
+            else  
+            {  
+                Console.WriteLine("The '" + myLDAPPath + "' path not found.");  
+            }  
+        }  
+        catch(Exception e)  
+        {  
+            Console.WriteLine("The '" + myLDAPPath + "' path not found.");  
+            Console.WriteLine("Exception : " + e.Message);  
+        }  
+    }  
+  
 }  
 ```  
  
@@ -149,69 +149,69 @@ public class MySample
 #using <mscorlib.dll>  
 #using <System.dll>  
 #using <System.Directoryservices.dll>  
- 
+  
 using namespace System;  
 using namespace System::Collections;  
 using namespace System::DirectoryServices;  
 using namespace stdcli::language;  
- 
+  
 int main()   
 {  
-   String^ myLDAPPath = "";  
-   try   
-   {  
-       // Create a 'DirectoryEntry' object to search.  
-       Console::WriteLine("Enter the path ( Ex : 'LDAP://MyServer')");  
-       myLDAPPath = Console::ReadLine();  
-       DirectoryEntry^ mySearchRoot = gcnew DirectoryEntry(myLDAPPath);  
- 
-       DirectorySearcher^ myDirectorySearcher = gcnew DirectorySearcher(mySearchRoot);  
- 
-       // Get the first entry of the search.  
-       SearchResult^ mySearchResult = myDirectorySearcher->FindOne();  
-       if (mySearchResult)   
-       {  
-           // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
-           DirectoryEntry^ myDirectoryEntry = mySearchResult->GetDirectoryEntry();  
-           Console::WriteLine(  
-               String::Concat("\nThe name of the 'myDirectoryEntry' ",  
-               "directory entry that corresponds to the ",  
-               "'mySearchResult' search result is : {0}\n"),  
-               myDirectoryEntry->Name);  
- 
-           String^ mySearchResultPath = mySearchResult->Path;  
-           Console::WriteLine("The path for the 'mySearchResult' search result is :  
-                   {0}\n", mySearchResultPath);  
- 
-           // Get the properties of the 'mySearchResult'.  
-           ResultPropertyCollection^ myResultPropColl = mySearchResult->Properties;  
-           Console::WriteLine("The properties of the 'mySearchResult' are :");  
-           IEnumerator^ myEnum = myResultPropColl->PropertyNames->GetEnumerator();  
-           while (myEnum->MoveNext())   
-           {  
-               String^ myKey = safe_cast<String^>(myEnum->Current);  
-               Console::WriteLine("{0} = ", myKey);  
-               IEnumerator^ myEnum = myResultPropColl->Item[myKey]->GetEnumerator();  
-               while (myEnum->MoveNext())   
-               {  
-                   Console::WriteLine("\t{0}", myEnum->Current);  
-               }  
-           }  
-           myDirectoryEntry->Dispose();  
-           mySearchRoot->Dispose();   
-       }   
-       else   
-       {  
-           Console::WriteLine("The '{0}' path not found.", myLDAPPath);  
-       }  
-   }   
-   catch (Exception^ e)   
-   {  
-       Console::WriteLine("The '{0}' path not found.",  myLDAPPath);  
-       Console::WriteLine("Exception : {0}", e->Message);  
-   }  
+    String^ myLDAPPath = "";  
+    try   
+    {  
+        // Create a 'DirectoryEntry' object to search.  
+        Console::WriteLine("Enter the path ( Ex : 'LDAP://MyServer')");  
+        myLDAPPath = Console::ReadLine();  
+        DirectoryEntry^ mySearchRoot = gcnew DirectoryEntry(myLDAPPath);  
+  
+        DirectorySearcher^ myDirectorySearcher = gcnew DirectorySearcher(mySearchRoot);  
+  
+        // Get the first entry of the search.  
+        SearchResult^ mySearchResult = myDirectorySearcher->FindOne();  
+        if (mySearchResult)   
+        {  
+            // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
+            DirectoryEntry^ myDirectoryEntry = mySearchResult->GetDirectoryEntry();  
+            Console::WriteLine(  
+                String::Concat("\nThe name of the 'myDirectoryEntry' ",  
+                "directory entry that corresponds to the ",  
+                "'mySearchResult' search result is : {0}\n"),  
+                myDirectoryEntry->Name);  
+  
+            String^ mySearchResultPath = mySearchResult->Path;  
+            Console::WriteLine("The path for the 'mySearchResult' search result is :  
+                    {0}\n", mySearchResultPath);  
+  
+            // Get the properties of the 'mySearchResult'.  
+            ResultPropertyCollection^ myResultPropColl = mySearchResult->Properties;  
+            Console::WriteLine("The properties of the 'mySearchResult' are :");  
+            IEnumerator^ myEnum = myResultPropColl->PropertyNames->GetEnumerator();  
+            while (myEnum->MoveNext())   
+            {  
+                String^ myKey = safe_cast<String^>(myEnum->Current);  
+                Console::WriteLine("{0} = ", myKey);  
+                IEnumerator^ myEnum = myResultPropColl->Item[myKey]->GetEnumerator();  
+                while (myEnum->MoveNext())   
+                {  
+                    Console::WriteLine("\t{0}", myEnum->Current);  
+                }  
+            }  
+            myDirectoryEntry->Dispose();  
+            mySearchRoot->Dispose();   
+        }   
+        else   
+        {  
+            Console::WriteLine("The '{0}' path not found.", myLDAPPath);  
+        }  
+    }   
+    catch (Exception^ e)   
+    {  
+        Console::WriteLine("The '{0}' path not found.",  myLDAPPath);  
+        Console::WriteLine("Exception : {0}", e->Message);  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -255,31 +255,31 @@ The following example is an excerpt of the example in <xref:System.DirectoryServ
 ' Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 Dim myDirectoryEntry As DirectoryEntry = mySearchResult.GetDirectoryEntry()  
 Console.WriteLine(ControlChars.Newline + "The name of the 'myDirectoryEntry' " + _  
-           "directory entry that corresponds to the " + _  
-           "'mySearchResult' search result is : {0}" + _  
-           ControlChars.Newline, myDirectoryEntry.Name)  
- 
+            "directory entry that corresponds to the " + _  
+            "'mySearchResult' search result is : {0}" + _  
+            ControlChars.Newline, myDirectoryEntry.Name)  
+  
 ```  
  
 ```csharp  
 // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 DirectoryEntry myDirectoryEntry =   
-                          mySearchResult.GetDirectoryEntry();  
+                           mySearchResult.GetDirectoryEntry();  
 Console.WriteLine("\nThe name of the 'myDirectoryEntry' " +  
-                 "directory entry that corresponds to the " +  
-                 "'mySearchResult' search result is : {0}\n",  
-                 myDirectoryEntry.Name);  
- 
+                  "directory entry that corresponds to the " +  
+                  "'mySearchResult' search result is : {0}\n",  
+                  myDirectoryEntry.Name);  
+  
 ```  
  
 ```cpp#  
 // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 DirectoryEntry^ myDirectoryEntry = mySearchResult->GetDirectoryEntry();  
 Console::WriteLine(  
-   String::Concat("\nThe name of the 'myDirectoryEntry' ",  
-   "directory entry that corresponds to the ",  
-   "'mySearchResult' search result is : {0}\n"),  
-   myDirectoryEntry->Name);  
+    String::Concat("\nThe name of the 'myDirectoryEntry' ",  
+    "directory entry that corresponds to the ",  
+    "'mySearchResult' search result is : {0}\n"),  
+    myDirectoryEntry->Name);  
 ```  
  
  ]]></format>
@@ -317,20 +317,20 @@ This example shows how to parse the <xref:System.DirectoryServices.SearchResult.
 ```vb  
 Dim mySearchResultPath As String = mySearchResult.Path  
 Console.WriteLine("The path for the 'mySearchResult' search result is : {0}" + _  
-                 ControlChars.Newline, mySearchResultPath)  
- 
+                  ControlChars.Newline, mySearchResultPath)  
+  
 ```  
  
 ```csharp  
 string mySearchResultPath = mySearchResult.Path;  
 Console.WriteLine("The path for the 'mySearchResult' search "  
-                 + "result is : {0}\n", mySearchResultPath);  
+                  + "result is : {0}\n", mySearchResultPath);  
 ```  
  
 ```cpp#  
 String^ mySearchResultPath = mySearchResult->Path;  
 Console::WriteLine("The path for the 'mySearchResult' search result is : {0}\n", mySearchResultPath);  
- 
+  
 ```  
  
  ]]></format>
@@ -372,14 +372,14 @@ myResultPropColl = mySearchResult.Properties
 Console.WriteLine("The properties of the 'mySearchResult' are :")  
 Dim myKey As String  
 For Each myKey In  myResultPropColl.PropertyNames  
-  Dim tab1 As String = "    "  
-  Console.WriteLine(myKey + " = ")  
-  Dim myCollection As Object  
-  For Each myCollection In  myResultPropColl(myKey)  
-     Console.WriteLine(tab1 + myCollection)  
-  Next myCollection  
+   Dim tab1 As String = "    "  
+   Console.WriteLine(myKey + " = ")  
+   Dim myCollection As Object  
+   For Each myCollection In  myResultPropColl(myKey)  
+      Console.WriteLine(tab1 + myCollection)  
+   Next myCollection  
 Next myKey  
- 
+  
 ```  
  
 ```csharp  
@@ -387,17 +387,17 @@ Next myKey
 ResultPropertyCollection myResultPropColl;  
 myResultPropColl = mySearchResult.Properties;  
 Console.WriteLine("The properties of the " +   
-                 "'mySearchResult' are :");  
+                  "'mySearchResult' are :");  
 foreach( string myKey in myResultPropColl.PropertyNames)  
 {  
-  string tab = "    ";  
-  Console.WriteLine(myKey + " = ");  
-  foreach( Object myCollection in myResultPropColl[myKey])  
-  {  
-     Console.WriteLine(tab + myCollection);  
-  }  
+   string tab = "    ";  
+   Console.WriteLine(myKey + " = ");  
+   foreach( Object myCollection in myResultPropColl[myKey])  
+   {  
+      Console.WriteLine(tab + myCollection);  
+   }  
 }  
- 
+  
 ```  
  
 ```cpp#  
@@ -407,15 +407,15 @@ Console::WriteLine("The properties of the 'mySearchResult' are :");
 IEnumerator^ myEnum = myResultPropColl->PropertyNames->GetEnumerator();  
 while (myEnum->MoveNext())   
 {  
-   String^ myKey = safe_cast<String^>(myEnum->Current);  
-   Console::WriteLine("{0} = ", myKey);  
-   IEnumerator^ myEnum = myResultPropColl->Item[myKey]->GetEnumerator();  
-   while (myEnum->MoveNext())   
-   {  
-       Console::WriteLine("\t{0}", myEnum->Current);  
-   }  
+    String^ myKey = safe_cast<String^>(myEnum->Current);  
+    Console::WriteLine("{0} = ", myKey);  
+    IEnumerator^ myEnum = myResultPropColl->Item[myKey]->GetEnumerator();  
+    while (myEnum->MoveNext())   
+    {  
+        Console::WriteLine("\t{0}", myEnum->Current);  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>

@@ -36,30 +36,30 @@ The following configuration file excerpt shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <profile enabled = "true"          defaultProvider="AspNetSqlProfileProvider">  
-   <providers>  
-     <add  name="AspNetSqlProfileProvider"  
-       type="System.Web.Profile.SqlProfileProvider "  
-       connectionStringName="LocalSqlServer"  
-       applicationName="/"  
-       description="Stores and retrieves profile data from the   
-       local Microsoft SQL Server database" />  
-   </providers>  
- 
-   <properties>  
-     <group name = "SiteColors" >  
-       <add name = "BackGround"/>  
-       <add name = "SideBar"/>  
-       <add name = "ForeGroundText"/>  
-       <add name = "ForeGroundBorders"/>  
-     </group>  
-     <group name="Forums">  
-       <add name = "HasAvatar" type="bool" provider="Forums"/>  
-       <add name = "LastLogin" type="DateTime" provider="Forums"/>  
-       <add name = "TotalPosts" type="int" provider="Forums"/>  
-     </group>  
-   </properties>  
- </profile>  
+  <profile enabled = "true"          defaultProvider="AspNetSqlProfileProvider">  
+    <providers>  
+      <add  name="AspNetSqlProfileProvider"  
+        type="System.Web.Profile.SqlProfileProvider "  
+        connectionStringName="LocalSqlServer"  
+        applicationName="/"  
+        description="Stores and retrieves profile data from the   
+        local Microsoft SQL Server database" />  
+    </providers>  
+  
+    <properties>  
+      <group name = "SiteColors" >  
+        <add name = "BackGround"/>  
+        <add name = "SideBar"/>  
+        <add name = "ForeGroundText"/>  
+        <add name = "ForeGroundBorders"/>  
+      </group>  
+      <group name="Forums">  
+        <add name = "HasAvatar" type="bool" provider="Forums"/>  
+        <add name = "LastLogin" type="DateTime" provider="Forums"/>  
+        <add name = "TotalPosts" type="int" provider="Forums"/>  
+      </group>  
+    </properties>  
+  </profile>  
 </system.web>  
 ```  
  

@@ -25,17 +25,17 @@ The following example shows the creation of an <xref:System.Data.Objects.ObjectC
  
 ```  
 public partial class _Default : System.Web.UI.Page  
-   {  
-       AdventureWorksModel.AdventureWorksEntities objCtx =  
-           new AdventureWorksModel.AdventureWorksEntities();  
- 
-       protected void EntityDataSource2_ContextCreating(object sender,   
-           EntityDataSourceContextCreatingEventArgs e)  
-       {  
-           e.Context = objCtx;  
-       }  
-   }  
- 
+    {  
+        AdventureWorksModel.AdventureWorksEntities objCtx =  
+            new AdventureWorksModel.AdventureWorksEntities();  
+  
+        protected void EntityDataSource2_ContextCreating(object sender,   
+            EntityDataSourceContextCreatingEventArgs e)  
+        {  
+            e.Context = objCtx;  
+        }  
+    }  
+  
 ```  
  
  ]]></format>
@@ -70,17 +70,17 @@ The following example shows the creation of an <xref:System.Data.Objects.ObjectC
  
 ```  
 public partial class _Default : System.Web.UI.Page  
-   {  
-       AdventureWorksModel.AdventureWorksEntities objCtx =  
-           new AdventureWorksModel.AdventureWorksEntities();  
- 
-       protected void EntityDataSource2_ContextCreating(object sender,   
-           EntityDataSourceContextCreatingEventArgs e)  
-       {  
-           e.Context = objCtx;  
-       }  
-   }  
- 
+    {  
+        AdventureWorksModel.AdventureWorksEntities objCtx =  
+            new AdventureWorksModel.AdventureWorksEntities();  
+  
+        protected void EntityDataSource2_ContextCreating(object sender,   
+            EntityDataSourceContextCreatingEventArgs e)  
+        {  
+            e.Context = objCtx;  
+        }  
+    }  
+  
 ```  
  
  ]]></format>

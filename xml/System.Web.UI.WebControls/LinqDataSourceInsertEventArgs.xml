@@ -34,15 +34,15 @@ The following example shows an event handler for the <xref:System.Web.UI.WebCont
  
 ```vb  
 Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceInsertEventArgs)  
-   If (e.Exception IsNot Nothing) Then  
-       For Each innerException As KeyValuePair(Of String, Exception) _  
-              In e.Exception.InnerExceptions  
-           Label1.Text &= innerException.Key & ": " & _  
-               innerException.Value.Message + "<br />"  
-       Next  
-       e.ExceptionHandled = True  
-   End If  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
 End Sub  
 ```  
  
@@ -50,18 +50,18 @@ End Sub
  
 ```  
 protected void LinqDataSource_Inserting(object sender,   
-       LinqDataSourceInsertEventArgs e)  
+        LinqDataSourceInsertEventArgs e)  
 {  
-   if (e.Exception != null)  
-   {  
-       foreach (KeyValuePair<string, Exception> innerException in   
-            e.Exception.InnerExceptions)  
-       {  
-       Label1.Text += innerException.Key + ": " +   
-           innerException.Value.Message + "<br />";  
-       }  
-       e.ExceptionHandled = true;  
-   }  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
 }  
 ```  
  
@@ -133,15 +133,15 @@ The following example shows a handler for the <xref:System.Web.UI.WebControls.Li
  
 ```vb  
 Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceInsertEventArgs)  
-   If (e.Exception IsNot Nothing) Then  
-       For Each innerException As KeyValuePair(Of String, Exception) _  
-              In e.Exception.InnerExceptions  
-           Label1.Text &= innerException.Key & ": " & _  
-               innerException.Value.Message + "<br />"  
-       Next  
-       e.ExceptionHandled = True  
-   End If  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
 End Sub  
 ```  
  
@@ -149,18 +149,18 @@ End Sub
  
 ```  
 protected void LinqDataSource_Inserting(object sender,   
-       LinqDataSourceInsertEventArgs e)  
+        LinqDataSourceInsertEventArgs e)  
 {  
-   if (e.Exception != null)  
-   {  
-       foreach (KeyValuePair<string, Exception> innerException in   
-            e.Exception.InnerExceptions)  
-       {  
-       Label1.Text += innerException.Key + ": " +   
-           innerException.Value.Message + "<br />";  
-       }  
-       e.ExceptionHandled = true;  
-   }  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
 }  
 ```  
  
@@ -197,15 +197,15 @@ The following example shows an event handler for the <xref:System.Web.UI.WebCont
  
 ```vb  
 Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
-       ByVal e As LinqDataSourceInsertEventArgs)  
-   If (e.Exception IsNot Nothing) Then  
-       For Each innerException As KeyValuePair(Of String, Exception) _  
-              In e.Exception.InnerExceptions  
-           Label1.Text &= innerException.Key & ": " & _  
-               innerException.Value.Message + "<br />"  
-       Next  
-       e.ExceptionHandled = True  
-   End If  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
 End Sub  
 ```  
  
@@ -213,18 +213,18 @@ End Sub
  
 ```  
 protected void LinqDataSource_Inserting(object sender,   
-       LinqDataSourceInsertEventArgs e)  
+        LinqDataSourceInsertEventArgs e)  
 {  
-   if (e.Exception != null)  
-   {  
-       foreach (KeyValuePair<string, Exception> innerException in   
-            e.Exception.InnerExceptions)  
-       {  
-       Label1.Text += innerException.Key + ": " +   
-           innerException.Value.Message + "<br />";  
-       }  
-       e.ExceptionHandled = true;  
-   }  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
 }  
 ```  
  

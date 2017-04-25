@@ -81,7 +81,7 @@ For information about how to configure this control so that it generates markup 
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CausesValidation="True|False"  
     CommandArgument="string"  
@@ -95,7 +95,7 @@ For information about how to configure this control so that it generates markup 
     Height="size"  
     ID="string"  
     ImageAlign="NotSet|Left|Right|Baseline|Top|Middle|Bottom|  
-       AbsBottom|AbsMiddle|TextTop"  
+        AbsBottom|AbsMiddle|TextTop"  
     ImageUrl="uri"  
     OnClick="Click event handler"  
     OnClientClick="string"  
@@ -810,11 +810,11 @@ The <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property allows 
  
 ```  
 Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load  
-       If Page.PreviousPage.IsValid Then  
-           ' Handle the post back  
-       Else  
-           Response.Write("Invalid")  
-       End If  
+        If Page.PreviousPage.IsValid Then  
+            ' Handle the post back  
+        Else  
+            Response.Write("Invalid")  
+        End If  
 End Sub  
 ```  
  

@@ -744,7 +744,7 @@ With XML as follows, `SearchForChildByTag("second")` would return the child elem
  
 ```  
 <thetag A="123" B="456" C="789"> <first>text1</first>  
-      <second>text2</second></thetag>  
+       <second>text2</second></thetag>  
 ```  
  
   
@@ -799,7 +799,7 @@ With XML as follows, `SearchForTextOfTag("second")` would return "text2".
  
 ```  
 <thetag A="123" B="456" C="789"> <first>text1</first>  
-   <second>text2</second></thetag>  
+    <second>text2</second></thetag>  
 ```  
  
   

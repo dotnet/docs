@@ -25,10 +25,10 @@ You can add Web services to the <xref:System.Web.UI.ServiceReferenceCollection> 
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <Services>  
-   <asp:ServiceReference Path="Service1.asmx" />  
-   <asp:ServiceReference Path="Service2.asmx" />  
- </Services>  
+  <Services>  
+    <asp:ServiceReference Path="Service1.asmx" />  
+    <asp:ServiceReference Path="Service2.asmx" />  
+  </Services>  
 </asp:ScriptManager>  
 ```  
  

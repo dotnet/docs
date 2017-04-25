@@ -579,9 +579,9 @@ This property represents one of several ways to lay out and style column headers
  
 ```  
 <object>  
- <object.ColumnHeaderTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.ColumnHeaderTemplateSelector>  
+  <object.ColumnHeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.ColumnHeaderTemplateSelector>  
 </object>  
 ```  
  
@@ -665,15 +665,15 @@ This property represents one of several ways to lay out and style column headers
  
 ```  
 <object>  
- <object.ToolTip>  
-   <ToolTip .../>  
- </object.ToolTip>  
+  <object.ToolTip>  
+    <ToolTip .../>  
+  </object.ToolTip>  
 </object>  
 - or -  
 <object>  
- <object.ToolTip>  
-   toolTipObjectContent  
- </object.ToolTip>  
+  <object.ToolTip>  
+    toolTipObjectContent  
+  </object.ToolTip>  
 </object>  
 ```  
  
@@ -766,7 +766,7 @@ This property lets you modify the columns that are defined for a <xref:System.Wi
  
 ```  
 <object>  
- OneOrMoreGridViewColumns  
+  OneOrMoreGridViewColumns  
 </object>  
 ```  
  

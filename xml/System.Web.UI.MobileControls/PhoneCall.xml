@@ -250,18 +250,18 @@ The <xref:System.Web.UI.MobileControls.PhoneCall.PhoneNumber%2A> property is req
  
 ```  
 phone_number ::= international_number | national_number | short_number  
- 
+  
 international_number ::= "+" country_code national_number  
- 
+  
 short_number ::= "#" national_number  
- 
+  
 country_code ::= (decoration_character | digit)* digit (decoration_character   
-      | digit)*  
- 
+       | digit)*  
+  
 national_number ::= (decoration_character | digit)+  
- 
+  
 digit ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9  
- 
+  
 decoration_character ::= "(" | ")" | "." | "-" | {space}  
 ```  
  

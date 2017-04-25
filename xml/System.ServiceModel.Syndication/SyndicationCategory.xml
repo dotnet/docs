@@ -227,7 +227,7 @@ The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationC
  
 ```  
 <category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme">  
-   <customCategoryElement xmlns="">Some text</customCategoryElement>  
+    <customCategoryElement xmlns="">Some text</customCategoryElement>  
 </category>  
 ```  
  

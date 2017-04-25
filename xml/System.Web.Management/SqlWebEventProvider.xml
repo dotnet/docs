@@ -30,47 +30,47 @@ The following example is a configuration file excerpt that shows how to specify 
  
 ```  
 <healthMonitoring  
- enabled="true"  
- heartBeatInterval="0">  
- <bufferModes>  
-   <add name="Analysis"  
-   maxBufferSize="1000"  
-   maxFlushSize="100"  
-   urgentFlushThreshold="100"  
-   regularFlushInterval="00:05:00"  
-   urgentFlushInterval="00:01:00"  
-   maxBufferThreads="1"  
-   />  
- </bufferModes>  
- <providers>  
-   <add name="SqlWebEventProvider"  
-   type="System.Web.Management.SqlWebEventProvider,System.Web"  
-   connectionStringName="LocalSqlServer"  
-   maxEventDetailsLength="1073741823"  
-   buffer="true"  
-   bufferMode="Analysis"  
-   />  
- </providers>  
- <eventMappings>  
-   <add name="All Audits"  
-   type="System.Web.Management.WebAuditEvent, System.Web"   
-   />  
- </eventMappings>  
- <profiles>  
-   <add name="Default"  
-   minInstances="1"  
-   maxLimit="Infinite"  
-   minInterval="00:10:00"  
-   />  
- </profiles>  
- <rules>  
-   <add name="All Audits Default"  
-   eventName="All Audits"  
-   provider="SqlWebEventProvider"  
-   profile="Default"  
-   minInterval="00:00:30"   
-   />  
- </rules>  
+  enabled="true"  
+  heartBeatInterval="0">  
+  <bufferModes>  
+    <add name="Analysis"  
+    maxBufferSize="1000"  
+    maxFlushSize="100"  
+    urgentFlushThreshold="100"  
+    regularFlushInterval="00:05:00"  
+    urgentFlushInterval="00:01:00"  
+    maxBufferThreads="1"  
+    />  
+  </bufferModes>  
+  <providers>  
+    <add name="SqlWebEventProvider"  
+    type="System.Web.Management.SqlWebEventProvider,System.Web"  
+    connectionStringName="LocalSqlServer"  
+    maxEventDetailsLength="1073741823"  
+    buffer="true"  
+    bufferMode="Analysis"  
+    />  
+  </providers>  
+  <eventMappings>  
+    <add name="All Audits"  
+    type="System.Web.Management.WebAuditEvent, System.Web"   
+    />  
+  </eventMappings>  
+  <profiles>  
+    <add name="Default"  
+    minInstances="1"  
+    maxLimit="Infinite"  
+    minInterval="00:10:00"  
+    />  
+  </profiles>  
+  <rules>  
+    <add name="All Audits Default"  
+    eventName="All Audits"  
+    provider="SqlWebEventProvider"  
+    profile="Default"  
+    minInterval="00:00:30"   
+    />  
+  </rules>  
 </healthMonitoring>   
 ```  
  

@@ -38,49 +38,49 @@ The following code example shows the Web.config file for an ASP.NET application 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString=  
-     "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <authentication mode="Forms" >  
-     <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-   </authentication>  
-   <authorization>  
-     <deny users="?" />  
-   </authorization>  
-   <membership defaultProvider="SqlProvider"   
-     userIsOnlineTimeWindow="15">  
-     <providers>  
-       <clear/>  
-       <add name="SqlProvider"   
-         type="System.Web.Security.SqlMembershipProvider"   
-         connectionStringName="SqlServices"  
-         applicationName="SampleApplication"  
-         enablePasswordRetrieval="true"  
-         enablePasswordReset="true"  
-         passwordFormat="Encrypted"  
-         requiresQuestionAndAnswer="true" />  
-     </providers>  
-   </membership>  
- 
-   <profile defaultProvider="SqlProvider">  
-     <providers>  
-       <clear />  
-       <add name="SqlProvider"  
-         type="System.Web.Profile.SqlProfileProvider"  
-         connectionStringName="SqlServices"  
-         applicationName="SampleApplication"  
-         description="SqlProfileProvider for SampleApplication" />  
-     </providers>  
- 
-     <properties>  
-       <add name="ZipCode" />  
-       <add name="CityAndState" />  
-     </properties>  
-   </profile>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString=  
+      "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <authentication mode="Forms" >  
+      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
+    </authentication>  
+    <authorization>  
+      <deny users="?" />  
+    </authorization>  
+    <membership defaultProvider="SqlProvider"   
+      userIsOnlineTimeWindow="15">  
+      <providers>  
+        <clear/>  
+        <add name="SqlProvider"   
+          type="System.Web.Security.SqlMembershipProvider"   
+          connectionStringName="SqlServices"  
+          applicationName="SampleApplication"  
+          enablePasswordRetrieval="true"  
+          enablePasswordReset="true"  
+          passwordFormat="Encrypted"  
+          requiresQuestionAndAnswer="true" />  
+      </providers>  
+    </membership>  
+  
+    <profile defaultProvider="SqlProvider">  
+      <providers>  
+        <clear />  
+        <add name="SqlProvider"  
+          type="System.Web.Profile.SqlProfileProvider"  
+          connectionStringName="SqlServices"  
+          applicationName="SampleApplication"  
+          description="SqlProfileProvider for SampleApplication" />  
+      </providers>  
+  
+      <properties>  
+        <add name="ZipCode" />  
+        <add name="CityAndState" />  
+      </properties>  
+    </profile>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -143,12 +143,12 @@ The following code example shows the  element in the `system.web` section of the
  
 ```  
 <profile defaultProvider="SqlProvider">  
- <providers>  
-   <add name="SqlProvider"  
-     type="System.Web.Profile.SqlProfileProvider"  
-     connectionStringName="SqlServices"  
-     applicationName="MyApplication" />  
-  </providers>  
+  <providers>  
+    <add name="SqlProvider"  
+      type="System.Web.Profile.SqlProfileProvider"  
+      connectionStringName="SqlServices"  
+      applicationName="MyApplication" />  
+   </providers>  
 </profile>  
 ```  
  

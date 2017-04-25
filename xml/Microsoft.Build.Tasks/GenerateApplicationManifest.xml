@@ -24,8 +24,8 @@ In [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)], [!INCLUDE[vstecmsb
  
 ```  
 <entryPoint xmlns="urn:schemas-   
- microsoft-com:asm.v2">  
-   <co.v1:customHostSpecified />  
+  microsoft-com:asm.v2">  
+    <co.v1:customHostSpecified />  
 </entryPoint>  
 ```  
  
@@ -185,9 +185,9 @@ File types can be custom. The following is an example of a [\<fileAssociation> E
  
 ```  
 <FileAssociation Include=".nyt">  
-   <ProgId>NewYorkTimes.Document</ProgId>  
-   <DefaultIcon>nyt.ico</DefaultIcon>  
-   <Description>New York Times Reader document</Description>  
+    <ProgId>NewYorkTimes.Document</ProgId>  
+    <DefaultIcon>nyt.ico</DefaultIcon>  
+    <Description>New York Times Reader document</Description>  
 </FileAssociation>  
 ```  
  

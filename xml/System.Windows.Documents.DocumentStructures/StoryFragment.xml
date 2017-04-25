@@ -42,66 +42,14 @@ Assume, for example, that an application wanted to add the following material to
  
 ```  
 <SectionStructure>  
-  <TableStructure>  
-     <TableRowGroupStructure>  
-        <TableRowStructure>  
-           <TableCellStructure>  
-              <ParagraphStructure>  
-                 <NamedElement NameReference="SomeContent" />  
-              </ParagraphStructure>  
-           </TableCellStructure>  
-           <TableCellStructure>  
-              <ParagraphStructure>  
-                 <NamedElement NameReference="MoreContent" />  
-              </ParagraphStructure>  
-           </TableCellStructure>  
-        </TableRowStructure>  
-        <TableRowStructure>  
-           <TableCellStructure>  
-              <ParagraphStructure>  
-                 <NamedElement NameReference="EvenMoreContent" />  
-              </ParagraphStructure>  
-           </TableCellStructure>  
-           <TableCellStructure>  
-              <ParagraphStructure>  
-                 <NamedElement NameReference="LastContent" />  
-              </ParagraphStructure>  
-           </TableCellStructure>  
-        </TableRowStructure>  
-     </TableRowGroupStructure>  
-  </TableStructure>  
-</SectionStructure>  
-```  
- 
-If a page break forces an end to the fragment just after the `</TableCellStructure>` for "SomeContent", the application must create the split as shown in the following example:  
- 
-```  
-<StoryFragment StoryName="MyStory" FragmentType="Content">  
-<SectionStructure>  
    <TableStructure>  
       <TableRowGroupStructure>  
          <TableRowStructure>  
             <TableCellStructure>  
                <ParagraphStructure>  
                   <NamedElement NameReference="SomeContent" />  
-               </ParagraphStructure>   
+               </ParagraphStructure>  
             </TableCellStructure>  
-<!-- lines from here to end of fragment added by producer-->  
-         </TableRowStructure>  
-      </TableRowGroupStructure>  
-   </TableStructure>  
-</SectionStructure>  
-</StoryFragment>  
- 
-<StoryFragment StoryName="MyStory" FragmentType="Content">  
-<SectionStructure>  
-   <TableStructure>  
-      <TableRowGroupStructure>  
-         <TableRowStructure>  
-            <TableCellStructure>   
-             <!-- extra cell added by producer-->  
-            </TableCellStructure>  
-<!-- lines from here to start of fragment added by producer-->  
             <TableCellStructure>  
                <ParagraphStructure>  
                   <NamedElement NameReference="MoreContent" />  
@@ -123,6 +71,58 @@ If a page break forces an end to the fragment just after the `</TableCellStructu
       </TableRowGroupStructure>  
    </TableStructure>  
 </SectionStructure>  
+```  
+ 
+If a page break forces an end to the fragment just after the `</TableCellStructure>` for "SomeContent", the application must create the split as shown in the following example:  
+ 
+```  
+<StoryFragment StoryName="MyStory" FragmentType="Content">  
+ <SectionStructure>  
+    <TableStructure>  
+       <TableRowGroupStructure>  
+          <TableRowStructure>  
+             <TableCellStructure>  
+                <ParagraphStructure>  
+                   <NamedElement NameReference="SomeContent" />  
+                </ParagraphStructure>   
+             </TableCellStructure>  
+<!-- lines from here to end of fragment added by producer-->  
+          </TableRowStructure>  
+       </TableRowGroupStructure>  
+    </TableStructure>  
+ </SectionStructure>  
+</StoryFragment>  
+  
+<StoryFragment StoryName="MyStory" FragmentType="Content">  
+ <SectionStructure>  
+    <TableStructure>  
+       <TableRowGroupStructure>  
+          <TableRowStructure>  
+             <TableCellStructure>   
+              <!-- extra cell added by producer-->  
+             </TableCellStructure>  
+<!-- lines from here to start of fragment added by producer-->  
+             <TableCellStructure>  
+                <ParagraphStructure>  
+                   <NamedElement NameReference="MoreContent" />  
+                </ParagraphStructure>  
+             </TableCellStructure>  
+          </TableRowStructure>  
+          <TableRowStructure>  
+             <TableCellStructure>  
+                <ParagraphStructure>  
+                   <NamedElement NameReference="EvenMoreContent" />  
+                </ParagraphStructure>  
+             </TableCellStructure>  
+             <TableCellStructure>  
+                <ParagraphStructure>  
+                   <NamedElement NameReference="LastContent" />  
+                </ParagraphStructure>  
+             </TableCellStructure>  
+          </TableRowStructure>  
+       </TableRowGroupStructure>  
+    </TableStructure>  
+ </SectionStructure>  
 </StoryFragment>  
 ```  
  

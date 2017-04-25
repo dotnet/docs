@@ -20,24 +20,24 @@ When this element is applied to a service’s behavior configuration, all of the
  
 ```  
 <configuration>  
-   <system.serviceModel>  
-     <services>  
-       <service name="Microsoft.Samples.Discovery.CalculatorService"  
-                behaviorConfiguration="calculatorServiceBehavior">  
-         <endpoint address=""  
-                   binding="wsHttpBinding"  
-                   contract="Microsoft.Samples.Discovery.ICalculatorService"/>  
-       </service>  
-     </services>  
-     <behaviors>  
-       <serviceBehaviors>  
-         <behavior name="calculatorServiceBehavior">  
-           <serviceDiscovery />  
-         </behavior>  
-       </serviceBehaviors>  
-       </system.serviceModel>  
+    <system.serviceModel>  
+      <services>  
+        <service name="Microsoft.Samples.Discovery.CalculatorService"  
+                 behaviorConfiguration="calculatorServiceBehavior">  
+          <endpoint address=""  
+                    binding="wsHttpBinding"  
+                    contract="Microsoft.Samples.Discovery.ICalculatorService"/>  
+        </service>  
+      </services>  
+      <behaviors>  
+        <serviceBehaviors>  
+          <behavior name="calculatorServiceBehavior">  
+            <serviceDiscovery />  
+          </behavior>  
+        </serviceBehaviors>  
+        </system.serviceModel>  
 </configuration>  
- 
+  
 ```  
  
  ]]></format>

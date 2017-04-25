@@ -366,7 +366,7 @@ The following code example resets the geometric transform of `pgBrush` to identi
  
 ```csharp  
 PathGradientBrush pgBrush = new PathGradientBrush(myPath);  
-pgBrush.ResetTransform();  
+ pgBrush.ResetTransform();  
 ```  
  
  ]]></format>

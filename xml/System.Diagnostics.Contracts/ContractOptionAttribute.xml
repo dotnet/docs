@@ -53,9 +53,9 @@ To turn run-time contract checking on for a specific type:
 ```  
    [ContractOption("runtime", "checking", true)]  
    class TypeWithRuntimeChecking {  
- 
+  
        ...  
- 
+  
 ```  
  
 To turn run-time checking off for a specific method:  
@@ -66,20 +66,20 @@ To turn run-time checking off for a specific method:
 class MyConcurrentList<T> : IList<T> {  
    ...  
 }  
- 
+  
 [ContractOption("runtime", "checking", false)]  
 public override MyMethod(int x) {  
    // no inherited contracts checked at runtime,  
    // no invariants checked at runtime.  
    ...  
 }  
- 
+  
        [ContractOption("runtime", "checking", false)]  
        public void MethodWithoutRuntimeChecking(...) {  
           ...  
        }  
    }  
- 
+  
 ```  
  
  ]]></format>
@@ -157,7 +157,7 @@ There are only two category/setting options, and they can be set by either of th
 class MyConcurrentList<T> : IList<T> {  
    ...  
 }  
- 
+  
 ```  
  
  ]]></format>

@@ -42,12 +42,12 @@ The following example shows how this attribute is applied to a service contract.
 [JavascriptCallbackBehavior]  
 public class Service1  
 {  
-   [OperationContract]  
-   [WebGet(ResponseFormat=WebMessageFormat.Json)]  
-   public string GetData()  
-   {              
-        // ...  
-   }  
+    [OperationContract]  
+    [WebGet(ResponseFormat=WebMessageFormat.Json)]  
+    public string GetData()  
+    {              
+         // ...  
+    }  
 }  
 ```  
  

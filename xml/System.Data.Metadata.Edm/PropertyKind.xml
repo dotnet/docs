@@ -30,87 +30,87 @@ using System.Data;
 using System.Data.EntityClient;  
 using System.Collections.ObjectModel;  
 using System.Data.Metadata.Edm;  
- 
+  
 class UsePropertyKindExample  
 {  
-  static void Main(string[] args)  
-  {  
-    try  
-    {  
-      // Establish a connection to the underlying data provider by   
-      // using the connection string specified in the config file.  
-      using (EntityConnection connection =  
-          new EntityConnection("Name=AdventureworksContext"))  
+   static void Main(string[] args)  
+   {  
+     try  
+     {  
+       // Establish a connection to the underlying data provider by   
+       // using the connection string specified in the config file.  
+       using (EntityConnection connection =  
+           new EntityConnection("Name=AdventureworksContext"))  
+       {  
+          // Open the connection.  
+          connection.Open();  
+  
+          // Access the metadata workspace.  
+          MetadataWorkspace workspace =   
+             connection.GetMetadataWorkspace();  
+  
+          // Display the extended properties in the conceptual model.  
+          DisplayProperties(workspace, DataSpace.CSpace);  
+       }  
+     }  
+     catch (MetadataException exceptionMetadata)  
+     {  
+         Console.WriteLine("MetadataException: {0}",  
+                         exceptionMetadata.Message);  
+     }  
+     catch (System.Data.MappingException exceptionMapping)  
+     {  
+         Console.WriteLine("MappingException: {0}",  
+                          exceptionMapping.Message);  
+     }  
+   }  
+  
+   public static void DisplayProperties(  
+        MetadataWorkspace workspace, DataSpace model)  
+   {  
+      // Get a collection of the entity containers.  
+      ReadOnlyCollection<EntityContainer> containers =  
+          workspace.GetItems<EntityContainer>(model);  
+  
+      // Iterate through the collection to get each entity container.  
+      foreach (EntityContainer container in containers)  
       {  
-         // Open the connection.  
-         connection.Open();  
- 
-         // Access the metadata workspace.  
-         MetadataWorkspace workspace =   
-            connection.GetMetadataWorkspace();  
- 
-         // Display the extended properties in the conceptual model.  
-         DisplayProperties(workspace, DataSpace.CSpace);  
+          // Display the extended properties for the entity container.  
+          DisplayExtendedProperties(container);  
+  
+          // Iterate through the collection to get each entity set.  
+          foreach (EntitySetBase baseSet in container.BaseEntitySets)  
+          {  
+              // Check whether this instance is an EntitySet.  
+              if (baseSet is EntitySet)  
+              {  
+                 // Display the extended properties for the entity set.  
+                 DisplayExtendedProperties(baseSet);  
+              }  
+          }  
       }  
-    }  
-    catch (MetadataException exceptionMetadata)  
-    {  
-        Console.WriteLine("MetadataException: {0}",  
-                        exceptionMetadata.Message);  
-    }  
-    catch (System.Data.MappingException exceptionMapping)  
-    {  
-        Console.WriteLine("MappingException: {0}",  
-                         exceptionMapping.Message);  
-    }  
-  }  
- 
-  public static void DisplayProperties(  
-       MetadataWorkspace workspace, DataSpace model)  
-  {  
-     // Get a collection of the entity containers.  
-     ReadOnlyCollection<EntityContainer> containers =  
-         workspace.GetItems<EntityContainer>(model);  
- 
-     // Iterate through the collection to get each entity container.  
-     foreach (EntityContainer container in containers)  
+  
+      // Get a collection of the entity types.  
+      ReadOnlyCollection<EntityType> entities =   
+             workspace.GetItems<EntityType>(model);  
+  
+      // Iterate through the collection to get each entity type.  
+      foreach (EntityType entity in entities)  
+      {  
+         // Display the extended properties for the entity type.  
+         DisplayExtendedProperties(entity);  
+      }  
+   }  
+  
+   private static void DisplayExtendedProperties(MetadataItem item)  
+   {  
+     foreach (MetadataProperty property in item.MetadataProperties)  
      {  
-         // Display the extended properties for the entity container.  
-         DisplayExtendedProperties(container);  
- 
-         // Iterate through the collection to get each entity set.  
-         foreach (EntitySetBase baseSet in container.BaseEntitySets)  
-         {  
-             // Check whether this instance is an EntitySet.  
-             if (baseSet is EntitySet)  
-             {  
-                // Display the extended properties for the entity set.  
-                DisplayExtendedProperties(baseSet);  
-             }  
-         }  
+         if (property.PropertyKind == PropertyKind.Extended)  
+           Console.WriteLine(string.Format("\t{0}\t{1}\t{2}",   
+             item.GetType().Name, property.Name, property.Value));  
      }  
- 
-     // Get a collection of the entity types.  
-     ReadOnlyCollection<EntityType> entities =   
-            workspace.GetItems<EntityType>(model);  
- 
-     // Iterate through the collection to get each entity type.  
-     foreach (EntityType entity in entities)  
-     {  
-        // Display the extended properties for the entity type.  
-        DisplayExtendedProperties(entity);  
-     }  
-  }  
- 
-  private static void DisplayExtendedProperties(MetadataItem item)  
-  {  
-    foreach (MetadataProperty property in item.MetadataProperties)  
-    {  
-        if (property.PropertyKind == PropertyKind.Extended)  
-          Console.WriteLine(string.Format("\t{0}\t{1}\t{2}",   
-            item.GetType().Name, property.Name, property.Value));  
-    }  
-  }  
+   }  
 }  
 ```  
  

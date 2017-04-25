@@ -34,40 +34,40 @@ The following code example uses <xref:System.Activities.Expressions.Multidimensi
 >  Instead of instantiating the <xref:System.Activities.Expressions.MultidimensionalArrayItemReference%601> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
  
 ```  
- 
+  
 public static void MultidimensionalArrayItemReferenceSample()  
 {  
-   // Create a variable to store a multidimensional array.  
-   var arrayvar = new Variable<int[,]>("arrayvar", new int[4, 5]);  
- 
-   Activity myActivity = new Sequence  
-   {  
-       Variables = { arrayvar },  
-       Activities =   
-       {                      
-           // Create an Assign activity to assign a value to the array item at index [1,2].  
-           new Assign<int>  
-           {  
-               To = new MultidimensionalArrayItemReference<int>  
-               {  
-                   Array = arrayvar,  
-                   Indices = {1, 2}  
-               },  
-               // Assign an integer value to the array item at row 1 column 2.  
-               Value = 1,  
-           },  
-           // Print the array item value to the console.  
-           new WriteLine()  
-           {  
-               Text = ExpressionServices.Convert<string>(ctx => arrayvar.Get(ctx)[1, 2].ToString()),  
-           }  
-       }  
-   };  
- 
-   // Invoke the Sequence activity.  
-   WorkflowInvoker.Invoke(myActivity);  
+    // Create a variable to store a multidimensional array.  
+    var arrayvar = new Variable<int[,]>("arrayvar", new int[4, 5]);  
+  
+    Activity myActivity = new Sequence  
+    {  
+        Variables = { arrayvar },  
+        Activities =   
+        {                      
+            // Create an Assign activity to assign a value to the array item at index [1,2].  
+            new Assign<int>  
+            {  
+                To = new MultidimensionalArrayItemReference<int>  
+                {  
+                    Array = arrayvar,  
+                    Indices = {1, 2}  
+                },  
+                // Assign an integer value to the array item at row 1 column 2.  
+                Value = 1,  
+            },  
+            // Print the array item value to the console.  
+            new WriteLine()  
+            {  
+                Text = ExpressionServices.Convert<string>(ctx => arrayvar.Get(ctx)[1, 2].ToString()),  
+            }  
+        }  
+    };  
+  
+    // Invoke the Sequence activity.  
+    WorkflowInvoker.Invoke(myActivity);  
 }  
- 
+  
 ```  
  
  ]]></format>

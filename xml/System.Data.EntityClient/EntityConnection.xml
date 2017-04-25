@@ -340,7 +340,7 @@ The keyword/value pairs can also be supplied directly in the <xref:System.Data.E
 "Provider=System.Data.SqlClient;  
 Metadata=c:\metadata|c:\Metadata\Sql;  
 Provider Connection String= 'Data Source=localhost;  
-   Initial Catalog=AdventureWorks;Integrated Security=True;Connection Timeout=60' "  
+    Initial Catalog=AdventureWorks;Integrated Security=True;Connection Timeout=60' "  
 ```  
  
 To avoid inadvertently putting objects such as <xref:System.Data.Common.CommandTrees> and <xref:System.Data.Objects.ObjectContext> out of sync with their metadata, <xref:System.Data.EntityClient.EntityConnection> must lock its metadata. No changes to the connection string are allowed after the metadata is locked. The following are two scenarios in which metadata is locked:  

@@ -25,19 +25,19 @@ The following example sets all rights access to the service operation `OrdersByC
 ```  
 namespace AccountingServiceWebApp  
 {  
- public class AccountingService : DataService<DataModel>  
- {  
-     public static void InitializeService(IDataServiceConfiguration config)  
-     {  
-         config.SetServiceOperationAccessRule("OrdersInCity", ServiceOperationRights.All);  
-     }  
-     public IQueryable<Orders> OrdersByCity(string city)  
-     {  
-         return this.CurrentDataSource.Orders.Where(o => o.ShippingCity == city);  
-     }  
- }  
+  public class AccountingService : DataService<DataModel>  
+  {  
+      public static void InitializeService(IDataServiceConfiguration config)  
+      {  
+          config.SetServiceOperationAccessRule("OrdersInCity", ServiceOperationRights.All);  
+      }  
+      public IQueryable<Orders> OrdersByCity(string city)  
+      {  
+          return this.CurrentDataSource.Orders.Where(o => o.ShippingCity == city);  
+      }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

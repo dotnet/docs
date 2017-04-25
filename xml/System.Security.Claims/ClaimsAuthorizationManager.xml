@@ -54,102 +54,102 @@ The policy used by the claims authorization manager is specified by custom `<pol
  
 ```  
 <configuration>  
- <configSections>  
-   <!--WIF 4.5 sections -->  
-   <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>  
-   ...  
- 
- </configSections>  
- 
- ...  
- 
- <system.web>  
-   <httpModules>  
-     <!--WIF 4.5 modules -->  
-     <!--Not needed here for IIS >= 7 -->  
-     <!--<add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>-->  
-   </httpModules>  
- </system.web>  
- 
- ...  
- 
- <system.webServer>  
-   <modules>  
-     <!--WIF 4.5 modules -->  
-     <add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
-   </modules>  
- </system.webServer>  
- 
- ...  
- 
- <!-- WIF 4.5 s.im section-->  
- <system.identityModel>  
-   <identityConfiguration>  
-     <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
-       <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
-         <or>  
-           <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
-           <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-         </or>  
-       </policy>  
-       <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
-         <and>  
-           <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-           <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
-         </and>  
-       </policy>  
-       <policy resource="http://localhost:28491/Default.aspx" action="GET">  
-       </policy>  
-       <policy resource="http://localhost:28491/" action="GET">  
-       </policy>  
-       <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
-       </policy>  
-     </claimsAuthorizationManager>  
- 
-     ...  
- 
-   </identityConfiguration>  
- </system.identityModel>  
- ...  
- 
+  <configSections>  
+    <!--WIF 4.5 sections -->  
+    <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>  
+    ...  
+  
+  </configSections>  
+  
+  ...  
+  
+  <system.web>  
+    <httpModules>  
+      <!--WIF 4.5 modules -->  
+      <!--Not needed here for IIS >= 7 -->  
+      <!--<add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>-->  
+    </httpModules>  
+  </system.web>  
+  
+  ...  
+  
+  <system.webServer>  
+    <modules>  
+      <!--WIF 4.5 modules -->  
+      <add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
+    </modules>  
+  </system.webServer>  
+  
+  ...  
+  
+  <!-- WIF 4.5 s.im section-->  
+  <system.identityModel>  
+    <identityConfiguration>  
+      <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
+        <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
+          <or>  
+            <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
+            <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+          </or>  
+        </policy>  
+        <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
+          <and>  
+            <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+            <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
+          </and>  
+        </policy>  
+        <policy resource="http://localhost:28491/Default.aspx" action="GET">  
+        </policy>  
+        <policy resource="http://localhost:28491/" action="GET">  
+        </policy>  
+        <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
+        </policy>  
+      </claimsAuthorizationManager>  
+  
+      ...  
+  
+    </identityConfiguration>  
+  </system.identityModel>  
+  ...  
+  
 </configuration><configuration>  
- <configSections>  
-   <!--WIF 4.5 sections -->  
-   <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>  
-   ...  
- 
- </configSections>  
- 
- ...  
- 
- <system.web>  
-   <httpModules>  
-     <!--WIF 4.5 modules -->  
-     <!--Not needed here for IIS >= 7 -->  
-     <!--<add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>-->  
-   </httpModules>  
- </system.web>  
- 
- ...  
- 
- <system.webServer>  
-   <modules>  
-     <!--WIF 4.5 modules -->  
-     <add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
-   </modules>  
- </system.webServer>  
- 
- ...  
- 
- <!-- WIF 4.5 s.im section-->  
- <system.identityModel>  
-   <identityConfiguration>  
-     <claimsAuthorizationManager type="MyClaimsAuthorizationManager.SimpleClaimsAuthoirzationManager, MyClaimsAuthorizationManager" />  
-     ...  
- 
- </system.identityModel>  
- ...  
- 
+  <configSections>  
+    <!--WIF 4.5 sections -->  
+    <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>  
+    ...  
+  
+  </configSections>  
+  
+  ...  
+  
+  <system.web>  
+    <httpModules>  
+      <!--WIF 4.5 modules -->  
+      <!--Not needed here for IIS >= 7 -->  
+      <!--<add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>-->  
+    </httpModules>  
+  </system.web>  
+  
+  ...  
+  
+  <system.webServer>  
+    <modules>  
+      <!--WIF 4.5 modules -->  
+      <add name="ClaimsAuthorizationModule" type="System.IdentityModel.Services.ClaimsAuthorizationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
+    </modules>  
+  </system.webServer>  
+  
+  ...  
+  
+  <!-- WIF 4.5 s.im section-->  
+  <system.identityModel>  
+    <identityConfiguration>  
+      <claimsAuthorizationManager type="MyClaimsAuthorizationManager.SimpleClaimsAuthoirzationManager, MyClaimsAuthorizationManager" />  
+      ...  
+  
+  </system.identityModel>  
+  ...  
+  
 </configuration>  
 ```  
  
@@ -216,31 +216,31 @@ The policy used by the claims authorization manager is specified by custom `<pol
  
 ```  
 <system.identityModel>  
- <identityConfiguration>  
-   <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
-     <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
-       <or>  
-         <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-       </or>  
-     </policy>  
-     <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
-       <and>  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-         <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
-       </and>  
-     </policy>  
-     <policy resource="http://localhost:28491/Default.aspx" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
-     </policy>  
-   </claimsAuthorizationManager>  
- 
-   ...  
- 
- </identityConfiguration>  
+  <identityConfiguration>  
+    <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
+      <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
+        <or>  
+          <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+        </or>  
+      </policy>  
+      <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
+        <and>  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+          <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
+        </and>  
+      </policy>  
+      <policy resource="http://localhost:28491/Default.aspx" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
+      </policy>  
+    </claimsAuthorizationManager>  
+  
+    ...  
+  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  
@@ -292,31 +292,31 @@ The policy used by the claims authorization manager is specified by custom `<pol
  
 ```  
 <system.identityModel>  
- <identityConfiguration>  
-   <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
-     <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
-       <or>  
-         <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-       </or>  
-     </policy>  
-     <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
-       <and>  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-         <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
-       </and>  
-     </policy>  
-     <policy resource="http://localhost:28491/Default.aspx" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
-     </policy>  
-   </claimsAuthorizationManager>  
- 
-   ...  
- 
- </identityConfiguration>  
+  <identityConfiguration>  
+    <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
+      <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
+        <or>  
+          <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+        </or>  
+      </policy>  
+      <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
+        <and>  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+          <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
+        </and>  
+      </policy>  
+      <policy resource="http://localhost:28491/Default.aspx" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
+      </policy>  
+    </claimsAuthorizationManager>  
+  
+    ...  
+  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

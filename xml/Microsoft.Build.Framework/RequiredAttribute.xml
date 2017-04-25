@@ -36,9 +36,9 @@ To run this task use a project file like this:
  
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-   <Target Name="MyTarget">  
-       <MkDir Directories="NewDir" />  
-   </Target>  
+    <Target Name="MyTarget">  
+        <MkDir Directories="NewDir" />  
+    </Target>  
 </Project>  
 ```  
  

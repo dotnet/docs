@@ -107,15 +107,15 @@ Below is a test routine which generates four <xref:System.Speech.Recognition.Gra
 ```  
 private void CreateSubsetMatchTest()   
 {  
- foreach ( System.Speech.Recognition.SubsetMatchingMode mode   
-             in Enum.GetValues(typeof(System.Speech.Recognition.SubsetMatchingMode)))  
- {  
-   GrammarBuilder gb = new GrammarBuilder("a car the truck a boat that plane",mode);  
-   Grammar grammar = new Grammar(gb);  
-   grammar.Name = mode.ToString();  
-   grammar.Enabled=true;  
-   _recognizer.LoadGrammar(grammar);  
- }  
+  foreach ( System.Speech.Recognition.SubsetMatchingMode mode   
+              in Enum.GetValues(typeof(System.Speech.Recognition.SubsetMatchingMode)))  
+  {  
+    GrammarBuilder gb = new GrammarBuilder("a car the truck a boat that plane",mode);  
+    Grammar grammar = new Grammar(gb);  
+    grammar.Name = mode.ToString();  
+    grammar.Enabled=true;  
+    _recognizer.LoadGrammar(grammar);  
+  }  
 }  
 ```  
  

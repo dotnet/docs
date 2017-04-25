@@ -729,14 +729,14 @@ When you pass `true` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2
  
 ```  
 <RSAKeyValue>  
-  <Modulus>…</Modulus>  
-  <Exponent>…</Exponent>  
-  <P>…</P>  
-  <Q>…</Q>  
-  <DP>…</DP>  
-  <DQ>…</DQ>  
-  <InverseQ>…</InverseQ>  
-  <D>…</D>  
+   <Modulus>…</Modulus>  
+   <Exponent>…</Exponent>  
+   <P>…</P>  
+   <Q>…</Q>  
+   <DP>…</DP>  
+   <DQ>…</DQ>  
+   <InverseQ>…</InverseQ>  
+   <D>…</D>  
 </RSAKeyValue>  
 ```  
  
@@ -744,8 +744,8 @@ When you pass `false` to the <xref:System.Security.Cryptography.RSA.ToXmlString%
  
 ```  
 <RSAKeyValue>  
-  <Modulus>…</Modulus>  
-  <Exponent>…</Exponent>  
+   <Modulus>…</Modulus>  
+   <Exponent>…</Exponent>  
 </RSAKeyValue>  
 ```  
  

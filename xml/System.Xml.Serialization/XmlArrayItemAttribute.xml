@@ -413,8 +413,8 @@ The default value, `XmlSchemaForm.None`, instructs the <xref:System.Xml.Serializ
 ```  
 <schema elementFormDefault="qualified"   
 attributeFormDefault="unqualified">  
-  <element name="Name"/>  
-  <attribute name="Number"/>  
+   <element name="Name"/>  
+   <attribute name="Number"/>  
 </schema>  
 ```  
  
@@ -613,12 +613,12 @@ If an array contains only primitive types, you do not need to apply the <xref:Sy
 ```  
 ' Visual Basic code  
 Public Class Arrays  
-  Public XSDTypes ()As Object= New Object(){"one", 2, 3.0}  
+   Public XSDTypes ()As Object= New Object(){"one", 2, 3.0}  
 End Class  
 // C# code  
 public class MyArray{  
-  // No XmlArrayItemAttribute is applied.  
-  public object[] XSDTypes= new object[]{"one", 2, 3.2};  
+   // No XmlArrayItemAttribute is applied.  
+   public object[] XSDTypes= new object[]{"one", 2, 3.2};  
 }  
 ```  
  
@@ -627,11 +627,11 @@ results in this XML:
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Arrays xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
- <XSDTypes>  
-   <Object xsi:type="xsd:string">one</Object>  
-   <Object xsi:type="xsd:int">2</Object>  
-   <Object xsi:type="xsd:double">3</Object>  
- </XSDTypes>  
+  <XSDTypes>  
+    <Object xsi:type="xsd:string">one</Object>  
+    <Object xsi:type="xsd:int">2</Object>  
+    <Object xsi:type="xsd:double">3</Object>  
+  </XSDTypes>  
 </Arrays>  
 ```  
  
@@ -640,17 +640,17 @@ However, if you specify the <xref:System.Xml.Serialization.XmlArrayItemAttribute
 ```  
 ' Visual Basic code  
 Public Class Arrays  
-  <XmlArrayItem(GetType(String)), _  
-  XmlArrayItem(GetType(Integer)), _  
-  XmlArrayItem(GetType(Double))> _  
-  Public PrimitiveTypes () As Object = New Object(){"one", 2, 3.0}  
+   <XmlArrayItem(GetType(String)), _  
+   XmlArrayItem(GetType(Integer)), _  
+   XmlArrayItem(GetType(Double))> _  
+   Public PrimitiveTypes () As Object = New Object(){"one", 2, 3.0}  
 End Class  
 // C# code  
 public class Arrays{  
-  [XmlArrayItem(typeof(string))]  
-  [XmlArrayItem(typeof(int))]  
-  [XmlArrayItem(typeof(double))]  
-  public object [] PrimitiveTypes = new object[]{"one", 2, 3.0};  
+   [XmlArrayItem(typeof(string))]  
+   [XmlArrayItem(typeof(int))]  
+   [XmlArrayItem(typeof(double))]  
+   public object [] PrimitiveTypes = new object[]{"one", 2, 3.0};  
 }  
 ```  
  
@@ -659,11 +659,11 @@ results in this XML:
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Arrays xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
- <PrimitiveTypes>  
-   <string>one</string>  
-   <int>2</int>  
-   <double>3</double>  
- </PrimitiveTypes>  
+  <PrimitiveTypes>  
+    <string>one</string>  
+    <int>2</int>  
+    <double>3</double>  
+  </PrimitiveTypes>  
 </Arrays>  
 ```  
  

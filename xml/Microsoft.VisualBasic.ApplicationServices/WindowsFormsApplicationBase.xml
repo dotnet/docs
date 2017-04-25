@@ -1299,10 +1299,10 @@ This example demonstrates how to set the GDI+ text rendering engine as the appli
  
 ```  
 Protected Overloads Shared ReadOnly Property UseCompatibleTextRendering() As Boolean  
-   Get  
-       ' Use the GDI+ text rendering engine.  
-       Return True  
-   End Get  
+    Get  
+        ' Use the GDI+ text rendering engine.  
+        Return True  
+    End Get  
 End Property  
 ```  
  

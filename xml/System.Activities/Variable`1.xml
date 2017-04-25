@@ -24,21 +24,21 @@ In this example, a <xref:System.Activities.Variable%601> is used to hold a messa
  
 ```csharp  
 Variable<string> msg =   
-   new Variable<string>() { Default = "Hello World!" };  
- 
+    new Variable<string>() { Default = "Hello World!" };  
+  
 Activity wf = new Sequence()  
 {  
-   Variables =   
-   {  
-       msg  
-   },  
-   Activities =  
-   {  
-       new WriteLine()  
-       {  
-           Text = msg  
-       }  
-   }  
+    Variables =   
+    {  
+        msg  
+    },  
+    Activities =  
+    {  
+        new WriteLine()  
+        {  
+            Text = msg  
+        }  
+    }  
 };  
 ```  
  

@@ -22,12 +22,12 @@ Forms authentication is enabled by setting the `mode` attribute of the  configur
  
 ```  
 <system.web>  
- <authentication mode="Forms">  
-   <forms loginUrl="login.aspx" />  
- </authentication>  
- <authorization>  
-   <deny users="?" />  
- </authorization>  
+  <authentication mode="Forms">  
+    <forms loginUrl="login.aspx" />  
+  </authentication>  
+  <authorization>  
+    <deny users="?" />  
+  </authorization>  
 </system.web>  
 ```  
  
@@ -42,23 +42,23 @@ The following code example shows the Web.config file for an ASP.NET application 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="SqlServices" connectionString="Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
- </connectionStrings>  
- <system.web>  
-   <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
-     <providers>  
-       <add name="SqlProvider"  
-         type="System.Web.Security.SqlMembershipProvider"  
-         connectionStringName="SqlServices"  
-         enablePasswordRetrieval="false"  
-         enablePasswordReset="true"  
-         requiresQuestionAndAnswer="true"  
-         passwordFormat="Hashed"  
-         applicationName="/" />  
-     </providers>  
-   </membership>  
- </system.web>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
+      <providers>  
+        <add name="SqlProvider"  
+          type="System.Web.Security.SqlMembershipProvider"  
+          connectionStringName="SqlServices"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"  
+          passwordFormat="Hashed"  
+          applicationName="/" />  
+      </providers>  
+    </membership>  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -195,9 +195,9 @@ The following code example sets the `domain` attribute in the Web.config file.
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseCookies"  
-   domain="contoso.com" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    domain="contoso.com" />  
 </authentication>  
 ```  
  
@@ -236,8 +236,8 @@ The following code example sets the `cookieless` attribute to `AutoDetect` in th
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="AutoDetect" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="AutoDetect" />  
 </authentication>  
 ```  
  
@@ -282,8 +282,8 @@ The following code example sets the `cookieless` attribute to <xref:System.Web.H
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseUri" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseUri" />  
 </authentication>  
 ```  
  
@@ -355,8 +355,8 @@ The following code example sets the `defaultUrl` attribute in the Web.config fil
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   defaultUrl="index.aspx" />  
+  <forms loginUrl="member_login.aspx"  
+    defaultUrl="index.aspx" />  
 </authentication>  
 ```  
  
@@ -401,10 +401,10 @@ The following code example sets the `enableCrossAppRedirects` attribute to `true
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseUri"  
-   requireSSL="true"   
-   enableCrossAppRedirects="true" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseUri"  
+    requireSSL="true"   
+    enableCrossAppRedirects="true" />  
 </authentication>  
 ```  
  
@@ -506,9 +506,9 @@ The following code example sets the <xref:System.Web.Security.FormsAuthenticatio
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseCookies"  
-   name=".ASPXFORMSAUTH" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    name=".ASPXFORMSAUTH" />  
 </authentication>  
 ```  
  
@@ -544,9 +544,9 @@ The following code example sets the <xref:System.Web.Security.FormsAuthenticatio
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseCookies"  
-   path="/MyApplication" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    path="/MyApplication" />  
 </authentication>  
 ```  
  
@@ -793,8 +793,8 @@ The following code example sets the `loginUrl` attribute in the Web.config file.
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   defaultUrl="index.aspx" />  
+  <forms loginUrl="member_login.aspx"  
+    defaultUrl="index.aspx" />  
 </authentication>  
 ```  
  
@@ -1036,10 +1036,10 @@ The following code example sets the `requireSSL` attribute in the Web.config fil
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   cookieless="UseCookies"  
-   requireSSL="true"  
-   path="/MyApplication" />  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    requireSSL="true"  
+    path="/MyApplication" />  
 </authentication>  
 ```  
  
@@ -1193,11 +1193,11 @@ The following code example sets the `slidingExpiration` attribute to `false` in 
  
 ```  
 <authentication mode="Forms">  
- <forms loginUrl="member_login.aspx"  
-   name=".ASPXFORMSAUTH"  
-   cookieless="UseCookies"  
-   requireSSL="true"   
-   slidingExpiration="false" />  
+  <forms loginUrl="member_login.aspx"  
+    name=".ASPXFORMSAUTH"  
+    cookieless="UseCookies"  
+    requireSSL="true"   
+    slidingExpiration="false" />  
 </authentication>  
 ```  
  

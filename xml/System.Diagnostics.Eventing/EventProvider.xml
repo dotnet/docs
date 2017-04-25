@@ -380,41 +380,41 @@ If the object type is not supported, the method writes the value of the object's
  
 ```  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
- 
+  
 enum Keyword  
 {  
-   Read = 0x1,  
-   Write = 0x2,  
-   Local = 0x4,  
-   Remote = 0x8  
+    Read = 0x1,  
+    Write = 0x2,  
+    Local = 0x4,  
+    Remote = 0x8  
 }  
- 
+  
 enum Level  
 {  
-   Critical = 1,  
-   Error,  
-   Warning,  
-   Information,  
-   Verbose  
+    Critical = 1,  
+    Error,  
+    Warning,  
+    Information,  
+    Verbose  
 }  
- 
-   EventProvider provider = new EventProvider(providerId);  
-   EventDescriptor readEvent;  
-   string path = @"<PATHGOESHERE>";  
-   UInt64 bytesRead = <ASSIGNVALUE>;  
- 
-   if (provider.IsEnabled(Level.Information, (long)Keyword.Read))  
-   {  
-       unchecked  
-       {  
-           readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
-       }  
- 
-       if (!provider.WriteEvent(ref readEvent, new object[] { path, bytesRead }))  
-           Console.WriteLine(EventProvider.GetLastWriteEventError());  
-   }  
- 
-   provider.Close();  
+  
+    EventProvider provider = new EventProvider(providerId);  
+    EventDescriptor readEvent;  
+    string path = @"<PATHGOESHERE>";  
+    UInt64 bytesRead = <ASSIGNVALUE>;  
+  
+    if (provider.IsEnabled(Level.Information, (long)Keyword.Read))  
+    {  
+        unchecked  
+        {  
+            readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+        }  
+  
+        if (!provider.WriteEvent(ref readEvent, new object[] { path, bytesRead }))  
+            Console.WriteLine(EventProvider.GetLastWriteEventError());  
+    }  
+  
+    provider.Close();  
 ```  
  
  ]]></format>
@@ -462,21 +462,21 @@ The maximum string length is limited to 64 KB minus the size of the event header
  
 ```  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
- 
+  
 EventProvider provider = new EventProvider(providerId);  
 EventDescriptor writeEvent;  
- 
+  
 if (provider.IsEnabled())  
 {  
-    unchecked  
-    {  
-         writeEvent = new EventDescriptor(0x2, 0x0, 0x10, 0x3, 0x0, 0x0, (long)0x8000000000000006);  
-    }  
- 
-    if (!provider.WriteEvent(ref writeEvent, "Write event."))  
-         Console.WriteLine(EventProvider.GetLastWriteEventError());  
+     unchecked  
+     {  
+          writeEvent = new EventDescriptor(0x2, 0x0, 0x10, 0x3, 0x0, 0x0, (long)0x8000000000000006);  
+     }  
+  
+     if (!provider.WriteEvent(ref writeEvent, "Write event."))  
+          Console.WriteLine(EventProvider.GetLastWriteEventError());  
 }  
- 
+  
 provider.Close();  
 ```  
  
@@ -554,7 +554,7 @@ The maximum string length is limited to 64 KB minus the size of the event header
  
 ```  
 if (!provider.WriteMessageEvent("Event string."))  
-   Console.WriteLine(EventProvider.GetLastWriteEventError());  
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
 ```  
  
  ]]></format>
@@ -604,12 +604,12 @@ The maximum string length is limited to 64 KB minus the size of the event header
 // Calling this method with level and keyword set to zero is the same  
 // as calling WriteMessageEvent(string); the event is always written.  
 if (!provider.WriteMessageEvent("Event string.", 0, 0))  
-   Console.WriteLine(EventProvider.GetLastWriteEventError());  
- 
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+  
 // Event is written if the level value of the session is less than or equal to 3, and bit 1 of the session  
 // keyword bit-mask is set.  
 if (!provider.WriteMessageEvent("Event string.", 3, 2))  
-   Console.WriteLine(EventProvider.GetLastWriteEventError());  
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
 ```  
  
  ]]></format>

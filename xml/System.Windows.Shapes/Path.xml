@@ -74,9 +74,9 @@ To draw simple shapes, use the <xref:System.Windows.Media.EllipseGeometry>, <xre
  
 ```  
 <Path>  
- <Path.Data>  
-   singleGeometry  
- </Path.Data>  
+  <Path.Data>  
+    singleGeometry  
+  </Path.Data>  
 </Path>  
 ```  
  

@@ -70,116 +70,116 @@ Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more inf
 The following example creates an XML tree. The content of the new element comes from a LINQ query.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5),  
-   new XElement("Child6", 6)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5),  
+    new XElement("Child6", 6)  
 );  
- 
+  
 XElement xmlTree2 = new XElement("Root",  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(xmlTree2);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _  
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-           <Child6>6</Child6>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _  
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+            <Child6>6</Child6>  
+        </Root>  
+  
 Dim xmlTree2 As XElement = _   
-   <Root>  
-       <%= From el In xmlTree1.Elements() _  
-           Where el.Value >= 3 And el.Value <= 5 _  
-           Select el %>  
-   </Root>  
- 
+    <Root>  
+        <%= From el In xmlTree1.Elements() _  
+            Where el.Value >= 3 And el.Value <= 5 _  
+            Select el %>  
+    </Root>  
+  
 Console.WriteLine(xmlTree2)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree1 = new XElement(aw + "Root",  
-   new XElement(aw + "Child1", 1),  
-   new XElement(aw + "Child2", 2),  
-   new XElement(aw + "Child3", 3),  
-   new XElement(aw + "Child4", 4),  
-   new XElement(aw + "Child5", 5),  
-   new XElement(aw + "Child6", 6)  
+    new XElement(aw + "Child1", 1),  
+    new XElement(aw + "Child2", 2),  
+    new XElement(aw + "Child3", 3),  
+    new XElement(aw + "Child4", 4),  
+    new XElement(aw + "Child5", 5),  
+    new XElement(aw + "Child6", 6)  
 );  
- 
+  
 XElement xmlTree2 = new XElement(aw + "Root",  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(xmlTree2);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree1 As XElement = _  
-           <Root>  
-               <Child1>1</Child1>  
-               <Child2>2</Child2>  
-               <Child3>3</Child3>  
-               <Child4>4</Child4>  
-               <Child5>5</Child5>  
-               <Child6>6</Child6>  
-           </Root>  
- 
-       Dim xmlTree2 As XElement = _   
-           <Root>  
-               <%= From el In xmlTree1.Elements() _  
-                   Where el.Value >= 3 And el.Value <= 5 _  
-                   Select el %>  
-           </Root>  
- 
-       Console.WriteLine(xmlTree2)  
-   End SUb  
+    Sub Main()  
+        Dim xmlTree1 As XElement = _  
+            <Root>  
+                <Child1>1</Child1>  
+                <Child2>2</Child2>  
+                <Child3>3</Child3>  
+                <Child4>4</Child4>  
+                <Child5>5</Child5>  
+                <Child6>6</Child6>  
+            </Root>  
+  
+        Dim xmlTree2 As XElement = _   
+            <Root>  
+                <%= From el In xmlTree1.Elements() _  
+                    Where el.Value >= 3 And el.Value <= 5 _  
+                    Select el %>  
+            </Root>  
+  
+        Console.WriteLine(xmlTree2)  
+    End SUb  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root xmlns="http://www.adventure-works.com">  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root xmlns="http://www.adventure-works.com">  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -224,49 +224,49 @@ This constructor makes a deep copy of an element.
 The following example creates an XML tree, creates a clone of the tree, and then calls <xref:System.Xml.Linq.XNode.DeepEquals%2A>, which tests whether the two XML trees are equal.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2)  
 );  
- 
+  
 // Create a clone of the tree.  
 XElement treeClone = new XElement(xmlTree);  
- 
+  
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone));  
- 
+  
 // Do some work with xmlTree, perhaps pass it to other methods.  
 xmlTree.Add(new XElement("Child3", 3));  
- 
+  
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone));  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-       <Root Att1="1">  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+        <Root Att1="1">  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+        </Root>  
+  
 ' Create a clone of the tree.  
 Dim treeClone As XElement = New XElement(xmlTree)  
- 
+  
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone))  
- 
+  
 ' Do some work with xmlTree, perhaps pass it to other methods.  
 xmlTree.Add(New XElement("Child3", 3))  
- 
+  
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone))  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               xmlTree = treeClone: True  
+  
+                xmlTree = treeClone: True  
 xmlTree = treeClone: False  
 ```  
  
@@ -313,49 +313,49 @@ There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typ
 The following example creates an element with no content.  
  
 ```csharp  
- 
-               XElement el = new XElement("Root");  
+  
+                XElement el = new XElement("Root");  
 Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim el As XElement = <Root/>  
+  
+                Dim el As XElement = <Root/>  
 Console.WriteLine(el)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root />  
 ```  
  
 The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root = <Root/>  
-       Console.WriteLine(root)  
-   End Sub  
+    Sub Main()  
+        Dim root = <Root/>  
+        Console.WriteLine(root)  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root xmlns="http://www.adventure-works.com" />  
 ```  
  
@@ -400,17 +400,17 @@ This constructor iterates through the contents of the specified <xref:System.Xml
 The following example creates a source XML tree, and then creates an <xref:System.Xml.Linq.XStreamingElement> from a query on the source XML tree. It then serializes the <xref:System.Xml.Linq.XStreamingElement> to the console, adds a new element to the source XML tree, and then serializes the <xref:System.Xml.Linq.XStreamingElement> again. You can see that element newly added to the source XML tree is not included in the first serialization, but is included in the second.  
  
 ```csharp  
- 
-               XElement src = new XElement("Root",  
-                  new XElement("Child1", 1),  
-                  new XElement("Child2", 2),  
-                  new XElement("Child3", 3)  
-              );  
+  
+                XElement src = new XElement("Root",  
+                   new XElement("Child1", 1),  
+                   new XElement("Child2", 2),  
+                   new XElement("Child3", 3)  
+               );  
 XStreamingElement xse = new XStreamingElement("NewRoot",  
-                           from el in src.Elements()  
-                           where (int)el >= 2  
-                           select el  
-                       );  
+                            from el in src.Elements()  
+                            where (int)el >= 2  
+                            select el  
+                        );  
 Console.WriteLine(xse);  
 src.Add(new XElement("Child4", 4));  
 Console.WriteLine("----");  
@@ -418,17 +418,17 @@ Console.WriteLine(xse);
 ```  
  
 ```vb  
- 
-               Dim src As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-       </Root>  
+  
+                Dim src As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+        </Root>  
 Dim xse As XStreamingElement = New XStreamingElement("NewRoot", _  
-       From el In src.Elements() _  
-       Where (CInt(el) >= 2) _  
-       Select el _  
+        From el In src.Elements() _  
+        Where (CInt(el) >= 2) _  
+        Select el _  
 )  
 Console.WriteLine(xse)  
 src.Add(New XElement("Child4", 4))  
@@ -439,16 +439,16 @@ Console.WriteLine(xse)
 This example produces the following output:  
  
 ```  
- 
-               <NewRoot>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
+  
+                <NewRoot>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
 </NewRoot>  
 ----  
 <NewRoot>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
 </NewRoot>  
 ```  
  
@@ -501,197 +501,197 @@ For details about the valid content that can be passed to this constructor, see 
 The following example creates an XML tree. The content of the new element comes from a LINQ query.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5),  
-   new XElement("Child6", 6)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5),  
+    new XElement("Child6", 6)  
 );  
- 
+  
 XElement xmlTree2 = new XElement("Root",  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(xmlTree2);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-           <Child6>6</Child6>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+            <Child6>6</Child6>  
+        </Root>  
+  
 Dim xmlTree2 As XElement = _  
-   <Root>  
-       <%= From el In xmlTree1.Elements() _  
-           Where el.Value >= 3 And el.Value <= 5 _  
-           Select el %>  
-   </Root>  
- 
+    <Root>  
+        <%= From el In xmlTree1.Elements() _  
+            Where el.Value >= 3 And el.Value <= 5 _  
+            Select el %>  
+    </Root>  
+  
 Console.WriteLine(xmlTree2)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
 The following example creates an XML tree with a variety of types of content.  
  
 ```csharp  
- 
-               XElement root;  
- 
+  
+                XElement root;  
+  
 // String content:  
 root = new XElement("Root", "Some text");  
 Console.WriteLine(root);  
- 
+  
 // XElement object content:  
 root = new XElement("Root",   
-   new XElement("NewChild", "n")  
+    new XElement("NewChild", "n")  
 );  
 Console.WriteLine(root);  
- 
+  
 // XAttribute object content:  
 root = new XElement("Root",   
-   new XAttribute("NewAttribute", "n")  
+    new XAttribute("NewAttribute", "n")  
 );  
 Console.WriteLine(root);  
- 
+  
 // Double content:  
 double dbl = 12.345;  
 root = new XElement("Root", dbl);  
 Console.WriteLine(root);  
- 
+  
 // DateTime content:  
 DateTime dt = new DateTime(2006, 10, 6, 12, 30, 00);  
 root = new XElement("Root", dt);  
 Console.WriteLine(root);  
- 
+  
 // String array content:  
 // Any collection other than a collection of XElement or XAttribute objects  
 // are converted to strings. The strings are concatenated and added.  
 string[] stringArray = {  
-   "abc",  
-   "def",  
-   "ghi"  
+    "abc",  
+    "def",  
+    "ghi"  
 };  
 root = new XElement("Root", stringArray);  
 Console.WriteLine(root);  
- 
+  
 // XElement object array content:  
 XElement[] ellArray = {  
-   new XElement("NewChild1", 1),  
-   new XElement("NewChild2", 2),  
-   new XElement("NewChild3", 3)  
+    new XElement("NewChild1", 1),  
+    new XElement("NewChild2", 2),  
+    new XElement("NewChild3", 3)  
 };  
 root = new XElement("Root", ellArray);  
 Console.WriteLine(root);  
- 
+  
 // XAttribute object array content:  
 XAttribute[] attArray = {  
-   new XAttribute("NewAtt1", 1),  
-   new XAttribute("NewAtt2", 2),  
-   new XAttribute("NewAtt3", 3)  
+    new XAttribute("NewAtt1", 1),  
+    new XAttribute("NewAtt2", 2),  
+    new XAttribute("NewAtt3", 3)  
 };  
 root = new XElement("Root", attArray);  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement  
- 
+  
+                Dim root As XElement  
+  
 ' String content:  
 root = <Root>Some text</Root>  
 Console.WriteLine(root)  
- 
+  
 ' XElement object content:  
 root = <Root>  
-          <NewChild>n</NewChild>  
-      </Root>  
+           <NewChild>n</NewChild>  
+       </Root>  
 Console.WriteLine(root)  
- 
+  
 ' XAttribute object content:  
 root = <Root NewAttribute="n"/>  
 Console.WriteLine(root)  
- 
+  
 ' Double content:  
 Dim dbl As Double = 12.345  
 root = <Root><%= dbl %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' DateTime content:  
 Dim dt As DateTime = New DateTime(2006, 10, 6, 12, 30, 0)  
 root = <Root><%= dt %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' String array content:  
 ' Any collection other than a collection of XElement or XAttribute objects  
 ' are converted to strings. The strings are concatenated and added.  
- 
+  
 Dim stringArray As String() = { _  
-   "abc", _  
-   "def", _  
-   "ghi" _  
+    "abc", _  
+    "def", _  
+    "ghi" _  
 }  
 root = <Root><%= stringArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' XElement object array content:  
 Dim ellArray As XElement() = { _  
-   <NewChild1>1</NewChild1>, _  
-   <NewChild2>2</NewChild2>, _  
-   <NewChild3>3</NewChild3> _  
+    <NewChild1>1</NewChild1>, _  
+    <NewChild2>2</NewChild2>, _  
+    <NewChild3>3</NewChild3> _  
 }  
- 
+  
 root = <Root><%= ellArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' XAttribute object array content  
 Dim attArray As XAttribute() = { _  
-   New XAttribute("NewAtt1", 1), _  
-   New XAttribute("NewAtt2", 2), _  
-   New XAttribute("NewAtt3", 3) _  
+    New XAttribute("NewAtt1", 1), _  
+    New XAttribute("NewAtt2", 2), _  
+    New XAttribute("NewAtt3", 3) _  
 }  
 root = <Root><%= attArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root>Some text</Root>  
+  
+                <Root>Some text</Root>  
 <Root>  
- <NewChild>n</NewChild>  
+  <NewChild>n</NewChild>  
 </Root>  
 <Root NewAttribute="n" />  
 <Root>12.345</Root>  
 <Root>2006-10-06T12:30:00</Root>  
 <Root>abcdefghi</Root>  
 <Root>  
- <NewChild1>1</NewChild1>  
- <NewChild2>2</NewChild2>  
- <NewChild3>3</NewChild3>  
+  <NewChild1>1</NewChild1>  
+  <NewChild2>2</NewChild2>  
+  <NewChild3>3</NewChild3>  
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
@@ -699,73 +699,73 @@ This example produces the following output:
 The following example creates an XML tree in a namespace.  
  
 ```csharp  
- 
-               // Create an XML tree in a namespace.  
+  
+                // Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
-   new XElement(aw + "Child", "child content")  
+    new XElement(aw + "Child", "child content")  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               ' Create an XML tree in a namespace.  
+  
+                ' Create an XML tree in a namespace.  
 Dim root As XElement = _   
-   <Root xmlns='http://www.adventure-works.com'>  
-       <Child>child content</Child>  
-   </Root>  
+    <Root xmlns='http://www.adventure-works.com'>  
+        <Child>child content</Child>  
+    </Root>  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root xmlns="http://www.adventure-works.com">  
- <Child>child content</Child>  
+  
+                <Root xmlns="http://www.adventure-works.com">  
+  <Child>child content</Child>  
 </Root>  
 ```  
  
 The following example creates an XML tree with nested namespaces.  
  
 ```csharp  
- 
-               // Create an XML tree with nested namespaces.  
+  
+                // Create an XML tree with nested namespaces.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XDocument root = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XElement(aw + "Root",  
-       new XElement(fc + "Child",  
-           new XElement(aw + "DifferentChild", "other content")  
-       )  
-   )  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XElement(aw + "Root",  
+        new XElement(fc + "Child",  
+            new XElement(aw + "DifferentChild", "other content")  
+        )  
+    )  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               ' Create an XML tree with nested namespaces.  
+  
+                ' Create an XML tree with nested namespaces.  
 Dim root As XDocument = _   
-   <?xml version='1.0'?>  
-   <Root xmlns='http://www.adventure-works.com'>  
-       <Child xmlns='www.fourthcoffee.com'>  
-       <DifferentChild xmlns='http://www.adventure-works.com'>other content</DifferentChild>  
-       </Child>  
-   </Root>  
+    <?xml version='1.0'?>  
+    <Root xmlns='http://www.adventure-works.com'>  
+        <Child xmlns='www.fourthcoffee.com'>  
+        <DifferentChild xmlns='http://www.adventure-works.com'>other content</DifferentChild>  
+        </Child>  
+    </Root>  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root xmlns="http://www.adventure-works.com">  
- <Child xmlns="www.fourthcoffee.com">  
-   <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
- </Child>  
+  
+                <Root xmlns="http://www.adventure-works.com">  
+  <Child xmlns="www.fourthcoffee.com">  
+    <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
+  </Child>  
 </Root>  
 ```  
  
@@ -824,197 +824,197 @@ For details about the valid content that can be passed to this constructor, see 
 The following example creates an XML tree. The content of the new element comes from a LINQ query.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5),  
-   new XElement("Child6", 6)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5),  
+    new XElement("Child6", 6)  
 );  
- 
+  
 XElement xmlTree2 = new XElement("Root",  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(xmlTree2);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-           <Child6>6</Child6>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+            <Child6>6</Child6>  
+        </Root>  
+  
 Dim xmlTree2 As XElement = _   
-   <Root>  
-       <%= From el In xmlTree1.Elements() _  
-           Where el.Value >= 3 And el.Value <= 5 _  
-           Select el %>  
-   </Root>  
- 
+    <Root>  
+        <%= From el In xmlTree1.Elements() _  
+            Where el.Value >= 3 And el.Value <= 5 _  
+            Select el %>  
+    </Root>  
+  
 Console.WriteLine(xmlTree2)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
 The following example creates an XML tree with a variety of types of content.  
  
 ```csharp  
- 
-               XElement root;  
- 
+  
+                XElement root;  
+  
 // String content:  
 root = new XElement("Root", "Some text");  
 Console.WriteLine(root);  
- 
+  
 // XElement object content:  
 root = new XElement("Root",   
-   new XElement("NewChild", "n")  
+    new XElement("NewChild", "n")  
 );  
 Console.WriteLine(root);  
- 
+  
 // XAttribute object content:  
 root = new XElement("Root",   
-   new XAttribute("NewAttribute", "n")  
+    new XAttribute("NewAttribute", "n")  
 );  
 Console.WriteLine(root);  
- 
+  
 // Double content:  
 double dbl = 12.345;  
 root = new XElement("Root", dbl);  
 Console.WriteLine(root);  
- 
+  
 // DateTime content:  
 DateTime dt = new DateTime(2006, 10, 6, 12, 30, 00);  
 root = new XElement("Root", dt);  
 Console.WriteLine(root);  
- 
+  
 // String array content:  
 // Any collection other than a collection of XElement or XAttribute objects  
 // are converted to strings. The strings are concatenated and added.  
 string[] stringArray = {  
-   "abc",  
-   "def",  
-   "ghi"  
+    "abc",  
+    "def",  
+    "ghi"  
 };  
 root = new XElement("Root", stringArray);  
 Console.WriteLine(root);  
- 
+  
 // XElement object array content:  
 XElement[] ellArray = {  
-   new XElement("NewChild1", 1),  
-   new XElement("NewChild2", 2),  
-   new XElement("NewChild3", 3)  
+    new XElement("NewChild1", 1),  
+    new XElement("NewChild2", 2),  
+    new XElement("NewChild3", 3)  
 };  
 root = new XElement("Root", ellArray);  
 Console.WriteLine(root);  
- 
+  
 // XAttribute object array content:  
 XAttribute[] attArray = {  
-   new XAttribute("NewAtt1", 1),  
-   new XAttribute("NewAtt2", 2),  
-   new XAttribute("NewAtt3", 3)  
+    new XAttribute("NewAtt1", 1),  
+    new XAttribute("NewAtt2", 2),  
+    new XAttribute("NewAtt3", 3)  
 };  
 root = new XElement("Root", attArray);  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement  
- 
+  
+                Dim root As XElement  
+  
 ' String content:  
 root = <Root>Some text</Root>  
 Console.WriteLine(root)  
- 
+  
 ' XElement object content:  
 root = <Root>  
-          <NewChild>n</NewChild>  
-      </Root>  
+           <NewChild>n</NewChild>  
+       </Root>  
 Console.WriteLine(root)  
- 
+  
 ' XAttribute object content:  
 root = <Root NewAttribute="n"/>  
 Console.WriteLine(root)  
- 
+  
 ' Double content:  
 Dim dbl As Double = 12.345  
 root = <Root><%= dbl %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' DateTime content:  
 Dim dt As DateTime = New DateTime(2006, 10, 6, 12, 30, 0)  
 root = <Root><%= dt %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' String array content:  
 ' Any collection other than a collection of XElement or XAttribute objects  
 ' are converted to strings. The strings are concatenated and added.  
- 
+  
 Dim stringArray As String() = { _  
-   "abc", _  
-   "def", _  
-   "ghi" _  
+    "abc", _  
+    "def", _  
+    "ghi" _  
 }  
 root = <Root><%= stringArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' XElement object array content:  
 Dim ellArray As XElement() = { _  
-   <NewChild1>1</NewChild1>, _  
-   <NewChild2>2</NewChild2>, _  
-   <NewChild3>3</NewChild3> _  
+    <NewChild1>1</NewChild1>, _  
+    <NewChild2>2</NewChild2>, _  
+    <NewChild3>3</NewChild3> _  
 }  
- 
+  
 root = <Root><%= ellArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ' XAttribute object array content  
 Dim attArray As XAttribute() = { _  
-   New XAttribute("NewAtt1", 1), _  
-   New XAttribute("NewAtt2", 2), _  
-   New XAttribute("NewAtt3", 3) _  
+    New XAttribute("NewAtt1", 1), _  
+    New XAttribute("NewAtt2", 2), _  
+    New XAttribute("NewAtt3", 3) _  
 }  
 root = <Root><%= attArray %></Root>  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root>Some text</Root>  
+  
+                <Root>Some text</Root>  
 <Root>  
- <NewChild>n</NewChild>  
+  <NewChild>n</NewChild>  
 </Root>  
 <Root NewAttribute="n" />  
 <Root>12.345</Root>  
 <Root>2006-10-06T12:30:00</Root>  
 <Root>abcdefghi</Root>  
 <Root>  
- <NewChild1>1</NewChild1>  
- <NewChild2>2</NewChild2>  
- <NewChild3>3</NewChild3>  
+  <NewChild1>1</NewChild1>  
+  <NewChild2>2</NewChild2>  
+  <NewChild3>3</NewChild3>  
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
@@ -1022,73 +1022,73 @@ This example produces the following output:
 The following example creates an XML tree in a namespace.  
  
 ```csharp  
- 
-               // Create an XML tree in a namespace.  
+  
+                // Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
-   new XElement(aw + "Child", "child content")  
+    new XElement(aw + "Child", "child content")  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               ' Create an XML tree in a namespace.  
+  
+                ' Create an XML tree in a namespace.  
 Dim root As XElement = _   
-   <Root xmlns='http://www.adventure-works.com'>  
-       <Child>child content</Child>  
-   </Root>  
+    <Root xmlns='http://www.adventure-works.com'>  
+        <Child>child content</Child>  
+    </Root>  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root xmlns="http://www.adventure-works.com">  
- <Child>child content</Child>  
+  
+                <Root xmlns="http://www.adventure-works.com">  
+  <Child>child content</Child>  
 </Root>  
 ```  
  
 The following example creates an XML tree with nested namespaces.  
  
 ```csharp  
- 
-               // Create an XML tree with nested namespaces.  
+  
+                // Create an XML tree with nested namespaces.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  
-   new XElement(fc + "Child",  
-       new XElement(aw + "DifferentChild", "other content")  
-   )  
+    new XElement(fc + "Child",  
+        new XElement(aw + "DifferentChild", "other content")  
+    )  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               ' Create an XML tree with nested namespaces.  
+  
+                ' Create an XML tree with nested namespaces.  
 Dim root As XDocument = _   
-   <?xml version='1.0'?>  
-   <Root xmlns='http://www.adventure-works.com'>  
-       <Child xmlns='www.fourthcoffee.com'>  
-       <DifferentChild xmlns='http://www.adventure-works.com'>other content</DifferentChild>  
-       </Child>  
-   </Root>  
+    <?xml version='1.0'?>  
+    <Root xmlns='http://www.adventure-works.com'>  
+        <Child xmlns='www.fourthcoffee.com'>  
+        <DifferentChild xmlns='http://www.adventure-works.com'>other content</DifferentChild>  
+        </Child>  
+    </Root>  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root xmlns="http://www.adventure-works.com">  
- <Child xmlns="www.fourthcoffee.com">  
-   <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
- </Child>  
+  
+                <Root xmlns="http://www.adventure-works.com">  
+  <Child xmlns="www.fourthcoffee.com">  
+    <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
+  </Child>  
 </Root>  
- 
+  
 ```  
  
  ]]></format>
@@ -1135,46 +1135,46 @@ This method uses deferred execution.
 The following example creates an XML tree. It then finds the `GrandChild` element, and then prints the ancestors of it.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child",  
-       new XElement("GrandChild", "element content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",  
+        new XElement("GrandChild", "element content")  
+    )  
 );  
 XElement gc = xmlTree.Element("Child").Element("GrandChild");  
 IEnumerable<XElement> aas =  
-   from el in gc.AncestorsAndSelf()  
-   select el;  
+    from el in gc.AncestorsAndSelf()  
+    select el;  
 foreach (XElement el in aas)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-   <Root>  
-       <Child>  
-           <GrandChild>element content</GrandChild>  
-       </Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+    <Root>  
+        <Child>  
+            <GrandChild>element content</GrandChild>  
+        </Child>  
+    </Root>  
+  
 Dim GC As XElement = xmlTree.<Child>.<GrandChild>(0)  
- 
+  
 Dim aas As IEnumerable(Of XElement) = _  
-   From el In GC.AncestorsAndSelf() _  
-   Select el  
- 
+    From el In GC.AncestorsAndSelf() _  
+    Select el  
+  
 For Each el In aas  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               GrandChild  
+  
+                GrandChild  
 Child  
 Root  
 ```  
@@ -1226,39 +1226,39 @@ This method uses deferred execution.
 The following example uses this .  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child",  
-       new XElement("GrandChild", "element content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",  
+        new XElement("GrandChild", "element content")  
+    )  
 );  
 XElement gc = xmlTree.Element("Child").Element("GrandChild");  
 IEnumerable<XElement> aas = gc.AncestorsAndSelf("Child");  
 foreach (XElement el in aas)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-   <Root>  
-       <Child>  
-           <GrandChild>element content</GrandChild>  
-       </Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+    <Root>  
+        <Child>  
+            <GrandChild>element content</GrandChild>  
+        </Child>  
+    </Root>  
+  
 Dim GC As XElement = xmlTree.<Child>.<GrandChild>(0)  
 Dim aas As IEnumerable(Of XElement) = GC.AncestorsAndSelf("Child")  
 For Each el In aas  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child  
 ```  
  
@@ -1309,61 +1309,61 @@ Visual Basic users can use the integrated attribute axis to retrieve the value o
 The following example creates an element with an attribute. It then retrieves the attribute using this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att", "attribute content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att", "attribute content")  
 );  
 XAttribute att = xmlTree.Attribute("Att");  
 Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root Att="attribute content"/>  
- 
+  
+                Dim xmlTree As XElement = <Root Att="attribute content"/>  
+  
 Dim att As XAttribute = xmlTree.Attribute("Att")  
 Console.WriteLine(att)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Att="attribute content"  
 ```  
  
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute(aw + "Att", "attribute content")  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute(aw + "Att", "attribute content")  
 );  
 XAttribute att = xmlTree.Attribute(aw + "Att");  
 Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = <aw:Root aw:Att="attribute content"/>  
- 
-       Dim att As XAttribute = xmlTree.Attribute(GetXmlNamespace(aw) + "Att")  
-       Console.WriteLine(att)  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = <aw:Root aw:Att="attribute content"/>  
+  
+        Dim att As XAttribute = xmlTree.Attribute(GetXmlNamespace(aw) + "Att")  
+        Console.WriteLine(att)  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 aw:Att="attribute content"  
 ```  
  
@@ -1411,81 +1411,81 @@ This method uses deferred execution.
 The following example creates an element with two attributes. It then uses this  to retrieve all attributes of the element.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2")  
 );  
 IEnumerable<XAttribute> attList =  
-   from at in xmlTree.Attributes()  
-   select at;  
+    from at in xmlTree.Attributes()  
+    select at;  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
- 
+  
+                Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
+  
 Dim attList As IEnumerable(Of XAttribute) = _  
 From at In xmlTree.Attributes() _  
 Select at  
- 
+  
 For Each att In attList  
-   Console.WriteLine(att)  
+    Console.WriteLine(att)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Att1="content1"  
+  
+                Att1="content1"  
 Att2="content2"  
 ```  
  
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XAttribute(aw + "Att1", "content1"),  
-   new XAttribute(aw + "Att2", "content2"),  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com")  
+    new XAttribute(aw + "Att1", "content1"),  
+    new XAttribute(aw + "Att2", "content2"),  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com")  
 );  
 IEnumerable<XAttribute> attList =  
-   from at in xmlTree.Attributes()  
-   select at;  
+    from at in xmlTree.Attributes()  
+    select at;  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = <aw:Root aw:Att1="content1" aw:Att2="content2"/>  
- 
-       Dim attList As IEnumerable(Of XAttribute) = _  
-           From at In xmlTree.Attributes() _  
-           Select at  
- 
-       For Each att In attList  
-           Console.WriteLine(att)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = <aw:Root aw:Att1="content1" aw:Att2="content2"/>  
+  
+        Dim attList As IEnumerable(Of XAttribute) = _  
+            From at In xmlTree.Attributes() _  
+            Select at  
+  
+        For Each att In attList  
+            Console.WriteLine(att)  
+        Next  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               aw:Att1="content1"  
+  
+                aw:Att1="content1"  
 aw:Att2="content2"  
 xmlns:aw="http://www.adventure-works.com"  
 ```  
@@ -1537,71 +1537,71 @@ This method uses deferred execution.
 The following example uses this .  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2")  
 );  
 IEnumerable<XAttribute> attList = xmlTree.Attributes("Att1");  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
- 
+  
+                Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
+  
 Dim attList As IEnumerable(Of XAttribute) = xmlTree.Attributes("Att1")  
- 
+  
 For Each att In attList  
-   Console.WriteLine(att)  
+    Console.WriteLine(att)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Att1="content1"  
 ```  
  
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute(aw + "Att1", "content1"),  
-   new XAttribute(aw + "Att2", "content2")  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute(aw + "Att1", "content1"),  
+    new XAttribute(aw + "Att2", "content2")  
 );  
 IEnumerable<XAttribute> attList = xmlTree.Attributes(aw + "Att1");  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = <aw:Root aw:Att1="content1" aw:Att2="content2"/>  
- 
-       Dim attList As IEnumerable(Of XAttribute) = xmlTree.Attributes(GetXmlNamespace(aw) + "Att1")  
- 
-       For Each att In attList  
-           Console.WriteLine(att)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = <aw:Root aw:Att1="content1" aw:Att2="content2"/>  
+  
+        Dim attList As IEnumerable(Of XAttribute) = xmlTree.Attributes(GetXmlNamespace(aw) + "Att1")  
+  
+        For Each att In attList  
+            Console.WriteLine(att)  
+        Next  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 aw:Att1="content1"  
 ```  
  
@@ -1647,54 +1647,54 @@ This method uses deferred execution.
 The following example creates an XML tree, and then uses this .  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   // Attributes are not nodes, so will not be returned by DescendantNodesAndSelf.  
-   new XAttribute("Att1", "AttributeContent"),  
-   new XElement("Child",  
-       new XText("Some text"),  
-       new XElement("GrandChild", "element content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    // Attributes are not nodes, so will not be returned by DescendantNodesAndSelf.  
+    new XAttribute("Att1", "AttributeContent"),  
+    new XElement("Child",  
+        new XText("Some text"),  
+        new XElement("GrandChild", "element content")  
+    )  
 );  
 IEnumerable<XNode> dnas =  
-   from node in xmlTree.DescendantNodesAndSelf()  
-   select node;  
+    from node in xmlTree.DescendantNodesAndSelf()  
+    select node;  
 foreach (XNode node in dnas)  
 {  
-   if (node is XElement)  
-       Console.WriteLine((node as XElement).Name);  
-   else  
-       Console.WriteLine(node);  
+    if (node is XElement)  
+        Console.WriteLine((node as XElement).Name);  
+    else  
+        Console.WriteLine(node);  
 }  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root Att1="AttributeContent">  
-       <Child>Some text<GrandChild>element content</GrandChild>  
-       </Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root Att1="AttributeContent">  
+        <Child>Some text<GrandChild>element content</GrandChild>  
+        </Child>  
+    </Root>  
+  
 Dim dnas As IEnumerable(Of XNode) = _  
-   From node In xmlTree.DescendantNodesAndSelf() _  
-   Select node  
- 
+    From node In xmlTree.DescendantNodesAndSelf() _  
+    Select node  
+  
 For Each node In dnas  
-   If TypeOf node Is XElement Then  
-       Console.WriteLine(DirectCast(node, XElement).Name)  
-   Else  
-       Console.WriteLine(node)  
-   End If  
+    If TypeOf node Is XElement Then  
+        Console.WriteLine(DirectCast(node, XElement).Name)  
+    Else  
+        Console.WriteLine(node)  
+    End If  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Root  
+  
+                Root  
 Child  
 Some text  
 GrandChild  
@@ -1743,45 +1743,45 @@ This method uses deferred execution.
 The following example creates an XML tree, and then uses this .  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", "AttributeContent"),  
-   new XElement("Child",  
-       new XText("Some text"),  
-       new XElement("GrandChild", "element content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", "AttributeContent"),  
+    new XElement("Child",  
+        new XText("Some text"),  
+        new XElement("GrandChild", "element content")  
+    )  
 );  
 IEnumerable<XElement> das =  
-   from el in xmlTree.DescendantsAndSelf()  
-   select el;  
+    from el in xmlTree.DescendantsAndSelf()  
+    select el;  
 foreach (XElement el in das)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root Att1="AttributeContent">  
-       <Child>Some text  
-           <GrandChild>element content</GrandChild>  
-       </Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root Att1="AttributeContent">  
+        <Child>Some text  
+            <GrandChild>element content</GrandChild>  
+        </Child>  
+    </Root>  
+  
 Dim das As IEnumerable(Of XElement) = _  
-   From el In xmlTree.DescendantsAndSelf() _  
-   Select el  
- 
+    From el In xmlTree.DescendantsAndSelf() _  
+    Select el  
+  
 For Each el In das  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Root  
+  
+                Root  
 Child  
 GrandChild  
 ```  
@@ -1831,40 +1831,40 @@ This method uses deferred execution.
 The following example creates an XML tree, and then uses this .  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", "AttributeContent"),  
-   new XElement("Child",  
-       new XText("Some text"),  
-       new XElement("GrandChild", "element content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", "AttributeContent"),  
+    new XElement("Child",  
+        new XText("Some text"),  
+        new XElement("GrandChild", "element content")  
+    )  
 );  
 IEnumerable<XElement> das = xmlTree.DescendantsAndSelf("Child");  
 foreach (XElement el in das)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root Att1="AttributeContent">  
-       <Child>Some text  
-           <GrandChild>element content</GrandChild>  
-       </Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root Att1="AttributeContent">  
+        <Child>Some text  
+            <GrandChild>element content</GrandChild>  
+        </Child>  
+    </Root>  
+  
 Dim das As IEnumerable(Of XElement) = xmlTree.DescendantsAndSelf("Child")  
- 
+  
 For Each el In das  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child  
 ```  
  
@@ -1944,26 +1944,26 @@ Attributes are stored in the element in the order that they were added to the el
 The following example uses this property.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3)  
 );  
 Console.WriteLine(xmlTree.FirstAttribute);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+  
+                Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.FirstAttribute)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Att1="1"  
 ```  
  
@@ -2015,28 +2015,28 @@ When creating XML trees using Visual Basic and XML literals, if you create the X
 The following example creates an XML tree that has a default namespace. It then uses this method to retrieve the default namespace.  
  
 ```csharp  
- 
-               String xml = "<root xmlns='http://www.adventure-works.com'/>";  
+  
+                String xml = "<root xmlns='http://www.adventure-works.com'/>";  
 XElement e = XElement.Parse(xml);  
 Console.WriteLine("Default namespace: {0}", e.GetDefaultNamespace());  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim e As XElement = <root/>  
-       Console.WriteLine("Default namespace: {0}", e.GetDefaultNamespace())  
-   End Sub  
+    Sub Main()  
+        Dim e As XElement = <root/>  
+        Console.WriteLine("Default namespace: {0}", e.GetDefaultNamespace())  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Default namespace: http://www.adventure-works.com  
 ```  
  
@@ -2085,8 +2085,8 @@ This method looks through the XML tree for namespace attributes that are in scop
 The following example creates an XML tree that has a namespace with an associated prefix. It then uses this method to retrieve the <xref:System.Xml.Linq.XNamespace> for the prefix.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
+  
+                XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 XNamespace awNamespace = xmlTree.GetNamespaceOfPrefix("aw");  
 Console.WriteLine("Namespace: {0}", awNamespace);  
 ```  
@@ -2094,23 +2094,23 @@ Console.WriteLine("Namespace: {0}", awNamespace);
 When using Visual Basic, you would typically use the [GetXmlNamespace Operator](~/docs/visual-basic/language-reference/operators/getxmlnamespace-operator.md) operator, as follows  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = <aw:Root/>  
-       Dim awNamespace As XNamespace = GetXmlNamespace(aw)  
-       Console.WriteLine("Namespace: {0}", awNamespace)  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = <aw:Root/>  
+        Dim awNamespace As XNamespace = GetXmlNamespace(aw)  
+        Console.WriteLine("Namespace: {0}", awNamespace)  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Namespace: http://www.adventure-works.com  
 ```  
  
@@ -2161,29 +2161,29 @@ If the namespace is the default namespace, and there is no prefix for the namesp
 The following example creates an XML tree that contains a namespace with a prefix. It then uses this method to retrieve the prefix for the namespace. Notice that this example uses the implicit conversion from string to <xref:System.Xml.Linq.XNamespace> when calling this method.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
+  
+                XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 string prefix = xmlTree.GetPrefixOfNamespace("http://www.adventure-works.com");  
 Console.WriteLine("Prefix: {0}", prefix);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = <aw:Root/>  
-       Dim prefix As String = xmlTree.GetPrefixOfNamespace("http://www.adventure-works.com")  
-       Console.WriteLine("Prefix: {0}", prefix)  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = <aw:Root/>  
+        Dim prefix As String = xmlTree.GetPrefixOfNamespace("http://www.adventure-works.com")  
+        Console.WriteLine("Prefix: {0}", prefix)  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Prefix: aw  
 ```  
  
@@ -2224,9 +2224,9 @@ Prefix: aw
 The following example uses this property.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XAttribute("Att1", 1)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XAttribute("Att1", 1)  
 );  
 Console.WriteLine(xmlTree1.HasAttributes);  
 XElement xmlTree2 = new XElement("Root");  
@@ -2234,13 +2234,13 @@ Console.WriteLine(xmlTree2.HasAttributes);
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = <Root Att1="1"/>  
+  
+                Dim xmlTree1 As XElement = <Root Att1="1"/>  
 Console.WriteLine(xmlTree1.HasAttributes)  
- 
+  
 Dim xmlTree2 As XElement = <Root/>  
 Console.WriteLine(xmlTree2.HasAttributes)  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2287,9 +2287,9 @@ False
 The following example uses this property.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child", 1)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child", 1)  
 );  
 Console.WriteLine(xmlTree1.HasElements);  
 XElement xmlTree2 = new XElement("Root", "contents");  
@@ -2297,23 +2297,23 @@ Console.WriteLine(xmlTree2.HasElements);
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child>1</Child>  
-       </Root>  
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child>1</Child>  
+        </Root>  
 Console.WriteLine(xmlTree1.HasElements)  
- 
+  
 Dim xmlTree2 As XElement = <Root>contents</Root>  
 Console.WriteLine(xmlTree2.HasElements)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               True  
+  
+                True  
 False  
 ```  
  
@@ -2359,8 +2359,8 @@ Note that an element that contains a start and end tag with no content between t
 The following example creates a variety of XML trees, and shows the value of this property with each tree.  
  
 ```csharp  
- 
-               XElement el1 = new XElement("Root");  
+  
+                XElement el1 = new XElement("Root");  
 Console.WriteLine(el1);  
 Console.WriteLine(el1.IsEmpty);  
 Console.WriteLine();  
@@ -2378,8 +2378,8 @@ Console.WriteLine(el3.IsEmpty);
 ```  
  
 ```vb  
- 
-               Dim el1 As XElement = <Root/>  
+  
+                Dim el1 As XElement = <Root/>  
 Console.WriteLine(el1)  
 Console.WriteLine(el1.IsEmpty)  
 Console.WriteLine()  
@@ -2394,22 +2394,22 @@ Console.WriteLine()
 el3.ReplaceAll(Nothing)  
 Console.WriteLine(el3)  
 Console.WriteLine(el3.IsEmpty)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root />  
+  
+                <Root />  
 True  
- 
+  
 <Root>content</Root>  
 False  
- 
+  
 <Root></Root>  
 False  
- 
+  
 <Root />  
 True  
 ```  
@@ -2455,26 +2455,26 @@ Attributes are stored in the element in the order that they were added to the el
 The following example creates an XML tree with three attributes. It then writes the last attribute as output.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3)  
 );  
 Console.WriteLine(xmlTree.LastAttribute);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+  
+                Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.LastAttribute)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Att3="3"  
 ```  
  
@@ -2572,28 +2572,28 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example loads an element from a <xref:System.IO.StringReader>.  
  
 ```csharp  
- 
-               TextReader sr = new StringReader("<Root><Child/></Root>");  
+  
+                TextReader sr = new StringReader("<Root><Child/></Root>");  
 XElement xmlTree = XElement.Load(sr);  
 sr.Close();  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim sr As TextReader = New StringReader("<Root><Child/></Root>")  
+  
+                Dim sr As TextReader = New StringReader("<Root><Child/></Root>")  
 Dim xmlTree As XElement = XElement.Load(sr)  
 sr.Close()  
 Console.WriteLine(xmlTree)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child />  
+  
+                <Root>  
+  <Child />  
 </Root>  
 ```  
  
@@ -2644,33 +2644,33 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates an XML tree, saves it to a file, and then uses this method to load the <xref:System.Xml.Linq.XElement> from the file.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child", "content")  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child", "content")  
 );  
 xmlTree1.Save("Tree.xml");  
- 
+  
 XElement xmlTree2 = XElement.Load("Tree.xml");  
 Console.WriteLine(xmlTree2.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child>Content</Child>  
-       </Root>  
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child>Content</Child>  
+        </Root>  
 xmlTree1.Save("Tree.xml")  
- 
+  
 Dim xmlTree2 As XElement = XElement.Load("Tree.xml")  
 Console.WriteLine(xmlTree2.Name)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Root  
 ```  
  
@@ -2728,15 +2728,15 @@ child.InnerText = "child contents";
 XmlElement root = doc.CreateElement("Root");  
 root.AppendChild(child);  
 doc.AppendChild(root);  
- 
+  
 // Create a reader and move to the content.  
 using (XmlNodeReader nodeReader = new XmlNodeReader(doc)) {  
-   // the reader must be in the Interactive state in order to  
-   // Create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent();  
- 
-   XElement xRoot = XElement.Load(nodeReader);  
-   Console.WriteLine(xRoot);  
+    // the reader must be in the Interactive state in order to  
+    // Create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent();  
+  
+    XElement xRoot = XElement.Load(nodeReader);  
+    Console.WriteLine(xRoot);  
 }  
 ```  
  
@@ -2748,25 +2748,25 @@ child.InnerText = "child contents"
 Dim root As XmlElement = doc.CreateElement("Root")  
 root.AppendChild(child)  
 doc.AppendChild(root)  
- 
+  
 ' Create a reader and move to the content.  
 Using nodeReader = New XmlNodeReader(doc)  
-   ' the reader must be in the Interactive state in order to  
-   ' Create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent()  
- 
-   Dim xRoot As XElement = XElement.Load(nodeReader)  
-   Console.WriteLine(xRoot)  
+    ' the reader must be in the Interactive state in order to  
+    ' Create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent()  
+  
+    Dim xRoot As XElement = XElement.Load(nodeReader)  
+    Console.WriteLine(xRoot)  
 End Using  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child>child contents</Child>  
+  
+                <Root>  
+  <Child>child contents</Child>  
 </Root>  
 ```  
  
@@ -2880,129 +2880,129 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example loads an <xref:System.Xml.Linq.XElement> from a <xref:System.IO.StringReader> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
  
 ```csharp  
- 
-               TextReader sr;  
+  
+                TextReader sr;  
 int whiteSpaceNodes;  
- 
+  
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
 XElement xmlTree1 = XElement.Load(sr, LoadOptions.None);  
 sr.Close();  
 whiteSpaceNodes = xmlTree1  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes);  
- 
+  
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
 XElement xmlTree2 = XElement.Load(sr, LoadOptions.PreserveWhitespace);  
 sr.Close();  
 whiteSpaceNodes = xmlTree2  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes);  
 ```  
  
 ```vb  
- 
-               Dim sr As TextReader  
+  
+                Dim sr As TextReader  
 Dim whiteSpaceNodes As Integer  
- 
+  
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
 Dim xmlTree1 As XElement = XElement.Load(sr, LoadOptions.None)  
 sr.Close()  
 whiteSpaceNodes = xmlTree1 _  
-   .DescendantNodesAndSelf() _  
-   .OfType(Of XText)() _  
-   .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-   .Count()  
+    .DescendantNodesAndSelf() _  
+    .OfType(Of XText)() _  
+    .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+    .Count()  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes)  
- 
+  
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
 Dim xmlTree2 As XElement = XElement.Load(sr, LoadOptions.PreserveWhitespace)  
 sr.Close()  
 whiteSpaceNodes = xmlTree2 _  
-   .DescendantNodesAndSelf() _  
-   .OfType(Of XText)() _  
-   .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-   .Count()  
+    .DescendantNodesAndSelf() _  
+    .OfType(Of XText)() _  
+    .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+    .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Count of white space nodes (not preserving whitespace): 0  
+  
+                Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
  
 The following example loads the line information as it loads from the <xref:System.IO.TextReader>. It then prints the line information.  
  
 ```csharp  
- 
-               TextReader sr = new StringReader(  
+  
+                TextReader sr = new StringReader(  
 @"<Root>  
- <Child>  
-   <GrandChild1/>  
-   <GrandChild2/>  
- </Child>  
+  <Child>  
+    <GrandChild1/>  
+    <GrandChild2/>  
+  </Child>  
 </Root>");  
 XElement po = XElement.Load(sr,  
-   LoadOptions.SetLineInfo);  
+    LoadOptions.SetLineInfo);  
 Console.WriteLine("{0}{1}{2}",  
-   "Element Name".PadRight(20),  
-   "Line".PadRight(5),  
-   "Position");  
+    "Element Name".PadRight(20),  
+    "Line".PadRight(5),  
+    "Position");  
 Console.WriteLine("{0}{1}{2}",  
-   "------------".PadRight(20),  
-   "----".PadRight(5),  
-   "--------");  
+    "------------".PadRight(20),  
+    "----".PadRight(5),  
+    "--------");  
 foreach (XElement e in po.DescendantsAndSelf())  
-   Console.WriteLine("{0}{1}{2}",  
-       ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
-       ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
-       ((IXmlLineInfo)e).LinePosition);  
+    Console.WriteLine("{0}{1}{2}",  
+        ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+        ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
+        ((IXmlLineInfo)e).LinePosition);  
 ```  
  
 ```vb  
- 
-               Dim sr As TextReader = New StringReader( _  
-   "<Root>" & Environment.NewLine & _  
-   "  <Child>" & Environment.NewLine & _  
-   "    <GrandChild1/>" & Environment.NewLine & _  
-   "    <GrandChild2/>" & Environment.NewLine & _  
-   "  </Child>" & Environment.NewLine & _  
-   "</Root>")  
+  
+                Dim sr As TextReader = New StringReader( _  
+    "<Root>" & Environment.NewLine & _  
+    "  <Child>" & Environment.NewLine & _  
+    "    <GrandChild1/>" & Environment.NewLine & _  
+    "    <GrandChild2/>" & Environment.NewLine & _  
+    "  </Child>" & Environment.NewLine & _  
+    "</Root>")  
 Dim po As XElement = XElement.Load(sr, LoadOptions.SetLineInfo)  
 Console.WriteLine("{0}{1}{2}", _  
-   "Element Name".PadRight(20), _  
-   "Line".PadRight(5), _  
-   "Position")  
+    "Element Name".PadRight(20), _  
+    "Line".PadRight(5), _  
+    "Position")  
 Console.WriteLine("{0}{1}{2}", _  
-   "------------".PadRight(20), _  
-   "----".PadRight(5), _  
-   "--------")  
+    "------------".PadRight(20), _  
+    "----".PadRight(5), _  
+    "--------")  
 For Each e As XElement In po.DescendantsAndSelf()  
-   Console.WriteLine("{0}{1}{2}", _  
-       ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
-       (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
-       (DirectCast(e, IXmlLineInfo)).LinePosition)  
+    Console.WriteLine("{0}{1}{2}", _  
+        ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
+        (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
+        (DirectCast(e, IXmlLineInfo)).LinePosition)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Element Name        Line Position  
+  
+                Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
- Child             2    4  
-   GrandChild1     3    6  
-   GrandChild2     4    6  
+  Child             2    4  
+    GrandChild1     3    6  
+    GrandChild2     4    6  
 ```  
  
  ]]></format>
@@ -3066,60 +3066,60 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example loads an <xref:System.Xml.Linq.XElement> from a file in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
  
 ```csharp  
- 
-               XElement xmlTree1 = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace);  
+  
+                XElement xmlTree1 = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace);  
 xmlTree1.Save("Tree.xml");  
 Console.WriteLine(xmlTree1);  
- 
+  
 int whiteSpaceNodes;  
 XElement xmlTree2 = XElement.Load("Tree.xml",  
-   LoadOptions.None);  
+    LoadOptions.None);  
 whiteSpaceNodes = xmlTree2  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes);  
- 
+  
 XElement xmlTree3 = XElement.Load("Tree.xml",  
-   LoadOptions.PreserveWhitespace);  
+    LoadOptions.PreserveWhitespace);  
 whiteSpaceNodes = xmlTree3  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace)  
+  
+                Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace)  
 xmlTree1.Save("Tree.xml")  
 Console.WriteLine(xmlTree1)  
- 
+  
 Dim whiteSpaceNodes As Integer  
 Dim xmlTree2 As XElement = XElement.Load("Tree.xml", LoadOptions.None)  
 whiteSpaceNodes = xmlTree2 _  
-                 .DescendantNodesAndSelf() _  
-                 .OfType(Of XText)() _  
-                 .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-                 .Count()  
+                  .DescendantNodesAndSelf() _  
+                  .OfType(Of XText)() _  
+                  .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+                  .Count()  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes)  
- 
+  
 Dim xmlTree3 As XElement = XElement.Load("Tree.xml", LoadOptions.PreserveWhitespace)  
 whiteSpaceNodes = xmlTree3 _  
-                 .DescendantNodesAndSelf() _  
-                 .OfType(Of XText)() _  
-                 .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-                 .Count()  
+                  .DescendantNodesAndSelf() _  
+                  .OfType(Of XText)() _  
+                  .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+                  .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root> <Child>  </Child> </Root>  
+  
+                <Root> <Child>  </Child> </Root>  
 Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
@@ -3129,84 +3129,84 @@ The following example loads the base URI and line information as it loads the fi
 This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
  
 ```csharp  
- 
-               XElement po = XElement.Load("PurchaseOrder.xml",  
-   LoadOptions.SetBaseUri | LoadOptions.SetLineInfo);  
+  
+                XElement po = XElement.Load("PurchaseOrder.xml",  
+    LoadOptions.SetBaseUri | LoadOptions.SetLineInfo);  
 string[] splitUri = po.BaseUri.Split('/');  
 Console.WriteLine("BaseUri: {0}", splitUri[splitUri.Length - 1]);  
 Console.WriteLine();  
 Console.WriteLine("{0}{1}{2}",  
-   "Element Name".PadRight(20),  
-   "Line".PadRight(5),  
-   "Position");  
+    "Element Name".PadRight(20),  
+    "Line".PadRight(5),  
+    "Position");  
 Console.WriteLine("{0}{1}{2}",  
-   "------------".PadRight(20),  
-   "----".PadRight(5),  
-   "--------");  
+    "------------".PadRight(20),  
+    "----".PadRight(5),  
+    "--------");  
 foreach (XElement e in po.DescendantsAndSelf())  
-   Console.WriteLine("{0}{1}{2}",  
-       ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
-       ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
-       ((IXmlLineInfo)e).LinePosition);  
+    Console.WriteLine("{0}{1}{2}",  
+        ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+        ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
+        ((IXmlLineInfo)e).LinePosition);  
 ```  
  
 ```vb  
- 
-       Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
+  
+        Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
 Dim splitUri() As String = po.BaseUri.Split("/")  
 Console.WriteLine("BaseUri: {0}", splitUri(splitUri.Length - 1))  
 Console.WriteLine()  
 Console.WriteLine("{0}{1}{2}", _  
-   "Element Name".PadRight(20), _  
-   "Line".PadRight(5), _  
-   "Position")  
+    "Element Name".PadRight(20), _  
+    "Line".PadRight(5), _  
+    "Position")  
 Console.WriteLine("{0}{1}{2}", _  
-   "------------".PadRight(20), _  
-   "----".PadRight(5), _  
-   "--------")  
+    "------------".PadRight(20), _  
+    "----".PadRight(5), _  
+    "--------")  
 For Each e As XElement In po.DescendantsAndSelf()  
-   Console.WriteLine("{0}{1}{2}", _  
-       ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString()).PadRight(20), _  
-       (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
-       (DirectCast(e, IXmlLineInfo)).LinePosition)  
+    Console.WriteLine("{0}{1}{2}", _  
+        ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString()).PadRight(20), _  
+        (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
+        (DirectCast(e, IXmlLineInfo)).LinePosition)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               BaseUri: PurchaseOrder.xml  
- 
+  
+                BaseUri: PurchaseOrder.xml  
+  
 Element Name        Line Position  
 ------------        ---- --------  
 PurchaseOrder       2    2  
- Address           3    4  
-   Name            4    6  
-   Street          5    6  
-   City            6    6  
-   State           7    6  
-   Zip             8    6  
-   Country         9    6  
- Address           11   4  
-   Name            12   6  
-   Street          13   6  
-   City            14   6  
-   State           15   6  
-   Zip             16   6  
-   Country         17   6  
- DeliveryNotes     19   4  
- Items             20   4  
-   Item            21   6  
-     ProductName   22   8  
-     Quantity      23   8  
-     USPrice       24   8  
-     Comment       25   8  
-   Item            27   6  
-     ProductName   28   8  
-     Quantity      29   8  
-     USPrice       30   8  
-     ShipDate      31   8  
+  Address           3    4  
+    Name            4    6  
+    Street          5    6  
+    City            6    6  
+    State           7    6  
+    Zip             8    6  
+    Country         9    6  
+  Address           11   4  
+    Name            12   6  
+    Street          13   6  
+    City            14   6  
+    State           15   6  
+    Zip             16   6  
+    Country         17   6  
+  DeliveryNotes     19   4  
+  Items             20   4  
+    Item            21   6  
+      ProductName   22   8  
+      Quantity      23   8  
+      USPrice       24   8  
+      Comment       25   8  
+    Item            27   6  
+      ProductName   28   8  
+      Quantity      29   8  
+      USPrice       30   8  
+      ShipDate      31   8  
 ```  
  
  ]]></format>
@@ -3270,81 +3270,81 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
  
 ```csharp  
- 
-               string markup =  
+  
+                string markup =  
 @"<Root>  
-   <Child>  
-       <GrandChild/>  
-   </Child>  
+    <Child>  
+        <GrandChild/>  
+    </Child>  
 </Root>";  
- 
+  
 // Create a reader and move to the content.  
 using (XmlReader nodeReader = XmlReader.Create(new StringReader(markup)))  
 {  
-   // the reader must be in the Interactive state in order to  
-   // Create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent();  
- 
-   XElement xRoot = XElement.Load(nodeReader, LoadOptions.SetLineInfo);  
-   Console.WriteLine("{0}{1}{2}",  
-       "Element Name".PadRight(20),  
-       "Line".PadRight(5),  
-       "Position");  
-   Console.WriteLine("{0}{1}{2}",  
-       "------------".PadRight(20),  
-       "----".PadRight(5),  
-       "--------");  
-   foreach (XElement e in xRoot.DescendantsAndSelf())  
-       Console.WriteLine("{0}{1}{2}",  
-           ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
-           ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
-           ((IXmlLineInfo)e).LinePosition);  
+    // the reader must be in the Interactive state in order to  
+    // Create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent();  
+  
+    XElement xRoot = XElement.Load(nodeReader, LoadOptions.SetLineInfo);  
+    Console.WriteLine("{0}{1}{2}",  
+        "Element Name".PadRight(20),  
+        "Line".PadRight(5),  
+        "Position");  
+    Console.WriteLine("{0}{1}{2}",  
+        "------------".PadRight(20),  
+        "----".PadRight(5),  
+        "--------");  
+    foreach (XElement e in xRoot.DescendantsAndSelf())  
+        Console.WriteLine("{0}{1}{2}",  
+            ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+            ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
+            ((IXmlLineInfo)e).LinePosition);  
 }  
 ```  
  
 ```vb  
- 
-               Dim markup As String = _  
-   "<Root>" & Environment.NewLine & _  
-   "    <Child>" & Environment.NewLine & _  
-   "        <GrandChild/>" & Environment.NewLine & _  
-   "    </Child>" & Environment.NewLine & _  
-   "</Root>"  
- 
+  
+                Dim markup As String = _  
+    "<Root>" & Environment.NewLine & _  
+    "    <Child>" & Environment.NewLine & _  
+    "        <GrandChild/>" & Environment.NewLine & _  
+    "    </Child>" & Environment.NewLine & _  
+    "</Root>"  
+  
 ' Create a reader and move to the content.  
 Using nodeReader As XmlReader = XmlReader.Create(New StringReader(markup))  
- 
-   ' the reader must be in the Interactive state in order to  
-   ' Create a LINQ to XML tree from it.  
-   nodeReader.MoveToContent()  
- 
-   Dim xRoot As XElement = XElement.Load(nodeReader, LoadOptions.SetLineInfo)  
-   Console.WriteLine("{0}{1}{2}", _  
-       "Element Name".PadRight(20), _  
-       "Line".PadRight(5), _  
-       "Position")  
-   Console.WriteLine("{0}{1}{2}", _  
-       "------------".PadRight(20), _  
-       "----".PadRight(5), _  
-       "--------")  
-   For Each e As XElement In xRoot.DescendantsAndSelf()  
-       Console.WriteLine("{0}{1}{2}", _  
-           ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
-           (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
-           (DirectCast(e, IXmlLineInfo)).LinePosition)  
-   Next  
+  
+    ' the reader must be in the Interactive state in order to  
+    ' Create a LINQ to XML tree from it.  
+    nodeReader.MoveToContent()  
+  
+    Dim xRoot As XElement = XElement.Load(nodeReader, LoadOptions.SetLineInfo)  
+    Console.WriteLine("{0}{1}{2}", _  
+        "Element Name".PadRight(20), _  
+        "Line".PadRight(5), _  
+        "Position")  
+    Console.WriteLine("{0}{1}{2}", _  
+        "------------".PadRight(20), _  
+        "----".PadRight(5), _  
+        "--------")  
+    For Each e As XElement In xRoot.DescendantsAndSelf()  
+        Console.WriteLine("{0}{1}{2}", _  
+            ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
+            (DirectCast(e, IXmlLineInfo)).LineNumber.ToString().PadRight(5), _  
+            (DirectCast(e, IXmlLineInfo)).LinePosition)  
+    Next  
 End Using  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Element Name        Line Position  
+  
+                Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
- Child             2    6  
-   GrandChild      3    10  
+  Child             2    6  
+    GrandChild      3    10  
 ```  
  
  ]]></format>
@@ -3388,10 +3388,10 @@ Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and 
 The following example uses this property to determine the name of an element.  
  
 ```csharp  
- 
-               XElement el1 = new XElement("Root", "content");  
+  
+                XElement el1 = new XElement("Root", "content");  
 Console.WriteLine(el1.Name);  
- 
+  
 XNamespace ns = "http://www.adventure-works.com";  
 XElement el2 = new XElement(ns + "Root", "content");  
 Console.WriteLine(el2.Name);  
@@ -3402,30 +3402,30 @@ Console.WriteLine(el2.Name);
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim el1 As XElement = <Root>content</Root>  
-       Console.WriteLine(el1.Name)  
- 
-       Dim el2 As XElement = <aw:Root>content</aw:Root>  
-       Console.WriteLine(el2.Name)  
-       Console.WriteLine(el2.Name.Namespace)  
-       Console.WriteLine(el2.Name.LocalName)  
-       Dim aw as XNamespace = GetXmlNamespace(aw)  
-       el2.Name = aw + "NewName"  
-       Console.WriteLine(el2.Name)  
-   End Sub  
+    Sub Main()  
+        Dim el1 As XElement = <Root>content</Root>  
+        Console.WriteLine(el1.Name)  
+  
+        Dim el2 As XElement = <aw:Root>content</aw:Root>  
+        Console.WriteLine(el2.Name)  
+        Console.WriteLine(el2.Name.Namespace)  
+        Console.WriteLine(el2.Name.LocalName)  
+        Dim aw as XNamespace = GetXmlNamespace(aw)  
+        el2.Name = aw + "NewName"  
+        Console.WriteLine(el2.Name)  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Root  
+  
+                Root  
 {http://www.adventure-works.com}Root  
 http://www.adventure-works.com  
 Root  
@@ -3473,24 +3473,24 @@ Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <x
 The following example uses this property to print the node type of an element.  
  
 ```csharp  
- 
-               XElement el1 = new XElement("Root", "content");  
+  
+                XElement el1 = new XElement("Root", "content");  
 Console.WriteLine(el1.NodeType);  
 Console.WriteLine();  
 ```  
  
 ```vb  
- 
-               Dim el1 As XElement = <Root>content</Root>  
+  
+                Dim el1 As XElement = <Root>content</Root>  
 Console.WriteLine(el1.NodeType.ToString())  
 Console.WriteLine()  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Element  
 ```  
  
@@ -4466,23 +4466,23 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XElement>.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse("<Root> <Child> </Child> </Root>");  
+  
+                XElement xmlTree = XElement.Parse("<Root> <Child> </Child> </Root>");  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = <Root><Child></Child></Root>  
+  
+                Dim xmlTree As XElement = <Root><Child></Child></Root>  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child></Child>  
+  
+                <Root>  
+  <Child></Child>  
 </Root>  
 ```  
  
@@ -4549,121 +4549,121 @@ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. T
 The following example parses a string into an <xref:System.Xml.Linq.XElement> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
  
 ```csharp  
- 
-               int whiteSpaceNodes;  
- 
+  
+                int whiteSpaceNodes;  
+  
 XElement xmlTree1 = XElement.Parse("<Root> <Child> </Child> </Root>",  
-   LoadOptions.None);  
+    LoadOptions.None);  
 whiteSpaceNodes = xmlTree1  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}",  
-   whiteSpaceNodes);  
- 
+    whiteSpaceNodes);  
+  
 XElement xmlTree2 = XElement.Parse("<Root> <Child> </Child> </Root>",  
-   LoadOptions.PreserveWhitespace);  
+    LoadOptions.PreserveWhitespace);  
 whiteSpaceNodes = xmlTree2  
-   .DescendantNodesAndSelf()  
-   .OfType<XText>()  
-   .Where(tNode => tNode.ToString().Trim().Length == 0)  
-   .Count();  
+    .DescendantNodesAndSelf()  
+    .OfType<XText>()  
+    .Where(tNode => tNode.ToString().Trim().Length == 0)  
+    .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}",  
-   whiteSpaceNodes);  
+    whiteSpaceNodes);  
 ```  
  
 ```vb  
- 
-               Dim whiteSpaceNodes As Integer  
- 
+  
+                Dim whiteSpaceNodes As Integer  
+  
 Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child> </Child> </Root>", LoadOptions.None)  
 whiteSpaceNodes = xmlTree1 _  
-   .DescendantNodesAndSelf() _  
-   .OfType(Of XText)() _  
-   .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-   .Count()  
+    .DescendantNodesAndSelf() _  
+    .OfType(Of XText)() _  
+    .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+    .Count()  
 Console.WriteLine("Count of white space nodes (not preserving whitespace): {0}", whiteSpaceNodes)  
- 
+  
 Dim xmlTree2 As XElement = XElement.Parse("<Root> <Child> </Child> </Root>", LoadOptions.PreserveWhitespace)  
 whiteSpaceNodes = xmlTree2 _  
-   .DescendantNodesAndSelf() _  
-   .OfType(Of XText)() _  
-   .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
-   .Count()  
+    .DescendantNodesAndSelf() _  
+    .OfType(Of XText)() _  
+    .Where(Function(ByVal tNode As XNode) tNode.ToString().Trim().Length = 0) _  
+    .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Count of white space nodes (not preserving whitespace): 0  
+  
+                Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
  
 The following example retains line information as it parses the string.  
  
 ```csharp  
- 
-               string markup =  
+  
+                string markup =  
 @"<Root>  
-   <Child>  
-       <GrandChild/>  
-   </Child>  
+    <Child>  
+        <GrandChild/>  
+    </Child>  
 </Root>";  
- 
+  
 XElement xRoot = XElement.Parse(markup, LoadOptions.SetLineInfo);  
 Console.WriteLine("{0}{1}{2}",  
-   "Element Name".PadRight(20),  
-   "Line".PadRight(5),  
-   "Position");  
+    "Element Name".PadRight(20),  
+    "Line".PadRight(5),  
+    "Position");  
 Console.WriteLine("{0}{1}{2}",  
-   "------------".PadRight(20),  
-   "----".PadRight(5),  
-   "--------");  
+    "------------".PadRight(20),  
+    "----".PadRight(5),  
+    "--------");  
 foreach (XElement e in xRoot.DescendantsAndSelf())  
-   Console.WriteLine("{0}{1}{2}",  
-       ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
-       ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
-       ((IXmlLineInfo)e).LinePosition);  
+    Console.WriteLine("{0}{1}{2}",  
+        ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+        ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
+        ((IXmlLineInfo)e).LinePosition);  
 ```  
  
 ```vb  
- 
-               Dim markup As String = _  
+  
+                Dim markup As String = _  
 "<Root>" & Environment.NewLine & _  
 "    <Child>" & Environment.NewLine & _  
 "        <GrandChild/>" & Environment.NewLine & _  
 "    </Child>" & Environment.NewLine & _  
 "</Root>"  
- 
+  
 Dim xRoot As XElement = XElement.Parse(markup, LoadOptions.SetLineInfo)  
 Console.WriteLine("{0}{1}{2}", _  
-   "Element Name".PadRight(20), _  
-   "Line".PadRight(5), _  
-   "Position")  
+    "Element Name".PadRight(20), _  
+    "Line".PadRight(5), _  
+    "Position")  
 Console.WriteLine("{0}{1}{2}", _  
-   "------------".PadRight(20), _  
-   "----".PadRight(5), _  
-   "--------")  
+    "------------".PadRight(20), _  
+    "----".PadRight(5), _  
+    "--------")  
 For Each e As XElement In xRoot.DescendantsAndSelf()  
-   Console.WriteLine("{0}{1}{2}", _  
-       ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
-       DirectCast(e, IXmlLineInfo).LineNumber.ToString().PadRight(5), _  
-       DirectCast(e, IXmlLineInfo).LinePosition)  
+    Console.WriteLine("{0}{1}{2}", _  
+        ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
+        DirectCast(e, IXmlLineInfo).LineNumber.ToString().PadRight(5), _  
+        DirectCast(e, IXmlLineInfo).LinePosition)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Element Name        Line Position  
+  
+                Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
- Child             2    6  
-   GrandChild      3    10  
+  Child             2    6  
+    GrandChild      3    10  
 ```  
  
  ]]></format>
@@ -4707,28 +4707,28 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example creates an element with attributes and child elements. It then calls this method to remove both the attributes and the child elements.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3),  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3)  
 );  
 root.RemoveAll();   // removes children elements and attributes of root  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-       <Root Attr1="1" Attr2="2" Attr3="3">  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-       </Root>  
- 
+  
+                Dim root As XElement = _   
+        <Root Attr1="1" Attr2="2" Attr3="3">  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+        </Root>  
+  
 root.RemoveAll()   ' removes children elements and attributes of root  
 Console.WriteLine(root)  
 ```  
@@ -4736,7 +4736,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root />  
 ```  
  
@@ -4781,28 +4781,28 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example creates an element with attributes and child elements. It then calls this method to remove the attributes. The child elements remain.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3),  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3)  
 );  
 root.RemoveAttributes();  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-   <Root Attr1="1" Attr2="2" Attr3="3">  
-       <Child1>1</Child1>  
-       <Child2>2</Child2>  
-       <Child3>3</Child3>  
-    </Root>  
- 
+  
+                Dim root As XElement = _   
+    <Root Attr1="1" Attr2="2" Attr3="3">  
+        <Child1>1</Child1>  
+        <Child2>2</Child2>  
+        <Child3>3</Child3>  
+     </Root>  
+  
 root.RemoveAttributes()  
 Console.WriteLine(root)  
 ```  
@@ -4810,11 +4810,11 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
 </Root>   
 ```  
  
@@ -4868,112 +4868,112 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XElement("Child", "child content")  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child", "child content")  
 );  
- 
+  
 // ReplaceAll with an XElement object.  
 root.ReplaceAll(new XElement("NewChild", "n"));  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with an XAttribute object.  
 root.ReplaceAll(new XAttribute("NewAttribute", "n"));  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with a string.  
 root.ReplaceAll("Some text");  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with a double.  
 double dbl = 12.345;  
 root.ReplaceAll(dbl);  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with a DateTime object.  
 DateTime dt = new DateTime(2006, 10, 6, 12, 30, 00);  
 root.ReplaceAll(dt);  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with a string array.  
 // Any collection other than a collection of XElement or XAttribute objects  
 // are converted to strings. The strings are concatenated and added.  
 string[] stringArray = {  
-   "abc",  
-   "def",  
-   "ghi"  
+    "abc",  
+    "def",  
+    "ghi"  
 };  
 root.ReplaceAll(stringArray);  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with an array of XElement objects.  
 XElement[] ellArray = {  
-   new XElement("NewChild1", 1),  
-   new XElement("NewChild2", 2),  
-   new XElement("NewChild3", 3)  
+    new XElement("NewChild1", 1),  
+    new XElement("NewChild2", 2),  
+    new XElement("NewChild3", 3)  
 };  
 root.ReplaceAll(ellArray);  
 Console.WriteLine(root);  
- 
+  
 // ReplaceAll with an array of XAttribute objects.  
 XAttribute[] attArray = {  
-   new XAttribute("NewAtt1", 1),  
-   new XAttribute("NewAtt2", 2),  
-   new XAttribute("NewAtt3", 3)  
+    new XAttribute("NewAtt1", 1),  
+    new XAttribute("NewAtt2", 2),  
+    new XAttribute("NewAtt3", 3)  
 };  
 root.ReplaceAll(attArray);  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-   <Root>  
-       <Child>child content</Child>  
-   </Root>  
- 
+  
+                Dim root As XElement = _   
+    <Root>  
+        <Child>child content</Child>  
+    </Root>  
+  
 ' ReplaceAll with an XElement object.  
 root.ReplaceAll(<NewChild>n</NewChild>)  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with an XAttribute object.  
 root.ReplaceAll(New XAttribute("NewAttribute", "n"))  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with a string.  
 root.ReplaceAll("Some text")  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with a double.  
 Dim dbl As Double = 12.345  
 root.ReplaceAll(dbl)  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with a DateTime object.  
 Dim dt As DateTime = New DateTime(2006, 10, 6, 12, 30, 0)  
 root.ReplaceAll(dt)  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with a string array.  
 ' Any collection other than a collection of XElement or XAttribute objects  
 ' are converted to strings. The strings are concatenated and added.  
 Dim stringArray As String() = { _  
-   "abc", _  
-   "def", _  
-   "ghi" _  
+    "abc", _  
+    "def", _  
+    "ghi" _  
 }  
 root.ReplaceAll(stringArray)  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with an array of XElement objects.  
 Dim ellArray As XElement() = { _  
-   New XElement("NewChild1", 1), _  
-   New XElement("NewChild2", 2), _  
-   New XElement("NewChild3", 3) _  
+    New XElement("NewChild1", 1), _  
+    New XElement("NewChild2", 2), _  
+    New XElement("NewChild3", 3) _  
 }  
 root.ReplaceAll(ellArray)  
 Console.WriteLine(root)  
- 
+  
 ' ReplaceAll with an array of XAttribute objects.  
 Dim attArray As XAttribute() = { _  
 New XAttribute("NewAtt1", 1), _  
@@ -4982,15 +4982,15 @@ New XAttribute("NewAtt3", 3) _
 }  
 root.ReplaceAll(attArray)  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root>  
- <NewChild>n</NewChild>  
+  
+                <Root>  
+  <NewChild>n</NewChild>  
 </Root>  
 <Root NewAttribute="n" />  
 <Root>Some text</Root>  
@@ -4998,9 +4998,9 @@ This example produces the following output:
 <Root>2006-10-06T12:30:00</Root>  
 <Root>abcdefghi</Root>  
 <Root>  
- <NewChild1>1</NewChild1>  
- <NewChild2>2</NewChild2>  
- <NewChild3>3</NewChild3>  
+  <NewChild1>1</NewChild1>  
+  <NewChild2>2</NewChild2>  
+  <NewChild3>3</NewChild3>  
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
@@ -5061,62 +5061,62 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5),  
-   new XElement("Child6", 6)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5),  
+    new XElement("Child6", 6)  
 );  
- 
+  
 XElement root = new XElement("Root",  
-   new XElement("Child", "child content")  
+    new XElement("Child", "child content")  
 );  
- 
+  
 root.ReplaceAll(  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-           <Child6>6</Child6>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+            <Child6>6</Child6>  
+        </Root>  
+  
 Dim root As XElement = <Root>  
-                          <Child>child content</Child>  
-                      </Root>  
- 
+                           <Child>child content</Child>  
+                       </Root>  
+  
 root.ReplaceAll( _  
-   From el In xmlTree1.Elements() _  
-   Where el.Value >= 3 And el.Value <= 5 _  
-   Select el _  
+    From el In xmlTree1.Elements() _  
+    Where el.Value >= 3 And el.Value <= 5 _  
+    Select el _  
 )  
- 
+  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -5168,21 +5168,21 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3)  
 );  
 root.ReplaceAttributes(  
-   new XAttribute("NewAtt1", 101)  
+    new XAttribute("NewAtt1", 101)  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
@@ -5190,7 +5190,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root NewAtt1="101" />  
 ```  
  
@@ -5248,23 +5248,23 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example creates an element with three attributes. It then replaces the attributes with other attributes.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3)  
 );  
 root.ReplaceAttributes(  
-   new XAttribute("NewAtt1", 101),  
-   new XAttribute("NewAtt2", 102),  
-   new XAttribute("NewAtt3", 103)  
+    new XAttribute("NewAtt1", 101),  
+    new XAttribute("NewAtt2", 102),  
+    new XAttribute("NewAtt3", 103)  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes( _  
 New XAttribute("NewAtt1", 101), _  
 New XAttribute("NewAtt2", 102), _  
@@ -5275,7 +5275,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root NewAtt1="101" NewAtt2="102" NewAtt3="103" />  
 ```  
  
@@ -5367,30 +5367,30 @@ If you want to control white space, use the overload of <xref:System.Xml.Linq.XE
 The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
  
 ```csharp  
- 
-               XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
+  
+                XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
 using (StringWriter sw = new StringWriter()) {  
-   root.Save(sw);  
-   Console.WriteLine(sw.ToString());  
+    root.Save(sw);  
+    Console.WriteLine(sw.ToString());  
 }  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root><Child> Text </Child></Root>  
+  
+                Dim root As XElement = <Root><Child> Text </Child></Root>  
 Using sw = New StringWriter()  
-   root.Save(sw)  
-   Console.WriteLine(sw.ToString())  
+    root.Save(sw)  
+    Console.WriteLine(sw.ToString())  
 End Using  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-16"?>  
+  
+                <?xml version="1.0" encoding="utf-16"?>  
 <Root>  
- <Child> Text </Child>  
+  <Child> Text </Child>  
 </Root>  
 ```  
  
@@ -5435,9 +5435,9 @@ If you want to control white space, use the overload of <xref:System.Xml.Linq.XE
 The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a file, and then prints the file to the console.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XElement("Child", "child content")  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child", "child content")  
 );  
 root.Save("Root.xml");  
 string str = File.ReadAllText("Root.xml");  
@@ -5445,11 +5445,11 @@ Console.WriteLine(str);
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-       <Root>  
-           <Child>child content</Child>  
-       </Root>  
+  
+                Dim root As XElement = _   
+        <Root>  
+            <Child>child content</Child>  
+        </Root>  
 root.Save("Root.xml")  
 Dim Str As String = File.ReadAllText("Root.xml")  
 Console.WriteLine(Str)  
@@ -5458,10 +5458,10 @@ Console.WriteLine(Str)
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-8"?>  
+  
+                <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
- <Child>child content</Child>  
+  <Child>child content</Child>  
 </Root>  
 ```  
  
@@ -5504,29 +5504,29 @@ This example produces the following output:
 The following example shows how to save an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
+  
+                StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
-   XElement root = new XElement("Root",  
-       new XElement("Child", "child content")  
-   );  
-   root.Save(xw);  
+    XElement root = new XElement("Root",  
+        new XElement("Child", "child content")  
+    );  
+    root.Save(xw);  
 }  
 Console.WriteLine(sb.ToString());  
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 Using xw = XmlWriter.Create(sb, xws)  
-   Dim root As XElement = <Root>  
-                              <Child>child content</Child>  
-                          </Root>  
-   root.Save(xw)  
+    Dim root As XElement = <Root>  
+                               <Child>child content</Child>  
+                           </Root>  
+    root.Save(xw)  
 End Using  
 Console.WriteLine(sb.ToString())  
 ```  
@@ -5534,7 +5534,7 @@ Console.WriteLine(sb.ToString())
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root><Child>child content</Child></Root>  
 ```  
  
@@ -5632,51 +5632,51 @@ For more information, see [Preserving White Space while Loading or Parsing XML](
 The following example shows two uses of this method. The first use preserves white space. The second serializes the <xref:System.Xml.Linq.XElement> with formatting. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
  
 ```csharp  
- 
-               XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
- 
+  
+                XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
+  
 using (StringWriter sw = new StringWriter())  
 {  
-   root.Save(sw, SaveOptions.DisableFormatting);  
-   Console.WriteLine(sw.ToString());  
+    root.Save(sw, SaveOptions.DisableFormatting);  
+    Console.WriteLine(sw.ToString());  
 }  
- 
+  
 Console.WriteLine("=====");  
- 
+  
 using (StringWriter sw = new StringWriter())  
 {  
-   root.Save(sw, SaveOptions.None);  
-   Console.WriteLine(sw.ToString());  
+    root.Save(sw, SaveOptions.None);  
+    Console.WriteLine(sw.ToString());  
 }  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root><Child> Text </Child></Root>  
- 
+  
+                Dim root As XElement = <Root><Child> Text </Child></Root>  
+  
 Using sw = New StringWriter()  
-   root.Save(sw, SaveOptions.DisableFormatting)  
-   Console.WriteLine(sw.ToString())  
+    root.Save(sw, SaveOptions.DisableFormatting)  
+    Console.WriteLine(sw.ToString())  
 End Using  
- 
+  
 Console.WriteLine("=====")  
- 
+  
 Using sw = New StringWriter()  
-   root.Save(sw, SaveOptions.None)  
-   Console.WriteLine(sw.ToString())  
+    root.Save(sw, SaveOptions.None)  
+    Console.WriteLine(sw.ToString())  
 End Using  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <?xml version="1.0" encoding="utf-16"?><Root><Child> Text </Child></Root>  
+  
+                <?xml version="1.0" encoding="utf-16"?><Root><Child> Text </Child></Root>  
 =====  
 <?xml version="1.0" encoding="utf-16"?>  
 <Root>  
- <Child> Text </Child>  
+  <Child> Text </Child>  
 </Root>  
 ```  
  
@@ -5725,47 +5725,47 @@ For more information, see [Preserving White Space while Loading or Parsing XML](
 The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XElement> with formatting.  
  
 ```csharp  
- 
-               string str;  
+  
+                string str;  
 XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
- 
+  
 root.Save("Root.xml", SaveOptions.DisableFormatting);  
 str = File.ReadAllText("Root.xml");  
 Console.WriteLine(str);  
- 
+  
 Console.WriteLine("=====");  
- 
+  
 root.Save("Root.xml", SaveOptions.None);  
 str = File.ReadAllText("Root.xml");  
 Console.WriteLine(str);  
 ```  
  
 ```vb  
- 
-               Dim str As String  
+  
+                Dim str As String  
 Dim root As XElement = <Root><Child> Text </Child></Root>  
- 
+  
 root.Save("Root.xml", SaveOptions.DisableFormatting)  
 str = File.ReadAllText("Root.xml")  
 Console.WriteLine(str)  
- 
+  
 Console.WriteLine("=====")  
- 
+  
 root.Save("Root.xml", SaveOptions.None)  
 str = File.ReadAllText("Root.xml")  
 Console.WriteLine(str)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
+  
+                <?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
 =====  
 <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
- <Child> Text </Child>  
+  <Child> Text </Child>  
 </Root>  
 ```  
  
@@ -5823,17 +5823,17 @@ The following example creates an element with an attribute. It then uses this me
 ```csharp  
 // Create an element with no content.  
 XElement root = new XElement("Root");  
- 
+  
 // Add some name/value pairs.  
 root.SetAttributeValue("Att1", 1);  
 root.SetAttributeValue("Att2", 2);  
 root.SetAttributeValue("Att3", 3);  
 Console.WriteLine(root);  
- 
+  
 // Modify one of the name/value pairs.  
 root.SetAttributeValue("Att2", 22);  
 Console.WriteLine(root);  
- 
+  
 // Remove one of the name/value pairs.  
 root.SetAttributeValue("Att3", null);  
 Console.WriteLine(root);  
@@ -5842,28 +5842,28 @@ Console.WriteLine(root);
 ```vb  
 ' Create an element with no content.  
 Dim root As XElement = <Root/>  
- 
+  
 ' Add some name/value pairs.  
 root.SetAttributeValue("Att1", 1)  
 root.SetAttributeValue("Att2", 2)  
 root.SetAttributeValue("Att3", 3)  
 Console.WriteLine(root)  
- 
+  
 ' Modify one of the name/value pairs.  
 root.SetAttributeValue("Att2", 22)  
 Console.WriteLine(root)  
- 
+  
 ' Remove one of the name/value pairs.  
 root.SetAttributeValue("Att3", Nothing)  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root Att1="1" Att2="2" Att3="3" />  
+  
+                <Root Att1="1" Att2="2" Att3="3" />  
 <Root Att1="1" Att2="22" Att3="3" />  
 <Root Att1="1" Att2="22" />  
 ```  
@@ -5925,17 +5925,17 @@ The following example creates an element with a child element. It then uses this
 ```csharp  
 // Create an element with no content  
 XElement root = new XElement("Root");  
- 
+  
 // Add some name/value pairs.  
 root.SetElementValue("Ele1", 1);  
 root.SetElementValue("Ele2", 2);  
 root.SetElementValue("Ele3", 3);  
 Console.WriteLine(root);  
- 
+  
 // Modify one of the name/value pairs.  
 root.SetElementValue("Ele2", 22);  
 Console.WriteLine(root);  
- 
+  
 // Remove one of the name/value pairs.  
 root.SetElementValue("Ele3", null);  
 Console.WriteLine(root);  
@@ -5944,40 +5944,40 @@ Console.WriteLine(root);
 ```vb  
 ' Create an element with no content.  
 Dim root As XElement = <Root/>  
- 
+  
 ' Add some name/value pairs.  
 root.SetElementValue("Ele1", 1)  
 root.SetElementValue("Ele2", 2)  
 root.SetElementValue("Ele3", 3)  
 Console.WriteLine(root)  
- 
+  
 ' Modify one of the name/value pairs.  
 root.SetElementValue("Ele2", 22)  
 Console.WriteLine(root)  
- 
+  
 ' Remove one of the name/value pairs.  
 root.SetElementValue("Ele3", Nothing)  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root>  
- <Ele1>1</Ele1>  
- <Ele2>2</Ele2>  
- <Ele3>3</Ele3>  
+  
+                <Root>  
+  <Ele1>1</Ele1>  
+  <Ele2>2</Ele2>  
+  <Ele3>3</Ele3>  
 </Root>  
 <Root>  
- <Ele1>1</Ele1>  
- <Ele2>22</Ele2>  
- <Ele3>3</Ele3>  
+  <Ele1>1</Ele1>  
+  <Ele2>22</Ele2>  
+  <Ele3>3</Ele3>  
 </Root>  
 <Root>  
- <Ele1>1</Ele1>  
- <Ele2>22</Ele2>  
+  <Ele1>1</Ele1>  
+  <Ele2>22</Ele2>  
 </Root>  
 ```  
  
@@ -6028,21 +6028,21 @@ It is invalid to pass an instance of a class that derives from <xref:System.Xml.
 The following example creates an element that contains a child element. It then sets the value of the element using this method.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XElement("Child", "child content")  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child", "child content")  
 );  
 root.SetValue("new content");  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-       <Root>  
-           <Child>child content</Child>  
-       </Root>  
- 
+  
+                Dim root As XElement = _   
+        <Root>  
+            <Child>child content</Child>  
+        </Root>  
+  
 root.SetValue("new content")  
 Console.WriteLine(root)  
 ```  
@@ -6050,7 +6050,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root>new content</Root>  
 ```  
  
@@ -6214,22 +6214,22 @@ If you want to get the value of an element but you are not sure that it exists, 
 The following example uses this property to retrieve the text of an element with mixed content.  
  
 ```csharp  
- 
-               XElement el = XElement.Parse("<Root>This is <b>mixed</b> content</Root>");  
+  
+                XElement el = XElement.Parse("<Root>This is <b>mixed</b> content</Root>");  
 Console.WriteLine("{0}", el.Value);  
 ```  
  
 ```vb  
- 
-               Dim el As XElement = <Root>This is <b>mixed</b> content</Root>  
+  
+                Dim el As XElement = <Root>This is <b>mixed</b> content</Root>  
 Console.WriteLine("{0}", el.Value)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 This is mixed content  
 ```  
  
@@ -6272,68 +6272,68 @@ This is mixed content
 The following example shows how to write an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
+  
+                StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
- 
+  
 using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
-   xw.WriteStartElement("Root");  
- 
-   XElement child1 = new XElement("Child",  
-       new XElement("GrandChild", "some content")  
-   );  
-   child1.WriteTo(xw);  
- 
-   XElement child2 = new XElement("AnotherChild",  
-       new XElement("GrandChild", "different content")  
-   );  
-   child2.WriteTo(xw);  
- 
-   xw.WriteEndElement();  
+    xw.WriteStartElement("Root");  
+  
+    XElement child1 = new XElement("Child",  
+        new XElement("GrandChild", "some content")  
+    );  
+    child1.WriteTo(xw);  
+  
+    XElement child2 = new XElement("AnotherChild",  
+        new XElement("GrandChild", "different content")  
+    );  
+    child2.WriteTo(xw);  
+  
+    xw.WriteEndElement();  
 }  
- 
+  
 Console.WriteLine(sb.ToString());  
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
- 
+  
 Using xw = XmlWriter.Create(sb, xws)  
-   xw.WriteStartElement("Root")  
-   Dim child1 As XElement = _  
-       <Child>  
-           <GrandChild>some content</GrandChild>  
-       </Child>  
-   child1.WriteTo(xw)  
-   Dim child2 As XElement = _   
-       <AnotherChild>  
-           <GrandChild>different content</GrandChild>  
-       </AnotherChild>  
-   child2.WriteTo(xw)  
-   xw.WriteEndElement()  
+    xw.WriteStartElement("Root")  
+    Dim child1 As XElement = _  
+        <Child>  
+            <GrandChild>some content</GrandChild>  
+        </Child>  
+    child1.WriteTo(xw)  
+    Dim child2 As XElement = _   
+        <AnotherChild>  
+            <GrandChild>different content</GrandChild>  
+        </AnotherChild>  
+    child2.WriteTo(xw)  
+    xw.WriteEndElement()  
 End Using  
- 
+  
 Console.WriteLine(sb.ToString())  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child>  
-   <GrandChild>some content</GrandChild>  
- </Child>  
- <AnotherChild>  
-   <GrandChild>different content</GrandChild>  
- </AnotherChild>  
+  
+                <Root>  
+  <Child>  
+    <GrandChild>some content</GrandChild>  
+  </Child>  
+  <AnotherChild>  
+    <GrandChild>different content</GrandChild>  
+  </AnotherChild>  
 </Root>  
 ```  
  
@@ -6403,67 +6403,67 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results. It queries the element that is having its contents replaced.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Data", 1),  
-   new XElement("Data", 2),  
-   new XElement("Data", 3),  
-   new XElement("Data", 4),  
-   new XElement("Data", 5)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Data", 1),  
+    new XElement("Data", 2),  
+    new XElement("Data", 3),  
+    new XElement("Data", 4),  
+    new XElement("Data", 5)  
 );  
- 
+  
 Console.WriteLine(xmlTree);  
 Console.WriteLine("-----");  
- 
+  
 xmlTree.ReplaceAll(  
-   from el in xmlTree.Elements()  
-   where (int)el >= 3  
-   select new XElement("NewData", (int)el)  
+    from el in xmlTree.Elements()  
+    where (int)el >= 3  
+    select new XElement("NewData", (int)el)  
 );  
- 
+  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Data>1</Data>  
-       <Data>2</Data>  
-       <Data>3</Data>  
-       <Data>4</Data>  
-       <Data>5</Data>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Data>1</Data>  
+        <Data>2</Data>  
+        <Data>3</Data>  
+        <Data>4</Data>  
+        <Data>5</Data>  
+    </Root>  
+  
 Console.WriteLine(xmlTree)  
 Console.WriteLine("-----")  
- 
+  
 xmlTree.ReplaceAll( _  
-   From el In xmlTree.Elements _  
-   Where el.Value >= 3 _  
-   Select <NewData><%= el.Value %></NewData> _  
+    From el In xmlTree.Elements _  
+    Where el.Value >= 3 _  
+    Select <NewData><%= el.Value %></NewData> _  
 )  
- 
+  
 Console.WriteLine(xmlTree)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Root>  
- <Data>1</Data>  
- <Data>2</Data>  
- <Data>3</Data>  
- <Data>4</Data>  
- <Data>5</Data>  
+  
+                <Root>  
+  <Data>1</Data>  
+  <Data>2</Data>  
+  <Data>3</Data>  
+  <Data>4</Data>  
+  <Data>5</Data>  
 </Root>  
 -----  
 <Root>  
- <NewData>3</NewData>  
- <NewData>4</NewData>  
- <NewData>5</NewData>  
+  <NewData>3</NewData>  
+  <NewData>4</NewData>  
+  <NewData>5</NewData>  
 </Root>  
 ```  
  
@@ -6513,21 +6513,21 @@ For details about the valid content that can be passed to this function, see [Va
 The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3)  
 );  
 root.ReplaceAttributes(  
-   new XAttribute("NewAtt1", 101)  
+    new XAttribute("NewAtt1", 101)  
 );  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
@@ -6535,7 +6535,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root NewAtt1="101" />  
 ```  
  
@@ -6567,55 +6567,55 @@ When creating an element in a namespace, typical use is to use the addition oper
 The following example creates an XML tree. The content of the new element comes from a LINQ query.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XElement("Child", 1),  
-   new XElement("Child", 2),  
-   new XElement("Child", 3),  
-   new XElement("Child", 4),  
-   new XElement("Child", 5),  
-   new XElement("Child", 6)  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XElement("Child", 1),  
+    new XElement("Child", 2),  
+    new XElement("Child", 3),  
+    new XElement("Child", 4),  
+    new XElement("Child", 5),  
+    new XElement("Child", 6)  
 );  
- 
+  
 XElement xmlTree2 = new XElement("Root",  
-   from el in xmlTree1.Elements()  
-   where((int)el >= 3 && (int)el <= 5)  
-   select el  
+    from el in xmlTree1.Elements()  
+    where((int)el >= 3 && (int)el <= 5)  
+    select el  
 );  
 Console.WriteLine(xmlTree2);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root>  
-           <Child>1</Child>  
-           <Child>2</Child>  
-           <Child>3</Child>  
-           <Child>4</Child>  
-           <Child>5</Child>  
-           <Child>6</Child>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _   
+        <Root>  
+            <Child>1</Child>  
+            <Child>2</Child>  
+            <Child>3</Child>  
+            <Child>4</Child>  
+            <Child>5</Child>  
+            <Child>6</Child>  
+        </Root>  
+  
 Dim xmlTree2 As XElement = _  
-   <Root>  
-       <%= From el In xmlTree1.Elements() _  
-           Where el.Value >= 3 And el.Value <= 5 _  
-           Select el %>  
-   </Root>  
- 
+    <Root>  
+        <%= From el In xmlTree1.Elements() _  
+            Where el.Value >= 3 And el.Value <= 5 _  
+            Select el %>  
+    </Root>  
+  
 Console.WriteLine(xmlTree2)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child>3</Child>  
- <Child>4</Child>  
- <Child>5</Child>  
+  
+                <Root>  
+  <Child>3</Child>  
+  <Child>4</Child>  
+  <Child>5</Child>  
 </Root>  
 ```  
  

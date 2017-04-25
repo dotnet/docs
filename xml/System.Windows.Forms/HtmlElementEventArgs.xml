@@ -131,20 +131,20 @@ The following HTML file demonstrates relative positioning of a `TABLE` inside of
  
 ```  
 <HTML>  
- 
+  
 <BODY>  
- 
-   <TABLE style="position:relative;top:100px;left:100px;">  
-       <TR>  
-           <TD>Text</TD>  
-           <TD>More text</TD>  
-       </TR>  
-   </TABLE>  
- 
+  
+    <TABLE style="position:relative;top:100px;left:100px;">  
+        <TR>  
+            <TD>Text</TD>  
+            <TD>More text</TD>  
+        </TR>  
+    </TABLE>  
+  
 </BODY>  
- 
+  
 </HTML>  
- 
+  
 ```  
  
 The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
@@ -342,20 +342,20 @@ The following HTML file demonstrates relative positioning of a `TABLE` inside of
  
 ```  
 <HTML>  
- 
+  
 <BODY>  
- 
-   <TABLE style="position:relative;top:100px;left:100px;">  
-       <TR>  
-           <TD>Text/TD>  
-           <TD>More text</TD>  
-       </TR>  
-   </TABLE>  
- 
+  
+    <TABLE style="position:relative;top:100px;left:100px;">  
+        <TR>  
+            <TD>Text/TD>  
+            <TD>More text</TD>  
+        </TR>  
+    </TABLE>  
+  
 </BODY>  
- 
+  
 </HTML>  
- 
+  
 ```  
  
 The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
@@ -392,20 +392,20 @@ The following HTML file demonstrates relative positioning of a `TABLE` inside of
  
 ```  
 <HTML>  
- 
+  
 <BODY>  
- 
-   <TABLE style="position:relative;top:100px;left:100px;">  
-       <TR>  
-           <TD>Text</TD>  
-           <TD>More text</TD>  
-       </TR>  
-   </TABLE>  
- 
+  
+    <TABLE style="position:relative;top:100px;left:100px;">  
+        <TR>  
+            <TD>Text</TD>  
+            <TD>More text</TD>  
+        </TR>  
+    </TABLE>  
+  
 </BODY>  
- 
+  
 </HTML>  
- 
+  
 ```  
  
 The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  

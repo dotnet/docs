@@ -84,32 +84,32 @@ This constructor is primarily used internally when making a deep copy of an XML 
 This example demonstrates that creating a deep copy of an XML tree creates a copy, not a clone, of an attribute in the tree.  
  
 ```csharp  
- 
-               XElement root1 = XElement.Parse("<Root Att1='abc' />");  
+  
+                XElement root1 = XElement.Parse("<Root Att1='abc' />");  
 // Make a deep copy.  
 XElement root2 = new XElement(root1);  
 if (root1.Attribute("Att1") == root2.Attribute("Att1"))  
-   Console.WriteLine("This will not be printed");  
+    Console.WriteLine("This will not be printed");  
 else  
-   Console.WriteLine("Creating a deep copy created a new attribute from the original.");  
+    Console.WriteLine("Creating a deep copy created a new attribute from the original.");  
 ```  
  
 ```vb  
- 
-               Dim root1 As XElement = <Root Att1='abc'/>  
+  
+                Dim root1 As XElement = <Root Att1='abc'/>  
 ' Make a deep copy.  
 Dim root2 As XElement = New XElement(root1)  
 If root1.Attribute("Att1") Is root2.Attribute("Att1") Then  
-   Console.WriteLine("This will not be printed")  
+    Console.WriteLine("This will not be printed")  
 Else  
-   Console.WriteLine("Creating a deep copy created a new attribute from the original.")  
+    Console.WriteLine("Creating a deep copy created a new attribute from the original.")  
 End If  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Creating a deep copy created a new attribute from the original.  
 ```  
  
@@ -152,19 +152,19 @@ Creating a deep copy created a new attribute from the original.
 There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the first parameter instead of creating a new <xref:System.Xml.Linq.XName>, as follows:  
  
 ```csharp  
- 
-           XElement root = new XElement("Root",  
-   new XAttribute("AnAttributeName", "Content")  
+  
+            XElement root = new XElement("Root",  
+    new XAttribute("AnAttributeName", "Content")  
 );  
 ```  
  
 You can also use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>, as follows:  
  
 ```csharp  
- 
-           XNamespace aw = "http://www.adventure-works.com";  
+  
+            XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
-   new XAttribute(aw + "AnAttributeName", "Content")  
+    new XAttribute(aw + "AnAttributeName", "Content")  
 );  
 ```  
  
@@ -180,55 +180,55 @@ The `value` parameter can be a <xref:System.String>, `double`, `float`, `decimal
 The following example uses this constructor to create attributes. It passes strings as the first argument to the <xref:System.Xml.Linq.XAttribute> constructor, which are then implicitly converted to <xref:System.Xml.Linq.XName> objects. The attributes are added to an element.  
  
 ```csharp  
- 
-               XElement root;  
- 
+  
+                XElement root;  
+  
 double dbl = 12.345;  
 XAttribute[] attArray = {  
-   new XAttribute("Att4", 1),  
-   new XAttribute("Att5", 2),  
-   new XAttribute("Att6", 3)  
+    new XAttribute("Att4", 1),  
+    new XAttribute("Att5", 2),  
+    new XAttribute("Att6", 3)  
 };  
 DateTime dt = new DateTime(2006, 10, 6, 12, 30, 00);  
- 
+  
 // string content  
 root = new XElement("Root",  
-   new XAttribute("Att1", "Some text"),  
- 
-   // double content  
-   new XAttribute("Att2", dbl),  
- 
-   // DateTime content  
-   new XAttribute("Att3", dt),  
- 
-   // XAttribute array content  
-   attArray  
+    new XAttribute("Att1", "Some text"),  
+  
+    // double content  
+    new XAttribute("Att2", dbl),  
+  
+    // DateTime content  
+    new XAttribute("Att3", dt),  
+  
+    // XAttribute array content  
+    attArray  
 );  
- 
+  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim dbl As Double = 12.345  
+  
+                Dim dbl As Double = 12.345  
 Dim attArray As XAttribute() = { _  
-   New XAttribute("Att4", 1), _  
-   New XAttribute("Att5", 2), _  
-   New XAttribute("Att6", 3) _  
+    New XAttribute("Att4", 1), _  
+    New XAttribute("Att5", 2), _  
+    New XAttribute("Att6", 3) _  
 }  
 Dim dt As DateTime = New DateTime(2006, 10, 6, 12, 30, 0)  
 Dim root As XElement = <Root Att1="Some text"  
-                          Att2=<%= dbl %>  
-                          Att3=<%= dt %>  
-                          <%= attArray %>  
-                      />  
+                           Att2=<%= dbl %>  
+                           Att3=<%= dt %>  
+                           <%= attArray %>  
+                       />  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 <Root Att1="Some text" Att2="12.345" Att3="2006-10-06T12:30:00" Att4="1" Att5="2" Att6="3" />  
 ```  
  
@@ -310,40 +310,40 @@ Technically, in XML, namespace declarations are not attributes proper. However, 
 The following example creates an attribute that is a namespace declaration and an attribute that is not. It then uses this property to display whether each attribute is a namespace declaration or not.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute(aw + "Att", "content")  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute(aw + "Att", "content")  
 );  
- 
+  
 foreach (XAttribute att in root.Attributes()) {  
-   if (att.IsNamespaceDeclaration)  
-       Console.WriteLine("{0} is a namespace declaration", att.Name);  
-   else  
-       Console.WriteLine("{0} is not a namespace declaration", att.Name);  
+    if (att.IsNamespaceDeclaration)  
+        Console.WriteLine("{0} is a namespace declaration", att.Name);  
+    else  
+        Console.WriteLine("{0} is not a namespace declaration", att.Name);  
 }  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <aw:Root xmlns:aw='http://www.adventure-works.com'  
-                          aw:Att='content'/>  
- 
+  
+                Dim root As XElement = <aw:Root xmlns:aw='http://www.adventure-works.com'  
+                           aw:Att='content'/>  
+  
 For Each att As XAttribute In root.Attributes()  
-   If (att.IsNamespaceDeclaration) Then  
-       Console.WriteLine("{0} is a namespace declaration", att.Name)  
-   Else  
-       Console.WriteLine("{0} is not a namespace declaration", att.Name)  
-   End If  
+    If (att.IsNamespaceDeclaration) Then  
+        Console.WriteLine("{0} is a namespace declaration", att.Name)  
+    Else  
+        Console.WriteLine("{0} is not a namespace declaration", att.Name)  
+    End If  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               {http://www.w3.org/2000/xmlns/}aw is a namespace declaration  
+  
+                {http://www.w3.org/2000/xmlns/}aw is a namespace declaration  
 {http://www.adventure-works.com}Att is not a namespace declaration  
 ```  
  
@@ -388,60 +388,60 @@ The expanded name returned by this property is in the form of `{namespace}localn
 The following example creates an element with three attributes. It then uses this property to print out the name of each attribute. The example also shows creation of a new attribute using the name of an existing attribute.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute(aw + "Att", "content"),  
-   new XAttribute("Att2", "different content")  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute(aw + "Att", "content"),  
+    new XAttribute("Att2", "different content")  
 );  
- 
+  
 foreach (XAttribute att in root.Attributes())  
-   Console.WriteLine("{0}={1}", att.Name, att.Value);  
+    Console.WriteLine("{0}={1}", att.Name, att.Value);  
 Console.WriteLine("");  
- 
+  
 XElement newRoot = new XElement(aw + "Root",  
-   from att in root.Attributes("Att2")  
-   select new XAttribute(att.Name, "new content"));  
- 
+    from att in root.Attributes("Att2")  
+    select new XAttribute(att.Name, "new content"));  
+  
 foreach (XAttribute att in newRoot.Attributes())  
-   Console.WriteLine("{0}={1}", att.Name, att.Value);  
+    Console.WriteLine("{0}={1}", att.Name, att.Value);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _   
-   <aw:Root xmlns:aw='http://www.adventure-works.com'  
-       aw:Att='content'  
-       Att2='different content'/>  
- 
+  
+                Dim root As XElement = _   
+    <aw:Root xmlns:aw='http://www.adventure-works.com'  
+        aw:Att='content'  
+        Att2='different content'/>  
+  
 For Each att As XAttribute In root.Attributes()  
-   Console.WriteLine("{0}={1}", att.Name, att.Value)  
+    Console.WriteLine("{0}={1}", att.Name, att.Value)  
 Next  
 Console.WriteLine("")  
- 
+  
 Dim NewRoot As XElement = _  
 <Root  
-   <%= _  
-       From att In root.Attributes("Att2") _  
-       Select New XAttribute(att.Name, "new content") _  
-   %>>_  
+    <%= _  
+        From att In root.Attributes("Att2") _  
+        Select New XAttribute(att.Name, "new content") _  
+    %>>_  
 </Root>  
- 
+  
 For Each att As XAttribute In NewRoot.Attributes()  
-   Console.WriteLine("{0}={1}", att.Name, att.Value)  
+    Console.WriteLine("{0}={1}", att.Name, att.Value)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               {http://www.w3.org/2000/xmlns/}aw=http://www.adventure-works.com  
+  
+                {http://www.w3.org/2000/xmlns/}aw=http://www.adventure-works.com  
 {http://www.adventure-works.com}Att=content  
 Att2=different content  
- 
+  
 Att2=new content  
 ```  
  
@@ -488,37 +488,37 @@ If this attribute does not have a parent, or if there is no next attribute, then
 The following example shows how to iterate through the attributes of an element using this property.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3),  
-   new XAttribute("Att4", 4)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3),  
+    new XAttribute("Att4", 4)  
 );  
- 
+  
 XAttribute att = root.FirstAttribute;  
 do {  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 }  
 while((att = att.NextAttribute) != null);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
 Dim att As XAttribute = root.FirstAttribute  
 Dim val As Boolean = True  
 Do  
-   Console.WriteLine(att)  
-   att = att.NextAttribute  
+    Console.WriteLine(att)  
+    att = att.NextAttribute  
 Loop While (Not (att Is Nothing))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Att1="1"  
+  
+                Att1="1"  
 Att2="2"  
 Att3="3"  
 Att4="4"  
@@ -565,18 +565,18 @@ Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <x
 The following example creates an attribute, and then displays the node type using this property.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att", "content")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att", "content")  
 );  
- 
+  
 XAttribute att = root.FirstAttribute;  
 Console.WriteLine(att.NodeType);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att="content"/>  
+  
+                Dim root As XElement = <Root Att="content"/>  
 Dim att As XAttribute = root.FirstAttribute  
 Console.WriteLine(att.NodeType.ToString)  
 ```  
@@ -584,7 +584,7 @@ Console.WriteLine(att.NodeType.ToString)
 This example produces the following output:  
  
 ```  
- 
+  
 Attribute  
 ```  
  
@@ -1558,36 +1558,36 @@ The <xref:System.Xml.Linq.XElement> class stores its attributes as a singly-link
 The following example shows how to iterate through the attributes of an element using this property.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3),  
-   new XAttribute("Att4", 4)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3),  
+    new XAttribute("Att4", 4)  
 );  
 XAttribute att = root.LastAttribute;  
 do {  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 }  
 while((att = att.PreviousAttribute) != null);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
 Dim att As XAttribute = root.LastAttribute  
 Dim val As Boolean = True  
 Do  
-   Console.WriteLine(att)  
-   att = att.PreviousAttribute  
+    Console.WriteLine(att)  
+    att = att.PreviousAttribute  
 Loop While (Not (att Is Nothing))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Att4="4"  
+  
+                Att4="4"  
 Att3="3"  
 Att2="2"  
 Att1="1"  
@@ -1638,11 +1638,11 @@ Alternatively, if you want to remove a set of attributes, it is recommended that
 The following example creates an element with three attributes. It then removes one of the attributes.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2"),  
-   new XAttribute("Att3", "content3")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2"),  
+    new XAttribute("Att3", "content3")  
 );  
 XAttribute att = root.Attribute("Att2");  
 att.Remove();  
@@ -1650,8 +1650,8 @@ Console.WriteLine(root);
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+  
+                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 att.Remove()  
 Console.WriteLine(root)  
@@ -1660,7 +1660,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```  
- 
+  
 <Root Att1="content1" Att3="content3" />  
 ```  
  
@@ -1713,11 +1713,11 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example creates an element with several attributes. It then changes the contents of one of the attributes.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2"),  
-   new XAttribute("Att3", "content3")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2"),  
+    new XAttribute("Att3", "content3")  
 );  
 XAttribute att = root.Attribute("Att2");  
 att.SetValue("new content");  
@@ -1725,8 +1725,8 @@ Console.WriteLine(root);
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+  
+                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 att.SetValue("new content")  
 Console.WriteLine(root)  
@@ -1735,7 +1735,7 @@ Console.WriteLine(root)
 This example produces the following output:  
  
 ```  
- 
+  
 <Root Att1="content1" Att2="new content" Att3="content3" />  
 ```  
  
@@ -1786,19 +1786,19 @@ This method returns a string in the form of `AttributeName="content"`.
 The following example creates an element with several attributes. It then gets an attribute and displays it and its content by calling this method.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2"),  
-   new XAttribute("Att3", "content3")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2"),  
+    new XAttribute("Att3", "content3")  
 );  
 XAttribute att = root.Attribute("Att2");  
 Console.WriteLine(att.ToString());  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+  
+                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 Console.WriteLine(att.ToString())  
 ```  
@@ -1806,7 +1806,7 @@ Console.WriteLine(att.ToString())
 This example produces the following output:  
  
 ```  
- 
+  
 Att2="content2"  
 ```  
  
@@ -1857,9 +1857,9 @@ The following example creates an element with an attribute. It then retrieves th
 Note that the Visual Basic example uses the XML attribute property.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att", "content")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att", "content")  
 );  
 XAttribute att = root.FirstAttribute;  
 Console.WriteLine(att.Value);  
@@ -1868,158 +1868,158 @@ Console.WriteLine(att.Value);
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att="content"/>  
+  
+                Dim root As XElement = <Root Att="content"/>  
 Console.WriteLine(root.@Att)  
 root.@Att = "new text"  
 Console.WriteLine(root.@Att)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               content  
+  
+                content  
 new text  
 ```  
  
 The following example shows the benefit of using the explicit conversion operators to get the value of an attribute that might not exist:  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", "attribute 1 content"),  
-   new XAttribute("Att2", "2")  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", "attribute 1 content"),  
+    new XAttribute("Att2", "2")  
 );  
- 
+  
 // The following assignments demonstrate why it is easier to use  
 // casting when the attribute might or might not exist.  
- 
+  
 string c1 = (string)root.Attribute("Att1");  
 Console.WriteLine("c1:{0}", c1 == null ? "attribute does not exist" : c1);  
- 
+  
 int? c2 = (int?)root.Attribute("Att2");  
 Console.WriteLine("c2:{0}", c2 == null ? "attribute does not exist" : c2.ToString());  
- 
+  
 string c3 = (string)root.Attribute("Att3");  
 Console.WriteLine("c3:{0}", c3 == null ? "attribute does not exist" : c3);  
- 
+  
 int? c4 = (int?)root.Attribute("Att4");  
 Console.WriteLine("c4:{0}", c4 == null ? "attribute does not exist" : c4.ToString());  
- 
+  
 Console.WriteLine();  
- 
+  
 // The following assignments show the necessary code when using  
 // the value property when the attribute might or might not exist.  
- 
+  
 XAttribute att1 = root.Attribute("Att1");  
 string v1;  
 if (att1 == null)  
-   v1 = null;  
+    v1 = null;  
 else  
-   v1 = att1.Value;  
+    v1 = att1.Value;  
 Console.WriteLine("v1:{0}", v1 == null ? "attribute does not exist" : v1);  
- 
+  
 XAttribute att2 = root.Attribute("Att2");  
 int? v2;  
 if (att2 == null)  
-   v2 = null;  
+    v2 = null;  
 else  
-   v2 = Int32.Parse(att2.Value);  
+    v2 = Int32.Parse(att2.Value);  
 Console.WriteLine("v2:{0}", v2 == null ? "attribute does not exist" : v2.ToString());  
- 
+  
 XAttribute att3 = root.Attribute("Att3");  
 string v3;  
 if (att3 == null)  
-   v3 = null;  
+    v3 = null;  
 else  
-   v3 = att3.Value;  
+    v3 = att3.Value;  
 Console.WriteLine("v3:{0}", v3 == null ? "attribute does not exist" : v3);  
- 
+  
 XAttribute att4 = root.Attribute("Att4");  
 int? v4;  
 if (att4 == null)  
-   v4 = null;  
+    v4 = null;  
 else  
-   v4 = Int32.Parse(att4.Value);  
+    v4 = Int32.Parse(att4.Value);  
 Console.WriteLine("v4:{0}", v4 == null ? "attribute does not exist" : v4.ToString());  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="attribute 1 content" Att2="2"/>  
- 
+  
+                Dim root As XElement = <Root Att1="attribute 1 content" Att2="2"/>  
+  
 ' The following assignments demonstrate why it is easier to use  
 ' casting when the attribute might or might not exist.  
- 
+  
 Dim c1 As String = CStr(root.Attribute("Att1"))  
 Console.WriteLine("c1:{0}", IIf(c1 Is Nothing, "attribute does not exist", c1))  
- 
+  
 Dim c2 As Nullable(Of Integer) = CType(root.Attribute("Att2"), Nullable(Of Integer))  
 Console.WriteLine("c2:{0}", IIf(c2.HasValue, c2, "attribute does not exist"))  
- 
+  
 Dim c3 As String = CStr(root.Attribute("Att3"))  
 Console.WriteLine("c3:{0}", IIf(c3 Is Nothing, "attribute does not exist", c3))  
- 
+  
 Dim c4 As Nullable(Of Integer) = CType(root.Attribute("Att4"), Nullable(Of Integer))  
 Console.WriteLine("c4:{0}", IIf(c4.HasValue, c4, "attribute does not exist"))  
- 
+  
 Console.WriteLine()  
- 
+  
 ' The following assignments show the necessary code when using  
 ' the value property when the attribute might or might not exist.  
- 
+  
 Dim att1 As XAttribute = root.Attribute("Att1")  
 Dim v1 As String  
 If att1 Is Nothing Then  
-   v1 = Nothing  
+    v1 = Nothing  
 Else  
-   v1 = att1.Value  
+    v1 = att1.Value  
 End If  
- 
+  
 Console.WriteLine("v1:{0}", IIf(v1 Is Nothing, "attribute does not exist", v1))  
- 
+  
 Dim att2 As XAttribute = root.Attribute("Att2")  
 Dim v2 As Nullable(Of Integer)  
 If att2 Is Nothing Then  
-   v2 = Nothing  
+    v2 = Nothing  
 Else  
-   v2 = Int32.Parse(att2.Value)  
+    v2 = Int32.Parse(att2.Value)  
 End If  
- 
+  
 Console.WriteLine("v2:{0}", IIf(v2.HasValue, v2, "attribute does not exist"))  
- 
+  
 Dim att3 As XAttribute = root.Attribute("Att3")  
 Dim v3 As String  
 If att3 Is Nothing Then  
-   v3 = Nothing  
+    v3 = Nothing  
 Else  
-   v3 = att3.Value  
+    v3 = att3.Value  
 End If  
- 
+  
 Console.WriteLine("v3:{0}", IIf(v3 Is Nothing, "attribute does not exist", v3))  
- 
+  
 Dim att4 As XAttribute = root.Attribute("Att4")  
 Dim v4 As Nullable(Of Integer)  
 If att4 Is Nothing Then  
-   v4 = Nothing  
+    v4 = Nothing  
 Else  
-   v4 = Int32.Parse(att4.Value)  
+    v4 = Int32.Parse(att4.Value)  
 End If  
- 
+  
 Console.WriteLine("v4:{0}", IIf(v4.HasValue, v4, "attribute does not exist"))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               c1:attribute 1 content  
+  
+                c1:attribute 1 content  
 c2:2  
 c3:attribute does not exist  
 c4:attribute does not exist  
- 
+  
 v1:attribute 1 content  
 v2:2  
 v3:attribute does not exist  

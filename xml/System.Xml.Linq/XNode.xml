@@ -97,32 +97,32 @@ For details about the valid content that can be passed to this method, see [Vali
 The following example uses this method to add an element into the tree.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddAfterSelf(  
-   new XElement("NewChild", 10)  
+    new XElement("NewChild", 10)  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddAfterSelf(New XElement("NewChild", 10))  
 Console.WriteLine(xmlTree)  
@@ -131,14 +131,14 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
- <NewChild>10</NewChild>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <NewChild>10</NewChild>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -195,70 +195,70 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
  
 ```csharp  
- 
-               XElement srcTree = new XElement("Root",  
-   new XElement("Element1", 1),  
-   new XElement("Element2", 2),  
-   new XElement("Element3", 3),  
-   new XElement("Element4", 4),  
-   new XElement("Element5", 5)  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
 );  
 XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddAfterSelf(  
-   from el in srcTree.Elements()  
-   where (int)el > 3  
-   select el  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XElement = _   
-       <Root>  
-           <Element1>1</Element1>  
-           <Element2>2</Element2>  
-           <Element3>3</Element3>  
-           <Element4>4</Element4>  
-           <Element5>5</Element5>  
-       </Root>  
- 
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
 Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddAfterSelf( _  
-   From el In srcTree.Elements() _  
-   Where CInt(el) > 3 _  
-   Select el)  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el)  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
- <Element4>4</Element4>  
- <Element5>5</Element5>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -311,32 +311,32 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this method to add an element into the tree.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddBeforeSelf(  
-   new XElement("NewChild", 10)  
+    new XElement("NewChild", 10)  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddBeforeSelf(New XElement("NewChild", 10))  
 Console.WriteLine(xmlTree)  
@@ -345,14 +345,14 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <NewChild>10</NewChild>  
- <Child1>1</Child1>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <NewChild>10</NewChild>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -411,71 +411,71 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
  
 ```csharp  
- 
-               XElement srcTree = new XElement("Root",  
-   new XElement("Element1", 1),  
-   new XElement("Element2", 2),  
-   new XElement("Element3", 3),  
-   new XElement("Element4", 4),  
-   new XElement("Element5", 5)  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
 );  
 XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddBeforeSelf(  
-   from el in srcTree.Elements()  
-   where (int)el > 3  
-   select el  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XElement = _   
-       <Root>  
-           <Element1>1</Element1>  
-           <Element2>2</Element2>  
-           <Element3>3</Element3>  
-           <Element4>4</Element4>  
-           <Element5>5</Element5>  
-       </Root>  
- 
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
 Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddBeforeSelf( _  
-   From el In srcTree.Elements() _  
-   Where CInt(el) > 3 _  
-   Select el)  
- 
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el)  
+  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Element4>4</Element4>  
- <Element5>5</Element5>  
- <Child1>1</Child1>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -526,37 +526,37 @@ This method uses deferred execution.
 The following example uses this method to enumerate the ancestors of a node.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child",   
-       new XElement("GrandChild", "content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",   
+        new XElement("GrandChild", "content")  
+    )  
 );  
 IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");  
 foreach (XElement el in grandChild.Ancestors())  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child>  
-               <GrandChild>content</GrandChild>  
-           </Child>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child>  
+                <GrandChild>content</GrandChild>  
+            </Child>  
+        </Root>  
+  
 Dim grandChild As IEnumerable(Of XElement) = xmlTree...<GrandChild>  
 For Each el In grandChild.Ancestors()  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Child  
+  
+                Child  
 Root  
 ```  
  
@@ -609,36 +609,36 @@ This method will not return itself in the results.
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child",   
-       new XElement("GrandChild", "content")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",   
+        new XElement("GrandChild", "content")  
+    )  
 );  
 IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");  
 foreach (XElement el in grandChild.Ancestors("Child"))  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child>  
-               <GrandChild>content</GrandChild>  
-           </Child>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child>  
+                <GrandChild>content</GrandChild>  
+            </Child>  
+        </Root>  
+  
 Dim grandChild As IEnumerable(Of XElement) = xmlTree...<GrandChild>  
 For Each el In grandChild.Ancestors("Child")  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child  
 ```  
  
@@ -689,61 +689,61 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1",  
-       new XElement("GrandChild1", 1),  
-       new XElement("GrandChild2", 2),  
-       new XElement("GrandChild3", 3)  
-   ),  
-   new XElement("Child2",  
-       new XElement("GrandChild4", 4),  
-       new XElement("GrandChild5", 5),  
-       new XElement("GrandChild6", 6)  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1", 1),  
+        new XElement("GrandChild2", 2),  
+        new XElement("GrandChild3", 3)  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild4", 4),  
+        new XElement("GrandChild5", 5),  
+        new XElement("GrandChild6", 6)  
+    )  
 );  
 XElement el1 = xmlTree.Descendants("GrandChild2").First();  
 XElement el2 = xmlTree.Descendants("GrandChild6").First();  
 if (XElement.CompareDocumentOrder(el1, el2) == 0)  
-   Console.WriteLine("Compared elements are the same element");  
+    Console.WriteLine("Compared elements are the same element");  
 else if (XElement.CompareDocumentOrder(el1, el2) > 0)  
-   Console.WriteLine("el1 is after el2");  
+    Console.WriteLine("el1 is after el2");  
 else  
-   Console.WriteLine("el1 is before el2");  
+    Console.WriteLine("el1 is before el2");  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>  
-               <GrandChild1>1</GrandChild1>  
-               <GrandChild2>2</GrandChild2>  
-               <GrandChild3>3</GrandChild3>  
-           </Child1>  
-           <Child2>  
-               <GrandChild4>4</GrandChild4>  
-               <GrandChild5>5</GrandChild5>  
-               <GrandChild6>6</GrandChild6>  
-           </Child2>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>  
+                <GrandChild1>1</GrandChild1>  
+                <GrandChild2>2</GrandChild2>  
+                <GrandChild3>3</GrandChild3>  
+            </Child1>  
+            <Child2>  
+                <GrandChild4>4</GrandChild4>  
+                <GrandChild5>5</GrandChild5>  
+                <GrandChild6>6</GrandChild6>  
+            </Child2>  
+        </Root>  
+  
 Dim el1 As XElement = xmlTree...<GrandChild2>(0)  
 Dim el2 As XElement = xmlTree...<GrandChild6>(0)  
- 
+  
 If (XElement.CompareDocumentOrder(el1, el2) = 0) Then  
-   Console.WriteLine("Compared elements are the same element")  
+    Console.WriteLine("Compared elements are the same element")  
 ElseIf (XElement.CompareDocumentOrder(el1, el2) > 0) Then  
-   Console.WriteLine("el1 is after el2")  
+    Console.WriteLine("el1 is after el2")  
 Else  
-   Console.WriteLine("el1 is before el2")  
+    Console.WriteLine("el1 is before el2")  
 End If  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 el1 is before el2  
 ```  
  
@@ -800,13 +800,13 @@ The `xml` declaration is not surfaced by the reader. While reading, you will not
 The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
  
 ```csharp  
- 
-               XDocument xmlTree = new XDocument(  
-   new XElement("Root",  
-       new XAttribute("Att1", "Attribute Content"),  
-       new XElement("Child1", 1),  
-       new XElement("Child2", 2)  
-   )  
+  
+                XDocument xmlTree = new XDocument(  
+    new XElement("Root",  
+        new XAttribute("Att1", "Attribute Content"),  
+        new XElement("Child1", 1),  
+        new XElement("Child2", 2)  
+    )  
 );  
 XmlReader reader = xmlTree.CreateReader();  
 reader.MoveToContent();  
@@ -817,13 +817,13 @@ Console.WriteLine(doc.OuterXml);
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XDocument =  _   
-   <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-       <Root Att1="Attribute Content">  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-       </Root>  
+  
+                Dim xmlTree As XDocument =  _   
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <Root Att1="Attribute Content">  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+        </Root>  
 Dim reader As XmlReader = xmlTree.CreateReader()  
 reader.MoveToContent()  
 Dim doc As XmlDocument = New XmlDocument()  
@@ -835,93 +835,93 @@ Console.WriteLine(doc.OuterXml)
 This example produces the following output:  
  
 ```xml  
- 
+  
 <Root Att1="Attribute Content"><Child1>1</Child1><Child2>2</Child2></Root>  
 ```  
  
 Another use for this method is to do an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create an <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transform.  
  
 ```csharp  
- 
-               string xslMarkup = @"<?xml version='1.0'?>  
+  
+                string xslMarkup = @"<?xml version='1.0'?>  
 <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
-   <xsl:template match='/Parent'>  
-       <Root>  
-           <C1>  
-           <xsl:value-of select='Child1'/>  
-           </C1>  
-           <C2>  
-           <xsl:value-of select='Child2'/>  
-           </C2>  
-       </Root>  
-   </xsl:template>  
+    <xsl:template match='/Parent'>  
+        <Root>  
+            <C1>  
+            <xsl:value-of select='Child1'/>  
+            </C1>  
+            <C2>  
+            <xsl:value-of select='Child2'/>  
+            </C2>  
+        </Root>  
+    </xsl:template>  
 </xsl:stylesheet>";  
- 
+  
 XDocument xmlTree = new XDocument(  
-   new XElement("Parent",  
-       new XElement("Child1", "Child1 data"),  
-       new XElement("Child2", "Child2 data")  
-   )  
+    new XElement("Parent",  
+        new XElement("Child1", "Child1 data"),  
+        new XElement("Child2", "Child2 data")  
+    )  
 );  
- 
+  
 XDocument newTree = new XDocument();  
 using (XmlWriter writer = newTree.CreateWriter()) {  
-   // Load the style sheet.  
-   XslCompiledTransform xslt = new XslCompiledTransform();  
-   xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
- 
-   // Execute the transform and output the results to a writer.  
-   xslt.Transform(xmlTree.CreateReader(), writer);  
+    // Load the style sheet.  
+    XslCompiledTransform xslt = new XslCompiledTransform();  
+    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
+  
+    // Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateReader(), writer);  
 }  
- 
+  
 Console.WriteLine(newTree);  
 ```  
  
 ```vb  
- 
-               Dim xslMarkup As XDocument = _   
-   <?xml version='1.0'?>  
-   <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
-       <xsl:template match='/Parent'>  
-           <Root>  
-               <C1>  
-                   <xsl:value-of select='Child1'/>  
-               </C1>  
-               <C2>  
-                   <xsl:value-of select='Child2'/>  
-               </C2>  
-           </Root>  
-       </xsl:template>  
-   </xsl:stylesheet>  
- 
+  
+                Dim xslMarkup As XDocument = _   
+    <?xml version='1.0'?>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+        <xsl:template match='/Parent'>  
+            <Root>  
+                <C1>  
+                    <xsl:value-of select='Child1'/>  
+                </C1>  
+                <C2>  
+                    <xsl:value-of select='Child2'/>  
+                </C2>  
+            </Root>  
+        </xsl:template>  
+    </xsl:stylesheet>  
+  
 Dim xmlTree As XElement = _   
-       <Parent>  
-           <Child1>Child1 data</Child1>  
-           <Child2>Child2 data</Child2>  
-       </Parent>  
- 
+        <Parent>  
+            <Child1>Child1 data</Child1>  
+            <Child2>Child2 data</Child2>  
+        </Parent>  
+  
 Dim newTree As XDocument = New XDocument()  
- 
+  
 Using writer As XmlWriter = newTree.CreateWriter()  
-   ' Load the style sheet.  
-   Dim xslt As XslCompiledTransform = _  
-       New XslCompiledTransform()  
-   xslt.Load(xslMarkup.CreateReader())  
- 
-   ' Execute the transform and output the results to a writer.  
-   xslt.Transform(xmlTree.CreateReader(), writer)  
+    ' Load the style sheet.  
+    Dim xslt As XslCompiledTransform = _  
+        New XslCompiledTransform()  
+    xslt.Load(xslMarkup.CreateReader())  
+  
+    ' Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateReader(), writer)  
 End Using  
- 
+  
 Console.WriteLine(newTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <C1>Child1 data</C1>  
- <C2>Child2 data</C2>  
+  
+                <Root>  
+  <C1>Child1 data</C1>  
+  <C2>Child2 data</C2>  
 </Root>  
 ```  
  
@@ -1021,43 +1021,43 @@ The following criteria determine whether two nodes are equal:
 The following example uses this method to compare two XML trees.  
  
 ```csharp  
- 
-               XElement xmlTree1 = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XElement("Child1", 1),  
-   new XElement("Child2", "some content")  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
 );  
 XElement xmlTree2 = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XElement("Child1", 1),  
-   new XElement("Child2", "some content")  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
 );  
 Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2));  
 ```  
  
 ```vb  
- 
-               Dim xmlTree1 As XElement = _   
-       <Root Att1="1" Att2="2">  
-           <Child1>1</Child1>  
-           <Child2>some content</Child2>  
-       </Root>  
- 
+  
+                Dim xmlTree1 As XElement = _   
+        <Root Att1="1" Att2="2">  
+            <Child1>1</Child1>  
+            <Child2>some content</Child2>  
+        </Root>  
+  
 Dim xmlTree2 As XElement = _   
-       <Root Att1="1" Att2="2">  
-           <Child1>1</Child1>  
-           <Child2>some content</Child2>  
-       </Root>  
- 
+        <Root Att1="1" Att2="2">  
+            <Child1>1</Child1>  
+            <Child2>some content</Child2>  
+        </Root>  
+  
 Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 True  
 ```  
  
@@ -1102,56 +1102,56 @@ This property is primarily used internally for implementing the <xref:System.Xml
 The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> interfaces.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
- 
+  
 List<XNode> nodeList = new List<XNode>();  
 nodeList.Add(xmlTree.Element("Child5"));  
 nodeList.Add(xmlTree.Element("Child3"));  
 nodeList.Add(xmlTree.Element("Child1"));  
- 
+  
 // Sort nodes in document order.  
 nodeList.Sort(XNode.DocumentOrderComparer);  
- 
+  
 foreach (XElement el in nodeList)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim nodeList As List(Of XNode) = New List(Of XNode)()  
 nodeList.Add(xmlTree.Element("Child5"))  
 nodeList.Add(xmlTree.Element("Child3"))  
 nodeList.Add(xmlTree.Element("Child1"))  
- 
+  
 ' Sort nodes in document order.  
 nodeList.Sort(XNode.DocumentOrderComparer)  
- 
+  
 For Each el In nodeList  
-   Console.WriteLine(el)  
+    Console.WriteLine(el)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               <Child1>1</Child1>  
+  
+                <Child1>1</Child1>  
 <Child3>3</Child3>  
 <Child5>5</Child5>  
 ```  
@@ -1200,45 +1200,45 @@ This method uses deferred execution.
 The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child = xmlTree.Element("Child3");  
 IEnumerable<XElement> elements = child.ElementsAfterSelf();  
 foreach (XElement el in elements)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child As XElement = xmlTree.<Child3>(0)  
 Dim elements As IEnumerable(Of XElement) = child.ElementsAfterSelf()  
 For Each el In elements  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Child4  
+  
+                Child4  
 Child5  
 ```  
  
@@ -1289,45 +1289,45 @@ This method uses deferred execution.
 The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child = xmlTree.Element("Child3");  
 IEnumerable<XElement> elements = child.ElementsAfterSelf("Child4");  
 foreach (XElement el in elements)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child As XElement = xmlTree.<Child3>(0)  
 Dim elements As IEnumerable(Of XElement) = child.ElementsAfterSelf("Child4")  
- 
+  
 For Each el In elements  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child4  
 ```  
  
@@ -1375,46 +1375,46 @@ This method uses deferred execution.
 The following example uses this axis method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child = xmlTree.Element("Child3");  
 IEnumerable<XElement> elements = child.ElementsBeforeSelf();  
 foreach (XElement el in elements)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child As XElement = xmlTree.<Child3>(0)  
 Dim elements As IEnumerable(Of XElement) = child.ElementsBeforeSelf()  
- 
+  
 For Each el In elements  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Child1  
+  
+                Child1  
 Child2  
 ```  
  
@@ -1465,45 +1465,45 @@ This method uses deferred execution.
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child = xmlTree.Element("Child3");  
 IEnumerable<XElement> elements = child.ElementsBeforeSelf("Child2");  
 foreach (XElement el in elements)  
-   Console.WriteLine(el.Name);  
+    Console.WriteLine(el.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child As XElement = xmlTree.<Child3>(0)  
 Dim elements As IEnumerable(Of XElement) = child.ElementsBeforeSelf("Child2")  
- 
+  
 For Each el In elements  
-   Console.WriteLine(el.Name)  
+    Console.WriteLine(el.Name)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child2  
 ```  
  
@@ -1543,40 +1543,40 @@ Child2
 The following example uses this property to retrieve an <xref:System.Xml.Linq.XNodeEqualityComparer>, which implements the <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> interfaces. It creates a dictionary that uses this property.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
- 
+  
 Dictionary<XNode, string> nodeDictionary = new Dictionary<XNode, string>(XNode.EqualityComparer);  
 nodeDictionary.Add(xmlTree.Element("Child5"), "Child 5 Information");  
 nodeDictionary.Add(xmlTree.Element("Child3"), "Child 3 Information");  
 nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information");  
- 
+  
 string str = nodeDictionary[xmlTree.Element("Child3")];  
 Console.WriteLine(str);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim nodeDictionary As Dictionary(Of XNode, String) = New Dictionary(Of XNode, String)(XNode.EqualityComparer)  
 nodeDictionary.Add(xmlTree.Element("Child5"), "Child 5 Information")  
 nodeDictionary.Add(xmlTree.Element("Child3"), "Child 3 Information")  
 nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information")  
- 
+  
 Dim str As String = nodeDictionary(xmlTree.Element("Child3"))  
 Console.WriteLine(str)  
 ```  
@@ -1584,7 +1584,7 @@ Console.WriteLine(str)
 This example produces the following output:  
  
 ```  
- 
+  
 Child 3 Information  
 ```  
  
@@ -1634,48 +1634,48 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 XElement child5 = xmlTree.Element("Child5");  
 if (child5.IsAfter(child3))  
-   Console.WriteLine("Child5 is after Child3");  
+    Console.WriteLine("Child5 is after Child3");  
 else  
-   Console.WriteLine("Child5 is not after Child3");  
+    Console.WriteLine("Child5 is not after Child3");  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 Dim child5 As XElement = xmlTree.<Child5>(0)  
 If (child5.IsAfter(child3)) Then  
-   Console.WriteLine("Child5 is after Child3")  
+    Console.WriteLine("Child5 is after Child3")  
 Else  
-   Console.WriteLine("Child5 is not after Child3")  
+    Console.WriteLine("Child5 is not after Child3")  
 End If  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child5 is after Child3  
 ```  
  
@@ -1725,50 +1725,50 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 XElement child5 = xmlTree.Element("Child5");  
 if (child5.IsBefore(child3))  
-   Console.WriteLine("Child5 is before Child3");  
+    Console.WriteLine("Child5 is before Child3");  
 else  
-   Console.WriteLine("Child5 is not before Child3");  
+    Console.WriteLine("Child5 is not before Child3");  
 ```  
  
 [vb]  
  
 ```  
- 
-               Dim xmlTree As XElement = _   
-       <Root>Text content.  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>More text content.  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 Dim child5 As XElement = xmlTree.<Child5>(0)  
 If (child5.IsBefore(child3)) Then  
-   Console.WriteLine("Child5 is before Child3")  
+    Console.WriteLine("Child5 is before Child3")  
 Else  
-   Console.WriteLine("Child5 is not before Child3")  
+    Console.WriteLine("Child5 is not before Child3")  
 End If  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
+  
 Child5 is not before Child3  
 ```  
  
@@ -1813,73 +1813,73 @@ If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no n
 The following example uses this property to loop through nodes.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XText("Some Text"),  
-   new XElement("Child2",  
-       2,  
-       new XElement("GrandChild", "GrandChild Content")  
-   ),  
-   new XComment("a comment"),  
-   new XElement("Child3")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XText("Some Text"),  
+    new XElement("Child2",  
+        2,  
+        new XElement("GrandChild", "GrandChild Content")  
+    ),  
+    new XComment("a comment"),  
+    new XElement("Child3")  
 );  
 XNode node = xmlTree.Element("Child2");  
 do {  
-   StringBuilder sb = new StringBuilder();  
-   sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
-   switch (node.NodeType)  
-   {  
-       case XmlNodeType.Text:  
-           sb.Append((node as XText).Value);  
-           break;  
-       case XmlNodeType.Element:  
-           sb.Append((node as XElement).Name);  
-           break;  
-       case XmlNodeType.Comment:  
-           sb.Append((node as XComment).Value);  
-           break;  
-   }  
-   Console.WriteLine(sb.ToString());  
+    StringBuilder sb = new StringBuilder();  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Text:  
+            sb.Append((node as XText).Value);  
+            break;  
+        case XmlNodeType.Element:  
+            sb.Append((node as XElement).Name);  
+            break;  
+        case XmlNodeType.Comment:  
+            sb.Append((node as XComment).Value);  
+            break;  
+    }  
+    Console.WriteLine(sb.ToString());  
 }  
 while ((node = node.NextNode) != null);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>Some Text  
-           <Child2>2  
-               <GrandChild>GrandChild Content</GrandChild>  
-           </Child2>  
-           <!--a comment-->  
-           <Child3>3</Child3>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>Some Text  
+            <Child2>2  
+                <GrandChild>GrandChild Content</GrandChild>  
+            </Child2>  
+            <!--a comment-->  
+            <Child3>3</Child3>  
+        </Root>  
+  
 Dim node As XNode = xmlTree.Element("Child2")  
 Do  
-   Dim sb As StringBuilder = New StringBuilder()  
-   sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
-   Select Case node.NodeType  
-       Case XmlNodeType.Text  
-           sb.Append(DirectCast(node, XText).Value)  
-       Case XmlNodeType.Element  
-           sb.Append(DirectCast(node, XElement).Name)  
-       Case XmlNodeType.Comment  
-           sb.Append(DirectCast(node, XComment).Value)  
-   End Select  
-   Console.WriteLine(sb.ToString())  
- 
-   node = node.NextNode  
+    Dim sb As StringBuilder = New StringBuilder()  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
+    Select Case node.NodeType  
+        Case XmlNodeType.Text  
+            sb.Append(DirectCast(node, XText).Value)  
+        Case XmlNodeType.Element  
+            sb.Append(DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Comment  
+            sb.Append(DirectCast(node, XComment).Value)  
+    End Select  
+    Console.WriteLine(sb.ToString())  
+  
+    node = node.NextNode  
 Loop While (Not (node Is Nothing))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               NodeType: Element   Child2  
+  
+                NodeType: Element   Child2  
 NodeType: Comment   a comment  
 NodeType: Element   Child3  
 ```  
@@ -1928,53 +1928,53 @@ This method uses deferred execution.
 The following example creates an XML tree, and then queries the tree using this axis method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XText("More text content."),  
-   new XElement("child3", "child3 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XText("More text content."),  
+    new XElement("child3", "child3 content")  
 );  
 XElement child = xmlTree.Element("Child2");  
 IEnumerable<XNode> nodes =  
-   from node in child.NodesAfterSelf()  
-   select node;  
+    from node in child.NodesAfterSelf()  
+    select node;  
 foreach (XNode node in nodes)  
 {  
-   Console.WriteLine("Node type: {0}  {1}",  
-       node.NodeType,  
-       node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
+    Console.WriteLine("Node type: {0}  {1}",  
+        node.NodeType,  
+        node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
 }  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
-   New XElement("Child1", "child1 content"), _  
-   New XElement("Child2", "child2 content"), _  
-   New XText("More text content."), _  
-   New XElement("child3", "child3 content") _  
+  
+                Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
+    New XElement("Child1", "child1 content"), _  
+    New XElement("Child2", "child2 content"), _  
+    New XText("More text content."), _  
+    New XElement("child3", "child3 content") _  
 )  
- 
+  
 Dim child As XElement = xmlTree.Element("Child2")  
 Dim nodes As IEnumerable(Of XNode) = _  
-   From node In child.NodesAfterSelf() _  
-   Select node  
+    From node In child.NodesAfterSelf() _  
+    Select node  
 For Each node As XNode In nodes  
-   Dim s As String = ""  
-   If node.NodeType = XmlNodeType.Text Then  
-       s = DirectCast(node, XText).Value  
-   End If  
-   Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
+    Dim s As String = ""  
+    If node.NodeType = XmlNodeType.Text Then  
+        s = DirectCast(node, XText).Value  
+    End If  
+    Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Node type: Text  More text content.  
+  
+                Node type: Text  More text content.  
 Node type: Element  
 ```  
  
@@ -2022,52 +2022,52 @@ This method uses deferred execution.
 The following example creates an XML tree, and then queries the tree using this axis method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XText("More text content."),  
-   new XElement("child3", "child3 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XText("More text content."),  
+    new XElement("child3", "child3 content")  
 );  
 XElement child = xmlTree.Element("Child2");  
 IEnumerable<XNode> nodes =  
-   from node in child.NodesBeforeSelf()  
-   select node;  
+    from node in child.NodesBeforeSelf()  
+    select node;  
 foreach (XNode node in nodes)  
-   Console.WriteLine("Node type: {0}  {1}",  
-       node.NodeType,  
-       node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
+    Console.WriteLine("Node type: {0}  {1}",  
+        node.NodeType,  
+        node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = New XElement("Root", _  
-   New XText("Text content."), _  
-   New XElement("Child1", "child1 content"), _  
-   New XElement("Child2", "child2 content"), _  
-   New XText("More text content."), _  
-   New XElement("child3", "child3 content") _  
+  
+                Dim xmlTree As XElement = New XElement("Root", _  
+    New XText("Text content."), _  
+    New XElement("Child1", "child1 content"), _  
+    New XElement("Child2", "child2 content"), _  
+    New XText("More text content."), _  
+    New XElement("child3", "child3 content") _  
 )  
- 
+  
 Dim child As XElement = xmlTree.Element("Child2")  
 Dim nodes As IEnumerable(Of XNode) = _  
-   From node In child.NodesBeforeSelf() _  
-   Select node  
+    From node In child.NodesBeforeSelf() _  
+    Select node  
 For Each node As XNode In nodes  
-   Dim s As String = ""  
-   If node.NodeType = XmlNodeType.Text Then  
-       s = DirectCast(node, XText).Value  
-   End If  
-   Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
+    Dim s As String = ""  
+    If node.NodeType = XmlNodeType.Text Then  
+        s = DirectCast(node, XText).Value  
+    End If  
+    Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
 Next  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               Node type: Text  Text content.  
+  
+                Node type: Text  Text content.  
 Node type: Element  
 ```  
  
@@ -2114,72 +2114,72 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this property to loop through nodes.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XText("Some Text"),  
-   new XElement("Child2",  
-       2,  
-       new XElement("GrandChild", "GrandChild Content")  
-   ),  
-   new XComment("a comment"),  
-   new XElement("Child3")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XText("Some Text"),  
+    new XElement("Child2",  
+        2,  
+        new XElement("GrandChild", "GrandChild Content")  
+    ),  
+    new XComment("a comment"),  
+    new XElement("Child3")  
 );  
 XNode node = xmlTree.Element("Child2");  
 do {  
-   StringBuilder sb = new StringBuilder();  
-   sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
-   switch (node.NodeType)  
-   {  
-       case XmlNodeType.Text:  
-           sb.Append((node as XText).Value);  
-           break;  
-       case XmlNodeType.Element:  
-           sb.Append((node as XElement).Name);  
-           break;  
-       case XmlNodeType.Comment:  
-           sb.Append((node as XComment).Value);  
-           break;  
-   }  
-   Console.WriteLine(sb.ToString());  
+    StringBuilder sb = new StringBuilder();  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Text:  
+            sb.Append((node as XText).Value);  
+            break;  
+        case XmlNodeType.Element:  
+            sb.Append((node as XElement).Name);  
+            break;  
+        case XmlNodeType.Comment:  
+            sb.Append((node as XComment).Value);  
+            break;  
+    }  
+    Console.WriteLine(sb.ToString());  
 }  
 while ((node = node.PreviousNode) != null);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Child1>1</Child1>Some Text<Child2>2  
-           <GrandChild>GrandChild Content</GrandChild>  
-       </Child2>  
-       <!--a comment-->  
-       <Child3>3</Child3>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>1</Child1>Some Text<Child2>2  
+            <GrandChild>GrandChild Content</GrandChild>  
+        </Child2>  
+        <!--a comment-->  
+        <Child3>3</Child3>  
+    </Root>  
+  
 Dim node As XNode = xmlTree.Element("Child2")  
 Do  
-   Dim sb As StringBuilder = New StringBuilder()  
-   sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
-   Select Case node.NodeType  
-       Case XmlNodeType.Text  
-           sb.Append(DirectCast(node, XText).Value)  
-       Case XmlNodeType.Element  
-           sb.Append(DirectCast(node, XElement).Name)  
-       Case XmlNodeType.Comment  
-           sb.Append(DirectCast(node, XComment).Value)  
-   End Select  
-   Console.WriteLine(sb.ToString())  
- 
-   node = node.PreviousNode  
+    Dim sb As StringBuilder = New StringBuilder()  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
+    Select Case node.NodeType  
+        Case XmlNodeType.Text  
+            sb.Append(DirectCast(node, XText).Value)  
+        Case XmlNodeType.Element  
+            sb.Append(DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Comment  
+            sb.Append(DirectCast(node, XComment).Value)  
+    End Select  
+    Console.WriteLine(sb.ToString())  
+  
+    node = node.PreviousNode  
 Loop While (Not (node Is Nothing))  
 ```  
  
 This example produces the following output:  
  
 ```  
- 
-               NodeType: Element   Child2  
+  
+                NodeType: Element   Child2  
 NodeType: Text      Some Text  
 NodeType: Element   Child1  
 ```  
@@ -2237,18 +2237,18 @@ For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to
 This example uses the following XML file, named Source.xml:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-8" ?>   
+  
+                <?xml version="1.0" encoding="utf-8" ?>   
 <Root>  
- <Child Key="01">  
-   <GrandChild>aaa</GrandChild>  
- </Child>  
- <Child Key="02">  
-   <GrandChild>bbb</GrandChild>  
- </Child>  
- <Child Key="03">  
-   <GrandChild>ccc</GrandChild>  
- </Child>  
+  <Child Key="01">  
+    <GrandChild>aaa</GrandChild>  
+  </Child>  
+  <Child Key="02">  
+    <GrandChild>bbb</GrandChild>  
+  </Child>  
+  <Child Key="03">  
+    <GrandChild>ccc</GrandChild>  
+  </Child>  
 </Root>  
 ```  
  
@@ -2258,50 +2258,50 @@ This example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.
 >  The following example uses the yield return construct of C#. Because there is no equivalent feature in [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)], this example is provided only in C#.  
  
 ```csharp  
- 
-               class Program  
+  
+                class Program  
 {  
-   static IEnumerable<XElement> StreamRootChildDoc(string uri)  
-   {  
-       using (XmlReader reader = XmlReader.Create(uri))  
-       {  
-           reader.MoveToContent();  
-           // Parse the file and display each of the nodes.  
-           while (reader.Read())  
-           {  
-               switch (reader.NodeType)  
-               {  
-                   case XmlNodeType.Element:  
-                       if (reader.Name == "Child")  
-                       {  
-                           XElement el = XElement.ReadFrom(reader) as XElement;  
-                           if (el != null)  
-                               yield return el;  
-                       }  
-                       break;  
-               }  
-           }  
-       }  
-   }  
- 
-   static void Main(string[] args)  
-   {  
-       IEnumerable<string> grandChildData =  
-           from el in StreamRootChildDoc("Source.xml")  
-           where (int)el.Attribute("Key") > 1  
-           select (string)el.Element("GrandChild");  
- 
-       foreach (string str in grandChildData)  
-           Console.WriteLine(str);  
-   }  
+    static IEnumerable<XElement> StreamRootChildDoc(string uri)  
+    {  
+        using (XmlReader reader = XmlReader.Create(uri))  
+        {  
+            reader.MoveToContent();  
+            // Parse the file and display each of the nodes.  
+            while (reader.Read())  
+            {  
+                switch (reader.NodeType)  
+                {  
+                    case XmlNodeType.Element:  
+                        if (reader.Name == "Child")  
+                        {  
+                            XElement el = XElement.ReadFrom(reader) as XElement;  
+                            if (el != null)  
+                                yield return el;  
+                        }  
+                        break;  
+                }  
+            }  
+        }  
+    }  
+  
+    static void Main(string[] args)  
+    {  
+        IEnumerable<string> grandChildData =  
+            from el in StreamRootChildDoc("Source.xml")  
+            where (int)el.Attribute("Key") > 1  
+            select (string)el.Element("GrandChild");  
+  
+        foreach (string str in grandChildData)  
+            Console.WriteLine(str);  
+    }  
 }  
 ```  
  
 This example produces the following output.  
  
 ```  
- 
-               bbb  
+  
+                bbb  
 ccc  
 ```  
  
@@ -2354,13 +2354,13 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example removes a node from its parent.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 child3.Remove();  
@@ -2368,16 +2368,16 @@ Console.WriteLine(xmlTree);
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 child3.Remove()  
 Console.WriteLine(xmlTree)  
@@ -2386,12 +2386,12 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>child1 content</Child1>  
- <Child2>child2 content</Child2>  
- <Child4>child4 content</Child4>  
- <Child5>child5 content</Child5>  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
 </Root>  
 ```  
  
@@ -2446,32 +2446,32 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example uses this method to replace the contents of a node with different content.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 child3.ReplaceWith(  
-   new XElement("NewChild", "new content")  
+    new XElement("NewChild", "new content")  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 child3.ReplaceWith(<NewChild>new content</NewChild>)  
 Console.WriteLine(xmlTree)  
@@ -2480,13 +2480,13 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>child1 content</Child1>  
- <Child2>child2 content</Child2>  
- <NewChild>new content</NewChild>  
- <Child4>child4 content</Child4>  
- <Child5>child5 content</Child5>  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <NewChild>new content</NewChild>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
 </Root>  
 ```  
  
@@ -2546,70 +2546,70 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
  
 ```csharp  
- 
-               XElement srcTree = new XElement("Root",  
-   new XElement("Element1", 1),  
-   new XElement("Element2", 2),  
-   new XElement("Element3", 3),  
-   new XElement("Element4", 4),  
-   new XElement("Element5", 5)  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
 );  
 XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 child3.ReplaceWith(  
-   from el in srcTree.Elements()  
-   where (int)el > 3  
-   select el  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XElement = _   
-       <Root>  
-           <Element1>1</Element1>  
-           <Element2>2</Element2>  
-           <Element3>3</Element3>  
-           <Element4>4</Element4>  
-           <Element5>5</Element5>  
-       </Root>  
- 
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
 Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 child3.ReplaceWith( _  
-   From el In srcTree.Elements() _  
-   Where (CInt(el) > 3) _  
-   Select el)  
- 
+    From el In srcTree.Elements() _  
+    Where (CInt(el) > 3) _  
+    Select el)  
+  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
- <Child2>2</Child2>  
- <Element4>4</Element4>  
- <Element5>5</Element5>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -2650,29 +2650,29 @@ This example produces the following output:
 The following example uses this method to retrieve indented XML.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1)  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1)  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+        </Root>  
+  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
+  
+                <Root>  
+  <Child1>1</Child1>  
 </Root>  
 ```  
  
@@ -2716,18 +2716,18 @@ This example produces the following output:
 The following example uses this method to retrieve unformatted and formatted XML.  
  
 ```csharp  
- 
-               XElement root = XElement.Parse("<Root><Child/></Root>");  
+  
+                XElement root = XElement.Parse("<Root><Child/></Root>");  
 Console.WriteLine(root.ToString(SaveOptions.DisableFormatting));  
 Console.WriteLine("---");  
 Console.WriteLine(root.ToString(SaveOptions.None));  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root>  
-                          <Child/>  
-                      </Root>  
+  
+                Dim root As XElement = <Root>  
+                           <Child/>  
+                       </Root>  
 Console.WriteLine(root.ToString(SaveOptions.DisableFormatting))  
 Console.WriteLine("---")  
 Console.WriteLine(root.ToString(SaveOptions.None))  
@@ -2736,11 +2736,11 @@ Console.WriteLine(root.ToString(SaveOptions.None))
 This example produces the following output:  
  
 ```  
- 
-               <Root><Child /></Root>  
+  
+                <Root><Child /></Root>  
 ---  
 <Root>  
- <Child />  
+  <Child />  
 </Root>  
 ```  
  
@@ -2788,61 +2788,61 @@ You can use this method to write code that does a streaming transform of a very 
 The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
  
 ```csharp  
- 
-               StringBuilder sb = new StringBuilder();  
+  
+                StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
- 
+  
 using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
-   xw.WriteStartElement("Root");  
-   XElement child1 = new XElement("Child",  
-       new XElement("GrandChild", "some content")  
-   );  
-   child1.WriteTo(xw);  
-   XElement child2 = new XElement("AnotherChild",  
-       new XElement("GrandChild", "different content")  
-   );  
-   child2.WriteTo(xw);  
-   xw.WriteEndElement();  
+    xw.WriteStartElement("Root");  
+    XElement child1 = new XElement("Child",  
+        new XElement("GrandChild", "some content")  
+    );  
+    child1.WriteTo(xw);  
+    XElement child2 = new XElement("AnotherChild",  
+        new XElement("GrandChild", "different content")  
+    );  
+    child2.WriteTo(xw);  
+    xw.WriteEndElement();  
 }  
 Console.WriteLine(sb.ToString());  
 ```  
  
 ```vb  
- 
-               Dim sb As StringBuilder = New StringBuilder()  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
- 
+  
 Using xw = XmlWriter.Create(sb, xws)  
-   xw.WriteStartElement("Root")  
-   Dim child1 As XElement = <Child>  
-                                <GrandChild>some content</GrandChild>  
-                            </Child>  
-   child1.WriteTo(xw)  
-   Dim child2 As XElement = <AnotherChild>  
-                                <GrandChild>different content</GrandChild>  
-                            </AnotherChild>  
-   child2.WriteTo(xw)  
-   xw.WriteEndElement()  
+    xw.WriteStartElement("Root")  
+    Dim child1 As XElement = <Child>  
+                                 <GrandChild>some content</GrandChild>  
+                             </Child>  
+    child1.WriteTo(xw)  
+    Dim child2 As XElement = <AnotherChild>  
+                                 <GrandChild>different content</GrandChild>  
+                             </AnotherChild>  
+    child2.WriteTo(xw)  
+    xw.WriteEndElement()  
 End Using  
- 
+  
 Console.WriteLine(sb.ToString())  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child>  
-   <GrandChild>some content</GrandChild>  
- </Child>  
- <AnotherChild>  
-   <GrandChild>different content</GrandChild>  
- </AnotherChild>  
+  
+                <Root>  
+  <Child>  
+    <GrandChild>some content</GrandChild>  
+  </Child>  
+  <AnotherChild>  
+    <GrandChild>different content</GrandChild>  
+  </AnotherChild>  
 </Root>  
 ```  
  
@@ -2914,32 +2914,32 @@ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked 
 The following example uses this method to replace the contents of a node with different content.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 child3.ReplaceWith(  
-   new XElement("NewChild", "new content")  
+    new XElement("NewChild", "new content")  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>child1 content</Child1>  
-           <Child2>child2 content</Child2>  
-           <Child3>child3 content</Child3>  
-           <Child4>child4 content</Child4>  
-           <Child5>child5 content</Child5>  
-       </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
 Dim child3 As XElement = xmlTree.<Child3>(0)  
 child3.ReplaceWith(<NewChild>new content</NewChild>)  
 Console.WriteLine(xmlTree)  
@@ -2948,13 +2948,13 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>child1 content</Child1>  
- <Child2>child2 content</Child2>  
- <NewChild>new content</NewChild>  
- <Child4>child4 content</Child4>  
- <Child5>child5 content</Child5>  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <NewChild>new content</NewChild>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
 </Root>  
 ```  
  
@@ -2984,55 +2984,55 @@ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:
 The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
  
 ```csharp  
- 
-               XElement srcTree = new XElement("Root",  
-   new XElement("Element1", 1),  
-   new XElement("Element2", 2),  
-   new XElement("Element3", 3),  
-   new XElement("Element4", 4),  
-   new XElement("Element5", 5)  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
 );  
 XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddAfterSelf(  
-   from el in srcTree.Elements()  
-   where (int)el > 3  
-   select el  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XElement = _  
-   <Root>  
-       <Element1>1</Element1>  
-       <Element2>2</Element2>  
-       <Element3>3</Element3>  
-       <Element4>4</Element4>  
-       <Element5>5</Element5>  
-   </Root>  
- 
+  
+                Dim srcTree As XElement = _  
+    <Root>  
+        <Element1>1</Element1>  
+        <Element2>2</Element2>  
+        <Element3>3</Element3>  
+        <Element4>4</Element4>  
+        <Element5>5</Element5>  
+    </Root>  
+  
 Dim xmlTree As XElement = _  
-   <Root>  
-       <Child1>1</Child1>  
-       <Child2>2</Child2>  
-       <Child3>3</Child3>  
-       <Child4>4</Child4>  
-       <Child5>5</Child5>  
-   </Root>  
- 
+    <Root>  
+        <Child1>1</Child1>  
+        <Child2>2</Child2>  
+        <Child3>3</Child3>  
+        <Child4>4</Child4>  
+        <Child5>5</Child5>  
+    </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddAfterSelf( _  
-   From el In srcTree.Elements() _  
-   Where CInt(el) > 3 _  
-   Select el _  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el _  
 )  
 Console.WriteLine(xmlTree)  
 ```  
@@ -3040,15 +3040,15 @@ Console.WriteLine(xmlTree)
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Child1>1</Child1>  
- <Element4>4</Element4>  
- <Element5>5</Element5>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  
@@ -3098,71 +3098,71 @@ The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked 
 The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
  
 ```csharp  
- 
-               XElement srcTree = new XElement("Root",  
-   new XElement("Element1", 1),  
-   new XElement("Element2", 2),  
-   new XElement("Element3", 3),  
-   new XElement("Element4", 4),  
-   new XElement("Element5", 5)  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
 );  
 XElement xmlTree = new XElement("Root",  
-   new XElement("Child1", 1),  
-   new XElement("Child2", 2),  
-   new XElement("Child3", 3),  
-   new XElement("Child4", 4),  
-   new XElement("Child5", 5)  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
 );  
 XElement child1 = xmlTree.Element("Child1");  
 child1.AddBeforeSelf(  
-   from el in srcTree.Elements()  
-   where (int)el > 3  
-   select el  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
 );  
 Console.WriteLine(xmlTree);  
 ```  
  
 ```vb  
- 
-               Dim srcTree As XElement = _   
-       <Root>  
-           <Element1>1</Element1>  
-           <Element2>2</Element2>  
-           <Element3>3</Element3>  
-           <Element4>4</Element4>  
-           <Element5>5</Element5>  
-       </Root>  
- 
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
 Dim xmlTree As XElement = _   
-       <Root>  
-           <Child1>1</Child1>  
-           <Child2>2</Child2>  
-           <Child3>3</Child3>  
-           <Child4>4</Child4>  
-           <Child5>5</Child5>  
-       </Root>  
- 
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
 Dim child1 As XElement = xmlTree.<Child1>(0)  
 child1.AddBeforeSelf( _  
 From el In srcTree.Elements() _  
 Where CInt(el) > 3 _  
 Select el)  
- 
+  
 Console.WriteLine(xmlTree)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <Root>  
- <Element4>4</Element4>  
- <Element5>5</Element5>  
- <Child1>1</Child1>  
- <Child2>2</Child2>  
- <Child3>3</Child3>  
- <Child4>4</Child4>  
- <Child5>5</Child5>  
+  
+                <Root>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
 </Root>  
 ```  
  

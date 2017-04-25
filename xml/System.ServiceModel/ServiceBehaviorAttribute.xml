@@ -239,15 +239,15 @@ The following pseudo-code illustrates the required pattern for successful reentr
 ```csharp  
 public void MyMethod()  
 {  
- this.SomeNonLocalDataState;  
- // Here you need to clean nonlocal state for other users  
- OutboundProxy proxy = new OutboundProxy();  
- int returnValue = proxy.CallOutOfOperation();  
- // Ensure that this.SomeNonLocalDataState is valid for continued use.  
- this.ModifyNonLocalState;  
- return returnValue;  
+  this.SomeNonLocalDataState;  
+  // Here you need to clean nonlocal state for other users  
+  OutboundProxy proxy = new OutboundProxy();  
+  int returnValue = proxy.CallOutOfOperation();  
+  // Ensure that this.SomeNonLocalDataState is valid for continued use.  
+  this.ModifyNonLocalState;  
+  return returnValue;  
 }  
- 
+  
 ```  
  
 Using the Begin/End asynchronous call pattern for an outbound call when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode> triggers an exception. Asynchronous outbound calls require an operation in which <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode>, in which case you must handle synchronization issues.  

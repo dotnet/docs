@@ -41,38 +41,38 @@ This following is an excerpt of the configuration file's `provider` and `eventMa
  
 ```  
 <healthMonitoring  
- enabled="true"  
- heartBeatInterval="0">  
- 
-   <providers>  
-     // Configure the provider to process   
-     // the health events.  
-     <add name="EventLogProvider"  
-        type="System.Web.Management.EventLogWebEventProvider,  
-        System.Web,Version=2.0.3600.0,Culture=neutral,  
-        PublicKeyToken=b03f5f7f11d50a3a"/>  
-   </providers>  
- 
-   <eventMappings>  
-      <clear />  
-      // Configure the custom event   
-      // to handle the audit events.   
-       <add name="SampleWebAuthenticationSuccessAuditEvent"   
-         type="SamplesAspNet.SampleWebAuthenticationSuccessAuditEvent,  
-         webauthsuccessaudit, Version=1.0.1735.23144, Culture=neutral,   
-         PublicKeyToken=dd969eda3f3f6ae1, processorArchitecture=MSIL" />  
- 
-    </eventMappings>  
-    <rules>  
-      <clear/>  
-      // Establish the connection between custom event   
-      // and the provider that must process it.  
-     <add name="Log Authentication Success Audits"   
-       eventName="SampleWebAuthenticationFailureAuditEvent"  
-       provider="EventLogProvider"   
-       profile="Custom" />\  
-    </rules>  
- 
+  enabled="true"  
+  heartBeatInterval="0">  
+  
+    <providers>  
+      // Configure the provider to process   
+      // the health events.  
+      <add name="EventLogProvider"  
+         type="System.Web.Management.EventLogWebEventProvider,  
+         System.Web,Version=2.0.3600.0,Culture=neutral,  
+         PublicKeyToken=b03f5f7f11d50a3a"/>  
+    </providers>  
+  
+    <eventMappings>  
+       <clear />  
+       // Configure the custom event   
+       // to handle the audit events.   
+        <add name="SampleWebAuthenticationSuccessAuditEvent"   
+          type="SamplesAspNet.SampleWebAuthenticationSuccessAuditEvent,  
+          webauthsuccessaudit, Version=1.0.1735.23144, Culture=neutral,   
+          PublicKeyToken=dd969eda3f3f6ae1, processorArchitecture=MSIL" />  
+  
+     </eventMappings>  
+     <rules>  
+       <clear/>  
+       // Establish the connection between custom event   
+       // and the provider that must process it.  
+      <add name="Log Authentication Success Audits"   
+        eventName="SampleWebAuthenticationFailureAuditEvent"  
+        provider="EventLogProvider"   
+        profile="Custom" />\  
+     </rules>  
+  
 </healthMonitoring>  
 ```  
  

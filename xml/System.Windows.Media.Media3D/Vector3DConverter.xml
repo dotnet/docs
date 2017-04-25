@@ -22,17 +22,17 @@ The following sample uses a <xref:System.Windows.Media.Media3D.Vector3DConverter
  
 ```csharp  
 ...  
- 
+  
 // Converts a String to a Vector3D using a Vector3DConverter  
 // Returns a Vector3D.  
- 
+  
 Vector3DConverter v3DConverter = new Vector3DConverter();  
 Vector3D vector3DResult = new Vector3D();  
 string string3 = "10,20,30";      
- 
+  
 vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);  
 // vector3DResult is equal to (10, 20, 30)  
- 
+  
 ...  
 ```  
  

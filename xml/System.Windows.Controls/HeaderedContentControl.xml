@@ -402,9 +402,9 @@ If both the <xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplateS
  
 ```  
 <object>  
- <object.HeaderTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.HeaderTemplateSelector>  
+  <object.HeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.HeaderTemplateSelector>  
 </object>  
 ```  
  

@@ -60,10 +60,10 @@ The following sample shows <xref:System.ServiceModel.TransferMode> property to S
  
 ```  
 <customBinding>  
-   <binding name="streamingBinding">  
-       <binaryMessageEncoding />  
-           <tcpTransport transferMode=”Streamed” />  
-    </binding>  
+    <binding name="streamingBinding">  
+        <binaryMessageEncoding />  
+            <tcpTransport transferMode=”Streamed” />  
+     </binding>  
 </customBinding>  
 ```  
  

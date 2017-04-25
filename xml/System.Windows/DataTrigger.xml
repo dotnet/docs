@@ -110,9 +110,9 @@ Note that you must specify both the <xref:System.Windows.DataTrigger.Binding%2A>
  
 ```  
 <object>  
- <object.Binding>  
-   <Binding …/>  
- </object.Binding>  
+  <object.Binding>  
+    <Binding …/>  
+  </object.Binding>  
 </object>  
 ```  
  
@@ -196,9 +196,9 @@ This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetM
  
 ```  
 <object>  
- <object.Setters>  
-   ZeroOrMoreSetters  
- </object.Setters>  
+  <object.Setters>  
+    ZeroOrMoreSetters  
+  </object.Setters>  
 </object>  
 ```  
  
@@ -317,9 +317,9 @@ This member is an explicit interface member implementation. It can be used only 
  
 ```  
 <object>  
- <object.Value>  
-   Value  
- </object.Value>  
+  <object.Value>  
+    Value  
+  </object.Value>  
 </object>  
 ```  
  

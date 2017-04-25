@@ -194,7 +194,7 @@ The following table lists the events that are supported by the <xref:System.Web.
 ```  
 <asp:ListView  
     ConvertEmptyStringToNull="True|False"  
-   DataKeyNames="string"  
+    DataKeyNames="string"  
     DataMember="string"  
     DataSource="string"  
     DataSourceID="string"  
@@ -3330,9 +3330,9 @@ The following example shows how to use the <xref:System.Web.UI.WebControls.ListV
  
 ```  
 <asp:ListView ID="ListView1" runat="server">  
- <ItemTemplate>  
-   <% Eval("LastName")%>  
- </ItemTemplate>  
+  <ItemTemplate>  
+    <% Eval("LastName")%>  
+  </ItemTemplate>  
 </asp:ListView>  
 ```  
  

@@ -24,13 +24,13 @@ When a <xref:System.Web.Management.WebApplicationLifetimeEvent> instance occurs,
  
 ```  
 <rules>  
- <add name="Application Events"  
-   eventName="Application Lifetime Events"  
-   provider="EventLogProvider"  
-   profile="Default"  
-   minInterval="00:01:00" />  
+  <add name="Application Events"  
+    eventName="Application Lifetime Events"  
+    provider="EventLogProvider"  
+    profile="Default"  
+    minInterval="00:01:00" />  
 </rules>  
- 
+  
 ```  
  
 The Application Lifetime Events performance counter contains the sum total of all ASP.NET lifetime events. To view this performance counter in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list. Select the **Application Lifetime Events** performance counter, and click the **Add** button. For more information, see "Using the System Monitor (PerfMon) with ASP.NET Applications" on [MSDN](http://go.microsoft.com/fwlink/?linkid=37118). If you allow events to be logged by the standard <xref:System.Web.Management.EventLogWebEventProvider>, you can view them in Event Viewer by selecting the **Application** log. For more information, see [Event Viewer](http://go.microsoft.com/fwlink/?linkid=24845&clcid=0x409) in the Windows Server 2003 documentation on TechNet.  
@@ -53,31 +53,31 @@ The following configuration-file excerpt shows how to configure the `healthMonit
  
 ```  
 <healthMonitoring  
- enabled="true"  
- heartBeatInterval="0">  
- 
-   <eventMappings>  
-      <clear />  
-      <!-- Configure the application lifetime event -->  
-      <!-- object to handle the Web application events. -->  
-      <add name="SampleApplicationLifetimeEvents"  
-        type="System.Web.Management.SampleWebApplicationLifetimeEvent,  
-        System.Web,Version=2.0.3600.0,  
-        Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a" />  
-    </eventMappings>  
- 
-   <rules>  
-     <clear/>  
-      // Configure the connection between the   
-      // application lifetime event object   
-      // and the provider that must process it.  
-      <add name="Custom Application Events"  
-        eventName="SampleApplicationLifetimeEvents"  
-        provider="EventLogProvider"  
-        profile="Default"  
-        minInterval="00:01:00" />  
-   </rules>  
- 
+  enabled="true"  
+  heartBeatInterval="0">  
+  
+    <eventMappings>  
+       <clear />  
+       <!-- Configure the application lifetime event -->  
+       <!-- object to handle the Web application events. -->  
+       <add name="SampleApplicationLifetimeEvents"  
+         type="System.Web.Management.SampleWebApplicationLifetimeEvent,  
+         System.Web,Version=2.0.3600.0,  
+         Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a" />  
+     </eventMappings>  
+  
+    <rules>  
+      <clear/>  
+       // Configure the connection between the   
+       // application lifetime event object   
+       // and the provider that must process it.  
+       <add name="Custom Application Events"  
+         eventName="SampleApplicationLifetimeEvents"  
+         provider="EventLogProvider"  
+         profile="Default"  
+         minInterval="00:01:00" />  
+    </rules>  
+  
 </healthMonitoring>  
 ```  
  

@@ -47,28 +47,28 @@ The following example uses the custom control defined above. In particular, it a
  
 ```vb  
 <%@ Register TagPrefix="custom" Assembly="myControlBuilderAtt" Namespace="CustomControls" %>  
-<h4>Using ControlBuilderAttribute Class<h4>  
-<form runat="server">  
- <custom:MyVB_CustomParse SelectedIndex="3" runat=server>  
- <customitem Message="Visual Basic version. Item One selected"/>  
- <customitem Message="Visual Basic version. Item Two selected"/>  
- <customitem Message="Visual Basic version. Item Three selected"/>  
- <customitem Message="Visual Basic version. Item Four selected"/>  
- </custom:MyVB_CustomParse>  
-</form>  
+ <h4>Using ControlBuilderAttribute Class<h4>  
+ <form runat="server">  
+  <custom:MyVB_CustomParse SelectedIndex="3" runat=server>  
+  <customitem Message="Visual Basic version. Item One selected"/>  
+  <customitem Message="Visual Basic version. Item Two selected"/>  
+  <customitem Message="Visual Basic version. Item Three selected"/>  
+  <customitem Message="Visual Basic version. Item Four selected"/>  
+  </custom:MyVB_CustomParse>  
+ </form>  
 ```  
  
 ```csharp  
 <%@ Register TagPrefix="custom" Assembly="myControlBuilderAtt" Namespace="CustomControls" %>  
-<h4>Using ControlBuilderAttribute Class<h4>  
-<form runat="server">  
- <custom:MyCS_CustomParse SelectedIndex="2" runat=server>  
- <customitem Message="C# version. Item One selected"/>  
- <customitem Message="C# version. Item Two selected"/>  
- <customitem Message="C# version. Item Three selected"/>  
- <customitem Message="C# version. Item Four selected"/>  
- </custom:MyCS_CustomParse>  
-</form>  
+ <h4>Using ControlBuilderAttribute Class<h4>  
+ <form runat="server">  
+  <custom:MyCS_CustomParse SelectedIndex="2" runat=server>  
+  <customitem Message="C# version. Item One selected"/>  
+  <customitem Message="C# version. Item Two selected"/>  
+  <customitem Message="C# version. Item Three selected"/>  
+  <customitem Message="C# version. Item Four selected"/>  
+  </custom:MyCS_CustomParse>  
+ </form>  
 ```  
  
  ]]></format>

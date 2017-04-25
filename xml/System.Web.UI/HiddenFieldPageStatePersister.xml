@@ -35,24 +35,24 @@ When the example page is viewed, any view state is stored by the <xref:System.We
 ```  
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
 <HTML>  
- <BODY>  
-   <form name="_ctl0" method="post" action="sample.aspx" id="_ctl0">  
- 
-     <input type="hidden" name="__VIEWSTATE" value="MgAwADkANgAwADkAOQA3ADgAMQD/AQ8QBQoxMTU2NDc1NjE0EGRkFgICAQ9kFgICAw8PZBAVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gUKgMNZ2dnZ2dnZ2dnZ2dnZ2RkZPdhi6U7jBPqVZbj0W8AYFSJ6oiq" />  
- 
-     <select size="4" name="ListBox1" id="ListBox1">      
-       <option value="Buchanan">Buchanan</option>  
-       <option value="Callahan">Callahan</option>  
-       <option value="Davolio">Davolio</option>  
-       <option value="Dodsworth">Dodsworth</option>  
-       <option value="Fuller">Fuller</option>  
-       <option value="King">King</option>  
-       <option value="Leverling">Leverling</option>  
-       <option value="Suyama">Suyama</option>  
-     </select>  
- 
-   </form>  
- </BODY>  
+  <BODY>  
+    <form name="_ctl0" method="post" action="sample.aspx" id="_ctl0">  
+  
+      <input type="hidden" name="__VIEWSTATE" value="MgAwADkANgAwADkAOQA3ADgAMQD/AQ8QBQoxMTU2NDc1NjE0EGRkFgICAQ9kFgICAw8PZBAVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gUKgMNZ2dnZ2dnZ2dnZ2dnZ2RkZPdhi6U7jBPqVZbj0W8AYFSJ6oiq" />  
+  
+      <select size="4" name="ListBox1" id="ListBox1">      
+        <option value="Buchanan">Buchanan</option>  
+        <option value="Callahan">Callahan</option>  
+        <option value="Davolio">Davolio</option>  
+        <option value="Dodsworth">Dodsworth</option>  
+        <option value="Fuller">Fuller</option>  
+        <option value="King">King</option>  
+        <option value="Leverling">Leverling</option>  
+        <option value="Suyama">Suyama</option>  
+      </select>  
+  
+    </form>  
+  </BODY>  
 </HTML>  
 ```  
  

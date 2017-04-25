@@ -55,37 +55,37 @@ The following code example shows a Web.config file set to use the <xref:System.W
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="AuthorizationServices" connectionString="msxml://~\App_Data\SampleStore.xml" />  
- </connectionStrings>  
- 
- <system.web>  
- 
-   <authentication mode="Windows" />  
-   <identity impersonate="true" />  
- 
-   <roleManager defaultProvider="AuthorizationStoreRoleProvider"   
-     enabled="true"  
-     cacheRolesInCookie="true"  
-     cookieName=".ASPROLES"  
-     cookieTimeout="30"  
-     cookiePath="/"  
-     cookieRequireSSL="false"  
-     cookieSlidingExpiration="true"  
-     cookieProtection="All" >  
-     <providers>  
-       <clear />  
-         <add  
-           name="AuthorizationStoreRoleProvider"  
-           type="System.Web.Security.AuthorizationStoreRoleProvider"  
-           connectionStringName="AuthorizationServices"  
-           applicationName="SampleApplication"   
-           cacheRefreshInterval="60"  
-           scopeName="" />  
-     </providers>  
-   </roleManager>  
- 
- </system.web>  
+  <connectionStrings>  
+    <add name="AuthorizationServices" connectionString="msxml://~\App_Data\SampleStore.xml" />  
+  </connectionStrings>  
+  
+  <system.web>  
+  
+    <authentication mode="Windows" />  
+    <identity impersonate="true" />  
+  
+    <roleManager defaultProvider="AuthorizationStoreRoleProvider"   
+      enabled="true"  
+      cacheRolesInCookie="true"  
+      cookieName=".ASPROLES"  
+      cookieTimeout="30"  
+      cookiePath="/"  
+      cookieRequireSSL="false"  
+      cookieSlidingExpiration="true"  
+      cookieProtection="All" >  
+      <providers>  
+        <clear />  
+          <add  
+            name="AuthorizationStoreRoleProvider"  
+            type="System.Web.Security.AuthorizationStoreRoleProvider"  
+            connectionStringName="AuthorizationServices"  
+            applicationName="SampleApplication"   
+            cacheRefreshInterval="60"  
+            scopeName="" />  
+      </providers>  
+    </roleManager>  
+  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -226,22 +226,22 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="AuthorizationStoreProvider"   
- enabled="true"  
- cacheRolesInCookie="true"  
- cookieName=".ASPROLES"  
- cookieTimeout="30"  
- cookiePath="/"  
- cookieRequireSSL="false"  
- cookieSlidingExpiration="true"  
- cookieProtection="All" >  
- <providers>  
-   <add  
-     name="SqlProvider"  
-     type="System.Web.Security.AuthorizationStoreRoleProvider"  
-     connectionStringName="AuthorizationStoreServices"   
-     scopeName="MyScope"  
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="true"  
+  cookieName=".ASPROLES"  
+  cookieTimeout="30"  
+  cookiePath="/"  
+  cookieRequireSSL="false"  
+  cookieSlidingExpiration="true"  
+  cookieProtection="All" >  
+  <providers>  
+    <add  
+      name="SqlProvider"  
+      type="System.Web.Security.AuthorizationStoreRoleProvider"  
+      connectionStringName="AuthorizationStoreServices"   
+      scopeName="MyScope"  
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  

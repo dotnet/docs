@@ -45,12 +45,12 @@ To add a trace listener, edit the configuration file that corresponds to the nam
 ```  
 <configuration>  
 <system.diagnostics>  
- <trace autoflush="false" indentsize="4">  
-   <listeners>  
-     <remove name="Default" />  
-     <add name="myListener"  type="System.Diagnostics.TextWriterTraceListener"    initializeData="c:\myListener.log" />  
-   </listeners>  
- </trace>  
+  <trace autoflush="false" indentsize="4">  
+    <listeners>  
+      <remove name="Default" />  
+      <add name="myListener"  type="System.Diagnostics.TextWriterTraceListener"    initializeData="c:\myListener.log" />  
+    </listeners>  
+  </trace>  
 </system.diagnostics>  
 </configuration>  
 ```  

@@ -79,38 +79,38 @@ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> obj
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content.  
-       PromptBuilder style = new PromptBuilder();  
-       style.AppendText("Your order for");  
-       style.StartStyle(new PromptStyle(PromptRate.Slow));  
-       style.AppendText("one kitchen sink and one faucet");  
-       style.EndStyle();  
-       style.AppendText("has been confirmed.");  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(style);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content.  
+        PromptBuilder style = new PromptBuilder();  
+        style.AppendText("Your order for");  
+        style.StartStyle(new PromptStyle(PromptRate.Slow));  
+        style.AppendText("one kitchen sink and one faucet");  
+        style.EndStyle();  
+        style.AppendText("has been confirmed.");  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(style);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -147,46 +147,46 @@ The following example uses the <xref:System.Speech.Synthesis.PromptStyle.%23ctor
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Build a prompt that applies different volume settings.  
-       PromptBuilder builder = new PromptBuilder();  
-       builder.StartStyle(new PromptStyle(PromptVolume.Default));  
-       builder.AppendText("This is the default speaking volume.");  
-       builder.EndStyle();  
-       builder.AppendBreak();  
-       builder.StartStyle(new PromptStyle(PromptVolume.ExtraLoud));  
-       builder.AppendText("This is the extra-loud speaking volume.");  
-       builder.EndStyle();  
-       builder.AppendBreak();  
-       builder.StartStyle(new PromptStyle(PromptVolume.Medium));  
-       builder.AppendText("This is the medium speaking volume.");  
-       builder.EndStyle();  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt that applies different volume settings.  
+        PromptBuilder builder = new PromptBuilder();  
+        builder.StartStyle(new PromptStyle(PromptVolume.Default));  
+        builder.AppendText("This is the default speaking volume.");  
+        builder.EndStyle();  
+        builder.AppendBreak();  
+        builder.StartStyle(new PromptStyle(PromptVolume.ExtraLoud));  
+        builder.AppendText("This is the extra-loud speaking volume.");  
+        builder.EndStyle();  
+        builder.AppendBreak();  
+        builder.StartStyle(new PromptStyle(PromptVolume.Medium));  
+        builder.AppendText("This is the medium speaking volume.");  
+        builder.EndStyle();  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

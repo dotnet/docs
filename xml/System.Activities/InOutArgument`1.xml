@@ -36,19 +36,19 @@ In this example, a custom `Square` activity has an <xref:System.Activities.InOut
 ```csharp  
 class Square : CodeActivity  
 {  
-   public Square() : base() { }  
- 
-   public InOutArgument<int> N1  
-   {  
-       get;  
- 
-       set;  
-   }  
- 
-   protected override void Execute(CodeActivityContext context)  
-   {  
-       context.SetValue<int>(N1, N1.Get(context) * N1.Get(context));  
-   }  
+    public Square() : base() { }  
+  
+    public InOutArgument<int> N1  
+    {  
+        get;  
+  
+        set;  
+    }  
+  
+    protected override void Execute(CodeActivityContext context)  
+    {  
+        context.SetValue<int>(N1, N1.Get(context) * N1.Get(context));  
+    }  
 }  
 ```  
  
@@ -56,26 +56,26 @@ In the following example, the `Square` activity is hosted in a workflow. A value
  
 ```csharp  
 Variable<int> n1 = new Variable<int>() { Default = 25 };  
- 
+  
 Activity activity1 = new Sequence()  
 {  
-   Variables =   
-   {  
-       n1  
-   },  
-   Activities =   
-   {  
-       new Square()  
-       {  
-           N1 = new InOutArgument<int>(n1)  
-       },  
-       new WriteLine()  
-       {  
-           Text = new InArgument<string>(ctx => "Squared result: " + n1.Get(ctx))  
-       }  
-   }  
+    Variables =   
+    {  
+        n1  
+    },  
+    Activities =   
+    {  
+        new Square()  
+        {  
+            N1 = new InOutArgument<int>(n1)  
+        },  
+        new WriteLine()  
+        {  
+            Text = new InArgument<string>(ctx => "Squared result: " + n1.Get(ctx))  
+        }  
+    }  
 };  
- 
+  
 WorkflowInvoker.Invoke(activity1);  
 ```  
  

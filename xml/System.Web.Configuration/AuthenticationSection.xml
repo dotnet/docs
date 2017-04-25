@@ -33,14 +33,14 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <authentication mode="Forms">  
- <forms name="MyAppCookieName" loginUrl="login.aspx">  
-   <credentials passwordFormat="SHA1">  
-     <user name="Kim"  
-        password="07B7F3EE06F278DB966BE960E7CBBD103DF30CA6"/>  
-     <user name="John"  
-        password="BA56E5E0366D003E98EA1C7F04ABF8FCB3753889"/>  
-   </credentials>  
- </forms>  
+  <forms name="MyAppCookieName" loginUrl="login.aspx">  
+    <credentials passwordFormat="SHA1">  
+      <user name="Kim"  
+         password="07B7F3EE06F278DB966BE960E7CBBD103DF30CA6"/>  
+      <user name="John"  
+         password="BA56E5E0366D003E98EA1C7F04ABF8FCB3753889"/>  
+    </credentials>  
+  </forms>  
 </authentication>  
 ```  
  

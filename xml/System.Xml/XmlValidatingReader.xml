@@ -544,7 +544,7 @@ To illustrate the difference between the entity handling modes consider the foll
  
 ```  
 <!DOCTYPE doc [<!ENTITY num "123">]>  
-<doc> &#65; &num; </doc>  
+ <doc> &#65; &num; </doc>  
 ```  
  
 When `EntityHandling` is set to `ExpandEntities` the "doc" element node contains one text node with the expanded entity text:  
@@ -1030,7 +1030,7 @@ The position indicated is the first character of text in the markup.
  
 ```  
 <root>  
-abc<tag/>  
+ abc<tag/>  
 </root>  
 ```  
  
@@ -1120,9 +1120,9 @@ In the following XML string, if the reader is positioned on the `href` attribute
  
 ```  
 <root xmlns:a="urn:456">  
-<item>  
-<ref href="a:b"/>  
-</item>  
+ <item>  
+ <ref href="a:b"/>  
+ </item>  
 </root>  
 ```  
  
@@ -1825,23 +1825,23 @@ If <xref:System.Xml.XmlValidatingReader.EntityHandling%2A> is set to `ExpandChar
  
 ```  
 reader.MoveToAttribute("name");  
- while (reader.ReadAttributeValue())  
- {  
- if (reader.NodeType == XmlNodeType.Text)  
- {  
- // at this point reader.Value == "a " or " c"  
- }  
- else if (reader.NodeType == XmlNodeType.EntityReference)  
- {  
- // at this point reader.Name == "b"  
- reader.ResolveEntity();  
- while (reader.ReadAttributeValue() &&  
- reader.NodeType != XmlNodeType.EndEntity)  
- {  
- // reader.Value == "123"  
- }  
- }  
-   }  
+  while (reader.ReadAttributeValue())  
+  {  
+  if (reader.NodeType == XmlNodeType.Text)  
+  {  
+  // at this point reader.Value == "a " or " c"  
+  }  
+  else if (reader.NodeType == XmlNodeType.EntityReference)  
+  {  
+  // at this point reader.Name == "b"  
+  reader.ResolveEntity();  
+  while (reader.ReadAttributeValue() &&  
+  reader.NodeType != XmlNodeType.EndEntity)  
+  {  
+  // reader.Value == "123"  
+  }  
+  }  
+    }  
 ```  
  
   
@@ -2434,17 +2434,17 @@ The user needs to test for the returned type. For example,
  
 ```  
 object obj = vreader.SchemaType;  
-if (obj is XmlSchemaType)  
-{  
-  XmlSchemaType st = (XmlSchemaType)obj;  
-  // use XmlSchemaType object  
-}  
-if (obj is XmlSchemaDatatype)  
-{  
-  XmlSchemaDatatype sd = (XmlSchemaDatatype)obj;  
-  Type vt = sd.ValueType;  
-  // use XmlSchemaDatatype object  
-      }  
+ if (obj is XmlSchemaType)  
+ {  
+   XmlSchemaType st = (XmlSchemaType)obj;  
+   // use XmlSchemaType object  
+ }  
+ if (obj is XmlSchemaDatatype)  
+ {  
+   XmlSchemaDatatype sd = (XmlSchemaDatatype)obj;  
+   Type vt = sd.ValueType;  
+   // use XmlSchemaDatatype object  
+       }  
 ```  
  
 If XML Schema validation is being performed, the `XmlSchemaType` or `XmlSchemaDatatype` corresponds to the current element being read. If document type definition (DTD validation) is being performed, this property returns `null`.  

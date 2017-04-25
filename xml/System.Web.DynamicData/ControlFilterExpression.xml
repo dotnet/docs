@@ -35,8 +35,8 @@ The following example shows how to use the <xref:System.Web.DynamicData.ControlF
  
 ```  
 <asp:QueryExtender ID="QueryExtenderID"   
-   TargetControlID="TargetDataSourceID" runat="server">  
-   <asp:ControlFilterExpression ControlID="SourceGridViewID" />  
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="SourceGridViewID" />  
 </asp:QueryExtender>  
 ```  
  
@@ -89,8 +89,8 @@ The following example shows how to use the <xref:System.Web.DynamicData.ControlF
  
 ```  
 <asp:QueryExtender ID="QueryExtenderID"   
-   TargetControlID="TargetDataSourceID" runat="server">  
-   <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
 </asp:QueryExtender>  
 ```  
  
@@ -126,8 +126,8 @@ The following example shows how to use the <xref:System.Web.DynamicData.ControlF
  
 ```  
 <asp:QueryExtender ID="QueryExtenderID"   
-   TargetControlID="TargetDataSourceID" runat="server">  
-   <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
 </asp:QueryExtender>  
 ```  
  

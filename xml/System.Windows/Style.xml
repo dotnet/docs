@@ -307,15 +307,15 @@ A style is sealed when another style is based on it or when it is applied for th
  
 ```  
 <object>  
- <object.Resources>  
-   oneOrMoreResourceElements  
- </object.Resources>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
 </object>  
 - or -   
 <object>  
- <object.Resources>  
-   <ResourceDictionary Source="externalDictionarySource"/>  
- </object.Resources>  
+  <object.Resources>  
+    <ResourceDictionary Source="externalDictionarySource"/>  
+  </object.Resources>  
 </object>  
 ```  
  
@@ -390,7 +390,7 @@ An explicit property element usage  for <xref:System.Windows.Style.Setters%2A> i
  
 ```  
 <object>  
- oneOrMoreSetters  
+  oneOrMoreSetters  
 </object>  
 ```  
  

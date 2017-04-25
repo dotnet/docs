@@ -28,27 +28,27 @@ To configure an <xref:System.Diagnostics.EventSchemaTraceListener> object, modif
  
 ```  
 <configuration>  
-   <system.diagnostics>  
-       <sources>  
-           <source name="TestSource" >  
-               <listeners>  
-                   <!--Remove the default trace listener for better performance.-->  
-                   <remove name="Default"/>  
-                   <!--Note: Removing the default trace listener prevents the dialog box   
-                   from being displayed for Debug.Fail or Debug.Assert commands that are   
-                   executed in user mode.-->  
-                   <add name="eventListener"   
-                     type="System.Diagnostics.EventSchemaTraceListener,  system.core"  
-                     initializeData="TraceOutput.xml"   
-                     traceOutputOptions="ProcessId, DateTime, Timestamp"   
-                     bufferSize="65536"  
-                     maximumFileSize="20480000"  
-                     logRetentionOption="LimitedCircularFiles"  
-                     maximumNumberOfFiles="2"/>  
-               </listeners>  
-           </source>  
-       </sources>  
-   </system.diagnostics>  
+    <system.diagnostics>  
+        <sources>  
+            <source name="TestSource" >  
+                <listeners>  
+                    <!--Remove the default trace listener for better performance.-->  
+                    <remove name="Default"/>  
+                    <!--Note: Removing the default trace listener prevents the dialog box   
+                    from being displayed for Debug.Fail or Debug.Assert commands that are   
+                    executed in user mode.-->  
+                    <add name="eventListener"   
+                      type="System.Diagnostics.EventSchemaTraceListener,  system.core"  
+                      initializeData="TraceOutput.xml"   
+                      traceOutputOptions="ProcessId, DateTime, Timestamp"   
+                      bufferSize="65536"  
+                      maximumFileSize="20480000"  
+                      logRetentionOption="LimitedCircularFiles"  
+                      maximumNumberOfFiles="2"/>  
+                </listeners>  
+            </source>  
+        </sources>  
+    </system.diagnostics>  
 ```  
  
 The <xref:System.Diagnostics.EventSchemaTraceListener> class inherits the <xref:System.Diagnostics.TraceListener.Filter%2A> property from the base class <xref:System.Diagnostics.TraceListener>. The <xref:System.Diagnostics.TraceListener.Filter%2A> property allows for an additional level of trace output filtering at the listener. If a filter is present, the `Trace` methods of the trace listener call the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method of the filter to determine whether to emit the trace.  

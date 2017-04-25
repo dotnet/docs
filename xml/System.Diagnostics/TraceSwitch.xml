@@ -38,11 +38,11 @@ To configure a <xref:System.Diagnostics.TraceSwitch>, edit the   for your applic
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="1" />  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="1" />  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -120,11 +120,11 @@ To set the level of your <xref:System.Diagnostics.TraceSwitch>, edit the configu
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="1" />  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="1" />  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -227,14 +227,14 @@ To set the level of your <xref:System.Diagnostics.TraceSwitch>, edit the configu
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <switches>  
-     <add name="mySwitch" value="0" />  
-     <add name="myNewSwitch" value="3" />  
-     <remove name="mySwitch" />  
-     <clear/>  
-   </switches>  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="mySwitch" value="0" />  
+      <add name="myNewSwitch" value="3" />  
+      <remove name="mySwitch" />  
+      <clear/>  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

@@ -378,14 +378,14 @@ The following code example demonstrates how to declaratively bind a <xref:System
  
 ```  
 <system.web>      
- <siteMap>  
-   <providers>  
-     <add name="AsciiTextProvider"  
-       description="SiteMap provider which reads in .sitemap text files."  
-       type="Samples.AspNet.CS.SimpleTextSiteMapProvider"  
-     siteMapFile="test.txt"/>  
-   </providers>  
- </siteMap>  
+  <siteMap>  
+    <providers>  
+      <add name="AsciiTextProvider"  
+        description="SiteMap provider which reads in .sitemap text files."  
+        type="Samples.AspNet.CS.SimpleTextSiteMapProvider"  
+      siteMapFile="test.txt"/>  
+    </providers>  
+  </siteMap>  
 </system.web>  
 ```  
  
@@ -489,9 +489,9 @@ The following code example demonstrates one of the ASP.NET pages you can use wit
  
 ```  
 <%@ Page MasterPageFile="~/Section.master" Title="Untitled Page" %>  
- 
+  
 <asp:Content ID="Content1" ContentPlaceHolderID=MainBody Runat=Server>  
- <h2>1.aspx</h2>  
+  <h2>1.aspx</h2>  
 </asp:Content>  
 ```  
  

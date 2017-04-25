@@ -235,9 +235,9 @@ The following properties all bind to and display the content of a column cell, a
  
 ```  
 <object>  
- <object.CellTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.CellTemplateSelector>  
+  <object.CellTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.CellTemplateSelector>  
 </object>  
 ```  
  
@@ -380,7 +380,7 @@ Properties that define the content, layout, and style of a column header are fou
  
 ```  
 <object>  
- <HeaderContentObject.../>  
+  <HeaderContentObject.../>  
 </object>  
 ```  
  
@@ -712,9 +712,9 @@ Properties that define the content, layout, and style of a column header are fou
  
 ```  
 <object>  
- <object.HeaderTemplateSelector>  
-   <MyDataTemplateSelectorImplementation .../>  
- </object.HeaderTemplateSelector>  
+  <object.HeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.HeaderTemplateSelector>  
 </object>  
 ```  
  

@@ -79,9 +79,9 @@ This property does not apply to the <xref:System.Windows.EventTrigger> class bec
  
 ```  
 <object>  
- <object.EnterActions>  
-   OneOrMoreTriggerActions  
- </object.EnterActions >  
+  <object.EnterActions>  
+    OneOrMoreTriggerActions  
+  </object.EnterActions >  
 </object>  
 ```  
  
@@ -128,9 +128,9 @@ This property does not apply to the <xref:System.Windows.EventTrigger> class bec
  
 ```  
 <object>  
- <object.ExitActions>  
-   OneOrMoreTriggerActions  
- </object.ExitActions >  
+  <object.ExitActions>  
+    OneOrMoreTriggerActions  
+  </object.ExitActions >  
 </object>  
 ```  
  

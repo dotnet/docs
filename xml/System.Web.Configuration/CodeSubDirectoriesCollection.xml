@@ -30,13 +30,13 @@ The following configuration-file example defines an ordered collection of assemb
  
 ```  
 <system.web>  
- <compilation>   
-   <codeSubDirectories>  
-     <add directoryName="mySubDir1"/>  
-     <add directoryName="mySubDir2"/>  
-     <add codeSubDirectory directoryName="mySubDir3"/>  
-   </codeSubDirectories>  
- </compilation>  
+  <compilation>   
+    <codeSubDirectories>  
+      <add directoryName="mySubDir1"/>  
+      <add directoryName="mySubDir2"/>  
+      <add codeSubDirectory directoryName="mySubDir3"/>  
+    </codeSubDirectories>  
+  </compilation>  
 </system.web>  
 ```  
  

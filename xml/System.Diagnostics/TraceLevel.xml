@@ -41,11 +41,11 @@ In the .NET Framework versions 1.0 and 1.1, trace levels in configuration files 
  
 ```  
 <configuration>  
-   <system.diagnostics>  
-      <switches>  
-         <add name="mySwitch" value="4" />  
-      </switches>  
-   </system.diagnostics>  
+    <system.diagnostics>  
+       <switches>  
+          <add name="mySwitch" value="4" />  
+       </switches>  
+    </system.diagnostics>  
 </configuration>  
 ```  
  

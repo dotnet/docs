@@ -26,9 +26,9 @@ Authorization for a user or a role is managed using the  configuration element. 
  
 ```  
 <authorization>  
- <deny users="?" />  
- <allow roles="Administrators" />  
- <deny users="*" />  
+  <deny users="?" />  
+  <allow roles="Administrators" />  
+  <deny users="*" />  
 </authorization>  
 ```  
  
@@ -41,10 +41,10 @@ The following code example grants access to Kim and members of the Admins role, 
  
 ```  
 <authorization>  
- <allow users="Kim"/>  
- <allow roles="Admins"/>  
- <deny users="John"/>  
- <deny users="?"/>  
+  <allow users="Kim"/>  
+  <allow roles="Admins"/>  
+  <deny users="John"/>  
+  <deny users="?"/>  
 </authorization>  
 ```  
  

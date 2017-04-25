@@ -2296,10 +2296,10 @@ binarywriter.WriteStartAttribute("StartAttribute");
 string largeStr = new string('r', 100000);  
 for (int i = 0; i < 10000; i++)   
 {  
-   binarywriter.WriteValue(largeStr);  
+    binarywriter.WriteValue(largeStr);  
 }  
 binarywriter.WriteEndAttribute();  
- 
+  
 ```  
  
 In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  

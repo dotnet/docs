@@ -651,8 +651,8 @@ Another typical way to populate the <xref:System.Windows.ContentElement.CommandB
  
 ```  
 <object>  
- <object.CommandBindings>  
-   oneOrMoreCommandBindings  </object.CommandBindings>  
+  <object.CommandBindings>  
+    oneOrMoreCommandBindings  </object.CommandBindings>  
 </object>  
 ```  
  
@@ -1558,8 +1558,8 @@ A related property, <xref:System.Windows.ContentElement.CommandBindings%2A>, mai
  
 ```  
 <object>  
- <object.InputBindings>  
-   oneOrMoreInputBindings  </object.InputBindings>  
+  <object.InputBindings>  
+    oneOrMoreInputBindings  </object.InputBindings>  
 </object>  
 ```  
  

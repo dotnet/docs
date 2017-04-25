@@ -181,7 +181,7 @@ Dim cmd As DbConnection = newFactory.CreateConnection()
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbConnection cmd = newFactory.CreateConnection();  
- 
+  
 ```  
  
  ]]></format>
@@ -222,13 +222,13 @@ The following code fragment returns a strongly typed <xref:System.Data.Common.Db
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbConnectionStringBuilder = _  
-   newFactory.CreateConnectionStringBuilder()  
+    newFactory.CreateConnectionStringBuilder()  
 ```  
  
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbConnectionStringBuilder cmd =   
-   newFactory.CreateConnectionStringBuilder();  
+    newFactory.CreateConnectionStringBuilder();  
 ```  
  
  ]]></format>

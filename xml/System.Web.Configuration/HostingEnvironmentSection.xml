@@ -27,10 +27,10 @@ The following configuration file example shows how to specify values declarative
  
 ```  
 <system.web>  
- <hostingEnvironment  
-   idleTimeout="20"  
-   shutdownTimeout="30"  
- />  
+  <hostingEnvironment  
+    idleTimeout="20"  
+    shutdownTimeout="30"  
+  />  
 </system.web>  
 ```  
  

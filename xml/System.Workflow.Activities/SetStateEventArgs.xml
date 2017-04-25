@@ -37,12 +37,12 @@ You can use the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.Se
 ```  
 public void SetState(string targetStateName)  
 {  
-     if (targetStateName == null)  
-     {  
-           throw new ArgumentNullException("targetStateName");  
-     }  
-     SetStateEventArgs args1 = new SetStateEventArgs(targetStateName);  
-     this.WorkflowInstance.EnqueueItemOnIdle("SetStateQueue", args1, null, null);  
+      if (targetStateName == null)  
+      {  
+            throw new ArgumentNullException("targetStateName");  
+      }  
+      SetStateEventArgs args1 = new SetStateEventArgs(targetStateName);  
+      this.WorkflowInstance.EnqueueItemOnIdle("SetStateQueue", args1, null, null);  
 }  
 ```  
  

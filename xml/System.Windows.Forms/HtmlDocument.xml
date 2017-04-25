@@ -22,13 +22,13 @@ HTML tags inside of an HTML document can be nested inside one another. <xref:Sys
  
 ```  
 <HTML>  
-   <BODY>  
-       <DIV name="Span1">Simple HTML Form</DIV>  
-       <FORM>  
-           <SPAN name="TextLabel">Enter Your Name:</SPAN>  
-           <INPUT type="text" size="20" name="Text1">  
-       </FORM>  
-   </BODY>  
+    <BODY>  
+        <DIV name="Span1">Simple HTML Form</DIV>  
+        <FORM>  
+            <SPAN name="TextLabel">Enter Your Name:</SPAN>  
+            <INPUT type="text" size="20" name="Text1">  
+        </FORM>  
+    </BODY>  
 </HTML>  
 ```  
  
@@ -929,38 +929,38 @@ The following code example executes the contents of a script in a Web page. The 
  
 ```  
 <HTML>  
- 
-   <HEAD>  
-       <TITLE>Invoke Script Sample</TITLE>  
- 
-       <SCRIPT>  
-           function MyObject() {  
-               this.Data = "Data for my private object.";  
-           }  
-           // Return a string.  
-           function test() {  
-               return("This is a test.");  
-           }  
-           // Return a JScript object.  
-           function testJScriptObject() {  
-               return(new(MyObject));  
-           }  
-           // Return a DOM element.  
-           function testElement() {  
-               return(div1);  
-           }  
-       </SCRIPT>  
-   </HEAD>  
- 
-   <BODY>  
- 
-       <DIV id="div1">  
-       </DIV>  
- 
-   </BODY>  
- 
+  
+    <HEAD>  
+        <TITLE>Invoke Script Sample</TITLE>  
+  
+        <SCRIPT>  
+            function MyObject() {  
+                this.Data = "Data for my private object.";  
+            }  
+            // Return a string.  
+            function test() {  
+                return("This is a test.");  
+            }  
+            // Return a JScript object.  
+            function testJScriptObject() {  
+                return(new(MyObject));  
+            }  
+            // Return a DOM element.  
+            function testElement() {  
+                return(div1);  
+            }  
+        </SCRIPT>  
+    </HEAD>  
+  
+    <BODY>  
+  
+        <DIV id="div1">  
+        </DIV>  
+  
+    </BODY>  
+  
 </HTML>  
- 
+  
 ```  
  
 [!code-csharp[System.Windows.Forms.HtmlDocument#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/CS/Form1.cs#12)]
@@ -1008,16 +1008,16 @@ The following code example executes the contents of a script in a Web page. The 
  
 ```  
 <HTML>  
-   <SCRIPT>  
-       function test(name, address) {  
-           window.alert("Name is " + name + "; address is " + address);  
-       }  
-   </SCRIPT>  
- 
-   <BODY>  
-   </BODY>  
+    <SCRIPT>  
+        function test(name, address) {  
+            window.alert("Name is " + name + "; address is " + address);  
+        }  
+    </SCRIPT>  
+  
+    <BODY>  
+    </BODY>  
 </HTML>  
- 
+  
 ```  
  
 [!code-csharp[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/CS/Form1.cs#9)]
@@ -1605,11 +1605,11 @@ function test(name, address) {
 window.alert("Name is " + name + "; address is " + address);  
 }  
 </SCRIPT>  
- 
+  
 <BODY>  
 </BODY>  
 </HTML>  
- 
+  
 ```  
  
 [!code-csharp[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/CS/Form1.cs#9)]

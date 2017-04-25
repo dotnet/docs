@@ -25,14 +25,14 @@ The following example shows how to configure the filter tags that identify the d
  
 ```  
 <system.web>  
- 
- <pages>  
-   <ignoreDeviceFilters>  
-     <filter name="TagA"/>  
-     <filter name="TagB"/>  
-   </ignoreDeviceFilters>  
- </pages>  
- 
+  
+  <pages>  
+    <ignoreDeviceFilters>  
+      <filter name="TagA"/>  
+      <filter name="TagB"/>  
+    </ignoreDeviceFilters>  
+  </pages>  
+  
 </system.web>  
 ```  
  

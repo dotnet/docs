@@ -27,7 +27,7 @@ The following configuration file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <trust level="Full" originUrl=""/>  
+  <trust level="Full" originUrl=""/>  
 </system.web>  
 ```  
  

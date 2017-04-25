@@ -75,26 +75,26 @@ We recommend that instead of using this class directly, you use the <xref:System
 The following example uses of this class to compare the document order for two nodes.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 XElement child5 = xmlTree.Element("Child5");  
 XNodeDocumentOrderComparer documentOrderComparer = new XNodeDocumentOrderComparer();  
 int val = documentOrderComparer.Compare(child3, child5);  
 if (val == 0)  
-   Console.WriteLine("Child3 is same as Child5");  
+    Console.WriteLine("Child3 is same as Child5");  
 else if (val < 0)  
-   Console.WriteLine("Child3 is before Child5");  
+    Console.WriteLine("Child3 is before Child5");  
 else  
-   Console.WriteLine("Child3 is after Child5");  
+    Console.WriteLine("Child3 is after Child5");  
 ```  
  
 This example produces the following output:  
@@ -150,26 +150,26 @@ We recommend that instead of using this class directly, you use the <xref:System
 The following example uses this class to compare document order for two nodes.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XText("Text content."),  
-   new XElement("Child1", "child1 content"),  
-   new XElement("Child2", "child2 content"),  
-   new XElement("Child3", "child3 content"),  
-   new XText("More text content."),  
-   new XElement("Child4", "child4 content"),  
-   new XElement("Child5", "child5 content")  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
 );  
 XElement child3 = xmlTree.Element("Child3");  
 XElement child5 = xmlTree.Element("Child5");  
 XNodeDocumentOrderComparer documentOrderComparer = new XNodeDocumentOrderComparer();  
 int val = documentOrderComparer.Compare(child3, child5);  
 if (val == 0)  
-   Console.WriteLine("Child3 is same as Child5");  
+    Console.WriteLine("Child3 is same as Child5");  
 else if (val < 0)  
-   Console.WriteLine("Child3 is before Child5");  
+    Console.WriteLine("Child3 is before Child5");  
 else  
-   Console.WriteLine("Child3 is after Child5");  
+    Console.WriteLine("Child3 is after Child5");  
 ```  
  
 This example produces the following output:  

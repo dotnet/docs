@@ -14554,7 +14554,7 @@ The following example shows you how to modify cell values programmatically.
 ```  
 ' Modify the value in the first cell of the second row.  
 Me.dataGridView1.Rows[1].Cells[0].Value = "new value"  
- 
+  
 ' The previous line is equivalent to the following line.  
 Me.dataGridView1[0, 1].Value = "new value"  
 ```  
@@ -14564,7 +14564,7 @@ Me.dataGridView1[0, 1].Value = "new value"
 ```  
 // Modify the value in the first cell of the second row.  
 this.dataGridView1.Rows[1].Cells[0].Value = "new value";  
- 
+  
 // The previous line is equivalent to the following line.  
 this.dataGridView1[0, 1].Value = "new value";  
 ```  
@@ -14577,9 +14577,9 @@ The following example shows you how to retrieve the index of the first selected 
  
 ```  
 Dim rowToDelete As Int32 = Me.dataGridView1.Rows.GetFirstRow( _  
-   DataGridViewElementStates.Selected)  
+    DataGridViewElementStates.Selected)  
 If rowToDelete > -1 Then  
-   Me.dataGridView1.Rows.RemoveAt(rowToDelete)  
+    Me.dataGridView1.Rows.RemoveAt(rowToDelete)  
 End If  
 ```  
  
@@ -14587,10 +14587,10 @@ End If
  
 ```  
 Int32 rowToDelete = this.dataGridView1.Rows.GetFirstRow(  
-   DataGridViewElementStates.Selected);  
+    DataGridViewElementStates.Selected);  
 if (rowToDelete > -1)  
 {  
-   this.dataGridView1.Rows.RemoveAt(rowToDelete);  
+    this.dataGridView1.Rows.RemoveAt(rowToDelete);  
 }  
 ```  
  

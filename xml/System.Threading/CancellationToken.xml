@@ -602,12 +602,12 @@ C#
  
 ```  
 if (token.IsCancellationRequested)   
-   throw new OperationCanceledException(token);  
+    throw new OperationCanceledException(token);  
 ```  
  
 ```vb  
 If token.IsCancellationRequested Then  
-   Throw New OperationCanceledException(token)  
+    Throw New OperationCanceledException(token)  
 End If  
 ```  
  

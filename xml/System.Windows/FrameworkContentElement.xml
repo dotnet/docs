@@ -626,9 +626,9 @@ In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], <xref:System.W
  
 ```  
 <object>  
- <object.DataContext>  
-   <dataContextObject />  
- </object.DataContext>  
+  <object.DataContext>  
+    <dataContextObject />  
+  </object.DataContext>  
 </object>  
 ```  
  
@@ -1919,9 +1919,9 @@ Notice that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] sy
  
 ```  
 <object>  
- <object.Resources>  
-   oneOrMoreResourceElements  
- </object.Resources>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
 </object>  
 ```  
  
@@ -2408,15 +2408,15 @@ If the value of this property is of type <xref:System.Windows.Controls.ToolTip>,
  
 ```  
 <object>  
- <object.ToolTip>  
-   <ToolTip .../>  
- </object.ToolTip>  
+  <object.ToolTip>  
+    <ToolTip .../>  
+  </object.ToolTip>  
 </object>  
 - or -  
 <object>  
- <object.ToolTip>  
-   toolTipObjectContent  
- </object.ToolTip>  
+  <object.ToolTip>  
+    toolTipObjectContent  
+  </object.ToolTip>  
 </object>  
 ```  
  

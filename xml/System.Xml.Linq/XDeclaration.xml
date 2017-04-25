@@ -105,34 +105,34 @@ This constructor is primarily used internally to make a deep copy of an XML tree
 The following example creates a document that contains a declaration.  
  
 ```csharp  
- 
-               XDocument doc = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XComment("This is a comment"),  
-   new XElement("Root", "content")  
+  
+                XDocument doc = new XDocument(  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XComment("This is a comment"),  
+    new XElement("Root", "content")  
 );  
 doc.Save("Root.xml");  
- 
+  
 Console.WriteLine(File.ReadAllText("Root.xml"));  
 ```  
  
 ```vb  
- 
-               Dim doc As XDocument = _   
-       <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-           <!--This is a comment-->  
-           <Root>content</Root>  
- 
+  
+                Dim doc As XDocument = _   
+        <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+            <!--This is a comment-->  
+            <Root>content</Root>  
+  
 doc.Save("Root.xml")  
- 
+  
 Console.WriteLine(File.ReadAllText("Root.xml"))  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
-               <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+  
+                <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <!--This is a comment-->  
 <Root>content</Root>  
 ```  
@@ -182,32 +182,32 @@ If you set this property to a valid code page name, then when serializing, LINQ 
 The following example creates two documents, one with utf-8 encoding, and one with utf-16 encoding. It then loads the documents and prints the encoding to the console.  
  
 ```csharp  
- 
-               Console.WriteLine("Creating a document with utf-8 encoding");  
+  
+                Console.WriteLine("Creating a document with utf-8 encoding");  
 XDocument encodedDoc8 = new XDocument(  
-   new XDeclaration("1.0", "utf-8", "yes"),  
-   new XElement("Root", "Content")  
+    new XDeclaration("1.0", "utf-8", "yes"),  
+    new XElement("Root", "Content")  
 );  
 encodedDoc8.Save("EncodedUtf8.xml");  
 Console.WriteLine("Encoding is:{0}", encodedDoc8.Declaration.Encoding);  
 Console.WriteLine();  
- 
+  
 Console.WriteLine("Creating a document with utf-16 encoding");  
 XDocument encodedDoc16 = new XDocument(  
-   new XDeclaration("1.0", "utf-16", "yes"),  
-   new XElement("Root", "Content")  
+    new XDeclaration("1.0", "utf-16", "yes"),  
+    new XElement("Root", "Content")  
 );  
 encodedDoc16.Save("EncodedUtf16.xml");  
 Console.WriteLine("Encoding is:{0}", encodedDoc16.Declaration.Encoding);  
 Console.WriteLine();  
- 
+  
 XDocument newDoc8 = XDocument.Load("EncodedUtf8.xml");  
 Console.WriteLine("Encoded document:");  
 Console.WriteLine(File.ReadAllText("EncodedUtf8.xml"));  
 Console.WriteLine();  
 Console.WriteLine("Encoding of loaded document is:{0}", newDoc8.Declaration.Encoding);  
 Console.WriteLine();  
- 
+  
 XDocument newDoc16 = XDocument.Load("EncodedUtf16.xml");  
 Console.WriteLine("Encoded document:");  
 Console.WriteLine(File.ReadAllText("EncodedUtf16.xml"));  
@@ -216,31 +216,31 @@ Console.WriteLine("Encoding of loaded document is:{0}", newDoc16.Declaration.Enc
 ```  
  
 ```vb  
- 
-               Console.WriteLine("Creating a document with utf-8 encoding")  
+  
+                Console.WriteLine("Creating a document with utf-8 encoding")  
 Dim encodedDoc8 As XDocument = _   
-       <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-           <Root>Content</Root>  
+        <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+            <Root>Content</Root>  
 encodedDoc8.Save("EncodedUtf8.xml")  
 Console.WriteLine("Encoding is:{0}", encodedDoc8.Declaration.Encoding)  
 Console.WriteLine()  
- 
+  
 Console.WriteLine("Creating a document with utf-16 encoding")  
 Dim encodedDoc16 As XDocument = _   
-       <?xml version="1.0" encoding="utf-16" standalone="yes"?>  
-           <Root>Content</Root>  
- 
+        <?xml version="1.0" encoding="utf-16" standalone="yes"?>  
+            <Root>Content</Root>  
+  
 encodedDoc16.Save("EncodedUtf16.xml")  
 Console.WriteLine("Encoding is:{0}", encodedDoc16.Declaration.Encoding)  
 Console.WriteLine()  
- 
+  
 Dim newDoc8 As XDocument = XDocument.Load("EncodedUtf8.xml")  
 Console.WriteLine("Encoded document:")  
 Console.WriteLine(File.ReadAllText("EncodedUtf8.xml"))  
 Console.WriteLine()  
 Console.WriteLine("Encoding of loaded document is:{0}", newDoc8.Declaration.Encoding)  
 Console.WriteLine()  
- 
+  
 Dim newDoc16 As XDocument = XDocument.Load("EncodedUtf16.xml")  
 Console.WriteLine("Encoded document:")  
 Console.WriteLine(File.ReadAllText("EncodedUtf16.xml"))  
@@ -253,20 +253,20 @@ This example produces the following output:
 ```  
 Creating a document with utf-8 encoding  
 Encoding is:utf-8  
- 
+  
 Creating a document with utf-16 encoding  
 Encoding is:utf-16  
- 
+  
 Encoded document:  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <Root>Content</Root>  
- 
+  
 Encoding of loaded document is:utf-8  
- 
+  
 Encoded document:  
 <?xml version="1.0" encoding="utf-16" standalone="yes"?>  
 <Root>Content</Root>  
- 
+  
 Encoding of loaded document is:utf-16  
 ```  
  
@@ -311,20 +311,20 @@ The valid values for standalone are "yes" or "no". These values are not enforced
 The following example uses this property to print the standalone property of a declaration.  
  
 ```csharp  
- 
-               XDeclaration xd = new XDeclaration("1.0", "utf-8", "yes");  
+  
+                XDeclaration xd = new XDeclaration("1.0", "utf-8", "yes");  
 Console.WriteLine(xd.Version);  
 Console.WriteLine(xd.Encoding);  
 Console.WriteLine(xd.Standalone);  
 ```  
  
 ```vb  
- 
-               Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")  
+  
+                Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")  
 Console.WriteLine(xd.Version)  
 Console.WriteLine(xd.Encoding)  
 Console.WriteLine(xd.Standalone)  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -420,7 +420,7 @@ Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")
 Console.WriteLine(xd.Version)  
 Console.WriteLine(xd.Encoding)  
 Console.WriteLine(xd.Standalone)  
- 
+  
 ```  
  
 This example produces the following output:  

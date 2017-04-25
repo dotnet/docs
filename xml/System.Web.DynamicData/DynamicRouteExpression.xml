@@ -108,8 +108,8 @@ The following example shows how to specify the ProductCategory foreign-key colum
  
 ```  
 <asp:QueryExtender TargetControlID="GridDataSource"   
-   ID="GridQueryExtender" runat="server">  
- <asp:DynamicRouteExpression ColumnName="ProductCategory" />  
+    ID="GridQueryExtender" runat="server">  
+  <asp:DynamicRouteExpression ColumnName="ProductCategory" />  
 </asp:QueryExtender>  
 ```  
  

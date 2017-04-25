@@ -56,8 +56,8 @@ To use the custom control in the preceding code example, add the following `<con
  
 ```  
 <controlAdapters>  
-  <adapter controlType="AspNet.Samples.TestLabel"  
-  adapterType="AspNet.Samples.XhtmlTestLabelAdapter" />  
+   <adapter controlType="AspNet.Samples.TestLabel"  
+   adapterType="AspNet.Samples.XhtmlTestLabelAdapter" />  
 </controlAdapters>  
 ```  
  

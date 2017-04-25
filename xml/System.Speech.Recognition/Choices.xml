@@ -38,23 +38,23 @@ For more information about defining a speech recognition grammar, see [Speech Re
 The following example creates a speech recognition grammar for the phrase, "Set background to *colorChoice*", where *colorChoice* can be one of the defined colors. The <xref:System.Speech.Recognition.GrammarBuilder> is used to define the constraints for the grammar.  
  
 ```csharp  
- 
+  
 private Grammar CreateColorGrammar()  
 {  
- 
- // Create a Choices object that contains a set of alternative colors.  
- Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
- colorChoice.Add(new string[] {"cyan", "yellow", "magenta"});  
- 
- // Construct the phrase.  
- GrammarBuilder builder = new GrammarBuilder("Set background to");  
- builder.Append(colorChoice);  
- 
- // Create a grammar for the phrase.  
- Grammar colorGrammar = new Grammar(builder);  
- colorGrammar.Name = "SetBackground";  
- 
- return colorGrammar;  
+  
+  // Create a Choices object that contains a set of alternative colors.  
+  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+  colorChoice.Add(new string[] {"cyan", "yellow", "magenta"});  
+  
+  // Construct the phrase.  
+  GrammarBuilder builder = new GrammarBuilder("Set background to");  
+  builder.Append(colorChoice);  
+  
+  // Create a grammar for the phrase.  
+  Grammar colorGrammar = new Grammar(builder);  
+  colorGrammar.Name = "SetBackground";  
+  
+  return colorGrammar;  
 }  
 ```  
  
@@ -88,32 +88,32 @@ The following example uses <xref:System.Speech.Recognition.Choices> and <xref:Sy
 ```csharp  
 public Grammar CreatePhonePhrase()  
 {  
- 
- // Create alternatives for female names and add a phrase.  
- GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
- females.Append("on her");  
- 
- // Create alternatives for male names and add a phrase.  
- GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
- males.Append("on his");  
- 
- // Create a Choices object that contains an array of alternative  
- // GrammarBuilder objects.  
- Choices people = new Choices();  
- people.Add(new Choices(new GrammarBuilder[] {females, males}));  
- 
- // Create a Choices object that contains a set of alternative phone types.  
- Choices phoneType = new Choices();  
- phoneType.Add(new string[] { "cell", "home", "work" });  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append("call");  
- gb.Append(people);  
- gb.Append(phoneType);  
- gb.Append(new GrammarBuilder("phone"), 0, 1);  
- 
- return new Grammar(gb);  
+  
+  // Create alternatives for female names and add a phrase.  
+  GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
+  females.Append("on her");  
+  
+  // Create alternatives for male names and add a phrase.  
+  GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
+  males.Append("on his");  
+  
+  // Create a Choices object that contains an array of alternative  
+  // GrammarBuilder objects.  
+  Choices people = new Choices();  
+  people.Add(new Choices(new GrammarBuilder[] {females, males}));  
+  
+  // Create a Choices object that contains a set of alternative phone types.  
+  Choices phoneType = new Choices();  
+  phoneType.Add(new string[] { "cell", "home", "work" });  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append("call");  
+  gb.Append(people);  
+  gb.Append(phoneType);  
+  gb.Append(new GrammarBuilder("phone"), 0, 1);  
+  
+  return new Grammar(gb);  
 }  
 ```  
  
@@ -160,32 +160,32 @@ The following example uses `Choices` and <xref:System.Speech.Recognition.Grammar
 ```csharp  
 public Grammar CreatePhonePhrase()  
 {  
- 
- // Create alternatives for female names and add a phrase.  
- GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
- females.Append("on her");  
- 
- // Create alternatives for male names and add a phrase.  
- GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
- males.Append("on his");  
- 
- // Create a Choices object that contains an array of alternative  
- // GrammarBuilder objects.  
- Choices people = new Choices();  
- people.Add(new Choices(new GrammarBuilder[] {females, males}));  
- 
- // Create a Choices object that contains a set of alternative phone types.  
- Choices phoneType = new Choices();  
- phoneType.Add(new string[] { "cell", "home", "work" });  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append("call");  
- gb.Append(people);  
- gb.Append(phoneType);  
- gb.Append(new GrammarBuilder("phone"), 0, 1);  
- 
- return new Grammar(gb);  
+  
+  // Create alternatives for female names and add a phrase.  
+  GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
+  females.Append("on her");  
+  
+  // Create alternatives for male names and add a phrase.  
+  GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
+  males.Append("on his");  
+  
+  // Create a Choices object that contains an array of alternative  
+  // GrammarBuilder objects.  
+  Choices people = new Choices();  
+  people.Add(new Choices(new GrammarBuilder[] {females, males}));  
+  
+  // Create a Choices object that contains a set of alternative phone types.  
+  Choices phoneType = new Choices();  
+  phoneType.Add(new string[] { "cell", "home", "work" });  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append("call");  
+  gb.Append(people);  
+  gb.Append(phoneType);  
+  gb.Append(new GrammarBuilder("phone"), 0, 1);  
+  
+  return new Grammar(gb);  
 }  
 ```  
  
@@ -230,32 +230,32 @@ The following example uses <xref:System.Speech.Recognition.Choices> and <xref:Sy
 ```csharp  
 public Grammar CreatePhonePhrase()  
 {  
- 
- // Create alternatives for female names and add a phrase.  
- GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
- females.Append("on her");  
- 
- // Create alternatives for male names and add a phrase.  
- GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
- males.Append("on his");  
- 
- // Create a Choices object that contains an array of alternative  
- // GrammarBuilder objects.  
- Choices people = new Choices();  
- people.Add(new Choices(new GrammarBuilder[] {females, males}));  
- 
- // Create a Choices object that contains a set of alternative phone types.  
- Choices phoneType = new Choices();  
- phoneType.Add(new string[] { "cell", "home", "work" });  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append("call");  
- gb.Append(people);  
- gb.Append(phoneType);  
- gb.Append(new GrammarBuilder("phone"), 0, 1);  
- 
- return new Grammar(gb);  
+  
+  // Create alternatives for female names and add a phrase.  
+  GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
+  females.Append("on her");  
+  
+  // Create alternatives for male names and add a phrase.  
+  GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
+  males.Append("on his");  
+  
+  // Create a Choices object that contains an array of alternative  
+  // GrammarBuilder objects.  
+  Choices people = new Choices();  
+  people.Add(new Choices(new GrammarBuilder[] {females, males}));  
+  
+  // Create a Choices object that contains a set of alternative phone types.  
+  Choices phoneType = new Choices();  
+  phoneType.Add(new string[] { "cell", "home", "work" });  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append("call");  
+  gb.Append(people);  
+  gb.Append(phoneType);  
+  gb.Append(new GrammarBuilder("phone"), 0, 1);  
+  
+  return new Grammar(gb);  
 }  
 ```  
  
@@ -307,32 +307,32 @@ The following example creates a speech recognition grammar for phrases such as "
 ```csharp  
 public Grammar CreatePhonePhrase()  
 {  
- 
- // Create alternatives for female names and add a phrase.  
- GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
- females.Append("on her");  
- 
- // Create alternatives for male names and add a phrase.  
- GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
- males.Append("on his");  
- 
- // Create a Choices object that contains an array of alternative  
- // GrammarBuilder objects.  
- Choices people = new Choices();  
- people.Add(new Choices(new GrammarBuilder[] {females, males}));  
- 
- // Create a Choices object that contains a set of alternative phone types.  
- Choices phoneType = new Choices();  
- phoneType.Add(new string[] { "cell", "home", "work" });  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append("call");  
- gb.Append(people);  
- gb.Append(phoneType);  
- gb.Append(new GrammarBuilder("phone"), 0, 1);  
- 
- return new Grammar(gb);  
+  
+  // Create alternatives for female names and add a phrase.  
+  GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
+  females.Append("on her");  
+  
+  // Create alternatives for male names and add a phrase.  
+  GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
+  males.Append("on his");  
+  
+  // Create a Choices object that contains an array of alternative  
+  // GrammarBuilder objects.  
+  Choices people = new Choices();  
+  people.Add(new Choices(new GrammarBuilder[] {females, males}));  
+  
+  // Create a Choices object that contains a set of alternative phone types.  
+  Choices phoneType = new Choices();  
+  phoneType.Add(new string[] { "cell", "home", "work" });  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append("call");  
+  gb.Append(people);  
+  gb.Append(phoneType);  
+  gb.Append(new GrammarBuilder("phone"), 0, 1);  
+  
+  return new Grammar(gb);  
 }  
 ```  
  
@@ -382,32 +382,32 @@ The following example creates a speech recognition grammar for phrases similar t
 ```csharp  
 public Grammar CreatePhonePhrase()  
 {  
- 
- // Create alternatives for female names and add a phrase.  
- GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
- females.Append("on her");  
- 
- // Create alternatives for male names and add a phrase.  
- GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
- males.Append("on his");  
- 
- // Create a Choices object that contains an array of alternative  
- // GrammarBuilder objects.  
- Choices people = new Choices();  
- people.Add(new Choices(new GrammarBuilder[] {females, males}));  
- 
- // Create a Choices object that contains a set of alternative phone types.  
- Choices phoneType = new Choices();  
- phoneType.Add(new string[] { "cell", "home", "work" });  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append("call");  
- gb.Append(people);  
- gb.Append(phoneType);  
- gb.Append(new GrammarBuilder("phone"), 0, 1);  
- 
- return new Grammar(gb);  
+  
+  // Create alternatives for female names and add a phrase.  
+  GrammarBuilder females = new Choices(new string[] { "Anne", "Mary" });  
+  females.Append("on her");  
+  
+  // Create alternatives for male names and add a phrase.  
+  GrammarBuilder males = new Choices(new string[] { "James", "Sam" });  
+  males.Append("on his");  
+  
+  // Create a Choices object that contains an array of alternative  
+  // GrammarBuilder objects.  
+  Choices people = new Choices();  
+  people.Add(new Choices(new GrammarBuilder[] {females, males}));  
+  
+  // Create a Choices object that contains a set of alternative phone types.  
+  Choices phoneType = new Choices();  
+  phoneType.Add(new string[] { "cell", "home", "work" });  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append("call");  
+  gb.Append(people);  
+  gb.Append(phoneType);  
+  gb.Append(new GrammarBuilder("phone"), 0, 1);  
+  
+  return new Grammar(gb);  
 }  
 ```  
  
@@ -447,25 +447,25 @@ The <xref:System.Speech.Recognition.GrammarBuilder> returned by this method is e
 The following example creates a speech recognition grammar for changing the background color.  
  
 ```csharp  
- 
+  
 private Grammar CreateColorChoice()  
 {  
- 
- // Create a Choices object that contains a set of alternative colors.  
- Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
- 
- // Construct the phrase.  
- GrammarBuilder gb = new GrammarBuilder();  
- gb.Append(new Choices(new string[] {"Set", "Change"}));  
- gb.Append("background to");  
- gb.Append(colorChoice.ToGrammarBuilder());  
- 
- Grammar grammar = new Grammar(gb);  
- grammar.Name = "modify background color";  
- 
- return grammar;  
+  
+  // Create a Choices object that contains a set of alternative colors.  
+  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+  
+  // Construct the phrase.  
+  GrammarBuilder gb = new GrammarBuilder();  
+  gb.Append(new Choices(new string[] {"Set", "Change"}));  
+  gb.Append("background to");  
+  gb.Append(colorChoice.ToGrammarBuilder());  
+  
+  Grammar grammar = new Grammar(gb);  
+  grammar.Name = "modify background color";  
+  
+  return grammar;  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -499,15 +499,15 @@ The example uses a <xref:System.Speech.Recognition.GrammarBuilder> object to ass
 ```  
 public GrammarBuilder ChoicesContructor2 ()  
 {  
-   GrammarBuilder gb = new GrammarBuilder ();  
-   Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  
-   Choices contactList = new Choices (new GrammarBuilder[] {(GrammarBuilder) "Mark", (GrammarBuilder) "Jane", (GrammarBuilder) "Frank"});  
-   gb.Append ("Call");  
-   gb.Append (contactList);  
-   gb.Append ("on");  
-   gb.Append (phoneType);  
-   gb.Append ("phone");  
-   return gb;  
+    GrammarBuilder gb = new GrammarBuilder ();  
+    Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  
+    Choices contactList = new Choices (new GrammarBuilder[] {(GrammarBuilder) "Mark", (GrammarBuilder) "Jane", (GrammarBuilder) "Frank"});  
+    gb.Append ("Call");  
+    gb.Append (contactList);  
+    gb.Append ("on");  
+    gb.Append (phoneType);  
+    gb.Append ("phone");  
+    return gb;  
 }  
 ```  
  

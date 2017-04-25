@@ -1088,9 +1088,9 @@ Another typical way to populate the <xref:System.Windows.UIElement.CommandBindin
  
 ```  
 <object>  
- <object.CommandBindings>  
-   oneOrMoreCommandBindings  
- </object.CommandBindings>  
+  <object.CommandBindings>  
+    oneOrMoreCommandBindings  
+  </object.CommandBindings>  
 </object>  
 ```  
  
@@ -2241,9 +2241,9 @@ A related property, <xref:System.Windows.UIElement.CommandBindings%2A>, maintain
  
 ```  
 <object>  
- <object.InputBindings>  
-   oneOrMoreInputBindings  
- </object.InputBindings>  
+  <object.InputBindings>  
+    oneOrMoreInputBindings  
+  </object.InputBindings>  
 </object>  
 ```  
  
@@ -10839,9 +10839,9 @@ Render transforms do not affect layout, and are typically used to animate or app
  
 ```  
 <object>  
- <object.RenderTransformOrigin>  
-   <Point X=" xOrigin " Y=" yOrigin "/>  
- </object.RenderTransformOrigin>  
+  <object.RenderTransformOrigin>  
+    <Point X=" xOrigin " Y=" yOrigin "/>  
+  </object.RenderTransformOrigin>  
 </object>  
 ```  
  

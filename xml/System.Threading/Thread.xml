@@ -365,9 +365,9 @@ If you specify a very small stack size, you might need to disable stack-overflow
  
 ```  
 <configuration>  
- <runtime>  
-   <disableStackOverflowProbing enabled="true"/>  
- </runtime>  
+  <runtime>  
+    <disableStackOverflowProbing enabled="true"/>  
+  </runtime>  
 </configuration>  
 ```  
  
@@ -429,9 +429,9 @@ If you specify a very small stack size, you might need to disable stack-overflow
  
 ```  
 <configuration>  
- <runtime>  
-   <disableStackOverflowProbing enabled="true"/>  
- </runtime>  
+  <runtime>  
+    <disableStackOverflowProbing enabled="true"/>  
+  </runtime>  
 </configuration>  
 ```  
  

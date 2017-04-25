@@ -533,10 +533,10 @@ The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects onl
  
 ```vb  
 Dim schema As XmlSchema = New XmlSchema()  
- 
+  
 Dim textReader As XmlTextReader = New XmlTextReader("include.xsd")  
 Dim includeSchema As XmlSchema = XmlSchema.Read(textReader, null)  
- 
+  
 Dim include As XmlSchemaInclude = New XmlSchemaInclude()  
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  
@@ -544,10 +544,10 @@ schema.Includes.Add(include);
  
 ```csharp  
 XmlSchema schema = new XmlSchema();  
- 
+  
 XmlTextReader textReader = new XmlTextReader("include.xsd");  
 XmlSchema includeSchema = XmlSchema.Read(textReader, null);  
- 
+  
 XmlSchemaInclude include = new XmlSchemaInclude();  
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  

@@ -63,62 +63,62 @@ The following console application retrieves information about all the visible SQ
  
 ```vb  
 Imports System.Data.Sql  
- 
+  
 Module Module1  
- Sub Main()  
-   ' Retrieve the enumerator instance and then the data.  
-   Dim instance As SqlDataSourceEnumerator = _  
-    SqlDataSourceEnumerator.Instance  
-   Dim table As System.Data.DataTable = instance.GetDataSources()  
- 
-   ' Display the contents of the table.  
-   DisplayData(table)  
- 
-   Console.WriteLine("Press any key to continue.")  
-   Console.ReadKey()  
- End Sub  
- 
- Private Sub DisplayData(ByVal table As DataTable)  
-   For Each row As DataRow In table.Rows  
-     For Each col As DataColumn In table.Columns  
-       Console.WriteLine("{0} = {1}", col.ColumnName, row(col))  
-     Next  
-     Console.WriteLine("============================")  
-   Next  
- End Sub  
+  Sub Main()  
+    ' Retrieve the enumerator instance and then the data.  
+    Dim instance As SqlDataSourceEnumerator = _  
+     SqlDataSourceEnumerator.Instance  
+    Dim table As System.Data.DataTable = instance.GetDataSources()  
+  
+    ' Display the contents of the table.  
+    DisplayData(table)  
+  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
+  
+  Private Sub DisplayData(ByVal table As DataTable)  
+    For Each row As DataRow In table.Rows  
+      For Each col As DataColumn In table.Columns  
+        Console.WriteLine("{0} = {1}", col.ColumnName, row(col))  
+      Next  
+      Console.WriteLine("============================")  
+    Next  
+  End Sub  
 End Module  
 ```  
  
 ```csharp  
 using System.Data.Sql;  
- 
+  
 class Program  
 {  
- static void Main()  
- {  
-   // Retrieve the enumerator instance and then the data.  
-   SqlDataSourceEnumerator instance =  
-     SqlDataSourceEnumerator.Instance;  
-   System.Data.DataTable table = instance.GetDataSources();  
- 
-   // Display the contents of the table.  
-   DisplayData(table);  
- 
-   Console.WriteLine("Press any key to continue.");  
-   Console.ReadKey();  
- }  
- 
- private static void DisplayData(System.Data.DataTable table)  
- {  
-   foreach (System.Data.DataRow row in table.Rows)  
-   {  
-     foreach (System.Data.DataColumn col in table.Columns)  
-     {  
-       Console.WriteLine("{0} = {1}", col.ColumnName, row[col]);  
-     }  
-     Console.WriteLine("============================");  
-   }  
- }  
+  static void Main()  
+  {  
+    // Retrieve the enumerator instance and then the data.  
+    SqlDataSourceEnumerator instance =  
+      SqlDataSourceEnumerator.Instance;  
+    System.Data.DataTable table = instance.GetDataSources();  
+  
+    // Display the contents of the table.  
+    DisplayData(table);  
+  
+    Console.WriteLine("Press any key to continue.");  
+    Console.ReadKey();  
+  }  
+  
+  private static void DisplayData(System.Data.DataTable table)  
+  {  
+    foreach (System.Data.DataRow row in table.Rows)  
+    {  
+      foreach (System.Data.DataColumn col in table.Columns)  
+      {  
+        Console.WriteLine("{0} = {1}", col.ColumnName, row[col]);  
+      }  
+      Console.WriteLine("============================");  
+    }  
+  }  
 }  
 ```  
  
@@ -155,48 +155,48 @@ The following console application displays a list of all the available SQL Serve
  
 ```vb  
 Imports System.Data.Sql  
- 
+  
 Module Module1  
- Sub Main()  
-   ' Retrieve the enumerator instance, and  
-   ' then retrieve the data sources.  
-   Dim instance As SqlDataSourceEnumerator = _  
-    SqlDataSourceEnumerator.Instance  
-   Dim table As System.Data.DataTable = instance.GetDataSources()  
- 
-   ' Filter the sources to just show SQL Server 2005 instances.  
-   Dim rows() As DataRow = table.Select("Version LIKE '9%'")  
-   For Each row As DataRow In rows  
-     Console.WriteLine(row("ServerName"))  
-   Next  
-   Console.WriteLine("Press any key to continue.")  
-   Console.ReadKey()  
- End Sub  
+  Sub Main()  
+    ' Retrieve the enumerator instance, and  
+    ' then retrieve the data sources.  
+    Dim instance As SqlDataSourceEnumerator = _  
+     SqlDataSourceEnumerator.Instance  
+    Dim table As System.Data.DataTable = instance.GetDataSources()  
+  
+    ' Filter the sources to just show SQL Server 2005 instances.  
+    Dim rows() As DataRow = table.Select("Version LIKE '9%'")  
+    For Each row As DataRow In rows  
+      Console.WriteLine(row("ServerName"))  
+    Next  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
 End Module  
 ```  
  
 ```csharp  
 using System.Data.Sql;  
- 
+  
 class Program  
 {  
- static void Main()  
- {  
-   // Retrieve the enumerator instance, and  
-   // then retrieve the data sources.  
-   SqlDataSourceEnumerator instance =  
-     SqlDataSourceEnumerator.Instance;  
-   System.Data.DataTable table = instance.GetDataSources();  
- 
-   // Filter the sources to just show SQL Server 2005 instances.  
-   System.Data.DataRow[] rows = table.Select("Version LIKE '9%'");  
-   foreach (System.Data.DataRow row in rows)  
-   {  
-     Console.WriteLine(row["ServerName"]);  
-   }  
-   Console.WriteLine("Press any key to continue.");  
-   Console.ReadKey();  
- }  
+  static void Main()  
+  {  
+    // Retrieve the enumerator instance, and  
+    // then retrieve the data sources.  
+    SqlDataSourceEnumerator instance =  
+      SqlDataSourceEnumerator.Instance;  
+    System.Data.DataTable table = instance.GetDataSources();  
+  
+    // Filter the sources to just show SQL Server 2005 instances.  
+    System.Data.DataRow[] rows = table.Select("Version LIKE '9%'");  
+    foreach (System.Data.DataRow row in rows)  
+    {  
+      Console.WriteLine(row["ServerName"]);  
+    }  
+    Console.WriteLine("Press any key to continue.");  
+    Console.ReadKey();  
+  }  
 }  
 ```  
  

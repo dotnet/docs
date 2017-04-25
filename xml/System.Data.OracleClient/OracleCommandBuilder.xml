@@ -42,21 +42,21 @@ The following example uses <xref:System.Data.OracleClient.OracleCommand>, along 
  
 ```  
 Private Function SelectOracleRows(connection As String, queryString As String, tableName As String) As DataSet  
- 
-  Dim connection As New OracleConnection(connection)  
-  Dim dataAdapter As New OracleDataAdapter()  
-  Dim dataSet As DataSet = New DataSet  
- 
-  dataAdapter.SelectCommand = New OracleCommand(queryString, connection)  
- 
-  Dim cmdBuilder As OracleCommandBuilder = New OracleCommandBuilder(dataAdapter)  
- 
-  connection.Open()  
-  dataAdapter.Fill(dataSet, tableName)  
-     ' Code to modify data in DataSet here   
-     ' Without the OracleCommandBuilder this line would fail.  
-  dataAdapter.Update(dataSet, tableName)  
-  connection.Close()  
+  
+   Dim connection As New OracleConnection(connection)  
+   Dim dataAdapter As New OracleDataAdapter()  
+   Dim dataSet As DataSet = New DataSet  
+  
+   dataAdapter.SelectCommand = New OracleCommand(queryString, connection)  
+  
+   Dim cmdBuilder As OracleCommandBuilder = New OracleCommandBuilder(dataAdapter)  
+  
+   connection.Open()  
+   dataAdapter.Fill(dataSet, tableName)  
+      ' Code to modify data in DataSet here   
+      ' Without the OracleCommandBuilder this line would fail.  
+   dataAdapter.Update(dataSet, tableName)  
+   connection.Close()  
 End Function  
 ```  
  
@@ -65,21 +65,21 @@ End Function
 ```  
 public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQuery, string myTableName)  
 {  
-  OracleConnection myConn = new OracleConnection(myConnection);  
-  OracleDataAdapter myDataAdapter = new OracleDataAdapter();  
-  myDataAdapter.SelectCommand = new OracleCommand(mySelectQuery, myConn);  
-  OracleCommandBuilder cb = new OracleCommandBuilder(myDataAdapter);  
- 
-  myConn.Open();  
-  DataSet ds = new DataSet();  
-  myDataAdapter.Fill(ds, myTableName);  
- 
-  //Code to modify data in DataSet goes here...  
- 
-  //Without the OracleCommandBuilder this line would fail.  
-  myDataAdapter.Update(ds, myTableName);  
-  myConn.Close();  
-  return ds;  
+   OracleConnection myConn = new OracleConnection(myConnection);  
+   OracleDataAdapter myDataAdapter = new OracleDataAdapter();  
+   myDataAdapter.SelectCommand = new OracleCommand(mySelectQuery, myConn);  
+   OracleCommandBuilder cb = new OracleCommandBuilder(myDataAdapter);  
+  
+   myConn.Open();  
+   DataSet ds = new DataSet();  
+   myDataAdapter.Fill(ds, myTableName);  
+  
+   //Code to modify data in DataSet goes here...  
+  
+   //Without the OracleCommandBuilder this line would fail.  
+   myDataAdapter.Update(ds, myTableName);  
+   myConn.Close();  
+   return ds;  
 }  
 ```  
  

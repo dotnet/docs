@@ -95,7 +95,7 @@ For information about how to configure this control so that it generates markup 
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     CssClass="string"  
     Enabled="True|False"  
@@ -106,7 +106,7 @@ For information about how to configure this control so that it generates markup 
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -137,19 +137,19 @@ For information about how to configure this control so that it generates markup 
 >  
         <CurrentNodeStyle />  
         <CurrentNodeTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </CurrentNodeTemplate>  
         <NodeStyle />  
         <NodeTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </NodeTemplate>  
         <PathSeparatorStyle />  
         <PathSeparatorTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </PathSeparatorTemplate>  
         <RootNodeStyle />  
         <RootNodeTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </RootNodeTemplate>  
 </asp:SiteMapPath>  
 ```  
@@ -166,9 +166,9 @@ The previous example uses the default site map provider and a Web.sitemap file w
  
 ```  
 <siteMap>  
- <siteMapNode title="WebForm1" description="WebForm1" url="WebForm1.aspx" >  
-   <siteMapNode title="WebForm2" description="WebForm2" url="WebForm2.aspx"/>  
- </siteMapNode>  
+  <siteMapNode title="WebForm1" description="WebForm1" url="WebForm1.aspx" >  
+    <siteMapNode title="WebForm2" description="WebForm2" url="WebForm2.aspx"/>  
+  </siteMapNode>  
 </siteMap>  
 ```  
  

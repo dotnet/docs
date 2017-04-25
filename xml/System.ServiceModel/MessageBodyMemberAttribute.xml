@@ -100,10 +100,10 @@ The following code example uses the <xref:System.ServiceModel.MessageBodyMemberA
 [MessageContract]  
 public class BankingTransaction  
 {  
- [MessageHeader] public Operation operation;  
- [MessageBodyMember(Order=1)] public Account sourceAccount;  
- [MessageBodyMember(Order=2)] public Account targetAccount;  
- [MessageBodyMember(Order=3)] public int amount;  
+  [MessageHeader] public Operation operation;  
+  [MessageBodyMember(Order=1)] public Account sourceAccount;  
+  [MessageBodyMember(Order=2)] public Account targetAccount;  
+  [MessageBodyMember(Order=3)] public int amount;  
 }  
 ```  
  

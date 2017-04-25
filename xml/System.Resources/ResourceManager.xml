@@ -102,19 +102,19 @@ TimeHeader=The current time is
 You can use a batch file to generate the resource file and embed it into the executable. Here's the batch file to generate an executable by using the C# compiler:  
  
 ```  
- 
+  
 resgen strings.txt  
 csc ShowTime.cs /resource:strings.resources  
- 
+  
 ```  
  
 For the Visual Basic compiler, you can use the following batch file:  
  
 ```  
- 
+  
 resgen strings.txt  
 vbc ShowTime.vb /resource:strings.resources  
- 
+  
 ```  
  
 [!code-csharp[System.Resources.ResourceManager.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/showtime.cs#1)]
@@ -164,11 +164,11 @@ To compile this example, create a batch (.bat) file that contains the following 
 ```  
 resgen Greetings.txt   
 vbc Example.vb /resource:Greetings.resources  
- 
+  
 resgen Greetings.fr-FR.txt  
 Md fr-FR  
 al /embed:Greetings.fr-FR.resources /culture:fr-FR /out:fr-FR\Example.resources.dll  
- 
+  
 resgen Greetings.ru-RU.txt  
 Md ru-RU  
 al /embed:Greetings.ru-RU.resources /culture:ru-RU /out:ru-RU\Example.resources.dll  
@@ -199,18 +199,18 @@ Here's the source code for the example (ShowDate.vb for the Visual Basic version
 To compile this example, create a batch file that contains the following commands and run it from the command prompt. If you're using C#, specify `csc` instead of `vbc` and `showdate.cs` instead of `showdate.vb`.  
  
 ```  
- 
+  
 resgen DateStrings.txt  
 vbc showdate.vb /resource:DateStrings.resources  
- 
+  
 md fr-FR  
 resgen DateStrings.fr-FR.txt  
 al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
- 
+  
 md ru-RU  
 resgen DateStrings.ru-RU.txt  
 al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  
- 
+  
 ```  
  
 There are two ways to retrieve the resources of a specific culture other than the current UI culture:  
@@ -463,18 +463,18 @@ The example requires three text-based resource files, as listed in the following
 You can use the following batch file to compile the Visual Basic example and create an executable named Greet.exe. To compile with C#, change the compiler name from `vbc` to `csc` and the file extension from `.vb` to `.cs`.  
  
 ```  
- 
+  
 resgen GreetingResources.txt  
 vbc Greet.vb /resource: GreetingResources.resources  
- 
+  
 md fr-FR  
 resgen GreetingResources.fr-FR.txt  
 al /out:fr-FR\Greet.resources.dll /culture:fr-FR /embed: GreetingResources.fr-FR.resources   
- 
+  
 md ru-RU  
 resgen GreetingResources.ru-RU.txt  
 al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU.resources  
- 
+  
 ```  
  
 Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version of the code).  
@@ -866,16 +866,16 @@ The following code in a source code file named GetObject.cs (GetObject.vb) then 
 You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.  
  
 ```  
- 
+  
 vbc /t:library UIElements.vb  
 vbc CreateResources.vb /r:UIElements.dll  
 CreateResources  
- 
+  
 resgen UIResources.resx  /r:UIElements.dll  
 vbc GetObject.vb /r:UIElements.dll /resource:UIResources.resources  
- 
+  
 GetObject.exe  
- 
+  
 ```  
  
  ]]></format>
@@ -951,26 +951,26 @@ The resources are consumed by the following app, which sets the current UI cultu
 You can use the following batch file to build and execute the Visual Basic version of the example. If you're using C#, replace `vbc` with `csc`, and replace the `.vb` extension with `.cs`.  
  
 ```  
- 
+  
 vbc /t:library NumberInfo.vb  
- 
+  
 vbc CreateResources.vb /r:NumberInfo.dll  
 CreateResources  
- 
+  
 resgen NumberResources.resx /r:NumberInfo.dll  
- 
+  
 resgen NumberResources.fr.resx /r:Numberinfo.dll  
 Md fr  
 al /embed:NumberResources.fr.resources /culture:fr /t:lib /out:fr\ShowNumbers.resources.dll  
- 
+  
 resgen NumberResources.pt.resx  /r:Numberinfo.dll  
 Md pt  
 al /embed:NumberResources.pt.resources /culture:pt /t:lib /out:pt\ShowNumbers.resources.dll  
- 
+  
 resgen NumberResources.ru.resx /r:Numberinfo.dll  
 Md ru  
 al /embed:NumberResources.ru.resources /culture:ru /t:lib /out:ru\ShowNumbers.resources.dll  
- 
+  
 vbc ShowNumbers.vb /r:NumberInfo.dll /resource:NumberResources.resources  
 ShowNumbers.exe  
 ```  
@@ -1070,7 +1070,7 @@ The resource set that is returned represents the resources that are localized fo
 The following example calls the <xref:System.Resources.ResourceManager.GetResourceSet%2A> method to retrieve culture-specific resources for the French (France) culture. It then enumerates all of the resources in the resource set. It contains the source code for an executable named ShowNumbers.exe. It also includes the following two text file that contain the names of numbers. The first, NumberResources.txt, contains the names of numbers from one to ten in the English language:  
  
 ```  
- 
+  
 one=one  
 two=two  
 three=three  
@@ -1081,27 +1081,27 @@ seven=seven
 eight=eight  
 nine=nine  
 ten=ten  
- 
+  
 ```  
  
 The second, NumberResources.fr-FR.txt, contains the names of numbers from one to four in the French language:  
  
 ```  
- 
+  
 one=un  
 two=deux  
 three=trois  
 four=quatre  
- 
+  
 ```  
  
 You can use a batch file to generate the resource files, embed the English language resource file into the executable, and create a satellite assembly for the French language resources. Here's the batch file to generate an executable by using the Visual Baisc compiler:  
  
 ```  
- 
+  
 resgen NumberResources.txt  
 vbc shownumbers.vb /resource:NumberResources.resources  
- 
+  
 md fr-FR  
 resgen NumberResources.fr-FR.txt  
 al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr-FR.resources  
@@ -1110,14 +1110,14 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
 For the C# compiler, you can use the following batch file:  
  
 ```  
- 
+  
 resgen NumberResources.txt  
 csc shownumbers.cs /resource:NumberResources.resources  
- 
+  
 md fr-FR  
 resgen NumberResources.fr-FR.txt  
 al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr-FR.resources  
- 
+  
 ```  
  
 [!code-csharp[System.Resources.ResourceManager.GetResourceSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.getresourceset/cs/shownumbers.cs#1)]
@@ -1226,14 +1226,14 @@ The following code from a file named GetStream.cs (for C#) or GetStream.vb (for 
 You can use the following batch file to build the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`..  
  
 ```  
- 
+  
 csc CreateResources.cs  
 CreateResources  
- 
+  
 resgen AppResources.resx  
- 
+  
 csc GetStream.cs /resource:AppResources.resources  
- 
+  
 ```  
  
  ]]></format>
@@ -1361,11 +1361,11 @@ You can use the following batch file to compile the C# example. For Visual Basic
 ```  
 resgen DateStrings.txt  
 csc showdate.cs /resource:DateStrings.resources  
- 
+  
 md fr-FR  
 resgen DateStrings.fr-FR.txt  
 al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
- 
+  
 md ru-RU  
 resgen DateStrings.ru-RU.txt  
 al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  
@@ -1456,11 +1456,11 @@ You can use the following batch file to compile the Visual Basic example. To com
 ```  
 resgen DateStrings.txt  
 vbc showdate.vb /resource:DateStrings.resources  
- 
+  
 md fr-FR  
 resgen DateStrings.fr-FR.txt  
 al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
- 
+  
 md ru-RU  
 resgen DateStrings.ru-RU.txt  
 al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  

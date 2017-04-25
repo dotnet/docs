@@ -66,7 +66,7 @@ This example shows how to use the Text property to set the initial text contents
  
 ```xaml  
 <TextBox Name="tbSettingText">  
- Initial text contents of the TextBox.  
+  Initial text contents of the TextBox.  
 </TextBox>  
 ```  
  
@@ -1147,7 +1147,7 @@ When used in data-binding scenarios, this property uses the default update behav
  
 ```  
 <object>  
- String  
+  String  
 </object>  
 ```  
  

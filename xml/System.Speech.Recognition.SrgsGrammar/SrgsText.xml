@@ -29,49 +29,49 @@ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsText> class represents the t
 The following C# code example demonstrates how to use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsText> class to modify the textual contents of  <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. The example changes the initial text values of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects (`Large`, `Larger`, and `Largest`) to `Small`, `Medium`,  and `Large`, respectively.  
  
 ```csharp  
- 
+  
 // Create SrgsItem objects and specify their text.  
 SrgsItem smallItem = new SrgsItem("Large");  
 SrgsItem mediumItem = new SrgsItem("Larger");  
 SrgsItem largeItem = new SrgsItem("Largest");  
- 
+  
 SrgsText textOfItem = null;  
- 
+  
 //  Change the text of smallItem.  
 if (smallItem.Elements[0] is SrgsText)  
 {  
- textOfItem = smallItem.Elements[0] as SrgsText;  
- textOfItem.Text = "Small";  
+  textOfItem = smallItem.Elements[0] as SrgsText;  
+  textOfItem.Text = "Small";  
 }  
- 
+  
 //  Change the text of mediumItem.  
 if (mediumItem.Elements[0] is SrgsText)  
 {  
- textOfItem = mediumItem.Elements[0] as SrgsText;  
- textOfItem.Text = "Medium";  
+  textOfItem = mediumItem.Elements[0] as SrgsText;  
+  textOfItem.Text = "Medium";  
 }  
- 
+  
 // Change the text of largeItem.  
 if (largeItem.Elements[0] is SrgsText)  
 {  
- textOfItem = largeItem.Elements[0] as SrgsText;  
- textOfItem.Text = "Large";  
+  textOfItem = largeItem.Elements[0] as SrgsText;  
+  textOfItem.Text = "Large";  
 }  
- 
+  
 // Create an SrgsOneOf object and add smallItem, mediumItem,   
 // and largeItem as alternatives.  
 SrgsOneOf itemSize = new SrgsOneOf(new SrgsItem[]   
- { smallItem, mediumItem, largeItem });  
- 
+  { smallItem, mediumItem, largeItem });  
+  
 // Create a new SrgsRule from the SrgsOneOf object, and specifiy its identifier.  
 SrgsRule size = new SrgsRule("Sizes", itemSize);  
- 
+  
 // Create an SrgsDocument object.  
 // Add the SrgsRule object to the collection of rules and make it the root rule.  
 SrgsDocument document = new SrgsDocument();   
 document.Rules.Add(size);  
 document.Root = size;  
- 
+  
 // Write the SrgsDocument to an XML grammar file.  
 string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
 XmlWriter writer = XmlWriter.Create(srgsDocumentFile);  
@@ -84,11 +84,11 @@ The following shows how the modified text of the  <xref:System.Speech.Recognitio
 ```xml  
 <!-- SRGS XML Fragment -->  
 <one-of>  
- <item>Small</item>  
- <item>Medium</item>  
- <item>Large</item>  
+  <item>Small</item>  
+  <item>Medium</item>  
+  <item>Large</item>  
 </one-of>  
- 
+  
 ```  
  
  ]]></format>

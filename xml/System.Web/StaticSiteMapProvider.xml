@@ -26,11 +26,11 @@ The <xref:System.Web.StaticSiteMapProvider> class stores its <xref:System.Web.Si
  
 ```  
 <sitemap>  
- <sitemapnode title="Home" description="Home" url="default.aspx" >  
-   <sitemapnode title="Catalog" description="Our catalog" url="catalog.aspx"/>  
-   <sitemapnode title="About Us" description="All about our company" url="aboutus.aspx"/>  
-   <sitemapnode title="Driving Directions" description="Directions to our store" url="aboutus.aspx"/>  
- </sitemapnode>  
+  <sitemapnode title="Home" description="Home" url="default.aspx" >  
+    <sitemapnode title="Catalog" description="Our catalog" url="catalog.aspx"/>  
+    <sitemapnode title="About Us" description="All about our company" url="aboutus.aspx"/>  
+    <sitemapnode title="Driving Directions" description="Directions to our store" url="aboutus.aspx"/>  
+  </sitemapnode>  
 </sitemap>  
 ```  
  
@@ -49,10 +49,10 @@ The following code example demonstrates how you to extend the <xref:System.Web.S
  
 ```  
 NODEID URL            NAME       PARENTNODEID  
----------------------------------------------  
-1      default.aspx   Default    <NULL>  
-2      catalog.aspx   Catalog    1  
-3      aboutus.aspx   Contact Us 1  
+ ---------------------------------------------  
+ 1      default.aspx   Default    <NULL>  
+ 2      catalog.aspx   Catalog    1  
+ 3      aboutus.aspx   Contact Us 1  
 ...  
 ```  
  
@@ -66,16 +66,16 @@ Finally, the `AccessSiteMapProvider` is configured as the default provider in th
  
 ```  
 <configuration>  
- <system.web>  
-   <siteMap defaultProvider="AccessSiteMapProvider">  
-    <providers>  
-      <add   
-        name="AccessSiteMapProvider"  
-        type="Samples.AspNet.AccessSiteMapProvider,Samples.AspNet "  
-        accessSiteMapConnectionString="PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA SOURCE=sitemap.mdb "/>  
-    </providers>   
-   </siteMap>  
- </system.web>  
+  <system.web>  
+    <siteMap defaultProvider="AccessSiteMapProvider">  
+     <providers>  
+       <add   
+         name="AccessSiteMapProvider"  
+         type="Samples.AspNet.AccessSiteMapProvider,Samples.AspNet "  
+         accessSiteMapConnectionString="PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA SOURCE=sitemap.mdb "/>  
+     </providers>   
+    </siteMap>  
+  </system.web>  
 </configuration>  
 ```  
  

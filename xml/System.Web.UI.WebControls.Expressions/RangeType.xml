@@ -34,9 +34,9 @@ The following example shows how to search the ListPrice column in the Products t
  
 ```  
 <asp:RangeExpression DataField="ListPrice"    
-   MinType="Inclusive" MaxType="Exclusive">  
- <asp:ControlParameter ControlID="FromTextBox" />  
- <asp:ControlParameter ControlID="ToTextBox" />  
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
 </asp:RangeExpression>  
 ```  
  

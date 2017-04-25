@@ -76,13 +76,13 @@ This change can be prevented from breaking the applications that depend on the o
 If application can then use the following configuration file to restore the version 1.0 behavior.  
  
 ```xml  
- 
+  
 <configuration>  
-  <runtime>  
-     <AppContextSwitchOverrides value="StringLibrary.DoNotUseCultureSensitiveComparison=true" />   
-  </runtime>  
+   <runtime>  
+      <AppContextSwitchOverrides value="StringLibrary.DoNotUseCultureSensitiveComparison=true" />   
+   </runtime>  
 </configuration>  
- 
+  
 ```  
  
 When the application is run with the configuration file present, it produces the following output:  
@@ -131,13 +131,13 @@ The following is a simple application that passes a file URI to the <xref:System
 To restore the method's previous behavior and prevent the exception, you can add the `Switch.System.IO.UseLegacyPathHandling` switch to the application configuration file for the example:  
  
 ```xml  
- 
+  
 <configuration>  
-   <runtime>  
-       <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />    
-   </runtime>  
+    <runtime>  
+        <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />    
+    </runtime>  
 </configuration>  
- 
+  
 ```  
  
  ]]></format>

@@ -44,23 +44,23 @@ XML names include a namespace and a local name. A *fully qualified name* is the 
 <xref:System.Xml.Linq.XName> does not contain any public constructors. Instead, this class provides an implicit conversion from <xref:System.String> that allows you to create an <xref:System.Xml.Linq.XName>. The most common place you use this conversion is when constructing an element or attribute: The first argument to the <xref:System.Xml.Linq.XElement> constructor is an <xref:System.Xml.Linq.XName>. By passing a string, you take advantage of the implicit conversion. The following code creates an element with a name that is in no namespace:  
  
 ```csharp  
- 
-               XElement root = new XElement("ElementName", "content");  
+  
+                XElement root = new XElement("ElementName", "content");  
 Console.WriteLine(root);  
 ```  
  
 In Visual Basic, it is more appropriate to use XML literals:  
  
 ```vb  
- 
-               Dim root As XElement = <ElementName>content</ElementName>  
+  
+                Dim root As XElement = <ElementName>content</ElementName>  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <ElementName>content</ElementName>  
 ```  
  
@@ -78,28 +78,28 @@ For C#, the recommended approach for creating an <xref:System.Xml.Linq.XName> in
 For Visual Basic, the recommended approach is to use XML literals and global namespace declarations to create XML that is in a namespace.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "ElementName", "content");  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <ElementName>content</ElementName>  
-       Console.WriteLine(root)  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <ElementName>content</ElementName>  
+        Console.WriteLine(root)  
+    End Sub  
 End Module  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
  
@@ -107,21 +107,21 @@ This example produces the following output:
 The <xref:System.Xml.Linq.XName.Namespace%2A> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace%2A> property will be set to <xref:System.Xml.Linq.XNamespace.None%2A>. The following code demonstrates this:  
  
 ```csharp  
- 
-               XElement root = new XElement("ElementName", "content");  
+  
+                XElement root = new XElement("ElementName", "content");  
 if (root.Name.Namespace == XNamespace.None)  
-   Console.WriteLine("The element is in no namespace.");  
+    Console.WriteLine("The element is in no namespace.");  
 else  
-   Console.WriteLine("The element is in a namespace.");  
+    Console.WriteLine("The element is in a namespace.");  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <ElementName>content</ElementName>  
+  
+                Dim root As XElement = <ElementName>content</ElementName>  
 If (root.Name.Namespace Is XNamespace.None) Then  
-   Console.WriteLine("The element is in no namespace.")  
+    Console.WriteLine("The element is in no namespace.")  
 Else  
-   Console.WriteLine("The element is in a namespace.")  
+    Console.WriteLine("The element is in a namespace.")  
 End If  
 ```  
  
@@ -135,21 +135,21 @@ The element is in no namespace.
 You can also create an <xref:System.Xml.Linq.XName> from a expanded XML name in the form `{namespace}localname`:  
  
 ```csharp  
- 
-               XElement root = new XElement("{http://www.adventure-works.com}ElementName", "content");  
+  
+                XElement root = new XElement("{http://www.adventure-works.com}ElementName", "content");  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = New XElement("{http://www.adventure-works.com}ElementName", "content")  
+  
+                Dim root As XElement = New XElement("{http://www.adventure-works.com}ElementName", "content")  
 Console.WriteLine(root)  
 ```  
  
 This example produces the following output:  
  
 ```xml  
- 
+  
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
  
@@ -251,11 +251,11 @@ Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref
 The following example shows the use of this method.  
  
 ```csharp  
- 
-               XName name = XName.Get("{http://www.adventure-works.com}Root");  
+  
+                XName name = XName.Get("{http://www.adventure-works.com}Root");  
 XElement el = new XElement(name, "content");  
 Console.WriteLine(el);  
- 
+  
 // This is the preferred approach for specifying the XName in the  
 // constructor of XElement.  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -264,20 +264,20 @@ Console.WriteLine(el2);
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim name As XName = XName.Get("{http://www.adventure-works.com}Root")  
-       Dim el As XElement = New XElement(name, "content")  
-       Console.WriteLine(el)  
- 
-       ' The preferred approach for specifying an XName in a namespace  
-       ' for Visual Basic is to import a global namespace.  
-       Dim el2 As XElement = <Root>content</Root>  
-       Console.WriteLine(el2)  
-   End Sub  
+    Sub Main()  
+        Dim name As XName = XName.Get("{http://www.adventure-works.com}Root")  
+        Dim el As XElement = New XElement(name, "content")  
+        Console.WriteLine(el)  
+  
+        ' The preferred approach for specifying an XName in a namespace  
+        ' for Visual Basic is to import a global namespace.  
+        Dim el2 As XElement = <Root>content</Root>  
+        Console.WriteLine(el2)  
+    End Sub  
 End Module  
 ```  
  
@@ -339,11 +339,11 @@ Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref
 The following example shows the use of this method.  
  
 ```csharp  
- 
-               XName name = XName.Get("Root", "http://www.adventure-works.com");  
+  
+                XName name = XName.Get("Root", "http://www.adventure-works.com");  
 XElement el = new XElement(name, "content");  
 Console.WriteLine(el);  
- 
+  
 // This is the preferred form.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement el2 = new XElement(aw + "Root", "content");  
@@ -351,20 +351,20 @@ Console.WriteLine(el2);
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim name As XName = XName.Get("{http://www.adventure-works.com}Root")  
-       Dim el As XElement = New XElement(name, "content")  
-       Console.WriteLine(el)  
- 
-       ' The preferred approach for specifying an XName in a namespace  
-       ' for Visual Basic is to import a global namespace.  
-       Dim el2 As XElement = <Root>content</Root>  
-       Console.WriteLine(el2)  
-   End Sub  
+    Sub Main()  
+        Dim name As XName = XName.Get("{http://www.adventure-works.com}Root")  
+        Dim el As XElement = New XElement(name, "content")  
+        Console.WriteLine(el)  
+  
+        ' The preferred approach for specifying an XName in a namespace  
+        ' for Visual Basic is to import a global namespace.  
+        Dim el2 As XElement = <Root>content</Root>  
+        Console.WriteLine(el2)  
+    End Sub  
 End Module  
 ```  
  
@@ -452,8 +452,8 @@ This property is guaranteed to not be `null`.
 The following example shows the use of this property.  
  
 ```csharp  
- 
-               XNamespace ns = "http://www.adventure-works.com";  
+  
+                XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  
@@ -461,16 +461,16 @@ Console.WriteLine(root.Name.Namespace);
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <Root/>  
-       Console.WriteLine(root.Name)  
-       Console.WriteLine(root.Name.LocalName)  
-       Console.WriteLine(root.Name.Namespace)  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <Root/>  
+        Console.WriteLine(root.Name)  
+        Console.WriteLine(root.Name.LocalName)  
+        Console.WriteLine(root.Name.Namespace)  
+    End Sub  
 End Module  
 ```  
  
@@ -523,8 +523,8 @@ The <xref:System.Xml.Linq.XName.Namespace%2A> property is guaranteed to not be `
 The following example shows the use of this property.  
  
 ```csharp  
- 
-               XNamespace ns = "http://www.adventure-works.com";  
+  
+                XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  
@@ -532,16 +532,16 @@ Console.WriteLine(root.Name.Namespace);
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <Root/>  
-       Console.WriteLine(root.Name)  
-       Console.WriteLine(root.Name.LocalName)  
-       Console.WriteLine(root.Name.Namespace)  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <Root/>  
+        Console.WriteLine(root.Name)  
+        Console.WriteLine(root.Name.LocalName)  
+        Console.WriteLine(root.Name.Namespace)  
+    End Sub  
 End Module  
 ```  
  
@@ -594,21 +594,21 @@ This is a convenience property to get the namespace name from an <xref:System.Xm
 This example creates an element in a namespace, and then prints the element's namespace.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root.Name.NamespaceName);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <Root/>  
-       Console.WriteLine(root.Name.NamespaceName)  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <Root/>  
+        Console.WriteLine(root.Name.NamespaceName)  
+    End Sub  
 End Module  
 ```  
  
@@ -666,27 +666,27 @@ The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False
 The following example shows some comparisons between <xref:System.Xml.Linq.XName> objects and strings.  
  
 ```csharp  
- 
-               XName xn;  
+  
+                XName xn;  
 xn = XName.Get("Root");  
 Console.WriteLine(xn == "Root");  
- 
+  
 xn = XName.Get("Root", "http://www.adventure-works.com");  
 Console.WriteLine(xn == "{http://www.adventure-works.com}Root");  
- 
+  
 XElement root = new XElement("Root", "content");  
 Console.WriteLine(root.Name == "Root");  
 ```  
  
 ```vb  
- 
-               Dim xn As XName  
+  
+                Dim xn As XName  
 xn = XName.Get("Root")  
 Console.WriteLine(xn = "Root")  
- 
+  
 xn = XName.Get("Root", "http://www.adventure-works.com")  
 Console.WriteLine(xn = "{http://www.adventure-works.com}Root")  
- 
+  
 Dim root As XElement = New XElement("Root", "content")  
 Console.WriteLine(root.Name = "Root")  
 ```  
@@ -784,28 +784,28 @@ The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False
 The following C# example compares an <xref:System.Xml.Linq.XName> object to a string, which invokes this operator.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root", "content");  
- 
+  
 Console.WriteLine(root.Name != "{http://www.adventure-works.com}Root");  
- 
+  
 // the following is the preferred idiom  
 Console.WriteLine(root.Name != aw + "Root");  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <Root>content</Root>  
-       Console.WriteLine(root.Name <> "{http://www.adventure-works.com}Root")  
- 
-       ' the following is the preferred idiom  
-       Console.WriteLine(root.Name <> GetXmlNamespace() + "Root")  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <Root>content</Root>  
+        Console.WriteLine(root.Name <> "{http://www.adventure-works.com}Root")  
+  
+        ' the following is the preferred idiom  
+        Console.WriteLine(root.Name <> GetXmlNamespace() + "Root")  
+    End Sub  
 End Module  
 ```  
  
@@ -921,8 +921,8 @@ This method is used internally to serialize object graphs that contain LINQ to X
 The following example calls <xref:System.Console.WriteLine%2A>, passing an <xref:System.Xml.Linq.XName>. This causes the <xref:System.Xml.Linq.XName.ToString%2A> method to be called.  
  
 ```csharp  
- 
-               XNamespace ns = "http://www.adventure-works.com";  
+  
+                XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  
@@ -931,14 +931,14 @@ Console.WriteLine(root.Name.Namespace);
  
 ```vb  
 Imports <xmlns="http://www.adventure-works.com">  
- 
+  
 Module Module1  
-   Sub Main()  
-       Dim root As XElement = <Root>content</Root>  
-       Console.WriteLine(root.Name)  
-       Console.WriteLine(root.Name.LocalName)  
-       Console.WriteLine(root.Name.Namespace)  
-   End Sub  
+    Sub Main()  
+        Dim root As XElement = <Root>content</Root>  
+        Console.WriteLine(root.Name)  
+        Console.WriteLine(root.Name.LocalName)  
+        Console.WriteLine(root.Name.Namespace)  
+    End Sub  
 End Module  
 ```  
  

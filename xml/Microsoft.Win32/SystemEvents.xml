@@ -499,28 +499,28 @@ If you want to perform some special tasks before <xref:System.Windows.Forms.Form
  
 ```vb  
 Private Shared WM_QUERYENDSESSION As Integer = &H11  
-Private Shared systemShutdown As Boolean = False  
-Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)  
-    If m.Msg = WM_QUERYENDSESSION Then  
-        MessageBox.Show("queryendsession: this is a logoff, shutdown, or reboot")  
-        systemShutdown = True  
-    End If  
-    ' If this is WM_QUERYENDSESSION, the closing event should be raised in the base WndProc.  
-    MyBase.WndProc(m)  
-End Sub 'WndProc   
-Private Sub Form1_Closing(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing  
-    If (systemShutdown) Then  
-    ' Reset the variable because the user might cancel the shutdown.  
-        systemShutdown = False  
-        If (System.Windows.Forms.DialogResult.Yes = _  
-                MessageBox.Show("My application", "Do you want to save your work before logging off?", MessageBoxButtons.YesNo)) Then  
-                e.Cancel = True  
-        Else  
-                e.Cancel = False  
-        End If  
-    End If  
-End Sub  
- 
+ Private Shared systemShutdown As Boolean = False  
+ Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)  
+     If m.Msg = WM_QUERYENDSESSION Then  
+         MessageBox.Show("queryendsession: this is a logoff, shutdown, or reboot")  
+         systemShutdown = True  
+     End If  
+     ' If this is WM_QUERYENDSESSION, the closing event should be raised in the base WndProc.  
+     MyBase.WndProc(m)  
+ End Sub 'WndProc   
+ Private Sub Form1_Closing(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing  
+     If (systemShutdown) Then  
+     ' Reset the variable because the user might cancel the shutdown.  
+         systemShutdown = False  
+         If (System.Windows.Forms.DialogResult.Yes = _  
+                 MessageBox.Show("My application", "Do you want to save your work before logging off?", MessageBoxButtons.YesNo)) Then  
+                 e.Cancel = True  
+         Else  
+                 e.Cancel = False  
+         End If  
+     End If  
+ End Sub  
+  
 ```  
  
 ```csharp  
@@ -528,38 +528,38 @@ private static int WM_QUERYENDSESSION = 0x11;
 private static bool systemShutdown = false;  
 protected override void WndProc(ref System.Windows.Forms.Message m)  
 {  
-   if (m.Msg==WM_QUERYENDSESSION)  
-   {  
-       MessageBox.Show("queryendsession: this is a logoff, shutdown, or reboot");  
-       systemShutdown = true;  
-   }  
- 
-   // If this is WM_QUERYENDSESSION, the closing event should be  
-   // raised in the base WndProc.  
-   base.WndProc(ref m);  
- 
+    if (m.Msg==WM_QUERYENDSESSION)  
+    {  
+        MessageBox.Show("queryendsession: this is a logoff, shutdown, or reboot");  
+        systemShutdown = true;  
+    }  
+  
+    // If this is WM_QUERYENDSESSION, the closing event should be  
+    // raised in the base WndProc.  
+    base.WndProc(ref m);  
+  
 } //WndProc   
- 
+  
 private void Form1_Closing(  
-   System.Object sender,   
-   System.ComponentModel.CancelEventArgs e)  
+    System.Object sender,   
+    System.ComponentModel.CancelEventArgs e)  
 {  
-   if (systemShutdown)  
-       // Reset the variable because the user might cancel the   
-       // shutdown.  
-   {  
-       systemShutdown = false;  
-       if (DialogResult.Yes==MessageBox.Show("My application",   
-           "Do you want to save your work before logging off?",   
-           MessageBoxButtons.YesNo))  
-       {  
-           e.Cancel = true;  
-       }  
-       else  
-       {  
-           e.Cancel = false;  
-       }  
-   }  
+    if (systemShutdown)  
+        // Reset the variable because the user might cancel the   
+        // shutdown.  
+    {  
+        systemShutdown = false;  
+        if (DialogResult.Yes==MessageBox.Show("My application",   
+            "Do you want to save your work before logging off?",   
+            MessageBoxButtons.YesNo))  
+        {  
+            e.Cancel = true;  
+        }  
+        else  
+        {  
+            e.Cancel = false;  
+        }  
+    }  
 }  
 ```  
  

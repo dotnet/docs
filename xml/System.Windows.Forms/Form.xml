@@ -5809,7 +5809,7 @@ private void Form1_Shown(object sender, EventArgs e)
  
 ```vb  
 Private  Sub Form1_Shown(ByVal sender As Object, ByVal e As EventArgs)  
-           Me.WindowState = System.Windows.Forms.FormWindowState.Maximized  
+            Me.WindowState = System.Windows.Forms.FormWindowState.Maximized  
 End Sub  
 ```  
  

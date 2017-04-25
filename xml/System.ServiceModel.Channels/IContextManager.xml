@@ -23,14 +23,14 @@ For channels that use <xref:System.ServiceModel.WSHttpContextBinding> with the <
 ```csharp  
 using (new OperationContextScope((IContextChannel)channel))  
 {  
-   channel.MyChannel("Test");  
-   ContextMessageProperty context;  
-   if (ContextMessageProperty.TryGet(OperationContext.Current.IncomingMessageProperties, out context))  
-   {  
-       Console.WriteLine(context.Count);  
-   }  
+    channel.MyChannel("Test");  
+    ContextMessageProperty context;  
+    if (ContextMessageProperty.TryGet(OperationContext.Current.IncomingMessageProperties, out context))  
+    {  
+        Console.WriteLine(context.Count);  
+    }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -110,7 +110,7 @@ IDictionary<string, string> context;
 CalculatorProxy proxy;  
 IContextManager cm = proxy.InnerChannel.GetProperty<IContextManager>();  
 if (cm != null)  
-   context = cm.GetContext();  
+    context = cm.GetContext();  
 ```  
  
  ]]></format>
@@ -146,7 +146,7 @@ IDictionary<string, string> context;
 CalculatorProxy proxy;  
 IContextManager cm = proxy.InnerChannel.GetProperty<IContextManager>();  
 if (cm != null)  
-   cm.SetContext(context);  
+    cm.SetContext(context);  
 ```  
  
  ]]></format>

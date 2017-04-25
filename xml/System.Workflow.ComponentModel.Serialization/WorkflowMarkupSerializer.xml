@@ -793,16 +793,16 @@ The following example is XAML code that contains a code example that would be co
  
 ```  
 <CodeActivity x:Name="codeActivity1" ExecuteCode="methodName1">  
- <x:Code><![CDATA[  
-     void methodName1(object sender, EventArgs e)   
-     {  
-     }  
+  <x:Code><![CDATA[  
+      void methodName1(object sender, EventArgs e)   
+      {  
+      }  
   ]]]><![CDATA[]></x:Code>  
 </CodeActivity>  
 ```  
-  
- The following example shows how to set the same value for the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XCodeProperty> dependency property programmatically.  
-  
+ 
+The following example shows how to set the same value for the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XCodeProperty> dependency property programmatically.  
+ 
 ```csharp  
 CodeActivity code1 = new CodeActivity();  
   
@@ -813,7 +813,7 @@ code1.SetValue(WorkflowMarkupSerializer.XCodeProperty,
                         }));  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -70,7 +70,7 @@ The following code example demonstrates how to create a new instance of the <xre
 private ConditionedActivityGroup BookingCAG;  
 private CodeActivity Car;  
 private CodeActivity Airline;  
- 
+  
 this.CanModifyActivities = true;  
 CodeCondition codecondition1 = new CodeCondition();  
 CodeCondition codecondition2 = new CodeCondition();  

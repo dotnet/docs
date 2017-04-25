@@ -29,14 +29,14 @@ The following XAML snippet shows how to use the ArgumentToExpressionConverter in
  
 ```  
 <sapv:ExpressionTextBox   
-   Expression="{Binding Path=ModelItem.SampleValue,   
-                        Mode=TwoWay,   
-                        Converter={StaticResource ArgumentToExpressionConverter},   
-                        ConverterParameter=In }"  
-   ExpressionType="s:String"  
-   OwnerActivity="{Binding Path=ModelItem}"  
-  />  
- 
+    Expression="{Binding Path=ModelItem.SampleValue,   
+                         Mode=TwoWay,   
+                         Converter={StaticResource ArgumentToExpressionConverter},   
+                         ConverterParameter=In }"  
+    ExpressionType="s:String"  
+    OwnerActivity="{Binding Path=ModelItem}"  
+   />  
+  
 ```  
  
  ]]></format>

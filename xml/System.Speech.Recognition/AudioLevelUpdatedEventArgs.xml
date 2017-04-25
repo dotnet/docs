@@ -30,26 +30,26 @@ The following example adds an event handler to a <xref:System.Speech.Recognition
 <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs> derives from <xref:System.EventArgs>.  
  
 ```csharp  
- 
+  
 private SpeechRecognitionEngine sre;  
- 
+  
 // Initialize the SpeechRecognitionEngine object.   
 private void Initialize()  
 {  
- sre = new SpeechRecognitionEngine();  
- 
- // Add an event handler for the AudioLevelUpdated event.  
- sre.AudioLevelUpdated += new EventHandler<AudioLevelUpdatedEventArgs>(sre_AudioLevelUpdated);  
- 
- // Add other initialization code here.  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add an event handler for the AudioLevelUpdated event.  
+  sre.AudioLevelUpdated += new EventHandler<AudioLevelUpdatedEventArgs>(sre_AudioLevelUpdated);  
+  
+  // Add other initialization code here.  
 }  
- 
+  
 // Write the audio level to the console when the AudioLevelUpdated event is raised.  
 void sre_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)  
 {  
- Console.WriteLine("The audio level is now: {0}.", e.AudioLevel);  
+  Console.WriteLine("The audio level is now: {0}.", e.AudioLevel);  
 }  
- 
+  
 ```  
  
  ]]></format>

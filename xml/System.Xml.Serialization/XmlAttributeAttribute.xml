@@ -40,18 +40,18 @@ There are two special attributes that can be set with the <xref:System.Xml.Seria
  
 ```csharp  
 [XmlAttribute("xml:lang")]  
-public string Lang;  
-// Set this to 'default' or 'preserve'.  
-[XmlAttribute("space",   
-Namespace = "http://www.w3.org/XML/1998/namespace")]  
-public string Space   
-[Visual Basic]  
-<XmlAttribute("xml:lang")> _  
-Public Lang As String   
-' Set this to 'default' or 'preserve'.  
-<XmlAttribute("space", _  
-Namespace:= "http://www.w3.org/XML/1998/namespace")> _  
-Public Space As String  
+ public string Lang;  
+ // Set this to 'default' or 'preserve'.  
+ [XmlAttribute("space",   
+ Namespace = "http://www.w3.org/XML/1998/namespace")]  
+ public string Space   
+ [Visual Basic]  
+ <XmlAttribute("xml:lang")> _  
+ Public Lang As String   
+ ' Set this to 'default' or 'preserve'.  
+ <XmlAttribute("space", _  
+ Namespace:= "http://www.w3.org/XML/1998/namespace")> _  
+ Public Space As String  
 ```  
  
 For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
@@ -379,8 +379,8 @@ The default setting, `XmlSchemaForm.None`, instructs the <xref:System.Xml.Serial
 ```  
 <schema elementFormDefault="qualified"   
 attributeFormDefault="unqualified"... >  
-  <element name="Name"/>  
-  <attribute name="Number"/>  
+   <element name="Name"/>  
+   <attribute name="Number"/>  
 </schema>  
 ```  
  

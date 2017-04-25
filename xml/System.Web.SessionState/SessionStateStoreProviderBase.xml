@@ -45,21 +45,21 @@ The following code example shows the Web.config file for an ASP.NET application 
  
 ```  
 <configuration>  
- <connectionStrings>  
-   <add name="OdbcSessionServices" connectionString="DSN=SessionState;" />  
- </connectionStrings>  
- 
- <system.web>  
-   <sessionState   
-     mode="Custom"  
-     customProvider="OdbcSessionProvider">  
-     <providers>  
-       <add name="OdbcSessionProvider"  
-            type="Samples.AspNet.Session.OdbcSessionStateStore"  
-            connectionStringName="OdbcSessionServices" />  
-     </providers>  
-   </sessionState>  
- </system.web>  
+  <connectionStrings>  
+    <add name="OdbcSessionServices" connectionString="DSN=SessionState;" />  
+  </connectionStrings>  
+  
+  <system.web>  
+    <sessionState   
+      mode="Custom"  
+      customProvider="OdbcSessionProvider">  
+      <providers>  
+        <add name="OdbcSessionProvider"  
+             type="Samples.AspNet.Session.OdbcSessionStateStore"  
+             connectionStringName="OdbcSessionServices" />  
+      </providers>  
+    </sessionState>  
+  </system.web>  
 </configuration>  
 ```  
  

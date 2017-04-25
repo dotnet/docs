@@ -182,16 +182,16 @@ The following example displays each <xref:System.Data.OleDb.OleDbError> within t
  
 ```csharp  
 public void DisplayOleDbErrorCollection(OleDbException myException)   
- {  
-    for (int i=0; i < myException.Errors.Count; i++)  
-    {  
-       MessageBox.Show("Index #" + i + "\n" +  
-              "Message: " + myException.Errors[i].Message + "\n" +  
-              "Native: " + myException.Errors[i].NativeError.ToString() + "\n" +  
-              "Source: " + myException.Errors[i].Source + "\n" +  
-              "SQL: " + myException.Errors[i].SQLState + "\n");  
-    }  
- }  
+  {  
+     for (int i=0; i < myException.Errors.Count; i++)  
+     {  
+        MessageBox.Show("Index #" + i + "\n" +  
+               "Message: " + myException.Errors[i].Message + "\n" +  
+               "Native: " + myException.Errors[i].NativeError.ToString() + "\n" +  
+               "Source: " + myException.Errors[i].Source + "\n" +  
+               "SQL: " + myException.Errors[i].SQLState + "\n");  
+     }  
+  }  
 ```  
  
  ]]></format>

@@ -52,11 +52,11 @@ The following example creates a new <xref:System.Speech.Synthesis.PromptBuilder>
  
 ```csharp  
 using System.Speech.Synthesis;  
- 
+  
 public void MySimpleText ()  
 {  
-   PromptBuilder builder = new PromptBuilder ();  
-   builder.AppendText("Hello world!");  
+    PromptBuilder builder = new PromptBuilder ();  
+    builder.AppendText("Hello world!");  
 }  
 ```  
  
@@ -64,8 +64,8 @@ The following markup shows the equivalent in Speech Synthesis Markup Language (S
  
 ```xml  
 <speak version="1.0"  
-xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">  
- Hello world!  
+ xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">  
+  Hello world!  
 </speak>  
 ```  
  
@@ -113,11 +113,11 @@ The example that follows creates a <xref:System.Speech.Synthesis.PromptBuilder> 
  
 ```csharp  
 using System.Speech.Synthesis;  
- 
+  
 public void MySimpleText ()  
 {  
-   PromptBuilder builder = new PromptBuilder(new System.Globalization.CultureInfo("en-US"));  
-   builder.AppendText("Hello world!");  
+    PromptBuilder builder = new PromptBuilder(new System.Globalization.CultureInfo("en-US"));  
+    builder.AppendText("Hello world!");  
 }  
 ```  
  
@@ -125,8 +125,8 @@ The following markup shows the equivalent SSML:
  
 ```xml  
 <speak version="1.0"  
-xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">  
- Hello world!  
+ xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">  
+  Hello world!  
 </speak>  
 ```  
  
@@ -181,13 +181,13 @@ The following example initializes a new instance of the <xref:System.Speech.Synt
  
 ```csharp  
 using System.Speech.PromptBuilder;  
- 
+  
 public void SimpleConcatenation()  
 {  
-   // Add a prompt fragment from a .wav file.  
-   PromptBuilder builder = new PromptBuilder ();  
-   builder.AppendText("How are you today?");  
-   builder.AppendAudio(new Uri ("http://www.speech.microsoft.com/ding.wav"));  
+    // Add a prompt fragment from a .wav file.  
+    PromptBuilder builder = new PromptBuilder ();  
+    builder.AppendText("How are you today?");  
+    builder.AppendAudio(new Uri ("http://www.speech.microsoft.com/ding.wav"));  
 }  
 ```  
  
@@ -195,11 +195,11 @@ The following markup shows the equivalent SSML markup.
  
 ```xml  
 <speak xmlns="http://www.w3.org/2001/10/synthesis"  
-      xmlns:ms="http://www.microsoft.com/speech/synthesis" xml:lang="en">  
- 
- How are you today?  
- <audio src="http://www.speech.microsoft.com/ding.wav" />  
- 
+       xmlns:ms="http://www.microsoft.com/speech/synthesis" xml:lang="en">  
+  
+  How are you today?  
+  <audio src="http://www.speech.microsoft.com/ding.wav" />  
+  
 </speak>  
 ```  
  
@@ -240,13 +240,13 @@ The following examples adds an audio file to a <xref:System.Speech.Synthesis.Pro
  
 ```csharp  
 using System.Speech.PromptBuilder;  
- 
+  
 public void SimpleConcatenation()  
 {  
- 
-   // Concatenate a prompt fragment from a .wav file.  
-   PromptBuilder builder = new PromptBuilder ();  
-   builder.AppendAudio(new Uri ("C:\\OnHold.wav"), "Your call will be answered in the order it was received");  
+  
+    // Concatenate a prompt fragment from a .wav file.  
+    PromptBuilder builder = new PromptBuilder ();  
+    builder.AppendAudio(new Uri ("C:\\OnHold.wav"), "Your call will be answered in the order it was received");  
 }  
 ```  
  
@@ -254,10 +254,10 @@ The following markup shows the equivalent SSML markup.
  
 ```xml  
 <speak xmlns="http://www.w3.org/2001/10/synthesis"  
-      xmlns:ms="http://www.microsoft.com/speech/synthesis" xml:lang="en">  
- 
- <audio src="C:\OnHold.wav"> Your call will be answered in the order it was received. </audio>  
- 
+       xmlns:ms="http://www.microsoft.com/speech/synthesis" xml:lang="en">  
+  
+  <audio src="C:\OnHold.wav"> Your call will be answered in the order it was received. </audio>  
+  
 </speak>  
 ```  
  
@@ -297,58 +297,58 @@ The following example creates a prompt that includes two bookmarks and sends the
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
- 
-       // Create a SoundPlayer instance to play the output audio file.  
-       System.Media.SoundPlayer m_SoundPlayer =  
-         new System.Media.SoundPlayer(@"C:\test\weather.wav");  
- 
-       // Build a prompt and append bookmarks.  
-       PromptBuilder builder = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       builder.AppendText(  
-         "The weather forecast for today is partly cloudy with some sun breaks.");  
-       builder.AppendBookmark("Daytime forecast");  
-       builder.AppendText(  
-         "Tonight's weather will be cloudy with a 30% chance of showers.");  
-       builder.AppendBookmark("Nightime forecast");  
- 
-       // Add a handler for the BookmarkReached event.  
-       synth.BookmarkReached +=  
-         new EventHandler<BookmarkReachedEventArgs>(synth_BookmarkReached);  
- 
-       // Speak the prompt and play back the output file.  
-       synth.Speak(builder);  
-       m_SoundPlayer.Play();  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- 
-   // Write the name and position of the bookmark to the console.  
-   static void synth_BookmarkReached(object sender, BookmarkReachedEventArgs e)  
-   {  
-     Console.WriteLine("Bookmark ({0}) reached at: {1} ",  
-       e.Bookmark, e.AudioPosition);  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =  
+          new System.Media.SoundPlayer(@"C:\test\weather.wav");  
+  
+        // Build a prompt and append bookmarks.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "The weather forecast for today is partly cloudy with some sun breaks.");  
+        builder.AppendBookmark("Daytime forecast");  
+        builder.AppendText(  
+          "Tonight's weather will be cloudy with a 30% chance of showers.");  
+        builder.AppendBookmark("Nightime forecast");  
+  
+        // Add a handler for the BookmarkReached event.  
+        synth.BookmarkReached +=  
+          new EventHandler<BookmarkReachedEventArgs>(synth_BookmarkReached);  
+  
+        // Speak the prompt and play back the output file.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Write the name and position of the bookmark to the console.  
+    static void synth_BookmarkReached(object sender, BookmarkReachedEventArgs e)  
+    {  
+      Console.WriteLine("Bookmark ({0}) reached at: {1} ",  
+        e.Bookmark, e.AudioPosition);  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -384,41 +384,41 @@ The following example builds a prompt containing two sentences separated by a br
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Build a prompt with two sentences separated by a break.  
-       PromptBuilder builder = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       builder.AppendText(  
-         "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45.");  
-       builder.AppendBreak();  
-       builder.AppendText(  
-         "Tonight's movie showings in theater B are at 5:15, 7:30, and 9:15.");  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt with two sentences separated by a break.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45.");  
+        builder.AppendBreak();  
+        builder.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:30, and 9:15.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -457,46 +457,46 @@ The following example builds a prompt containing two sentences separated by a br
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
- 
-       // Create a SoundPlayer instance to play the output audio file.  
-       System.Media.SoundPlayer m_SoundPlayer =  
-         new System.Media.SoundPlayer(@"C:\test\weather.wav");  
- 
-       // Build a prompt with two sentences separated by a break.  
-       PromptBuilder builder = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       builder.AppendText(  
-         "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45");  
-       builder.AppendBreak(PromptBreak.Medium);  
-       builder.AppendText(  
-         "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
- 
-       // Speak the prompt and play back the output file.  
-       synth.Speak(builder);  
-       m_SoundPlayer.Play();  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =  
+          new System.Media.SoundPlayer(@"C:\test\weather.wav");  
+  
+        // Build a prompt with two sentences separated by a break.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45");  
+        builder.AppendBreak(PromptBreak.Medium);  
+        builder.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
+  
+        // Speak the prompt and play back the output file.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -535,39 +535,39 @@ The following example builds a prompt containing two sentences separated by a br
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Build a prompt with two sentences separated by a break.  
-       PromptBuilder builder = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       builder.AppendText(  
-         "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45");  
-       builder.AppendBreak(new TimeSpan(15000000));  
-       builder.AppendText(  
-         "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt with two sentences separated by a break.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45");  
+        builder.AppendBreak(new TimeSpan(15000000));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -602,54 +602,54 @@ The example that follows creates two <xref:System.Speech.Synthesis.PromptBuilder
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToWaveFile(@"C:\test\showtimes.wav");  
- 
-       // Create a SoundPlayer instance to play the output audio file.  
-       System.Media.SoundPlayer m_SoundPlayer =  
-         new System.Media.SoundPlayer(@"C:\test\showtimes.wav");  
- 
-       // Build child prompts.  
-       PromptBuilder theatreA = new PromptBuilder();  
-       theatreA.AppendText(  
-         "Tonight's movie showings in theater A are at 5:45, 7:15, and 9:30");  
-       theatreA.AppendBreak(PromptBreak.Large);  
-       PromptBuilder theatreB = new PromptBuilder();  
-       theatreB.AppendText(  
-         "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
- 
-       // Build the parent prompt and append the two child prompts.  
-       PromptBuilder showTimes = new PromptBuilder(  
-         new System.Globalization.CultureInfo("en-US"));  
-       showTimes.AppendText(  
-         "The following are the show times for tonight's movies:");  
-       showTimes.AppendPromptBuilder(theatreA);  
-       showTimes.AppendPromptBuilder(theatreB);  
- 
-       // Speak the prompt and play back the output file.  
-       synth.Speak(showTimes);  
-       m_SoundPlayer.Play();  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\test\showtimes.wav");  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =  
+          new System.Media.SoundPlayer(@"C:\test\showtimes.wav");  
+  
+        // Build child prompts.  
+        PromptBuilder theatreA = new PromptBuilder();  
+        theatreA.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 9:30");  
+        theatreA.AppendBreak(PromptBreak.Large);  
+        PromptBuilder theatreB = new PromptBuilder();  
+        theatreB.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:15, and 9:15");  
+  
+        // Build the parent prompt and append the two child prompts.  
+        PromptBuilder showTimes = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        showTimes.AppendText(  
+          "The following are the show times for tonight's movies:");  
+        showTimes.AppendPromptBuilder(theatreA);  
+        showTimes.AppendPromptBuilder(theatreB);  
+  
+        // Speak the prompt and play back the output file.  
+        synth.Speak(showTimes);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -690,36 +690,36 @@ The example that follows creates a <xref:System.Speech.Synthesis.PromptBuilder> 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and append a file that defines an SSML prompt.  
-       PromptBuilder ssmlFile = new PromptBuilder();  
-       ssmlFile.AppendSsml("c:\\test\\Weather.ssml");  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(ssmlFile);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and append a file that defines an SSML prompt.  
+        PromptBuilder ssmlFile = new PromptBuilder();  
+        ssmlFile.AppendSsml("c:\\test\\Weather.ssml");  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(ssmlFile);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
 The following is the SSML file that the preceding example references.  
@@ -727,11 +727,11 @@ The following is the SSML file that the preceding example references.
 ```xml  
 <?xml version="1.0" encoding="ISO-8859-1"?>  
 <speak version="1.0"  
-xmlns="http://www.w3.org/2001/10/synthesis"  
-xml:lang="en-US">  
- 
- <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
- 
+ xmlns="http://www.w3.org/2001/10/synthesis"  
+ xml:lang="en-US">  
+  
+  <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
+  
 </speak>  
 ```  
  
@@ -773,34 +773,34 @@ The example that follows creates a <xref:System.Speech.Synthesis.PromptBuilder> 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and append a file that defines an SSML prompt.  
-       PromptBuilder ssmlFile = new PromptBuilder();  
-       ssmlFile.AppendSsml(new Uri("c:\\test\\Weather.ssml"));  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(ssmlFile);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and append a file that defines an SSML prompt.  
+        PromptBuilder ssmlFile = new PromptBuilder();  
+        ssmlFile.AppendSsml(new Uri("c:\\test\\Weather.ssml"));  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(ssmlFile);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -809,11 +809,11 @@ The following is the SSML file that the preceding example references.
 ```xml  
 <?xml version="1.0" encoding="ISO-8859-1"?>  
 <speak version="1.0"  
-xmlns="http://www.w3.org/2001/10/synthesis"  
-xml:lang="en-US">  
- 
- <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
- 
+ xmlns="http://www.w3.org/2001/10/synthesis"  
+ xml:lang="en-US">  
+  
+  <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
+  
 </speak>  
 ```  
  
@@ -857,51 +857,51 @@ using System;
 using System.Xml;  
 using System.IO;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
- 
-       // Create a SoundPlayer instance to play the output audio file.  
-       System.Media.SoundPlayer m_SoundPlayer =  
-         new System.Media.SoundPlayer(@"C:\test\weather.wav");  
- 
-       // Create the path to the SSML file.  
-       string weatherFile = Path.GetFullPath("c:\\test\\Weather.xml");  
-       PromptBuilder builder = null;  
- 
-       // Create an XML Reader from the file, create a PromptBuilder and   
-       // append the XmlReader.  
-       if (File.Exists(weatherFile))  
-       {  
-         XmlReader reader = XmlReader.Create(weatherFile);  
-         builder = new PromptBuilder();  
-         builder.AppendSsml(reader);  
-         reader.Close();  
-       }  
- 
-       // Speak the prompt and play back the output file.  
-       synth.Speak(builder);  
-       m_SoundPlayer.Play();  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =  
+          new System.Media.SoundPlayer(@"C:\test\weather.wav");  
+  
+        // Create the path to the SSML file.  
+        string weatherFile = Path.GetFullPath("c:\\test\\Weather.xml");  
+        PromptBuilder builder = null;  
+  
+        // Create an XML Reader from the file, create a PromptBuilder and   
+        // append the XmlReader.  
+        if (File.Exists(weatherFile))  
+        {  
+          XmlReader reader = XmlReader.Create(weatherFile);  
+          builder = new PromptBuilder();  
+          builder.AppendSsml(reader);  
+          reader.Close();  
+        }  
+  
+        // Speak the prompt and play back the output file.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -992,34 +992,34 @@ The example that follows creates a <xref:System.Speech.Synthesis.PromptBuilder> 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and append a text string.  
-       PromptBuilder speakText = new PromptBuilder();  
-       speakText.AppendText("Say the name of the song you want to hear");  
- 
-       // Speak the contents of the prompt.  
-       synth.Speak(speakText);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and append a text string.  
+        PromptBuilder speakText = new PromptBuilder();  
+        speakText.AppendText("Say the name of the song you want to hear");  
+  
+        // Speak the contents of the prompt.  
+        synth.Speak(speakText);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -1086,38 +1086,38 @@ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> obj
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content.  
-       PromptBuilder speakRate = new PromptBuilder();  
-       speakRate.AppendText("Your order for");  
-       speakRate.AppendText("one kitchen sink and one faucet", PromptRate.Slow);  
-       speakRate.AppendText("has been confirmed.");  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(speakRate);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content.  
+        PromptBuilder speakRate = new PromptBuilder();  
+        speakRate.AppendText("Your order for");  
+        speakRate.AppendText("one kitchen sink and one faucet", PromptRate.Slow);  
+        speakRate.AppendText("has been confirmed.");  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(speakRate);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -1158,38 +1158,38 @@ The following example uses the <xref:System.Speech.Synthesis.PromptBuilder.Appen
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Build a prompt that applies different volume settings.  
-       PromptBuilder builder = new PromptBuilder();  
-       builder.AppendText("This is the default speaking volume.", PromptVolume.Default);  
-       builder.AppendBreak();  
-       builder.AppendText("This is the extra loud speaking volume.", PromptVolume.ExtraLoud);  
-       builder.AppendBreak();  
-       builder.AppendText("This is the medium speaking volume.", PromptVolume.Medium);  
- 
-       // Speak the prompt.  
-       synth.Speak(builder);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt that applies different volume settings.  
+        PromptBuilder builder = new PromptBuilder();  
+        builder.AppendText("This is the default speaking volume.", PromptVolume.Default);  
+        builder.AppendBreak();  
+        builder.AppendText("This is the extra loud speaking volume.", PromptVolume.ExtraLoud);  
+        builder.AppendBreak();  
+        builder.AppendText("This is the medium speaking volume.", PromptVolume.Medium);  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -1270,43 +1270,43 @@ The content type specified by `sayAs` can provide guidance to the speech synthes
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and define the data types for some of the added strings.  
-       PromptBuilder sayAs = new PromptBuilder();  
-       sayAs.AppendText("Your");  
-       sayAs.AppendTextWithHint("1st", SayAs.NumberOrdinal);  
-       sayAs.AppendText("request was for");  
-       sayAs.AppendTextWithHint("1", SayAs.NumberCardinal);  
-       sayAs.AppendText("room, on");  
-       sayAs.AppendTextWithHint("10/19/2012,", SayAs.MonthDayYear);  
-       sayAs.AppendText("with early arrival at");  
-       sayAs.AppendTextWithHint("12:35pm", SayAs.Time12);  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(sayAs);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and define the data types for some of the added strings.  
+        PromptBuilder sayAs = new PromptBuilder();  
+        sayAs.AppendText("Your");  
+        sayAs.AppendTextWithHint("1st", SayAs.NumberOrdinal);  
+        sayAs.AppendText("request was for");  
+        sayAs.AppendTextWithHint("1", SayAs.NumberCardinal);  
+        sayAs.AppendText("room, on");  
+        sayAs.AppendTextWithHint("10/19/2012,", SayAs.MonthDayYear);  
+        sayAs.AppendText("with early arrival at");  
+        sayAs.AppendTextWithHint("12:35pm", SayAs.Time12);  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(sayAs);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -1387,11 +1387,11 @@ The following example initializes a new instance of the <xref:System.Speech.Synt
 ```csharp  
 public void ProperName()  
 {  
-   PromptBuilder builder = new PromptBuilder();  
-   builder.AppendText("My name is");  
- 
-   // Add a proper name and its pronunciation.  
-   builder.AppendTextWithPronunciation("DuBois", "duˈbwɑ");     
+    PromptBuilder builder = new PromptBuilder();  
+    builder.AppendText("My name is");  
+  
+    // Add a proper name and its pronunciation.  
+    builder.AppendTextWithPronunciation("DuBois", "duˈbwɑ");     
 }  
 ```  
  
@@ -1399,7 +1399,7 @@ The following markup shows the SSML that this <xref:System.Speech.Synthesis.Prom
  
 ```xml  
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-us">  
- My name is <phoneme ph="duˈbwɑ"> DuBois </phoneme>  
+  My name is <phoneme ph="duˈbwɑ"> DuBois </phoneme>  
 </speak>  
 ```  
  
@@ -1611,47 +1611,47 @@ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> obj
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content as paragraphs and sentences.  
-       PromptBuilder parSent = new PromptBuilder();  
-       parSent.StartParagraph();  
-       parSent.StartSentence();  
-       parSent.AppendText("Introducing the sentence element.");  
-       parSent.EndSentence();  
-       parSent.StartSentence();  
-       parSent.AppendText("You can use it to mark individual sentences.");  
-       parSent.EndSentence();  
-       parSent.EndParagraph();  
-       parSent.StartParagraph();  
-       parSent.AppendText("Another simple paragraph. Sentence structure in this paragraph" +  
-         "is not explicitly marked.");  
-       parSent.EndParagraph();  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(parSent);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content as paragraphs and sentences.  
+        PromptBuilder parSent = new PromptBuilder();  
+        parSent.StartParagraph();  
+        parSent.StartSentence();  
+        parSent.AppendText("Introducing the sentence element.");  
+        parSent.EndSentence();  
+        parSent.StartSentence();  
+        parSent.AppendText("You can use it to mark individual sentences.");  
+        parSent.EndSentence();  
+        parSent.EndParagraph();  
+        parSent.StartParagraph();  
+        parSent.AppendText("Another simple paragraph. Sentence structure in this paragraph" +  
+          "is not explicitly marked.");  
+        parSent.EndParagraph();  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(parSent);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -1729,47 +1729,47 @@ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> obj
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content as paragraphs and sentences.  
-       PromptBuilder parSent = new PromptBuilder();  
-       parSent.StartParagraph();  
-       parSent.StartSentence();  
-       parSent.AppendText("Introducing the sentence element.");  
-       parSent.EndSentence();  
-       parSent.StartSentence();  
-       parSent.AppendText("You can use it to mark individual sentences.");  
-       parSent.EndSentence();  
-       parSent.EndParagraph();  
-       parSent.StartParagraph();  
-       parSent.AppendText("Another simple paragraph. Sentence structure in this paragraph" +  
-         "is not explicitly marked.");  
-       parSent.EndParagraph();  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(parSent);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content as paragraphs and sentences.  
+        PromptBuilder parSent = new PromptBuilder();  
+        parSent.StartParagraph();  
+        parSent.StartSentence();  
+        parSent.AppendText("Introducing the sentence element.");  
+        parSent.EndSentence();  
+        parSent.StartSentence();  
+        parSent.AppendText("You can use it to mark individual sentences.");  
+        parSent.EndSentence();  
+        parSent.EndParagraph();  
+        parSent.StartParagraph();  
+        parSent.AppendText("Another simple paragraph. Sentence structure in this paragraph" +  
+          "is not explicitly marked.");  
+        parSent.EndParagraph();  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(parSent);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>
@@ -1856,38 +1856,38 @@ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> obj
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content.  
-       PromptBuilder style = new PromptBuilder();  
-       style.AppendText("Your order for");  
-       style.StartStyle(new PromptStyle(PromptRate.Slow));  
-       style.AppendText("one kitchen sink and one faucet");  
-       style.EndStyle();  
-       style.AppendText("has been confirmed.");  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(style);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content.  
+        PromptBuilder style = new PromptBuilder();  
+        style.AppendText("Your order for");  
+        style.StartStyle(new PromptStyle(PromptRate.Slow));  
+        style.AppendText("one kitchen sink and one faucet");  
+        style.EndStyle();  
+        style.AppendText("has been confirmed.");  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(style);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
 ```  
  
@@ -2121,48 +2121,48 @@ The <xref:System.Speech.Synthesis.PromptBuilder.ToXml%2A> method makes no attemp
 The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object, appends text, and then writes the SSML equivalent of the prompt to the console before speaking the contents of the prompt.  
  
 ```csharp  
- 
+  
 using System;  
 using System.Speech.Synthesis;  
- 
+  
 namespace SampleSynthesis  
 {  
- class Program  
- {  
-   static void Main(string[] args)  
-   {  
- 
-     // Initialize a new instance of the SpeechSynthesizer.  
-     using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-     {  
- 
-       // Configure the audio output.   
-       synth.SetOutputToDefaultAudioDevice();  
- 
-       // Create a PromptBuilder object and add content.  
-       PromptBuilder style = new PromptBuilder();  
-       style.AppendText("Your order for");  
-       style.StartStyle(new PromptStyle(PromptRate.Slow));  
-       style.AppendText("one kitchen sink and one faucet");  
-       style.EndStyle();  
-       style.AppendText("has been confirmed.");  
- 
-       // Write the contents of the PromptBuilder object to the console as  
-       // an SSML-compatible XML file.  
-       string myXml = style.ToXml();  
-       Console.WriteLine("This is the SSML equivalent of the PromptBuilder: \n\n" + myXml);  
- 
-       // Speak the contents of the SSML prompt.  
-       synth.Speak(style);  
-     }  
- 
-     Console.WriteLine();  
-     Console.WriteLine("Press any key to exit...");  
-     Console.ReadKey();  
-   }  
- }  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and add content.  
+        PromptBuilder style = new PromptBuilder();  
+        style.AppendText("Your order for");  
+        style.StartStyle(new PromptStyle(PromptRate.Slow));  
+        style.AppendText("one kitchen sink and one faucet");  
+        style.EndStyle();  
+        style.AppendText("has been confirmed.");  
+  
+        // Write the contents of the PromptBuilder object to the console as  
+        // an SSML-compatible XML file.  
+        string myXml = style.ToXml();  
+        Console.WriteLine("This is the SSML equivalent of the PromptBuilder: \n\n" + myXml);  
+  
+        // Speak the contents of the SSML prompt.  
+        synth.Speak(style);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
 }  
- 
+  
 ```  
  
  ]]></format>

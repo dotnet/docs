@@ -1209,7 +1209,7 @@ The following code example demonstrates the <xref:System.Version.%23ctor%2A> con
 The `input` parameter must have the following format:  
  
 ```  
- 
+  
 major.minor[.build[.revision]]  
 ```  
  
@@ -1481,7 +1481,7 @@ The <xref:System.Version.TryParse%2A> method is similar to the <xref:System.Vers
 For the parse operation to succeed, the `input` parameter must be in the following format:  
  
 ```  
- 
+  
 major.minor[.build[.revision]]  
 ```  
  

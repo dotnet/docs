@@ -31,7 +31,7 @@ The <xref:System.Web.UI.MobileControls.MobilePage> class inherits from the ASP.N
  
 ```  
 <%@ Page   
- Inherits="System.Web.UI.MobileControls.MobilePage" Language="c#" %>  
+  Inherits="System.Web.UI.MobileControls.MobilePage" Language="c#" %>  
 ```  
  
 The `Inherits` attribute is required. The `Language` attribute is set to the language that is used on the page, if it is needed.  

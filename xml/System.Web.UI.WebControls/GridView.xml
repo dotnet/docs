@@ -226,7 +226,7 @@ For information about how to configure this control so that it generates markup 
     BackImageUrl="uri"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-       Inset|Outset"  
+        Inset|Outset"  
     BorderWidth="size"  
     Caption="string"  
     CaptionAlign="NotSet|Top|Bottom|Left|Right"  
@@ -248,7 +248,7 @@ For information about how to configure this control so that it generates markup 
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
+        Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -284,7 +284,7 @@ For information about how to configure this control so that it generates markup 
     PagerSettings-LastPageImageUrl="uri"  
     PagerSettings-LastPageText="string"  
     PagerSettings-Mode="NextPrevious|Numeric|NextPreviousFirstLast|  
-       NumericFirstLast"  
+        NumericFirstLast"  
     PagerSettings-NextPageImageUrl="uri"  
     PagerSettings-NextPageText="string"  
     PagerSettings-PageButtonCount="integer"  
@@ -491,29 +491,29 @@ For information about how to configure this control so that it generates markup 
                             <HeaderStyle />  
                             <ItemStyle />  
                         <AlternatingItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </AlternatingItemTemplate>  
                         <EditItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </EditItemTemplate>  
                         <FooterTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </FooterTemplate>  
                         <HeaderTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </HeaderTemplate>  
                         <InsertItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </InsertItemTemplate>  
                         <ItemTemplate>  
-                           <!-- child controls -->  
+                            <!-- child controls -->  
                         </ItemTemplate>  
                 </asp:TemplateField>  
         </Columns>  
         <EditRowStyle />  
         <EmptyDataRowStyle />  
         <EmptyDataTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </EmptyDataTemplate>  
         <FooterStyle />  
         <HeaderStyle />  
@@ -523,7 +523,7 @@ For information about how to configure this control so that it generates markup 
             LastPageImageUrl="uri"  
             LastPageText="string"  
             Mode="NextPrevious|Numeric|NextPreviousFirstLast|  
-               NumericFirstLast"  
+                NumericFirstLast"  
             NextPageImageUrl="uri"  
             NextPageText="string"  
             OnPropertyChanged="PropertyChanged event handler"  
@@ -535,7 +535,7 @@ For information about how to configure this control so that it generates markup 
         />  
         <PagerStyle />  
         <PagerTemplate>  
-           <!-- child controls -->  
+            <!-- child controls -->  
         </PagerTemplate>  
         <RowStyle />  
         <SelectedRowStyle />  

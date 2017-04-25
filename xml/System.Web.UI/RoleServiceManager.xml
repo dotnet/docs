@@ -40,7 +40,7 @@ To use a custom role Web service, you can add the service declaratively in marku
  
 ```  
 <asp:ScriptManager ID="SM1" runat="server">  
- <RoleService Path="MyRoleService.asmx" LoadRoles="true" />  
+  <RoleService Path="MyRoleService.asmx" LoadRoles="true" />  
 </asp:ScriptManager>  
 ```  
  

@@ -27,31 +27,31 @@ The following configuration file example shows how to declaratively specify valu
  
 ```  
 <system.web>  
- <roleManager   
-   enabled="false"   
-   cacheRolesInCookie="false"   
-   cookieName=".ASPXROLES" cookieTimeout="30"  
-   cookiePath="/" cookieRequireSSL="false"  
-   cookieSlidingExpiration="true" createPersistentCookie="false"  
-   cookieProtection="All"   
-   defaultProvider="AspNetSqlRoleProvider"  
-   maxCachedResults="25"  >  
-   <providers>  
-     <add   
-       name="AspNetSqlRoleProvider"  
-       connectionStringName="LocalSqlServer"   
-       applicationName="/"  
-       type="System.Web.Security.SqlRoleProvider, System.Web,  
-         Version=2.0.3600.0, Culture=neutral,  
-         PublicKeyToken=b03f5f7f11d50a3a" />  
-     <add   
-       name="AspNetWindowsTokenRoleProvider"   
-       applicationName="/"  
-       type="System.Web.Security.WindowsTokenRoleProvider, System.Web,   
-         Version=2.0.3600.0, Culture=neutral,   
-         PublicKeyToken=b03f5f7f11d50a3a" />  
-   </providers>  
- </roleManager>  
+  <roleManager   
+    enabled="false"   
+    cacheRolesInCookie="false"   
+    cookieName=".ASPXROLES" cookieTimeout="30"  
+    cookiePath="/" cookieRequireSSL="false"  
+    cookieSlidingExpiration="true" createPersistentCookie="false"  
+    cookieProtection="All"   
+    defaultProvider="AspNetSqlRoleProvider"  
+    maxCachedResults="25"  >  
+    <providers>  
+      <add   
+        name="AspNetSqlRoleProvider"  
+        connectionStringName="LocalSqlServer"   
+        applicationName="/"  
+        type="System.Web.Security.SqlRoleProvider, System.Web,  
+          Version=2.0.3600.0, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add   
+        name="AspNetWindowsTokenRoleProvider"   
+        applicationName="/"  
+        type="System.Web.Security.WindowsTokenRoleProvider, System.Web,   
+          Version=2.0.3600.0, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a" />  
+    </providers>  
+  </roleManager>  
 </system.web>  
 ```  
  

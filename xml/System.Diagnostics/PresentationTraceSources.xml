@@ -33,25 +33,25 @@ The following sample configuration file enables tracing of animations, writing t
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <sources>  
-     <source name="System.Windows.Media.Animation"  
+  <system.diagnostics>  
+    <sources>  
+      <source name="System.Windows.Media.Animation"  
 switchName="SourceSwitch" >  
-       <listeners>  
-         <add name="textListener" />  
-       </listeners>  
-     </source>  
-   </sources>  
-   <switches>  
-     <add name="SourceSwitch" value="All" />  
-   </switches>  
-   <sharedListeners>  
-     <add name="textListener"  
-          type="System.Diagnostics.TextWriterTraceListener"  
-          initializeData="Debug.txt" />  
-   </sharedListeners>  
-   <trace autoflush="true" indentsize="4"></trace>  
- </system.diagnostics>  
+        <listeners>  
+          <add name="textListener" />  
+        </listeners>  
+      </source>  
+    </sources>  
+    <switches>  
+      <add name="SourceSwitch" value="All" />  
+    </switches>  
+    <sharedListeners>  
+      <add name="textListener"  
+           type="System.Diagnostics.TextWriterTraceListener"  
+           initializeData="Debug.txt" />  
+    </sharedListeners>  
+    <trace autoflush="true" indentsize="4"></trace>  
+  </system.diagnostics>  
 </configuration>  
 ```  
  

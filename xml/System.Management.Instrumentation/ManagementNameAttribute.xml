@@ -34,8 +34,8 @@ In the following example, the integer parameter remains i internally, but will b
 [ManagementTask]  
 static public int PrintValue([ManagementName("The Value")]int i)  
 {  
-  Console.WriteLine("The Value is {0:x}", i);  
-  return i;  
+   Console.WriteLine("The Value is {0:x}", i);  
+   return i;  
 }  
 ```  
  

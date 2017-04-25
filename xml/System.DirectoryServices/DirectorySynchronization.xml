@@ -21,19 +21,19 @@ The following C# example shows how to synchronize a directory.
 ```csharp  
 DirectorySearcher src = new DirectorySearcher("…");   
 src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
-                                                             // this means a full synch  
- 
+                                                              // this means a full synch  
+  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 // Restart the dirsync   
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 ```  
  
 The following C# example shows how to synchronize a directory by persisting it to a file.  
@@ -41,34 +41,34 @@ The following C# example shows how to synchronize a directory by persisting it t
 ```csharp  
 DirectorySearcher src = new DirectorySearcher("…");   
 src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
-                                                             // this means a full synch  
- 
+                                                              // this means a full synch  
+  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 // Now they should be able to persist the dirSync cookie, by serializing to a file.   
 FileStream myStream = File.Create("dirsync.data");  
 BinaryFormatter fmt = new BinaryFormatter();  
 fmt.Serialize(myStream, src.DirectorySynchronization);  
 myStream.Close();  
 … ….  
- 
+  
 // At some point in time, we wake up and read by de-serializing the dirSync cookie,   
 // and resume the  dirSync   
 FileStream myStream = FileCreate("dirsync.data");  
 BinaryFormatter fmt = new BinaryFormatter();  
 DirectorySynchronization dirSync = fmt.Deserialize(myStream);  
- 
+  
 DirectorySearcher src = new DirectorySearcher(…);  
 src.DirectorySynchronization = dirSync;  
- 
+  
 foreach(SearchResult res in src.FindAll() )  
 {  
-   Console.WriteLine(…");  
+    Console.WriteLine(…");  
 }  
- 
+  
 ```  
  
  ]]></format>

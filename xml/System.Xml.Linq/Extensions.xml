@@ -89,76 +89,76 @@ This method uses deferred execution.
 The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors of all elements in the collection.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1",  
-       new XElement("GrandChild1",  
-           new XElement("GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement("Child2",  
-       new XElement("GrandChild2",  
-           new XElement("GreatGrandChild2", "content")  
-       )  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1",  
+            new XElement("GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild2",  
+            new XElement("GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.Ancestors().Distinct()  
-   select el;  
- 
+    from el in greatGrandChildren.Ancestors().Distinct()  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Child1>  
-           <GrandChild1>  
-               <GreatGrandChild1>content</GreatGrandChild1>  
-           </GrandChild1>  
-       </Child1>  
-       <Child2>  
-           <GrandChild2>  
-               <GreatGrandChild2>content</GreatGrandChild2>  
-           </GrandChild2>  
-       </Child2>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>  
+            <GrandChild1>  
+                <GreatGrandChild1>content</GreatGrandChild1>  
+            </GrandChild1>  
+        </Child1>  
+        <Child2>  
+            <GrandChild2>  
+                <GreatGrandChild2>content</GreatGrandChild2>  
+            </GrandChild2>  
+        </Child2>  
+    </Root>  
+  
 Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                        Where el.Name.LocalName.StartsWith("Great") _  
-                        Select el  
- 
+                         Where el.Name.LocalName.StartsWith("Great") _  
+                         Select el  
+  
 Console.WriteLine("Great Grand Children Elements")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In greatGrandChildren  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 Dim allAncestors = From el In greatGrandChildren.Ancestors.Distinct _  
-                  Select el  
- 
+                   Select el  
+  
 Console.WriteLine("")  
 Console.WriteLine("Ancestors")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In allAncestors  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
 ```  
  
@@ -169,7 +169,7 @@ Great Grand Children Elements
 ----  
 GreatGrandChild1  
 GreatGrandChild2  
- 
+  
 Ancestors  
 ----  
 GrandChild1  
@@ -182,83 +182,83 @@ Child2
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Child1",  
-       new XElement(aw + "GrandChild1",  
-           new XElement(aw + "GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement(aw + "Child2",  
-       new XElement(aw + "GrandChild2",  
-           new XElement(aw + "GreatGrandChild2", "content")  
-       )  
-   )  
+    new XElement(aw + "Child1",  
+        new XElement(aw + "GrandChild1",  
+            new XElement(aw + "GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement(aw + "Child2",  
+        new XElement(aw + "GrandChild2",  
+            new XElement(aw + "GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.Ancestors().Distinct()  
-   select el;  
- 
+    from el in greatGrandChildren.Ancestors().Distinct()  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Child1>  
-                   <GrandChild1>  
-                       <GreatGrandChild1>content</GreatGrandChild1>  
-                   </GrandChild1>  
-               </Child1>  
-               <Child2>  
-                   <GrandChild2>  
-                       <GreatGrandChild2>content</GreatGrandChild2>  
-                   </GrandChild2>  
-               </Child2>  
-           </Root>  
- 
-       Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                                Where el.Name.LocalName.StartsWith("Great") _  
-                                Select el  
- 
-       Console.WriteLine("Great Grand Children Elements")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In greatGrandChildren  
-           Console.WriteLine(de.Name)  
-       Next  
- 
-       Dim allAncestors = From el In greatGrandChildren.Ancestors.Distinct _  
-                          Select el  
- 
-       Console.WriteLine("")  
-       Console.WriteLine("Ancestors")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In allAncestors  
-           Console.WriteLine(de.Name)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Child1>  
+                    <GrandChild1>  
+                        <GreatGrandChild1>content</GreatGrandChild1>  
+                    </GrandChild1>  
+                </Child1>  
+                <Child2>  
+                    <GrandChild2>  
+                        <GreatGrandChild2>content</GreatGrandChild2>  
+                    </GrandChild2>  
+                </Child2>  
+            </Root>  
+  
+        Dim greatGrandChildren = From el In xmlTree.Descendants _  
+                                 Where el.Name.LocalName.StartsWith("Great") _  
+                                 Select el  
+  
+        Console.WriteLine("Great Grand Children Elements")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In greatGrandChildren  
+            Console.WriteLine(de.Name)  
+        Next  
+  
+        Dim allAncestors = From el In greatGrandChildren.Ancestors.Distinct _  
+                           Select el  
+  
+        Console.WriteLine("")  
+        Console.WriteLine("Ancestors")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In allAncestors  
+            Console.WriteLine(de.Name)  
+        Next  
+    End Sub  
 End Module  
 ```  
  
@@ -269,7 +269,7 @@ Great Grand Children Elements
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
 {http://www.adventure-works.com}GreatGrandChild2  
- 
+  
 Ancestors  
 ----  
 {http://www.adventure-works.com}GrandChild1  
@@ -336,78 +336,78 @@ This method uses deferred execution.
 The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors of all elements in the collection that match a specified <xref:System.Xml.Linq.XName>.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1",  
-       new XElement("GrandChild1",  
-           new XElement("GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement("Child2",  
-       new XElement("GrandChild2",  
-           new XElement("GreatGrandChild2", "content")  
-       )  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1",  
+            new XElement("GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild2",  
+            new XElement("GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.Ancestors("Child1")  
-   select el;  
- 
+    from el in greatGrandChildren.Ancestors("Child1")  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Child1>  
-           <GrandChild1>  
-               <GreatGrandChild1>content</GreatGrandChild1>  
-           </GrandChild1>  
-       </Child1>  
-       <Child2>  
-           <GrandChild2>  
-               <GreatGrandChild2>content</GreatGrandChild2>  
-           </GrandChild2>  
-       </Child2>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>  
+            <GrandChild1>  
+                <GreatGrandChild1>content</GreatGrandChild1>  
+            </GrandChild1>  
+        </Child1>  
+        <Child2>  
+            <GrandChild2>  
+                <GreatGrandChild2>content</GreatGrandChild2>  
+            </GrandChild2>  
+        </Child2>  
+    </Root>  
+  
 Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                        Where el.Name.LocalName.StartsWith("Great") _  
-                        Select el  
- 
+                         Where el.Name.LocalName.StartsWith("Great") _  
+                         Select el  
+  
 Console.WriteLine("Great Grand Children Elements")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In greatGrandChildren  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 Dim allAncestors = From el In greatGrandChildren.Ancestors("Child1") _  
-                  Select el  
- 
+                   Select el  
+  
 Console.WriteLine("")  
 Console.WriteLine("Ancestors")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In allAncestors  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -417,7 +417,7 @@ Great Grand Children Elements
 ----  
 GreatGrandChild1  
 GreatGrandChild2  
- 
+  
 Ancestors  
 ----  
 Child1  
@@ -426,85 +426,85 @@ Child1
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Child1",  
-       new XElement(aw + "GrandChild1",  
-           new XElement(aw + "GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement(aw + "Child2",  
-       new XElement(aw + "GrandChild2",  
-           new XElement(aw + "GreatGrandChild2", "content")  
-       )  
-   )  
+    new XElement(aw + "Child1",  
+        new XElement(aw + "GrandChild1",  
+            new XElement(aw + "GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement(aw + "Child2",  
+        new XElement(aw + "GrandChild2",  
+            new XElement(aw + "GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.Ancestors(aw + "Child1")  
-   select el;  
- 
+    from el in greatGrandChildren.Ancestors(aw + "Child1")  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Child1>  
-                   <GrandChild1>  
-                       <GreatGrandChild1>content</GreatGrandChild1>  
-                   </GrandChild1>  
-               </Child1>  
-               <Child2>  
-                   <GrandChild2>  
-                       <GreatGrandChild2>content</GreatGrandChild2>  
-                   </GrandChild2>  
-               </Child2>  
-           </Root>  
- 
-       Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                                Where el.Name.LocalName.StartsWith("Great") _  
-                                Select el  
- 
-       Console.WriteLine("Great Grand Children Elements")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In greatGrandChildren  
-           Console.WriteLine(de.Name)  
-       Next  
- 
-       Dim allAncestors = From el In greatGrandChildren.Ancestors(GetXmlNamespace() + "Child1") _  
-                          Select el  
- 
-       Console.WriteLine("")  
-       Console.WriteLine("Ancestors")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In allAncestors  
-           Console.WriteLine(de.Name)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Child1>  
+                    <GrandChild1>  
+                        <GreatGrandChild1>content</GreatGrandChild1>  
+                    </GrandChild1>  
+                </Child1>  
+                <Child2>  
+                    <GrandChild2>  
+                        <GreatGrandChild2>content</GreatGrandChild2>  
+                    </GrandChild2>  
+                </Child2>  
+            </Root>  
+  
+        Dim greatGrandChildren = From el In xmlTree.Descendants _  
+                                 Where el.Name.LocalName.StartsWith("Great") _  
+                                 Select el  
+  
+        Console.WriteLine("Great Grand Children Elements")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In greatGrandChildren  
+            Console.WriteLine(de.Name)  
+        Next  
+  
+        Dim allAncestors = From el In greatGrandChildren.Ancestors(GetXmlNamespace() + "Child1") _  
+                           Select el  
+  
+        Console.WriteLine("")  
+        Console.WriteLine("Ancestors")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In allAncestors  
+            Console.WriteLine(de.Name)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -514,7 +514,7 @@ Great Grand Children Elements
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
 {http://www.adventure-works.com}GreatGrandChild2  
- 
+  
 Ancestors  
 ----  
 {http://www.adventure-works.com}Child1  
@@ -567,78 +567,78 @@ This method uses deferred execution.
 The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors and self of all elements in the collection.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1",  
-       new XElement("GrandChild1",  
-           new XElement("GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement("Child2",  
-       new XElement("GrandChild2",  
-           new XElement("GreatGrandChild2", "content")  
-       )  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1",  
+            new XElement("GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild2",  
+            new XElement("GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.AncestorsAndSelf().Distinct()  
-   select el;  
- 
+    from el in greatGrandChildren.AncestorsAndSelf().Distinct()  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors and Self");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _   
-   <Root>  
-       <Child1>  
-           <GrandChild1>  
-               <GreatGrandChild1>content</GreatGrandChild1>  
-           </GrandChild1>  
-       </Child1>  
-       <Child2>  
-           <GrandChild2>  
-               <GreatGrandChild2>content</GreatGrandChild2>  
-           </GrandChild2>  
-       </Child2>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _   
+    <Root>  
+        <Child1>  
+            <GrandChild1>  
+                <GreatGrandChild1>content</GreatGrandChild1>  
+            </GrandChild1>  
+        </Child1>  
+        <Child2>  
+            <GrandChild2>  
+                <GreatGrandChild2>content</GreatGrandChild2>  
+            </GrandChild2>  
+        </Child2>  
+    </Root>  
+  
 Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                        Where el.Name.LocalName.StartsWith("Great") _  
-                        Select el  
- 
+                         Where el.Name.LocalName.StartsWith("Great") _  
+                         Select el  
+  
 Console.WriteLine("Great Grand Children Elements")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In greatGrandChildren  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf.Distinct _  
-                  Select el  
- 
+                   Select el  
+  
 Console.WriteLine("")  
 Console.WriteLine("Ancestors and Self")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In allAncestors  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -648,7 +648,7 @@ Great Grand Children Elements
 ----  
 GreatGrandChild1  
 GreatGrandChild2  
- 
+  
 Ancestors and Self  
 ----  
 GreatGrandChild1  
@@ -663,85 +663,85 @@ Child2
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Child1",  
-       new XElement(aw + "GrandChild1",  
-           new XElement(aw + "GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement(aw + "Child2",  
-       new XElement(aw + "GrandChild2",  
-           new XElement(aw + "GreatGrandChild2", "content")  
-       )  
-   )  
+    new XElement(aw + "Child1",  
+        new XElement(aw + "GrandChild1",  
+            new XElement(aw + "GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement(aw + "Child2",  
+        new XElement(aw + "GrandChild2",  
+            new XElement(aw + "GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.AncestorsAndSelf().Distinct()  
-   select el;  
- 
+    from el in greatGrandChildren.AncestorsAndSelf().Distinct()  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors and Self");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Child1>  
-                   <GrandChild1>  
-                       <GreatGrandChild1>content</GreatGrandChild1>  
-                   </GrandChild1>  
-               </Child1>  
-               <Child2>  
-                   <GrandChild2>  
-                       <GreatGrandChild2>content</GreatGrandChild2>  
-                   </GrandChild2>  
-               </Child2>  
-           </Root>  
- 
-       Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                                Where el.Name.LocalName.StartsWith("Great") _  
-                                Select el  
- 
-       Console.WriteLine("Great Grand Children Elements")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In greatGrandChildren  
-           Console.WriteLine(de.Name)  
-       Next  
- 
-       Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf.Distinct _  
-                          Select el  
- 
-       Console.WriteLine("")  
-       Console.WriteLine("Ancestors and Self")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In allAncestors  
-           Console.WriteLine(de.Name)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Child1>  
+                    <GrandChild1>  
+                        <GreatGrandChild1>content</GreatGrandChild1>  
+                    </GrandChild1>  
+                </Child1>  
+                <Child2>  
+                    <GrandChild2>  
+                        <GreatGrandChild2>content</GreatGrandChild2>  
+                    </GrandChild2>  
+                </Child2>  
+            </Root>  
+  
+        Dim greatGrandChildren = From el In xmlTree.Descendants _  
+                                 Where el.Name.LocalName.StartsWith("Great") _  
+                                 Select el  
+  
+        Console.WriteLine("Great Grand Children Elements")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In greatGrandChildren  
+            Console.WriteLine(de.Name)  
+        Next  
+  
+        Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf.Distinct _  
+                           Select el  
+  
+        Console.WriteLine("")  
+        Console.WriteLine("Ancestors and Self")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In allAncestors  
+            Console.WriteLine(de.Name)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -751,7 +751,7 @@ Great Grand Children Elements
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
 {http://www.adventure-works.com}GreatGrandChild2  
- 
+  
 Ancestors and Self  
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
@@ -812,78 +812,78 @@ This method uses deferred execution.
 The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all self and ancestors of all elements in the collection that match a specified <xref:System.Xml.Linq.XName>.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child1",  
-       new XElement("GrandChild1",  
-           new XElement("GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement("Child2",  
-       new XElement("GrandChild2",  
-           new XElement("GreatGrandChild2", "content")  
-       )  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1",  
+            new XElement("GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild2",  
+            new XElement("GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.AncestorsAndSelf("GreatGrandChild1")  
-   select el;  
- 
+    from el in greatGrandChildren.AncestorsAndSelf("GreatGrandChild1")  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors and Self");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Child1>  
-           <GrandChild1>  
-               <GreatGrandChild1>content</GreatGrandChild1>  
-           </GrandChild1>  
-       </Child1>  
-       <Child2>  
-           <GrandChild2>  
-               <GreatGrandChild2>content</GreatGrandChild2>  
-           </GrandChild2>  
-       </Child2>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>  
+            <GrandChild1>  
+                <GreatGrandChild1>content</GreatGrandChild1>  
+            </GrandChild1>  
+        </Child1>  
+        <Child2>  
+            <GrandChild2>  
+                <GreatGrandChild2>content</GreatGrandChild2>  
+            </GrandChild2>  
+        </Child2>  
+    </Root>  
+  
 Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                        Where el.Name.LocalName.StartsWith("Great") _  
-                        Select el  
- 
+                         Where el.Name.LocalName.StartsWith("Great") _  
+                         Select el  
+  
 Console.WriteLine("Great Grand Children Elements")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In greatGrandChildren  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf("GreatGrandChild1") _  
-                  Select el  
- 
+                   Select el  
+  
 Console.WriteLine("")  
 Console.WriteLine("Ancestors and Self")  
 Console.WriteLine("----")  
- 
+  
 For Each de As XElement In allAncestors  
-   Console.WriteLine(de.Name)  
+    Console.WriteLine(de.Name)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -893,7 +893,7 @@ Great Grand Children Elements
 ----  
 GreatGrandChild1  
 GreatGrandChild2  
- 
+  
 Ancestors and Self  
 ----  
 GreatGrandChild1  
@@ -904,82 +904,82 @@ The following is the same example, but in this case the XML is in a namespace. F
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Child1",  
-       new XElement(aw + "GrandChild1",  
-           new XElement(aw + "GreatGrandChild1", "content")  
-       )  
-   ),  
-   new XElement(aw + "Child2",  
-       new XElement(aw + "GrandChild2",  
-           new XElement(aw + "GreatGrandChild2", "content")  
-       )  
-   )  
+    new XElement(aw + "Child1",  
+        new XElement(aw + "GrandChild1",  
+            new XElement(aw + "GreatGrandChild1", "content")  
+        )  
+    ),  
+    new XElement(aw + "Child2",  
+        new XElement(aw + "GrandChild2",  
+            new XElement(aw + "GreatGrandChild2", "content")  
+        )  
+    )  
 );  
 IEnumerable<XElement> greatGrandChildren =  
-   from el in xmlTree.Descendants()  
-   where el.Name.LocalName.StartsWith("Great")  
-   select el;  
- 
+    from el in xmlTree.Descendants()  
+    where el.Name.LocalName.StartsWith("Great")  
+    select el;  
+  
 Console.WriteLine("Great Grand Children Elements");  
 Console.WriteLine("----");  
 foreach (XElement de in greatGrandChildren)  
-   Console.WriteLine(de.Name);  
- 
+    Console.WriteLine(de.Name);  
+  
 IEnumerable<XElement> allAncestors =  
-   from el in greatGrandChildren.AncestorsAndSelf(aw + "GreatGrandChild1")  
-   select el;  
- 
+    from el in greatGrandChildren.AncestorsAndSelf(aw + "GreatGrandChild1")  
+    select el;  
+  
 Console.WriteLine("");  
 Console.WriteLine("Ancestors and Self");  
 Console.WriteLine("----");  
 foreach (XElement de in allAncestors)  
-   Console.WriteLine(de.Name);  
+    Console.WriteLine(de.Name);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Child1>  
-                   <GrandChild1>  
-                       <GreatGrandChild1>content</GreatGrandChild1>  
-                   </GrandChild1>  
-               </Child1>  
-               <Child2>  
-                   <GrandChild2>  
-                       <GreatGrandChild2>content</GreatGrandChild2>  
-                   </GrandChild2>  
-               </Child2>  
-           </Root>  
- 
-       Dim greatGrandChildren = From el In xmlTree.Descendants _  
-                                Where el.Name.LocalName.StartsWith("Great") _  
-                                Select el  
- 
-       Console.WriteLine("Great Grand Children Elements")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In greatGrandChildren  
-           Console.WriteLine(de.Name)  
-       Next  
- 
-       Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf(GetXmlNamespace() + "GreatGrandChild1") _  
-                          Select el  
- 
-       Console.WriteLine("")  
-       Console.WriteLine("Ancestors and Self")  
-       Console.WriteLine("----")  
- 
-       For Each de As XElement In allAncestors  
-           Console.WriteLine(de.Name)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Child1>  
+                    <GrandChild1>  
+                        <GreatGrandChild1>content</GreatGrandChild1>  
+                    </GrandChild1>  
+                </Child1>  
+                <Child2>  
+                    <GrandChild2>  
+                        <GreatGrandChild2>content</GreatGrandChild2>  
+                    </GrandChild2>  
+                </Child2>  
+            </Root>  
+  
+        Dim greatGrandChildren = From el In xmlTree.Descendants _  
+                                 Where el.Name.LocalName.StartsWith("Great") _  
+                                 Select el  
+  
+        Console.WriteLine("Great Grand Children Elements")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In greatGrandChildren  
+            Console.WriteLine(de.Name)  
+        Next  
+  
+        Dim allAncestors = From el In greatGrandChildren.AncestorsAndSelf(GetXmlNamespace() + "GreatGrandChild1") _  
+                           Select el  
+  
+        Console.WriteLine("")  
+        Console.WriteLine("Ancestors and Self")  
+        Console.WriteLine("----")  
+  
+        For Each de As XElement In allAncestors  
+            Console.WriteLine(de.Name)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -989,7 +989,7 @@ Great Grand Children Elements
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
 {http://www.adventure-works.com}GreatGrandChild2  
- 
+  
 Ancestors and Self  
 ----  
 {http://www.adventure-works.com}GreatGrandChild1  
@@ -1046,48 +1046,48 @@ The following example retrieves a collection of elements, and then retrieves a c
 Note that the namespace attribute is returned by this method.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2"),  
-   new XElement("Child1",  
-       new XAttribute("Att1", "content3"),  
-       new XAttribute("Att2", "content4")  
-   ),  
-   new XElement("Child2",  
-       new XAttribute("Att1", "content5"),  
-       new XAttribute("Att2", "content6")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2"),  
+    new XElement("Child1",  
+        new XAttribute("Att1", "content3"),  
+        new XAttribute("Att2", "content4")  
+    ),  
+    new XElement("Child2",  
+        new XAttribute("Att1", "content5"),  
+        new XAttribute("Att2", "content6")  
+    )  
 );  
 Console.WriteLine(xmlTree);  
 Console.WriteLine("-----");  
- 
+  
 IEnumerable<XAttribute> attList =  
-   from att in xmlTree.DescendantsAndSelf().Attributes()  
-   select att;  
- 
+    from att in xmlTree.DescendantsAndSelf().Attributes()  
+    select att;  
+  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root xmlns:aw="http://www.adventure-works.com" Att1="content1" Att2="content2">  
-       <Child1 Att1="content3" Att2="content4"/>  
-       <Child2 Att1="content5" Att2="content6"/>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root xmlns:aw="http://www.adventure-works.com" Att1="content1" Att2="content2">  
+        <Child1 Att1="content3" Att2="content4"/>  
+        <Child2 Att1="content5" Att2="content6"/>  
+    </Root>  
+  
 Dim attList = _  
-   From att In xmlTree.DescendantsAndSelf.Attributes _  
-   Select att  
- 
+    From att In xmlTree.DescendantsAndSelf.Attributes _  
+    Select att  
+  
 Console.WriteLine(xmlTree)  
 Console.WriteLine("-----")  
- 
+  
 For Each att As XAttribute In attList  
-   Console.WriteLine(att)  
+    Console.WriteLine(att)  
 Next  
 ```  
  
@@ -1095,8 +1095,8 @@ This example produces the following output:
  
 ```  
 <Root xmlns:aw="http://www.adventure-works.com" Att1="content1" Att2="content2">  
- <Child1 Att1="content3" Att2="content4" />  
- <Child2 Att1="content5" Att2="content6" />  
+  <Child1 Att1="content3" Att2="content4" />  
+  <Child2 Att1="content5" Att2="content6" />  
 </Root>  
 -----  
 xmlns:aw="http://www.adventure-works.com"  
@@ -1111,55 +1111,55 @@ Att2="content6"
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430). Note that the namespace attribute is included in the returned collection.  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
-   new XAttribute(aw + "Att1", "content1"),  
-   new XAttribute(aw + "Att2", "content2"),  
-   new XElement(aw + "Child1",  
-       new XAttribute(aw + "Att1", "content3"),  
-       new XAttribute(aw + "Att2", "content4")  
-   ),  
-   new XElement(aw + "Child2",  
-       new XAttribute(aw + "Att1", "content5"),  
-       new XAttribute(aw + "Att2", "content6")  
-   )  
+    new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
+    new XAttribute(aw + "Att1", "content1"),  
+    new XAttribute(aw + "Att2", "content2"),  
+    new XElement(aw + "Child1",  
+        new XAttribute(aw + "Att1", "content3"),  
+        new XAttribute(aw + "Att2", "content4")  
+    ),  
+    new XElement(aw + "Child2",  
+        new XAttribute(aw + "Att1", "content5"),  
+        new XAttribute(aw + "Att2", "content6")  
+    )  
 );  
 Console.WriteLine(xmlTree);  
 Console.WriteLine("-----");  
- 
+  
 IEnumerable<XAttribute> attList =  
-   from att in xmlTree.DescendantsAndSelf().Attributes()  
-   select att;  
- 
+    from att in xmlTree.DescendantsAndSelf().Attributes()  
+    select att;  
+  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns:aw="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns:aw="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <aw:Root xmlns:aw="http://www.adventure-works.com" aw:Att1="content1" aw:Att2="content2">  
-               <aw:Child1 aw:Att1="content3" aw:Att2="content4"/>  
-               <aw:Child2 aw:Att1="content5" aw:Att2="content6"/>  
-           </aw:Root>  
- 
-       Dim attList = _  
-           From att In xmlTree.DescendantsAndSelf.Attributes _  
-           Select att  
- 
-       Console.WriteLine(xmlTree)  
-       Console.WriteLine("-----")  
- 
-       For Each att As XAttribute In attList  
-           Console.WriteLine(att)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <aw:Root xmlns:aw="http://www.adventure-works.com" aw:Att1="content1" aw:Att2="content2">  
+                <aw:Child1 aw:Att1="content3" aw:Att2="content4"/>  
+                <aw:Child2 aw:Att1="content5" aw:Att2="content6"/>  
+            </aw:Root>  
+  
+        Dim attList = _  
+            From att In xmlTree.DescendantsAndSelf.Attributes _  
+            Select att  
+  
+        Console.WriteLine(xmlTree)  
+        Console.WriteLine("-----")  
+  
+        For Each att As XAttribute In attList  
+            Console.WriteLine(att)  
+        Next  
+    End Sub  
 End Module  
 ```  
  
@@ -1167,8 +1167,8 @@ This example produces the following output:
  
 ```  
 <aw:Root xmlns:aw="http://www.adventure-works.com" aw:Att1="content1" aw:Att2="content2">  
- <aw:Child1 aw:Att1="content3" aw:Att2="content4" />  
- <aw:Child2 aw:Att1="content5" aw:Att2="content6" />  
+  <aw:Child1 aw:Att1="content3" aw:Att2="content4" />  
+  <aw:Child2 aw:Att1="content5" aw:Att2="content6" />  
 </aw:Root>  
 -----  
 xmlns:aw="http://www.adventure-works.com"  
@@ -1229,44 +1229,44 @@ This method uses deferred execution.
 The following example retrieves a collection of elements, which in this case includes the `Child1` and `Child2` elements. It then retrieves all attributes of that child collection with a name of `Att1`.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XAttribute("Att1", "content1"),  
-   new XAttribute("Att2", "content2"),  
-   new XElement("Child1",  
-       new XAttribute("Att1", "content3"),  
-       new XAttribute("Att2", "content4")  
-   ),  
-   new XElement("Child2",  
-       new XAttribute("Att1", "content5"),  
-       new XAttribute("Att2", "content6")  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", "content1"),  
+    new XAttribute("Att2", "content2"),  
+    new XElement("Child1",  
+        new XAttribute("Att1", "content3"),  
+        new XAttribute("Att2", "content4")  
+    ),  
+    new XElement("Child2",  
+        new XAttribute("Att1", "content5"),  
+        new XAttribute("Att2", "content6")  
+    )  
 );  
- 
+  
 IEnumerable<XAttribute> attList = from att in xmlTree.Elements().Attributes("Att1")  
-                                 select att;  
- 
+                                  select att;  
+  
 foreach (XAttribute att in attList)  
-   Console.WriteLine(att);  
+    Console.WriteLine(att);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root Att1="content1" Att2="content2">  
-       <Child1 Att1="content3" Att2="content4">  
-       </Child1>  
-       <Child2 Att1="content5" Att2="content6">  
-       </Child2>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root Att1="content1" Att2="content2">  
+        <Child1 Att1="content3" Att2="content4">  
+        </Child1>  
+        <Child2 Att1="content5" Att2="content6">  
+        </Child2>  
+    </Root>  
+  
 Dim attList = From att In xmlTree.Elements.Attributes("Att1") _  
-                         Select att  
- 
+                          Select att  
+  
 For Each att As XAttribute In attList  
-   Console.WriteLine(att)  
+    Console.WriteLine(att)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -1333,65 +1333,65 @@ This method uses deferred execution.
 The following example retrieves a collection of two elements, and then retrieves a collection of all descendant nodes for every element in the source collection. Note that the attribute of the `GrandChild` element is not surfaced as a node.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse(  
+  
+                XElement xmlTree = XElement.Parse(  
 @"<Root>  
-   <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
-       <!--a comment-->  
-       <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
-   </Child>  
-   <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
+    <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
+        <!--a comment-->  
+        <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
+    </Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>");  
 IEnumerable<XNode> nodes =  
-   from node in xmlTree.Elements("Child").DescendantNodes()  
-   select node;  
- 
+    from node in xmlTree.Elements("Child").DescendantNodes()  
+    select node;  
+  
 foreach (XNode node in nodes)  
 {  
-   switch (node.NodeType)  
-   {  
-       case XmlNodeType.Element:  
-           Console.WriteLine("Element: {0}", ((XElement)node).Name);  
-           break;  
-       case XmlNodeType.Text:  
-           Console.WriteLine("Text: {0}", ((XText)node).Value);  
-           break;  
-       case XmlNodeType.Comment:  
-           Console.WriteLine("Comment: {0}", ((XComment)node).Value);  
-           break;  
-       case XmlNodeType.ProcessingInstruction:  
-           Console.WriteLine("PI: {0}", ((XProcessingInstruction)node).Data);  
-           break;  
-   }  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Element:  
+            Console.WriteLine("Element: {0}", ((XElement)node).Name);  
+            break;  
+        case XmlNodeType.Text:  
+            Console.WriteLine("Text: {0}", ((XText)node).Value);  
+            break;  
+        case XmlNodeType.Comment:  
+            Console.WriteLine("Comment: {0}", ((XComment)node).Value);  
+            break;  
+        case XmlNodeType.ProcessingInstruction:  
+            Console.WriteLine("PI: {0}", ((XProcessingInstruction)node).Data);  
+            break;  
+    }  
 }  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
+  
+                Dim xmlTree As XElement = _  
 <Root>  
-   <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
-       <!--a comment-->  
-       <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
-   </Child>  
-   <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
+    <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
+        <!--a comment-->  
+        <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
+    </Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>  
- 
+  
 Dim nodes As IEnumerable(Of XNode) = _  
-   From node In xmlTree.<Child>.DescendantNodes _  
-   Select node  
- 
+    From node In xmlTree.<Child>.DescendantNodes _  
+    Select node  
+  
 For Each node As XNode In nodes  
-   Select Case node.NodeType  
-       Case XmlNodeType.Element  
-           Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
-       Case XmlNodeType.Text  
-           Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
-       Case XmlNodeType.Comment  
-           Console.WriteLine("Comment: {0}", DirectCast(node, XComment).Value)  
-       Case XmlNodeType.ProcessingInstruction  
-           Console.WriteLine("PI: {0}", DirectCast(node, XProcessingInstruction).Data)  
-   End Select  
+    Select Case node.NodeType  
+        Case XmlNodeType.Element  
+            Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Text  
+            Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
+        Case XmlNodeType.Comment  
+            Console.WriteLine("Comment: {0}", DirectCast(node, XComment).Value)  
+        Case XmlNodeType.ProcessingInstruction  
+            Console.WriteLine("PI: {0}", DirectCast(node, XProcessingInstruction).Data)  
+    End Select  
 Next  
 ```  
  
@@ -1412,72 +1412,72 @@ Text: ddd
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
-   <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
-       <!--a comment-->  
-       <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
-   </Child>  
-   <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
+    <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
+        <!--a comment-->  
+        <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
+    </Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>");  
 IEnumerable<XNode> nodes =  
-   from node in xmlTree.Elements(aw + "Child").DescendantNodes()  
-   select node;  
- 
+    from node in xmlTree.Elements(aw + "Child").DescendantNodes()  
+    select node;  
+  
 foreach (XNode node in nodes)  
 {  
-   switch (node.NodeType)  
-   {  
-       case XmlNodeType.Element:  
-           Console.WriteLine("Element: {0}", ((XElement)node).Name);  
-           break;  
-       case XmlNodeType.Text:  
-           Console.WriteLine("Text: {0}", ((XText)node).Value);  
-           break;  
-       case XmlNodeType.Comment:  
-           Console.WriteLine("Comment: {0}", ((XComment)node).Value);  
-           break;  
-       case XmlNodeType.ProcessingInstruction:  
-           Console.WriteLine("PI: {0}", ((XProcessingInstruction)node).Data);  
-           break;  
-   }  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Element:  
+            Console.WriteLine("Element: {0}", ((XElement)node).Name);  
+            break;  
+        case XmlNodeType.Text:  
+            Console.WriteLine("Text: {0}", ((XText)node).Value);  
+            break;  
+        case XmlNodeType.Comment:  
+            Console.WriteLine("Comment: {0}", ((XComment)node).Value);  
+            break;  
+        case XmlNodeType.ProcessingInstruction:  
+            Console.WriteLine("PI: {0}", ((XProcessingInstruction)node).Data);  
+            break;  
+    }  
 }  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-       <Root>  
-           <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
-               <!--a comment-->  
-               <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
-           </Child>  
-           <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
-       </Root>  
- 
-       Dim nodes As IEnumerable(Of XNode) = _  
-           From node In xmlTree.<Child>.DescendantNodes _  
-           Select node  
- 
-       For Each node As XNode In nodes  
-           Select Case node.NodeType  
-               Case XmlNodeType.Element  
-                   Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
-               Case XmlNodeType.Text  
-                   Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
-               Case XmlNodeType.Comment  
-                   Console.WriteLine("Comment: {0}", DirectCast(node, XComment).Value)  
-               Case XmlNodeType.ProcessingInstruction  
-                   Console.WriteLine("PI: {0}", DirectCast(node, XProcessingInstruction).Data)  
-           End Select  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+        <Root>  
+            <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
+                <!--a comment-->  
+                <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
+            </Child>  
+            <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
+        </Root>  
+  
+        Dim nodes As IEnumerable(Of XNode) = _  
+            From node In xmlTree.<Child>.DescendantNodes _  
+            Select node  
+  
+        For Each node As XNode In nodes  
+            Select Case node.NodeType  
+                Case XmlNodeType.Element  
+                    Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
+                Case XmlNodeType.Text  
+                    Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
+                Case XmlNodeType.Comment  
+                    Console.WriteLine("Comment: {0}", DirectCast(node, XComment).Value)  
+                Case XmlNodeType.ProcessingInstruction  
+                    Console.WriteLine("PI: {0}", DirectCast(node, XProcessingInstruction).Data)  
+            End Select  
+        Next  
+    End Sub  
 End Module  
 ```  
  
@@ -1591,53 +1591,53 @@ This method uses deferred execution.
 The following example retrieves a collection of elements, and then uses this axis method to retrieve all descendent elements of every item in the collection of elements.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse(  
+  
+                XElement xmlTree = XElement.Parse(  
 @"<Root>  
-   <Para>  
-       <t>This is some text </t>  
-       <b>  
-           <t>where</t>  
-       </b>  
-       <t> all of the nodes must be concatenated. </t>  
-   </Para>  
-   <Para>  
-       <t>This is a second sentence.</t>  
-   </Para>  
+    <Para>  
+        <t>This is some text </t>  
+        <b>  
+            <t>where</t>  
+        </b>  
+        <t> all of the nodes must be concatenated. </t>  
+    </Para>  
+    <Para>  
+        <t>This is a second sentence.</t>  
+    </Para>  
 </Root>");  
- 
+  
 IEnumerable<XElement> elList =  
-   from el in xmlTree.Elements("Para").Descendants()  
-   select el;  
- 
+    from el in xmlTree.Elements("Para").Descendants()  
+    select el;  
+  
 foreach (XElement el in elList)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Para>  
-           <t>This is some text </t>  
-           <b>  
-               <t>where</t>  
-           </b>  
-           <t> all of the nodes must be concatenated. </t>  
-       </Para>  
- 
-       <Para>  
-           <t>This is a second sentence.</t>  
-       </Para>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Para>  
+            <t>This is some text </t>  
+            <b>  
+                <t>where</t>  
+            </b>  
+            <t> all of the nodes must be concatenated. </t>  
+        </Para>  
+  
+        <Para>  
+            <t>This is a second sentence.</t>  
+        </Para>  
+    </Root>  
+  
 Dim elList = From el In xmlTree.<Para>.Descendants _  
-                       Select el  
- 
+                        Select el  
+  
 For Each el As XElement In elList  
-   Console.WriteLine(el)  
+    Console.WriteLine(el)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -1645,7 +1645,7 @@ This example produces the following output:
 ```  
 <t>This is some text </t>  
 <b>  
- <t>where</t>  
+  <t>where</t>  
 </b>  
 <t>where</t>  
 <t> all of the nodes must be concatenated. </t>  
@@ -1655,60 +1655,60 @@ This example produces the following output:
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
-   <Para>  
-       <t>This is some text </t>  
-       <b>  
-           <t>where</t>  
-       </b>  
-       <t> all of the nodes must be concatenated. </t>  
-   </Para>  
-   <Para>  
-       <t>This is a second sentence.</t>  
-   </Para>  
+    <Para>  
+        <t>This is some text </t>  
+        <b>  
+            <t>where</t>  
+        </b>  
+        <t> all of the nodes must be concatenated. </t>  
+    </Para>  
+    <Para>  
+        <t>This is a second sentence.</t>  
+    </Para>  
 </Root>");  
- 
+  
 IEnumerable<XElement> elList =  
-   from el in xmlTree.Elements(aw + "Para").Descendants()  
-   select el;  
- 
+    from el in xmlTree.Elements(aw + "Para").Descendants()  
+    select el;  
+  
 foreach (XElement el in elList)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Para>  
-                   <t>This is some text </t>  
-                   <b>  
-                       <t>where</t>  
-                   </b>  
-                   <t> all of the nodes must be concatenated. </t>  
-               </Para>  
- 
-               <Para>  
-                   <t>This is a second sentence.</t>  
-               </Para>  
-           </Root>  
- 
-       Dim elList = From el In xmlTree.<Para>.Descendants _  
-                               Select el  
- 
-       For Each el As XElement In elList  
-           Console.WriteLine(el)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Para>  
+                    <t>This is some text </t>  
+                    <b>  
+                        <t>where</t>  
+                    </b>  
+                    <t> all of the nodes must be concatenated. </t>  
+                </Para>  
+  
+                <Para>  
+                    <t>This is a second sentence.</t>  
+                </Para>  
+            </Root>  
+  
+        Dim elList = From el In xmlTree.<Para>.Descendants _  
+                                Select el  
+  
+        For Each el As XElement In elList  
+            Console.WriteLine(el)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -1716,7 +1716,7 @@ This example produces the following output:
 ```  
 <t xmlns="http://www.adventure-works.com">This is some text </t>  
 <b xmlns="http://www.adventure-works.com">  
- <t>where</t>  
+  <t>where</t>  
 </b>  
 <t xmlns="http://www.adventure-works.com">where</t>  
 <t xmlns="http://www.adventure-works.com"> all of the nodes must be concatenated. </t>  
@@ -1780,56 +1780,56 @@ This method uses deferred execution.
 The following example retrieves a collection of two elements, and then retrieves a collection of all descendants of the two elements that have the specified element name.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse(  
+  
+                XElement xmlTree = XElement.Parse(  
 @"<Root>  
-   <Para>  
-       <t>This is some text </t>  
-       <b>  
-           <t>where</t>  
-       </b>  
-       <t> all of the text nodes must be concatenated. </t>  
-   </Para>  
-   <Para>  
-       <t>This is a second sentence.</t>  
-   </Para>  
+    <Para>  
+        <t>This is some text </t>  
+        <b>  
+            <t>where</t>  
+        </b>  
+        <t> all of the text nodes must be concatenated. </t>  
+    </Para>  
+    <Para>  
+        <t>This is a second sentence.</t>  
+    </Para>  
 </Root>");  
- 
+  
 string str =  
-   (from el in xmlTree.Elements("Para").Descendants("t")  
-   select (string)el)  
-   .Aggregate(new StringBuilder(),  
-       (sb, i) => sb.Append(i),  
-       sb => sb.ToString());  
- 
+    (from el in xmlTree.Elements("Para").Descendants("t")  
+    select (string)el)  
+    .Aggregate(new StringBuilder(),  
+        (sb, i) => sb.Append(i),  
+        sb => sb.ToString());  
+  
 Console.WriteLine(str);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Para>  
-           <t>This is some text </t>  
-           <b>  
-               <t>where</t>  
-           </b>  
-           <t> all of the text nodes must be concatenated. </t>  
-       </Para>  
-       <Para>  
-           <t>This is a second sentence.</t>  
-       </Para>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Para>  
+            <t>This is some text </t>  
+            <b>  
+                <t>where</t>  
+            </b>  
+            <t> all of the text nodes must be concatenated. </t>  
+        </Para>  
+        <Para>  
+            <t>This is a second sentence.</t>  
+        </Para>  
+    </Root>  
+  
 Dim str As String = _  
-   ( _  
-       From el In xmlTree.<Para>...<t> _  
-       Select CStr(el) _  
-   ) _  
-   .Aggregate(New StringBuilder(), _  
-              Function(ByVal sb, ByVal i) sb.Append(i), _  
-              Function(ByVal sb) sb.ToString())  
- 
+    ( _  
+        From el In xmlTree.<Para>...<t> _  
+        Select CStr(el) _  
+    ) _  
+    .Aggregate(New StringBuilder(), _  
+               Function(ByVal sb, ByVal i) sb.Append(i), _  
+               Function(ByVal sb) sb.ToString())  
+  
 Console.WriteLine(str)  
 ```  
  
@@ -1842,63 +1842,63 @@ This is some text where all of the text nodes must be concatenated. This is a se
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
-   <Para>  
-       <t>This is some text </t>  
-       <b>  
-           <t>where</t>  
-       </b>  
-       <t> all of the text nodes must be concatenated. </t>  
-   </Para>  
-   <Para>  
-       <t>This is a second sentence.</t>  
-   </Para>  
+    <Para>  
+        <t>This is some text </t>  
+        <b>  
+            <t>where</t>  
+        </b>  
+        <t> all of the text nodes must be concatenated. </t>  
+    </Para>  
+    <Para>  
+        <t>This is a second sentence.</t>  
+    </Para>  
 </Root>");  
- 
+  
 string str =  
-   (from el in xmlTree.Elements(aw + "Para").Descendants(aw + "t")  
-    select (string)el)  
-   .Aggregate(new StringBuilder(),  
-       (sb, i) => sb.Append(i),  
-       sb => sb.ToString());  
- 
+    (from el in xmlTree.Elements(aw + "Para").Descendants(aw + "t")  
+     select (string)el)  
+    .Aggregate(new StringBuilder(),  
+        (sb, i) => sb.Append(i),  
+        sb => sb.ToString());  
+  
 Console.WriteLine(str);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Para>  
-                   <t>This is some text </t>  
-                   <b>  
-                       <t>where</t>  
-                   </b>  
-                   <t> all of the text nodes must be concatenated. </t>  
-               </Para>  
-               <Para>  
-                   <t>This is a second sentence.</t>  
-               </Para>  
-           </Root>  
- 
-       Dim str As String = _  
-           ( _  
-               From el In xmlTree.<Para>...<t> _  
-               Select CStr(el) _  
-           ) _  
-           .Aggregate(New StringBuilder(), _  
-                      Function(sb, i) sb.Append(i), _  
-                      Function(sb) sb.ToString())  
- 
-       Console.WriteLine(str)  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Para>  
+                    <t>This is some text </t>  
+                    <b>  
+                        <t>where</t>  
+                    </b>  
+                    <t> all of the text nodes must be concatenated. </t>  
+                </Para>  
+                <Para>  
+                    <t>This is a second sentence.</t>  
+                </Para>  
+            </Root>  
+  
+        Dim str As String = _  
+            ( _  
+                From el In xmlTree.<Para>...<t> _  
+                Select CStr(el) _  
+            ) _  
+            .Aggregate(New StringBuilder(), _  
+                       Function(sb, i) sb.Append(i), _  
+                       Function(sb) sb.ToString())  
+  
+        Console.WriteLine(str)  
+    End Sub  
 End Module  
 ```  
  
@@ -2047,57 +2047,57 @@ This method uses deferred execution.
 The following example retrieves a collection of elements with the element name of `Child`. It then uses this axis method to retrieve all child elements of the collection.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Child",  
-       new XElement("GrandChild1", 1),  
-       new XElement("GrandChild2", 2)  
-   ),  
-   new XElement("Child",  
-       new XElement("GrandChild3", 3),  
-       new XElement("GrandChild4", 4)  
-   ),  
-   new XElement("Child",  
-       new XElement("GrandChild5", 5),  
-       new XElement("GrandChild6", 6)  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",  
+        new XElement("GrandChild1", 1),  
+        new XElement("GrandChild2", 2)  
+    ),  
+    new XElement("Child",  
+        new XElement("GrandChild3", 3),  
+        new XElement("GrandChild4", 4)  
+    ),  
+    new XElement("Child",  
+        new XElement("GrandChild5", 5),  
+        new XElement("GrandChild6", 6)  
+    )  
 );  
- 
+  
 IEnumerable<XElement> allGrandChildren =  
-   from el in xmlTree.Elements("Child").Elements()  
-   select el;  
- 
+    from el in xmlTree.Elements("Child").Elements()  
+    select el;  
+  
 foreach (XElement el in allGrandChildren)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-    <Root>  
-         <Child>  
-             <GrandChild1>1</GrandChild1>  
-             <GrandChild2>2</GrandChild2>  
-         </Child>  
- 
-         <Child>  
-             <GrandChild3>3</GrandChild3>  
-             <GrandChild4>4</GrandChild4>  
-         </Child>  
- 
-         <Child>  
-             <GrandChild5>5</GrandChild5>  
-             <GrandChild6>6</GrandChild6>  
-         </Child>  
-     </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+     <Root>  
+          <Child>  
+              <GrandChild1>1</GrandChild1>  
+              <GrandChild2>2</GrandChild2>  
+          </Child>  
+  
+          <Child>  
+              <GrandChild3>3</GrandChild3>  
+              <GrandChild4>4</GrandChild4>  
+          </Child>  
+  
+          <Child>  
+              <GrandChild5>5</GrandChild5>  
+              <GrandChild6>6</GrandChild6>  
+          </Child>  
+      </Root>  
+  
 Dim allGrandChildren = From el In xmlTree.<Child>.Elements _  
-                      Select el  
- 
+                       Select el  
+  
 For Each el As XElement In allGrandChildren  
-   Console.WriteLine(el)  
+    Console.WriteLine(el)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2114,64 +2114,64 @@ This example produces the following output:
 The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
  
 ```csharp  
- 
-               XNamespace aw = "http://www.adventure-works.com";  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Child",  
-       new XElement(aw + "GrandChild1", 1),  
-       new XElement(aw + "GrandChild2", 2)  
-   ),  
-   new XElement(aw + "Child",  
-       new XElement(aw + "GrandChild3", 3),  
-       new XElement(aw + "GrandChild4", 4)  
-   ),  
-   new XElement(aw + "Child",  
-       new XElement(aw + "GrandChild5", 5),  
-       new XElement(aw + "GrandChild6", 6)  
-   )  
+    new XElement(aw + "Child",  
+        new XElement(aw + "GrandChild1", 1),  
+        new XElement(aw + "GrandChild2", 2)  
+    ),  
+    new XElement(aw + "Child",  
+        new XElement(aw + "GrandChild3", 3),  
+        new XElement(aw + "GrandChild4", 4)  
+    ),  
+    new XElement(aw + "Child",  
+        new XElement(aw + "GrandChild5", 5),  
+        new XElement(aw + "GrandChild6", 6)  
+    )  
 );  
- 
+  
 IEnumerable<XElement> allGrandChildren =  
-   from el in xmlTree.Elements(aw + "Child").Elements()  
-   select el;  
- 
+    from el in xmlTree.Elements(aw + "Child").Elements()  
+    select el;  
+  
 foreach (XElement el in allGrandChildren)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-            <Root>  
-                <Child>  
-                    <GrandChild1>1</GrandChild1>  
-                    <GrandChild2>2</GrandChild2>  
-                </Child>  
- 
-                <Child>  
-                    <GrandChild3>3</GrandChild3>  
-                    <GrandChild4>4</GrandChild4>  
-                </Child>  
- 
-                <Child>  
-                    <GrandChild5>5</GrandChild5>  
-                    <GrandChild6>6</GrandChild6>  
-                </Child>  
-            </Root>  
- 
-       Dim allGrandChildren = From el In xmlTree.<Child>.Elements _  
-                              Select el  
- 
-       For Each el As XElement In allGrandChildren  
-           Console.WriteLine(el)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+             <Root>  
+                 <Child>  
+                     <GrandChild1>1</GrandChild1>  
+                     <GrandChild2>2</GrandChild2>  
+                 </Child>  
+  
+                 <Child>  
+                     <GrandChild3>3</GrandChild3>  
+                     <GrandChild4>4</GrandChild4>  
+                 </Child>  
+  
+                 <Child>  
+                     <GrandChild5>5</GrandChild5>  
+                     <GrandChild6>6</GrandChild6>  
+                 </Child>  
+             </Root>  
+  
+        Dim allGrandChildren = From el In xmlTree.<Child>.Elements _  
+                               Select el  
+  
+        For Each el As XElement In allGrandChildren  
+            Console.WriteLine(el)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2242,57 +2242,57 @@ This method uses deferred execution.
 This extension method is useful when you want to retrieve all elements with a specified name at a particular depth. This is easy if the document is very regular, but if the document is irregular, it can be a bit more difficult. In the following example, we want to retrieve all `aaa` elements that are children of `Item` elements. A given `Item` element may or may not contain an `aaa` element. This is easily accomplished using this extension method, as follows:  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Item",  
-       new XElement("aaa", 1),  
-       new XElement("bbb", 2)  
-   ),  
-   new XElement("Item",  
-       new XElement("ccc", 3),  
-       new XElement("aaa", 4)  
-   ),  
-   new XElement("Item",  
-       new XElement("ddd", 5),  
-       new XElement("eee", 6)  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Item",  
+        new XElement("aaa", 1),  
+        new XElement("bbb", 2)  
+    ),  
+    new XElement("Item",  
+        new XElement("ccc", 3),  
+        new XElement("aaa", 4)  
+    ),  
+    new XElement("Item",  
+        new XElement("ddd", 5),  
+        new XElement("eee", 6)  
+    )  
 );  
- 
+  
 IEnumerable<XElement> allGrandChildren =  
-   from el in xmlTree.Elements("Item").Elements("aaa")  
-   select el;  
- 
+    from el in xmlTree.Elements("Item").Elements("aaa")  
+    select el;  
+  
 foreach (XElement el in allGrandChildren)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Item>  
-           <aaa>1</aaa>  
-           <bbb>2</bbb>  
-       </Item>  
- 
-       <Item>  
-           <ccc>3</ccc>  
-           <aaa>4</aaa>  
-       </Item>  
- 
-       <Item>  
-           <ddd>5</ddd>  
-           <eee>6</eee>  
-       </Item>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Item>  
+            <aaa>1</aaa>  
+            <bbb>2</bbb>  
+        </Item>  
+  
+        <Item>  
+            <ccc>3</ccc>  
+            <aaa>4</aaa>  
+        </Item>  
+  
+        <Item>  
+            <ddd>5</ddd>  
+            <eee>6</eee>  
+        </Item>  
+    </Root>  
+  
 Dim allGrandChildren = From el In xmlTree.<Item>.<aaa> _  
-                      Select el  
- 
+                       Select el  
+  
 For Each el As XElement In allGrandChildren  
-   Console.WriteLine(el)  
+    Console.WriteLine(el)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2307,61 +2307,61 @@ The following is the same example, but in this case the XML is in a namespace. F
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
-   new XElement(aw + "Item",  
-       new XElement(aw + "aaa", 1),  
-       new XElement(aw + "bbb", 2)  
-   ),  
-   new XElement(aw + "Item",  
-       new XElement(aw + "ccc", 3),  
-       new XElement(aw + "aaa", 4)  
-   ),  
-   new XElement(aw + "Item",  
-       new XElement(aw + "ddd", 5),  
-       new XElement(aw + "eee", 6)  
-   )  
+    new XElement(aw + "Item",  
+        new XElement(aw + "aaa", 1),  
+        new XElement(aw + "bbb", 2)  
+    ),  
+    new XElement(aw + "Item",  
+        new XElement(aw + "ccc", 3),  
+        new XElement(aw + "aaa", 4)  
+    ),  
+    new XElement(aw + "Item",  
+        new XElement(aw + "ddd", 5),  
+        new XElement(aw + "eee", 6)  
+    )  
 );  
- 
+  
 IEnumerable<XElement> allGrandChildren =  
-   from el in xmlTree.Elements(aw + "Item").Elements(aw + "aaa")  
-   select el;  
- 
+    from el in xmlTree.Elements(aw + "Item").Elements(aw + "aaa")  
+    select el;  
+  
 foreach (XElement el in allGrandChildren)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Imports <xmlns="http://www.adventure-works.com">  
- 
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
 Module Module1  
-   Sub Main()  
-       Dim xmlTree As XElement = _  
-           <Root>  
-               <Item>  
-                   <aaa>1</aaa>  
-                   <bbb>2</bbb>  
-               </Item>  
- 
-               <Item>  
-                   <ccc>3</ccc>  
-                   <aaa>4</aaa>  
-               </Item>  
- 
-               <Item>  
-                   <ddd>5</ddd>  
-                   <eee>6</eee>  
-               </Item>  
-           </Root>  
- 
-       Dim allGrandChildren = From el In xmlTree.<Item>.<aaa> _  
-                              Select el  
- 
-       For Each el As XElement In allGrandChildren  
-           Console.WriteLine(el)  
-       Next  
-   End Sub  
+    Sub Main()  
+        Dim xmlTree As XElement = _  
+            <Root>  
+                <Item>  
+                    <aaa>1</aaa>  
+                    <bbb>2</bbb>  
+                </Item>  
+  
+                <Item>  
+                    <ccc>3</ccc>  
+                    <aaa>4</aaa>  
+                </Item>  
+  
+                <Item>  
+                    <ddd>5</ddd>  
+                    <eee>6</eee>  
+                </Item>  
+            </Root>  
+  
+        Dim allGrandChildren = From el In xmlTree.<Item>.<aaa> _  
+                               Select el  
+  
+        For Each el As XElement In allGrandChildren  
+            Console.WriteLine(el)  
+        Next  
+    End Sub  
 End Module  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2424,67 +2424,67 @@ This axis method uses deferred execution. However, it first enumerates its sourc
 The following example creates a collection of nodes that are not in document order, and then uses this axis to create a new collection where the nodes are in document order.  
  
 ```csharp  
- 
-               XElement xmlTree = new XElement("Root",  
-   new XElement("Item",  
-       new XElement("aaa", 1),  
-       new XElement("bbb", 2)  
-   ),  
-   new XElement("Item",  
-       new XElement("ccc", 3),  
-       new XElement("aaa", 4)  
-   ),  
-   new XElement("Item",  
-       new XElement("ddd", 5),  
-       new XElement("eee", 6)  
-   )  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Item",  
+        new XElement("aaa", 1),  
+        new XElement("bbb", 2)  
+    ),  
+    new XElement("Item",  
+        new XElement("ccc", 3),  
+        new XElement("aaa", 4)  
+    ),  
+    new XElement("Item",  
+        new XElement("ddd", 5),  
+        new XElement("eee", 6)  
+    )  
 );  
- 
+  
 XElement[] elementList = {  
-   xmlTree.Descendants("ddd").First(),  
-   xmlTree.Descendants("ccc").First(),  
-   xmlTree.Descendants("aaa").First()  
+    xmlTree.Descendants("ddd").First(),  
+    xmlTree.Descendants("ccc").First(),  
+    xmlTree.Descendants("aaa").First()  
 };  
- 
+  
 IEnumerable<XElement> inDocOrder = elementList.InDocumentOrder();  
- 
+  
 foreach (XElement el in inDocOrder)  
-   Console.WriteLine(el);  
+    Console.WriteLine(el);  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Item>  
-           <aaa>1</aaa>  
-           <bbb>2</bbb>  
-       </Item>  
- 
-       <Item>  
-           <ccc>3</ccc>  
-           <aaa>4</aaa>  
-       </Item>  
- 
-       <Item>  
-           <ddd>5</ddd>  
-           <eee>6</eee>  
-       </Item>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Item>  
+            <aaa>1</aaa>  
+            <bbb>2</bbb>  
+        </Item>  
+  
+        <Item>  
+            <ccc>3</ccc>  
+            <aaa>4</aaa>  
+        </Item>  
+  
+        <Item>  
+            <ddd>5</ddd>  
+            <eee>6</eee>  
+        </Item>  
+    </Root>  
+  
 Dim elementList() As XElement = _  
-   { _  
-       xmlTree...<ddd>(0), _  
-       xmlTree...<ccc>(0), _  
-       xmlTree...<aaa>(0) _  
-   }  
- 
+    { _  
+        xmlTree...<ddd>(0), _  
+        xmlTree...<ccc>(0), _  
+        xmlTree...<aaa>(0) _  
+    }  
+  
 Dim inDocOrder = elementList.InDocumentOrder  
- 
+  
 For Each el As XElement In inDocOrder  
-   Console.WriteLine(el)  
+    Console.WriteLine(el)  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2548,46 +2548,46 @@ This method uses deferred execution.
 The following example retrieves all of the child nodes for every node in a collection of elements with the name of `Child`.  
  
 ```csharp  
- 
-               XElement xmlTree = XElement.Parse(  
-   @"<Root><Child>aaa<GrandChild>Text</GrandChild>bbb</Child>" +  
-   @"<Child>ccc<GrandChild>Text</GrandChild>ddd</Child></Root>");  
+  
+                XElement xmlTree = XElement.Parse(  
+    @"<Root><Child>aaa<GrandChild>Text</GrandChild>bbb</Child>" +  
+    @"<Child>ccc<GrandChild>Text</GrandChild>ddd</Child></Root>");  
 IEnumerable<XNode> nodes = xmlTree.Elements("Child").Nodes();  
- 
+  
 foreach (XNode node in nodes)  
 {  
-   switch (node.NodeType)  
-   {  
-       case XmlNodeType.Element:  
-           Console.WriteLine("Element: {0}", ((XElement)node).Name);  
-           break;  
-       case XmlNodeType.Text:  
-           Console.WriteLine("Text: {0}", ((XText)node).Value);  
-           break;  
-   }  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Element:  
+            Console.WriteLine("Element: {0}", ((XElement)node).Name);  
+            break;  
+        case XmlNodeType.Text:  
+            Console.WriteLine("Text: {0}", ((XText)node).Value);  
+            break;  
+    }  
 }  
 ```  
  
 ```vb  
- 
-               Dim xmlTree As XElement = _  
-   <Root>  
-       <Child>aaa<GrandChild>Text</GrandChild>bbb</Child>  
-       <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
-   </Root>  
- 
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child>aaa<GrandChild>Text</GrandChild>bbb</Child>  
+        <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
+    </Root>  
+  
 Dim nodes = xmlTree.<Child>.Nodes()  
- 
+  
 ' Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
 For Each node As XNode In nodes  
-   Select Case node.NodeType  
-       Case XmlNodeType.Element  
-           Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
-       Case XmlNodeType.Text  
-           Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
-   End Select  
+    Select Case node.NodeType  
+        Case XmlNodeType.Element  
+            Console.WriteLine("Element: {0}", DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Text  
+            Console.WriteLine("Text: {0}", DirectCast(node, XText).Value)  
+    End Select  
 Next  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2645,37 +2645,37 @@ This method uses snapshot semantics—that is, it copies the attributes in the s
 The following example retrieves a collection of attributes, and then calls this method to remove them from their parent elements.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XAttribute("Att1", 1),  
-   new XAttribute("Att2", 2),  
-   new XAttribute("Att3", 3),  
-   new XAttribute("Att4", 4),  
-   new XAttribute("Att5", 5)  
+  
+                XElement root = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XAttribute("Att3", 3),  
+    new XAttribute("Att4", 4),  
+    new XAttribute("Att5", 5)  
 );  
- 
+  
 IEnumerable<XAttribute> atList =  
-   from at in root.Attributes()  
-   where (int)at >= 3  
-   select at;  
- 
+    from at in root.Attributes()  
+    where (int)at >= 3  
+    select at;  
+  
 atList.Remove();  
- 
+  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4" Att5="5"/>  
- 
+  
+                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4" Att5="5"/>  
+  
 Dim atList = From at In root.Attributes _  
-            Where at.Value >= 3 _  
-            Select at  
- 
+             Where at.Value >= 3 _  
+             Select at  
+  
 atList.Remove()  
- 
+  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
@@ -2736,52 +2736,52 @@ This method uses snapshot semantics—that is, it copies the attributes in the s
 The following example retrieves a collection of elements. It then calls this method to remove the elements from their parent element.  
  
 ```csharp  
- 
-               XElement root = new XElement("Root",  
-   new XElement("Data", 1),  
-   new XElement("Data", 2),  
-   new XElement("Data", 3),  
-   new XElement("Data", 4),  
-   new XElement("Data", 5)  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Data", 1),  
+    new XElement("Data", 2),  
+    new XElement("Data", 3),  
+    new XElement("Data", 4),  
+    new XElement("Data", 5)  
 );  
- 
+  
 IEnumerable<XElement> elList =  
-   from el in root.Elements()  
-   where (int)el >= 3  
-   select el;  
- 
+    from el in root.Elements()  
+    where (int)el >= 3  
+    select el;  
+  
 elList.Remove();  
- 
+  
 Console.WriteLine(root);  
 ```  
  
 ```vb  
- 
-               Dim root As XElement = _  
-   <Root>  
-       <Data>1</Data>  
-       <Data>2</Data>  
-       <Data>3</Data>  
-       <Data>4</Data>  
-       <Data>5</Data>  
-   </Root>  
- 
+  
+                Dim root As XElement = _  
+    <Root>  
+        <Data>1</Data>  
+        <Data>2</Data>  
+        <Data>3</Data>  
+        <Data>4</Data>  
+        <Data>5</Data>  
+    </Root>  
+  
 Dim elList = From el In root.Elements _  
-            Where el.Value >= 3 _  
-            Select el  
- 
+             Where el.Value >= 3 _  
+             Select el  
+  
 elList.Remove()  
- 
+  
 Console.WriteLine(root)  
- 
+  
 ```  
  
 This example produces the following output:  
  
 ```  
 <Root>  
- <Data>1</Data>  
- <Data>2</Data>  
+  <Data>1</Data>  
+  <Data>2</Data>  
 </Root>  
 ```  
  

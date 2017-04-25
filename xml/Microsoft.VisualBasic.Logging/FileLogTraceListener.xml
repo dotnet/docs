@@ -97,16 +97,16 @@ For this example to run, you must provide the fully qualified assembly name. For
  
 ```  
 <configuration>  
-   <system.diagnostics>  
-       <sharedListeners>  
-           <add name="FileLog"  
-               type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
-                     Microsoft.VisualBasic, Version=8.0.0.0,   
-                     Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a,   
-                     processorArchitecture=MSIL"   
-               initializeData="FileLogWriter"/>  
-       </sharedListeners>  
-   </system.diagnostics>  
+    <system.diagnostics>  
+        <sharedListeners>  
+            <add name="FileLog"  
+                type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
+                      Microsoft.VisualBasic, Version=8.0.0.0,   
+                      Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a,   
+                      processorArchitecture=MSIL"   
+                initializeData="FileLogWriter"/>  
+        </sharedListeners>  
+    </system.diagnostics>  
 </configuration>  
 ```  
  

@@ -75,7 +75,7 @@ A typical method of using this attribute is as follows:
 <XmlSerializerAssemblyAttribute(AssemblyName:="hello.serializer")> _  
 Public Class Hello  
 Implements System.Web.Services.Protocols.SoapHttpClientProtocol   
-  ' Proxy code not shown.  
+   ' Proxy code not shown.  
 End Class  
 ```  
  

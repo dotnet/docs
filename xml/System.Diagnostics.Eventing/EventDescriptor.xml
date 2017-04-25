@@ -27,7 +27,7 @@ Use the values of the descriptor to create an instance of this class, as shown i
 ```  
 unchecked  
 {  
-   readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+    readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
 }  
 ```  
  

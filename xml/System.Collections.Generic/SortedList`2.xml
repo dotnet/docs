@@ -1530,25 +1530,25 @@ The <xref:System.Collections.ICollection.SyncRoot%2A> property returns an object
 ```csharp  
 ICollection ic = ...;  
 lock (ic.SyncRoot) {  
-  // Access the collection.  
+   // Access the collection.  
 }  
 ```  
  
 ```vb  
 Dim ic As ICollection = ...  
 SyncLock ic.SyncRoot  
-  ' Access the collection.  
+   ' Access the collection.  
 End SyncLock  
 ```  
  
 ```cpp#  
 ICollection^ ic = ...;  
 try {  
-  Monitor::Enter(ic->SyncRoot);  
-  // Access the collection.  
+   Monitor::Enter(ic->SyncRoot);  
+   // Access the collection.  
 }  
 finally {  
-  Monitor::Exit(ic->SyncRoot);  
+   Monitor::Exit(ic->SyncRoot);  
 }  
 ```  
  

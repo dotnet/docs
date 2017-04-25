@@ -27,25 +27,25 @@ The following example shows the Web.config file for an ASP.NET application. It s
  
 ```  
 <configuration>  
- <system.web>  
-   <authentication mode="Windows" />  
- 
-   <authorization>  
-     <allow roles="BUILTIN\Administrators" />  
-       <deny users="*" />  
-     </authorization>  
- 
-   <roleManager defaultProvider="WindowsProvider"   
-     enabled="true"  
-     cacheRolesInCookie="false">  
-     <providers>  
-       <add  
-         name="WindowsProvider"  
-         type="System.Web.Security.WindowsTokenRoleProvider" />  
-     </providers>  
-   </roleManager>  
- 
- </system.web>  
+  <system.web>  
+    <authentication mode="Windows" />  
+  
+    <authorization>  
+      <allow roles="BUILTIN\Administrators" />  
+        <deny users="*" />  
+      </authorization>  
+  
+    <roleManager defaultProvider="WindowsProvider"   
+      enabled="true"  
+      cacheRolesInCookie="false">  
+      <providers>  
+        <add  
+          name="WindowsProvider"  
+          type="System.Web.Security.WindowsTokenRoleProvider" />  
+      </providers>  
+    </roleManager>  
+  
+  </system.web>  
 </configuration>  
 ```  
  
@@ -134,14 +134,14 @@ The following example shows the  element in the `system.web` section of the Web.
  
 ```  
 <roleManager defaultProvider="WindowsProvider"   
- enabled="true"  
- cacheRolesInCookie="false">  
- <providers>  
-   <add  
-     name="WindowsProvider"  
-     type="System.Web.Security.WindowsTokenRoleProvider"   
-     applicationName="MyApplication" />  
- </providers>  
+  enabled="true"  
+  cacheRolesInCookie="false">  
+  <providers>  
+    <add  
+      name="WindowsProvider"  
+      type="System.Web.Security.WindowsTokenRoleProvider"   
+      applicationName="MyApplication" />  
+  </providers>  
 </roleManager>  
 ```  
  

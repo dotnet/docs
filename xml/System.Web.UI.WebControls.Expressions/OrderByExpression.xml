@@ -87,8 +87,8 @@ The following example shows how to sort data by the ListPrice field in descendin
  
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
-   Direction="Descending">  
- <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
+    Direction="Descending">  
+  <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
  
@@ -124,8 +124,8 @@ The following example shows how to sort data by the ListPrice field in descendin
  
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
-   Direction="Descending">  
- <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
+    Direction="Descending">  
+  <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
  
@@ -188,8 +188,8 @@ The following example shows how to sort data by the ListPrice field in descendin
  
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
-   Direction="Descending">  
- <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
+    Direction="Descending">  
+  <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
  

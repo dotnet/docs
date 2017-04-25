@@ -33,11 +33,11 @@ The following example shows how to use the ManagementEntity attribute to mark a 
 ```  
 // Use the ManagementEntity attribute on the class to specify that this // class contains management information that is available from  
 // provider.  
- 
-   [ManagementEntity(Name = "MortgageCalc")]  
-   public class MortgageCalcWMIProvider  
-   {  
-   }  
+  
+    [ManagementEntity(Name = "MortgageCalc")]  
+    public class MortgageCalcWMIProvider  
+    {  
+    }  
 ```  
  
  ]]></format>

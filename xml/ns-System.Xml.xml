@@ -59,24 +59,24 @@ For example, the following schema includes elements that have the same name but 
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
- 
-  <xs:element name="e1" type="t1"/>  
-  <xs:complexType name="t1"/>  
- 
-  <xs:element name="e2" type="t2" substitutionGroup="e1"/>  
-     <xs:complexType name="t2">  
-        <xs:complexContent>  
-           <xs:extension base="t1">  
-        </xs:extension>  
-     </xs:complexContent>  
-  </xs:complexType>  
- 
-  <xs:complexType name="t3">  
-     <xs:sequence>  
-        <xs:element ref="e1"/>  
-        <xs:element name="e2" type="xs:int"/>  
-     </xs:sequence>  
-  </xs:complexType>  
+  
+   <xs:element name="e1" type="t1"/>  
+   <xs:complexType name="t1"/>  
+  
+   <xs:element name="e2" type="t2" substitutionGroup="e1"/>  
+      <xs:complexType name="t2">  
+         <xs:complexContent>  
+            <xs:extension base="t1">  
+         </xs:extension>  
+      </xs:complexContent>  
+   </xs:complexType>  
+  
+   <xs:complexType name="t3">  
+      <xs:sequence>  
+         <xs:element ref="e1"/>  
+         <xs:element name="e2" type="xs:int"/>  
+      </xs:sequence>  
+   </xs:complexType>  
 </xs:schema>  
 ```  
  
@@ -100,18 +100,18 @@ For example, in the schema below the content model is ambiguous and should cause
  
 ```  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
- 
- <xs:element name="e1" type="xs:int"/>  
- <xs:element name="e2" type="xs:int" substitutionGroup="e1"/>  
- 
- <xs:complexType name="t3">  
-   <xs:sequence>  
-     <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
-     <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
-   </xs:sequence>  
- </xs:complexType>  
- 
- <xs:element name="e3" type="t3"/>  
+  
+  <xs:element name="e1" type="xs:int"/>  
+  <xs:element name="e2" type="xs:int" substitutionGroup="e1"/>  
+  
+  <xs:complexType name="t3">  
+    <xs:sequence>  
+      <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
+      <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
+    </xs:sequence>  
+  </xs:complexType>  
+  
+  <xs:element name="e3" type="t3"/>  
 </xs:schema>  
 ```  
  
@@ -119,8 +119,8 @@ If you try to validate the following XML against the schema above, the validatio
  
 ```  
 <e3>  
- <e2>1</e2>  
- <e2>2</e2>  
+  <e2>1</e2>  
+  <e2>2</e2>  
 </e3>  
 ```  
  
@@ -128,8 +128,8 @@ To work around this problem, you can swap element declarations in the XSD docume
  
 ```  
 <xs:sequence>  
- <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
- <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
+  <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
+  <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
 </xs:sequence>  
 ```  
  
@@ -137,8 +137,8 @@ becomes this:
  
 ```  
 <xs:sequence>  
- <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
- <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
+  <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
+  <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
 </xs:sequence>  
 ```  
  
@@ -146,16 +146,16 @@ Here's another example of the same issue:
  
 ```  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
-  <xs:element name="e1" type="xs:string"/>  
-  <xs:element name="e2" type="xs:string" substitutionGroup="e1"/>  
- 
-  <xs:complexType name="t3">  
-     <xs:sequence>  
-        <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
-        <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
-     </xs:sequence>  
-  </xs:complexType>  
-  <xs:element name="e3" type="t3"/>  
+   <xs:element name="e1" type="xs:string"/>  
+   <xs:element name="e2" type="xs:string" substitutionGroup="e1"/>  
+  
+   <xs:complexType name="t3">  
+      <xs:sequence>  
+         <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
+         <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
+      </xs:sequence>  
+   </xs:complexType>  
+   <xs:element name="e3" type="t3"/>  
 </xs:schema>  
 ```  
  

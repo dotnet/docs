@@ -49,22 +49,22 @@ The following code example shows how to override this Help system behavior by pl
 [HelpKeywordAttribute(typeof(Component))]  
 public class DemoComponent : Component  
 {  
-   public string Property1  
-   {  
-       get  
-       {  
-           return "";  
-       }  
-   }  
- 
-   [HelpKeywordAttribute("SomeNamespace.SomeOtherClass.Property2")]  
-   public string Property2  
-   {  
-       get  
-       {  
-           return "";  
-       }  
-   }  
+    public string Property1  
+    {  
+        get  
+        {  
+            return "";  
+        }  
+    }  
+  
+    [HelpKeywordAttribute("SomeNamespace.SomeOtherClass.Property2")]  
+    public string Property2  
+    {  
+        get  
+        {  
+            return "";  
+        }  
+    }  
 }  
 ```  
  

@@ -40,11 +40,11 @@ The <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> can be add
  
 ```  
 <bindings>  
-   <customBinding>  
-       <binding configurationName=”ReliabilityHTTP”>  
-           <reliableSession/>  
-       </binding>  
-   </customBinding>  
+    <customBinding>  
+        <binding configurationName=”ReliabilityHTTP”>  
+            <reliableSession/>  
+        </binding>  
+    </customBinding>  
 </bindings>  
 ```  
  

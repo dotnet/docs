@@ -2638,9 +2638,9 @@ The second step is to override the <xref:System.Web.UI.WebControls.WebParts.WebP
  
 ```  
 If Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter) Then  
- return True  
+  return True  
 Else  
- return False  
+  return False  
 End If  
 ```  
  
@@ -2648,9 +2648,9 @@ End If
  
 ```  
 if(Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter))  
-   return true;  
+    return true;  
 else  
-   return false;  
+    return false;  
 ```  
  
 For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compile method. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
@@ -2937,7 +2937,7 @@ The second step in creating a filtering scenario is to write code to check the <
  
 ```  
 <asp:webpartmanager id="manager1" runat="server"   
-  OnAuthorizeWebPart="manager1_AuthorizeWebPart" />  
+   OnAuthorizeWebPart="manager1_AuthorizeWebPart" />  
 ```  
  
 All your custom method has to do is check each <xref:System.Web.UI.WebControls.WebParts.WebPart> control for the filtering criteria and then, based on the results, assign a Boolean value to the <xref:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs.IsAuthorized%2A> property of the <xref:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs> object to indicate whether the <xref:System.Web.UI.WebControls.WebParts.WebPart> control can be added. The code in the Example section demonstrates how to do this.  
@@ -2963,18 +2963,18 @@ Because setting up users in roles is beyond the scope of this topic, this code e
  
 ```  
 Protected Sub WebPartManager1_AuthorizeWebPart(ByVal sender _  
- As Object, ByVal e As WebPartAuthorizationEventArgs)  
- 
- If String.IsNullOrEmpty(e.AuthorizationFilter) Then  
-   If Roles.IsUserInRole(Page.User.Identity.Name, _  
-     e.AuthorizationFilter) Then  
- 
-     e.IsAuthorized = True  
-   Else  
-     e.IsAuthorized = False  
-   End If  
- End If  
- 
+  As Object, ByVal e As WebPartAuthorizationEventArgs)  
+  
+  If String.IsNullOrEmpty(e.AuthorizationFilter) Then  
+    If Roles.IsUserInRole(Page.User.Identity.Name, _  
+      e.AuthorizationFilter) Then  
+  
+      e.IsAuthorized = True  
+    Else  
+      e.IsAuthorized = False  
+    End If  
+  End If  
+  
 End Sub  
 ```  
  
@@ -2982,15 +2982,15 @@ End Sub
  
 ```  
 protected void mgr1_AuthorizeWebPart(object sender,   
- WebPartAuthorizationEventArgs e)  
+  WebPartAuthorizationEventArgs e)  
 {  
- if (!String.IsNullOrEmpty(e.AuthorizationFilter))  
- {  
-   if(Roles.IsUserInRole(Page.User.Identity.Name, e.authorizationFilter))  
-     e.IsAuthorized = true;  
-   else  
-     e.IsAuthorized = false;  
- }  
+  if (!String.IsNullOrEmpty(e.AuthorizationFilter))  
+  {  
+    if(Roles.IsUserInRole(Page.User.Identity.Name, e.authorizationFilter))  
+      e.IsAuthorized = true;  
+    else  
+      e.IsAuthorized = false;  
+  }  
 }  
 ```  
  
@@ -3718,15 +3718,15 @@ For the code example to run, you also must enable a user or users to personalize
  
 ```  
 <webParts>  
- <personalization>  
-   <authorization>  
-     <allow  
-       users="[Replace the text and brackets with a user name or   
-          group.]"  
-       roles="admin"   
-       verbs="enterSharedScope"  />  
-   </authorization>  
- </personalization>  
+  <personalization>  
+    <authorization>  
+      <allow  
+        users="[Replace the text and brackets with a user name or   
+           group.]"  
+        roles="admin"   
+        verbs="enterSharedScope"  />  
+    </authorization>  
+  </personalization>  
 </webParts>   
 ```  
  

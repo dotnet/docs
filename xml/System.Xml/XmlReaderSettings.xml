@@ -724,46 +724,46 @@ The following code sets this property, and then attempts to parse a document tha
 ```csharp  
 string markup =  
 @"<!DOCTYPE Root [  
- <!ENTITY anEntity ""Expands to more than 30 characters"">  
- <!ELEMENT Root (#PCDATA)>  
+  <!ENTITY anEntity ""Expands to more than 30 characters"">  
+  <!ELEMENT Root (#PCDATA)>  
 ]>  
 <Root>Content &anEntity;</Root>";  
- 
+  
 XmlReaderSettings settings = new XmlReaderSettings();  
 settings.DtdProcessing = DtdProcessing.Parse;  
 settings.ValidationType = ValidationType.DTD;  
 settings.MaxCharactersFromEntities = 30;  
- 
+  
 try  
 {  
-   XmlReader reader = XmlReader.Create(new StringReader(markup), settings);  
-   while (reader.Read()) { }  
+    XmlReader reader = XmlReader.Create(new StringReader(markup), settings);  
+    while (reader.Read()) { }  
 }  
 catch (XmlException ex)  
 {  
-   Console.WriteLine(ex.Message);  
+    Console.WriteLine(ex.Message);  
 }  
 ```  
  
 ```vb  
 Dim markup As String = _  
-   "<!DOCTYPE Root [" + Environment.NewLine + _  
-   "  <!ENTITY anEntity ""Expands to more than 30 characters"">" + Environment.NewLine + _  
-   "  <!ELEMENT Root (#PCDATA)>" + Environment.NewLine + _  
-   "]>" + Environment.NewLine + _  
-   "<Root>Content &anEntity;</Root>"  
- 
+    "<!DOCTYPE Root [" + Environment.NewLine + _  
+    "  <!ENTITY anEntity ""Expands to more than 30 characters"">" + Environment.NewLine + _  
+    "  <!ELEMENT Root (#PCDATA)>" + Environment.NewLine + _  
+    "]>" + Environment.NewLine + _  
+    "<Root>Content &anEntity;</Root>"  
+  
 Dim settings As XmlReaderSettings = New XmlReaderSettings()  
 settings.DtdProcessing = DtdProcessing.Parse;  
 settings.ValidationType = ValidationType.DTD  
 settings.MaxCharactersFromEntities = 30  
- 
+  
 Try  
-   Dim reader As XmlReader = XmlReader.Create(New StringReader(markup), settings)  
-   While (reader.Read())  
-   End While  
+    Dim reader As XmlReader = XmlReader.Create(New StringReader(markup), settings)  
+    While (reader.Read())  
+    End While  
 Catch ex As XmlException  
-   Console.WriteLine(ex.Message)  
+    Console.WriteLine(ex.Message)  
 End Try  
 ```  
  
@@ -822,33 +822,33 @@ The following code sets this property, and then attempts to parse a document lar
  
 ```csharp  
 string markup = "<Root>Content</Root>";  
- 
+  
 XmlReaderSettings settings = new XmlReaderSettings();  
 settings.MaxCharactersInDocument = 10;  
- 
+  
 try  
 {  
-   XmlReader reader = XmlReader.Create(new StringReader(markup), settings);  
-   while (reader.Read()) { }  
+    XmlReader reader = XmlReader.Create(new StringReader(markup), settings);  
+    while (reader.Read()) { }  
 }  
 catch (XmlException ex)  
 {  
-   Console.WriteLine(ex.Message);  
+    Console.WriteLine(ex.Message);  
 }  
 ```  
  
 ```vb  
 Dim markup As String = "<Root>Content</Root>"  
- 
+  
 Dim settings As XmlReaderSettings = New XmlReaderSettings()  
 settings.MaxCharactersInDocument = 10  
- 
+  
 Try  
-   Dim reader As XmlReader = XmlReader.Create(New StringReader(markup), settings)  
-   While (reader.Read())  
-   End While  
+    Dim reader As XmlReader = XmlReader.Create(New StringReader(markup), settings)  
+    While (reader.Read())  
+    End While  
 Catch ex As XmlException  
-   Console.WriteLine(ex.Message)  
+    Console.WriteLine(ex.Message)  
 End Try  
 ```  
  

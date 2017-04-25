@@ -364,21 +364,21 @@ The following code example shows how to lock the collection using the <xref:Syst
  
 ```csharp  
 ICollection myCollection = new ICollection();  
- lock(myCollection.SyncRoot) {  
- foreach (Object item in myCollection) {  
- // Insert your code here.  
+  lock(myCollection.SyncRoot) {  
+  foreach (Object item in myCollection) {  
+  // Insert your code here.  
+  }  
  }  
-}  
 ```  
  
 ```vb  
 Dim myCollection As New ICollection()  
-Dim item As Object  
-SyncLock myCollection.SyncRoot  
- For Each item In myCollection  
- ' Insert your code here.  
- Next item  
-End SyncLock  
+ Dim item As Object  
+ SyncLock myCollection.SyncRoot  
+  For Each item In myCollection  
+  ' Insert your code here.  
+  Next item  
+ End SyncLock  
 ```  
  
  ]]></format>
@@ -412,18 +412,18 @@ In the absence of a `Synchronized` method on a collection, the expected usage fo
  
 ```csharp  
 ICollection MyCollection =...  
-lock(MyCollection.SyncRoot) {  
- // Some operation on the collection, which is now thread safe.  
-}  
+ lock(MyCollection.SyncRoot) {  
+  // Some operation on the collection, which is now thread safe.  
+ }  
 ```  
  
 [Visual Basic]  
  
 ```  
 Dim myCollection as New ICollection()  
-SyncLock myCollection.SyncRoot  
- ' Some operation on the collection, which is now thread safe.  
-End SyncLock  
+ SyncLock myCollection.SyncRoot  
+  ' Some operation on the collection, which is now thread safe.  
+ End SyncLock  
 ```  
  
 Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
@@ -434,21 +434,21 @@ The following code example shows how to lock the collection using the <xref:Syst
  
 ```csharp  
 ICollection myCollection = new ICollection();  
-lock(myCollection.SyncRoot) {  
- foreach (Object item in myCollection) {  
- // Insert your code here.  
+ lock(myCollection.SyncRoot) {  
+  foreach (Object item in myCollection) {  
+  // Insert your code here.  
+  }  
  }  
-}  
 ```  
  
 ```vb  
 Dim myCollection As New ICollection()  
-Dim item As Object  
-SyncLock myCollection.SyncRoot  
- For Each item In myCollection  
- ' Insert your code here.  
- Next item  
-End SyncLock  
+ Dim item As Object  
+ SyncLock myCollection.SyncRoot  
+  For Each item In myCollection  
+  ' Insert your code here.  
+  Next item  
+ End SyncLock  
 ```  
  
  ]]></format>

@@ -613,25 +613,25 @@ Enumerating through a collection is intrinsically not a thread-safe procedure.  
 ```csharp  
 ICollection ic = ...;  
 lock (ic.SyncRoot) {  
-  // Access the collection.  
+   // Access the collection.  
 }  
 ```  
  
 ```vb  
 Dim ic As IColletion = ...  
 SyncLock ic.SyncRoot  
-  ' Access the collection.  
+   ' Access the collection.  
 End SyncLock  
 ```  
  
 ```cpp#  
 ICollection^ ic = ...;  
 try {  
-  Monitor::Enter(ic->SyncRoot);  
-  // Access the collection.  
+   Monitor::Enter(ic->SyncRoot);  
+   // Access the collection.  
 }  
 finally {  
-  Monitor::Exit(ic->SyncRoot);  
+   Monitor::Exit(ic->SyncRoot);  
 }  
 ```  
  

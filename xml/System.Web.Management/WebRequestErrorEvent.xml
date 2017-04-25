@@ -28,17 +28,17 @@ The following code example has two parts. The first part is an excerpt of a conf
  
 ```  
 <healthMonitoring enabled="true" heartBeatInterval="0">  
- <eventMappings>  
-   <add  name="SampleWebRequestErrorEvent" type="SamplesAspNet.SampleWebRequestErrorEvent,webrequesterrorevent,Version=1.0.1573.21654, Culture=neutral, PublicKeyToken=63ada862a6c5af13, processorArchitecture=MSIL"/>  
- </eventMappings>  
- 
- <rules>  
-   <add   
-     name="Custom Web Request Error Events"  
-     eventName="SampleWebRequestErrorEvent"   
-     provider="EventLogProvider"    
-     profile="Critical"/>  
- </rules>  
+  <eventMappings>  
+    <add  name="SampleWebRequestErrorEvent" type="SamplesAspNet.SampleWebRequestErrorEvent,webrequesterrorevent,Version=1.0.1573.21654, Culture=neutral, PublicKeyToken=63ada862a6c5af13, processorArchitecture=MSIL"/>  
+  </eventMappings>  
+  
+  <rules>  
+    <add   
+      name="Custom Web Request Error Events"  
+      eventName="SampleWebRequestErrorEvent"   
+      provider="EventLogProvider"    
+      profile="Critical"/>  
+  </rules>  
 </healthMonitoring>  
 ```  
  

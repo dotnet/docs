@@ -346,18 +346,18 @@ The current instance handle must be bound to an instance as well as a lock on th
 Sample code:  
  
 ```  
- 
+  
 protected override bool TryCommand(InstancePersistenceContext context, InstancePersistenceCommand command, TimeSpan timeout)  
 {  
-   throw context.CreateBindReclaimedLockException(5);  
+    throw context.CreateBindReclaimedLockException(5);  
 }  
 is equivalent to  
 protected override bool TryCommand(InstancePersistenceContext context, InstancePersistenceCommand command, TimeSpan timeout)  
 {  
-   context.BindReclaimedLock(5, timeout);  
-   throw new OperationCanceledException();  
+    context.BindReclaimedLock(5, timeout);  
+    throw new OperationCanceledException();  
 }  
- 
+  
 ```  
  
  ]]></format>

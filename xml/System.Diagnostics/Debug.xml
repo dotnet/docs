@@ -43,9 +43,9 @@ To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="true" indentsize="7" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="true" indentsize="7" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -126,9 +126,9 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -197,9 +197,9 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -269,9 +269,9 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -351,9 +351,9 @@ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -394,9 +394,9 @@ To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="true" indentsize="7" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="true" indentsize="7" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -660,12 +660,12 @@ The following example sets the indent level and emits debugging messages.
 This example produces the following output:  
  
 ```  
- 
+  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
- 
+  
 ```  
  
  ]]></format>
@@ -710,12 +710,12 @@ The following example sets the indent level and emits debugging messages.
 This example produces the following output:  
  
 ```  
- 
+  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
- 
+  
 ```  
  
  ]]></format>
@@ -752,9 +752,9 @@ To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnos
  
 ```  
 <configuration>  
- <system.diagnostics>  
-   <trace autoflush="true" indentsize="7" />  
- </system.diagnostics>  
+  <system.diagnostics>  
+    <trace autoflush="true" indentsize="7" />  
+  </system.diagnostics>  
 </configuration>  
 ```  
  
@@ -931,12 +931,12 @@ The following example sets the indent level and emits debugging messages.
 This example produces the following output:  
  
 ```  
- 
+  
 List of errors:  
-    Error 1: File not found  
-    Error 2: Directory not found  
+     Error 1: File not found  
+     Error 2: Directory not found  
 End of list of errors  
- 
+  
 ```  
  
  ]]></format>

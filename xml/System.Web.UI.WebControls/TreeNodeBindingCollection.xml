@@ -53,16 +53,16 @@ The following is the XML data for the preceding code examples.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-      <Section Heading="Section 1">  
-      </Section>  
-      <Section Heading="Section 2">  
-      </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
+    <Chapter Heading="Chapter 1">  
        <Section Heading="Section 1">  
        </Section>  
-   </Chapter>  
+       <Section Heading="Section 2">  
+       </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -109,19 +109,19 @@ The following is the XML data for the preceding code example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-       <Section Heading="Section 2"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+        <Section Heading="Section 2"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -312,19 +312,19 @@ The following is the XML data for the preceding code example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-       <Section Heading="Section 2"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+        <Section Heading="Section 2"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -369,19 +369,19 @@ The following is the XML data for the preceding code example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-       <Section Heading="Section 2"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+        <Section Heading="Section 2"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -489,19 +489,19 @@ The following is the XML data for the preceding code example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-       <Section Heading="Section 2"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+        <Section Heading="Section 2"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  
@@ -547,19 +547,19 @@ The following is the XML data for the preceding code example.
  
 ```  
 <Book Title="Book Title">  
-   <Chapter Heading="Chapter 1">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-       <Section Heading="Section 2"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
-   <Chapter Heading="Chapter 2">  
-       <Section Heading="Section 1"  
-           Subject="Subject 1">  
-       </Section>  
-   </Chapter>  
+    <Chapter Heading="Chapter 1">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+        <Section Heading="Section 2"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
+    <Chapter Heading="Chapter 2">  
+        <Section Heading="Section 1"  
+            Subject="Subject 1">  
+        </Section>  
+    </Chapter>  
 </Book>  
 ```  
  

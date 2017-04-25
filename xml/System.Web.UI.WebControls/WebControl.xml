@@ -771,15 +771,15 @@ If you want to use a class name different from the default value of "aspNetDisab
  
 ```vb  
 Private Sub Application_Start(  
-   ByVal sender As Object, ByVal e As EventArgs)  
-   WebControl.DisabledCssClass = "customDisabledClassName"  
+    ByVal sender As Object, ByVal e As EventArgs)  
+    WebControl.DisabledCssClass = "customDisabledClassName"  
 End Sub  
 ```  
  
 ```csharp  
 void Application_Start(object sender, EventArgs e)  
 {  
-   WebControl.DisabledCssClass = "customDisabledClassName";  
+    WebControl.DisabledCssClass = "customDisabledClassName";  
 }  
 ```  
  

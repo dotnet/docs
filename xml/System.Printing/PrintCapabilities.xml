@@ -424,13 +424,13 @@ The following code example shows how to search for a particular value in the <xr
  
 ```  
 foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)  
-   {  
-       if (mediaSize.PageMediaSizeName == PageMediaSizeName.ISOA4)  
-       {  
-           Console.WriteLine("A4 size is supported");  
-           break;  
-       }  
-   }  
+    {  
+        if (mediaSize.PageMediaSizeName == PageMediaSizeName.ISOA4)  
+        {  
+            Console.WriteLine("A4 size is supported");  
+            break;  
+        }  
+    }  
 ```  
  
  ]]></format>
@@ -552,13 +552,13 @@ The following code example shows how to search for a particular value in the <xr
  
 ```  
 foreach (PageResolution pageRes in pc.PageResolutionCapability)  
-   {  
-       if (pageRes.QualitativeResolution == PageQualitativeResolution.High)  
-       {  
-           Console.WriteLine("High quality is supported");  
-           break;  
-       }  
-   }  
+    {  
+        if (pageRes.QualitativeResolution == PageQualitativeResolution.High)  
+        {  
+            Console.WriteLine("High quality is supported");  
+            break;  
+        }  
+    }  
 ```  
  
  ]]></format>

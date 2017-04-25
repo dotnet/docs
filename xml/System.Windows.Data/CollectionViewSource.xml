@@ -445,9 +445,9 @@ This property is forwarded to any collection view created from the current <xref
  
 ```  
 <object>  
- <object.GroupDescriptions>  
-   oneOrMorePropertyDescriptions  
- </object.GroupDescriptions>  
+  <object.GroupDescriptions>  
+    oneOrMorePropertyDescriptions  
+  </object.GroupDescriptions>  
 </object>  
 ```  
  
@@ -958,9 +958,9 @@ This property is forwarded to any collection view created from the current sourc
  
 ```  
 <object>  
- <object.SortDescriptions>  
-   oneOrMoreSortDescriptions  
- </object.SortDescriptions>  
+  <object.SortDescriptions>  
+    oneOrMoreSortDescriptions  
+  </object.SortDescriptions>  
 </object>  
 ```  
  

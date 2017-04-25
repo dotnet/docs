@@ -31,10 +31,10 @@ The default Web.config file for AJAX-enabled ASP.NET Web applications adds the <
  
 ```  
 <httpHandlers>  
- <add verb="GET,HEAD" path="ScriptResource.axd"   
-   type="System.Web.Handlers.ScriptResourceHandler,   
-   System.Web.Extensions, Version=1.0.61025.0, Culture=neutral,   
-   PublicKeyToken=31bf3856ad364e35" validate="false" />  
+  <add verb="GET,HEAD" path="ScriptResource.axd"   
+    type="System.Web.Handlers.ScriptResourceHandler,   
+    System.Web.Extensions, Version=1.0.61025.0, Culture=neutral,   
+    PublicKeyToken=31bf3856ad364e35" validate="false" />  
 </httpHandlers>  
 ```  
  

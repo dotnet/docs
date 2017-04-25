@@ -539,18 +539,18 @@ The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios wh
  
 ```  
 DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-   adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
+ dataset.Tables.Add("aaa");  
+ dataset.Tables.Add("AAA");  
+ adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
+    adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
 ```  
  
 If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
  
 ```  
 DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-   adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
+ dataset.Tables.Add("aaa");  
+    adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
 ```  
  
 You can use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
@@ -2417,19 +2417,19 @@ The <xref:System.Data.Common.DbDataAdapter.Update%2A> method supports scenarios 
  
 ```  
 DataSet ds = new DataSet();  
-ds.Tables.Add("aaa");  
-ds.Tables.Add("AAA");  
-adapter.Update(ds, "aaa"); // Updates "aaa", which already exists in the DataSet.  
-adapter.Update(ds, "AAA"); // Updates "AAA", which already exists in the DataSet.  
-   adapter.Update(ds, "Aaa"); // Results in an exception.  
+ ds.Tables.Add("aaa");  
+ ds.Tables.Add("AAA");  
+ adapter.Update(ds, "aaa"); // Updates "aaa", which already exists in the DataSet.  
+ adapter.Update(ds, "AAA"); // Updates "AAA", which already exists in the DataSet.  
+    adapter.Update(ds, "Aaa"); // Results in an exception.  
 ```  
  
 If <xref:System.Data.Common.DbDataAdapter.Update%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
  
 ```  
 DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-   adapter.Update(dataset, "AAA"); // Updates table "aaa" because only one similarly named table is in the DataSet.  
+ dataset.Tables.Add("aaa");  
+    adapter.Update(dataset, "AAA"); // Updates table "aaa" because only one similarly named table is in the DataSet.  
 ```  
  
 The <xref:System.Data.Common.DbDataAdapter.Update%2A> method retrieves rows from the table listed in the first mapping before performing an update. The <xref:System.Data.Common.DbDataAdapter.Update%2A> then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  

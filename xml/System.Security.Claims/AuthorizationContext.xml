@@ -34,31 +34,31 @@ The following XML shows an example of the authorization policy that was specifie
  
 ```xml  
 <system.identityModel>  
- <identityConfiguration>  
-   <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
-     <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
-       <or>  
-         <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-       </or>  
-     </policy>  
-     <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
-       <and>  
-         <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
-         <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
-       </and>  
-     </policy>  
-     <policy resource="http://localhost:28491/Default.aspx" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/" action="GET">  
-     </policy>  
-     <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
-     </policy>  
-   </claimsAuthorizationManager>  
- 
-   ...  
- 
- </identityConfiguration>  
+  <identityConfiguration>  
+    <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
+      <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
+        <or>  
+          <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+        </or>  
+      </policy>  
+      <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
+        <and>  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+          <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
+        </and>  
+      </policy>  
+      <policy resource="http://localhost:28491/Default.aspx" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
+      </policy>  
+    </claimsAuthorizationManager>  
+  
+    ...  
+  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
  

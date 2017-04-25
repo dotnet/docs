@@ -31,7 +31,7 @@ The following example shows how to recover the <xref:System.ServiceModel.Activat
 bool isHosted = false;  
 ServiceHostBase host = OperationContext.Current.Host;  
 VirtualPathExtension vpe = host.Extentions.Find<VirtualPathExtension>();  
- 
+  
 if( vpe != null )  
 Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPath);  
 ```  

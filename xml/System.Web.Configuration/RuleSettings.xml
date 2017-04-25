@@ -25,36 +25,36 @@ The following configuration file excerpt shows how to declaratively specify the 
  
 ```  
 <healthMonitoring>  
-   <rules>  
-       <add name="All Errors Default"  
-           eventName="All Errors"  
-           provider="EventLogProvider"  
-           profile="Default"  
-           minInterval="00:01:00"   
-       />  
-       <add name="All Audits Default"  
-           eventName="All Audits"  
-           provider="SqlWebEventProvider"  
-           profile="Default"  
-           minInterval="00:00:30"   
-       />  
-       <add name="Failure Audits Default"  
-           eventName="Failure Audits"  
-           provider="WmiWebEventProvider"  
-           profile="Critical"  
-           minInterval="00:00:30"   
-       />  
-       <add name="Request Processing Errors"  
-           eventName="Request Processing Errors"  
-           provider="CriticalMailEventProvider"  
-           profile="Default"  
-       />  
-       <add name="Infrastructure Notifications"  
-           eventName="Infrastructure Errors"  
-           provider="CriticalMailEventProvider"  
-           profile="Critical"  
-       />  
-  </rules>  
+    <rules>  
+        <add name="All Errors Default"  
+            eventName="All Errors"  
+            provider="EventLogProvider"  
+            profile="Default"  
+            minInterval="00:01:00"   
+        />  
+        <add name="All Audits Default"  
+            eventName="All Audits"  
+            provider="SqlWebEventProvider"  
+            profile="Default"  
+            minInterval="00:00:30"   
+        />  
+        <add name="Failure Audits Default"  
+            eventName="Failure Audits"  
+            provider="WmiWebEventProvider"  
+            profile="Critical"  
+            minInterval="00:00:30"   
+        />  
+        <add name="Request Processing Errors"  
+            eventName="Request Processing Errors"  
+            provider="CriticalMailEventProvider"  
+            profile="Default"  
+        />  
+        <add name="Infrastructure Notifications"  
+            eventName="Infrastructure Errors"  
+            provider="CriticalMailEventProvider"  
+            profile="Critical"  
+        />  
+   </rules>  
 </healthMonitoring>  
 ```  
  

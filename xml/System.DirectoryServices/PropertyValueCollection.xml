@@ -362,27 +362,27 @@ When working with a multi-valued string property value, the <xref:System.Directo
 ## Examples  
  
 ```csharp  
- 
+  
 // Bind to the AD object  
 DirectoryEntry myUser = new DirectoryEntry("LDAP://AdServer:389/CN=MyUsername,CN=Users,DC=contoso,DC=com");  
- 
+  
 // Get the attribute  
 PropertyValueCollection testAttribute = myUser.Properties["someAttribute"];  
- 
+  
 // Find the item in the collection that we want to delete  
 DNWithString dnwsItemToRemove = null;  
 foreach (DNWithString dnwsItem in testAttribute)  
 {  
-   if (dnwsItem.StringValue.Equals("SomeValue"))  
-   {  
-       dnwsItemToRemove = dnwsItem;  
-       break;  
-   }  
+    if (dnwsItem.StringValue.Equals("SomeValue"))  
+    {  
+        dnwsItemToRemove = dnwsItem;  
+        break;  
+    }  
 }  
- 
+  
 // Delete it  
 testAttribute.Remove(dnwsItemToRemove);  
- 
+  
 // Store the data  
 myUser.CommitChanges();  
 ```  

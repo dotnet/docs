@@ -40,7 +40,7 @@ The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor ha
 [DebuggerDisplay("Count = {count}")]  
 class MyHashtable  
 {  
-   public int count = 4;  
+    public int count = 4;  
 }  
 ```  
  
@@ -94,7 +94,7 @@ The `value` parameter can contain braces ({ and }). The text within a pair of br
 [DebuggerDisplay("Count = {count}")]  
 class MyTable  
 {  
-   public int count = 4;  
+    public int count = 4;  
 }  
 ```  
  

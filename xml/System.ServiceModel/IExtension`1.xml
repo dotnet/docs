@@ -62,12 +62,12 @@ The following example code shows how this method can be used to keep track of th
  
 ```  
 InstanceContext owner;  
- 
+  
 public void Attach(InstanceContext owner)  
 {  
- this.owner = owner;   
+  this.owner = owner;   
 }  
- 
+  
 ```  
  
  ]]></format>

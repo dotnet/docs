@@ -287,7 +287,7 @@ Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
 
-### Deconstring user defined types
+### Deconstructing user defined types
 
 Any tuple type can be deconstructed as shown above. It's also easy
 to enable deconstruction on any user defined type (classes, structs, or 

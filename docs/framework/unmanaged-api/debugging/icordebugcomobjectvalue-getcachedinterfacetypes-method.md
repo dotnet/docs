@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugComObjectValue::GetCachedInterfaceTypes"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
 f1_keywords: 
   - "ICorDebugComObjectValue::GetCachedInterfaceTypes"

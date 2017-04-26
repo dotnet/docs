@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ResolveTypeLib"
-apilocation: 
+APILocation: 
   - "tlbref.dll"
 f1_keywords: 
   - "ResolveTypeLib"

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IClrProfiling.AttachProfiler Method"
-apilocation: 
+APILocation: 
   - "Mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IClrProfiling::AttachProfiler"
 dev_langs: 

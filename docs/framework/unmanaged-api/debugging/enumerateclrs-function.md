@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "EnumerateCLRs"
-apilocation: 
+APILocation: 
   - "dbgshim.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "EnumerateCLRs"
 dev_langs: 

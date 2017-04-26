@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CreateHistoryReader"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "CreateHistoryReader"
 dev_langs: 

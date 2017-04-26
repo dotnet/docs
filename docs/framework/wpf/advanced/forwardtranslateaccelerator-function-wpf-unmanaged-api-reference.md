@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "ForwardTranslateAccelerator"
-apilocation: 
+APILocation: 
   - "PresentationHost_v0400.dll"
 ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
 caps.latest.revision: 3

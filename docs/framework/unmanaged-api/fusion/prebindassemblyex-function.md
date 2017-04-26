@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "PreBindAssemblyEx"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "PreBindAssemblyEx"
 dev_langs: 

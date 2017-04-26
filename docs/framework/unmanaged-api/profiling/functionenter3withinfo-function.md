@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "FunctionEnter3WithInfo"
-apilocation: 
+APILocation: 
   - "mscorwks.cll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "FunctionEnter3WithInfo"
 dev_langs: 

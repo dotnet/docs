@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CreateALink"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "CreateALink"
 dev_langs: 

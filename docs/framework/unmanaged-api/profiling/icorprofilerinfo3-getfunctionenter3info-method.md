@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerInfo3.GetFunctionEnter3Info Method"
-apilocation: 
+APILocation: 
   - "Mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionEnter3Info"
 dev_langs: 

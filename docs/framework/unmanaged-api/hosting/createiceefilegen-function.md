@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CreateICeeFileGen"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "mscorpehost.dll"
   - "mscorpe.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CreateICeeFileGen"
 dev_langs: 

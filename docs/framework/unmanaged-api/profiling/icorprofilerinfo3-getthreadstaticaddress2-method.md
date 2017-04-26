@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerInfo3.GetThreadStaticAddress2 Method"
-apilocation: 
+APILocation: 
   - "Mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetThreadStaticAddress2"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CertTimestampAuthenticodeLicense"
-apilocation: 
+APILocation: 
   - "clr.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: d468325a-21c5-43ce-8567-84e342b22308

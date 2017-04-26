@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "System.Windows.Diagnostics.VisualDiagnostics.s_isDebuggerCheckDisabledForTestPurposes"
-apilocation: 
+APILocation: 
   - "PresentationCore.dll"
-apitype: "Assembly"
+APIType: "Assembly"
 ms.assetid: 9033a513-c255-4f31-b6d7-09b8d8c50e2d
 caps.latest.revision: 6
 author: dotnet-bot

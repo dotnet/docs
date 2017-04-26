@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "_AxlRSAKeyValueToPublicKeyToken"
-apilocation: 
+APILocation: 
   - "clr.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c

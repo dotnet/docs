@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "StrongNameTokenFromPublicKey"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "mscorsn.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "StrongNameTokenFromPublicKey"
 dev_langs: 

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "ICorProfilerCallback7"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
   - "corprof.idl"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c

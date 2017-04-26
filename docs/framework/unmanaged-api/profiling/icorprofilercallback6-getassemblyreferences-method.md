@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerCallback6.GetAssemblyReferences"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
   - "corprof.idl"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc

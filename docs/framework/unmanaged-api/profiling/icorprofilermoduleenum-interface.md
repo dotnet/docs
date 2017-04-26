@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerModuleEnum"
-apilocation: 
+APILocation: 
   - "mscorwks.cll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum"
 dev_langs: 

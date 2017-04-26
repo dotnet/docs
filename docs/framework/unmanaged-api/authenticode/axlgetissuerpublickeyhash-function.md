@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "_AxlGetIssuerPublicKeyHash"
-apilocation: 
+APILocation: 
   - "clr.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: fb626b41-b888-4625-84c3-2c02b5e3866f

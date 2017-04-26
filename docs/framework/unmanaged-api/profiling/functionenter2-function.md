@@ -13,7 +13,8 @@ api_name:
   - "FunctionEnter2"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FunctionEnter2"
 dev_langs: 

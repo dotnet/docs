@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataTables.GetBlob"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlob"
 dev_langs: 

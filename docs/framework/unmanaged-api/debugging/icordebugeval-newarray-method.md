@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval.NewArray"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewArray"
 dev_langs: 

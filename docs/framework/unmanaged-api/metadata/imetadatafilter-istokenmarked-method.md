@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataFilter.IsTokenMarked"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataFilter::IsTokenMarked"
 dev_langs: 

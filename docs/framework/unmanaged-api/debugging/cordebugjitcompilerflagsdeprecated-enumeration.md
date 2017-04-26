@@ -13,7 +13,8 @@ api_name:
   - "CorDebugJITCompilerFlagsDeprecated"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugJITCompilerFlagsDeprecated"
 dev_langs: 

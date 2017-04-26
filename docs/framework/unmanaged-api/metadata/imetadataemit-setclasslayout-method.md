@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.SetClassLayout"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetClassLayout"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "PreBindAssemblyEx"
 api_location: 
   - "fusion.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "PreBindAssemblyEx"
 dev_langs: 

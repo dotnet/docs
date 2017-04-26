@@ -13,7 +13,8 @@ api_name:
   - "ICLRMetaHost.ExitProcess"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost::ExitProcess"
 dev_langs: 

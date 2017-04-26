@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugVariableHome.GetRegister"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetRegister"
 dev_langs: 

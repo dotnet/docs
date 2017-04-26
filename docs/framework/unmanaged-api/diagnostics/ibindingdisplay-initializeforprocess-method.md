@@ -13,7 +13,8 @@ api_name:
   - "IBindingDisplay.InitializeForProcess"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IBindingDisplay::InitializeForProcess"
 dev_langs: 

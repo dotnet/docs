@@ -13,7 +13,8 @@ api_name:
   - "GetTypeLibInfo"
 api_location: 
   - "TlbRef.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetTypeLibInfo"
 dev_langs: 

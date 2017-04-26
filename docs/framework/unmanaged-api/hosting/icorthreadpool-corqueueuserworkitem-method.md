@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorQueueUserWorkItem"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorQueueUserWorkItem"
 dev_langs: 

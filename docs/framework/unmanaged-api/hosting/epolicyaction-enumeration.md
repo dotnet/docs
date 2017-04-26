@@ -13,7 +13,8 @@ api_name:
   - "EPolicyAction"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EPolicyAction"
 dev_langs: 

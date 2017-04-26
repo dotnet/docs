@@ -13,7 +13,8 @@ api_name:
   - "IManagedObject.GetObjectIdentity"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetObjectIdentity"
 dev_langs: 

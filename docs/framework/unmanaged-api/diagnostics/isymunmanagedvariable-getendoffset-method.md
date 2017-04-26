@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedVariable.GetEndOffset"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetEndOffset"
 dev_langs: 

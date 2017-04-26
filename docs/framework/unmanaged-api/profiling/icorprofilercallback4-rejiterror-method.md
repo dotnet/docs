@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback4.ReJITError"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::ReJITError"
 dev_langs: 

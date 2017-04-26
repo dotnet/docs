@@ -13,7 +13,8 @@ api_name:
   - "SYMLINEDELTA"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SYMLINEDELTA"
 dev_langs: 

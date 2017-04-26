@@ -13,7 +13,8 @@ api_name:
   - "ITypeNameBuilder.CloseGenericArgument"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CloseGenericArgument"
 dev_langs: 

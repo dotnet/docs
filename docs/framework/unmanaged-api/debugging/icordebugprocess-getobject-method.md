@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.GetObject"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetObject"
 dev_langs: 

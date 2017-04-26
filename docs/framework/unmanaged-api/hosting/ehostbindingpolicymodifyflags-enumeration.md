@@ -13,7 +13,8 @@ api_name:
   - "EHostBindingPolicyModifyFlags"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EHostBindingPolicyModifyFlags"
 dev_langs: 

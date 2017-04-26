@@ -13,7 +13,8 @@ api_name:
   - "System.Windows.Forms.Design.DataMemberListEditor"
 api_location: 
   - "System.Design.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: c11d5231-78f2-45a7-9210-3b2d0969370e
 caps.latest.revision: 3
 author: "mairaw"

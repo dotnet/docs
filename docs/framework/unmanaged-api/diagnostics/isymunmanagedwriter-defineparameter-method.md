@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedWriter.DefineParameter"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineParameter"
 dev_langs: 

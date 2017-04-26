@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugRegisterSet.GetRegistersAvailable"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::GetRegistersAvailable"
 dev_langs: 

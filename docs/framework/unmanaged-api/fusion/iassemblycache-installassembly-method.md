@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyCache.InstallAssembly"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::InstallAssembly"
 dev_langs: 

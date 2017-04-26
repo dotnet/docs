@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataDispenserEx.SetOption"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::SetOption"
 dev_langs: 

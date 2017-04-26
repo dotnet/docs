@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback2.GarbageCollectionFinished"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::GarbageCollectionFinished"
 dev_langs: 

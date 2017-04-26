@@ -13,7 +13,8 @@ api_name:
   - "System.Windows.Diagnostics.VisualDiagnostics.s_isDebuggerCheckDisabledForTestPurposes"
 api_location: 
   - "PresentationCore.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 9033a513-c255-4f31-b6d7-09b8d8c50e2d
 caps.latest.revision: 6
 author: dotnet-bot

@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorGetMaxThreads"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorGetMaxThreads"
 dev_langs: 

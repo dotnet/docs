@@ -13,7 +13,8 @@ api_name:
   - "WAIT_OPTION"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "WAIT_OPTION"
 dev_langs: 

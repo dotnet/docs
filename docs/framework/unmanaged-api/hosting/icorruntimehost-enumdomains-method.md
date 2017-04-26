@@ -13,7 +13,8 @@ api_name:
   - "ICorRuntimeHost.EnumDomains"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::EnumDomains"
 dev_langs: 

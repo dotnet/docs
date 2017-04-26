@@ -13,7 +13,8 @@ api_name:
   - "ICLRMetaHostPolicy"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHostPolicy"
 dev_langs: 

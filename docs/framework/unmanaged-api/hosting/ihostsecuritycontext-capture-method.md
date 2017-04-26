@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityContext.Capture"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityContext::Capture"
 dev_langs: 

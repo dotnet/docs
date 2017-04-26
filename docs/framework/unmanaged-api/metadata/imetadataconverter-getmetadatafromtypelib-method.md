@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataConverter.GetMetaDataFromTypeLib"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataConverter::GetMetaDataFromTypeLib"
 dev_langs: 

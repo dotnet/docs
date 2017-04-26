@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback3.InitializeForAttach Method"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::InitializeForAttach"
 dev_langs: 

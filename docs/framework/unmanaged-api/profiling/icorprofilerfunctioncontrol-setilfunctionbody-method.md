@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerFunctionControl.SetILFunctionBody"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetILFunctionBody"
 dev_langs: 

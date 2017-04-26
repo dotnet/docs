@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyEnum.Clone"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Clone"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "BucketParameters"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "BucketParameters"
 dev_langs: 

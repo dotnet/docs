@@ -13,7 +13,8 @@ api_name:
   - "IHostMemoryManager.ReleasedVirtualAddressSpace"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::ReleasedVirtualAddressSpace"
 dev_langs: 

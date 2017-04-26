@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.TranslateSigWithScope"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::TranslateSigWithScope"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ASM_CMP_FLAGS"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ASM_CMP_FLAGS"
 dev_langs: 

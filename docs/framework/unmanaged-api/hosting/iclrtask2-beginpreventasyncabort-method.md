@@ -13,7 +13,8 @@ api_name:
   - "ICLRTask2.BeginPreventAsyncAbort"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask2::BeginPreventAsyncAbort"
 dev_langs: 

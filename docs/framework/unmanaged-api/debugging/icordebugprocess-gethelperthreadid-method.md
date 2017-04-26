@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.GetHelperThreadID"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetHelperThreadID"
 dev_langs: 

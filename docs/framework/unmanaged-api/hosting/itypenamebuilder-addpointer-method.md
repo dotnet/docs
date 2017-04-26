@@ -13,7 +13,8 @@ api_name:
   - "ITypeNameBuilder.AddPointer"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddPointer"
 dev_langs: 

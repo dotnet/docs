@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFunction.GetLocalVarSigToken"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetLocalVarSigToken"
 dev_langs: 

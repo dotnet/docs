@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEditAndContinueErrorInfo.GetErrorCode"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode"
 dev_langs: 

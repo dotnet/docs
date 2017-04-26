@@ -13,7 +13,8 @@ api_name:
   - "CLR_DEBUGGING_VERSION"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLR_DEBUGGING_VERSION"
 dev_langs: 

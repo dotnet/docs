@@ -13,7 +13,8 @@ api_name:
   - "IALink.SetNonAssemblyFlags"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetNonAssemblyFlags"
 dev_langs: 

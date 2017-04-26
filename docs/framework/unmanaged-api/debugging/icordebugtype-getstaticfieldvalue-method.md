@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugType.GetStaticFieldValue"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugType::GetStaticFieldValue"
 dev_langs: 

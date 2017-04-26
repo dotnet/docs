@@ -13,7 +13,8 @@ api_name:
   - "ASSEMBLY_INFO"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ASSEMBLY_INFO"
 dev_langs: 

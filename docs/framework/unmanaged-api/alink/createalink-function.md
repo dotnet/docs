@@ -13,7 +13,8 @@ api_name:
   - "CreateALink"
 api_location: 
   - "alink.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CreateALink"
 dev_langs: 

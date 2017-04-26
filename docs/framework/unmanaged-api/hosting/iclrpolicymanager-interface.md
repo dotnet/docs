@@ -13,7 +13,8 @@ api_name:
   - "ICLRPolicyManager"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager"
 dev_langs: 

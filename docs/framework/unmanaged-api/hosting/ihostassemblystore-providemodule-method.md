@@ -13,7 +13,8 @@ api_name:
   - "IHostAssemblyStore.ProvideModule"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyStore::ProvideModule"
 dev_langs: 

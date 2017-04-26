@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedENCUpdate.InitializeForEnc"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::InitializeForEnc"
 dev_langs: 

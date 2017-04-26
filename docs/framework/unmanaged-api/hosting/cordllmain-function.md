@@ -13,7 +13,8 @@ api_name:
   - "_CorDllMain"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "_CorDllMain"
 dev_langs: 

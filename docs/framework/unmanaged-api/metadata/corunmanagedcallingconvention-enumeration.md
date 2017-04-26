@@ -13,7 +13,8 @@ api_name:
   - "CorUnmanagedCallingConvention"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorUnmanagedCallingConvention"
 dev_langs: 

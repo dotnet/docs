@@ -13,7 +13,8 @@ api_name:
   - "IActionOnCLREvent.OnEvent"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IActionOnCLREvent::OnEvent"
 dev_langs: 

@@ -14,7 +14,8 @@ api_name:
   - "IALink2.EmitInternalExportedTypes"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EmitInternalExportedTypes"
 dev_langs: 

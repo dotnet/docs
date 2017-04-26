@@ -13,7 +13,8 @@ api_name:
   - "ILCodeKind"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af

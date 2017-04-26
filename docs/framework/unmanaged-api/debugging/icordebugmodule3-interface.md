@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugModule3"
 api_location: 
   - "CorDebug.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule3"
 dev_langs: 

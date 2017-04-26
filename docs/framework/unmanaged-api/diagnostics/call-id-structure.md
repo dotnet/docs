@@ -13,7 +13,8 @@ api_name:
   - "CALL_ID"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CALL_ID"
 dev_langs: 

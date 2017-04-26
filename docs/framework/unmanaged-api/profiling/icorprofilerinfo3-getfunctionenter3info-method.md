@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo3.GetFunctionEnter3Info Method"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionEnter3Info"
 dev_langs: 

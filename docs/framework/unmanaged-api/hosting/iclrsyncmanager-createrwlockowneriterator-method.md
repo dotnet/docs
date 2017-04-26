@@ -13,7 +13,8 @@ api_name:
   - "ICLRSyncManager.CreateRWLockOwnerIterator"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRSyncManager::CreateRWLockOwnerIterator"
 dev_langs: 

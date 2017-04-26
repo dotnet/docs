@@ -15,7 +15,8 @@ api_location:
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CreateInstallReference"
 dev_langs: 

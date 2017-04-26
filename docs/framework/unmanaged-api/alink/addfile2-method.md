@@ -14,7 +14,8 @@ api_name:
   - "IALink2.AddFile2"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddFile2"
 dev_langs: 

@@ -11,7 +11,8 @@ api_name:
   - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder"
 api_location: 
   - "Microsoft.VisualStudio.Activities.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: e7287d3f-59ee-448f-b7fe-b640508501a5
 caps.latest.revision: 3
 author: "Erikre"

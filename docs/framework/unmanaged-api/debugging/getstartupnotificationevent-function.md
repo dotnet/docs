@@ -13,7 +13,8 @@ api_name:
   - "GetStartupNotificationEvent"
 api_location: 
   - "dbgshim.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
 dev_langs: 

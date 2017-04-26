@@ -13,7 +13,8 @@ api_name:
   - "ASM_NAME"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ASM_NAME"
 dev_langs: 

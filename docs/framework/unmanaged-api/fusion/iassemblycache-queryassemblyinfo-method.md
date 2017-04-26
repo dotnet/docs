@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyCache.QueryAssemblyInfo"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::QueryAssemblyInfo"
 dev_langs: 

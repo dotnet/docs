@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugController.Continue"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugController::Continue"
 dev_langs: 

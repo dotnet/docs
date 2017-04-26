@@ -13,7 +13,8 @@ api_name:
   - "ICLRStrongName.StrongNameKeyInstall"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyInstall"
 dev_langs: 

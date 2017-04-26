@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineTypeRefByName"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineTypeRefByName"
 dev_langs: 

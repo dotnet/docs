@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityManager.RevertToSelf"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::RevertToSelf"
 dev_langs: 

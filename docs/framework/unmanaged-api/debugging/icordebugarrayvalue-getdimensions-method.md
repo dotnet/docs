@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugArrayValue.GetDimensions"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetDimensions"
 dev_langs: 

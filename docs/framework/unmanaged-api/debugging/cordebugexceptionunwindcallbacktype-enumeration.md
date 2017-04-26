@@ -13,7 +13,8 @@ api_name:
   - "CorDebugExceptionUnwindCallbackType"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugExceptionUnwindCallbackType"
 dev_langs: 

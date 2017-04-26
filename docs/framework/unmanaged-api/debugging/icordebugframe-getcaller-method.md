@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFrame.GetCaller"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetCaller"
 dev_langs: 

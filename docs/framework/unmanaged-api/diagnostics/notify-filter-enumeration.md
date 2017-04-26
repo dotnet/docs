@@ -13,7 +13,8 @@ api_name:
   - "NOTIFY_FILTER"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "NOTIFY_FILTER"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedWriter2.DefineLocalVariable2"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter2::DefineLocalVariable2"
 dev_langs: 

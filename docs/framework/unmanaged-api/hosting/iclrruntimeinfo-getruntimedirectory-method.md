@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeInfo.GetRuntimeDirectory"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetRuntimeDirectory"
 dev_langs: 

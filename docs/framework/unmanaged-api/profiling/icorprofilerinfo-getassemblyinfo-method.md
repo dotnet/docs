@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.GetAssemblyInfo"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetAssemblyInfo Method"
 dev_langs: 

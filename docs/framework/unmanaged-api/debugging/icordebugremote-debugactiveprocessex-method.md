@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugRemote.DebugActiveProcessEx"
 api_location: 
   - "CorDebug.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget::DebugActiveProcessEx"
 dev_langs: 

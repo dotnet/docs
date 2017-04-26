@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugVariableHome.GetCode"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetCode"
 dev_langs: 

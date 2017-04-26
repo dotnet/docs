@@ -13,7 +13,8 @@ api_name:
   - "IHostTaskManager.EndThreadAffinity"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::EndThreadAffinity"
 dev_langs: 

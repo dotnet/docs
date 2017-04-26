@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.SetModuleProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetModuleProps"
 dev_langs: 

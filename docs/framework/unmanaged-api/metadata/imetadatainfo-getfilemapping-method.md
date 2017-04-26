@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataInfo.GetFileMapping"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataInfo::GetFileMapping"
 dev_langs: 

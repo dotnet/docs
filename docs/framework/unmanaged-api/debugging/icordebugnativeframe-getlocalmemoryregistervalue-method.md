@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugNativeFrame.GetLocalMemoryRegisterValue"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetLocalMemoryRegisterValue"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedScope2.GetConstantCount"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope2::GetConstantCount"
 dev_langs: 

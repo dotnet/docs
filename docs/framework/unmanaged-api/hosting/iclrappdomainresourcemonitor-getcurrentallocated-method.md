@@ -13,7 +13,8 @@ api_name:
   - "ICLRAppDomainResourceMonitor.GetCurrentAllocated"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "_EFN_GetManagedObjectName"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "_EFN_GetManagedObjectName"
 dev_langs: 

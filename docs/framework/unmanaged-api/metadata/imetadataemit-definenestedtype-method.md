@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineNestedType"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineNestedType"
 dev_langs: 

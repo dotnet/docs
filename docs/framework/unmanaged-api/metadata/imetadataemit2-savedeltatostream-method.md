@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit2.SaveDeltaToStream"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::SaveDeltaToStream"
 dev_langs: 

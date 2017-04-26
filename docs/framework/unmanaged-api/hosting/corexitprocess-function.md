@@ -16,7 +16,8 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CorExitProcess"
 dev_langs: 

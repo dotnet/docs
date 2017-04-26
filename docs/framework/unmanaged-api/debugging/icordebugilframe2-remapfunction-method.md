@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame2.RemapFunction"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame2::RemapFunction"
 dev_langs: 

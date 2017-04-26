@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit2.GetDeltaSaveSize"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::GetDeltaSaveSize"
 dev_langs: 

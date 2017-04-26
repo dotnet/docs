@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo4.GetReJITIDs"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetReJITIDs"
 dev_langs: 

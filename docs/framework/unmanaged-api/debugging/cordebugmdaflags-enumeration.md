@@ -13,7 +13,8 @@ api_name:
   - "CorDebugMDAFlags"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugMDAFlags"
 dev_langs: 

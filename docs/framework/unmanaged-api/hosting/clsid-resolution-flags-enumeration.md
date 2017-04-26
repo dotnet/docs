@@ -13,7 +13,8 @@ api_name:
   - "CLSID_RESOLUTION_FLAGS"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLSID_RESOLUTION_FLAGS"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugReferenceValue.Dereference"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::Dereference"
 dev_langs: 

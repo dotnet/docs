@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeHost.GetCurrentAppDomainId"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::GetCurrentAppDomainId"
 dev_langs: 

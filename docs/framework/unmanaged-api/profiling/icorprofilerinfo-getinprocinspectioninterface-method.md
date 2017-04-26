@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.GetInprocInspectionInterface"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionInterface"
 dev_langs: 

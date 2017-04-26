@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback3.ProfilerAttachComplete Method"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::ProfilerAttachComplete"
 dev_langs: 

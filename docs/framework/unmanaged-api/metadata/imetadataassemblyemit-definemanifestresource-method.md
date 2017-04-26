@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataAssemblyEmit.DefineManifestResource"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineManifestResource"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorPublish.GetProcess"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublish::GetProcess"
 dev_langs: 

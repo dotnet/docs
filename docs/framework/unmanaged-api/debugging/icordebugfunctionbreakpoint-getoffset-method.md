@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFunctionBreakpoint.GetOffset"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunctionBreakpoint::GetOffset"
 dev_langs: 

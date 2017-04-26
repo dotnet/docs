@@ -13,7 +13,8 @@ api_name:
   - "ICLRDomainManager.SetPropertiesForDefaultAppDomain"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain"
 dev_langs: 

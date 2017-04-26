@@ -13,7 +13,8 @@ api_name:
   - "ICoreDebugTarget.FreeMemory"
 api_location: 
   - "mscordbi_macx86.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICoreClrDebugTarget::FreeMemory"
 dev_langs: 

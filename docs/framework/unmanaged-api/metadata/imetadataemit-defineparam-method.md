@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineParam"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineParam"
 dev_langs: 

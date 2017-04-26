@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugArrayValue.GetRank"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetRank"
 dev_langs: 

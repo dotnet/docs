@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.GetSaveSize"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetSaveSize"
 dev_langs: 

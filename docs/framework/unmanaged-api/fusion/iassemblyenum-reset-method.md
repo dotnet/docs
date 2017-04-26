@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyEnum.Reset"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Reset"
 dev_langs: 

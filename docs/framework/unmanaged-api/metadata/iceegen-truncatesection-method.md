@@ -13,7 +13,8 @@ api_name:
   - "ICeeGen.TruncateSection"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::TruncateSection"
 dev_langs: 

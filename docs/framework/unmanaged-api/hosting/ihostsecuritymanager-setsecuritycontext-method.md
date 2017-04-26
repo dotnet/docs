@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityManager.SetSecurityContext"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::SetSecurityContext"
 dev_langs: 

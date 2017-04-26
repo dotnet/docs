@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.UpdateModuleSymbols"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::UpdateModuleSymbols"
 dev_langs: 

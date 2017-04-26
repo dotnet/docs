@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedNamespace.GetVariables"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedNamespace::GetVariables"
 dev_langs: 

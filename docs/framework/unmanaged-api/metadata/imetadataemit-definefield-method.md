@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineField"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineField"
 dev_langs: 

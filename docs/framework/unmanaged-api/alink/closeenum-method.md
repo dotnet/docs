@@ -14,7 +14,8 @@ api_name:
   - "IALink.CloseEnum"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CloseEnum"
 dev_langs: 

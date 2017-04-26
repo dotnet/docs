@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorCreateTimer"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorCreateTimer"
 dev_langs: 

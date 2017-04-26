@@ -13,7 +13,8 @@ api_name:
   - "CoreClrDebugRuntimeInfo"
 api_location: 
   - "mscordbi_macx86.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CoreClrDebugRuntimeInfo"
 dev_langs: 

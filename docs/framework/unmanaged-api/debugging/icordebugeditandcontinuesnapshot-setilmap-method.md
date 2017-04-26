@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEditAndContinueSnapshot.SetILMap"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::SetILMap"
 dev_langs: 

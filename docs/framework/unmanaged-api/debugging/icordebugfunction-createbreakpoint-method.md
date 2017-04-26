@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFunction.CreateBreakpoint"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::CreateBreakpoint"
 dev_langs: 

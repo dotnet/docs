@@ -13,7 +13,8 @@ api_name:
   - "IALink.Init"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "Init"
 dev_langs: 

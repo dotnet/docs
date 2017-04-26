@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugThread4.GetCurrentCustomDebuggerNotification Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread4::GetCurrentCustomDebuggerNotification"
 dev_langs: 

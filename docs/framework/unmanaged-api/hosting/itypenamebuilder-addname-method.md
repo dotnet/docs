@@ -13,7 +13,8 @@ api_name:
   - "ITypeNameBuilder.AddName"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddName"
 dev_langs: 

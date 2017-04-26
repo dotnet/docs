@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugAppDomain.GetObject"
 api_location: 
   - "corguids.lib"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetObject"
 dev_langs: 

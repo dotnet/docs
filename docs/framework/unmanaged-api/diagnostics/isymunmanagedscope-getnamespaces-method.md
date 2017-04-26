@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedScope.GetNamespaces"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetNamespaces"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataDispenser.DefineScope"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenser::DefineScope"
 dev_langs: 

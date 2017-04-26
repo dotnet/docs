@@ -13,7 +13,8 @@ api_name:
   - "PFN_CLRDataCreateInstance"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "PFN_CLRDataCreateInstance"
 dev_langs: 

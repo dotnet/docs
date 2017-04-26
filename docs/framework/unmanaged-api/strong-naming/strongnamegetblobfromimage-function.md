@@ -13,7 +13,8 @@ api_name:
   - "StrongNameGetBlobFromImage"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameGetBlobFromImage"
 dev_langs: 

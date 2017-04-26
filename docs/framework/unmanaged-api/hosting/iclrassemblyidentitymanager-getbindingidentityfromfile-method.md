@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyIdentityManager.GetBindingIdentityFromFile"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile"
 dev_langs: 

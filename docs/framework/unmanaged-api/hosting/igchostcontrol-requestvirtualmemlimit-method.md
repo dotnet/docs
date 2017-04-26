@@ -13,7 +13,8 @@ api_name:
   - "IGCHostControl.RequestVirtualMemLimit"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "RequestVirtualMemLimit"
 dev_langs: 

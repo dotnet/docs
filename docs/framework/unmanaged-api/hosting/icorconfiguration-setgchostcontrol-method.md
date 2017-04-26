@@ -13,7 +13,8 @@ api_name:
   - "ICorConfiguration.SetGCHostControl"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetGCHostControl"
 dev_langs: 

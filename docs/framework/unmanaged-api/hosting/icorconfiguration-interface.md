@@ -13,7 +13,8 @@ api_name:
   - "ICorConfiguration"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorConfiguration"
 dev_langs: 

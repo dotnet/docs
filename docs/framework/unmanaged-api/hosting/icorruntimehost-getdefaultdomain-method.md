@@ -13,7 +13,8 @@ api_name:
   - "ICorRuntimeHost.GetDefaultDomain"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain"
 dev_langs: 

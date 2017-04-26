@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.GetSourceRange"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetSourceRange"
 dev_langs: 

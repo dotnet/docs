@@ -13,7 +13,8 @@ api_name:
   - "IReferenceIdentity"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IReferenceIdentity"
 dev_langs: 

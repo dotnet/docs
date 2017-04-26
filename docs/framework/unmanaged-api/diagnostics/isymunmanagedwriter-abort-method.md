@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedWriter.Abort"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::Abort"
 dev_langs: 

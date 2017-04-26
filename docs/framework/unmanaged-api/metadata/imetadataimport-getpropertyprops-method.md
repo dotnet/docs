@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport.GetPropertyProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetPropertyProps"
 dev_langs: 

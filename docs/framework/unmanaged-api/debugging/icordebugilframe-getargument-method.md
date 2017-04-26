@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame.GetArgument"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetArgument"
 dev_langs: 

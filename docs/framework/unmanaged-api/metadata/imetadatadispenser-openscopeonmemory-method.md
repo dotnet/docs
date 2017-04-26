@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataDispenser.OpenScopeOnMemory"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenser::OpenScopeOnMemory"
 dev_langs: 

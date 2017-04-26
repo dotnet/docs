@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback3.ProfilerDetachSucceeded Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::ProfilerDetachSucceeded"
 dev_langs: 

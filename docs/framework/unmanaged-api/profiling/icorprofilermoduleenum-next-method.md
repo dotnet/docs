@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerModuleEnum.Next Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum::Next"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.GetClassFromToken"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetClassFromToken"
 dev_langs: 

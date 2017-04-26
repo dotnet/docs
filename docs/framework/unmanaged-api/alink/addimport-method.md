@@ -14,7 +14,8 @@ api_name:
   - "IALink.AddImport"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddImport"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyCache.CreateAssemblyCacheItem"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::CreateAssemblyCacheItem"
 dev_langs: 

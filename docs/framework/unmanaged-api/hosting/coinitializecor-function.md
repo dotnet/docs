@@ -13,7 +13,8 @@ api_name:
   - "CoInitializeCor"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CoInitializeCor"
 dev_langs: 

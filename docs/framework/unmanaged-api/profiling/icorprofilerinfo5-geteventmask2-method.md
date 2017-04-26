@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo5.GetEventMask2"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: f854b68f-009c-4ffb-89cd-ca874d1c0fb7

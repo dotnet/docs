@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugModule2.ApplyChanges"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule2::ApplyChanges"
 dev_langs: 

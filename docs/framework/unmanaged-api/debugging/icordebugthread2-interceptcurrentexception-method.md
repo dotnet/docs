@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugThread2.InterceptCurrentException"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread2::InterceptCurrentException"
 dev_langs: 

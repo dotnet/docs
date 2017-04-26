@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback4.ReJITCompilationFinished"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::ReJITCompilationFinished"
 dev_langs: 

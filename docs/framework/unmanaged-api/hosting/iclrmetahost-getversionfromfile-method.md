@@ -13,7 +13,8 @@ api_name:
   - "ICLRMetaHost.GetVersionFromFile"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost::GetVersionFromFile"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback2.FunctionRemapComplete"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::FunctionRemapComplete"
 dev_langs: 

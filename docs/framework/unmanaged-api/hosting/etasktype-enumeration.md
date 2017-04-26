@@ -13,7 +13,8 @@ api_name:
   - "ETaskType"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ETaskType"
 dev_langs: 

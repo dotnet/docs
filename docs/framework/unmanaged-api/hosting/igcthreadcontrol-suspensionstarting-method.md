@@ -13,7 +13,8 @@ api_name:
   - "IGCThreadControl.SuspensionStarting"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SuspensionStarting"
 dev_langs: 

@@ -14,7 +14,8 @@ api_name:
   - "CloseAssembly"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CloseAssembly"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugChain.GetStackRange"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetStackRange"
 dev_langs: 

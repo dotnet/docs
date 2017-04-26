@@ -13,7 +13,8 @@ api_name:
   - "RUNTIME_INFO_FLAGS"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "RUNTIME_INFO_FLAGS"
 dev_langs: 

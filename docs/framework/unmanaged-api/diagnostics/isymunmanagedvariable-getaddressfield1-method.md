@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedVariable.GetAddressField1"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAddressField1"
 dev_langs: 

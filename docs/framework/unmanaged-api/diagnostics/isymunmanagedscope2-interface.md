@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedScope2"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope2"
 dev_langs: 

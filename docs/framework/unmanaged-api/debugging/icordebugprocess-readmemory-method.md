@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.ReadMemory"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ReadMemory"
 dev_langs: 

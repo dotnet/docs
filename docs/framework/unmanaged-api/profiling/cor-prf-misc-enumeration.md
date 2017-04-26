@@ -13,7 +13,8 @@ api_name:
   - "COR_PRF_MISC"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PRF_MISC"
 dev_langs: 

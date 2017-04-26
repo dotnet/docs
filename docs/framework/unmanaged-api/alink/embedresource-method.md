@@ -14,7 +14,8 @@ api_name:
   - "EmbedResource"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EmbedResource"
 dev_langs: 

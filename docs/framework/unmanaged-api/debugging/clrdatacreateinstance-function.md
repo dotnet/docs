@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscordbi.dll"
   - "mscordacwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLRDataCreateInstance"
 dev_langs: 

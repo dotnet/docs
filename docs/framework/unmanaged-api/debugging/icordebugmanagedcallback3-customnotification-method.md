@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback3.CustomNotification Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback3::CustomNotification"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IHostTaskManager.ReverseEnterRuntime"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::ReverseEnterRuntime"
 dev_langs: 

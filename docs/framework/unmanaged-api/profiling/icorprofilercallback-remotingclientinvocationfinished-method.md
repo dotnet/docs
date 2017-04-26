@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.RemotingClientInvocationFinished"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientInvocationFinished"
 dev_langs: 

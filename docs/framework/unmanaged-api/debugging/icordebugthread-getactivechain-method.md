@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugThread.GetActiveChain"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetActiveChain"
 dev_langs: 

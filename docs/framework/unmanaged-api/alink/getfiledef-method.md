@@ -13,7 +13,8 @@ api_name:
   - "IALink2.GetFileDef"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetFileDef"
 dev_langs: 

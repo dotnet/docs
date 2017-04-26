@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo6"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b

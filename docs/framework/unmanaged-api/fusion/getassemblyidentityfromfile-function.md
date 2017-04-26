@@ -15,7 +15,8 @@ api_location:
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetAssemblyIdentityFromFile"
 dev_langs: 

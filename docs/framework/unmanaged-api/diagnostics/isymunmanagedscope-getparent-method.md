@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedScope.GetParent"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetParent"
 dev_langs: 

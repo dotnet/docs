@@ -13,7 +13,8 @@ api_name:
   - "ICLRAppDomainResourceMonitor.GetCurrentSurvived"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived"
 dev_langs: 

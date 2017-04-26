@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugModule.GetClassFromToken"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetClassFromToken"
 dev_langs: 

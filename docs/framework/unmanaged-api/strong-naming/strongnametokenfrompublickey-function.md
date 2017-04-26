@@ -17,7 +17,8 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "StrongNameTokenFromPublicKey"
 dev_langs: 

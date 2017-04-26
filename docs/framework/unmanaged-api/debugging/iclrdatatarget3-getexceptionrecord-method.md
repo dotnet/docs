@@ -13,7 +13,8 @@ api_name:
   - "ICLRDataTarget3.GetExceptionRecord"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 6643c2af-2ee6-4789-aa25-1d8eaf500c94

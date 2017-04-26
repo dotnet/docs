@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.ExceptionCLRCatcherExecute"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionCLRCatcherExecute"
 dev_langs: 

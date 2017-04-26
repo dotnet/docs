@@ -13,7 +13,8 @@ api_name:
   - "StackOverflowType"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "StackOverflowType"
 dev_langs: 

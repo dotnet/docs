@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyCache.CreateAssemblyScavenger"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::CreateAssemblyScavenger"
 dev_langs: 

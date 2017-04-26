@@ -13,7 +13,8 @@ api_name:
   - "IALink.FreeWin32ResBlob"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FreeWin32ResBlob"
 dev_langs: 

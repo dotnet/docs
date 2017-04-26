@@ -13,7 +13,8 @@ api_name:
   - "IClrProfiling.AttachProfiler Method"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IClrProfiling::AttachProfiler"
 dev_langs: 

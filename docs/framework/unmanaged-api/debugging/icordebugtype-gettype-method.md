@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugType.GetType"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugType::GetType"
 dev_langs: 

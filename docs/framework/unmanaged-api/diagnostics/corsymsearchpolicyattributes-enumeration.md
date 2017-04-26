@@ -13,7 +13,8 @@ api_name:
   - "CorSymSearchPolicyAttributes"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorSymSearchPolicyAttributes"
 dev_langs: 

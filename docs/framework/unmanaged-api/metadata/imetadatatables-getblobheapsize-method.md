@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataTables.GetBlobHeapSize"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlobHeapSize"
 dev_langs: 

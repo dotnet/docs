@@ -13,7 +13,8 @@ api_name:
   - "ICLRTask.Abort"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask::Abort"
 dev_langs: 

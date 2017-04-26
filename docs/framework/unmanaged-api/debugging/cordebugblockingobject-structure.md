@@ -13,7 +13,8 @@ api_name:
   - "CorDebugBlockingObject Structure"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugBlockingObject"
 dev_langs: 

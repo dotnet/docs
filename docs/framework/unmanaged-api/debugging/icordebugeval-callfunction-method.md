@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval.CallFunction"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::CallFunction"
 dev_langs: 

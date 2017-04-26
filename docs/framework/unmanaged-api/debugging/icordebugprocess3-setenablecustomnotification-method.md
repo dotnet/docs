@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess3.SetEnableCustomNotification Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification"
 dev_langs: 

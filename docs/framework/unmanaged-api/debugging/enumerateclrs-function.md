@@ -13,7 +13,8 @@ api_name:
   - "EnumerateCLRs"
 api_location: 
   - "dbgshim.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EnumerateCLRs"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyName.GetProperty"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName::GetProperty"
 dev_langs: 

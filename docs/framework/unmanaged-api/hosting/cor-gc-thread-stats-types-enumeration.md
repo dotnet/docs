@@ -13,7 +13,8 @@ api_name:
   - "COR_GC_THREAD_STATS_TYPES"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_GC_THREAD_STATS_TYPES"
 dev_langs: 

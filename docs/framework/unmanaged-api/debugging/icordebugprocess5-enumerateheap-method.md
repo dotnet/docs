@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess5.EnumerateHeap"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::EnumerateHeap"
 dev_langs: 

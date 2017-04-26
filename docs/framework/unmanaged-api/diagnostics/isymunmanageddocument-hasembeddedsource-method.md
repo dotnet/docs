@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.HasEmbeddedSource"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::HasEmbeddedSource"
 dev_langs: 

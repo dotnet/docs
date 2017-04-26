@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.GetCheckSum"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetCheckSum"
 dev_langs: 

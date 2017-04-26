@@ -13,7 +13,8 @@ api_name:
   - "IGCHost2.SetGCStartupLimitsEx"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IGCHost2::SetGCStartupLimitsEx"
 dev_langs: 

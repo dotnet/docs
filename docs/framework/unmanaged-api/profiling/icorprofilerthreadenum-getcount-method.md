@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerThreadEnum.GetCount"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::GetCount"
 dev_langs: 

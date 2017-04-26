@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFrame.CreateStepper"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFrame::CreateStepper"
 dev_langs: 

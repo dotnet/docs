@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedNamespace"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedNamespace"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader2.GetMethodsInDocument"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument"
 dev_langs: 

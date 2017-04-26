@@ -13,7 +13,8 @@ api_name:
   - "COR_TYPEID"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_TYPEID"
 dev_langs: 

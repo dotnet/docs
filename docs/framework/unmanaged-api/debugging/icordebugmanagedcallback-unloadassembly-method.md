@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.UnloadAssembly"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::UnloadAssembly"
 dev_langs: 

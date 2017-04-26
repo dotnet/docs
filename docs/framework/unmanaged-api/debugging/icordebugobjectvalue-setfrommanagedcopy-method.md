@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugObjectValue.SetFromManagedCopy"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::SetFromManagedCopy"
 dev_langs: 

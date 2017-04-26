@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess5.GetTypeFields"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetTypeFields"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IHostMemoryManager.VirtualProtect"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualProtect"
 dev_langs: 

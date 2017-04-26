@@ -13,7 +13,8 @@ api_name:
   - "IHostMemoryManager.RegisterMemoryNotificationCallback"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback"
 dev_langs: 

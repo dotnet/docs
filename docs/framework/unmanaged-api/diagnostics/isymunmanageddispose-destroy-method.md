@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDispose.Destroy"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDispose::Destroy"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "RunDll32ShimW"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "RunDll32ShimW"
 dev_langs: 

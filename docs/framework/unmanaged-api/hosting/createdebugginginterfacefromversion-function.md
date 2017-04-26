@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersion"
 dev_langs: 

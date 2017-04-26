@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode.IsIL"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode::IsIL"
 dev_langs: 

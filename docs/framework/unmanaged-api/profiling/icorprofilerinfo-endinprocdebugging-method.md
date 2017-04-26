@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.EndInprocDebugging"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::EndInprocDebugging"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.ExceptionThrown"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionThrown"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugStringValue.GetLength"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStringValue::GetLength"
 dev_langs: 

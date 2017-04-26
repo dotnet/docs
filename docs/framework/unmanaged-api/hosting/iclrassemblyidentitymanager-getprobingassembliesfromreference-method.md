@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyIdentityManager.GetProbingAssembliesFromReference"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference"
 dev_langs: 

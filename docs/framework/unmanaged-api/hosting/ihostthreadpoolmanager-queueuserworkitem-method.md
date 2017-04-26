@@ -13,7 +13,8 @@ api_name:
   - "IHostThreadPoolManager.QueueUserWorkItem"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::QueueUserWorkItem"
 dev_langs: 

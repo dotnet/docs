@@ -13,7 +13,8 @@ api_name:
   - "GetHashFromBlob"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetHashFromBlob"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IValidator.FormatEventInfo"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FormatEventInfo"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "CorDebugRecordFormat"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: d680c1c0-16ab-4ccc-9444-39cf8e0e05ee

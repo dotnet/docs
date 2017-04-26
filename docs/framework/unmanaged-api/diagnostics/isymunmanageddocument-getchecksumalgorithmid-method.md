@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.GetCheckSumAlgorithmId"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetCheckSumAlgorithmId"
 dev_langs: 

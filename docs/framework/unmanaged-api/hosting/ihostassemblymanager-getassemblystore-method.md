@@ -13,7 +13,8 @@ api_name:
   - "IHostAssemblyManager.GetAssemblyStore"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetAssemblyStore"
 dev_langs: 

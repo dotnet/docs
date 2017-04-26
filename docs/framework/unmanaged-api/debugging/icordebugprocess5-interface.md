@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess5"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5"
 dev_langs: 

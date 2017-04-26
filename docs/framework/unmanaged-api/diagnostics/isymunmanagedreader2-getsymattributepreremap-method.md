@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader2.GetSymAttributePreRemap"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetSymAttributePreRemap"
 dev_langs: 

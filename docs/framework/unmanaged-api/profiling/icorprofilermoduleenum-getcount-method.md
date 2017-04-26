@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerModuleEnum.GetCount Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum::GetCount"
 dev_langs: 

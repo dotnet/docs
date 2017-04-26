@@ -13,7 +13,8 @@ api_name:
   - "AssemblyAttributesGoHere"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AssemblyAttributesGoHere"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugThread.GetActiveFrame"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetActiveFrame"
 dev_langs: 

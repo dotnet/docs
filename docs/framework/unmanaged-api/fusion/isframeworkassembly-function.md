@@ -13,7 +13,8 @@ api_name:
   - "IsFrameworkAssembly"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IsFrameworkAssembly"
 dev_langs: 

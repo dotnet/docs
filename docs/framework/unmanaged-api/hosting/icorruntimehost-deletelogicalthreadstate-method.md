@@ -13,7 +13,8 @@ api_name:
   - "ICorRuntimeHost.DeleteLogicalThreadState"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::DeleteLogicalThreadState"
 dev_langs: 

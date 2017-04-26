@@ -13,7 +13,8 @@ api_name:
   - "ICLRDebugManager.EndConnection"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::EndConnection"
 dev_langs: 

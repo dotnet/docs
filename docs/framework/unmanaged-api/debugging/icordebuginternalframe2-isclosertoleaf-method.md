@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugInternalFrame2.IsCloserToLeaf Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame2::IsCloserToLeaf"
 dev_langs: 

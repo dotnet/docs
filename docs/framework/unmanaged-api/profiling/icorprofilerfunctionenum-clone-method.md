@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerFunctionEnum.Clone Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionEnum::Clone"
 dev_langs: 

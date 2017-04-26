@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeHost.SetHostControl"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::SetHostControl"
 dev_langs: 

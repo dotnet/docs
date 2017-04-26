@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeInfo.BindAsLegacyV2Runtime"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime"
 dev_langs: 

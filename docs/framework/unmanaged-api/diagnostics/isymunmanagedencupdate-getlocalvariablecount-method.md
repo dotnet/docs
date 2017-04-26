@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedENCUpdate.GetLocalVariableCount"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::GetLocalVariableCount"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugBreakpoint.IsActive"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugBreakpoint::IsActive"
 dev_langs: 

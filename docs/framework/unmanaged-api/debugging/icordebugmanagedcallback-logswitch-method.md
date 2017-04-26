@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.LogSwitch"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LogSwitch"
 dev_langs: 

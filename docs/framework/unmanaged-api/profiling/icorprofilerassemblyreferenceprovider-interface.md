@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerAssemblyReferenceProvider"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 17205116-66e1-4acc-8f01-532fb3867028

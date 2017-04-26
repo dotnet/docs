@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineMethodImpl"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineMethodImpl"
 dev_langs: 

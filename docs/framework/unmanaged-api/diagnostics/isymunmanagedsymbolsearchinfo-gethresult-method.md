@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedSymbolSearchInfo.GetHRESULT"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetHRESULT"
 dev_langs: 

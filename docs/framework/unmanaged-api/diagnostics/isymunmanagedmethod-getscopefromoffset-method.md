@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedMethod.GetScopeFromOffset"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetScopeFromOffset"
 dev_langs: 

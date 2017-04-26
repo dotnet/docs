@@ -13,7 +13,8 @@ api_name:
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
 dev_langs: 

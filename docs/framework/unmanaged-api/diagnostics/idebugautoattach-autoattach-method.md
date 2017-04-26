@@ -13,7 +13,8 @@ api_name:
   - "IDebugAutoAttach.AutoAttach"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDebugAutoAttach::AutoAttach"
 dev_langs: 

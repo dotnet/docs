@@ -13,7 +13,8 @@ api_name:
   - "COR_FIELD_OFFSET"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_FIELD_OFFSET"
 dev_langs: 

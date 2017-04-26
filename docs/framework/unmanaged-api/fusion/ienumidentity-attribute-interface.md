@@ -13,7 +13,8 @@ api_name:
   - "IEnumIDENTITY_ATTRIBUTE"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IEnumIDENTITY_ATTRIBUTE"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeInfo.IsLoadable"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::IsLoadable"
 dev_langs: 

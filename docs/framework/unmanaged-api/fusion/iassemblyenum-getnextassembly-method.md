@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyEnum.GetNextAssembly"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyEnum::GetNextAssembly"
 dev_langs: 

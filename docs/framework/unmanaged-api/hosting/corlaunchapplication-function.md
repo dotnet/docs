@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "clr.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorLaunchApplication"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorPublishProcess.EnumAppDomains"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishProcess::EnumAppDomains"
 dev_langs: 

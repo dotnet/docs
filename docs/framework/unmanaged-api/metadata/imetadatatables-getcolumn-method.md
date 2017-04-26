@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataTables.GetColumn"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetColumn"
 dev_langs: 

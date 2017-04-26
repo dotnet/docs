@@ -13,7 +13,8 @@ api_name:
   - "ICLRDataEnumMemoryRegionsCallback"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataEnumMemoryRegionsCallback"
 dev_langs: 

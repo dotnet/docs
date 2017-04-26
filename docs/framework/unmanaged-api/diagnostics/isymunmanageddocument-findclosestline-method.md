@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.FindClosestLine"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::FindClosestLine"
 dev_langs: 

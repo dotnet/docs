@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugArrayValue.GetElementType"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElementType"
 dev_langs: 

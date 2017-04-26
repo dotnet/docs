@@ -13,7 +13,8 @@ api_name:
   - "ICLROnEventManager.UnregisterActionOnEvent"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLROnEventManager::UnregisterActionOnEvent"
 dev_langs: 

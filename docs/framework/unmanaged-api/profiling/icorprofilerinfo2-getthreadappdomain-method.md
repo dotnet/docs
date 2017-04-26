@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo2.GetThreadAppDomain"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetThreadAppDomain"
 dev_langs: 

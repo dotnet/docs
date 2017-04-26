@@ -13,7 +13,8 @@ api_name:
   - "IHostSemaphore.Wait"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSemaphore::Wait"
 dev_langs: 

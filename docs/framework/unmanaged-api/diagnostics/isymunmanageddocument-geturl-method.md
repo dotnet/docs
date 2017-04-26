@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.GetURL"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetURL"
 dev_langs: 

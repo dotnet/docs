@@ -13,7 +13,8 @@ api_name:
   - "ICLRStrongName.StrongNameFreeBuffer"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameFreeBuffer"
 dev_langs: 

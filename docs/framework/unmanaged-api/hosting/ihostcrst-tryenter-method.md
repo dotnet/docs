@@ -13,7 +13,8 @@ api_name:
   - "IHostCrst.TryEnter"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::TryEnter"
 dev_langs: 

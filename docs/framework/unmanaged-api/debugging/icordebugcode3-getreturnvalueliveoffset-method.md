@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode3.GetReturnValueLiveOffset"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode3::GetReturnValueLiveOffset"
 dev_langs: 

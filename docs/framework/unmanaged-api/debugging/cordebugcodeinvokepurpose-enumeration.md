@@ -13,7 +13,8 @@ api_name:
   - "CorDebugInvokePurpose"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 31833a2d-a0d6-48a1-b05f-995ca307a08f

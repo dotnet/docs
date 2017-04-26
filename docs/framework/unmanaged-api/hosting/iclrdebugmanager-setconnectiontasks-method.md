@@ -13,7 +13,8 @@ api_name:
   - "ICLRDebugManager.SetConnectionTasks"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetConnectionTasks"
 dev_langs: 

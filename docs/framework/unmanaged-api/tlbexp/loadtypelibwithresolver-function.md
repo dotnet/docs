@@ -13,7 +13,8 @@ api_name:
   - "LoadTypeLibWithResolver"
 api_location: 
   - "TlbRef.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "LoadTypeLibWithResolver"
 dev_langs: 

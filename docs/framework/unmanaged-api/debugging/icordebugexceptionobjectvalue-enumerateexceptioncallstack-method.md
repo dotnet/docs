@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugExceptionObjectValue.EnumerateExceptionCallStack"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectValue::EnumerateExceptionCallStack"
 dev_langs: 

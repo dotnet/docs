@@ -13,7 +13,8 @@ api_name:
   - "ICLRStrongName2"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName2"
 dev_langs: 

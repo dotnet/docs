@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerObjectEnum.Reset"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::Reset"
 dev_langs: 

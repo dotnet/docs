@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo2.GetRVAStaticAddress"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetRVAStaticAddress"
 dev_langs: 

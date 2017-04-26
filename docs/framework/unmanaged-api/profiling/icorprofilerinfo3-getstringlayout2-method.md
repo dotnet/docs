@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo3.GetStringLayout2 Method"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetStringLayout2"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "OSINFO"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "OSINFO"
 dev_langs: 

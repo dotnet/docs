@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugThread.GetUserState"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetUserState"
 dev_langs: 

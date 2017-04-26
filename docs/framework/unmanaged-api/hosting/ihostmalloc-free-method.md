@@ -13,7 +13,8 @@ api_name:
   - "IHostMAlloc.Free"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMAlloc::Free"
 dev_langs: 

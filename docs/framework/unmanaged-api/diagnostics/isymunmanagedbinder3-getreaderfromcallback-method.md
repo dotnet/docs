@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedBinder3.GetReaderFromCallback"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder3::GetReaderFromCallback"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IDENTITY_ATTRIBUTE"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDENTITY_ATTRIBUTE"
 dev_langs: 

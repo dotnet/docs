@@ -13,7 +13,8 @@ api_name:
   - "ICLRTask.GetMemStats"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask::GetMemStats"
 dev_langs: 

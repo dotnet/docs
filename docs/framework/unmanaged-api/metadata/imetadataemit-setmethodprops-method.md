@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.SetMethodProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetMethodProps"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerFunctionControl.SetCodegenFlags"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetCodegenFlags"
 dev_langs: 

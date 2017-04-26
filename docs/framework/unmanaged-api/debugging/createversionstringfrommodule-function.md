@@ -13,7 +13,8 @@ api_name:
   - "CreateVersionStringFromModule"
 api_location: 
   - "dbgshim.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CreateVersionStringFromModule"
 dev_langs: 

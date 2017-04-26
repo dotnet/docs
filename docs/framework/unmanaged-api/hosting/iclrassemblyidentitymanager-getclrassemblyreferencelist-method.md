@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyIdentityManager.GetCLRAssemblyReferenceList"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList"
 dev_langs: 

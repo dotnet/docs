@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "fusion.dll"
   - "clr.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetIdentityAuthority"
 dev_langs: 

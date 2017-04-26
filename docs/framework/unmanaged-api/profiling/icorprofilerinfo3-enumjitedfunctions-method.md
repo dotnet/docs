@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo3.EnumJITedFunctions Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::EnumJITedFunctions"
 dev_langs: 

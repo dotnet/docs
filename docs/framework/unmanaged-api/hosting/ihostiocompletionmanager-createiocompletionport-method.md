@@ -13,7 +13,8 @@ api_name:
   - "IHostIoCompletionManager.CreateIoCompletionPort"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::CreateIoCompletionPort"
 dev_langs: 

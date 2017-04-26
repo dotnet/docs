@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
 dev_langs: 

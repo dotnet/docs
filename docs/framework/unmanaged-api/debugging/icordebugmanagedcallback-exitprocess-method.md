@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.ExitProcess"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::ExitProcess"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.AppDomainShutdownStarted"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainShutdownStarted"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "CorAssemblyFlags"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorAssemblyFlags"
 dev_langs: 

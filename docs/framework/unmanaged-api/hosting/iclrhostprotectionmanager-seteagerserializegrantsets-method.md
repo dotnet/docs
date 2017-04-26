@@ -13,7 +13,8 @@ api_name:
   - "ICLRHostProtectionManager.SetEagerSerializeGrantSets"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRHostProtectionManager::SetEagerSerializeGrantSets"
 dev_langs: 

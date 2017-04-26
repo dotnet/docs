@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugController.Terminate"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugController::Terminate"
 dev_langs: 

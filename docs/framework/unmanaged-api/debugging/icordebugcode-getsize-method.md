@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode.GetSize"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetSize"
 dev_langs: 

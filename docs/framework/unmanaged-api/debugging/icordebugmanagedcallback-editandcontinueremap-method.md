@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.EditAndContinueRemap"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::EditAndContinueRemap"
 dev_langs: 

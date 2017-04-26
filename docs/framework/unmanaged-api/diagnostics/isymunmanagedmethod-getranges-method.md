@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedMethod.GetRanges"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetRanges"
 dev_langs: 

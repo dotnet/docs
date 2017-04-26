@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport.FindTypeDefByName"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindTypeDefByName"
 dev_langs: 

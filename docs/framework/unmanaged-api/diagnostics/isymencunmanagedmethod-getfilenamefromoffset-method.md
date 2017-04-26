@@ -13,7 +13,8 @@ api_name:
   - "ISymENCUnmanagedMethod.GetFileNameFromOffset"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetFileNameFromOffset"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "CorFileMapping"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorFileMapping"
 dev_langs: 

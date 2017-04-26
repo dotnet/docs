@@ -13,7 +13,8 @@ api_name:
   - "WriteableMetadataUpdateMode"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 6758f4d3-6bc7-4c99-8582-e9be00566784

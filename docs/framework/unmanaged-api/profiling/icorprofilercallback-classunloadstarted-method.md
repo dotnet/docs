@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.ClassUnloadStarted"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ClassUnloadStarted"
 dev_langs: 

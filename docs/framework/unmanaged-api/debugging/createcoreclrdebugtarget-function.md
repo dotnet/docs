@@ -13,7 +13,8 @@ api_name:
   - "CreateCorClrDebugTarget"
 api_location: 
   - "mscordbi_macx86.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CreateCoreClrDebugTarget"
 dev_langs: 

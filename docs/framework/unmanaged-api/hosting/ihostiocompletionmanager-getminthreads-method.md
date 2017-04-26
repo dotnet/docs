@@ -13,7 +13,8 @@ api_name:
   - "IHostIoCompletionManager.GetMinThreads"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetMinThreads"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorPublishEnum.Clone"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishEnum::Clone"
 dev_langs: 

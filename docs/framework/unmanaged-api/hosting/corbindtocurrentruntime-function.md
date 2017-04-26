@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-api_type: "HeaderDef"
+api_type: 
+  - "HeaderDef"
 f1_keywords: 
   - "CorBindToCurrentRuntime"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.GetThreadContext"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetThreadContext"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeHost.ExecuteInDefaultAppDomain"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain"
 dev_langs: 

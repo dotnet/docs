@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugStepper.SetRangeIL"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetRangeIL"
 dev_langs: 

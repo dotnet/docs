@@ -13,7 +13,8 @@ api_name:
   - "CertVerifyAuthenticodeLicense"
 api_location: 
   - "clr.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83

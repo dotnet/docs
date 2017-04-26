@@ -13,7 +13,8 @@ api_name:
   - "ITypeName.GetTypeArgumentCount"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetTypeArgumentCount"
 dev_langs: 

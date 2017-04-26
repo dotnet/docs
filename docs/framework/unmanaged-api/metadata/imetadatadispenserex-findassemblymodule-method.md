@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataDispenserEx.FindAssemblyModule"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::FindAssemblyModule"
 dev_langs: 

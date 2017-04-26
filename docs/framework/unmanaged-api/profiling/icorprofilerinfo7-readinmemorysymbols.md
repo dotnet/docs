@@ -15,7 +15,8 @@ api_location:
   - "CorProf.idl"
   - "CorProf.h"
   - "CorGuids.lib"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901

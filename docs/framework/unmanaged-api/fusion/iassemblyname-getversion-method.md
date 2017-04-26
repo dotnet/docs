@@ -13,7 +13,8 @@ api_name:
   - "IAssemblyName.GetVersion"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName::GetVersion"
 dev_langs: 

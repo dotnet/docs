@@ -13,7 +13,8 @@ api_name:
   - "ICLRErrorReportingManager.EndCustomDump"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager::EndCustomDump"
 dev_langs: 

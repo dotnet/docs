@@ -13,7 +13,8 @@ api_name:
   - "ITypeName.GetNames"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetNames"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "HOST_TYPE"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "HOST_TYPE"
 dev_langs: 

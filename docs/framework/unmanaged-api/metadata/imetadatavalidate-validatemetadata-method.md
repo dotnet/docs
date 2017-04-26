@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataValidate.ValidateMetaData"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataValidate::ValidateMetaData"
 dev_langs: 

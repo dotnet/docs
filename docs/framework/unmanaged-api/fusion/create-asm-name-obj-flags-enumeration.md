@@ -13,7 +13,8 @@ api_name:
   - "CREATE_ASM_NAME_OBJ_FLAGS"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CREATE_ASM_NAME_OBJ_FLAGS"
 dev_langs: 

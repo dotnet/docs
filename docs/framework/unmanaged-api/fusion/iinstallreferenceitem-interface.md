@@ -13,7 +13,8 @@ api_name:
   - "IInstallReferenceItem"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IInstallReferenceItem"
 dev_langs: 

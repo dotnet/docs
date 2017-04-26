@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorUnregisterWait"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorUnregisterWait"
 dev_langs: 

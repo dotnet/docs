@@ -14,7 +14,8 @@ api_name:
   - "EmitAssemblyCustomAttribute"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EmitAssemblyCustomAttribute"
 dev_langs: 

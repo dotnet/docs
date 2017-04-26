@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.ClearCurrentException"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ClearCurrentException"
 dev_langs: 

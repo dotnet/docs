@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyIdentityManager.GetReferencedAssembliesFromFile"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile"
 dev_langs: 

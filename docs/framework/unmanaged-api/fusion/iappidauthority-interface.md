@@ -13,7 +13,8 @@ api_name:
   - "IAppIdAuthority"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAppIdAuthority"
 dev_langs: 

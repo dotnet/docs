@@ -13,7 +13,8 @@ api_name:
   - "IALink.GetWin32ResBlob"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetWin32ResBlob"
 dev_langs: 

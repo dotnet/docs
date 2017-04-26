@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.AppDomainCreationFinished"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainCreationFinished"
 dev_langs: 

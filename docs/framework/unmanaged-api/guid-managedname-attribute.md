@@ -13,7 +13,8 @@ api_name:
   - "GUID_ManagedName"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GUID_ManagedName"
 dev_langs: 

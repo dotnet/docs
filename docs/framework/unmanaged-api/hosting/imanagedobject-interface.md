@@ -13,7 +13,8 @@ api_name:
   - "IManagedObject"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IManagedObject"
 dev_langs: 

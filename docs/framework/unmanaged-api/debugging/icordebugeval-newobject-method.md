@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval.NewObject"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewObject"
 dev_langs: 

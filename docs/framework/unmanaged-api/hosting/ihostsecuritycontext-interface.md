@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityContext"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityContext"
 dev_langs: 

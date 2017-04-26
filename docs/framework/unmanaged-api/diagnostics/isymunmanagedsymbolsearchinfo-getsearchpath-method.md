@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedSymbolSearchInfo.GetSearchPath"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "AssemblyComparisonResult"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AssemblyComparisonResult"
 dev_langs: 

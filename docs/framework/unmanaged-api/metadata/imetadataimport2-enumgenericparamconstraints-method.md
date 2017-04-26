@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport2.EnumGenericParamConstraints"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumGenericParamConstraints"
 dev_langs: 

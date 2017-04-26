@@ -13,7 +13,8 @@ api_name:
   - "ITypeNameFactory.GetTypeNameBuilder"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetTypeNameBuilder"
 dev_langs: 

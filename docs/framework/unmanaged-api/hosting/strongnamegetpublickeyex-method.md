@@ -13,7 +13,8 @@ api_name:
   - "ICLRStrongName2.StrongNameGetPublicKeyEx"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "StrongNameGetPublicKeyEx"
 dev_langs: 

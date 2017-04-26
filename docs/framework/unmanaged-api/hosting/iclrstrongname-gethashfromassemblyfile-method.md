@@ -13,7 +13,8 @@ api_name:
   - "ICLRStrongName.GetHashFromAssemblyFile"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromAssemblyFile"
 dev_langs: 

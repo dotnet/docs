@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.DefineImportType"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineImportType"
 dev_langs: 

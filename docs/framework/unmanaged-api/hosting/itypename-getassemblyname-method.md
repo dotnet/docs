@@ -13,7 +13,8 @@ api_name:
   - "ITypeName.GetAssemblyName"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetAssemblyName"
 dev_langs: 

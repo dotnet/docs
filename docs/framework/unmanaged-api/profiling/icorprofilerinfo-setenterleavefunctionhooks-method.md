@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.SetEnterLeaveFunctionHooks"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetEnterLeaveFunctionHooks"
 dev_langs: 

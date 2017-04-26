@@ -13,7 +13,8 @@ api_name:
   - "IHostThreadPoolManager.SetMinThreads"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::SetMinThreads"
 dev_langs: 

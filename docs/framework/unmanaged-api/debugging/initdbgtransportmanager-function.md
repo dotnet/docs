@@ -13,7 +13,8 @@ api_name:
   - "InitDbgTransportManager"
 api_location: 
   - "mscordbi_macx86.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "InitDbgTransportManager"
 dev_langs: 

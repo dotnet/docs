@@ -13,7 +13,8 @@ api_name:
   - "ECLRAssemblyIdentityFlags"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ECLRAssemblyIdentityFlags"
 dev_langs: 

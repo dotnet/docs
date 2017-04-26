@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugMDA.GetFlags"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugMDA::GetFlags"
 dev_langs: 

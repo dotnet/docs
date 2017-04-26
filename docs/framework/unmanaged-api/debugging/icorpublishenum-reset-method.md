@@ -13,7 +13,8 @@ api_name:
   - "ICorPublishEnum.Reset"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishEnum::Reset"
 dev_langs: 

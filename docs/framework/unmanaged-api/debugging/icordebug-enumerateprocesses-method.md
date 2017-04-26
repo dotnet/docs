@@ -13,7 +13,8 @@ api_name:
   - "ICorDebug.EnumerateProcesses"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EnumerateProcesses"
 dev_langs: 

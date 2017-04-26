@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode.GetAddress"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetAddress"
 dev_langs: 

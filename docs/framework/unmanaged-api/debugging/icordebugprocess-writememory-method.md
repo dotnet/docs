@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.WriteMemory"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::WriteMemory"
 dev_langs: 

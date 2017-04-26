@@ -13,7 +13,8 @@ api_name:
   - "COR_PUB_ENUMPROCESS"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PUB_ENUMPROCESS"
 dev_langs: 

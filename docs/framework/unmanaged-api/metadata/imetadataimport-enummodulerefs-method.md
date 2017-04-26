@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport.EnumModuleRefs"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumModuleRefs"
 dev_langs: 

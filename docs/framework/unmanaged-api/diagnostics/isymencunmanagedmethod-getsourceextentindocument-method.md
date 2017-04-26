@@ -13,7 +13,8 @@ api_name:
   - "ISymENCUnmanagedMethod.GetSourceExtentInDocument"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetSourceExtentInDocument"
 dev_langs: 

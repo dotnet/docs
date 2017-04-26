@@ -13,7 +13,8 @@ api_name:
   - "COR_HEAPINFO"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_HEAPINFO"
 dev_langs: 

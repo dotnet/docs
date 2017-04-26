@@ -13,7 +13,8 @@ api_name:
   - "IDENTITY_ATTRIBUTE_BLOB"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDENTITY_ATTRIBUTE_BLOB"
 dev_langs: 

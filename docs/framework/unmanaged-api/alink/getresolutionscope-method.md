@@ -13,7 +13,8 @@ api_name:
   - "IALink.GetResolutionScope"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetResolutionScope"
 dev_langs: 

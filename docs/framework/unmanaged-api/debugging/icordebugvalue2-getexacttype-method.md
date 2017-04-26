@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugValue2.GetExactType"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugValue2::GetExactType"
 dev_langs: 

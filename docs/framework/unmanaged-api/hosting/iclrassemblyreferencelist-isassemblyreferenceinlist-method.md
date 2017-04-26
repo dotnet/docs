@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyReferenceList.IsAssemblyReferenceInList"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList"
 dev_langs: 

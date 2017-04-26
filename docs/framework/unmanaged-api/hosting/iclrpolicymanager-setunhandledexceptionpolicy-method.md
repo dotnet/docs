@@ -13,7 +13,8 @@ api_name:
   - "ICLRPolicyManager.SetUnhandledExceptionPolicy"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetUnhandledExceptionPolicy"
 dev_langs: 

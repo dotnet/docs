@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame.GetIP"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetIP"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugChain.GetPrevious"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetPrevious"
 dev_langs: 

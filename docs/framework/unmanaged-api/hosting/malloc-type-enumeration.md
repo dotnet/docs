@@ -13,7 +13,8 @@ api_name:
   - "MALLOC_TYPE"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "MALLOC_TYPE"
 dev_langs: 

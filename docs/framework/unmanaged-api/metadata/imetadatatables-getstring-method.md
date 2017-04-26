@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataTables.GetString"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetString"
 dev_langs: 

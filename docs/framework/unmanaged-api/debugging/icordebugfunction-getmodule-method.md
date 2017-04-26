@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFunction.GetModule"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetModule"
 dev_langs: 

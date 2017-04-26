@@ -13,7 +13,8 @@ api_name:
   - "ICLRAssemblyIdentityManager"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager"
 dev_langs: 

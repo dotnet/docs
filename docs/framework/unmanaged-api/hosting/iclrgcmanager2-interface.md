@@ -13,7 +13,8 @@ api_name:
   - "ICLRGCManager2"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRGCManager2"
 dev_langs: 

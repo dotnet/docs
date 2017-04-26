@@ -13,7 +13,8 @@ api_name:
   - "IHostCrst.SetSpinCount"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::SetSpinCount"
 dev_langs: 

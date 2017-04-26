@@ -13,7 +13,8 @@ api_name:
   - "GetHashFromAssemblyFileW"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetHashFromAssemblyFileW"
 dev_langs: 

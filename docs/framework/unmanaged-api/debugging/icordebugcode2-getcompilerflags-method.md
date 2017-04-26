@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode2.GetCompilerFlags"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode2::GetCompilerFlags"
 dev_langs: 

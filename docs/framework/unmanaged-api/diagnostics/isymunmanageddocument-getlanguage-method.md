@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedDocument.GetLanguage"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetLanguage"
 dev_langs: 

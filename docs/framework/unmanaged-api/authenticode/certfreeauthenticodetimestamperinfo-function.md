@@ -13,7 +13,8 @@ api_name:
   - "CertFreeAuthenticodeTimestamperInfo"
 api_location: 
   - "clr.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: 3eb14c49-68c2-4516-ac89-e5bd7473831c

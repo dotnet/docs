@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "mscorwks.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureVerificationEx"
 dev_langs: 

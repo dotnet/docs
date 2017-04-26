@@ -13,7 +13,8 @@ api_name:
   - "ICLRGCManager2.SetGCStartupLimitsEx"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRGCManager2::SetCLRGCStartupLimitsEx"
 dev_langs: 

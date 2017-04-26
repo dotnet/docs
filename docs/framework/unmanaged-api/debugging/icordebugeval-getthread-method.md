@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval.GetThread"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::GetThread"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedWriter.DefineGlobalVariable"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineGlobalVariable"
 dev_langs: 

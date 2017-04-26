@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEnum.Reset"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEnum::Reset"
 dev_langs: 

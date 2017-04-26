@@ -13,7 +13,8 @@ api_name:
   - "IDebuggerInfo"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDebuggerInfo"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport.GetFieldMarshal"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetFieldMarshal"
 dev_langs: 

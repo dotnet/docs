@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame.GetStackValue"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetStackValue"
 dev_langs: 

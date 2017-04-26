@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback2.CreateConnection"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::CreateConnection"
 dev_langs: 

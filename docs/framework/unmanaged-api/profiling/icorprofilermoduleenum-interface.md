@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerModuleEnum"
 api_location: 
   - "mscorwks.cll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum"
 dev_langs: 

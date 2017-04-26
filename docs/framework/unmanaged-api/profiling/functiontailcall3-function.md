@@ -13,7 +13,8 @@ api_name:
   - "FunctionTailcall3"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FunctionTailcall3"
 dev_langs: 

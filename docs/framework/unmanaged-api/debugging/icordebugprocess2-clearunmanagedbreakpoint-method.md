@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess2.ClearUnmanagedBreakpoint"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::ClearUnmanagedBreakpoint"
 dev_langs: 

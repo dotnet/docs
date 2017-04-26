@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedConstant.GetSignature"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetSignature"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeInfo.GetVersionString"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetVersionString"
 dev_langs: 

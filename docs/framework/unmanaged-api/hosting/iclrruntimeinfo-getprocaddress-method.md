@@ -13,7 +13,8 @@ api_name:
   - "ICLRRuntimeInfo.GetProcAddress"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetProcAddress"
 dev_langs: 

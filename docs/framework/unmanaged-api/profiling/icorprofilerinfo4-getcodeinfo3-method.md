@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo4.GetCodeInfo3"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetCodeInfo3"
 dev_langs: 

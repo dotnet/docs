@@ -13,7 +13,8 @@ api_name:
   - "CLRDataEnumMemoryFlags"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLRDataEnumMemoryFlags"
 dev_langs: 

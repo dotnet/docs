@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugNativeFrame2"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2"
 dev_langs: 

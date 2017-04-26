@@ -13,7 +13,8 @@ api_name:
   - "IHostPolicyManager.OnDefaultAction"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostPolicyManager::OnDefaultAction"
 dev_langs: 

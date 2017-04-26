@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugModule2.ResolveAssembly"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule2::ResolveAssembly"
 dev_langs: 

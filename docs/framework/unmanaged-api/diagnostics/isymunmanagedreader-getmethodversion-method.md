@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader.GetMethodVersion"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodVersion"
 dev_langs: 

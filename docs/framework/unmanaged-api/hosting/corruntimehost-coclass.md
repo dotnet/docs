@@ -13,7 +13,8 @@ api_name:
   - "CorRuntimeHost Coclass"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorRuntimeHost"
 dev_langs: 

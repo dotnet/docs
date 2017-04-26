@@ -13,7 +13,8 @@ api_name:
   - "System.Windows.Forms.Design.DataMemberFieldEditor"
 api_location: 
   - "System.Design.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 27ae39b7-3491-40f9-9b33-2de798f123ad
 caps.latest.revision: 4
 author: "mairaw"

@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugStepper2.SetJMC"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStepper2::SetJMC"
 dev_langs: 

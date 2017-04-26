@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscorwks.dll"
   - "corprof.idl"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: edc420b7-96d1-4dec-ace0-36d907f644bc

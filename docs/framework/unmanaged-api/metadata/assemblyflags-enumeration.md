@@ -13,7 +13,8 @@ api_name:
   - "AssemblyFlags"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AssemblyFlags"
 dev_langs: 

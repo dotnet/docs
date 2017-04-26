@@ -13,7 +13,8 @@ api_name:
   - "IInstallReferenceEnum"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum"
 dev_langs: 

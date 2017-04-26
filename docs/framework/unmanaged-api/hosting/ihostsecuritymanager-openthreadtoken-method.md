@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityManager.OpenThreadToken"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::OpenThreadToken"
 dev_langs: 

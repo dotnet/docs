@@ -13,7 +13,8 @@ api_name:
   - "COR_DEBUG_STEP_RANGE"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_DEBUG_STEP_RANGE"
 dev_langs: 

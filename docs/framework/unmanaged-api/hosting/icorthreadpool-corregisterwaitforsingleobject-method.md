@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorRegisterWaitForSingleObject"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorRegisterWaitForSingleObject"
 dev_langs: 

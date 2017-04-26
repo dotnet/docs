@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader.GetUserEntryPoint"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetUserEntryPoint"
 dev_langs: 

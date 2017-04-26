@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugDataTarget.GetPlatform Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget::GetPlatform"
 dev_langs: 

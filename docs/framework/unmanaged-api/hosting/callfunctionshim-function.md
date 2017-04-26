@@ -13,7 +13,8 @@ api_name:
   - "CallFunctionShim"
 api_location: 
   - "mscoree.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CallFunctionShim"
 dev_langs: 

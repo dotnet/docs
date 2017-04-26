@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugAppDomain.IsAttached"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::IsAttached"
 dev_langs: 

@@ -14,7 +14,8 @@ api_name:
   - "IALink.EnumCustomAttributes"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EnumCustomAttributes"
 dev_langs: 

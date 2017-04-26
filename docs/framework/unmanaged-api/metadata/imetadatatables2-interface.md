@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataTables2"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables2"
 dev_langs: 

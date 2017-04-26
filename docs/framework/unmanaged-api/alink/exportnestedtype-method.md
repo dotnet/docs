@@ -14,7 +14,8 @@ api_name:
   - "ExportNestedType"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ExportNestedType"
 dev_langs: 

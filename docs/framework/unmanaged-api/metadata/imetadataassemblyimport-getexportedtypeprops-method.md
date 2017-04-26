@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataAssemblyImport.GetExportedTypeProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetExportedTypeProps"
 dev_langs: 

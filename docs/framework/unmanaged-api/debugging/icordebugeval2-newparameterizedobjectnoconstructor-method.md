@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval2.NewParameterizedObjectNoConstructor"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor"
 dev_langs: 

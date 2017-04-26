@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedBinder2.GetReaderForFile2"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder2::GetReaderForFile2"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ITypeLibResolver"
 api_location: 
   - "tlbref.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ITypeLibResolver"
 dev_langs: 

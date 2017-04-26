@@ -13,7 +13,8 @@ api_name:
   - "IEnumReferenceIdentity"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IEnumReferenceIdentity"
 dev_langs: 

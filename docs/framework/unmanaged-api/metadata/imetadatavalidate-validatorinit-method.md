@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataValidate.ValidatorInit"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataValidate::ValidatorInit"
 dev_langs: 

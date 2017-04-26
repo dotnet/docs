@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugFrameEnum.Next"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFrameEnum::Next"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IHostAssemblyManager.GetNonHostStoreAssemblies"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetNonHostStoreAssemblies"
 dev_langs: 

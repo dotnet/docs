@@ -14,7 +14,8 @@ api_name:
   - "IALink.EmitManifest"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EmitManifest"
 dev_langs: 

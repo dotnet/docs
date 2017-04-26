@@ -13,7 +13,8 @@ api_name:
   - "ICLRPolicyManager.SetActionOnTimeout"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetActionOnTimeout"
 dev_langs: 

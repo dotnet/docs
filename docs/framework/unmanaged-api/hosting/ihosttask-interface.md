@@ -13,7 +13,8 @@ api_name:
   - "IHostTask"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTask"
 dev_langs: 

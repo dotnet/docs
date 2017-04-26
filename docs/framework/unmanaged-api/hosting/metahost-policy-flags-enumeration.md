@@ -13,7 +13,8 @@ api_name:
   - "METAHOST_POLICY_FLAGS"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "METAHOST_POLICY_FLAGS"
 dev_langs: 

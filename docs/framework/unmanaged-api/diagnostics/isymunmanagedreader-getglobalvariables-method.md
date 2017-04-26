@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader.GetGlobalVariables"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetGlobalVariables"
 dev_langs: 

@@ -14,7 +14,8 @@ api_name:
 api_location: 
   - "mscoree.dll"
   - "mscorsn.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameGetPublicKey"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IHostIoCompletionManager.GetHostOverlappedSize"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetHostOverlappedSize"
 dev_langs: 

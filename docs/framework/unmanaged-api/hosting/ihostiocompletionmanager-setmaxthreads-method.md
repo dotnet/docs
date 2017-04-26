@@ -13,7 +13,8 @@ api_name:
   - "IHostIoCompletionManager.SetMaxThreads"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::SetMaxThreads"
 dev_langs: 

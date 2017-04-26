@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback5"
 api_location: 
   - "Mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback5"
 dev_langs: 

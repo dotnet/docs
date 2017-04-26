@@ -13,7 +13,8 @@ api_name:
   - "IALink.GetScope"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetScope"
 dev_langs: 

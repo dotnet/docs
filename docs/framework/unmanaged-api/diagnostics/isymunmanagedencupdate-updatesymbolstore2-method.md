@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedENCUpdate.UpdateSymbolStore2"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2"
 dev_langs: 

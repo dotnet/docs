@@ -13,7 +13,8 @@ api_name:
   - "EHostApplicationPolicy"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EHostApplicationPolicy"
 dev_langs: 

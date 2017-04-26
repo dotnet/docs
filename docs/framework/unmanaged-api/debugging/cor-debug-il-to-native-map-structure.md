@@ -13,7 +13,8 @@ api_name:
   - "COR_DEBUG_IL_TO_NATIVE_MAP"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorRuntimeHost.CreateDomainEx"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomainEx"
 dev_langs: 

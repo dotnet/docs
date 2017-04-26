@@ -13,7 +13,8 @@ api_name:
   - "IHostGCManager.ThreadIsBlockingForSuspension"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostGCManager::ThreadIsBlockingForSuspension"
 dev_langs: 

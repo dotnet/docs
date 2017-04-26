@@ -13,7 +13,8 @@ api_name:
   - "ISymENCUnmanagedMethod.GetLineFromOffset"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetLineFromOffset"
 dev_langs: 

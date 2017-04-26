@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugAppDomain3.GetCachedWinRTTypes"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes"
 dev_langs: 

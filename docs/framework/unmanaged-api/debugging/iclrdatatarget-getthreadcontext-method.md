@@ -13,7 +13,8 @@ api_name:
   - "ICLRDataTarget.GetThreadContext"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetThreadContext"
 dev_langs: 

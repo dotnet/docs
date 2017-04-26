@@ -13,7 +13,8 @@ api_name:
   - "ICoreClrDebugTarget.EnumProcesses"
 api_location: 
   - "mscordbi_macx86.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICoreClrDebugTarget::EnumProcesses"
 dev_langs: 

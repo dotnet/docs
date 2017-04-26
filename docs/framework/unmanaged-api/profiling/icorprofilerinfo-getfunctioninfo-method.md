@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.GetFunctionInfo"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetFunctionInfo"
 dev_langs: 

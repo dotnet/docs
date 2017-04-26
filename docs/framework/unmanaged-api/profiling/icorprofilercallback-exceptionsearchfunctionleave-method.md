@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerCallback.ExceptionSearchFunctionLeave"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave"
 dev_langs: 

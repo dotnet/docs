@@ -15,7 +15,8 @@ api_location:
   - "mscoree.dll"
   - "mscorpehost.dll"
   - "mscorpe.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "DestroyICeeFileGen"
 dev_langs: 

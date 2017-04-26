@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.SetFieldRVA"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetFieldRVA"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorPublishAppDomain.GetName"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishAppDomain::GetName"
 dev_langs: 

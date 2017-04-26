@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame4.GetLocalVariableEx"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: aeda0e42-29ee-4ca8-9f21-ac4641677a62

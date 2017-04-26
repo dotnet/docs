@@ -13,7 +13,8 @@ api_name:
   - "CorRegFlags"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorRegFlags"
 dev_langs: 

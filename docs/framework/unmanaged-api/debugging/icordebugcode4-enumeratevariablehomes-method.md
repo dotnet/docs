@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugCode4.EnumerateVariableHomes"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode4::EnumerateVariableHomes"
 dev_langs: 

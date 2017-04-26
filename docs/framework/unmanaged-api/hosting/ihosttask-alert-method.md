@@ -13,7 +13,8 @@ api_name:
   - "IHostTask.Alert"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTask::Alert"
 dev_langs: 

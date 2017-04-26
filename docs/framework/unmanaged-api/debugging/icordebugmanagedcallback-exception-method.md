@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.Exception"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::Exception"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IHostThreadPoolManager.SetMaxThreads"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::SetMaxThreads"
 dev_langs: 

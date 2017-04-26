@@ -13,7 +13,8 @@ api_name:
   - "GetALinkMessageDll"
 api_location: 
   - "alink.dll"
-api_type: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetALinkMessageDll"
 dev_langs: 

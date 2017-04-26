@@ -14,7 +14,8 @@ api_name:
   - "ICLRStrongName.StrongNameCompareAssemblies"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromHandle"
 dev_langs: 

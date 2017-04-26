@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugEval2.NewStringWithLength"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewStringWithLength"
 dev_langs: 

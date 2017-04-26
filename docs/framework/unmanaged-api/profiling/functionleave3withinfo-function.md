@@ -13,7 +13,8 @@ api_name:
   - "FunctionLeave3WithInfo"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FunctionLeave3WithInfo"
 dev_langs: 

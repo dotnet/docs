@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugValue2"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugValue2"
 dev_langs: 

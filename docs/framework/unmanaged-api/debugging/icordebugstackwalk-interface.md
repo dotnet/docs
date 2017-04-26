@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugStackWalk"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStackWalk"
 dev_langs: 

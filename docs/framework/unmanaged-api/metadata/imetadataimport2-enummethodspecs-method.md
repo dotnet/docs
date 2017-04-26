@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataImport2.EnumMethodSpecs"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumMethodSpecs"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IDefinitionAppId"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDefinitionAppId"
 dev_langs: 

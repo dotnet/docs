@@ -13,7 +13,8 @@ api_name:
   - "EClrOperation"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EClrOperation"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "IInstallReferenceEnum.GetNextInstallReferenceItem"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem"
 dev_langs: 

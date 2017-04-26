@@ -13,7 +13,8 @@ api_name:
   - "IALink2.SetAssemblyFile2"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetAssemblyFile2"
 dev_langs: 

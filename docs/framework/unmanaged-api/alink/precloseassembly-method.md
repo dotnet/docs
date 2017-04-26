@@ -13,7 +13,8 @@ api_name:
   - "IALink.PreCloseAssembly"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "PreCloseAssembly"
 dev_langs: 

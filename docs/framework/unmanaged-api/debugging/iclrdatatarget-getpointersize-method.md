@@ -13,7 +13,8 @@ api_name:
   - "ICLRDataTarget.GetPointerSize"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetPointerSize"
 dev_langs: 

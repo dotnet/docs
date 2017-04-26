@@ -13,7 +13,8 @@ api_name:
   - "ICatalogServices.Autodone"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "Autodone"
 dev_langs: 

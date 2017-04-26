@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo3.GetModuleInfo2"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetModuleInfo2"
 dev_langs: 

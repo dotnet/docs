@@ -13,7 +13,8 @@ api_name:
   - "CorDebugDebugEventKind"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 6075a6cd-97e6-4472-a090-0dd14860d1f3

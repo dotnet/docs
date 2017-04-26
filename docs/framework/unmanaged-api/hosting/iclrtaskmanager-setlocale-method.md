@@ -13,7 +13,8 @@ api_name:
   - "ICLRTaskManager.SetLocale"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTaskManager::SetLocale"
 dev_langs: 

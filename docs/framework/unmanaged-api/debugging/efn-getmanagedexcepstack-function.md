@@ -13,7 +13,8 @@ api_name:
   - "_EFN_GetManagedExcepStack"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "_EFN_GetManagedExcepStack"
 dev_langs: 

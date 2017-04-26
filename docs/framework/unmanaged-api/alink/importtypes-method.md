@@ -13,7 +13,8 @@ api_name:
   - "IALink.ImportTypes"
 api_location: 
   - "alink.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ImportTypes"
 dev_langs: 

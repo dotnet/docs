@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugStackWalk.SetContext Method"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStackWalk::SetContext"
 dev_langs: 

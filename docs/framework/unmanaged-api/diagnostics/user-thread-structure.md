@@ -13,7 +13,8 @@ api_name:
   - "USER_THREAD"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "USER_THREAD"
 dev_langs: 

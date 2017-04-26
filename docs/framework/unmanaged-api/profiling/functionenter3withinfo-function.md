@@ -13,7 +13,8 @@ api_name:
   - "FunctionEnter3WithInfo"
 api_location: 
   - "mscorwks.cll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FunctionEnter3WithInfo"
 dev_langs: 

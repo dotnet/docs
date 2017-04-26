@@ -13,7 +13,8 @@ api_name:
   - "ICorThreadpool.CorBindIoCompletionCallback"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorBindIoCompletionCallback"
 dev_langs: 

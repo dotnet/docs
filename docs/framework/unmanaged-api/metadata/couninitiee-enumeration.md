@@ -13,7 +13,8 @@ api_name:
   - "COUNINITIEE"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COUNINITIEE"
 dev_langs: 

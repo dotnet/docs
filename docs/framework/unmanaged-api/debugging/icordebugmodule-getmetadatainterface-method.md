@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugModule.GetMetaDataInterface"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetMetaDataInterface"
 dev_langs: 

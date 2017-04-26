@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugILFrame.CanSetIP"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::CanSetIP"
 dev_langs: 

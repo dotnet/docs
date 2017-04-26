@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.GetTokenFromSig"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetTokenFromSig"
 dev_langs: 

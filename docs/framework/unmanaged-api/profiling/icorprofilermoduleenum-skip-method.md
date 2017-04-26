@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerModuleEnum.Skip Method"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum::Skip"
 dev_langs: 

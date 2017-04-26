@@ -13,7 +13,8 @@ api_name:
   - "ICeeGen.AllocateMethodBuffer"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::AllocateMethodBuffer"
 dev_langs: 

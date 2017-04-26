@@ -13,7 +13,8 @@ api_name:
   - "COR_NATIVE_LINK"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_NATIVE_LINK"
 dev_langs: 

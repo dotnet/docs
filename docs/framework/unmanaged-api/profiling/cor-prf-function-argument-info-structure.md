@@ -13,7 +13,8 @@ api_name:
   - "COR_PRF_FUNCTION_ARGUMENT_INFO"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PRF_FUNCTION_ARGUMENT_INFO"
 dev_langs: 

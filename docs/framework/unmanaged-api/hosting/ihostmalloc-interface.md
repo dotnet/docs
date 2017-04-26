@@ -13,7 +13,8 @@ api_name:
   - "IHostMAlloc"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMAlloc"
 dev_langs: 

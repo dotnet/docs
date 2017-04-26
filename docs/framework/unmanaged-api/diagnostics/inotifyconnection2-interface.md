@@ -13,7 +13,8 @@ api_name:
   - "INotifyConnection2"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifyConnection2"
 dev_langs: 

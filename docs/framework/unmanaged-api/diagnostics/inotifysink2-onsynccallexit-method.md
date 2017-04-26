@@ -13,7 +13,8 @@ api_name:
   - "INotifySink2.OnSyncCallExit"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallExit"
 dev_langs: 

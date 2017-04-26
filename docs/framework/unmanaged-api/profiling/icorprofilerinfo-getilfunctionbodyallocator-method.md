@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerInfo.GetILFunctionBodyAllocator"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILFunctionBodyAllocator"
 dev_langs: 

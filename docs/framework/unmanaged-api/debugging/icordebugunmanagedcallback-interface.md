@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugUnmanagedCallback"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugUnmanagedCallback"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedConstant.GetName"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetName"
 dev_langs: 

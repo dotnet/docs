@@ -13,7 +13,8 @@ api_name:
   - "IHostSecurityManager.ImpersonateLoggedOnUser"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::ImpersonateLoggedOnUser"
 dev_langs: 

@@ -13,7 +13,8 @@ api_name:
   - "ICorProfilerThreadEnum.Skip"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Skip"
 dev_langs: 

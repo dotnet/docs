@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugProcess.GetHandle"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetHandle"
 dev_langs: 

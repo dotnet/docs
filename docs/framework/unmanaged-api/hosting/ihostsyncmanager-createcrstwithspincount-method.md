@@ -13,7 +13,8 @@ api_name:
   - "IHostSyncManager.CreateCrstWithSpinCount"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateCrstWithSpinCount"
 dev_langs: 

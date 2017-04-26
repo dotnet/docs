@@ -13,7 +13,8 @@ api_name:
   - "STARTUP_FLAGS"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "STARTUP_FLAGS"
 dev_langs: 

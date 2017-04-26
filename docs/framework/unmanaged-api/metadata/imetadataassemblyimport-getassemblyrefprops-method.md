@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataAssemblyImport.GetAssemblyRefProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyRefProps"
 dev_langs: 

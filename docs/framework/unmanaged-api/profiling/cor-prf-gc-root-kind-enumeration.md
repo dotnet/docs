@@ -13,7 +13,8 @@ api_name:
   - "COR_PRF_GC_ROOT_KIND"
 api_location: 
   - "mscorwks.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PRF_GC_ROOT_KIND"
 dev_langs: 

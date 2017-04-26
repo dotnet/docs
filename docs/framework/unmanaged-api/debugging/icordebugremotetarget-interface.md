@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugRemoteTarget"
 api_location: 
   - "CorDebug.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget"
 dev_langs: 

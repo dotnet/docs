@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugManagedCallback.CreateAppDomain"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::CreateAppDomain"
 dev_langs: 

@@ -14,7 +14,8 @@ api_name:
   - "ICLRStrongName.StrongNameGetBlob"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetBlob"
 dev_langs: 

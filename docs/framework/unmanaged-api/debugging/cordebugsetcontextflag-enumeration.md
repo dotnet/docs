@@ -13,7 +13,8 @@ api_name:
   - "CorDebugSetContextFlag"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugSetContextFlag"
 dev_langs: 

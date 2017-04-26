@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedWriter.OpenNamespace"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::OpenNamespace"
 dev_langs: 

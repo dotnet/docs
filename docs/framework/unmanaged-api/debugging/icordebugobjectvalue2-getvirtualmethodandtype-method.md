@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugObjectValue2.GetVirtualMethodAndType"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue2::GetVirtualMethodAndType"
 dev_langs: 

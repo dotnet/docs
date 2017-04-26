@@ -13,7 +13,8 @@ api_name:
   - "ICLRProbingAssemblyEnum.Get"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRProbingAssemblyEnum::Get"
 dev_langs: 

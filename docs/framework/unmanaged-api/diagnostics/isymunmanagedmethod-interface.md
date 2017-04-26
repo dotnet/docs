@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedMethod"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod"
 dev_langs: 

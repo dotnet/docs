@@ -13,7 +13,8 @@ api_name:
   - "ICLRHostBindingPolicyManager"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager"
 dev_langs: 

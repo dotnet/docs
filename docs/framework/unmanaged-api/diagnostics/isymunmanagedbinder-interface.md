@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedBinder"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder"
 dev_langs: 

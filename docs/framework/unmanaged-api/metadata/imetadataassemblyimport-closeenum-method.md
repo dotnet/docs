@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataAssemblyImport.CloseEnum"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::CloseEnum"
 dev_langs: 

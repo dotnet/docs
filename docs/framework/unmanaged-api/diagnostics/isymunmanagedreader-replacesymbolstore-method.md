@@ -13,7 +13,8 @@ api_name:
   - "ISymUnmanagedReader.ReplaceSymbolStore"
 api_location: 
   - "diasymreader.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::ReplaceSymbolStore"
 dev_langs: 

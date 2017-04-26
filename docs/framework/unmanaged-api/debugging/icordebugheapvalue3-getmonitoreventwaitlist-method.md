@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugHeapValue3.GetMonitorEventWaitList"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue3::GetMonitorEventWaitList"
 dev_langs: 

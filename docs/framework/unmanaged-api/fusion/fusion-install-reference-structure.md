@@ -13,7 +13,8 @@ api_name:
   - "FUSION_INSTALL_REFERENCE"
 api_location: 
   - "fusion.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FUSION_INSTALL_REFERENCE"
 dev_langs: 

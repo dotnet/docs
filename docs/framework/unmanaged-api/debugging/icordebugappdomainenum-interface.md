@@ -13,7 +13,8 @@ api_name:
   - "ICorDebugAppDomainEnum"
 api_location: 
   - "mscordbi.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomainEnum"
 dev_langs: 

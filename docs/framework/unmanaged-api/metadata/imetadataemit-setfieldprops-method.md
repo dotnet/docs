@@ -13,7 +13,8 @@ api_name:
   - "IMetaDataEmit.SetFieldProps"
 api_location: 
   - "mscoree.dll"
-api_type: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetFieldProps"
 dev_langs: 

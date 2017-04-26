@@ -17,7 +17,7 @@ Like all managed code, .NET Core applications are executed by a host. The host i
 
 Hosting the .NET Core runtime is an advanced scenario and, in most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications. In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.
 
-This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (@System.AppDomain), and execute managed code in it.
+This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (<xref:System.AppDomain>), and execute managed code in it.
 
 ## Prerequisites
 

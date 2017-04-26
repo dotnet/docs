@@ -72,6 +72,10 @@ namespace tuples
             // The field names are not assigned. 'named' still has 
             // fields that can be referred to as 'answer' and 'message':
             Console.WriteLine($"{named.Answer}, {named.Message}");
+
+            // With implicit conversions:
+            // int can be implicitly converted to long
+            (long, string) conversion = named;
             #endregion
 
         }

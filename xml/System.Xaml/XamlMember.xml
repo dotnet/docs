@@ -208,7 +208,7 @@
         <param name="declaringType">The <see cref="T:System.Xaml.XamlType" /> information for the declaring type.</param>
         <param name="isAttachable">
           <see langword="true" /> to indicate that the member is attachable; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using a string name and declaring <see cref="T:System.Xaml.XamlType" /> information. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with this signature has significant limitations; see Remarks.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using a string name and declaring <see cref="T:System.Xaml.XamlType" /> information. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with this signature has significant limitations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1172,7 +1172,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</summary>
-        <returns>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist. See Remarks.</returns>
+        <returns>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1199,8 +1199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</summary>
-        <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</returns>
+        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

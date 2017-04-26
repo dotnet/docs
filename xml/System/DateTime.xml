@@ -2796,7 +2796,7 @@ July, 2009
         <Parameter Name="format" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="format">A standard date and time format string (see Remarks).</param>
+        <param name="format">A standard date and time format string.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with the <paramref name="format" /> standard date and time format specifier.</returns>
         <remarks>
@@ -3015,7 +3015,7 @@ juillet 2009
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A date and time format string (see Remarks).</param>
+        <param name="format">A date and time format string.</param>
         <param name="provider">An object that supplies culture-specific formatting information about this instance.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier and culture-specific formatting information.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with one of the standard date and time format specifiers.</returns>
@@ -6029,7 +6029,7 @@ juillet 2009
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A standard or custom date and time format string (see Remarks).</param>
+        <param name="format">A standard or custom date and time format string.</param>
         <summary>Converts the value of the current <see cref="T:System.DateTime" /> object to its equivalent string representation using the specified format and the formatting conventions of the current culture.</summary>
         <returns>A string representation of value of the current <see cref="T:System.DateTime" /> object as specified by <paramref name="format" />.</returns>
         <remarks>

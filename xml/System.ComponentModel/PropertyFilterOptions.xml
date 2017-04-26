@@ -57,7 +57,7 @@
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return only those properties that are not valid given the current context of the object. See Remarks.</summary>
+        <summary>Return only those properties that are not valid given the current context of the object.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -121,7 +121,7 @@
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return any property that is valid on the  object in the current scope. See Remarks.</summary>
+        <summary>Return any property that is valid on the  object in the current scope.</summary>
       </Docs>
     </Member>
   </Members>

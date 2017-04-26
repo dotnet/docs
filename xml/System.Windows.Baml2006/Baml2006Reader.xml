@@ -87,7 +87,7 @@
       </Parameters>
       <Docs>
         <param name="stream">Input stream of source BAML.</param>
-        <param name="xamlReaderSettings">Reader settings. See Remarks.</param>
+        <param name="xamlReaderSettings">Reader settings.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class based on an input stream and reader settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

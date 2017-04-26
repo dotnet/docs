@@ -338,7 +338,7 @@
       <Docs>
         <param name="patternInterface">An enumeration that specifies the control pattern.</param>
         <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
-        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />. For more information, see Remarks.</returns>
+        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -161,7 +161,7 @@
       <Docs>
         <param name="serializerDescriptor">The <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" /> for the plug-in.</param>
         <param name="overwrite">
-          <see langword="true" /> to overwrite an existing registration for the same plug-in; otherwise, <see langword="false" />. See Remarks.</param>
+          <see langword="true" /> to overwrite an existing registration for the same plug-in; otherwise, <see langword="false" />.</param>
         <summary>Registers a serializer plug-in.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

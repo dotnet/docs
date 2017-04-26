@@ -783,7 +783,7 @@
       <Docs>
         <param name="eventType">One of the enumeration values that specifies the event type of the trace data.</param>
         <param name="id">A numeric identifier for the event.</param>
-        <param name="format">A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A composite format string that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
         <param name="args">An <see langword="object" /> array containing zero or more objects to format.</param>
         <summary>Writes a trace event to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection using the specified event type, event identifier, and argument array and format.</summary>
         <remarks>
@@ -904,7 +904,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A composite format string that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
         <param name="args">An array containing zero or more objects to format.</param>
         <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection using the specified object array and formatting information.</summary>
         <remarks>

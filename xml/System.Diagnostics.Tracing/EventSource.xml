@@ -616,7 +616,7 @@
         <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the [provider](http://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
         <param name="flags">A bitwise combination of the enumeration values that specify how the manifest is generated.</param>
         <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
-        <returns>The XML data string or <see langword="null" /> (see remarks).</returns>
+        <returns>The XML data string or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

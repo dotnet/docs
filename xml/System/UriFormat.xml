@@ -62,7 +62,7 @@
         <ReturnType>System.UriFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Characters that have a reserved meaning in the requested URI components remain escaped. All others are not escaped. See Remarks.</summary>
+        <summary>Characters that have a reserved meaning in the requested URI components remain escaped. All others are not escaped.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unescaped">

@@ -412,7 +412,7 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The name of the assembly to load. See Remarks.</param>
+        <param name="assemblyName">The name of the assembly to load.</param>
         <summary>Called when operations use this schema context to resolve an assembly that is required in order to resolve the XAML namespaces that it contains.</summary>
         <returns>The resolved assembly.</returns>
         <remarks>

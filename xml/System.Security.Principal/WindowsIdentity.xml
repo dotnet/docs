@@ -197,7 +197,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token and the specified authentication type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -293,7 +293,7 @@
       </Parameters>
       <Docs>
         <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified User Principal Name (UPN) and the specified authentication type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -343,7 +343,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <param name="acctType">One of the enumeration values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type.</summary>
         <remarks>
@@ -404,7 +404,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <param name="acctType">One of the enumeration values.</param>
         <param name="isAuthenticated">
           <see langword="true" /> to indicate that the user is authenticated; otherwise, <see langword="false" />.</param>

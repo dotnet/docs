@@ -1131,7 +1131,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The object to format and write.</param>
         <summary>Writes a formatted string to the text string or stream, using the same semantics as the <see cref="M:System.String.Format(System.String,System.Object)" /> method.</summary>
         <remarks>
@@ -1220,7 +1220,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An object array that contains zero or more objects to format and write.</param>
         <summary>Writes a formatted string to the text string or stream, using the same semantics as the <see cref="M:System.String.Format(System.String,System.Object[])" /> method.</summary>
         <remarks>
@@ -1356,7 +1356,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to format and write.</param>
         <param name="arg1">The second object to format and write.</param>
         <summary>Writes a formatted string to the text string or stream, using the same semantics as the <see cref="M:System.String.Format(System.String,System.Object,System.Object)" /> method.</summary>
@@ -1441,7 +1441,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to format and write.</param>
         <param name="arg1">The second object to format and write.</param>
         <param name="arg2">The third object to format and write.</param>
@@ -2305,7 +2305,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The object to format and write.</param>
         <summary>Writes a formatted string and a new line to the text string or stream, using the same semantics as the <see cref="M:System.String.Format(System.String,System.Object)" /> method.</summary>
         <remarks>
@@ -2396,7 +2396,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An object array that contains zero or more objects to format and write.</param>
         <summary>Writes out a formatted string and a new line, using the same semantics as <see cref="M:System.String.Format(System.String,System.Object)" />.</summary>
         <remarks>
@@ -2535,7 +2535,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to format and write.</param>
         <param name="arg1">The second object to format and write.</param>
         <summary>Writes a formatted string and a new line to the text string or stream, using the same semantics as the <see cref="M:System.String.Format(System.String,System.Object,System.Object)" /> method.</summary>
@@ -2622,7 +2622,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to format and write.</param>
         <param name="arg1">The second object to format and write.</param>
         <param name="arg2">The third object to format and write.</param>

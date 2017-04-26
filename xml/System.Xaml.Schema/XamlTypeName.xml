@@ -205,7 +205,7 @@
         <Parameter Name="namespaceResolver" Type="System.Xaml.IXamlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="typeNameList">A string that contains multiple types. See Remarks.</param>
+        <param name="typeNameList">A string that contains multiple types.</param>
         <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
         <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a string that can specify multiple type names, and an object that can resolve a markup prefix into a namespace.</summary>
         <returns>The created <see cref="T:System.Xaml.Schema.XamlTypeName" />.</returns>
@@ -362,7 +362,7 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
         <Parameter Name="result" Type="System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="typeNameList">A string that contains multiple types. See Remarks.</param>
+        <param name="typeNameList">A string that contains multiple types.</param>
         <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
         <param name="result">Out parameter that contains the created <see cref="T:System.Xaml.Schema.XamlTypeName" /> if the return value is <see langword="true" />.</param>
         <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a string that can specify multiple type names, and an object that can resolve a markup prefix into a namespace.</summary>

@@ -92,8 +92,8 @@
       <Docs>
         <param name="value">The input value to commit for deferred loading.</param>
         <param name="serviceProvider">Service provider for required services.</param>
-        <summary>Do not use; always throws an exception. See Remarks.</summary>
-        <returns>Always throws an exception. See Remarks.</returns>
+        <summary>Do not use; always throws an exception.</summary>
+        <returns>Always throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

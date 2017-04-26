@@ -178,7 +178,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A print queue that was installed by using the Push Printer Connections computer policy. See Remarks.</summary>
+        <summary>A print queue that was installed by using the Push Printer Connections computer policy.</summary>
       </Docs>
     </Member>
     <Member MemberName="PushedUserConnection">
@@ -194,7 +194,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A print queue that was installed by using the Push Printer Connections user policy. See Remarks.</summary>
+        <summary>A print queue that was installed by using the Push Printer Connections user policy.</summary>
       </Docs>
     </Member>
     <Member MemberName="Queued">
